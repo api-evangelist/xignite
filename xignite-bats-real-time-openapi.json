@@ -1,0 +1,738 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite BATS Real Time",
+        "description": "Provides real-time access to BATS market data.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime"
+    ],
+    "paths": {
+        "\/GetBars": {
+            "GET": {
+                "summary": "Get Bars",
+                "description": "Returns a set of bars for a stock and a time range during the trading day.",
+                "operationId": "GetBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealQuote": {
+            "GET": {
+                "summary": "Get Real Quote",
+                "description": "Returns real time stock quote for a given stock ticker",
+                "operationId": "GetRealQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealQuotes": {
+            "GET": {
+                "summary": "Get Real Quotes",
+                "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+                "operationId": "GetRealQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealQuotesByIdentifiers": {
+            "GET": {
+                "summary": "Get Real Quotes By Identifiers",
+                "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+                "operationId": "GetRealQuotesByIdentifiers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealQuoteByIdentifier": {
+            "GET": {
+                "summary": "Get Real Quote By Identifier",
+                "description": "Returns a real-time quote for a security based on the last trade execution.",
+                "operationId": "GetRealQuoteByIdentifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListTradedSymbols": {
+            "GET": {
+                "summary": "List Traded Symbols",
+                "description": "Returns all symbols and names that are traded recently",
+                "operationId": "ListTradedSymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBar": {
+            "GET": {
+                "summary": "Get Bar",
+                "description": "Returns a single bar for a specific time.",
+                "operationId": "GetBar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Bars": {
+            "GET": {
+                "summary": "Get Chart Bars",
+                "description": "Returns a set of partial bars for a stock and a time range during the trading day.",
+                "operationId": "GetChartBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsHeader": {
+                "type": "object"
+            },
+            "GetBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuoteHeader": {
+                "type": "object"
+            },
+            "GetRealQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuotesHeader": {
+                "type": "object"
+            },
+            "GetRealQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuotesByIdentifiersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuotesByIdentifiersHeader": {
+                "type": "object"
+            },
+            "GetRealQuotesByIdentifiersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuoteByIdentifierInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuoteByIdentifierHeader": {
+                "type": "object"
+            },
+            "GetRealQuoteByIdentifierOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListTradedSymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListTradedSymbolsHeader": {
+                "type": "object"
+            },
+            "ListTradedSymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarHeader": {
+                "type": "object"
+            },
+            "GetBarOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsHeader": {
+                "type": "object"
+            },
+            "GetChartBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsResponse_tns": {
+                "type": "object"
+            },
+            "GetRealQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetRealQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetRealQuotesByIdentifiers_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuotesByIdentifiersResponse_tns": {
+                "type": "object"
+            },
+            "GetRealQuoteByIdentifier_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealQuoteByIdentifierResponse_tns": {
+                "type": "object"
+            },
+            "ListTradedSymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "NumberOfDays": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListTradedSymbolsResponse_tns": {
+                "type": "object"
+            },
+            "GetBar_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Precision": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AdjustmentMethod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeExtended": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRealQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "RealQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfBar_tns": {
+                "type": "object",
+                "properties": {
+                    "Bar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Bar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volume": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Trades": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "VWAP": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "ChartBar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Security_tns": {
+                "type": "object",
+                "properties": {
+                    "CIK": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ISIN": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Valoren": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MostLiquidExchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CategoryOrIndustry": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volume": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Trades": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "VWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Session": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AdjustmentRatio": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
