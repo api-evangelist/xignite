@@ -1,0 +1,106 @@
+{
+    "id": "095b7e15169270cc2e93ef03929561e6",
+    "name": "Xignite Super Quotes",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b9a47e1cbe6acc618adfa293adafb5c6",
+            "name": "Get Quote",
+            "url": "httpssuperquotes.xignite.comxSuperQuotes.json\/XigniteSuperQuotes\/GetQuote",
+            "description": "Returns a quote for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "095b7e15169270cc2e93ef03929561e6",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab848587239e1505d3a0f22d50188428",
+            "name": "Get Quotes",
+            "url": "httpssuperquotes.xignite.comxSuperQuotes.json\/XigniteSuperQuotes\/GetQuotes",
+            "description": "Returns quotes for given securities.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "095b7e15169270cc2e93ef03929561e6",
+            "rawModeData": ""
+        },
+        {
+            "id": "2dbe74c11922b39365848837f33bfcd0",
+            "name": "Get Chart Bars",
+            "url": "httpssuperquotes.xignite.comxSuperQuotes.json\/XigniteSuperQuotes, Bars",
+            "description": "Returns ChartBars for given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "095b7e15169270cc2e93ef03929561e6",
+            "rawModeData": ""
+        }
+    ]
+}
