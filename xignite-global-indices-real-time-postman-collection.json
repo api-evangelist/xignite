@@ -1,0 +1,323 @@
+{
+    "id": "31e3e560c490bdf7a6822204fb2f2af0",
+    "name": "Xignite Global Indices Real Time",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c420abf306827cf748f76fa4da047d78",
+            "name": "Get Real Time Indices Value",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetRealTimeIndicesValue",
+            "description": "Get real time indices value.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e474e898a87587ba25fc3b4642e4afa",
+            "name": "Get Index Bar",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexBar",
+            "description": "Get index bar.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "faddefa7d7c32077c29dce6e7a4a8f08",
+            "name": "Get Index Bars",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexBars",
+            "description": "Get index bars.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "41dac58bd984353869db7c3e84fa5e0a",
+            "name": "Get Chart Bars",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime, Bars",
+            "description": "Get chart bars.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "84c1b282cc953efad93bd5629396adcf",
+            "name": "Get Index Symbol Mapping By Old Symbol",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexSymbolMappingByOldSymbol",
+            "description": "Get index symbol mapping by old symbol.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b0663dee848977c232930ccfa3b84e4",
+            "name": "Get Index Symbol Mappings By Old Symbols",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexSymbolMappingsByOldSymbols",
+            "description": "Get index symbol mappings by old symbols.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "2982305d8f4b32d76e21ec509fa1be5c",
+            "name": "Get Real Time Index Value",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetRealTimeIndexValue",
+            "description": "Get real time index value.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8ece436016eceadfc7027475ed8234c",
+            "name": "List Index Groups",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/ListIndexGroups",
+            "description": "List index groups.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "fad1433068818991f3f7692a6a3ca8ea",
+            "name": "List Indices By Index Group",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/ListIndicesByIndexGroup",
+            "description": "List indices by index group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        },
+        {
+            "id": "32a58d7b7ad9bcddb005ceabefa7825a",
+            "name": "Search Indices By Name",
+            "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/SearchIndicesByName",
+            "description": "Search indices by name.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "rawModeData": ""
+        }
+    ]
+}
