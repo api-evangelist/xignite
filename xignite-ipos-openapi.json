@@ -1,0 +1,768 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite IPOs",
+        "description": "This web service provides IPO data.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsipos.xignite.comxIPOs.json\/XigniteIPOs"
+    ],
+    "paths": {
+        "\/GetIPO": {
+            "GET": {
+                "summary": "Get IPO",
+                "description": "Post getipo",
+                "operationId": "GetIPO",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIPOCalendar": {
+            "GET": {
+                "summary": "Get IPO Calendar",
+                "description": "Post getipocalendar",
+                "operationId": "GetIPOCalendar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIPOCalendarByExchange": {
+            "GET": {
+                "summary": "Get IPO Calendar By Exchange",
+                "description": "Post getipocalendarbyexchange",
+                "operationId": "GetIPOCalendarByExchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "Post listexchanges",
+                "operationId": "ListExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIPOByStatus": {
+            "GET": {
+                "summary": "Get IPO By Status",
+                "description": "Post getipobystatus",
+                "operationId": "GetIPOByStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIPOList": {
+            "GET": {
+                "summary": "Get IPO List",
+                "description": "Post getipolist",
+                "operationId": "GetIPOList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIPODetails": {
+            "GET": {
+                "summary": "Get IPO Details",
+                "description": "Post getipodetails",
+                "operationId": "GetIPODetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/SearchIPOBySymbol": {
+            "GET": {
+                "summary": "Search IPO By Symbol",
+                "description": "Post searchipobysymbol",
+                "operationId": "SearchIPOBySymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/SearchIPOByName": {
+            "GET": {
+                "summary": "Search IPO By Name",
+                "description": "Post searchipobyname",
+                "operationId": "SearchIPOByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIPOPerformance": {
+            "GET": {
+                "summary": "Get IPO Performance",
+                "description": "Post getipoperformance",
+                "operationId": "GetIPOPerformance",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOHeader": {
+                "type": "object"
+            },
+            "GetIPOOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOCalendarInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOCalendarHeader": {
+                "type": "object"
+            },
+            "GetIPOCalendarOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOCalendarByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOCalendarByExchangeHeader": {
+                "type": "object"
+            },
+            "GetIPOCalendarByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOByStatusInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOByStatusHeader": {
+                "type": "object"
+            },
+            "GetIPOByStatusOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOListInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOListHeader": {
+                "type": "object"
+            },
+            "GetIPOListOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPODetailsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPODetailsHeader": {
+                "type": "object"
+            },
+            "GetIPODetailsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchIPOBySymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchIPOBySymbolHeader": {
+                "type": "object"
+            },
+            "SearchIPOBySymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchIPOByNameInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchIPOByNameHeader": {
+                "type": "object"
+            },
+            "SearchIPOByNameOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOPerformanceInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOPerformanceHeader": {
+                "type": "object"
+            },
+            "GetIPOPerformanceOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPO_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOResponse_tns": {
+                "type": "object"
+            },
+            "GetIPOCalendar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOCalendarResponse_tns": {
+                "type": "object"
+            },
+            "GetIPOCalendarByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOCalendarByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "GetIPOByStatus_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOByStatusResponse_tns": {
+                "type": "object"
+            },
+            "GetIPOList_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOListResponse_tns": {
+                "type": "object"
+            },
+            "GetIPODetails_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPODetailsResponse_tns": {
+                "type": "object"
+            },
+            "SearchIPOBySymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchIPOBySymbolResponse_tns": {
+                "type": "object"
+            },
+            "SearchIPOByName_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchIPOByNameResponse_tns": {
+                "type": "object"
+            },
+            "GetIPOPerformance_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIPOPerformanceResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfIPODetails_tns": {
+                "type": "object",
+                "properties": {
+                    "IPODetails": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IPODescription_tns": {
+                "type": "object",
+                "properties": {
+                    "IPOIdentifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Status": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FilingDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TradeDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EstimatedOfferDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferLowPrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferHighPrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferPrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferAmount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SmallMarketCap": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SpecialPurposeAcquisitionCompany": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfIPODescription_tns": {
+                "type": "object",
+                "properties": {
+                    "IPODescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfIPOUnderwriter_tns": {
+                "type": "object",
+                "properties": {
+                    "IPOUnderwriter": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfIPOPerformance_tns": {
+                "type": "object",
+                "properties": {
+                    "IPOPerformance": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IPOUnderwriter_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Role": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IPOPerformance_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferPrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OfferDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TradeDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ClosePrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ClosePriceDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PercentChange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
