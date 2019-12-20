@@ -1,0 +1,1170 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Calendar",
+        "description": "On-demand global economic calendar.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxCalendar.json\/XigniteCalendar"
+    ],
+    "paths": {
+        "\/GetEventsForNextNumberOfDays": {
+            "GET": {
+                "summary": "Get Events For Next Number Of Days",
+                "description": "Get events for the next number of days into the future.",
+                "operationId": "PostGeteventsfornextnumberofdays",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForWeek": {
+            "GET": {
+                "summary": "Get Events For Week",
+                "description": "Get all the events released during the week specified. Weeks are Monday - Sunday.",
+                "operationId": "PostGeteventsforweek",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListCountryCodes": {
+            "GET": {
+                "summary": "List Country Codes",
+                "description": "Get all of the country codes available to query on.",
+                "operationId": "PostListcountrycodes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListEventCodes": {
+            "GET": {
+                "summary": "List Event Codes",
+                "description": "Get all of the event codes available to query on.",
+                "operationId": "PostListeventcodes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventDetails": {
+            "GET": {
+                "summary": "Get Event Details",
+                "description": "Get the details for the specified event.",
+                "operationId": "PostGeteventdetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMultipleEventDetails": {
+            "GET": {
+                "summary": "Get Multiple Event Details",
+                "description": "Get the details for the specified events.",
+                "operationId": "PostGetmultipleeventdetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsByCountryCode": {
+            "GET": {
+                "summary": "Get Events By Country Code",
+                "description": "Get events based on the country code and optionally within a specified released range.",
+                "operationId": "PostGeteventsbycountrycode",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMostRecentEventsByEventCode": {
+            "GET": {
+                "summary": "Get Most Recent Events By Event Code",
+                "description": "Get the most recent events based on the event code and count.",
+                "operationId": "PostGetmostrecenteventsbyeventcode",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsByEventCode": {
+            "GET": {
+                "summary": "Get Events By Event Code",
+                "description": "Get events based on the event code and optionally within a specified released range.",
+                "operationId": "PostGeteventsbyeventcode",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsByEventName": {
+            "GET": {
+                "summary": "Get Events By Event Name",
+                "description": "Get events based on the event name and optionally within a specified released range.",
+                "operationId": "PostGeteventsbyeventname",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForDate": {
+            "GET": {
+                "summary": "Get Events For Date",
+                "description": "Get events for the specified date.",
+                "operationId": "PostGeteventsfordate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForMonth": {
+            "GET": {
+                "summary": "Get Events For Month",
+                "description": "Get events for the specified date.",
+                "operationId": "PostGeteventsformonth",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForRange": {
+            "GET": {
+                "summary": "Get Events For Range",
+                "description": "Get events for the specified range.",
+                "operationId": "PostGeteventsforrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForRangeLength": {
+            "GET": {
+                "summary": "Get Events For Range Length",
+                "description": "Get events for the date specified and next number of days past it.",
+                "operationId": "PostGeteventsforrangelength",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForToday": {
+            "GET": {
+                "summary": "Get Events For Today",
+                "description": "Get all the events released today.",
+                "operationId": "PostGeteventsfortoday",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsForTomorrow": {
+            "GET": {
+                "summary": "Get Events For Tomorrow",
+                "description": "Get all the events released tomorrow.",
+                "operationId": "PostGeteventsfortomorrow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsReleasedForRange": {
+            "GET": {
+                "summary": "Get Events Released For Range",
+                "description": "Get events released for the specified range.",
+                "operationId": "PostGeteventsreleasedforrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEventsReleasedForRangeLength": {
+            "GET": {
+                "summary": "Get Events Released For Range Length",
+                "description": "Get events released for the date specified and next number of days past it.",
+                "operationId": "PostGeteventsreleasedforrangelength",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/SearchEvents": {
+            "GET": {
+                "summary": "Search Events",
+                "description": "Perform a complex query on events.",
+                "operationId": "PostSearchevents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestUpdateTimeStamp": {
+            "GET": {
+                "summary": "Get Latest Update Time Stamp",
+                "description": "Get latest update TimeStamp for this service.",
+                "operationId": "PostGetlatestupdatetimestamp",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetServiceDemonstration": {
+            "GET": {
+                "summary": "Get Service Demonstration",
+                "description": "Get demonstration for this service.",
+                "operationId": "PostGetservicedemonstration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForNextNumberOfDaysInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForNextNumberOfDaysHeader": {
+                "type": "object"
+            },
+            "GetEventsForNextNumberOfDaysOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForWeekInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForWeekHeader": {
+                "type": "object"
+            },
+            "GetEventsForWeekOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCountryCodesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCountryCodesHeader": {
+                "type": "object"
+            },
+            "ListCountryCodesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListEventCodesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListEventCodesHeader": {
+                "type": "object"
+            },
+            "ListEventCodesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventDetailsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventDetailsHeader": {
+                "type": "object"
+            },
+            "GetEventDetailsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMultipleEventDetailsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMultipleEventDetailsHeader": {
+                "type": "object"
+            },
+            "GetMultipleEventDetailsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByCountryCodeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByCountryCodeHeader": {
+                "type": "object"
+            },
+            "GetEventsByCountryCodeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMostRecentEventsByEventCodeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMostRecentEventsByEventCodeHeader": {
+                "type": "object"
+            },
+            "GetMostRecentEventsByEventCodeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByEventCodeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByEventCodeHeader": {
+                "type": "object"
+            },
+            "GetEventsByEventCodeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByEventNameInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByEventNameHeader": {
+                "type": "object"
+            },
+            "GetEventsByEventNameOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForDateHeader": {
+                "type": "object"
+            },
+            "GetEventsForDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForMonthInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForMonthHeader": {
+                "type": "object"
+            },
+            "GetEventsForMonthOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForRangeHeader": {
+                "type": "object"
+            },
+            "GetEventsForRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForRangeLengthInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForRangeLengthHeader": {
+                "type": "object"
+            },
+            "GetEventsForRangeLengthOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForTodayInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForTodayHeader": {
+                "type": "object"
+            },
+            "GetEventsForTodayOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForTomorrowInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForTomorrowHeader": {
+                "type": "object"
+            },
+            "GetEventsForTomorrowOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsReleasedForRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsReleasedForRangeHeader": {
+                "type": "object"
+            },
+            "GetEventsReleasedForRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsReleasedForRangeLengthInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsReleasedForRangeLengthHeader": {
+                "type": "object"
+            },
+            "GetEventsReleasedForRangeLengthOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchEventsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchEventsHeader": {
+                "type": "object"
+            },
+            "SearchEventsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestUpdateTimeStampInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestUpdateTimeStampHeader": {
+                "type": "object"
+            },
+            "GetLatestUpdateTimeStampOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetServiceDemonstrationInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetServiceDemonstrationHeader": {
+                "type": "object"
+            },
+            "GetServiceDemonstrationOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForNextNumberOfDays_tns": {
+                "type": "object",
+                "properties": {
+                    "NextNumberOfDays": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForNextNumberOfDaysResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForWeek_tns": {
+                "type": "object",
+                "properties": {
+                    "ForDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForWeekResponse_tns": {
+                "type": "object"
+            },
+            "ListCountryCodes_tns": {
+                "type": "object"
+            },
+            "ListCountryCodesResponse_tns": {
+                "type": "object"
+            },
+            "ListEventCodes_tns": {
+                "type": "object"
+            },
+            "ListEventCodesResponse_tns": {
+                "type": "object"
+            },
+            "GetEventDetails_tns": {
+                "type": "object",
+                "properties": {
+                    "EventID": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventDetailsResponse_tns": {
+                "type": "object"
+            },
+            "GetMultipleEventDetails_tns": {
+                "type": "object",
+                "properties": {
+                    "EventIDs": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMultipleEventDetailsResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsByCountryCode_tns": {
+                "type": "object",
+                "properties": {
+                    "CountryCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnEnd": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByCountryCodeResponse_tns": {
+                "type": "object"
+            },
+            "GetMostRecentEventsByEventCode_tns": {
+                "type": "object",
+                "properties": {
+                    "EventCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMostRecentEventsByEventCodeResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsByEventCode_tns": {
+                "type": "object",
+                "properties": {
+                    "EventCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnEnd": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByEventCodeResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsByEventName_tns": {
+                "type": "object",
+                "properties": {
+                    "EventName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnEnd": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsByEventNameResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForDate_tns": {
+                "type": "object",
+                "properties": {
+                    "ForDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForDateResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForMonth_tns": {
+                "type": "object",
+                "properties": {
+                    "ForDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForMonthResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForRange_tns": {
+                "type": "object",
+                "properties": {
+                    "ReleasedOnStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnEnd": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForRangeLength_tns": {
+                "type": "object",
+                "properties": {
+                    "ReleasedOnStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfDays": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsForRangeLengthResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForToday_tns": {
+                "type": "object"
+            },
+            "GetEventsForTodayResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsForTomorrow_tns": {
+                "type": "object"
+            },
+            "GetEventsForTomorrowResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsReleasedForRange_tns": {
+                "type": "object",
+                "properties": {
+                    "ReleasedForStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedForEnd": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsReleasedForRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetEventsReleasedForRangeLength_tns": {
+                "type": "object",
+                "properties": {
+                    "ReleasedForStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfDays": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEventsReleasedForRangeLengthResponse_tns": {
+                "type": "object"
+            },
+            "SearchEvents_tns": {
+                "type": "object",
+                "properties": {
+                    "EventName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EventCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CountryCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedForStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedForEnd": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnStart": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReleasedOnEnd": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetUS": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetInternational": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchEventsResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestUpdateTimeStamp_tns": {
+                "type": "object"
+            },
+            "GetLatestUpdateTimeStampResponse_tns": {
+                "type": "object"
+            },
+            "GetServiceDemonstration_tns": {
+                "type": "object"
+            },
+            "GetServiceDemonstrationResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEventSummary_tns": {
+                "type": "object",
+                "properties": {
+                    "EventSummary": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCountryCode_tns": {
+                "type": "object",
+                "properties": {
+                    "CountryCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEventCode_tns": {
+                "type": "object",
+                "properties": {
+                    "EventCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEventValue_tns": {
+                "type": "object",
+                "properties": {
+                    "EventValue": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEventDetails_tns": {
+                "type": "object",
+                "properties": {
+                    "EventDetails": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
