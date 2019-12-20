@@ -1,0 +1,602 @@
+{
+    "id": "d840e8d62d4395ef5237c00b00947038",
+    "name": "Xignite Money Markets",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "6009b00a2c400270f5b2de9e4596814e",
+            "name": "Get Swap Rate",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRate",
+            "description": "Returns a Swap rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "03e83f44f09e0bdcd2d21c4207c5a7ba",
+            "name": "List Rates",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/ListRates",
+            "description": "List supported interest rates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "22c1a52a2eeb5a2de0d6d2bf78b81453",
+            "name": "Search Rates",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/SearchRates",
+            "description": "Search rate names and description",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "52e273e15b8668057de27f98f0d8d972",
+            "name": "Get Forward Rate Agreement",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetForwardRateAgreement",
+            "description": "Returns a calculated Forward Rate Agreement as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b55bb6cf96b64bfe87162b4e1c202bb",
+            "name": "Get Euro Dollar FRA Strip",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetEuroDollarFRAStrip",
+            "description": "Returns an IMM EuroDollar Synthetic Forward Rate strip",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "f41d744c947cde087e58df2513cab209",
+            "name": "Get Swaption",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwaption",
+            "description": "Returns a Swaption rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "b1d37a4d369fa4d87192e74460dd8da1",
+            "name": "Get Swaption Family",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwaptionFamily",
+            "description": "Returns a Swaption rate Family",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "5ad76e0adbdee186e3206b679342d3ff",
+            "name": "Get Historical Swaption",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwaption",
+            "description": "Returns a Swaption as of a historical date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "2229a10bfcfbe2481a4eddccde28580b",
+            "name": "Get Historical Swaption Family",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwaptionFamily",
+            "description": "Returns a Swaption rate Family",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "cabc6b78bffd241933e53e0a00d7dd71",
+            "name": "Get Swap Rate Family",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRateFamily",
+            "description": "Returns a Swap rate Family",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed1befef911b6b2eb93734b6eeeb3d55",
+            "name": "Get Historical Swap Rate",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRate",
+            "description": "Returns a Swap rate as of a historical date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "56b1fd50409cbf39cfd9014c8a48ace3",
+            "name": "Get Historical Swap Rate Range",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRateRange",
+            "description": "Returns a Swap rate as of a historical date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "c7b1e9782fff4ad61eafe8064383681a",
+            "name": "Get Swap Rate Extended",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRateExtended",
+            "description": "Returns latest Swap rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "794f2821bc03031c511656fa42c1f1d0",
+            "name": "Get Swap Rate Family Extended",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRateFamilyExtended",
+            "description": "Returns latest Swap rate family",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "baf342f9a5603232dba6897b7515f4e6",
+            "name": "Get Historical Swap Rate Extended",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRateExtended",
+            "description": "Returns historical swap rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "4e9adbc1536ccf3a4aaecd762607fa98",
+            "name": "Get Historical Swap Rate Extended Range",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRateExtendedRange",
+            "description": "Returns historical Swap rate range",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "fc426d9a653bdcde3e5442543efa3ca2",
+            "name": "List Swap Rates",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/ListSwapRates",
+            "description": "Returns swap rate currencies and tenors",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "2023b92cddf332bd0d9c1aa2689f3b58",
+            "name": "Get Treasury Rate",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetTreasuryRate",
+            "description": "Returns a real-time Treasury rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        },
+        {
+            "id": "f2ae3c48868725543c7520bfbf1bbe45",
+            "name": "Get Treasury Rate Family",
+            "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetTreasuryRateFamily",
+            "description": "Returns a real-time Treasury rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "rawModeData": ""
+        }
+    ]
+}
