@@ -1,0 +1,497 @@
+{
+    "id": "aaddca728e742c9b74db59dfd2ce7605",
+    "name": "Xignite Releases",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "ff0712eb15d4afd86fbacb643a8157bc",
+            "name": "Get Historical Market Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetHistoricalMarketHeadlines\/",
+            "description": "Returns market headlines for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Source",
+                    "description": "The source of the news.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "StartDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "2fba94ce4f7c2aa0795d2a4790ff6b96",
+            "name": "Get Historical Security Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetHistoricalSecurityHeadlines\/",
+            "description": "Returns headlines for a company and a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Source",
+                    "description": "The source of the news.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "StartDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "da6603e814b3a61682256400ae62aaeb",
+            "name": "Get Last Market Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetLastMarketHeadlines\/",
+            "description": "Returns market headlines published since a specific date and time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "SinceDate",
+                    "description": "The beginning of data range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "4f90ecad023346ad235964bb66a4052a",
+            "name": "Get Last Security Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetLastSecurityHeadlines\/",
+            "description": "Returns headlines for a company published since a specific date and time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "SinceDate",
+                    "description": "The beginning of data range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "0ac8a748da45eaac783bbbb00119442d",
+            "name": "Get Release Content",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetReleaseContent\/",
+            "description": "Return detailed information about a release as well as its content.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ReleaseID",
+                    "description": "The press release ID>",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae0a4d3254641261f258881670cc8751",
+            "name": "Get Todays Security Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetTodaysSecurityHeadlines",
+            "description": "Returns headlines for a company published today.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "3dc434b06fe45c37d3d9afe96714c9db",
+            "name": "Get Top Market Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetTopMarketHeadlines\/",
+            "description": "Returns a given number of market headlines published most recently.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Count",
+                    "description": "The number of news items to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a801919d1279053f3ab49ab89f0cb6a",
+            "name": "Get Top Security Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetTopSecurityHeadlines\/",
+            "description": "Returns a given number of company headlines published most recently.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "1bf9552e908cdc183353bbdc3216e8f2",
+            "name": "Search Market Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/SearchMarketHeadlines\/",
+            "description": "Search market headlines across all companies based on date, source, and title.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Source",
+                    "description": "The source of the news.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "StartDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Title",
+                    "description": "Title of the headlines.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        },
+        {
+            "id": "cddf9e22cb1597e7effd624a040794a8",
+            "name": "Search Security Headlines",
+            "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/SearchSecurityHeadlines\/",
+            "description": "Search headlines for a company across all companies based on date, source, and title.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Source",
+                    "description": "The source of the news.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "StartDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Title",
+                    "description": "Title of the headlines.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "rawModeData": ""
+        }
+    ]
+}
