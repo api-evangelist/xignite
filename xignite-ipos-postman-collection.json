@@ -1,0 +1,323 @@
+{
+    "id": "fc8be1d3ad633b53c0a9bd51698521ab",
+    "name": "Xignite IPOs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b7173b14100c5ff23a87ce700429c6d1",
+            "name": "Get IPO",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPO",
+            "description": "Post getipo",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc85cd04b63b865a0747fd108e8a7030",
+            "name": "Get IPO Calendar",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOCalendar",
+            "description": "Post getipocalendar",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "1fbcb53ef1699ff4556a88c765f3a027",
+            "name": "Get IPO Calendar By Exchange",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOCalendarByExchange",
+            "description": "Post getipocalendarbyexchange",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "a852be0c5b71f6ae4dd958840922a82a",
+            "name": "List Exchanges",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/ListExchanges",
+            "description": "Post listexchanges",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5091bf28d0af43e66d26a8068e57ebe",
+            "name": "Get IPO By Status",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOByStatus",
+            "description": "Post getipobystatus",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "cd7995a89ca80a0497f1af5b12ff7a8c",
+            "name": "Get IPO List",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOList",
+            "description": "Post getipolist",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "da71b1ef8201ba27dcf45bf2f3859684",
+            "name": "Get IPO Details",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPODetails",
+            "description": "Post getipodetails",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1cb740413e659a638f8715f077db41a",
+            "name": "Search IPO By Symbol",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/SearchIPOBySymbol",
+            "description": "Post searchipobysymbol",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "7282df76db4147ac8cd2dcb8d10873e4",
+            "name": "Search IPO By Name",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/SearchIPOByName",
+            "description": "Post searchipobyname",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d16146b02986e149713e54397573998",
+            "name": "Get IPO Performance",
+            "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOPerformance",
+            "description": "Post getipoperformance",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "rawModeData": ""
+        }
+    ]
+}
