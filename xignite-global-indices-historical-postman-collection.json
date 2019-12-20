@@ -1,0 +1,416 @@
+{
+    "id": "8afa16c8631125ed17491db84772a863",
+    "name": "Xignite Global Indices Historical",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "f9433e0ce9331ccdc9501be9358d0860",
+            "name": "Get Historical Index Values",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndexValues",
+            "description": "Get historical index values.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "f0b66bfb75966cc700b2f904b5d0510d",
+            "name": "Get Last Closing Indices Value",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetLastClosingIndicesValue",
+            "description": "Get last closing indices value.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "5077b0c07ff58fb337a307d1157a2f42",
+            "name": "Get Historical Indices Value",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndicesValue",
+            "description": "Get historical indices value.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "44bbb613c99783236b3eb0fbd8d817e6",
+            "name": "Get Last Closing Index Value",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetLastClosingIndexValue",
+            "description": "Get last closing index value.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "df7fa21b2e36a71546a3bf0a4bfc2afb",
+            "name": "Get Historical Index Value",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndexValue",
+            "description": "Get historical index value.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "26754ef18bc4de8ac70c895b0b5831ad",
+            "name": "Get Historical Index Values Trailing",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndexValuesTrailing",
+            "description": "Get historical index values trailing.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "e054641e5399fd43cb6297c31360c725",
+            "name": "Get Index Symbol Mapping By Old Symbol",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetIndexSymbolMappingByOldSymbol",
+            "description": "Get index symbol mapping by old symbol.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "84a03ae6fd96038e4cd3c4ee314e6c04",
+            "name": "Get Index Symbol Mappings By Old Symbols",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetIndexSymbolMappingsByOldSymbols",
+            "description": "Get index symbol mappings by old symbols.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "64f9c2ac69a2d38e782b3318cd0cb9ef",
+            "name": "List Index Groups",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/ListIndexGroups",
+            "description": "List index groups.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e3c94230d48dafcb837436d1d33cd7e",
+            "name": "List Indices By Index Group",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/ListIndicesByIndexGroup",
+            "description": "List indices by index group.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "27eff034146b7811c815639c9dd022e4",
+            "name": "Search Indices By Name",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/SearchIndicesByName",
+            "description": "Search indices by name.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "874ef3c27c4e8dd9af8b15a53e7043aa",
+            "name": "Get Chart Bars",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical, Bars",
+            "description": "Get chart bars.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        },
+        {
+            "id": "7659c9fc20b1228eaacc73472a20d3c0",
+            "name": "Get Index Bars",
+            "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetIndexBars",
+            "description": "Get index bars.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "rawModeData": ""
+        }
+    ]
+}
