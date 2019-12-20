@@ -1,0 +1,292 @@
+{
+    "id": "f41f8f060192b95b73141ea4ca708c2c",
+    "name": "Xignite Fact Set Estimates",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b957e18fcb508bb59ade27bea33d509c",
+            "name": "Get Estimates",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetEstimates",
+            "description": "Get Estimates on AsOfDate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "9a432081d0a71f1a581c7a809892ece2",
+            "name": "Get Latest Recommendation Summaries",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetLatestRecommendationSummaries",
+            "description": "Get Latest Recommendation Summary",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "a1c58c865d5ca5be34f782ac6d5bfbbe",
+            "name": "List Exchanges",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/ListExchanges",
+            "description": "List Exchanges",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "bfaeba3fbabf90a435d610d4aa3e0365",
+            "name": "List Companies",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/ListCompanies",
+            "description": "List Symbols",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5f6edad11ebb56f57a2328034b2ab21",
+            "name": "List Estimates",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/ListEstimates",
+            "description": "List Estimates",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "20e070dcef19f6f3f14664ae7709fc3a",
+            "name": "Get Latest Estimates",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetLatestEstimates",
+            "description": "Get Latest Estimates",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "150ccad5e1d76e47ee0a1f13bfa5663d",
+            "name": "Get Estimates Range",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetEstimatesRange",
+            "description": "Get Estimates Range",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "8137e90e4747ddcf6ca6591c348297d0",
+            "name": "Get Recommendation Summary Range",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetRecommendationSummaryRange",
+            "description": "Get Recommendation Summaries in Range",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        },
+        {
+            "id": "736c59fcc3f40e6875704951673f5fbc",
+            "name": "Get Recommendation Summaries",
+            "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetRecommendationSummaries",
+            "description": "Get Recommendation Summaries on AsOfDate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "rawModeData": ""
+        }
+    ]
+}
