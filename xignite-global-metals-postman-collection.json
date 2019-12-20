@@ -1,0 +1,602 @@
+{
+    "id": "365297e31e5ae156dbfe2450e082c7ce",
+    "name": "Xignite Global Metals",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "09fbff494e14722f0821a4d8f6da02de",
+            "name": "Get Real Time Metal Quotes",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetRealTimeMetalQuotes",
+            "description": "Get real time exchange rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "f3d5fb1fa679be7488ee3ee409525d90",
+            "name": "Get Historical Metal Quotes",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalMetalQuotes",
+            "description": "Get cross sectional historical metal quotes at a given time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "d8badaccf85a900277a5093b57a40efd",
+            "name": "Get Real Time Metal Quote",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetRealTimeMetalQuote",
+            "description": "Get real time metal quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ca11b43128aaaf3c1eed7a8f48c489c",
+            "name": "Get Chart Bars",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals, Bars",
+            "description": "Get intraday bars of specified intervals within a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "121207dd9573e61ec0f0246d96f8761b",
+            "name": "List Metals",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/ListMetals",
+            "description": "List all Metals.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "63605b3dc9c9a0442bb03e4987ee8d62",
+            "name": "Get Real Time Extended Metal Quote",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetRealTimeExtendedMetalQuote",
+            "description": "Get real time extended metal quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "29c00fd8a92a321798394045aa5be845",
+            "name": "Get Historical Metal Quote",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalMetalQuote",
+            "description": "Get historical metal quote at a given time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "7f5f0a51a34e67a04e2446528a1b96c2",
+            "name": "Get Latest Historical Metal Quote",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLatestHistoricalMetalQuote",
+            "description": "Get historical metal quote by a given time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "d0234f5f2aaeaaf70038997b307b4a10",
+            "name": "Get Latest Historical Metal Quotes",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLatestHistoricalMetalQuotes",
+            "description": "Get cross sectional historical metal quotes by a given time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "65c6b0a31e058aae8dc31601a580303c",
+            "name": "Get Historical Metal Quotes Range",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalMetalQuotesRange",
+            "description": "Get historical metal quotes time series.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "0fb0aca8a9998962a4deec0018902b1e",
+            "name": "Get London Historical Metal Quotes Range",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLondonHistoricalMetalQuotesRange",
+            "description": "Get historical metal quotes based on Legacy London spot prices.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "5351abe41369f25fb60a7f00b092d45b",
+            "name": "Get Tick",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetTick",
+            "description": "Get intraday tick at given time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "1da6f24a39b7cb51855e57fbd24426ef",
+            "name": "Get Ticks",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetTicks",
+            "description": "Get intraday ticks of specified intervals within a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a43cf990ee3ca7584944e4ec2ff97dd",
+            "name": "Get Bar",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetBar",
+            "description": "Get intraday bar at given time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "6dc510f5282d5a387afafc94caa2f38b",
+            "name": "Get Bars",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetBars",
+            "description": "Get intraday bars of specified intervals within a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "023d97d7c8ce6e84b8a42f6b4429bb17",
+            "name": "Get London Fixing",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLondonFixing",
+            "description": "Get last london fixing metal quotes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "c99a6e4ac671950664f69e83619a16e2",
+            "name": "Get Historical London Fixing Range",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalLondonFixingRange",
+            "description": "Get historical london fixing metal quotes time series.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "09e2993885628aee31f82385a5517751",
+            "name": "Get Top Industry Headlines",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetTopIndustryHeadlines",
+            "description": "Get top industry headlines.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        },
+        {
+            "id": "61c7d4ae0758dbaba010cc3e439f2cfb",
+            "name": "Get Base Metal Price",
+            "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetBaseMetalPrice",
+            "description": "Get base metal price.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "rawModeData": ""
+        }
+    ]
+}
