@@ -1,0 +1,967 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global Real Time Options",
+        "description": "Complete stock option management application.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobalrealtimeoptions.xignite.comxglobalrealtimeoptions.json\/XigniteGlobalRealTimeOptions"
+    ],
+    "paths": {
+        "\/GetBlackScholesOptionValue": {
+            "GET": {
+                "summary": "Get Black Scholes Option Value",
+                "description": "Calculates the value of an option using the Black-Scholes formula.",
+                "operationId": "GetBlackScholesOptionValue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllEquityOptionChain": {
+            "GET": {
+                "summary": "Get All Equity Option Chain",
+                "description": "Returns options chains for an equity.",
+                "operationId": "GetAllEquityOptionChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllExtendedEquityOptionChain": {
+            "GET": {
+                "summary": "Get All Extended Equity Option Chain",
+                "description": "Returns extended options chains for an equity.",
+                "operationId": "GetAllExtendedEquityOptionChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEquityOptionChain": {
+            "GET": {
+                "summary": "Get Equity Option Chain",
+                "description": "Returns options chain for an equity.",
+                "operationId": "GetEquityOptionChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedEquityOptionChain": {
+            "GET": {
+                "summary": "Get Extended Equity Option Chain",
+                "description": "Returns extended options chain for an equity.",
+                "operationId": "GetExtendedEquityOptionChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEquityOption": {
+            "GET": {
+                "summary": "Get Equity Option",
+                "description": "Returns a specific equity option.",
+                "operationId": "GetEquityOption",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedEquityOption": {
+            "GET": {
+                "summary": "Get Extended Equity Option",
+                "description": "Returns a specific equity extended option.",
+                "operationId": "GetExtendedEquityOption",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEquityOptionSymbol": {
+            "GET": {
+                "summary": "Get Equity Option Symbol",
+                "description": "Returns the symbol for an equity option based on month, year and strike price.",
+                "operationId": "GetEquityOptionSymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEquityOptionBySymbol": {
+            "GET": {
+                "summary": "Get Equity Option By Symbol",
+                "description": "Returns a specific equity option.",
+                "operationId": "GetEquityOptionBySymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedEquityOptionBySymbol": {
+            "GET": {
+                "summary": "Get Extended Equity Option By Symbol",
+                "description": "Returns a specific equity extended option.",
+                "operationId": "GetExtendedEquityOptionBySymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEquityOptionBySymbols": {
+            "GET": {
+                "summary": "Get Equity Option By Symbols",
+                "description": "Returns an array of specific equity options.",
+                "operationId": "GetEquityOptionBySymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedEquityOptionBySymbols": {
+            "GET": {
+                "summary": "Get Extended Equity Option By Symbols",
+                "description": "Returns an array of specific equity extended options.",
+                "operationId": "GetExtendedEquityOptionBySymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Bars": {
+            "GET": {
+                "summary": "Get Chart Bars",
+                "description": "Get chart bars",
+                "operationId": "GetChartBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBlackScholesOptionValueInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBlackScholesOptionValueHeader": {
+                "type": "object"
+            },
+            "GetBlackScholesOptionValueOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllEquityOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllEquityOptionChainHeader": {
+                "type": "object"
+            },
+            "GetAllEquityOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllExtendedEquityOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllExtendedEquityOptionChainHeader": {
+                "type": "object"
+            },
+            "GetAllExtendedEquityOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionChainHeader": {
+                "type": "object"
+            },
+            "GetEquityOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionChainHeader": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionHeader": {
+                "type": "object"
+            },
+            "GetEquityOptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionHeader": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionSymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionSymbolHeader": {
+                "type": "object"
+            },
+            "GetEquityOptionSymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionBySymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionBySymbolHeader": {
+                "type": "object"
+            },
+            "GetEquityOptionBySymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionBySymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionBySymbolHeader": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionBySymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionBySymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionBySymbolsHeader": {
+                "type": "object"
+            },
+            "GetEquityOptionBySymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionBySymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionBySymbolsHeader": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionBySymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsHeader": {
+                "type": "object"
+            },
+            "GetChartBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBlackScholesOptionValue_tns": {
+                "type": "object",
+                "properties": {
+                    "StockPrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StrikePrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearsToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RiskFreeRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volatility": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBlackScholesOptionValueResponse_tns": {
+                "type": "object"
+            },
+            "GetAllEquityOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllEquityOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "GetAllExtendedEquityOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllExtendedEquityOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "GetEquityOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "GetEquityOption_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StrikePrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedEquityOption_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StrikePrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionResponse_tns": {
+                "type": "object"
+            },
+            "GetEquityOptionSymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StrikePrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionSymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetEquityOptionBySymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionBySymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionBySymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionBySymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetEquityOptionBySymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEquityOptionBySymbolsResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedEquityOptionBySymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedEquityOptionBySymbolsResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Precision": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeExtended": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfOption_tns": {
+                "type": "object",
+                "properties": {
+                    "Option": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExtendedOption_tns": {
+                "type": "object",
+                "properties": {
+                    "ExtendedOption": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "ChartBar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExpiration_tns": {
+                "type": "object",
+                "properties": {
+                    "Expiration": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExtendedExpiration_tns": {
+                "type": "object",
+                "properties": {
+                    "ExtendedExpiration": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volume": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Trades": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "VWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Session": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AdjustmentRatio": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
