@@ -1,0 +1,664 @@
+{
+    "id": "3f99efab47ca789722d133b50cbb634f",
+    "name": "Xignite Statistics",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "e42598993a424de657cb335d003e9afa",
+            "name": "Get Categories And Topics",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetCategoriesAndTopics",
+            "description": "Get categories and topics for statistics.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "93ce8f1425025535bb9376b7f33a88e5",
+            "name": "Get Categories",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetCategories",
+            "description": "Get valid categories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "d68e835f967fa1b7a7cc5508239d5c69",
+            "name": "Get Topics",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetTopics",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "3112ac0c8c8c3049108c046202a0d122",
+            "name": "Get Topic Details",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetTopicDetails",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "9c16484e0e2f970c435949a90ece8cda",
+            "name": "Get Topic Statistics",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetTopicStatistics",
+            "description": "Get statistics for a topic and a period.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8b8c4c3e0f6d6baeb6a9c631f036687",
+            "name": "Get Topic Data",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetTopicData",
+            "description": "Get time-series data for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "142d49d9856bb2955ab617981b5efdea",
+            "name": "Get Latest Topic Data",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetLatestTopicData",
+            "description": "Get lastest value for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "feda95f118ee0ee77fb2dc7d05175178",
+            "name": "Get Annualized Topic Data",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics\/GetAnnualizedTopicData",
+            "description": "Get annualized time-series data for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6e6dc7e6dbe220893a88f3cdac6cce4",
+            "name": "Get Topic Chart",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatisticsTopic, ",
+            "description": "Get time-series data and a URL to a chart for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "7397daeadc93ea0f3039c582c02820a5",
+            "name": "Get Topic Chart Preset",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatisticsTopic, , Preset",
+            "description": "Get a preset chart for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "32b28461d74c9fd9b7091df8ecc7a19e",
+            "name": "Get Topic Chart Custom",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatisticsTopic, , Custom",
+            "description": "Get time-series data and a URL to a custom chart for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "126d4b11f5f498d6f91e80720a069544",
+            "name": "Get Topic Binary Chart",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatisticsTopic, Binary, ",
+            "description": "Get time-series and a chart in binary format for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "a4acae56621a9a6be7daee71bd332583",
+            "name": "Get Topic Binary Chart Preset",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatisticsTopic, Binary, , Preset",
+            "description": "Get time-series and a chart in binary format for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "949649bbb9a2e5a4192a9bd344487e56",
+            "name": "Get Topic Binary Chart Custom",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatisticsTopic, Binary, , Custom",
+            "description": "Get time-series and a custom chart in binary format for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "5128a8e2391ffb8f5afe3bd6c43083cf",
+            "name": "Get Chart Url",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Url",
+            "description": "Get chart url for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "62551e687729355d8a65db6996e2412c",
+            "name": "Get Chart Url Preset",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Url, Preset",
+            "description": "Get chart url for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "1a6be5bf42667d872f4ed53a74004c22",
+            "name": "Get Chart Url Custom",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Url, Custom",
+            "description": "Get chart url for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "145bbcc98a9b1acc34da8acd5f0d8d89",
+            "name": "Get Chart Binary",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Binary",
+            "description": "Get chart in binary format for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7548098d9728c048aac3c2a36c7bc47",
+            "name": "Get Chart Binary Preset",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Binary, Preset",
+            "description": "Get chart in binary format for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "d751dde6d9ef9e58458a577ab8a85c52",
+            "name": "Get Chart Binary Custom",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Binary, Custom",
+            "description": "Get chart in binary format for a topic.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        },
+        {
+            "id": "2189b7cbf1d85efacc9e227afb9f1877",
+            "name": "Get Chart Design",
+            "url": "httpswww.xignite.comxStatistics.json\/XigniteStatistics, Design",
+            "description": "Returns the default design class for the statistics Chart.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3f99efab47ca789722d133b50cbb634f",
+            "rawModeData": ""
+        }
+    ]
+}
