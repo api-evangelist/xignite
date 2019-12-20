@@ -1,0 +1,1935 @@
+{
+    "id": "d033305c3f416b34be04e5a48db852b6",
+    "name": "Xignite Rates",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "11c70f92da222c3cab0d35e13d894a3f",
+            "name": "Get LIBOR Secure",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetLIBORSecure",
+            "description": "Returns Libor as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0233b68eb2b6f1dc73642f420c39d4d",
+            "name": "Get LIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetLIBOR",
+            "description": "Returns Libor as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "aff0e33b6823fdbf5dd32f67d0309073",
+            "name": "Get State Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetStateRate",
+            "description": "Returns a state rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "08f38ccff00df963546a1648d587c981",
+            "name": "Get State Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetStateRates",
+            "description": "Returns state rates for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "85be4dc3ea556095cd6662ffd92bbfc0",
+            "name": "Get Federal Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetFederalRate",
+            "description": "Returns a federal discount borrowing rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ef8f2e5ac1fefa56b720d824df2a274",
+            "name": "Get Federal Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetFederalRates",
+            "description": "Returns federal discount borrowing for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "ce0523735a8daf64e0cdc2982faeaeb8",
+            "name": "Get Forward Rate Agreement",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetForwardRateAgreement",
+            "description": "Returns a calculated Forward Rate Agreement as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "e13dbc5f72fa4540948ef3cfa84fd9d6",
+            "name": "Get Euro DollarFRA Strip",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetEuroDollarFRAStrip",
+            "description": "Returns an IMM EuroDollar Synthetic Forward Rate strip",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "483137954b905d18ce48b3ee26d53ba4",
+            "name": "Get Swap Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetSwapRate",
+            "description": "Returns a Swap rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "7db36f3955175e99dbfc80897bbae8f9",
+            "name": "Get Swap Rate Family",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetSwapRateFamily",
+            "description": "Returns a Swap rate Family",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "3aef8de4e7965199a5064d7b46594b0c",
+            "name": "Get Historical Swap Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHistoricalSwapRate",
+            "description": "Returns a Swap rate as of a historical date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "774411c99aa3404fc9e412f3a4c24e8b",
+            "name": "Get Historical Swap Rate Range",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHistoricalSwapRateRange",
+            "description": "Returns a Swap rate as of a historical date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6b909ff0731ff232e4e39ffd645e646",
+            "name": "Get REIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetREIBOR",
+            "description": "Returns a REIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "d39c0f610ebf5badf4347c4a8d657dfa",
+            "name": "Get HIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHIBOR",
+            "description": "Returns a HIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "63812a25b3d183219d6e8688deeef950",
+            "name": "Get SOFIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetSOFIBOR",
+            "description": "Returns a SOFIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ea648b904eef03cd88e30f4726a2031",
+            "name": "Get REIBID",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetREIBID",
+            "description": "Returns a REIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "33d12844f163951398bfbf226a0498e8",
+            "name": "Get OIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetOIBOR",
+            "description": "Returns a OIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "01248d0f652bd49932fded1ccb1434a8",
+            "name": "Get SIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetSIBOR",
+            "description": "Returns a SIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "50db96de136daae3c82c82860b39abca",
+            "name": "Get CIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetCIBOR",
+            "description": "Returns a CIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "e01f59c53260d1ad4c4794ed94bf8a42",
+            "name": "Get STIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetSTIBOR",
+            "description": "Returns a STIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "6911da5edbe35b7fbb854d55f0941abf",
+            "name": "Get VILIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetVILIBOR",
+            "description": "Returns a VILIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "a1d5ce4601d42285929dc4cb838e26b4",
+            "name": "Get WIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetWIBOR",
+            "description": "Returns a WIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9c6bdd213d7fd23d45abda92ee46d25",
+            "name": "Get EURIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetEURIBOR",
+            "description": "Returns a EURIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "7f2b855468a9ed0ce8b0723e0974567e",
+            "name": "Get Historical LIBOR",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHistoricalLIBOR",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "de06e137e0f1afc9597b1a82c743670a",
+            "name": "Get WSJ Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetWSJRate",
+            "description": "Returns a specific interest rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "65eaabe52362ddc424c706c817075162",
+            "name": "Get Telerate3750",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetTelerate3750",
+            "description": "Returns LIBOR rates as published daily on the Telerate 3750 screen at about 11:00 AM London time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "d2c8b0f4a1e3112971d5aae79be0ac16",
+            "name": "Get Last London Fixing",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetLastLondonFixing",
+            "description": "Returns last UK Gold or Silver Fixings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "02e4f0cc2efbcbf52e51631dd6fc7839",
+            "name": "List Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/ListRates",
+            "description": "List supported interest rates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "c229cf28a1ad6f86bad1c6312fce0f07",
+            "name": "List Rates By Rate Family",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/ListRatesByRateFamily",
+            "description": "List supported interest rates from a RateFamilyType.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "5688e1134468851636323d81dc3a8400",
+            "name": "Search Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/SearchRates",
+            "description": "Search rate names and description",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "722248cb4c78a996e65c5f359a33099f",
+            "name": "Get Rate Symbol",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateSymbol",
+            "description": "Returns the symbol for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e9825b6f52ce9ffbdfd8efd09d55ec4",
+            "name": "Get Rate From Symbol",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateFromSymbol",
+            "description": "Returns the symbol for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ed6ebed08deb41bc645697543552594",
+            "name": "Get Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRate",
+            "description": "Returns a rate as of a specific date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "5c46e729b5de46c3d0c50a39bda96d75",
+            "name": "Get Rate Family Table",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateFamilyTable",
+            "description": "Returns a rate table for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "229af307ecb3fa47baf6eeb459d32515",
+            "name": "Get Average Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetAverageRate",
+            "description": "Returns an average rate as of a specific date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "007986ea603ea84cf2977487c3d93a74",
+            "name": "Get Average Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetAverageRates",
+            "description": "Returns average rate for a period.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "9eee0bb200eaa888e0af4382219831ab",
+            "name": "Get Rate Moving Average",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateMovingAverage",
+            "description": "Returns a moving  average rate as of a specific date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "7379fca0f257b4553e8247cc83c0ed03",
+            "name": "Get Daily Average",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetDailyAverage",
+            "description": "Returns a daily average rate as of a specific date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5bdd8cde9c318ff2e06587f4e48b9cd",
+            "name": "Get Monthly Treasury Average",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetMonthlyTreasuryAverage",
+            "description": "Returns a daily average rate as of a specific date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "498d266d0bbe01e30e7069ea8efcd313",
+            "name": "Get Rate Family",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateFamily",
+            "description": "Returns a collection of related rate as of a specific date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "498c758123d4826309deac23754d6a2d",
+            "name": "Get Todays Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetTodaysRate",
+            "description": "Returns end of day closing value for a rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3e87ad332e5c0dd89e759c0e9101469",
+            "name": "Get Latest Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetLatestRate",
+            "description": "Returns latest value for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "030f6728275e0d3372f9bf2281940436",
+            "name": "Get Latest Rate Special",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetLatestRateSpecial",
+            "description": "Returns latest value for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "91b099838746f33e3cf41b25d27534da",
+            "name": "Get Latest Rate Family",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetLatestRateFamily",
+            "description": "Returns latest values for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "f37944aec9a3afd309d5a63d0333ca92",
+            "name": "Get Real Time Rate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRealTimeRate",
+            "description": "Returns the value for a rate as of a specific time in the day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9b080313cff756459c5daff839a48ed",
+            "name": "Get Rate As Of Time",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateAsOfTime",
+            "description": "Returns the value for a rate as of a specific time in the day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "160907c9ccf4218c511a6698bb06842a",
+            "name": "Get Historical Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHistoricalRates",
+            "description": "Returns a rate for a range of dates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "5eacaa026c490e7a3f0ae67332da9823",
+            "name": "Get Historical Weekly Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHistoricalWeeklyRates",
+            "description": "Returns a rate for a range of dates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "c202e46b5934aac89e3919ed709eabc8",
+            "name": "Get Historical Rate Family",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetHistoricalRateFamily",
+            "description": "Returns a rate family and for a range of dates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "a2373f262aa1eb1d249e801e3c6a9df9",
+            "name": "Get Rate Description",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateDescription",
+            "description": "Returns a description for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "9bfb74fd4f1bdb56d6e05a498d2eef3f",
+            "name": "Get Rate Statistics",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetRateStatistics",
+            "description": "Returns statistics for available rates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "889a97c6b4e702fa6354d855285b7abe",
+            "name": "Draw Rate Chart Custom",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRatesDraw, Rate, , Custom",
+            "description": "Draw a custom rate chart for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "7cfa7fc49e8ef34337400bfad72b2cd0",
+            "name": "Draw Rate Chart",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRatesDraw, Rate, ",
+            "description": "Draw a standard rate chart for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "04532a36e338718012c2c4975cd46eac",
+            "name": "Draw Rate Chart Preset",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRatesDraw, Rate, , Preset",
+            "description": "Draw a standard rate chart for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "fd416646fcdc3bfcf64f12d413b0142c",
+            "name": "Get Chart Design",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates, Design",
+            "description": "Returns the default design class for the rate Chart.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "52c1dcd49bca9701bb9f91fcd7881756",
+            "name": "Draw Yield Curve",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/DrawYieldCurve",
+            "description": "Draw a yield curve for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "260d4e25f20f4a6866984d99229ebeda",
+            "name": "Draw Yield Curve Preset",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/DrawYieldCurvePreset",
+            "description": "Draw a yield curve for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac0335c562271fe1d647c32707af7885",
+            "name": "Draw Yield Curve Custom",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/DrawYieldCurveCustom",
+            "description": "Draw a yield curve for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e5b0c9a5a5ac1ef6587be47e3131566",
+            "name": "Interpolate",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/Interpolate",
+            "description": "Interpolate a data series using various methodologies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "d089895695bb5d59c3d65afceafe53bb",
+            "name": "Get FHL Bank Rates",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetFHLBankRates",
+            "description": "Returns Federal Home Loan Bank rates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "f14a38fc812f0b7f3fac4e707e04bcbd",
+            "name": "Get Auction Result",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetAuctionResult",
+            "description": "Returns an auction result by cusip.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        },
+        {
+            "id": "08bdac1bab0147b800efad6909247198",
+            "name": "Get Auction Results",
+            "url": "httpswww.xignite.comxRates.json\/XigniteRates\/GetAuctionResults",
+            "description": "Returns auction results by date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d033305c3f416b34be04e5a48db852b6",
+            "rawModeData": ""
+        }
+    ]
+}
