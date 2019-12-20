@@ -1,0 +1,478 @@
+{
+    "id": "60e30d45868cfc00c7063b3ef5a30974",
+    "name": "Xignite NASDAQ Last Sale",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "52e8792fd5b71f89366328a776ff6eec",
+            "name": "Get Last Sale",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSale",
+            "description": "Returns real time stock quote for a given stock ticker",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "f13440b06ad25d47f9545a2d53f5631c",
+            "name": "Get Last Sales",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSales",
+            "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "b0594335440ce1d0c77610299256c68b",
+            "name": "Get Bar",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetBar",
+            "description": "Returns a single bar for a specific time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "c17fdaaec61e93b272a53da22ffdf9cb",
+            "name": "Get Bars",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetBars",
+            "description": "Returns a set of bars for a stock and a time range during the trading day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "602cf39e02b8778a89f87b9cbe85a78e",
+            "name": "Get Chart Bars",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale, Bars",
+            "description": "Returns a set of partial bars for a stock and a time range during the trading day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf0361ca782ccc40563e1618db5bab6d",
+            "name": "Get Last Sale By Identifier",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSaleByIdentifier",
+            "description": "Returns a real-time quote for a security based on the last trade execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "aba627891927670edc73ebf51061568f",
+            "name": "Get Last Sales By Identifiers",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSalesByIdentifiers",
+            "description": "Returns a real-time quote for a security based on the last trade execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a656f5fdb256292552dffed38bee7ff",
+            "name": "Get Last Sale With Fallback",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSaleWithFallback",
+            "description": "Returns real time stock quote for a given stock ticker",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "5b6af7347de062aa04ebb4e33f6b4487",
+            "name": "Get Last Sale By Identifier With Fallback",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSaleByIdentifierWithFallback",
+            "description": "Returns a real-time quote for a security based on the last trade execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "525c8146b48a812ca9e69e007a3d9dbb",
+            "name": "Get Last Sales With Fallback",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSalesWithFallback",
+            "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "f99994735e1dea16b484d3bb3f681cea",
+            "name": "List Traded Symbols",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/ListTradedSymbols",
+            "description": "Returns all symbols and names that are traded",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "043708a1e734b41e8b28689a34d4b106",
+            "name": "Get Quote",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetQuote",
+            "description": "Returns a real-time NASDAQ BASIC quote for given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a7f5a0d87f87284aff25ab44a576b0e",
+            "name": "Get Quotes",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetQuotes",
+            "description": "Returns real-time NASDAQ BASIC quotes for given securities.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d0c3a50288d30900021f8a9ff3e1b8c",
+            "name": "Get Extended Quote",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetExtendedQuote",
+            "description": "Returns a real-time NASDAQ BASIC quote for given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        },
+        {
+            "id": "d792b6bc02175f433396825e41863251",
+            "name": "Get Extended Quotes",
+            "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetExtendedQuotes",
+            "description": "Returns real-time NASDAQ BASIC quotes for given securities.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "rawModeData": ""
+        }
+    ]
+}
