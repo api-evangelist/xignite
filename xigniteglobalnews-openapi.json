@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "XigniteGlobalNews",
+        "description": "Financial news APIs.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpglobalnews.xignite.comxGlobalNews.xml\/"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
