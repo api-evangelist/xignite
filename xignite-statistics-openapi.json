@@ -1,0 +1,1351 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Statistics",
+        "description": "Delivers and charts more than 1400 economical time-series fom the Federal Reserve Bank.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxStatistics.json\/XigniteStatistics"
+    ],
+    "paths": {
+        "\/GetCategoriesAndTopics": {
+            "GET": {
+                "summary": "Get Categories And Topics",
+                "description": "Get categories and topics for statistics.",
+                "operationId": "PostGetcategoriesandtopics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCategories": {
+            "GET": {
+                "summary": "Get Categories",
+                "description": "Get valid categories.",
+                "operationId": "PostGetcategories",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopics": {
+            "GET": {
+                "summary": "Get Topics",
+                "description": "",
+                "operationId": "PostGettopics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopicDetails": {
+            "GET": {
+                "summary": "Get Topic Details",
+                "description": "",
+                "operationId": "PostGettopicdetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopicStatistics": {
+            "GET": {
+                "summary": "Get Topic Statistics",
+                "description": "Get statistics for a topic and a period.",
+                "operationId": "PostGettopicstatistics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopicData": {
+            "GET": {
+                "summary": "Get Topic Data",
+                "description": "Get time-series data for a topic.",
+                "operationId": "PostGettopicdata",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestTopicData": {
+            "GET": {
+                "summary": "Get Latest Topic Data",
+                "description": "Get lastest value for a topic.",
+                "operationId": "PostGetlatesttopicdata",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAnnualizedTopicData": {
+            "GET": {
+                "summary": "Get Annualized Topic Data",
+                "description": "Get annualized time-series data for a topic.",
+                "operationId": "PostGetannualizedtopicdata",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Topic, ": {
+            "GET": {
+                "summary": "Get Topic Chart",
+                "description": "Get time-series data and a URL to a chart for a topic.",
+                "operationId": "PostGettopicchart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Topic, , Preset": {
+            "GET": {
+                "summary": "Get Topic Chart Preset",
+                "description": "Get a preset chart for a topic.",
+                "operationId": "PostGettopicchartpreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Topic, , Custom": {
+            "GET": {
+                "summary": "Get Topic Chart Custom",
+                "description": "Get time-series data and a URL to a custom chart for a topic.",
+                "operationId": "PostGettopicchartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Topic, Binary, ": {
+            "GET": {
+                "summary": "Get Topic Binary Chart",
+                "description": "Get time-series and a chart in binary format for a topic.",
+                "operationId": "PostGettopicbinarychart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Topic, Binary, , Preset": {
+            "GET": {
+                "summary": "Get Topic Binary Chart Preset",
+                "description": "Get time-series and a chart in binary format for a topic.",
+                "operationId": "PostGettopicbinarychartpreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Topic, Binary, , Custom": {
+            "GET": {
+                "summary": "Get Topic Binary Chart Custom",
+                "description": "Get time-series and a custom chart in binary format for a topic.",
+                "operationId": "PostGettopicbinarychartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Url": {
+            "GET": {
+                "summary": "Get Chart Url",
+                "description": "Get chart url for a topic.",
+                "operationId": "PostGetcharturl",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Url, Preset": {
+            "GET": {
+                "summary": "Get Chart Url Preset",
+                "description": "Get chart url for a topic.",
+                "operationId": "PostGetcharturlpreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Url, Custom": {
+            "GET": {
+                "summary": "Get Chart Url Custom",
+                "description": "Get chart url for a topic.",
+                "operationId": "PostGetcharturlcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Binary": {
+            "GET": {
+                "summary": "Get Chart Binary",
+                "description": "Get chart in binary format for a topic.",
+                "operationId": "PostGetchartbinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Binary, Preset": {
+            "GET": {
+                "summary": "Get Chart Binary Preset",
+                "description": "Get chart in binary format for a topic.",
+                "operationId": "PostGetchartbinarypreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Binary, Custom": {
+            "GET": {
+                "summary": "Get Chart Binary Custom",
+                "description": "Get chart in binary format for a topic.",
+                "operationId": "PostGetchartbinarycustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Design": {
+            "GET": {
+                "summary": "Get Chart Design",
+                "description": "Returns the default design class for the statistics Chart.",
+                "operationId": "PostGetchartdesign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCategoriesAndTopicsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCategoriesAndTopicsHeader": {
+                "type": "object"
+            },
+            "GetCategoriesAndTopicsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCategoriesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCategoriesHeader": {
+                "type": "object"
+            },
+            "GetCategoriesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicsHeader": {
+                "type": "object"
+            },
+            "GetTopicsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicDetailsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicDetailsHeader": {
+                "type": "object"
+            },
+            "GetTopicDetailsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicStatisticsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicStatisticsHeader": {
+                "type": "object"
+            },
+            "GetTopicStatisticsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicDataInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicDataHeader": {
+                "type": "object"
+            },
+            "GetTopicDataOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestTopicDataInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestTopicDataHeader": {
+                "type": "object"
+            },
+            "GetLatestTopicDataOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAnnualizedTopicDataInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAnnualizedTopicDataHeader": {
+                "type": "object"
+            },
+            "GetAnnualizedTopicDataOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartHeader": {
+                "type": "object"
+            },
+            "GetTopicChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartPresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartPresetHeader": {
+                "type": "object"
+            },
+            "GetTopicChartPresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartCustomHeader": {
+                "type": "object"
+            },
+            "GetTopicChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartHeader": {
+                "type": "object"
+            },
+            "GetTopicBinaryChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartPresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartPresetHeader": {
+                "type": "object"
+            },
+            "GetTopicBinaryChartPresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartCustomHeader": {
+                "type": "object"
+            },
+            "GetTopicBinaryChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlHeader": {
+                "type": "object"
+            },
+            "GetChartUrlOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlPresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlPresetHeader": {
+                "type": "object"
+            },
+            "GetChartUrlPresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlCustomHeader": {
+                "type": "object"
+            },
+            "GetChartUrlCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryHeader": {
+                "type": "object"
+            },
+            "GetChartBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryPresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryPresetHeader": {
+                "type": "object"
+            },
+            "GetChartBinaryPresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryCustomHeader": {
+                "type": "object"
+            },
+            "GetChartBinaryCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignHeader": {
+                "type": "object"
+            },
+            "GetChartDesignOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCategoriesAndTopics_tns": {
+                "type": "object"
+            },
+            "GetCategoriesAndTopicsResponse_tns": {
+                "type": "object"
+            },
+            "GetCategories_tns": {
+                "type": "object"
+            },
+            "GetCategoriesResponse_tns": {
+                "type": "object"
+            },
+            "GetTopics_tns": {
+                "type": "object",
+                "properties": {
+                    "CategoryCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicsResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicDetails_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicDetailsResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicStatistics_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicStatisticsResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicData_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicDataResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestTopicData_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestTopicDataResponse_tns": {
+                "type": "object"
+            },
+            "GetAnnualizedTopicData_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAnnualizedTopicDataResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicChart_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicChartPreset_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartPresetResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicBinaryChart_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicBinaryChartPreset_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartPresetResponse_tns": {
+                "type": "object"
+            },
+            "GetTopicBinaryChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopicBinaryChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetChartUrl_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlResponse_tns": {
+                "type": "object"
+            },
+            "GetChartUrlPreset_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlPresetResponse_tns": {
+                "type": "object"
+            },
+            "GetChartUrlCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartUrlCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBinaryPreset_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryPresetResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBinaryCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "TopicCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartWidth": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChartHeight": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBinaryCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetChartDesign_tns": {
+                "type": "object"
+            },
+            "GetChartDesignResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCategory_tns": {
+                "type": "object",
+                "properties": {
+                    "Category": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTopic_tns": {
+                "type": "object",
+                "properties": {
+                    "Topic": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSeriesData_tns": {
+                "type": "object",
+                "properties": {
+                    "SeriesData": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SeriesData_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Change": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PercentChange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
