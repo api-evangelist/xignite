@@ -1,0 +1,1020 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global Real Time Futures",
+        "description": "This web service provides global realtime future and option quotes for U.S. and international future contracts.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobalrealtimefutures.xignite.comxGlobalRealTimeFutures.json\/XigniteGlobalRealTimeFutures"
+    ],
+    "paths": {
+        "\/GetFutureQuote": {
+            "GET": {
+                "summary": "Get Future Quote",
+                "description": "Returns a realtime quote for a future contract.",
+                "operationId": "GetFutureQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestFutureQuote": {
+            "GET": {
+                "summary": "Get Latest Future Quote",
+                "description": "Returns the latest realtime quote for a future contract.",
+                "operationId": "GetLatestFutureQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSpotFutureQuote": {
+            "GET": {
+                "summary": "Get Spot Future Quote",
+                "description": "Returns a realtime spot quote for a future contract.",
+                "operationId": "GetSpotFutureQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFutureQuotes": {
+            "GET": {
+                "summary": "Get Future Quotes",
+                "description": "Returns realtime quotes for multiple future contracts.",
+                "operationId": "GetFutureQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestFutureQuotes": {
+            "GET": {
+                "summary": "Get Latest Future Quotes",
+                "description": "Returns latest realtime quotes for multiple future contracts.",
+                "operationId": "GetLatestFutureQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestFrontMonthFutureQuotes": {
+            "GET": {
+                "summary": "Get Latest Front Month Future Quotes",
+                "description": "Returns latest quotes for front month futures",
+                "operationId": "GetLatestFrontMonthFutureQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllFutureQuotes": {
+            "GET": {
+                "summary": "Get All Future Quotes",
+                "description": "Returns all delayed future quotes for a future base.",
+                "operationId": "GetAllFutureQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFutureOptionQuote": {
+            "GET": {
+                "summary": "Get Future Option Quote",
+                "description": "Returns a realtime future option quote for a future option.",
+                "operationId": "GetFutureOptionQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllOptionQuotes": {
+            "GET": {
+                "summary": "Get All Option Quotes",
+                "description": "Returns all realtime future option quotes for a future contract.",
+                "operationId": "GetAllOptionQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFutureOptionQuotes": {
+            "GET": {
+                "summary": "Get Future Option Quotes",
+                "description": "Returns realtime future option quotes for multiple future options.",
+                "operationId": "GetFutureOptionQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestFutureOptionQuote": {
+            "GET": {
+                "summary": "Get Latest Future Option Quote",
+                "description": "Returns latest realtime quote for multiple future option.",
+                "operationId": "GetLatestFutureOptionQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestFutureOptionQuotes": {
+            "GET": {
+                "summary": "Get Latest Future Option Quotes",
+                "description": "Returns latest realtime quotes for multiple future options.",
+                "operationId": "GetLatestFutureOptionQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSwapQuote": {
+            "GET": {
+                "summary": "Get Swap Quote",
+                "description": "Returns realtime quote for a swap",
+                "operationId": "GetSwapQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFutureExchanges": {
+            "GET": {
+                "summary": "List Future Exchanges",
+                "description": "Returns a list of future exchanges",
+                "operationId": "ListFutureExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListBaseFutures": {
+            "GET": {
+                "summary": "List Base Futures",
+                "description": "Returns a list of base future symbols",
+                "operationId": "ListBaseFutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFutureChain": {
+            "GET": {
+                "summary": "List Future Chain",
+                "description": "Returns a list of future contracts on a base future symbol",
+                "operationId": "ListFutureChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListOptionChain": {
+            "GET": {
+                "summary": "List Option Chain",
+                "description": "Returns a list of options on a future contract",
+                "operationId": "ListOptionChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/SearchFutures": {
+            "GET": {
+                "summary": "Search Futures",
+                "description": "Returns futures match the name",
+                "operationId": "SearchFutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuoteHeader": {
+                "type": "object"
+            },
+            "GetFutureQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureQuoteHeader": {
+                "type": "object"
+            },
+            "GetLatestFutureQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSpotFutureQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSpotFutureQuoteHeader": {
+                "type": "object"
+            },
+            "GetSpotFutureQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuotesHeader": {
+                "type": "object"
+            },
+            "GetFutureQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureQuotesHeader": {
+                "type": "object"
+            },
+            "GetLatestFutureQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFrontMonthFutureQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFrontMonthFutureQuotesHeader": {
+                "type": "object"
+            },
+            "GetLatestFrontMonthFutureQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllFutureQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllFutureQuotesHeader": {
+                "type": "object"
+            },
+            "GetAllFutureQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionQuoteHeader": {
+                "type": "object"
+            },
+            "GetFutureOptionQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllOptionQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllOptionQuotesHeader": {
+                "type": "object"
+            },
+            "GetAllOptionQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionQuotesHeader": {
+                "type": "object"
+            },
+            "GetFutureOptionQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureOptionQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureOptionQuoteHeader": {
+                "type": "object"
+            },
+            "GetLatestFutureOptionQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureOptionQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureOptionQuotesHeader": {
+                "type": "object"
+            },
+            "GetLatestFutureOptionQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapQuoteHeader": {
+                "type": "object"
+            },
+            "GetSwapQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureExchangesHeader": {
+                "type": "object"
+            },
+            "ListFutureExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListBaseFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListBaseFuturesHeader": {
+                "type": "object"
+            },
+            "ListBaseFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureChainHeader": {
+                "type": "object"
+            },
+            "ListFutureChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListOptionChainHeader": {
+                "type": "object"
+            },
+            "ListOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchFuturesHeader": {
+                "type": "object"
+            },
+            "SearchFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestFutureQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetSpotFutureQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSpotFutureQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetFutureQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestFutureQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestFrontMonthFutureQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFrontMonthFutureQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetAllFutureQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllFutureQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetFutureOptionQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetAllOptionQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TradedOnly": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllOptionQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetFutureOptionQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestFutureOptionQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureOptionQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestFutureOptionQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestFutureOptionQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetSwapQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapQuoteResponse_tns": {
+                "type": "object"
+            },
+            "ListFutureExchanges_tns": {
+                "type": "object"
+            },
+            "ListFutureExchangesResponse_tns": {
+                "type": "object"
+            },
+            "ListBaseFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListBaseFuturesResponse_tns": {
+                "type": "object"
+            },
+            "ListFutureChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Basesymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureChainResponse_tns": {
+                "type": "object"
+            },
+            "ListOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Futuresymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Style": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "SearchFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchFuturesResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureOptionQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureOptionQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Future": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureOption_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureOption": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
