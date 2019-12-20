@@ -1,0 +1,3880 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Futures",
+        "description": "Provide delayed and historical commodity quote information from supported exchanges (NYMEX...).",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxFutures.json\/XigniteFutures"
+    ],
+    "paths": {
+        "\/GetFutureSymbol": {
+            "GET": {
+                "summary": "Get Future Symbol",
+                "description": "Returns the symbol for a future based on its month and year.",
+                "operationId": "PostGetfuturesymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetReverseFutureSymbol": {
+            "GET": {
+                "summary": "Get Reverse Future Symbol",
+                "description": "Returns the symbol for a future based on its month and year.",
+                "operationId": "PostGetreversefuturesymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTerminationSchedule": {
+            "GET": {
+                "summary": "Get Termination Schedule",
+                "description": "Provide a termination schedule for a commodity.",
+                "operationId": "PostGetterminationschedule",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetNextFuture": {
+            "GET": {
+                "summary": "Get Next Future",
+                "description": "Get the next immediate future contract for a commodity.",
+                "operationId": "PostGetnextfuture",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFuture": {
+            "GET": {
+                "summary": "Get Future",
+                "description": "Provide information about a commodity future.",
+                "operationId": "PostGetfuture",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "List commmodities future exchanges and indicates which ones are supported.",
+                "operationId": "PostListexchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFutureCategories": {
+            "GET": {
+                "summary": "List Future Categories",
+                "description": "List commmodities future categories.",
+                "operationId": "PostListfuturecategories",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSwaps": {
+            "GET": {
+                "summary": "List Swaps",
+                "description": "List all commodity swaps and the exchange on which they are traded.",
+                "operationId": "PostListswaps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFutures": {
+            "GET": {
+                "summary": "List Futures",
+                "description": "List all commodity futures and the exchange on which they are traded.",
+                "operationId": "PostListfutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFrontMonthContracts": {
+            "GET": {
+                "summary": "List Front Month Contracts",
+                "description": "List all commodity future Front Month Contracts.",
+                "operationId": "PostListfrontmonthcontracts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFuturesByCategory": {
+            "GET": {
+                "summary": "List Futures By Category",
+                "description": "List futures information by byfuture category.",
+                "operationId": "PostListfuturesbycategory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFuturesByExchange": {
+            "GET": {
+                "summary": "List Futures By Exchange",
+                "description": "List futures information by exchange.",
+                "operationId": "PostListfuturesbyexchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSwapsByExchange": {
+            "GET": {
+                "summary": "List Swaps By Exchange",
+                "description": "List swaps information by exchange.",
+                "operationId": "PostListswapsbyexchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedSwap": {
+            "GET": {
+                "summary": "Get Delayed Swap",
+                "description": "Returns a delayed quote for a NYMEX swap contract.",
+                "operationId": "PostGetdelayedswap",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedFuture": {
+            "GET": {
+                "summary": "Get Delayed Future",
+                "description": "Returns a delayed quote for a future contract.",
+                "operationId": "PostGetdelayedfuture",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedFrontFuture": {
+            "GET": {
+                "summary": "Get Delayed Front Future",
+                "description": "Returns a delayed quote for a future contract.",
+                "operationId": "PostGetdelayedfrontfuture",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllDelayedFutures": {
+            "GET": {
+                "summary": "Get All Delayed Futures",
+                "description": "Returns delayed quotes for all contracts for a commodity.",
+                "operationId": "PostGetalldelayedfutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopDelayedFutures": {
+            "GET": {
+                "summary": "Get Top Delayed Futures",
+                "description": "Returns delayed quotes for a given number of contract (front-future first) for a commodity.",
+                "operationId": "PostGettopdelayedfutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllDelayedSwaps": {
+            "GET": {
+                "summary": "Get All Delayed Swaps",
+                "description": "Returns delayed quotes for all contracts for a commodity.",
+                "operationId": "PostGetalldelayedswaps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedFutures": {
+            "GET": {
+                "summary": "Get Delayed Futures",
+                "description": "Returns delayed quotes for multiple future contracts.",
+                "operationId": "PostGetdelayedfutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedFutureStrip": {
+            "GET": {
+                "summary": "Get Delayed Future Strip",
+                "description": "Returns a delayed future strip for a commodity.",
+                "operationId": "PostGetdelayedfuturestrip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalFutureStrip": {
+            "GET": {
+                "summary": "Get Historical Future Strip",
+                "description": "Returns a future strip for a commodity.",
+                "operationId": "PostGethistoricalfuturestrip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSwapStrip": {
+            "GET": {
+                "summary": "Get Historical Swap Strip",
+                "description": "Returns a future strip for a commodity.",
+                "operationId": "PostGethistoricalswapstrip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedSpot": {
+            "GET": {
+                "summary": "Get Delayed Spot",
+                "description": "Returns a delayed spot quote for a commodity.",
+                "operationId": "PostGetdelayedspot",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedSpots": {
+            "GET": {
+                "summary": "Get Delayed Spots",
+                "description": "Returns delayed quotes for multiple commodities.",
+                "operationId": "PostGetdelayedspots",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedFutureBySession": {
+            "GET": {
+                "summary": "Get Delayed Future By Session",
+                "description": "Returns a delayed quote for a future contract by exchange session.",
+                "operationId": "PostGetdelayedfuturebysession",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllDelayedFuturesBySession": {
+            "GET": {
+                "summary": "Get All Delayed Futures By Session",
+                "description": "Returns delayed quotes for all contracts for a commodity by exchange session.",
+                "operationId": "PostGetalldelayedfuturesbysession",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedFuturesBySession": {
+            "GET": {
+                "summary": "Get Delayed Futures By Session",
+                "description": "Returns delayed quotes for multiple future contracts by exchange session.",
+                "operationId": "PostGetdelayedfuturesbysession",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalFuture": {
+            "GET": {
+                "summary": "Get Historical Future",
+                "description": "Returns a historical quote for a future contract.",
+                "operationId": "PostGethistoricalfuture",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalFutures": {
+            "GET": {
+                "summary": "Get Historical Futures",
+                "description": "Returns historical quotes for multiple future contracts.",
+                "operationId": "PostGethistoricalfutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllHistoricalFuturesWithStatus": {
+            "GET": {
+                "summary": "Get All Historical Futures With Status",
+                "description": "Returns historical quotes for all contracts for a commodity as of a specific date including status information.",
+                "operationId": "PostGetallhistoricalfutureswithstatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllHistoricalFutures": {
+            "GET": {
+                "summary": "Get All Historical Futures",
+                "description": "Returns historical quotes for all contracts for a commodity as of a specific date.",
+                "operationId": "PostGetallhistoricalfutures",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalFutureRange": {
+            "GET": {
+                "summary": "Get Historical Future Range",
+                "description": "Returns a range of historical quotes for a future contract.",
+                "operationId": "PostGethistoricalfuturerange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSwap": {
+            "GET": {
+                "summary": "Get Historical Swap",
+                "description": "Returns a historical quote for a future swap.",
+                "operationId": "PostGethistoricalswap",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSwapRange": {
+            "GET": {
+                "summary": "Get Historical Swap Range",
+                "description": "Returns a range of historical quotes for a future swap.",
+                "operationId": "PostGethistoricalswaprange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSwaps": {
+            "GET": {
+                "summary": "Get Historical Swaps",
+                "description": "Returns historical quotes for multiple future swaps.",
+                "operationId": "PostGethistoricalswaps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllHistoricalSwaps": {
+            "GET": {
+                "summary": "Get All Historical Swaps",
+                "description": "Returns historical quotes for all contracts for a commodity swap as of a specific date.",
+                "operationId": "PostGetallhistoricalswaps",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCommodityRange": {
+            "GET": {
+                "summary": "Get Historical Commodity Range",
+                "description": "Returns a range of historical quotes for a future contract.",
+                "operationId": "PostGethistoricalcommodityrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCommodityMonthlyRange": {
+            "GET": {
+                "summary": "Get Historical Commodity Monthly Range",
+                "description": "Returns a range of historical quotes for a future contract.",
+                "operationId": "PostGethistoricalcommoditymonthlyrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSpotRange": {
+            "GET": {
+                "summary": "Get Historical Spot Range",
+                "description": "Returns a range of commodity spot prices for a commodity.",
+                "operationId": "PostGethistoricalspotrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSpotMonthlyRange": {
+            "GET": {
+                "summary": "Get Historical Spot Monthly Range",
+                "description": "Returns a range of commodity spot prices for a commodity.",
+                "operationId": "PostGethistoricalspotmonthlyrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTick": {
+            "GET": {
+                "summary": "Get Tick",
+                "description": "Returns an intraday tick for a future contract as of a specific time in the day.",
+                "operationId": "PostGettick",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTicks": {
+            "GET": {
+                "summary": "Get Ticks",
+                "description": "Returns a range of intraday ticks for a future contract.",
+                "operationId": "PostGetticks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalTicks": {
+            "GET": {
+                "summary": "Get Historical Ticks",
+                "description": "Returns a historical range of ticks for a security.",
+                "operationId": "PostGethistoricalticks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalTicksAsOfDate": {
+            "GET": {
+                "summary": "Get Historical Ticks As Of Date",
+                "description": "Returns a historical range of ticks for a security.",
+                "operationId": "PostGethistoricalticksasofdate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Intraday, Future, ": {
+            "GET": {
+                "summary": "Get Intraday Future Chart",
+                "description": "Get a standard intraday price chart for a future contract.",
+                "operationId": "PostGetintradayfuturechart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Intraday, Future, , Binary": {
+            "GET": {
+                "summary": "Get Intraday Future Chart Binary",
+                "description": "Get a standard intraday price chart for a future contract in binary format.",
+                "operationId": "PostGetintradayfuturechartbinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Intraday, Future, , Custom": {
+            "GET": {
+                "summary": "Get Intraday Future Chart Custom",
+                "description": "Get a custom intraday price chart for a future contract.",
+                "operationId": "PostGetintradayfuturechartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Intraday, Future, , Custom, Binary": {
+            "GET": {
+                "summary": "Get Intraday Future Chart Custom Binary",
+                "description": "Get a custom intraday price chart for a future contract in binary format.",
+                "operationId": "PostGetintradayfuturechartcustombinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Future, ": {
+            "GET": {
+                "summary": "Get Historical Future Chart",
+                "description": "Get a standard historical price chart for a future contract.",
+                "operationId": "PostGethistoricalfuturechart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Future, , Binary": {
+            "GET": {
+                "summary": "Get Historical Future Chart Binary",
+                "description": "Get a standard historical price chart for a future contract in binary format.",
+                "operationId": "PostGethistoricalfuturechartbinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Future, , Custom": {
+            "GET": {
+                "summary": "Get Historical Future Chart Custom",
+                "description": "Get a custom historical chart for a future contract in binary format.",
+                "operationId": "PostGethistoricalfuturechartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Future, , Custom, Binary": {
+            "GET": {
+                "summary": "Get Historical Future Chart Custom Binary",
+                "description": "Draw a custom historical chart for a future contract.",
+                "operationId": "PostGethistoricalfuturechartcustombinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Commodity, ": {
+            "GET": {
+                "summary": "Get Historical Commodity Chart",
+                "description": "Get a historical chart for a commodity.",
+                "operationId": "PostGethistoricalcommoditychart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Commodity, , Binary": {
+            "GET": {
+                "summary": "Get Historical Commodity Chart Binary",
+                "description": "Get a historical chart for a commodity in binary format.",
+                "operationId": "PostGethistoricalcommoditychartbinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Commodity, , Custom": {
+            "GET": {
+                "summary": "Get Historical Commodity Chart Custom",
+                "description": "Get a custom historical chart for a commodity in binary format.",
+                "operationId": "PostGethistoricalcommoditychartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, Commodity, , Custom, Binary": {
+            "GET": {
+                "summary": "Get Historical Commodity Chart Custom Binary",
+                "description": "Draw a custom historical chart for a future contract.",
+                "operationId": "PostGethistoricalcommoditychartcustombinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Intraday, , Design": {
+            "GET": {
+                "summary": "Get Intraday Chart Design",
+                "description": "Returns the default settings for the intraday future chart.",
+                "operationId": "PostGetintradaychartdesign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Historical, , Design": {
+            "GET": {
+                "summary": "Get Historical Chart Design",
+                "description": "Returns the default settings for the historical future chart.",
+                "operationId": "PostGethistoricalchartdesign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFutureOption": {
+            "GET": {
+                "summary": "Get Future Option",
+                "description": "Returns a specific future option.",
+                "operationId": "PostGetfutureoption",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopIndustryHeadlines": {
+            "GET": {
+                "summary": "Get Top Industry Headlines",
+                "description": "Return the top press releases for an industry.",
+                "operationId": "PostGettopindustryheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysIndustryHeadlines": {
+            "GET": {
+                "summary": "Get Todays Industry Headlines",
+                "description": "Return press releases for today for an industry.",
+                "operationId": "PostGettodaysindustryheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastIndustryHeadlines": {
+            "GET": {
+                "summary": "Get Last Industry Headlines",
+                "description": "Return the last press releases since a certain time for an industry.",
+                "operationId": "PostGetlastindustryheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFutureOptionChain": {
+            "GET": {
+                "summary": "Get Future Option Chain",
+                "description": "Returns an option chain for a future contract.",
+                "operationId": "PostGetfutureoptionchain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFutureOptionsByStrikePrice": {
+            "GET": {
+                "summary": "Get Future Options By Strike Price",
+                "description": "Returns an option chain for a future contract matching a list of prices.",
+                "operationId": "PostGetfutureoptionsbystrikeprice",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureSymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureSymbolHeader": {
+                "type": "object"
+            },
+            "GetFutureSymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetReverseFutureSymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetReverseFutureSymbolHeader": {
+                "type": "object"
+            },
+            "GetReverseFutureSymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTerminationScheduleInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTerminationScheduleHeader": {
+                "type": "object"
+            },
+            "GetTerminationScheduleOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetNextFutureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetNextFutureHeader": {
+                "type": "object"
+            },
+            "GetNextFutureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureHeader": {
+                "type": "object"
+            },
+            "GetFutureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureCategoriesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFutureCategoriesHeader": {
+                "type": "object"
+            },
+            "ListFutureCategoriesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSwapsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSwapsHeader": {
+                "type": "object"
+            },
+            "ListSwapsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesHeader": {
+                "type": "object"
+            },
+            "ListFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFrontMonthContractsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFrontMonthContractsHeader": {
+                "type": "object"
+            },
+            "ListFrontMonthContractsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesByCategoryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesByCategoryHeader": {
+                "type": "object"
+            },
+            "ListFuturesByCategoryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesByExchangeHeader": {
+                "type": "object"
+            },
+            "ListFuturesByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSwapsByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSwapsByExchangeHeader": {
+                "type": "object"
+            },
+            "ListSwapsByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSwapInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSwapHeader": {
+                "type": "object"
+            },
+            "GetDelayedSwapOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureHeader": {
+                "type": "object"
+            },
+            "GetDelayedFutureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFrontFutureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFrontFutureHeader": {
+                "type": "object"
+            },
+            "GetDelayedFrontFutureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedFuturesHeader": {
+                "type": "object"
+            },
+            "GetAllDelayedFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopDelayedFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopDelayedFuturesHeader": {
+                "type": "object"
+            },
+            "GetTopDelayedFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedSwapsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedSwapsHeader": {
+                "type": "object"
+            },
+            "GetAllDelayedSwapsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFuturesHeader": {
+                "type": "object"
+            },
+            "GetDelayedFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureStripInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureStripHeader": {
+                "type": "object"
+            },
+            "GetDelayedFutureStripOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureStripInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureStripHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureStripOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapStripInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapStripHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSwapStripOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSpotInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSpotHeader": {
+                "type": "object"
+            },
+            "GetDelayedSpotOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSpotsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSpotsHeader": {
+                "type": "object"
+            },
+            "GetDelayedSpotsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureBySessionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureBySessionHeader": {
+                "type": "object"
+            },
+            "GetDelayedFutureBySessionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedFuturesBySessionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedFuturesBySessionHeader": {
+                "type": "object"
+            },
+            "GetAllDelayedFuturesBySessionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFuturesBySessionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFuturesBySessionHeader": {
+                "type": "object"
+            },
+            "GetDelayedFuturesBySessionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFuturesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalFuturesWithStatusInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalFuturesWithStatusHeader": {
+                "type": "object"
+            },
+            "GetAllHistoricalFuturesWithStatusOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalFuturesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalFuturesHeader": {
+                "type": "object"
+            },
+            "GetAllHistoricalFuturesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSwapOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSwapRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapsHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSwapsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalSwapsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalSwapsHeader": {
+                "type": "object"
+            },
+            "GetAllHistoricalSwapsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityMonthlyRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityMonthlyRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityMonthlyRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSpotRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSpotRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSpotRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSpotMonthlyRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSpotMonthlyRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSpotMonthlyRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickHeader": {
+                "type": "object"
+            },
+            "GetTickOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksHeader": {
+                "type": "object"
+            },
+            "GetTicksOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksHeader": {
+                "type": "object"
+            },
+            "GetHistoricalTicksOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksAsOfDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksAsOfDateHeader": {
+                "type": "object"
+            },
+            "GetHistoricalTicksAsOfDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartHeader": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartBinaryHeader": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartCustomHeader": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartCustomBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartCustomBinaryHeader": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartCustomBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartBinaryHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartCustomHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartCustomBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartCustomBinaryHeader": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartCustomBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartBinaryHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartCustomHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartCustomBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartCustomBinaryHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartCustomBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayChartDesignInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayChartDesignHeader": {
+                "type": "object"
+            },
+            "GetIntradayChartDesignOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalChartDesignInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalChartDesignHeader": {
+                "type": "object"
+            },
+            "GetHistoricalChartDesignOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionHeader": {
+                "type": "object"
+            },
+            "GetFutureOptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopIndustryHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopIndustryHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTopIndustryHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysIndustryHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysIndustryHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTodaysIndustryHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastIndustryHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastIndustryHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetLastIndustryHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionChainHeader": {
+                "type": "object"
+            },
+            "GetFutureOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionsByStrikePriceInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionsByStrikePriceHeader": {
+                "type": "object"
+            },
+            "GetFutureOptionsByStrikePriceOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureSymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureSymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetReverseFutureSymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetReverseFutureSymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetTerminationSchedule_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTerminationScheduleResponse_tns": {
+                "type": "object"
+            },
+            "GetNextFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetNextFutureResponse_tns": {
+                "type": "object"
+            },
+            "GetFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureResponse_tns": {
+                "type": "object"
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "ListFutureCategories_tns": {
+                "type": "object"
+            },
+            "ListFutureCategoriesResponse_tns": {
+                "type": "object"
+            },
+            "ListSwaps_tns": {
+                "type": "object"
+            },
+            "ListSwapsResponse_tns": {
+                "type": "object"
+            },
+            "ListFutures_tns": {
+                "type": "object"
+            },
+            "ListFuturesResponse_tns": {
+                "type": "object"
+            },
+            "ListFrontMonthContracts_tns": {
+                "type": "object"
+            },
+            "ListFrontMonthContractsResponse_tns": {
+                "type": "object"
+            },
+            "ListFuturesByCategory_tns": {
+                "type": "object",
+                "properties": {
+                    "Category": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesByCategoryResponse_tns": {
+                "type": "object"
+            },
+            "ListFuturesByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFuturesByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "ListSwapsByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSwapsByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedSwap_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSwapResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedFrontFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFrontFutureResponse_tns": {
+                "type": "object"
+            },
+            "GetAllDelayedFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedFuturesResponse_tns": {
+                "type": "object"
+            },
+            "GetTopDelayedFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopDelayedFuturesResponse_tns": {
+                "type": "object"
+            },
+            "GetAllDelayedSwaps_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedSwapsResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFuturesResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedFutureStrip_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureStripResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutureStrip_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureStripResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSwapStrip_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapStripResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedSpot_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSpotResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedSpots_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedSpotsResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedFutureBySession_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFutureBySessionResponse_tns": {
+                "type": "object"
+            },
+            "GetAllDelayedFuturesBySession_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDelayedFuturesBySessionResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedFuturesBySession_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedFuturesBySessionResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFuturesResponse_tns": {
+                "type": "object"
+            },
+            "GetAllHistoricalFuturesWithStatus_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalFuturesWithStatusResponse_tns": {
+                "type": "object"
+            },
+            "GetAllHistoricalFutures_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalFuturesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutureRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSwap_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSwapRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSwaps_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapsResponse_tns": {
+                "type": "object"
+            },
+            "GetAllHistoricalSwaps_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllHistoricalSwapsResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityMonthlyRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityMonthlyRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSpotRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSpotRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSpotMonthlyRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSpotMonthlyRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetTick_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickResponse_tns": {
+                "type": "object"
+            },
+            "GetTicks_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalTicks_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalTicksAsOfDate_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksAsOfDateResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayFutureChart_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayFutureChartCustomBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayFutureChartCustomBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChart_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalFutureChartCustomBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalFutureChartCustomBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChart_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCommodityChartCustomBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCommodityChartCustomBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayChartDesign_tns": {
+                "type": "object",
+                "properties": {
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayChartDesignResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalChartDesign_tns": {
+                "type": "object",
+                "properties": {
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalChartDesignResponse_tns": {
+                "type": "object"
+            },
+            "GetFutureOption_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StrikePrice": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionResponse_tns": {
+                "type": "object"
+            },
+            "GetTopIndustryHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopIndustryHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysIndustryHeadlines_tns": {
+                "type": "object"
+            },
+            "GetTodaysIndustryHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetLastIndustryHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "SinceDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastIndustryHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetFutureOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "GetFutureOptionsByStrikePrice_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StrikePrices": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFutureOptionsByStrikePriceResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfNameResult_tns": {
+                "type": "object",
+                "properties": {
+                    "NameResult": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFuture_tns": {
+                "type": "object",
+                "properties": {
+                    "Future": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureQuoteAndStatus_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureQuoteAndStatus": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFutureOption_tns": {
+                "type": "object",
+                "properties": {
+                    "FutureOption": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTick_tns": {
+                "type": "object",
+                "properties": {
+                    "Tick": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMarketHeadline_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketHeadline": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Tick_tns": {
+                "type": "object",
+                "properties": {
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Price": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Quantity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Change": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PercentChange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MarketHeadline_tns": {
+                "type": "object",
+                "properties": {
+                    "ReleaseId": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Reference": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ReleaseSource_tns": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Url": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
