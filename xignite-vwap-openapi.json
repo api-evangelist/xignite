@@ -1,0 +1,950 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite VWAP",
+        "description": "Provides delayed and historical Volume-Weighted-Average Price (VWAP) information.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxVWAP.json\/XigniteVWAP"
+    ],
+    "paths": {
+        "\/GetHistoricalDailyVWAP": {
+            "GET": {
+                "summary": "Get Historical Daily VWAP",
+                "description": "Returns historical daily VWAP information for a date range",
+                "operationId": "GetHistoricalDailyVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalVWAP": {
+            "GET": {
+                "summary": "Get Historical VWAP",
+                "description": "Returns historical VWAP information for a date range",
+                "operationId": "GetHistoricalVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMonthlyVWAP": {
+            "GET": {
+                "summary": "Get Historical Monthly VWAP",
+                "description": "Returns historical monthly VWAP information for a date range.",
+                "operationId": "GetHistoricalMonthlyVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalWeeklyVWAP": {
+            "GET": {
+                "summary": "Get Historical Weekly VWAP",
+                "description": "Returns historical weekly VWAP information for a date range.",
+                "operationId": "GetHistoricalWeeklyVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalPeriodVWAP": {
+            "GET": {
+                "summary": "Get Historical Period VWAP",
+                "description": "Returns historical VWAP information for a date range.",
+                "operationId": "GetHistoricalPeriodVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIntradayVWAP": {
+            "GET": {
+                "summary": "Get Intraday VWAP",
+                "description": "Returns an intraday VWAP for a security based on the trades performed in a time range.",
+                "operationId": "GetIntradayVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalIntradayVWAP": {
+            "GET": {
+                "summary": "Get Historical Intraday VWAP",
+                "description": "Returns a historical intraday VWAP for a security based on the trades performed in a time range.",
+                "operationId": "GetHistoricalIntradayVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCorporateIntradayVWAP": {
+            "GET": {
+                "summary": "Get Corporate Intraday VWAP",
+                "description": "Returns a corporate intraday VWAP for a security based on the trades performed in a time range.",
+                "operationId": "GetCorporateIntradayVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCorporateHistoricalVWAP": {
+            "GET": {
+                "summary": "Get Corporate Historical VWAP",
+                "description": "Returns a corporate intraday VWAP for a security based on the trades performed in a time range.",
+                "operationId": "GetCorporateHistoricalVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDelayedVWAP": {
+            "GET": {
+                "summary": "Get Delayed VWAP",
+                "description": "Returns an intraday VWAP for a security based on all trades for the day up to the 15\/20 minutes delayed quote.",
+                "operationId": "GetDelayedVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeVWAP": {
+            "GET": {
+                "summary": "Get Real Time VWAP",
+                "description": "Returns a real-time VWAP for a security based on all INET trades.",
+                "operationId": "GetRealTimeVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/Get1MinuteVWAP": {
+            "GET": {
+                "summary": "Get1 Minute VWAP",
+                "description": "Returns an intraday VWAP for a security based on trades executed in the last 1 minute of the 15\/20 minutes delayed quote.",
+                "operationId": "Get1MinuteVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/Get5MinuteVWAP": {
+            "GET": {
+                "summary": "Get5 Minute VWAP",
+                "description": "Returns an intraday VWAP for a security based on trades executed in the last 5 minutes of the 15\/20 minutes delayed quote.",
+                "operationId": "Get5MinuteVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/Get10MinuteVWAP": {
+            "GET": {
+                "summary": "Get10 Minute VWAP",
+                "description": "Returns an intraday VWAP for a security based on trades executed in the last 10 minutes of the 15\/20 minutes delayed quote.",
+                "operationId": "Get10MinuteVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/Get30MinuteVWAP": {
+            "GET": {
+                "summary": "Get30 Minute VWAP",
+                "description": "Returns an intraday VWAP for a security based on trades executed in the last 30 minutes of the 15\/20 minutes delayed quote.",
+                "operationId": "Get30MinuteVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/Get60MinuteVWAP": {
+            "GET": {
+                "summary": "Get60 Minute VWAP",
+                "description": "Returns an intraday VWAP for a security based on trades executed in the last hour of the 15\/20 minutes delayed quote.",
+                "operationId": "Get60MinuteVWAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalDailyVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalDailyVWAPHeader": {
+                "type": "object"
+            },
+            "GetHistoricalDailyVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalVWAPHeader": {
+                "type": "object"
+            },
+            "GetHistoricalVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyVWAPHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyVWAPHeader": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalPeriodVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalPeriodVWAPHeader": {
+                "type": "object"
+            },
+            "GetHistoricalPeriodVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayVWAPHeader": {
+                "type": "object"
+            },
+            "GetIntradayVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalIntradayVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalIntradayVWAPHeader": {
+                "type": "object"
+            },
+            "GetHistoricalIntradayVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCorporateIntradayVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCorporateIntradayVWAPHeader": {
+                "type": "object"
+            },
+            "GetCorporateIntradayVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCorporateHistoricalVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCorporateHistoricalVWAPHeader": {
+                "type": "object"
+            },
+            "GetCorporateHistoricalVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedVWAPHeader": {
+                "type": "object"
+            },
+            "GetDelayedVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeVWAPHeader": {
+                "type": "object"
+            },
+            "GetRealTimeVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get1MinuteVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get1MinuteVWAPHeader": {
+                "type": "object"
+            },
+            "Get1MinuteVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get5MinuteVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get5MinuteVWAPHeader": {
+                "type": "object"
+            },
+            "Get5MinuteVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get10MinuteVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get10MinuteVWAPHeader": {
+                "type": "object"
+            },
+            "Get10MinuteVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get30MinuteVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get30MinuteVWAPHeader": {
+                "type": "object"
+            },
+            "Get30MinuteVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get60MinuteVWAPInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get60MinuteVWAPHeader": {
+                "type": "object"
+            },
+            "Get60MinuteVWAPOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalDailyVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalDailyVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalPeriodVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalPeriodVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalIntradayVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalIntradayVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetCorporateIntradayVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCorporateIntradayVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetCorporateHistoricalVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCorporateHistoricalVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetDelayedVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeBeforeMarket": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeAfterMarket": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDelayedVWAPResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeBeforeMarket": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeAfterMarket": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeVWAPResponse_tns": {
+                "type": "object"
+            },
+            "Get1MinuteVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get1MinuteVWAPResponse_tns": {
+                "type": "object"
+            },
+            "Get5MinuteVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get5MinuteVWAPResponse_tns": {
+                "type": "object"
+            },
+            "Get10MinuteVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get10MinuteVWAPResponse_tns": {
+                "type": "object"
+            },
+            "Get30MinuteVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get30MinuteVWAPResponse_tns": {
+                "type": "object"
+            },
+            "Get60MinuteVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Get60MinuteVWAPResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHistoricalVWAP_tns": {
+                "type": "object",
+                "properties": {
+                    "HistoricalVWAP": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
