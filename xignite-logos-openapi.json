@@ -1,0 +1,318 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Logos",
+        "description": "This web service provides company logo images.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxLogos.json\/XigniteLogos"
+    ],
+    "paths": {
+        "\/GetLogo": {
+            "GET": {
+                "summary": "Get Logo",
+                "description": "Save an archive.",
+                "operationId": "PostGetlogo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLogosList": {
+            "GET": {
+                "summary": "Get Logos List",
+                "description": "Get all symbols which have available logos.",
+                "operationId": "PostGetlogoslist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListMarkets": {
+            "GET": {
+                "summary": "List Markets",
+                "description": "List markets which have avalilable logos.",
+                "operationId": "PostListmarkets",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSymbols": {
+            "GET": {
+                "summary": "List Symbols",
+                "description": "List available logos on market.",
+                "operationId": "PostListsymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLogoInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLogoHeader": {
+                "type": "object"
+            },
+            "GetLogoOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLogosListInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLogosListHeader": {
+                "type": "object"
+            },
+            "GetLogosListOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMarketsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMarketsHeader": {
+                "type": "object"
+            },
+            "ListMarketsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsHeader": {
+                "type": "object"
+            },
+            "ListSymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLogo_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLogoResponse_tns": {
+                "type": "object"
+            },
+            "GetLogosList_tns": {
+                "type": "object"
+            },
+            "GetLogosListResponse_tns": {
+                "type": "object"
+            },
+            "ListMarkets_tns": {
+                "type": "object"
+            },
+            "ListMarketsResponse_tns": {
+                "type": "object"
+            },
+            "ListSymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfString_tns": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMarketDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MarketDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MarketName": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
