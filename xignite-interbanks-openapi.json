@@ -1,0 +1,3604 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite InterBanks",
+        "description": "Provide information about global interbank interest rates.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks"
+    ],
+    "paths": {
+        "\/ListRates": {
+            "GET": {
+                "summary": "List Rates",
+                "description": "List supported interest rates.",
+                "operationId": "PostListrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/SearchRates": {
+            "GET": {
+                "summary": "Search Rates",
+                "description": "Search rate names and description",
+                "operationId": "PostSearchrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLIBORSecure": {
+            "GET": {
+                "summary": "Get LIBOR Secure",
+                "description": "Returns Libor as of a date",
+                "operationId": "PostGetliborsecure",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLIBOR": {
+            "GET": {
+                "summary": "Get LIBOR",
+                "description": "Returns Libor as of a date",
+                "operationId": "PostGetlibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetREIBOR": {
+            "GET": {
+                "summary": "Get REIBOR",
+                "description": "Returns a REIBOR as of a date",
+                "operationId": "PostGetreibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHIBOR": {
+            "GET": {
+                "summary": "Get H I BOR",
+                "description": "Returns a HIBOR as of a date",
+                "operationId": "PostGethibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBUBOR": {
+            "GET": {
+                "summary": "Get BUBOR",
+                "description": "Returns a BUBOR as of a date",
+                "operationId": "PostGetbubor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSOFIBOR": {
+            "GET": {
+                "summary": "Get SOFIBOR",
+                "description": "Returns a SOFIBOR as of a date",
+                "operationId": "PostGetsofibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetREIBID": {
+            "GET": {
+                "summary": "Get REIBID",
+                "description": "Returns a REIBID as of a date",
+                "operationId": "PostGetreib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOIBOR": {
+            "GET": {
+                "summary": "Get OIBOR",
+                "description": "Returns a OIBOR as of a date",
+                "operationId": "PostGetoibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSIBOR": {
+            "GET": {
+                "summary": "Get SIBOR",
+                "description": "Returns a SIBOR as of a date",
+                "operationId": "PostGetsibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCIBOR": {
+            "GET": {
+                "summary": "Get CIBOR",
+                "description": "Returns a CIBOR as of a date",
+                "operationId": "PostGetcibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSTIBOR": {
+            "GET": {
+                "summary": "Get STIBOR",
+                "description": "Returns a STIBOR as of a date",
+                "operationId": "PostGetstibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetWIBOR": {
+            "GET": {
+                "summary": "Get WIBOR",
+                "description": "Returns a WIBOR as of a date",
+                "operationId": "PostGetwibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetVILIBOR": {
+            "GET": {
+                "summary": "Get VILIBOR",
+                "description": "Returns a VILIBOR as of a date",
+                "operationId": "PostGetvilibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEURIBOR": {
+            "GET": {
+                "summary": "Get EURIBOR",
+                "description": "Returns a EURIBOR as of a date",
+                "operationId": "PostGeteuribor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetPRIBOR": {
+            "GET": {
+                "summary": "Get PRIBOR",
+                "description": "Returns a PRIBOR as of a date",
+                "operationId": "PostGetpribor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetKORIBOR": {
+            "GET": {
+                "summary": "Get KORIBOR",
+                "description": "Returns a KORIBOR as of a date",
+                "operationId": "PostGetkoribor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMIBOR": {
+            "GET": {
+                "summary": "Get MIBOR",
+                "description": "Returns a MIBOR as of a date",
+                "operationId": "PostGetmibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMIBID": {
+            "GET": {
+                "summary": "Get MIBID",
+                "description": "Returns a MIBOID as of a date",
+                "operationId": "PostGetmib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSABOR": {
+            "GET": {
+                "summary": "Get SABOR",
+                "description": "Returns a SABOR as of a date",
+                "operationId": "PostGetsabor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTAIBOR": {
+            "GET": {
+                "summary": "Get TAIBOR",
+                "description": "Returns a TAIBOR as of a date",
+                "operationId": "PostGettaibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTURKIBOR": {
+            "GET": {
+                "summary": "Get TURKIBOR",
+                "description": "Returns a TURKIBOR as of a date",
+                "operationId": "PostGetturkibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMEXIBOR": {
+            "GET": {
+                "summary": "Get MEXIBOR",
+                "description": "Returns a MEXIBOR as of a date",
+                "operationId": "PostGetmexibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTELBOR": {
+            "GET": {
+                "summary": "Get TELBOR",
+                "description": "Returns a TELBOR as of a date",
+                "operationId": "PostGettelbor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCHILIBOR": {
+            "GET": {
+                "summary": "Get CHILIBOR",
+                "description": "Returns a TELBOR as of a date",
+                "operationId": "PostGetchilibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCHIBOR": {
+            "GET": {
+                "summary": "Get CHIBOR",
+                "description": "Returns a CHIBOR as of a date",
+                "operationId": "PostGetchibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCDOR": {
+            "GET": {
+                "summary": "Get CDOR",
+                "description": "Returns a CDOR as of a date",
+                "operationId": "PostGetcdor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetKAIBOR": {
+            "GET": {
+                "summary": "Get KAIBOR",
+                "description": "Returns a KAIBOR as of a date",
+                "operationId": "PostGetkaibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetKIBOR": {
+            "GET": {
+                "summary": "Get KIBOR",
+                "description": "Returns a KIBOR as of a date",
+                "operationId": "PostGetkibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetKIBID": {
+            "GET": {
+                "summary": "Get KIBID",
+                "description": "Returns a KIBID as of a date",
+                "operationId": "PostGetkib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSHIBOR": {
+            "GET": {
+                "summary": "Get SHIBOR",
+                "description": "Returns a SHIBOR as of a date",
+                "operationId": "PostGetshibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetJIBOR": {
+            "GET": {
+                "summary": "Get JIBOR",
+                "description": "Returns a JIBOR as of a date",
+                "operationId": "PostGetjibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetKLIBOR": {
+            "GET": {
+                "summary": "Get KLIBOR",
+                "description": "Returns a KLIBOR as of a date",
+                "operationId": "PostGetklibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTIBOR": {
+            "GET": {
+                "summary": "Get TIBOR",
+                "description": "Returns a TIBOR as of a date",
+                "operationId": "PostGettibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetPHIBOR": {
+            "GET": {
+                "summary": "Get PHIBOR",
+                "description": "Returns a PHIBOR as of a date",
+                "operationId": "PostGetphibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBKIBOR": {
+            "GET": {
+                "summary": "Get BKIBOR",
+                "description": "Returns a BKIBOR as of a date",
+                "operationId": "PostGetbkibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetVNIBOR": {
+            "GET": {
+                "summary": "Get VNIBOR",
+                "description": "Returns a VNIBOR as of a date",
+                "operationId": "PostGetvnibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMOSIBOR": {
+            "GET": {
+                "summary": "Get MOSIBOR",
+                "description": "Returns a MOSIBOR as of a date",
+                "operationId": "PostGetmosibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMOSIBID": {
+            "GET": {
+                "summary": "Get MOSIBID",
+                "description": "Returns a MOSIBID as of a date",
+                "operationId": "PostGetmosib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalLIBOR": {
+            "GET": {
+                "summary": "Get Historical LIBOR",
+                "description": "",
+                "operationId": "PostGethistoricallibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBRAZIBOR": {
+            "GET": {
+                "summary": "Get BRAZIBOR",
+                "description": "Returns a BRAZIBOR as of a date",
+                "operationId": "PostGetbrazibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTRLIBOR": {
+            "GET": {
+                "summary": "Get TRLIBOR",
+                "description": "Returns a TRLIBOR as of a date",
+                "operationId": "PostGettrlibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTRLIBID": {
+            "GET": {
+                "summary": "Get TRLIBID",
+                "description": "Returns a TRLIBID as of a date",
+                "operationId": "PostGettrlib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBRIBOR": {
+            "GET": {
+                "summary": "Get BRIBOR",
+                "description": "Returns a BRIBOR as of a date",
+                "operationId": "PostGetbribor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBRIBID": {
+            "GET": {
+                "summary": "Get BRIBID",
+                "description": "Returns a BRIBID as of a date",
+                "operationId": "PostGetbrib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRIGIBOR": {
+            "GET": {
+                "summary": "Get RIGIBOR",
+                "description": "Returns a RIGIBOR as of a date",
+                "operationId": "PostGetrigibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRIGIBID": {
+            "GET": {
+                "summary": "Get RIGIBID",
+                "description": "Returns a RIGIBID as of a date",
+                "operationId": "PostGetrigib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAIDIBOR": {
+            "GET": {
+                "summary": "Get AIDIBOR",
+                "description": "Returns a AIDIBOR as of a date",
+                "operationId": "PostGetaibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetJIBAR": {
+            "GET": {
+                "summary": "Get JIBAR",
+                "description": "Returns a JIBAR as of a date",
+                "operationId": "PostGetjibar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBAIBOR": {
+            "GET": {
+                "summary": "Get BAIBOR",
+                "description": "Returns a BAIBOR as of a date",
+                "operationId": "PostGetbaibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCOLIBOR": {
+            "GET": {
+                "summary": "Get COLIBOR",
+                "description": "Returns a COLIBOR as of a date",
+                "operationId": "PostGetcolibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTALIBOR": {
+            "GET": {
+                "summary": "Get TALIBOR",
+                "description": "Returns a TALIBOR as of a date",
+                "operationId": "PostGettalibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTALIBID": {
+            "GET": {
+                "summary": "Get TALIBID",
+                "description": "Returns a TALIBID as of a date",
+                "operationId": "PostGettalib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRate": {
+            "GET": {
+                "summary": "Get Rate",
+                "description": "Returns a rate as of a specific date.",
+                "operationId": "PostGetrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateFamilyTable": {
+            "GET": {
+                "summary": "Get Rate Family Table",
+                "description": "Returns a rate table for a rate family.",
+                "operationId": "PostGetratefamilytable",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateFamily": {
+            "GET": {
+                "summary": "Get Rate Family",
+                "description": "Returns a collection of related rate as of a specific date",
+                "operationId": "PostGetratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysRate": {
+            "GET": {
+                "summary": "Get Todays Rate",
+                "description": "Returns end of day closing value for a rate",
+                "operationId": "PostGettodaysrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestRate": {
+            "GET": {
+                "summary": "Get Latest Rate",
+                "description": "Returns latest value for a rate.",
+                "operationId": "PostGetlatestrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestLIBOR": {
+            "GET": {
+                "summary": "Get Latest LIBOR",
+                "description": "Returns latest value for a LIBOR rate.",
+                "operationId": "PostGetlatestlibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestRateFamily": {
+            "GET": {
+                "summary": "Get Latest Rate Family",
+                "description": "Returns latest values for a rate family.",
+                "operationId": "PostGetlatestratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalRates": {
+            "GET": {
+                "summary": "Get Historical Rates",
+                "description": "Returns a rate for a range of dates.",
+                "operationId": "PostGethistoricalrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalRateFamily": {
+            "GET": {
+                "summary": "Get Historical Rate Family",
+                "description": "Returns a rate family and for a range of dates.",
+                "operationId": "PostGethistoricalratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateDescription": {
+            "GET": {
+                "summary": "Get Rate Description",
+                "description": "Returns a description for a rate.",
+                "operationId": "PostGetratedescription",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Draw, Rate, , Custom": {
+            "GET": {
+                "summary": "Draw Rate Chart Custom",
+                "description": "Draw a custom rate chart for a date range.",
+                "operationId": "PostDrawratechartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Draw, Rate, ": {
+            "GET": {
+                "summary": "Draw Rate Chart",
+                "description": "Draw a standard rate chart for a date range.",
+                "operationId": "PostDrawratechart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Draw, Rate, , Preset": {
+            "GET": {
+                "summary": "Draw Rate Chart Preset",
+                "description": "Draw a standard rate chart for a date range.",
+                "operationId": "PostDrawratechartpreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Design": {
+            "GET": {
+                "summary": "Get Chart Design",
+                "description": "Returns the default design class for the rate Chart.",
+                "operationId": "PostGetchartdesign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/DrawYieldCurve": {
+            "GET": {
+                "summary": "Draw Yield Curve",
+                "description": "Draw a yield curve for a rate family.",
+                "operationId": "PostDrawyieldcurve",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/DrawYieldCurvePreset": {
+            "GET": {
+                "summary": "Draw Yield Curve Preset",
+                "description": "Draw a yield curve for a rate family.",
+                "operationId": "PostDrawyieldcurvepreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/DrawYieldCurveCustom": {
+            "GET": {
+                "summary": "Draw Yield Curve Custom",
+                "description": "Draw a yield curve for a rate family.",
+                "operationId": "PostDrawyieldcurvecustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesHeader": {
+                "type": "object"
+            },
+            "ListRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchRatesHeader": {
+                "type": "object"
+            },
+            "SearchRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecureHeader": {
+                "type": "object"
+            },
+            "GetLIBORSecureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORHeader": {
+                "type": "object"
+            },
+            "GetLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBORHeader": {
+                "type": "object"
+            },
+            "GetREIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHIBORHeader": {
+                "type": "object"
+            },
+            "GetHIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBUBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBUBORHeader": {
+                "type": "object"
+            },
+            "GetBUBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSOFIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSOFIBORHeader": {
+                "type": "object"
+            },
+            "GetSOFIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBIDHeader": {
+                "type": "object"
+            },
+            "GetREIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOIBORHeader": {
+                "type": "object"
+            },
+            "GetOIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSIBORHeader": {
+                "type": "object"
+            },
+            "GetSIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCIBORHeader": {
+                "type": "object"
+            },
+            "GetCIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSTIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSTIBORHeader": {
+                "type": "object"
+            },
+            "GetSTIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWIBORHeader": {
+                "type": "object"
+            },
+            "GetWIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVILIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVILIBORHeader": {
+                "type": "object"
+            },
+            "GetVILIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEURIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEURIBORHeader": {
+                "type": "object"
+            },
+            "GetEURIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPRIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPRIBORHeader": {
+                "type": "object"
+            },
+            "GetPRIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKORIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKORIBORHeader": {
+                "type": "object"
+            },
+            "GetKORIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMIBORHeader": {
+                "type": "object"
+            },
+            "GetMIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMIBIDHeader": {
+                "type": "object"
+            },
+            "GetMIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSABORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSABORHeader": {
+                "type": "object"
+            },
+            "GetSABOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTAIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTAIBORHeader": {
+                "type": "object"
+            },
+            "GetTAIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTURKIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTURKIBORHeader": {
+                "type": "object"
+            },
+            "GetTURKIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMEXIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMEXIBORHeader": {
+                "type": "object"
+            },
+            "GetMEXIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTELBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTELBORHeader": {
+                "type": "object"
+            },
+            "GetTELBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCHILIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCHILIBORHeader": {
+                "type": "object"
+            },
+            "GetCHILIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCHIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCHIBORHeader": {
+                "type": "object"
+            },
+            "GetCHIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCDORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCDORHeader": {
+                "type": "object"
+            },
+            "GetCDOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKAIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKAIBORHeader": {
+                "type": "object"
+            },
+            "GetKAIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKIBORHeader": {
+                "type": "object"
+            },
+            "GetKIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKIBIDHeader": {
+                "type": "object"
+            },
+            "GetKIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSHIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSHIBORHeader": {
+                "type": "object"
+            },
+            "GetSHIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetJIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetJIBORHeader": {
+                "type": "object"
+            },
+            "GetJIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKLIBORHeader": {
+                "type": "object"
+            },
+            "GetKLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTIBORHeader": {
+                "type": "object"
+            },
+            "GetTIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPHIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPHIBORHeader": {
+                "type": "object"
+            },
+            "GetPHIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBKIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBKIBORHeader": {
+                "type": "object"
+            },
+            "GetBKIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVNIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVNIBORHeader": {
+                "type": "object"
+            },
+            "GetVNIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMOSIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMOSIBORHeader": {
+                "type": "object"
+            },
+            "GetMOSIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMOSIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMOSIBIDHeader": {
+                "type": "object"
+            },
+            "GetMOSIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLIBORHeader": {
+                "type": "object"
+            },
+            "GetHistoricalLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRAZIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRAZIBORHeader": {
+                "type": "object"
+            },
+            "GetBRAZIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTRLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTRLIBORHeader": {
+                "type": "object"
+            },
+            "GetTRLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTRLIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTRLIBIDHeader": {
+                "type": "object"
+            },
+            "GetTRLIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRIBORHeader": {
+                "type": "object"
+            },
+            "GetBRIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRIBIDHeader": {
+                "type": "object"
+            },
+            "GetBRIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRIGIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRIGIBORHeader": {
+                "type": "object"
+            },
+            "GetRIGIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRIGIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRIGIBIDHeader": {
+                "type": "object"
+            },
+            "GetRIGIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAIDIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAIDIBORHeader": {
+                "type": "object"
+            },
+            "GetAIDIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetJIBARInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetJIBARHeader": {
+                "type": "object"
+            },
+            "GetJIBAROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBAIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBAIBORHeader": {
+                "type": "object"
+            },
+            "GetBAIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCOLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCOLIBORHeader": {
+                "type": "object"
+            },
+            "GetCOLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTALIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTALIBORHeader": {
+                "type": "object"
+            },
+            "GetTALIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTALIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTALIBIDHeader": {
+                "type": "object"
+            },
+            "GetTALIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateHeader": {
+                "type": "object"
+            },
+            "GetRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyTableInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyTableHeader": {
+                "type": "object"
+            },
+            "GetRateFamilyTableOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysRateHeader": {
+                "type": "object"
+            },
+            "GetTodaysRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateHeader": {
+                "type": "object"
+            },
+            "GetLatestRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestLIBORHeader": {
+                "type": "object"
+            },
+            "GetLatestLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetLatestRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRatesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetHistoricalRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateDescriptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateDescriptionHeader": {
+                "type": "object"
+            },
+            "GetRateDescriptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartCustomHeader": {
+                "type": "object"
+            },
+            "DrawRateChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartHeader": {
+                "type": "object"
+            },
+            "DrawRateChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartPresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartPresetHeader": {
+                "type": "object"
+            },
+            "DrawRateChartPresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignHeader": {
+                "type": "object"
+            },
+            "GetChartDesignOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveHeader": {
+                "type": "object"
+            },
+            "DrawYieldCurveOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurvePresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurvePresetHeader": {
+                "type": "object"
+            },
+            "DrawYieldCurvePresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveCustomHeader": {
+                "type": "object"
+            },
+            "DrawYieldCurveCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRates_tns": {
+                "type": "object"
+            },
+            "ListRatesResponse_tns": {
+                "type": "object"
+            },
+            "SearchRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Pattern": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetLIBORSecure_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecureResponse_tns": {
+                "type": "object"
+            },
+            "GetLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetREIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetHIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetBUBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBUBORResponse_tns": {
+                "type": "object"
+            },
+            "GetSOFIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSOFIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetREIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetOIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetSIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetCIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetSTIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSTIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetWIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetVILIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVILIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetEURIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEURIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetPRIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPRIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetKORIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKORIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetMIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetMIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetSABOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSABORResponse_tns": {
+                "type": "object"
+            },
+            "GetTAIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTAIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTURKIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTURKIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetMEXIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMEXIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTELBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTELBORResponse_tns": {
+                "type": "object"
+            },
+            "GetCHILIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCHILIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetCHIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCHIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetCDOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCDORResponse_tns": {
+                "type": "object"
+            },
+            "GetKAIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKAIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetKIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetKIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetSHIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSHIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetJIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetJIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetKLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetKLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetPHIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPHIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetBKIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBKIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetVNIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVNIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetMOSIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMOSIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetMOSIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMOSIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetBRAZIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRAZIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTRLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTRLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTRLIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTRLIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetBRIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetBRIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBRIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetRIGIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRIGIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetRIGIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRIGIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetAIDIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAIDIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetJIBAR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetJIBARResponse_tns": {
+                "type": "object"
+            },
+            "GetBAIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBAIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetCOLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCOLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTALIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTALIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetTALIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTALIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateResponse_tns": {
+                "type": "object"
+            },
+            "GetRateFamilyTable_tns": {
+                "type": "object"
+            },
+            "GetRateFamilyTableResponse_tns": {
+                "type": "object"
+            },
+            "GetRateFamily_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysRate_tns": {
+                "type": "object"
+            },
+            "GetTodaysRateResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestRate_tns": {
+                "type": "object"
+            },
+            "GetLatestRateResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestLIBOR_tns": {
+                "type": "object"
+            },
+            "GetLatestLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestRateFamily_tns": {
+                "type": "object"
+            },
+            "GetLatestRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalRates_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalRateFamily_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetRateDescription_tns": {
+                "type": "object"
+            },
+            "GetRateDescriptionResponse_tns": {
+                "type": "object"
+            },
+            "DrawRateChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "DrawRateChart_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartResponse_tns": {
+                "type": "object"
+            },
+            "DrawRateChartPreset_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartPresetResponse_tns": {
+                "type": "object"
+            },
+            "GetChartDesign_tns": {
+                "type": "object"
+            },
+            "GetChartDesignResponse_tns": {
+                "type": "object"
+            },
+            "DrawYieldCurve_tns": {
+                "type": "object",
+                "properties": {
+                    "OnDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetLatestRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveResponse_tns": {
+                "type": "object"
+            },
+            "DrawYieldCurvePreset_tns": {
+                "type": "object",
+                "properties": {
+                    "OnDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetLatestRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurvePresetResponse_tns": {
+                "type": "object"
+            },
+            "DrawYieldCurveCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "OnDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetLatestRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveCustomResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "RateDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfInterestRate_tns": {
+                "type": "object",
+                "properties": {
+                    "InterestRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRate_tns": {
+                "type": "object",
+                "properties": {
+                    "Rate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateTableLine_tns": {
+                "type": "object",
+                "properties": {
+                    "RateTableLine": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHistoricalInterestRates_tns": {
+                "type": "object",
+                "properties": {
+                    "HistoricalInterestRates": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Rate_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Text": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateTableCell_tns": {
+                "type": "object",
+                "properties": {
+                    "RateTableCell": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
