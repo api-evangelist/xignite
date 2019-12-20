@@ -1,0 +1,2214 @@
+{
+    "id": "91c5db2978e91772516ac239f7ce6d1a",
+    "name": "Xignite InterBanks",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "bc89948ce2461d0b7eeaa430c64e3cb2",
+            "name": "List Rates",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/ListRates",
+            "description": "List supported interest rates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb7e3d9f450efe8e94b76a13a2a8d447",
+            "name": "Search Rates",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/SearchRates",
+            "description": "Search rate names and description",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "d871b97bf5afb11063e71bf78150712c",
+            "name": "Get LIBOR Secure",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLIBORSecure",
+            "description": "Returns Libor as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "fba92f3b23bc4b66ff74d588e24265ee",
+            "name": "Get LIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLIBOR",
+            "description": "Returns Libor as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae62cc196c78691fc14bbbf3ea66791a",
+            "name": "Get REIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetREIBOR",
+            "description": "Returns a REIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "e2b78cee3fa6c6942c9d9a47751e8893",
+            "name": "Get H I BOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHIBOR",
+            "description": "Returns a HIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "af7389b9ca9572f269318deea5d1c963",
+            "name": "Get BUBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBUBOR",
+            "description": "Returns a BUBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "398ba88abe1ae8576a41fa2a57590c4b",
+            "name": "Get SOFIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSOFIBOR",
+            "description": "Returns a SOFIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e737ac13822a3f142ce805ecb8ceda8",
+            "name": "Get REIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetREIBID",
+            "description": "Returns a REIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "12b83b1b3b7c99e83b381e259580a8f2",
+            "name": "Get OIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetOIBOR",
+            "description": "Returns a OIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "2179ecc6e24c669152c1c64e0b0d47bf",
+            "name": "Get SIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSIBOR",
+            "description": "Returns a SIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c497b87945fb1faea9264d53ec3e697",
+            "name": "Get CIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCIBOR",
+            "description": "Returns a CIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "28d671dd85755e432a22aa85a1d0c089",
+            "name": "Get STIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSTIBOR",
+            "description": "Returns a STIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "51fb022b8713219a9ebab3e14187ab63",
+            "name": "Get WIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetWIBOR",
+            "description": "Returns a WIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "978bc8d54ff82346be414b4cbe32cb88",
+            "name": "Get VILIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetVILIBOR",
+            "description": "Returns a VILIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "286daf6a84134cd2386f9876018dea11",
+            "name": "Get EURIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetEURIBOR",
+            "description": "Returns a EURIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "354dbe922cc597c021e1ba3fb2084ad6",
+            "name": "Get PRIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetPRIBOR",
+            "description": "Returns a PRIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ef5a63b58f2a4b7ae6b4748d17c8003",
+            "name": "Get KORIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKORIBOR",
+            "description": "Returns a KORIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0338ac670921e21c2e9de23ce2d16b2",
+            "name": "Get MIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMIBOR",
+            "description": "Returns a MIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "d2f30a8e7738d4a99829b8ac5740743c",
+            "name": "Get MIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMIBID",
+            "description": "Returns a MIBOID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "d63a856d8eb1f4aadac9517c2d7927ba",
+            "name": "Get SABOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSABOR",
+            "description": "Returns a SABOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "d31bf7555a88a589978a5d0b2fba84c6",
+            "name": "Get TAIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTAIBOR",
+            "description": "Returns a TAIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "176299c5a4b2938ea0ee4a0b194f5026",
+            "name": "Get TURKIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTURKIBOR",
+            "description": "Returns a TURKIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "ba346633aedcee8e858b6f108bbaa841",
+            "name": "Get MEXIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMEXIBOR",
+            "description": "Returns a MEXIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "373485018be08c7a0750fd1169626776",
+            "name": "Get TELBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTELBOR",
+            "description": "Returns a TELBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "b974c95064c9f1e177447b4d35951302",
+            "name": "Get CHILIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCHILIBOR",
+            "description": "Returns a TELBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "dfacf7521a86ad58613261a47713d42a",
+            "name": "Get CHIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCHIBOR",
+            "description": "Returns a CHIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "98c5f604f4727b9f3071987eb30ea95a",
+            "name": "Get CDOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCDOR",
+            "description": "Returns a CDOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "66c0e0222b6c773574a981bced8afe21",
+            "name": "Get KAIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKAIBOR",
+            "description": "Returns a KAIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "abb413ae20296a612ec63169ea5df40e",
+            "name": "Get KIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKIBOR",
+            "description": "Returns a KIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "7dcf760ebf21b096fa26d258a6318d05",
+            "name": "Get KIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKIBID",
+            "description": "Returns a KIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "434240304eac847da4bbf1a3759f5c8a",
+            "name": "Get SHIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSHIBOR",
+            "description": "Returns a SHIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "4cb409efbdb8a4b235b66edbe71c1f9f",
+            "name": "Get JIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetJIBOR",
+            "description": "Returns a JIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "11557c53782ef7931ea3c5c6732de8f9",
+            "name": "Get KLIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKLIBOR",
+            "description": "Returns a KLIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "43a08dc9317de9bf302010246aeb190e",
+            "name": "Get TIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTIBOR",
+            "description": "Returns a TIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c0be740bbc671f5ce4e472675ed5560",
+            "name": "Get PHIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetPHIBOR",
+            "description": "Returns a PHIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "f642d151885237824ad834af1a627d27",
+            "name": "Get BKIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBKIBOR",
+            "description": "Returns a BKIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "940fe1af9a3eb2b9e31eda204ee7f809",
+            "name": "Get VNIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetVNIBOR",
+            "description": "Returns a VNIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "2972489002194194b688b24c31257335",
+            "name": "Get MOSIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMOSIBOR",
+            "description": "Returns a MOSIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "5cf7834de7167bbdde1cf7d1cfd74e3f",
+            "name": "Get MOSIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMOSIBID",
+            "description": "Returns a MOSIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "9808baccd0fc30e29bafa11dbf130b66",
+            "name": "Get Historical LIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHistoricalLIBOR",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "e344c2875886f70048800c75bae4443a",
+            "name": "Get BRAZIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBRAZIBOR",
+            "description": "Returns a BRAZIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "c358524b70ce66394756ae81f8e2b91c",
+            "name": "Get TRLIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTRLIBOR",
+            "description": "Returns a TRLIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a3ae9338b08730a907ea3d117a44f92",
+            "name": "Get TRLIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTRLIBID",
+            "description": "Returns a TRLIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "d90faabff4368070049e95062e344958",
+            "name": "Get BRIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBRIBOR",
+            "description": "Returns a BRIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "82e09ea470f610374bb97083abbbe47b",
+            "name": "Get BRIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBRIBID",
+            "description": "Returns a BRIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "77652632b35c95fa4e6f31d2ae779706",
+            "name": "Get RIGIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRIGIBOR",
+            "description": "Returns a RIGIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "313ee7ddecacfede8eb27227db2a3ed1",
+            "name": "Get RIGIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRIGIBID",
+            "description": "Returns a RIGIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "34051799907d156120f0a782555b790a",
+            "name": "Get AIDIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetAIDIBOR",
+            "description": "Returns a AIDIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "4491c6c0763e22260fb95e7076c13af4",
+            "name": "Get JIBAR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetJIBAR",
+            "description": "Returns a JIBAR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ac07c612d16c801766e631b25816a64",
+            "name": "Get BAIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBAIBOR",
+            "description": "Returns a BAIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "a5090eedfb5c9d48f2f4e90dac15943d",
+            "name": "Get COLIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCOLIBOR",
+            "description": "Returns a COLIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "1dd09ec0a69f50a11a741c51939fe78b",
+            "name": "Get TALIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTALIBOR",
+            "description": "Returns a TALIBOR as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "74e1a2559c631448b2ac986f139a0c1f",
+            "name": "Get TALIBID",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTALIBID",
+            "description": "Returns a TALIBID as of a date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "f26bb96e1e0c50e8ade9813977f5bd01",
+            "name": "Get Rate",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRate",
+            "description": "Returns a rate as of a specific date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "af7a1e6dc6193c95da479a7366c3f799",
+            "name": "Get Rate Family Table",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRateFamilyTable",
+            "description": "Returns a rate table for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "1bbd4b0145d078bf02534d0a31dbd6fe",
+            "name": "Get Rate Family",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRateFamily",
+            "description": "Returns a collection of related rate as of a specific date",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "418ae09d35dac0b777d5557ae2d49b8c",
+            "name": "Get Todays Rate",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTodaysRate",
+            "description": "Returns end of day closing value for a rate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f27cd4e2138465527327b0bc32b5fdd",
+            "name": "Get Latest Rate",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLatestRate",
+            "description": "Returns latest value for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "09f82e4530650f28986b2b51fce213f3",
+            "name": "Get Latest LIBOR",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLatestLIBOR",
+            "description": "Returns latest value for a LIBOR rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "fcbee70ae2f1b229f9846456035e515c",
+            "name": "Get Latest Rate Family",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLatestRateFamily",
+            "description": "Returns latest values for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "664d56296c55fe71054705189542e550",
+            "name": "Get Historical Rates",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHistoricalRates",
+            "description": "Returns a rate for a range of dates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "64d7ea1a8895bdf5c360b23d48636b52",
+            "name": "Get Historical Rate Family",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHistoricalRateFamily",
+            "description": "Returns a rate family and for a range of dates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "e56643b8521f3d5590259fed7c22c19e",
+            "name": "Get Rate Description",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRateDescription",
+            "description": "Returns a description for a rate.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "368a4c52aff2f5d60ee441afa9713a4f",
+            "name": "Draw Rate Chart Custom",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanksDraw, Rate, , Custom",
+            "description": "Draw a custom rate chart for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "d9dee9eefffb6b6f8bab13d6ebd05929",
+            "name": "Draw Rate Chart",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanksDraw, Rate, ",
+            "description": "Draw a standard rate chart for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "6cc401d74a9f494ca284f9b665a0c4d7",
+            "name": "Draw Rate Chart Preset",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanksDraw, Rate, , Preset",
+            "description": "Draw a standard rate chart for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "7f690654c56e180a4e8c3349c334c06d",
+            "name": "Get Chart Design",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks, Design",
+            "description": "Returns the default design class for the rate Chart.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "23b06b755b88dd547b52812faca1c9f8",
+            "name": "Draw Yield Curve",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/DrawYieldCurve",
+            "description": "Draw a yield curve for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "e6c33f843679dd5e3408f00b1c56a92a",
+            "name": "Draw Yield Curve Preset",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/DrawYieldCurvePreset",
+            "description": "Draw a yield curve for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb86c210bdb659f010a413efe0504353",
+            "name": "Draw Yield Curve Custom",
+            "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/DrawYieldCurveCustom",
+            "description": "Draw a yield curve for a rate family.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "rawModeData": ""
+        }
+    ]
+}
