@@ -1,0 +1,1092 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite NASDAQ Last Sale",
+        "description": "Provides real-time access to last sale NASDAQ, AMEX, and NYSE information.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale"
+    ],
+    "paths": {
+        "\/GetLastSale": {
+            "GET": {
+                "summary": "Get Last Sale",
+                "description": "Returns real time stock quote for a given stock ticker",
+                "operationId": "GetLastSale",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSales": {
+            "GET": {
+                "summary": "Get Last Sales",
+                "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+                "operationId": "GetLastSales",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBar": {
+            "GET": {
+                "summary": "Get Bar",
+                "description": "Returns a single bar for a specific time.",
+                "operationId": "GetBar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBars": {
+            "GET": {
+                "summary": "Get Bars",
+                "description": "Returns a set of bars for a stock and a time range during the trading day.",
+                "operationId": "GetBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Bars": {
+            "GET": {
+                "summary": "Get Chart Bars",
+                "description": "Returns a set of partial bars for a stock and a time range during the trading day.",
+                "operationId": "GetChartBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSaleByIdentifier": {
+            "GET": {
+                "summary": "Get Last Sale By Identifier",
+                "description": "Returns a real-time quote for a security based on the last trade execution.",
+                "operationId": "GetLastSaleByIdentifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSalesByIdentifiers": {
+            "GET": {
+                "summary": "Get Last Sales By Identifiers",
+                "description": "Returns a real-time quote for a security based on the last trade execution.",
+                "operationId": "GetLastSalesByIdentifiers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSaleWithFallback": {
+            "GET": {
+                "summary": "Get Last Sale With Fallback",
+                "description": "Returns real time stock quote for a given stock ticker",
+                "operationId": "GetLastSaleWithFallback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSaleByIdentifierWithFallback": {
+            "GET": {
+                "summary": "Get Last Sale By Identifier With Fallback",
+                "description": "Returns a real-time quote for a security based on the last trade execution.",
+                "operationId": "GetLastSaleByIdentifierWithFallback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSalesWithFallback": {
+            "GET": {
+                "summary": "Get Last Sales With Fallback",
+                "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+                "operationId": "GetLastSalesWithFallback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListTradedSymbols": {
+            "GET": {
+                "summary": "List Traded Symbols",
+                "description": "Returns all symbols and names that are traded",
+                "operationId": "ListTradedSymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetQuote": {
+            "GET": {
+                "summary": "Get Quote",
+                "description": "Returns a real-time NASDAQ BASIC quote for given security.",
+                "operationId": "GetQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetQuotes": {
+            "GET": {
+                "summary": "Get Quotes",
+                "description": "Returns real-time NASDAQ BASIC quotes for given securities.",
+                "operationId": "GetQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedQuote": {
+            "GET": {
+                "summary": "Get Extended Quote",
+                "description": "Returns a real-time NASDAQ BASIC quote for given security.",
+                "operationId": "GetExtendedQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedQuotes": {
+            "GET": {
+                "summary": "Get Extended Quotes",
+                "description": "Returns real-time NASDAQ BASIC quotes for given securities.",
+                "operationId": "GetExtendedQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleHeader": {
+                "type": "object"
+            },
+            "GetLastSaleOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesHeader": {
+                "type": "object"
+            },
+            "GetLastSalesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarHeader": {
+                "type": "object"
+            },
+            "GetBarOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsHeader": {
+                "type": "object"
+            },
+            "GetBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsHeader": {
+                "type": "object"
+            },
+            "GetChartBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleByIdentifierInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleByIdentifierHeader": {
+                "type": "object"
+            },
+            "GetLastSaleByIdentifierOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesByIdentifiersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesByIdentifiersHeader": {
+                "type": "object"
+            },
+            "GetLastSalesByIdentifiersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleWithFallbackInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleWithFallbackHeader": {
+                "type": "object"
+            },
+            "GetLastSaleWithFallbackOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleByIdentifierWithFallbackInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleByIdentifierWithFallbackHeader": {
+                "type": "object"
+            },
+            "GetLastSaleByIdentifierWithFallbackOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesWithFallbackInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesWithFallbackHeader": {
+                "type": "object"
+            },
+            "GetLastSalesWithFallbackOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListTradedSymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListTradedSymbolsHeader": {
+                "type": "object"
+            },
+            "ListTradedSymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetQuoteHeader": {
+                "type": "object"
+            },
+            "GetQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetQuotesHeader": {
+                "type": "object"
+            },
+            "GetQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedQuoteHeader": {
+                "type": "object"
+            },
+            "GetExtendedQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedQuotesHeader": {
+                "type": "object"
+            },
+            "GetExtendedQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSale_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSales_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesResponse_tns": {
+                "type": "object"
+            },
+            "GetBar_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarResponse_tns": {
+                "type": "object"
+            },
+            "GetBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Precision": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AdjustmentMethod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IncludeExtended": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSaleByIdentifier_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleByIdentifierResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSalesByIdentifiers_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesByIdentifiersResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSaleWithFallback_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleWithFallbackResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSaleByIdentifierWithFallback_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleByIdentifierWithFallbackResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSalesWithFallback_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesWithFallbackResponse_tns": {
+                "type": "object"
+            },
+            "ListTradedSymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "NumberOfDays": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListTradedSymbolsResponse_tns": {
+                "type": "object"
+            },
+            "GetQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedQuotesResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfLastSaleQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "LastSaleQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Quote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExtendedQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "ExtendedQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Bar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volume": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Trades": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "VWAP": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfBar_tns": {
+                "type": "object",
+                "properties": {
+                    "Bar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "ChartBar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Security_tns": {
+                "type": "object",
+                "properties": {
+                    "CIK": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ISIN": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Valoren": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MostLiquidExchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CategoryOrIndustry": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volume": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Trades": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "VWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Session": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AdjustmentRatio": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
