@@ -1,0 +1,291 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "Xignite Releases",
+        "description": "Company Press Release API List",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpshttp:\/\/www.xignite.com\/xReleases.xml\/"
+    ],
+    "paths": {
+        "GetHistoricalMarketHeadlines\/": {
+            "GET": {
+                "summary": "Get Historical Market Headlines",
+                "description": "Returns market headlines for a date range.",
+                "operationId": "GetGethistoricalmarketheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Source",
+                        "in": "query",
+                        "description": "The source of the news."
+                    },
+                    {
+                        "name": "StartDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetHistoricalSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Get Historical Security Headlines",
+                "description": "Returns headlines for a company and a date range.",
+                "operationId": "GetGethistoricalsecurityheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "Source",
+                        "in": "query",
+                        "description": "The source of the news."
+                    },
+                    {
+                        "name": "StartDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetLastMarketHeadlines\/": {
+            "GET": {
+                "summary": "Get Last Market Headlines",
+                "description": "Returns market headlines published since a specific date and time.",
+                "operationId": "GetGetlastmarketheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "SinceDate",
+                        "in": "query",
+                        "description": "The beginning of data range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetLastSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Get Last Security Headlines",
+                "description": "Returns headlines for a company published since a specific date and time.",
+                "operationId": "GetGetlastsecurityheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "SinceDate",
+                        "in": "query",
+                        "description": "The beginning of data range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetReleaseContent\/": {
+            "GET": {
+                "summary": "Get Release Content",
+                "description": "Return detailed information about a release as well as its content.",
+                "operationId": "GetGetreleasecontent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ReleaseID",
+                        "in": "query",
+                        "description": "The press release ID>"
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetTodaysSecurityHeadlines": {
+            "GET": {
+                "summary": "Get Todays Security Headlines",
+                "description": "Returns headlines for a company published today.",
+                "operationId": "GetGettodayssecurityheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetTopMarketHeadlines\/": {
+            "GET": {
+                "summary": "Get Top Market Headlines",
+                "description": "Returns a given number of market headlines published most recently.",
+                "operationId": "GetGettopmarketheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Count",
+                        "in": "query",
+                        "description": "The number of news items to return."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "GetTopSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Get Top Security Headlines",
+                "description": "Returns a given number of company headlines published most recently.",
+                "operationId": "GetGettopsecurityheadlines",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "SearchMarketHeadlines\/": {
+            "GET": {
+                "summary": "Search Market Headlines",
+                "description": "Search market headlines across all companies based on date, source, and title.",
+                "operationId": "GetSearchmarketheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Source",
+                        "in": "query",
+                        "description": "The source of the news."
+                    },
+                    {
+                        "name": "StartDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "Title",
+                        "in": "query",
+                        "description": "Title of the headlines."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        },
+        "SearchSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Search Security Headlines",
+                "description": "Search headlines for a company across all companies based on date, source, and title.",
+                "operationId": "GetSearchsecurityheadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "Source",
+                        "in": "query",
+                        "description": "The source of the news."
+                    },
+                    {
+                        "name": "StartDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "Title",
+                        "in": "query",
+                        "description": "Title of the headlines."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
