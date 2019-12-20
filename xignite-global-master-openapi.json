@@ -1,0 +1,1609 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global Master",
+        "description": "This web service provides multiple security-related operations including mapping of symbol, CUSIP, CIK and name, the collection of statistical information to be used in stock growth simulations, split information, and lookup services.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster"
+    ],
+    "paths": {
+        "\/GetSecurity": {
+            "GET": {
+                "summary": "Get Security",
+                "description": "Get a list of securities.",
+                "operationId": "GetSecurity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSecurities": {
+            "GET": {
+                "summary": "Get Securities",
+                "description": "Get a list of securities.",
+                "operationId": "GetSecurities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetInstrument": {
+            "GET": {
+                "summary": "Get Instrument",
+                "description": "Get a list of instruments.",
+                "operationId": "GetInstrument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetInstruments": {
+            "GET": {
+                "summary": "Get Instruments",
+                "description": "Get a list of instruments.",
+                "operationId": "GetInstruments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIssuer": {
+            "GET": {
+                "summary": "Get Issuer",
+                "description": "Get a list of issuers.",
+                "operationId": "GetIssuer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIssuers": {
+            "GET": {
+                "summary": "Get Issuers",
+                "description": "Get a list of issuers",
+                "operationId": "GetIssuers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIssuerByCompanyIdentifier": {
+            "GET": {
+                "summary": "Get Issuer By Company Identifier",
+                "description": "Get a issuer by the company identifier.",
+                "operationId": "GetIssuerByCompanyIdentifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByIdentifier": {
+            "GET": {
+                "summary": "Get Master By Identifier",
+                "description": "Get master records by identifier.",
+                "operationId": "GetMasterByIdentifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByIdentifiers": {
+            "GET": {
+                "summary": "Get Master By Identifiers",
+                "description": "Get master records by identifiers.",
+                "operationId": "GetMasterByIdentifiers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByExchange": {
+            "GET": {
+                "summary": "Get Master By Exchange",
+                "description": "Get master records by exchange.",
+                "operationId": "GetMasterByExchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByExchangeChanges": {
+            "GET": {
+                "summary": "Get Master By Exchange Changes",
+                "description": "Get a master record by exchange and the last modified since date",
+                "operationId": "GetMasterByExchangeChanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterBySector": {
+            "GET": {
+                "summary": "Get Master By Sector",
+                "description": "Old version of the service. Customers should use GetMasterByGlobalSector",
+                "operationId": "GetMasterBySector",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByIndustry": {
+            "GET": {
+                "summary": "Get Master By Industry",
+                "description": "Old version of the service. Customers should use GetMasterByGlobalIndustry",
+                "operationId": "GetMasterByIndustry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByGlobalSector": {
+            "GET": {
+                "summary": "Get Master By Global Sector",
+                "description": "Get master records by sector.",
+                "operationId": "GetMasterByGlobalSector",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterByGlobalIndustry": {
+            "GET": {
+                "summary": "Get Master By Global Industry",
+                "description": "Get master records by industry.",
+                "operationId": "GetMasterByGlobalIndustry",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "Get the possible exchanges.",
+                "operationId": "ListExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListIndustries": {
+            "GET": {
+                "summary": "List Industries",
+                "description": "Get the possible industries.",
+                "operationId": "ListIndustries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListInstrumentClasses": {
+            "GET": {
+                "summary": "List Instrument Classes",
+                "description": "Get the possible instrument classes.",
+                "operationId": "ListInstrumentClasses",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSectors": {
+            "GET": {
+                "summary": "List Sectors",
+                "description": "Get the possible sectors.",
+                "operationId": "ListSectors",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListGlobalIndustries": {
+            "GET": {
+                "summary": "List Global Industries",
+                "description": "Get the possible industries.",
+                "operationId": "ListGlobalIndustries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListGlobalSectors": {
+            "GET": {
+                "summary": "List Global Sectors",
+                "description": "Get the possible sectors.",
+                "operationId": "ListGlobalSectors",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListMICToLegacyExchange": {
+            "GET": {
+                "summary": "List MIC To Legacy Exchange",
+                "description": "Get the legacy exchanges.",
+                "operationId": "ListMICToLegacyExchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListMICToLegacySuffix": {
+            "GET": {
+                "summary": "List MIC To Legacy Suffix",
+                "description": "Get the legacy exchange suffix.",
+                "operationId": "ListMICToLegacySuffix",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListIdentifiersByExchange": {
+            "GET": {
+                "summary": "List Identifiers By Exchange",
+                "description": "Returns all the Indetifiers and names for securities listed on an exchange.",
+                "operationId": "ListIdentifiersByExchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSymbolChanges": {
+            "GET": {
+                "summary": "List Symbol Changes",
+                "description": "This operation returns symbols changed in this exchange.",
+                "operationId": "ListSymbolChanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMasterStatisticsByExchange": {
+            "GET": {
+                "summary": "Get Master Statistics By Exchange",
+                "description": "Get statistical information about exchanges.",
+                "operationId": "GetMasterStatisticsByExchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecurityInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecurityHeader": {
+                "type": "object"
+            },
+            "GetSecurityOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecuritiesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecuritiesHeader": {
+                "type": "object"
+            },
+            "GetSecuritiesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetInstrumentInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetInstrumentHeader": {
+                "type": "object"
+            },
+            "GetInstrumentOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetInstrumentsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetInstrumentsHeader": {
+                "type": "object"
+            },
+            "GetInstrumentsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuerInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuerHeader": {
+                "type": "object"
+            },
+            "GetIssuerOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuersHeader": {
+                "type": "object"
+            },
+            "GetIssuersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuerByCompanyIdentifierInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuerByCompanyIdentifierHeader": {
+                "type": "object"
+            },
+            "GetIssuerByCompanyIdentifierOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIdentifierInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIdentifierHeader": {
+                "type": "object"
+            },
+            "GetMasterByIdentifierOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIdentifiersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIdentifiersHeader": {
+                "type": "object"
+            },
+            "GetMasterByIdentifiersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByExchangeHeader": {
+                "type": "object"
+            },
+            "GetMasterByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByExchangeChangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByExchangeChangesHeader": {
+                "type": "object"
+            },
+            "GetMasterByExchangeChangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterBySectorInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterBySectorHeader": {
+                "type": "object"
+            },
+            "GetMasterBySectorOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIndustryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIndustryHeader": {
+                "type": "object"
+            },
+            "GetMasterByIndustryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByGlobalSectorInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByGlobalSectorHeader": {
+                "type": "object"
+            },
+            "GetMasterByGlobalSectorOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByGlobalIndustryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByGlobalIndustryHeader": {
+                "type": "object"
+            },
+            "GetMasterByGlobalIndustryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListIndustriesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListIndustriesHeader": {
+                "type": "object"
+            },
+            "ListIndustriesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListInstrumentClassesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListInstrumentClassesHeader": {
+                "type": "object"
+            },
+            "ListInstrumentClassesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSectorsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSectorsHeader": {
+                "type": "object"
+            },
+            "ListSectorsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListGlobalIndustriesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListGlobalIndustriesHeader": {
+                "type": "object"
+            },
+            "ListGlobalIndustriesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListGlobalSectorsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListGlobalSectorsHeader": {
+                "type": "object"
+            },
+            "ListGlobalSectorsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMICToLegacyExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMICToLegacyExchangeHeader": {
+                "type": "object"
+            },
+            "ListMICToLegacyExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMICToLegacySuffixInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMICToLegacySuffixHeader": {
+                "type": "object"
+            },
+            "ListMICToLegacySuffixOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListIdentifiersByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListIdentifiersByExchangeHeader": {
+                "type": "object"
+            },
+            "ListIdentifiersByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolChangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolChangesHeader": {
+                "type": "object"
+            },
+            "ListSymbolChangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterStatisticsByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterStatisticsByExchangeHeader": {
+                "type": "object"
+            },
+            "GetMasterStatisticsByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecurityResponse_tns": {
+                "type": "object"
+            },
+            "GetSecurities_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSecuritiesResponse_tns": {
+                "type": "object"
+            },
+            "GetInstrument_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetInstrumentResponse_tns": {
+                "type": "object"
+            },
+            "GetInstruments_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetInstrumentsResponse_tns": {
+                "type": "object"
+            },
+            "GetIssuer_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuerResponse_tns": {
+                "type": "object"
+            },
+            "GetIssuers_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuersResponse_tns": {
+                "type": "object"
+            },
+            "GetIssuerByCompanyIdentifier_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIssuerByCompanyIdentifierResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByIdentifier_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIdentifierResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByIdentifiers_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIdentifiersResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByExchangeChanges_tns": {
+                "type": "object",
+                "properties": {
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartModifiedDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndModifiedDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByExchangeChangesResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterBySector_tns": {
+                "type": "object",
+                "properties": {
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterBySectorResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByIndustry_tns": {
+                "type": "object",
+                "properties": {
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByIndustryResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByGlobalSector_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Sector": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "InstrumentClass": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByGlobalSectorResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterByGlobalIndustry_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Industry": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "InstrumentClass": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterByGlobalIndustryResponse_tns": {
+                "type": "object"
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "ListIndustries_tns": {
+                "type": "object"
+            },
+            "ListIndustriesResponse_tns": {
+                "type": "object"
+            },
+            "ListInstrumentClasses_tns": {
+                "type": "object"
+            },
+            "ListInstrumentClassesResponse_tns": {
+                "type": "object"
+            },
+            "ListSectors_tns": {
+                "type": "object"
+            },
+            "ListSectorsResponse_tns": {
+                "type": "object"
+            },
+            "ListGlobalIndustries_tns": {
+                "type": "object"
+            },
+            "ListGlobalIndustriesResponse_tns": {
+                "type": "object"
+            },
+            "ListGlobalSectors_tns": {
+                "type": "object"
+            },
+            "ListGlobalSectorsResponse_tns": {
+                "type": "object"
+            },
+            "ListMICToLegacyExchange_tns": {
+                "type": "object"
+            },
+            "ListMICToLegacyExchangeResponse_tns": {
+                "type": "object"
+            },
+            "ListMICToLegacySuffix_tns": {
+                "type": "object"
+            },
+            "ListMICToLegacySuffixResponse_tns": {
+                "type": "object"
+            },
+            "ListIdentifiersByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListIdentifiersByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "ListSymbolChanges_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChangesSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolChangesResponse_tns": {
+                "type": "object"
+            },
+            "GetMasterStatisticsByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMasterStatisticsByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Security": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfInstrument_tns": {
+                "type": "object",
+                "properties": {
+                    "Instrument": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfIssuer_tns": {
+                "type": "object",
+                "properties": {
+                    "Issuer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRecord_tns": {
+                "type": "object",
+                "properties": {
+                    "Record": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfLegacyExchangeMapping_tns": {
+                "type": "object",
+                "properties": {
+                    "LegacyExchangeMapping": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCustomAttribute_tns": {
+                "type": "object",
+                "properties": {
+                    "CustomAttribute": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfClassification_tns": {
+                "type": "object",
+                "properties": {
+                    "Classification": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfPossibleValue_tns": {
+                "type": "object",
+                "properties": {
+                    "PossibleValue": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfIdentifierRecord_tns": {
+                "type": "object",
+                "properties": {
+                    "IdentifierRecord": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSymbolChange_tns": {
+                "type": "object",
+                "properties": {
+                    "SymbolChange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfAlternateSecurityIdentifier_tns": {
+                "type": "object",
+                "properties": {
+                    "AlternateSecurityIdentifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CustomAttribute_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DataType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "PossibleValue_tns": {
+                "type": "object",
+                "properties": {
+                    "ProviderValue": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "XigniteValue": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IdentifierRecord_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SymbolChange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OldSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OldName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OldExchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OldCurrency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "InstrumentClass": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AlternateSecurityIdentifier_tns": {
+                "type": "object",
+                "properties": {
+                    "AlternateIdentifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
