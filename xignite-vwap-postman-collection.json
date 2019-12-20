@@ -1,0 +1,509 @@
+{
+    "id": "8353a70a264e93ee3274eab575ceba1c",
+    "name": "Xignite VWAP",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "a3b3f75915f75bc3891995714e4abd60",
+            "name": "Get Historical Daily VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalDailyVWAP",
+            "description": "Returns historical daily VWAP information for a date range",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "03b95c25859553a2d0699a3ecf527bdb",
+            "name": "Get Historical VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalVWAP",
+            "description": "Returns historical VWAP information for a date range",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f080cce6201655c0729f970e27af85d",
+            "name": "Get Historical Monthly VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalMonthlyVWAP",
+            "description": "Returns historical monthly VWAP information for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5275747ca20e7e20822323ac7531f31",
+            "name": "Get Historical Weekly VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalWeeklyVWAP",
+            "description": "Returns historical weekly VWAP information for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "7dda832feaeda98bce2d76f70dc50545",
+            "name": "Get Historical Period VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalPeriodVWAP",
+            "description": "Returns historical VWAP information for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "223b5e80e0d90fbafc94544e0dc6b2d2",
+            "name": "Get Intraday VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetIntradayVWAP",
+            "description": "Returns an intraday VWAP for a security based on the trades performed in a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf929f474abe96b35cc4a9abaf834146",
+            "name": "Get Historical Intraday VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalIntradayVWAP",
+            "description": "Returns a historical intraday VWAP for a security based on the trades performed in a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "969c02d92a2cb5ed468673748c131994",
+            "name": "Get Corporate Intraday VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetCorporateIntradayVWAP",
+            "description": "Returns a corporate intraday VWAP for a security based on the trades performed in a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "383495c28126289fc6e499124367df9a",
+            "name": "Get Corporate Historical VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetCorporateHistoricalVWAP",
+            "description": "Returns a corporate intraday VWAP for a security based on the trades performed in a time range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "b120e55936a1dbc70e7d1c157d0a8fd5",
+            "name": "Get Delayed VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetDelayedVWAP",
+            "description": "Returns an intraday VWAP for a security based on all trades for the day up to the 15\/20 minutes delayed quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "8f64ea76f4c3d6ef631f46c77c964a9f",
+            "name": "Get Real Time VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetRealTimeVWAP",
+            "description": "Returns a real-time VWAP for a security based on all INET trades.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "e176e9b27b558a5795d1665ee7267874",
+            "name": "Get1 Minute VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get1MinuteVWAP",
+            "description": "Returns an intraday VWAP for a security based on trades executed in the last 1 minute of the 15\/20 minutes delayed quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "87efe5ab134693da2f5ac91c3916c1f0",
+            "name": "Get5 Minute VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get5MinuteVWAP",
+            "description": "Returns an intraday VWAP for a security based on trades executed in the last 5 minutes of the 15\/20 minutes delayed quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "8873995aa6e627a789aba144cf2b62aa",
+            "name": "Get10 Minute VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get10MinuteVWAP",
+            "description": "Returns an intraday VWAP for a security based on trades executed in the last 10 minutes of the 15\/20 minutes delayed quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "71039cdb57479e5c90822bb9c85a748e",
+            "name": "Get30 Minute VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get30MinuteVWAP",
+            "description": "Returns an intraday VWAP for a security based on trades executed in the last 30 minutes of the 15\/20 minutes delayed quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        },
+        {
+            "id": "ab98b346695edf45ea8923e65513a8c4",
+            "name": "Get60 Minute VWAP",
+            "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get60MinuteVWAP",
+            "description": "Returns an intraday VWAP for a security based on trades executed in the last hour of the 15\/20 minutes delayed quote.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "rawModeData": ""
+        }
+    ]
+}
