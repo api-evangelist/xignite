@@ -1,0 +1,1390 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global Metals",
+        "description": "Provide real-time currency foreign exchange information and calculations.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals"
+    ],
+    "paths": {
+        "\/GetRealTimeMetalQuotes": {
+            "GET": {
+                "summary": "Get Real Time Metal Quotes",
+                "description": "Get real time exchange rate.",
+                "operationId": "GetRealTimeMetalQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMetalQuotes": {
+            "GET": {
+                "summary": "Get Historical Metal Quotes",
+                "description": "Get cross sectional historical metal quotes at a given time.",
+                "operationId": "GetHistoricalMetalQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeMetalQuote": {
+            "GET": {
+                "summary": "Get Real Time Metal Quote",
+                "description": "Get real time metal quote.",
+                "operationId": "GetRealTimeMetalQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Bars": {
+            "GET": {
+                "summary": "Get Chart Bars",
+                "description": "Get intraday bars of specified intervals within a time range.",
+                "operationId": "GetChartBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListMetals": {
+            "GET": {
+                "summary": "List Metals",
+                "description": "List all Metals.",
+                "operationId": "ListMetals",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeExtendedMetalQuote": {
+            "GET": {
+                "summary": "Get Real Time Extended Metal Quote",
+                "description": "Get real time extended metal quote.",
+                "operationId": "GetRealTimeExtendedMetalQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMetalQuote": {
+            "GET": {
+                "summary": "Get Historical Metal Quote",
+                "description": "Get historical metal quote at a given time.",
+                "operationId": "GetHistoricalMetalQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestHistoricalMetalQuote": {
+            "GET": {
+                "summary": "Get Latest Historical Metal Quote",
+                "description": "Get historical metal quote by a given time.",
+                "operationId": "GetLatestHistoricalMetalQuote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestHistoricalMetalQuotes": {
+            "GET": {
+                "summary": "Get Latest Historical Metal Quotes",
+                "description": "Get cross sectional historical metal quotes by a given time.",
+                "operationId": "GetLatestHistoricalMetalQuotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMetalQuotesRange": {
+            "GET": {
+                "summary": "Get Historical Metal Quotes Range",
+                "description": "Get historical metal quotes time series.",
+                "operationId": "GetHistoricalMetalQuotesRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLondonHistoricalMetalQuotesRange": {
+            "GET": {
+                "summary": "Get London Historical Metal Quotes Range",
+                "description": "Get historical metal quotes based on Legacy London spot prices.",
+                "operationId": "GetLondonHistoricalMetalQuotesRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTick": {
+            "GET": {
+                "summary": "Get Tick",
+                "description": "Get intraday tick at given time.",
+                "operationId": "GetTick",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTicks": {
+            "GET": {
+                "summary": "Get Ticks",
+                "description": "Get intraday ticks of specified intervals within a time range.",
+                "operationId": "GetTicks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBar": {
+            "GET": {
+                "summary": "Get Bar",
+                "description": "Get intraday bar at given time.",
+                "operationId": "GetBar",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBars": {
+            "GET": {
+                "summary": "Get Bars",
+                "description": "Get intraday bars of specified intervals within a time range.",
+                "operationId": "GetBars",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLondonFixing": {
+            "GET": {
+                "summary": "Get London Fixing",
+                "description": "Get last london fixing metal quotes.",
+                "operationId": "GetLondonFixing",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalLondonFixingRange": {
+            "GET": {
+                "summary": "Get Historical London Fixing Range",
+                "description": "Get historical london fixing metal quotes time series.",
+                "operationId": "GetHistoricalLondonFixingRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopIndustryHeadlines": {
+            "GET": {
+                "summary": "Get Top Industry Headlines",
+                "description": "Get top industry headlines.",
+                "operationId": "GetTopIndustryHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBaseMetalPrice": {
+            "GET": {
+                "summary": "Get Base Metal Price",
+                "description": "Get base metal price.",
+                "operationId": "GetBaseMetalPrice",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuotesHeader": {
+                "type": "object"
+            },
+            "GetRealTimeMetalQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuotesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMetalQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuoteHeader": {
+                "type": "object"
+            },
+            "GetRealTimeMetalQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsHeader": {
+                "type": "object"
+            },
+            "GetChartBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMetalsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListMetalsHeader": {
+                "type": "object"
+            },
+            "ListMetalsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeExtendedMetalQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeExtendedMetalQuoteHeader": {
+                "type": "object"
+            },
+            "GetRealTimeExtendedMetalQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuoteHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMetalQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestHistoricalMetalQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestHistoricalMetalQuoteHeader": {
+                "type": "object"
+            },
+            "GetLatestHistoricalMetalQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestHistoricalMetalQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestHistoricalMetalQuotesHeader": {
+                "type": "object"
+            },
+            "GetLatestHistoricalMetalQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuotesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuotesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMetalQuotesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLondonHistoricalMetalQuotesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLondonHistoricalMetalQuotesRangeHeader": {
+                "type": "object"
+            },
+            "GetLondonHistoricalMetalQuotesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickHeader": {
+                "type": "object"
+            },
+            "GetTickOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksHeader": {
+                "type": "object"
+            },
+            "GetTicksOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarHeader": {
+                "type": "object"
+            },
+            "GetBarOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsHeader": {
+                "type": "object"
+            },
+            "GetBarsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLondonFixingInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLondonFixingHeader": {
+                "type": "object"
+            },
+            "GetLondonFixingOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLondonFixingRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLondonFixingRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalLondonFixingRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopIndustryHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopIndustryHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTopIndustryHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBaseMetalPriceInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBaseMetalPriceHeader": {
+                "type": "object"
+            },
+            "GetBaseMetalPriceOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMetalQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FixingTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeMetalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeMetalQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetChartBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Precision": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Period": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartBarsResponse_tns": {
+                "type": "object"
+            },
+            "ListMetals_tns": {
+                "type": "object"
+            },
+            "ListMetalsResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeExtendedMetalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeExtendedMetalQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMetalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FixingTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestHistoricalMetalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FixingTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestHistoricalMetalQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestHistoricalMetalQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FixingTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestHistoricalMetalQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMetalQuotesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FixingTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PeriodType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMetalQuotesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetLondonHistoricalMetalQuotesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLondonHistoricalMetalQuotesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetTick_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickResponse_tns": {
+                "type": "object"
+            },
+            "GetTicks_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksResponse_tns": {
+                "type": "object"
+            },
+            "GetBar_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarResponse_tns": {
+                "type": "object"
+            },
+            "GetBars_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPrecision": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBarsResponse_tns": {
+                "type": "object"
+            },
+            "GetLondonFixing_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLondonFixingResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalLondonFixingRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FixingType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLondonFixingRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetTopIndustryHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopIndustryHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetBaseMetalPrice_tns": {
+                "type": "object",
+                "properties": {
+                    "MetalType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBaseMetalPriceResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMetalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "MetalQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHistoricalMetalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "HistoricalMetalQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTick_tns": {
+                "type": "object",
+                "properties": {
+                    "Tick": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfBar_tns": {
+                "type": "object",
+                "properties": {
+                    "Bar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfLondonFixing_tns": {
+                "type": "object",
+                "properties": {
+                    "LondonFixing": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMarketNews_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketNews": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MetalDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Unit": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "ChartBar": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMetal_tns": {
+                "type": "object",
+                "properties": {
+                    "Metal": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ChartBar_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Volume": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Trades": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "VWAP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Session": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AdjustmentRatio": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Metal_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Active": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
