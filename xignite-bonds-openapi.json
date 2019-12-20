@@ -1,0 +1,1665 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Bonds",
+        "description": "XigniteBonds service provides four-hour delayed price data for US Corporate and Agency Debt bonds including debt securities issued by Government-sponsored enterprises (GSE). Price data includes last sale, yield, daily and yearly open, high, low, close trade price data.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsbonds.xignite.comxBonds.json\/XigniteBonds"
+    ],
+    "paths": {
+        "\/GetPriceComposite": {
+            "GET": {
+                "summary": "Get Price Composite",
+                "description": "Returns price data composite including last sale price, yield and daily and yearly Open, High, Low prices for a specific bond reported by price source selected in the input. Return against this operation counts as three hits.",
+                "operationId": "GetPriceComposite",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSale": {
+            "GET": {
+                "summary": "Get Last Sale",
+                "description": "Returns Last Sale price for a specific bond as reported by the price source selected in the input. Request against this operation counts as one hit.",
+                "operationId": "GetLastSale",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDailyOpenHighLowClosePrice": {
+            "GET": {
+                "summary": "Get Daily Open High Low Close Price",
+                "description": "Returns daily Open, High, Low, Close (OHLC) prices for a specific bond reported by the price source selected in the input. Daily OHLC data is provided for the most recent date for which data is provided by the price source. Request against this operation counts as one hit.",
+                "operationId": "GetDailyOpenHighLowClosePrice",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetYearlyHighLowPrice": {
+            "GET": {
+                "summary": "Get Yearly High Low Price",
+                "description": "Returns yearly high, low prices for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
+                "operationId": "GetYearlyHighLowPrice",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetYield": {
+            "GET": {
+                "summary": "Get Yield",
+                "description": "Returns Yield to maturity for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
+                "operationId": "GetYield",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAccruedInterest": {
+            "GET": {
+                "summary": "Get Accrued Interest",
+                "description": "Returns Accrued Interest for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
+                "operationId": "GetAccruedInterest",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDurationAndConvexity": {
+            "GET": {
+                "summary": "Get Duration And Convexity",
+                "description": "Returns Duration and Convexity for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
+                "operationId": "GetDurationAndConvexity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBondCalculation": {
+            "GET": {
+                "summary": "Get Bond Calculation",
+                "description": "Returns Price, Yield, Accrued Interest and other bond analytics data for a specific bond reported by the price source selected in the input. Request against this operation counts as four hits.",
+                "operationId": "GetBondCalculation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetPriceComposites": {
+            "GET": {
+                "summary": "Get Price Composites",
+                "description": "Returns price data composite including last sale price, yield and daily and yearly Open, High, Low prices for the list of bonds specified in the input. Each PriceComposite object returned in the output counts as three hits.",
+                "operationId": "GetPriceComposites",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastSales": {
+            "GET": {
+                "summary": "Get Last Sales",
+                "description": "Returns Last Sale price for the list of bonds specified in the input, as reported by the price source selected in the input. Each LastSale object in the result counts as one hit.",
+                "operationId": "GetLastSales",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDailyOpenHighLowClosePrices": {
+            "GET": {
+                "summary": "Get Daily Open High Low Close Prices",
+                "description": "Returns daily Open, High, Low, Close (OHLC) prices for the list of bonds specified in the input. Daily OHLC data is provided for the most recent date for which data is provided by the price source. Each DailyOpenHighLowClosePrice object  returned counts as one hit.",
+                "operationId": "GetDailyOpenHighLowClosePrices",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetYearlyHighLowPrices": {
+            "GET": {
+                "summary": "Get Yearly High Low Prices",
+                "description": "Returns yearly high, low prices for the list of bonds specified in the input, as reported by the price source selected in the input. Each YearlyHighLowPrice object returned counts as one hit.",
+                "operationId": "GetYearlyHighLowPrices",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetYields": {
+            "GET": {
+                "summary": "Get Yields",
+                "description": "Returns Yield to maturity for the list of bonds specified in the input, as reported by the price source selected in the input. Each Yields object returned counts as one hit.",
+                "operationId": "GetYields",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAccruedInterests": {
+            "GET": {
+                "summary": "Get Accrued Interests",
+                "description": "Returns Accrued Interest for the list of bonds specified in the input. Each AccruedInterest object in the result counts as one hit.",
+                "operationId": "GetAccruedInterests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDurationAndConvexities": {
+            "GET": {
+                "summary": "Get Duration And Convexities",
+                "description": "Returns Duration and Convexity for a list of bonds provided in the input. Each DurationAndConvexity object in the result counts as one hit.",
+                "operationId": "GetDurationAndConvexities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetBondCalculations": {
+            "GET": {
+                "summary": "Get Bond Calculations",
+                "description": "Returns Price, Yield, Accrued Interest and other bond analytics data for a list of bonds provided in the input. Each BondCalculations object in the result counts as four hits.",
+                "operationId": "GetBondCalculations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListBondTypes": {
+            "GET": {
+                "summary": "List Bond Types",
+                "description": "",
+                "operationId": "ListBondTypes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSymbols": {
+            "GET": {
+                "summary": "List Symbols",
+                "description": "",
+                "operationId": "ListSymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceCompositeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceCompositeHeader": {
+                "type": "object"
+            },
+            "GetPriceCompositeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleHeader": {
+                "type": "object"
+            },
+            "GetLastSaleOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyOpenHighLowClosePriceInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyOpenHighLowClosePriceHeader": {
+                "type": "object"
+            },
+            "GetDailyOpenHighLowClosePriceOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYearlyHighLowPriceInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYearlyHighLowPriceHeader": {
+                "type": "object"
+            },
+            "GetYearlyHighLowPriceOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYieldInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYieldHeader": {
+                "type": "object"
+            },
+            "GetYieldOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAccruedInterestInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAccruedInterestHeader": {
+                "type": "object"
+            },
+            "GetAccruedInterestOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDurationAndConvexityInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDurationAndConvexityHeader": {
+                "type": "object"
+            },
+            "GetDurationAndConvexityOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondCalculationInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondCalculationHeader": {
+                "type": "object"
+            },
+            "GetBondCalculationOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceCompositesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceCompositesHeader": {
+                "type": "object"
+            },
+            "GetPriceCompositesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesHeader": {
+                "type": "object"
+            },
+            "GetLastSalesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyOpenHighLowClosePricesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyOpenHighLowClosePricesHeader": {
+                "type": "object"
+            },
+            "GetDailyOpenHighLowClosePricesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYearlyHighLowPricesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYearlyHighLowPricesHeader": {
+                "type": "object"
+            },
+            "GetYearlyHighLowPricesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYieldsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYieldsHeader": {
+                "type": "object"
+            },
+            "GetYieldsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAccruedInterestsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAccruedInterestsHeader": {
+                "type": "object"
+            },
+            "GetAccruedInterestsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDurationAndConvexitiesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDurationAndConvexitiesHeader": {
+                "type": "object"
+            },
+            "GetDurationAndConvexitiesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondCalculationsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondCalculationsHeader": {
+                "type": "object"
+            },
+            "GetBondCalculationsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListBondTypesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListBondTypesHeader": {
+                "type": "object"
+            },
+            "ListBondTypesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsHeader": {
+                "type": "object"
+            },
+            "ListSymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceComposite_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceCompositeResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSale_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSaleResponse_tns": {
+                "type": "object"
+            },
+            "GetDailyOpenHighLowClosePrice_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyOpenHighLowClosePriceResponse_tns": {
+                "type": "object"
+            },
+            "GetYearlyHighLowPrice_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYearlyHighLowPriceResponse_tns": {
+                "type": "object"
+            },
+            "GetYield_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYieldResponse_tns": {
+                "type": "object"
+            },
+            "GetAccruedInterest_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAccruedInterestResponse_tns": {
+                "type": "object"
+            },
+            "GetDurationAndConvexity_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDurationAndConvexityResponse_tns": {
+                "type": "object"
+            },
+            "GetBondCalculation_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondCalculationResponse_tns": {
+                "type": "object"
+            },
+            "GetPriceComposites_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriceCompositesResponse_tns": {
+                "type": "object"
+            },
+            "GetLastSales_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastSalesResponse_tns": {
+                "type": "object"
+            },
+            "GetDailyOpenHighLowClosePrices_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyOpenHighLowClosePricesResponse_tns": {
+                "type": "object"
+            },
+            "GetYearlyHighLowPrices_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYearlyHighLowPricesResponse_tns": {
+                "type": "object"
+            },
+            "GetYields_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetYieldsResponse_tns": {
+                "type": "object"
+            },
+            "GetAccruedInterests_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAccruedInterestsResponse_tns": {
+                "type": "object"
+            },
+            "GetDurationAndConvexities_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDurationAndConvexitiesResponse_tns": {
+                "type": "object"
+            },
+            "GetBondCalculations_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondCalculationsResponse_tns": {
+                "type": "object"
+            },
+            "ListBondTypes_tns": {
+                "type": "object"
+            },
+            "ListBondTypesResponse_tns": {
+                "type": "object"
+            },
+            "ListSymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "BondType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfPriceComposite_tns": {
+                "type": "object",
+                "properties": {
+                    "PriceComposite": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfLastSale_tns": {
+                "type": "object",
+                "properties": {
+                    "LastSale": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfDailyOpenHighLowClosePrice_tns": {
+                "type": "object",
+                "properties": {
+                    "DailyOpenHighLowClosePrice": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfYearlyHighLowPrice_tns": {
+                "type": "object",
+                "properties": {
+                    "YearlyHighLowPrice": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfYield_tns": {
+                "type": "object",
+                "properties": {
+                    "Yield": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfAccruedInterest_tns": {
+                "type": "object",
+                "properties": {
+                    "AccruedInterest": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfDurationAndConvexity_tns": {
+                "type": "object",
+                "properties": {
+                    "DurationAndConvexity": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfBondCalculation_tns": {
+                "type": "object",
+                "properties": {
+                    "BondCalculation": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "InstrumentIdentifierBrief_tns": {
+                "type": "object",
+                "properties": {
+                    "Valoren": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ISIN": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "TradedPrice_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSale": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSaleDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSaleTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSaleSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyOpen": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyOpenDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyOpenTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyHigh": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyHighDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyHighTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyLow": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyLowDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyLowTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyHigh": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyHighDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyLow": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyLowDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastYearClose": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastYearCloseDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondLastSale_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSale": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSaleSize": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSaleDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastSaleTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DailyOpenHighLowClose_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyOpen": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyOpenDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyOpenTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyHigh": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyHighDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyHighTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyLow": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyLowDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyLowTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyClose": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyCloseDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyCloseTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "YearlyHighLow_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyHigh": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyHighDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyLow": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YearlyLowDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastYearClose": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastYearCloseDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondYield_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CurrentYield": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToMaturityDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToMaturityTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToNextCall": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "YieldToNextCallDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DiscountYield": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DiscountYieldDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondAccruedInterest_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AccruedInterest": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AccruedInterestDayCount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AccruedInterestDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AccruedInterestTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AccruedInterestDPlus3": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NoOfAccruedDays": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DailyAccruedInterest": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ExDividendAccruedInterestTradeDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ExDividendAccruedInterestSetDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondDuration_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToMaturityDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToMaturityTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ModifiedDurationToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ModifiedDurationToMaturityDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ModifiedDurationToMaturityTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToNextCouponMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToNextCouponMaturityDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToNextCouponMaturityTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToWorst": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToWorstDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToWorstTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DurationToNextCall": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ModifiedDurationToNextCall": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondConvexity_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ConvexityToMaturity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ConvexityToMaturityDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ConvexityToMaturityTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ConvexityToWorst": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ConvexityToWorstDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ConvexityToWorstTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceUsedForCalculationsTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondOptionAdjustedSpread_tns": {
+                "type": "object",
+                "properties": {
+                    "ShortName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PriceSource": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionAdjustedSpread": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionAdjustedSpreadDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionAdjustedSpreadTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfBondType_tns": {
+                "type": "object",
+                "properties": {
+                    "BondType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "BondType_tns": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "IssuerName": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Valoren": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ISIN": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DatedDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
