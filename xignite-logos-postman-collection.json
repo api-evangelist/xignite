@@ -1,0 +1,137 @@
+{
+    "id": "b4ebf136c1d34f82c0c8b164d757653a",
+    "name": "Xignite Logos",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "4ba6fa7a42b2e6e8615003271045632e",
+            "name": "Get Logo",
+            "url": "httpswww.xignite.comxLogos.json\/XigniteLogos\/GetLogo",
+            "description": "Save an archive.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b4ebf136c1d34f82c0c8b164d757653a",
+            "rawModeData": ""
+        },
+        {
+            "id": "269011d9c40e836d4e761e11fb3cb4bf",
+            "name": "Get Logos List",
+            "url": "httpswww.xignite.comxLogos.json\/XigniteLogos\/GetLogosList",
+            "description": "Get all symbols which have available logos.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b4ebf136c1d34f82c0c8b164d757653a",
+            "rawModeData": ""
+        },
+        {
+            "id": "504313a1d66e2537e6d6433002d0829e",
+            "name": "List Markets",
+            "url": "httpswww.xignite.comxLogos.json\/XigniteLogos\/ListMarkets",
+            "description": "List markets which have avalilable logos.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b4ebf136c1d34f82c0c8b164d757653a",
+            "rawModeData": ""
+        },
+        {
+            "id": "af73fdc4dd0abbdcd859ea5db38a1852",
+            "name": "List Symbols",
+            "url": "httpswww.xignite.comxLogos.json\/XigniteLogos\/ListSymbols",
+            "description": "List available logos on market.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b4ebf136c1d34f82c0c8b164d757653a",
+            "rawModeData": ""
+        }
+    ]
+}
