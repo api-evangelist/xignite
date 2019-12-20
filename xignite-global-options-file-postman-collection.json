@@ -1,0 +1,44 @@
+{
+    "id": "90cea52aa0937b26bce5429b0738cd43",
+    "name": "Xignite Global Options File",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b6dd7705269a6afe23cce7edcafa3591",
+            "name": "Get File",
+            "url": "httpscloudfiles.xignite.comxGlobalOptionsFile.json\/XigniteGlobalOptionsFile\/GetFile",
+            "description": "Get file",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "90cea52aa0937b26bce5429b0738cd43",
+            "rawModeData": ""
+        }
+    ]
+}
