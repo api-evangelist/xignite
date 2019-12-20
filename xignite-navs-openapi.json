@@ -1,0 +1,292 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite NAVs",
+        "description": "This web service provides latest NAV information for all funds.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsnavs.xignite.comv2\/xNAVs.json\/XigniteNAVs"
+    ],
+    "paths": {
+        "\/GetLatestNAV": {
+            "GET": {
+                "summary": "Get Latest NAV",
+                "description": "This operation returns the latest NAV information for a funds.",
+                "operationId": "GetLatestNAV",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestNAVs": {
+            "GET": {
+                "summary": "Get Latest NAVs",
+                "description": "This operation returns the latest NAV information for a list of funds.",
+                "operationId": "GetLatestNAVs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFundsBySymbol": {
+            "GET": {
+                "summary": "List Funds By Symbol",
+                "description": "This operation returns a list of funds descreptive information.",
+                "operationId": "ListFundsBySymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAVInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAVHeader": {
+                "type": "object"
+            },
+            "GetLatestNAVOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAVsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAVsHeader": {
+                "type": "object"
+            },
+            "GetLatestNAVsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFundsBySymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFundsBySymbolHeader": {
+                "type": "object"
+            },
+            "ListFundsBySymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAV_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAVResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestNAVs_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestNAVsResponse_tns": {
+                "type": "object"
+            },
+            "ListFundsBySymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFundsBySymbolResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFundNAV_tns": {
+                "type": "object",
+                "properties": {
+                    "FundNAV": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFund_tns": {
+                "type": "object",
+                "properties": {
+                    "Fund": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "NAV_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Open": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Last": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Close": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PreviousClose": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChangeFromOpen": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PercentChangeFromOpen": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ChangeFromPreviousClose": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PercentChangeFromPreviousClose": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Yield": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
