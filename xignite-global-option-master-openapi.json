@@ -1,0 +1,371 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global Option Master",
+        "description": "Complete stock option management application.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobaloptionmaster.xignite.comxGlobalOptionMaster.json\/XigniteGlobalOptionMaster"
+    ],
+    "paths": {
+        "\/GetUnderlyingForOption": {
+            "GET": {
+                "summary": "Get Underlying For Option",
+                "description": "Get details on an underlying instrument for the option symbol provided.",
+                "operationId": "GetUnderlyingForOption",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOptionBySymbol": {
+            "GET": {
+                "summary": "Get Option By Symbol",
+                "description": "Get details on an option.",
+                "operationId": "GetOptionBySymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOptionChain": {
+            "GET": {
+                "summary": "Get Option Chain",
+                "description": "Get the option chain for the underlying instrument.",
+                "operationId": "GetOptionChain",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "List supported exchanges.",
+                "operationId": "ListExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnderlyingForOptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnderlyingForOptionHeader": {
+                "type": "object"
+            },
+            "GetUnderlyingForOptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOptionBySymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOptionBySymbolHeader": {
+                "type": "object"
+            },
+            "GetOptionBySymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOptionChainInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOptionChainHeader": {
+                "type": "object"
+            },
+            "GetOptionChainOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnderlyingForOption_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnderlyingForOptionResponse_tns": {
+                "type": "object"
+            },
+            "GetOptionBySymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOptionBySymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetOptionChain_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "OptionExchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Day": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOptionChainResponse_tns": {
+                "type": "object"
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfInstrumentBrief_tns": {
+                "type": "object",
+                "properties": {
+                    "InstrumentBrief": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfOptionDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "OptionDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExpiration_tns": {
+                "type": "object",
+                "properties": {
+                    "Expiration": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfOptionSymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "OptionSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Expiration_tns": {
+                "type": "object",
+                "properties": {
+                    "ExpirationDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OptionSymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "SymbologyType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
