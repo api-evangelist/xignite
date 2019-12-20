@@ -1,0 +1,873 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global Holidays",
+        "description": "This web service provides trading\/holiday information for all exchanges\/currencies\/financial centers.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays"
+    ],
+    "paths": {
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "List exchanges.",
+                "operationId": "ListExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListCurrencies": {
+            "GET": {
+                "summary": "List Currencies",
+                "description": "List currencies.",
+                "operationId": "ListCurrencies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListFinancialCenters": {
+            "GET": {
+                "summary": "List Financial Centers",
+                "description": "List financial centers.",
+                "operationId": "ListFinancialCenters",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHolidays": {
+            "GET": {
+                "summary": "Get Holidays",
+                "description": "Get holidays.",
+                "operationId": "GetHolidays",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListHolidays": {
+            "GET": {
+                "summary": "List Holidays",
+                "description": "List holidays.",
+                "operationId": "ListHolidays",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetNextDate": {
+            "GET": {
+                "summary": "Get Next Date",
+                "description": "Get next date.",
+                "operationId": "GetNextDate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetPriorDate": {
+            "GET": {
+                "summary": "Get Prior Date",
+                "description": "Get prior date.",
+                "operationId": "GetPriorDate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDayCount": {
+            "GET": {
+                "summary": "Get Day Count",
+                "description": "Get day count.",
+                "operationId": "GetDayCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExchangeDateTime": {
+            "GET": {
+                "summary": "Get Exchange Date Time",
+                "description": "Get exchange date time.",
+                "operationId": "GetExchangeDateTime",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExchangeHours": {
+            "GET": {
+                "summary": "Get Exchange Hours",
+                "description": "Get exchange hours.",
+                "operationId": "GetExchangeHours",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExchangeHoursRange": {
+            "GET": {
+                "summary": "Get Exchange Hours Range",
+                "description": "Get exchange hours range.",
+                "operationId": "GetExchangeHoursRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/AreExchangesOpen": {
+            "GET": {
+                "summary": "Are Exchanges Open",
+                "description": "Are exchanges open.",
+                "operationId": "AreExchangesOpen",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/IsExchangeOpenOnDate": {
+            "GET": {
+                "summary": "Is Exchange Open On Date",
+                "description": "Is exchange open on date.",
+                "operationId": "IsExchangeOpenOnDate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSettlementDate": {
+            "GET": {
+                "summary": "Get Settlement Date",
+                "description": "Get settlement date.",
+                "operationId": "GetSettlementDate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/IsSettlementDate": {
+            "GET": {
+                "summary": "Is Settlement Date",
+                "description": "Is settlement date.",
+                "operationId": "IsSettlementDate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCurrenciesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCurrenciesHeader": {
+                "type": "object"
+            },
+            "ListCurrenciesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFinancialCentersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListFinancialCentersHeader": {
+                "type": "object"
+            },
+            "ListFinancialCentersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHolidaysInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHolidaysHeader": {
+                "type": "object"
+            },
+            "GetHolidaysOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListHolidaysInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListHolidaysHeader": {
+                "type": "object"
+            },
+            "ListHolidaysOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetNextDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetNextDateHeader": {
+                "type": "object"
+            },
+            "GetNextDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriorDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriorDateHeader": {
+                "type": "object"
+            },
+            "GetPriorDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDayCountInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDayCountHeader": {
+                "type": "object"
+            },
+            "GetDayCountOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeDateTimeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeDateTimeHeader": {
+                "type": "object"
+            },
+            "GetExchangeDateTimeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeHoursInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeHoursHeader": {
+                "type": "object"
+            },
+            "GetExchangeHoursOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeHoursRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeHoursRangeHeader": {
+                "type": "object"
+            },
+            "GetExchangeHoursRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AreExchangesOpenInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AreExchangesOpenHeader": {
+                "type": "object"
+            },
+            "AreExchangesOpenOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IsExchangeOpenOnDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IsExchangeOpenOnDateHeader": {
+                "type": "object"
+            },
+            "IsExchangeOpenOnDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSettlementDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSettlementDateHeader": {
+                "type": "object"
+            },
+            "GetSettlementDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IsSettlementDateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IsSettlementDateHeader": {
+                "type": "object"
+            },
+            "IsSettlementDateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "ListCurrencies_tns": {
+                "type": "object"
+            },
+            "ListCurrenciesResponse_tns": {
+                "type": "object"
+            },
+            "ListFinancialCenters_tns": {
+                "type": "object"
+            },
+            "ListFinancialCentersResponse_tns": {
+                "type": "object"
+            },
+            "GetHolidays_tns": {
+                "type": "object",
+                "properties": {
+                    "Location": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHolidaysResponse_tns": {
+                "type": "object"
+            },
+            "ListHolidays_tns": {
+                "type": "object",
+                "properties": {
+                    "Location": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListHolidaysResponse_tns": {
+                "type": "object"
+            },
+            "GetNextDate_tns": {
+                "type": "object",
+                "properties": {
+                    "Location": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetNextDateResponse_tns": {
+                "type": "object"
+            },
+            "GetPriorDate_tns": {
+                "type": "object",
+                "properties": {
+                    "Location": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetPriorDateResponse_tns": {
+                "type": "object"
+            },
+            "GetDayCount_tns": {
+                "type": "object",
+                "properties": {
+                    "Location": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDayCountResponse_tns": {
+                "type": "object"
+            },
+            "GetExchangeDateTime_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeDateTimeResponse_tns": {
+                "type": "object"
+            },
+            "GetExchangeHours_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeHoursResponse_tns": {
+                "type": "object"
+            },
+            "GetExchangeHoursRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExchangeHoursRangeResponse_tns": {
+                "type": "object"
+            },
+            "AreExchangesOpen_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchanges": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "AreExchangesOpenResponse_tns": {
+                "type": "object"
+            },
+            "IsExchangeOpenOnDate_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IsExchangeOpenOnDateResponse_tns": {
+                "type": "object"
+            },
+            "GetSettlementDate_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSettlementDateResponse_tns": {
+                "type": "object"
+            },
+            "IsSettlementDate_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "IsSettlementDateResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCurrency_tns": {
+                "type": "object",
+                "properties": {
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFinancialCenter_tns": {
+                "type": "object",
+                "properties": {
+                    "FinancialCenter": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHoliday_tns": {
+                "type": "object",
+                "properties": {
+                    "Holiday": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeHours_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeHours": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeStatus_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeStatus": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
