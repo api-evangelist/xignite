@@ -1,0 +1,106 @@
+{
+    "id": "84bdcd62891858a58dd27db6d80f01c3",
+    "name": "Xignite NAVs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "81339aa951fe4244fcb9078d9b636328",
+            "name": "Get Latest NAV",
+            "url": "httpsnavs.xignite.comv2\/xNAVs.json\/XigniteNAVs\/GetLatestNAV",
+            "description": "This operation returns the latest NAV information for a funds.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "84bdcd62891858a58dd27db6d80f01c3",
+            "rawModeData": ""
+        },
+        {
+            "id": "746399fc5ff43c6ee6b3f24828fe966f",
+            "name": "Get Latest NAVs",
+            "url": "httpsnavs.xignite.comv2\/xNAVs.json\/XigniteNAVs\/GetLatestNAVs",
+            "description": "This operation returns the latest NAV information for a list of funds.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "84bdcd62891858a58dd27db6d80f01c3",
+            "rawModeData": ""
+        },
+        {
+            "id": "a744a574b8e78753ac1b1c7b94b072b4",
+            "name": "List Funds By Symbol",
+            "url": "httpsnavs.xignite.comv2\/xNAVs.json\/XigniteNAVs\/ListFundsBySymbol",
+            "description": "This operation returns a list of funds descreptive information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "84bdcd62891858a58dd27db6d80f01c3",
+            "rawModeData": ""
+        }
+    ]
+}
