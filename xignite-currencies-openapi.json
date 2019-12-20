@@ -1,0 +1,3604 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Currencies",
+        "description": "Provide real-time currency foreign exchange information and calculations.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies"
+    ],
+    "paths": {
+        "\/ListCurrencies": {
+            "GET": {
+                "summary": "List Currencies",
+                "description": "List supported currencies.",
+                "operationId": "PostListcurrencies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListActiveCurrencies": {
+            "GET": {
+                "summary": "List Active Currencies",
+                "description": "List supported currencies.",
+                "operationId": "PostListactivecurrencies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListOfficialRates": {
+            "GET": {
+                "summary": "List Official Rates",
+                "description": "List supported official rates.",
+                "operationId": "PostListofficialrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetUnitOfAccount": {
+            "GET": {
+                "summary": "Get Unit Of Account",
+                "description": "Get Unit Of Account.",
+                "operationId": "PostGetunitofaccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ConvertRealTimeValue": {
+            "GET": {
+                "summary": "Convert Real Time Value",
+                "description": "Convert value from one currency to another in real-time.",
+                "operationId": "PostConvertrealtimevalue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ConvertHistoricalValue": {
+            "GET": {
+                "summary": "Convert Historical Value",
+                "description": "Convert value from one currency to another as of a historical date.",
+                "operationId": "PostConverthistoricalvalue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeForwardRate": {
+            "GET": {
+                "summary": "Get Real Time Forward Rate",
+                "description": "Returns a set of real-time currency forward rates.",
+                "operationId": "PostGetrealtimeforwardrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRateAsString": {
+            "GET": {
+                "summary": "Get Real Time Cross Rate As String",
+                "description": "Returns a real-time currency cross-rate.",
+                "operationId": "PostGetrealtimecrossrateasstring",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestCrossRate": {
+            "GET": {
+                "summary": "Get Latest Cross Rate",
+                "description": "Returns the latest possible cross rate.",
+                "operationId": "PostGetlatestcrossrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestCrossRates": {
+            "GET": {
+                "summary": "Get Latest Cross Rates",
+                "description": "Returns the latest possible cross rate.",
+                "operationId": "PostGetlatestcrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRate": {
+            "GET": {
+                "summary": "Get Real Time Cross Rate",
+                "description": "Returns a real-time currency cross-rate.",
+                "operationId": "PostGetrealtimecrossrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRateGMT": {
+            "GET": {
+                "summary": "Get Real Time Cross Rate G M T",
+                "description": "Returns a real-time currency cross-rate with the times in GMT.",
+                "operationId": "PostGetrealtimecrossrategmt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRawCrossRate": {
+            "GET": {
+                "summary": "Get Raw Cross Rate",
+                "description": "Returns a real-time currency cross-rate.",
+                "operationId": "PostGetrawcrossrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRawCrossRates": {
+            "GET": {
+                "summary": "Get Raw Cross Rates",
+                "description": "Returns a real-time currency cross-rate.",
+                "operationId": "PostGetrawcrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRates": {
+            "GET": {
+                "summary": "Get Real Time Cross Rates",
+                "description": "Returns the latest possible cross rate.",
+                "operationId": "PostGetrealtimecrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRateTables": {
+            "GET": {
+                "summary": "Get Historical Cross Rate Tables",
+                "description": "Returns historical currency cross-rate tables for a range of dates.",
+                "operationId": "PostGethistoricalcrossratetables",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRateTablesBidAsk": {
+            "GET": {
+                "summary": "Get Historical Cross Rate Tables Bid Ask",
+                "description": "Returns historical currency cross-rate tables for a range of dates.",
+                "operationId": "PostGethistoricalcrossratetablesbask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCurrencyReport": {
+            "GET": {
+                "summary": "Get Currency Report",
+                "description": "Returns historical currency cross-rate tables for a range of dates.",
+                "operationId": "PostGetcurrencyreport",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRateTable": {
+            "GET": {
+                "summary": "Get Historical Cross Rate Table",
+                "description": "Returns a historical currency cross-rate table.",
+                "operationId": "PostGethistoricalcrossratetable",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRateTableBidAsk": {
+            "GET": {
+                "summary": "Get Historical Cross Rate Table Bid Ask",
+                "description": "Returns a historical currency cross-rate table.",
+                "operationId": "PostGethistoricalcrossratetablebask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRateTable": {
+            "GET": {
+                "summary": "Get Real Time Cross Rate Table",
+                "description": "Returns a real-time currency cross-rate table.",
+                "operationId": "PostGetrealtimecrossratetable",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRateTableWithBidAsk": {
+            "GET": {
+                "summary": "Get Real Time Cross Rate Table With Bid Ask",
+                "description": "Returns a real-time currency cross-rate table.",
+                "operationId": "PostGetrealtimecrossratetablewithbask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllCrossRatesForACurrency": {
+            "GET": {
+                "summary": "Get All Cross Rates For A Currency",
+                "description": "Returns all valid cross rates for a currency.",
+                "operationId": "PostGetallcrossratesforacurrency",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeCrossRateTableAsHTML": {
+            "GET": {
+                "summary": "Get Real Time Cross Rate Table As H T M L",
+                "description": "Returns a real-time currency cross-rate table as an HTML Output.",
+                "operationId": "PostGetrealtimecrossratetableashtml",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSimpleRealTimeCrossRateTableAsHTML": {
+            "GET": {
+                "summary": "Get Simple Real Time Cross Rate Table As H T M L",
+                "description": "Returns a real-time currency cross-rate table as an HTML Output.",
+                "operationId": "PostGetsimplerealtimecrossratetableashtml",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRateTableAsHTML": {
+            "GET": {
+                "summary": "Get Historical Cross Rate Table As H T M L",
+                "description": "Returns a historical currency cross-rate table as an HTML Output.",
+                "operationId": "PostGethistoricalcrossratetableashtml",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRate": {
+            "GET": {
+                "summary": "Get Historical Cross Rate",
+                "description": "Returns a cross-rate as of a historical date.",
+                "operationId": "PostGethistoricalcrossrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRates": {
+            "GET": {
+                "summary": "Get Historical Cross Rates",
+                "description": "Returns multiple cross-rates as of a historical date.",
+                "operationId": "PostGethistoricalcrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRateBidAsk": {
+            "GET": {
+                "summary": "Get Historical Cross Rate Bid Ask",
+                "description": "Returns a cross-rate with bid\/ask as of a historical date.",
+                "operationId": "PostGethistoricalcrossratebask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRatesBidAsk": {
+            "GET": {
+                "summary": "Get Historical Cross Rates Bid Ask",
+                "description": "Returns multiple cross-rates with bid\/ask as of a historical date.",
+                "operationId": "PostGethistoricalcrossratesbask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRatesRange": {
+            "GET": {
+                "summary": "Get Historical Cross Rates Range",
+                "description": "This operation returns a range of cross-rates for a currency pair.",
+                "operationId": "PostGethistoricalcrossratesrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRatesBidAskRange": {
+            "GET": {
+                "summary": "Get Historical Cross Rates Bid Ask Range",
+                "description": "This operation returns a range of cross-rates for a currency pair.",
+                "operationId": "PostGethistoricalcrossratesbaskrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRatesAsOf": {
+            "GET": {
+                "summary": "Get Historical Cross Rates As Of",
+                "description": "This operation returns a range of cross-rates for a currency pair.",
+                "operationId": "PostGethistoricalcrossratesasof",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalCrossRatesBidAskAsOf": {
+            "GET": {
+                "summary": "Get Historical Cross Rates Bid Ask As Of",
+                "description": "This operation returns a range of cross-rates for a currency pair.",
+                "operationId": "PostGethistoricalcrossratesbaskasof",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOfficialCrossRate": {
+            "GET": {
+                "summary": "Get Official Cross Rate",
+                "description": "Returns an official cross-rate as of a historical date.",
+                "operationId": "PostGetofficialcrossrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOfficialCrossRates": {
+            "GET": {
+                "summary": "Get Official Cross Rates",
+                "description": "Returns an official cross-rate as of a historical date.",
+                "operationId": "PostGetofficialcrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOfficialCrossRateBidAsk": {
+            "GET": {
+                "summary": "Get Official Cross Rate Bid Ask",
+                "description": "Returns an official cross-rate as of a historical date.",
+                "operationId": "PostGetofficialcrossratebask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOfficialCrossRatesBidAsk": {
+            "GET": {
+                "summary": "Get Official Cross Rates Bid Ask",
+                "description": "Returns an official cross-rate as of a historical date.",
+                "operationId": "PostGetofficialcrossratesbask",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMutipleHistoricalCrossRates": {
+            "GET": {
+                "summary": "Get Mutiple Historical Cross Rates",
+                "description": "Returns multiple cross-rates as of a historical date.",
+                "operationId": "PostGetmutiplehistoricalcrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAverageHistoricalCrossRates": {
+            "GET": {
+                "summary": "Get Average Historical Cross Rates",
+                "description": "This operation returns an array average daily historical cross-rates for a period.",
+                "operationId": "PostGetaveragehistoricalcrossrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAverageHistoricalCrossRate": {
+            "GET": {
+                "summary": "Get Average Historical Cross Rate",
+                "description": "This operation returns an average daily historical cross-rates for a period.",
+                "operationId": "PostGetaveragehistoricalcrossrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMonthlyCrossRatesRange": {
+            "GET": {
+                "summary": "Get Historical Monthly Cross Rates Range",
+                "description": "This operation returns a complete range of stock quotes for a currency pair.",
+                "operationId": "PostGethistoricalmonthlycrossratesrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCrossRateChange": {
+            "GET": {
+                "summary": "Get Cross Rate Change",
+                "description": "This operation returns the changes in a cross-rates over the last 6 months.",
+                "operationId": "PostGetcrossratechange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, , Custom": {
+            "GET": {
+                "summary": "Get Currency Chart Custom",
+                "description": "Draw a custom currency chart for a date range.",
+                "operationId": "PostGetcurrencychartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, , Custom, Binary": {
+            "GET": {
+                "summary": "Get Currency Chart Custom Binary",
+                "description": "Draw a custom currency chart for a date range.",
+                "operationId": "PostGetcurrencychartcustombinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, ": {
+            "GET": {
+                "summary": "Get Currency Chart",
+                "description": "Draw a historical currency chart for a date range.",
+                "operationId": "PostGetcurrencychart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, , Binary": {
+            "GET": {
+                "summary": "Get Currency Chart Binary",
+                "description": "Draw a historical currency chart for a date range in binary format.",
+                "operationId": "PostGetcurrencychartbinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, Intraday, ": {
+            "GET": {
+                "summary": "Get Currency Intraday Chart",
+                "description": "Draw a intraday currency chart for a time range",
+                "operationId": "PostGetcurrencyintradaychart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, Intraday, , Custom, Binary": {
+            "GET": {
+                "summary": "Get Currency Intraday Chart Custom Binary",
+                "description": "Draw a intraday currency chart for a time range in a binary format",
+                "operationId": "PostGetcurrencyintradaychartcustombinary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Currency, Intraday, , Custom": {
+            "GET": {
+                "summary": "Get Currency Intraday Chart Custom",
+                "description": "Draw a intraday currency chart for a time range in a binary format",
+                "operationId": "PostGetcurrencyintradaychartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Design": {
+            "GET": {
+                "summary": "Get Chart Design",
+                "description": "Returns the default design class for the currency Chart.",
+                "operationId": "PostGetchartdesign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTick": {
+            "GET": {
+                "summary": "Get Tick",
+                "description": "Returns a tick for a currency pair as of a specific time in the day.",
+                "operationId": "PostGettick",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTicks": {
+            "GET": {
+                "summary": "Get Ticks",
+                "description": "Returns a range of ticks for a currency pair.",
+                "operationId": "PostGetticks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalTicks": {
+            "GET": {
+                "summary": "Get Historical Ticks",
+                "description": "Returns a range of ticks for a currency pair.",
+                "operationId": "PostGethistoricalticks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalHighLow": {
+            "GET": {
+                "summary": "Get Historical High Low",
+                "description": "Returns the high and the low ticks for a historical time range.",
+                "operationId": "PostGethistoricalhighlow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetIntradayHighLow": {
+            "GET": {
+                "summary": "Get Intraday High Low",
+                "description": "Returns the high and the low ticks for today.",
+                "operationId": "PostGetintradayhighlow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCurrenciesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCurrenciesHeader": {
+                "type": "object"
+            },
+            "ListCurrenciesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListActiveCurrenciesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListActiveCurrenciesHeader": {
+                "type": "object"
+            },
+            "ListActiveCurrenciesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListOfficialRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListOfficialRatesHeader": {
+                "type": "object"
+            },
+            "ListOfficialRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnitOfAccountInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnitOfAccountHeader": {
+                "type": "object"
+            },
+            "GetUnitOfAccountOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConvertRealTimeValueInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConvertRealTimeValueHeader": {
+                "type": "object"
+            },
+            "ConvertRealTimeValueOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConvertHistoricalValueInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConvertHistoricalValueHeader": {
+                "type": "object"
+            },
+            "ConvertHistoricalValueOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeForwardRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeForwardRateHeader": {
+                "type": "object"
+            },
+            "GetRealTimeForwardRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateAsStringInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateAsStringHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateAsStringOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestCrossRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestCrossRateHeader": {
+                "type": "object"
+            },
+            "GetLatestCrossRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetLatestCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateGMTInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateGMTHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateGMTOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRawCrossRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRawCrossRateHeader": {
+                "type": "object"
+            },
+            "GetRawCrossRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRawCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRawCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetRawCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTablesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTablesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTablesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTablesBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTablesBidAskHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTablesBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyReportInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyReportHeader": {
+                "type": "object"
+            },
+            "GetCurrencyReportOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTableOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableBidAskHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTableBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateTableOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableWithBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableWithBidAskHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateTableWithBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllCrossRatesForACurrencyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllCrossRatesForACurrencyHeader": {
+                "type": "object"
+            },
+            "GetAllCrossRatesForACurrencyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableAsHTMLInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableAsHTMLHeader": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateTableAsHTMLOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSimpleRealTimeCrossRateTableAsHTMLInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSimpleRealTimeCrossRateTableAsHTMLHeader": {
+                "type": "object"
+            },
+            "GetSimpleRealTimeCrossRateTableAsHTMLOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableAsHTMLInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableAsHTMLHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTableAsHTMLOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateBidAskHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesBidAskRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesAsOfInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesAsOfHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesAsOfOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskAsOfInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskAsOfHeader": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesBidAskAsOfOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRateHeader": {
+                "type": "object"
+            },
+            "GetOfficialCrossRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetOfficialCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRateBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRateBidAskHeader": {
+                "type": "object"
+            },
+            "GetOfficialCrossRateBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRatesBidAskInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRatesBidAskHeader": {
+                "type": "object"
+            },
+            "GetOfficialCrossRatesBidAskOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMutipleHistoricalCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMutipleHistoricalCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetMutipleHistoricalCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageHistoricalCrossRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageHistoricalCrossRatesHeader": {
+                "type": "object"
+            },
+            "GetAverageHistoricalCrossRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageHistoricalCrossRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageHistoricalCrossRateHeader": {
+                "type": "object"
+            },
+            "GetAverageHistoricalCrossRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyCrossRatesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyCrossRatesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyCrossRatesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCrossRateChangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCrossRateChangeHeader": {
+                "type": "object"
+            },
+            "GetCrossRateChangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartCustomHeader": {
+                "type": "object"
+            },
+            "GetCurrencyChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartCustomBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartCustomBinaryHeader": {
+                "type": "object"
+            },
+            "GetCurrencyChartCustomBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartHeader": {
+                "type": "object"
+            },
+            "GetCurrencyChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartBinaryHeader": {
+                "type": "object"
+            },
+            "GetCurrencyChartBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartHeader": {
+                "type": "object"
+            },
+            "GetCurrencyIntradayChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartCustomBinaryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartCustomBinaryHeader": {
+                "type": "object"
+            },
+            "GetCurrencyIntradayChartCustomBinaryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartCustomHeader": {
+                "type": "object"
+            },
+            "GetCurrencyIntradayChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignHeader": {
+                "type": "object"
+            },
+            "GetChartDesignOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickHeader": {
+                "type": "object"
+            },
+            "GetTickOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksHeader": {
+                "type": "object"
+            },
+            "GetTicksOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksHeader": {
+                "type": "object"
+            },
+            "GetHistoricalTicksOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalHighLowInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalHighLowHeader": {
+                "type": "object"
+            },
+            "GetHistoricalHighLowOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayHighLowInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayHighLowHeader": {
+                "type": "object"
+            },
+            "GetIntradayHighLowOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCurrencies_tns": {
+                "type": "object"
+            },
+            "ListCurrenciesResponse_tns": {
+                "type": "object"
+            },
+            "ListActiveCurrencies_tns": {
+                "type": "object"
+            },
+            "ListActiveCurrenciesResponse_tns": {
+                "type": "object"
+            },
+            "ListOfficialRates_tns": {
+                "type": "object"
+            },
+            "ListOfficialRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetUnitOfAccount_tns": {
+                "type": "object",
+                "properties": {
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetUnitOfAccountResponse_tns": {
+                "type": "object"
+            },
+            "ConvertRealTimeValue_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "To": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Amount": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConvertRealTimeValueResponse_tns": {
+                "type": "object"
+            },
+            "ConvertHistoricalValue_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "To": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Amount": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ConvertHistoricalValueResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeForwardRate_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "To": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeForwardRateResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateAsString_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "To": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateAsStringResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "To": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestCrossRateResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tos": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRate_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateGMT_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateGMTResponse_tns": {
+                "type": "object"
+            },
+            "GetRawCrossRate_tns": {
+                "type": "object"
+            },
+            "GetRawCrossRateResponse_tns": {
+                "type": "object"
+            },
+            "GetRawCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRawCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTables_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTablesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTablesBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTablesBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyReport_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "To": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyReportResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTable_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTableBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateTable_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateTableWithBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableWithBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetAllCrossRatesForACurrency_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllCrossRatesForACurrencyResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeCrossRateTableAsHTML_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ColumnHeaderStyle": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LineHeaderStyle": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CellStyle": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeCrossRateTableAsHTMLResponse_tns": {
+                "type": "object"
+            },
+            "GetSimpleRealTimeCrossRateTableAsHTML_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ColumnHeaderStyle": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LineHeaderStyle": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CellStyle": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSimpleRealTimeCrossRateTableAsHTMLResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateTableAsHTML_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ColumnHeaderStyle": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LineHeaderStyle": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CellStyle": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateTableAsHTMLResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRateBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRateBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesBidAskRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesAsOf_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Periods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesAsOfResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalCrossRatesBidAskAsOf_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Periods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalCrossRatesBidAskAsOfResponse_tns": {
+                "type": "object"
+            },
+            "GetOfficialCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRateResponse_tns": {
+                "type": "object"
+            },
+            "GetOfficialCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetOfficialCrossRateBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRateBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetOfficialCrossRatesBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOfficialCrossRatesBidAskResponse_tns": {
+                "type": "object"
+            },
+            "GetMutipleHistoricalCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMutipleHistoricalCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetAverageHistoricalCrossRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbols": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageHistoricalCrossRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetAverageHistoricalCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageHistoricalCrossRateResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyCrossRatesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyCrossRatesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetCrossRateChange_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCrossRateChangeResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyChartCustomBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartCustomBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyChart_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyChartBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyChartBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyIntradayChart_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TimeZone": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PeriodType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyIntradayChartCustomBinary_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TimeZone": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PeriodType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartCustomBinaryResponse_tns": {
+                "type": "object"
+            },
+            "GetCurrencyIntradayChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TimeZone": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PeriodType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCurrencyIntradayChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "GetChartDesign_tns": {
+                "type": "object"
+            },
+            "GetChartDesignResponse_tns": {
+                "type": "object"
+            },
+            "GetTick_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTickResponse_tns": {
+                "type": "object"
+            },
+            "GetTicks_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTicksResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalTicks_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TickPeriods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalTicksResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalHighLow_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDateTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDateTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalHighLowResponse_tns": {
+                "type": "object"
+            },
+            "GetIntradayHighLow_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDateTime": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDateTime": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetIntradayHighLowResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "CrossRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCrossRateTable_tns": {
+                "type": "object",
+                "properties": {
+                    "CrossRateTable": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCrossRateTableWithBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "CrossRateTableWithBidAsk": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHistoricalCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "HistoricalCrossRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFullHistoricalCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "FullHistoricalCrossRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfAverageHistoricalCrossRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AverageHistoricalCrossRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCurrencyItem_tns": {
+                "type": "object",
+                "properties": {
+                    "CurrencyItem": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfOfficialCountry_tns": {
+                "type": "object",
+                "properties": {
+                    "OfficialCountry": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Currency_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfForward_tns": {
+                "type": "object",
+                "properties": {
+                    "Forward": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfLine_tns": {
+                "type": "object",
+                "properties": {
+                    "Line": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCrossRateTableLine_tns": {
+                "type": "object",
+                "properties": {
+                    "CrossRateTableLine": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCrossRateTableLineWithBidAsk_tns": {
+                "type": "object",
+                "properties": {
+                    "CrossRateTableLineWithBidAsk": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCrossRateItem_tns": {
+                "type": "object",
+                "properties": {
+                    "CrossRateItem": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFullCrossRateItem_tns": {
+                "type": "object",
+                "properties": {
+                    "FullCrossRateItem": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfChange_tns": {
+                "type": "object",
+                "properties": {
+                    "Change": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTick_tns": {
+                "type": "object",
+                "properties": {
+                    "Tick": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CurrencyItem_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Plural": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Supported": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Active": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ActiveMessage": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OfficialCountry_tns": {
+                "type": "object",
+                "properties": {
+                    "Country": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Forward_tns": {
+                "type": "object",
+                "properties": {
+                    "Bid": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Ask": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Line_tns": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value1": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value2": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value3": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value4": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value5": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value6": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value7": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value8": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value9": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value10": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value11": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value12": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value13": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value14": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value15": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value16": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value17": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value18": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value19": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value20": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value21": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value22": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value23": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value24": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value25": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value26": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value27": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value28": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value29": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value30": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value31": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CrossRateItem_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "First": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Last": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "FullCrossRateItem_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "First": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Last": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Bid": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Ask": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Tick_tns": {
+                "type": "object",
+                "properties": {
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Mid": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCountry_tns": {
+                "type": "object",
+                "properties": {
+                    "Country": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfOfficialCurrency_tns": {
+                "type": "object",
+                "properties": {
+                    "OfficialCurrency": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeRate_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Country_tns": {
+                "type": "object",
+                "properties": {
+                    "Code": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "OfficialCurrency_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Active": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
