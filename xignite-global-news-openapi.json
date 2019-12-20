@@ -1,0 +1,1682 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Global News",
+        "description": "Financial news APIs.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsglobalnews.xignite.comxGlobalNews.xml\/"
+    ],
+    "paths": {
+        "\/GetTopReleasesBySecurity": {
+            "GET": {
+                "summary": "Get Top Releases By Security",
+                "description": "Return the top press releases for a security.",
+                "operationId": "GetTopReleasesBySecurity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalReleasesBySecurity": {
+            "GET": {
+                "summary": "Get Historical Releases By Security",
+                "description": "Return press releases headlines for a security and a date range.",
+                "operationId": "GetHistoricalReleasesBySecurity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMarketNewsDetails": {
+            "GET": {
+                "summary": "Get Market News Details",
+                "description": "Returns the summary content for a specified headline.",
+                "operationId": "GetMarketNewsDetails",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysMarketHeadlines": {
+            "GET": {
+                "summary": "Get Todays Market Headlines",
+                "description": "Returns all market headlines that were published today.",
+                "operationId": "GetTodaysMarketHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopSecurityHeadlines": {
+            "GET": {
+                "summary": "Get Top Security Headlines",
+                "description": "Returns the most recent specified number of headlines for a given security.",
+                "operationId": "GetTopSecurityHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopMarketHeadlines": {
+            "GET": {
+                "summary": "Get Top Market Headlines",
+                "description": "Returns the most recent specified number of market headlines.",
+                "operationId": "GetTopMarketHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysReleasesBySecurity": {
+            "GET": {
+                "summary": "Get Todays Releases By Security",
+                "description": "Return press releases for a security for today.",
+                "operationId": "GetTodaysReleasesBySecurity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSecurityHeadlines": {
+            "GET": {
+                "summary": "Get Historical Security Headlines",
+                "description": "Returns all headlines that were published in a specified time frame for a given security.",
+                "operationId": "GetHistoricalSecurityHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopMarketHeadlinesBySector": {
+            "GET": {
+                "summary": "Get Top Market Headlines By Sector",
+                "description": "Returns the most recent specified number of market headlines associated with a specified sector.",
+                "operationId": "GetTopMarketHeadlinesBySector",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysMarketReleases": {
+            "GET": {
+                "summary": "Get Todays Market Releases",
+                "description": "Return press releases for today.",
+                "operationId": "GetTodaysMarketReleases",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysMarketHeadlinesBySector": {
+            "GET": {
+                "summary": "Get Todays Market Headlines By Sector",
+                "description": "Returns all market headlines that were published today for a specified sector.",
+                "operationId": "GetTodaysMarketHeadlinesBySector",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysSecurityHeadlines": {
+            "GET": {
+                "summary": "Get Todays Security Headlines",
+                "description": "Returns all headlines that were published today for a given security.",
+                "operationId": "GetTodaysSecurityHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRecentTopSecurityHeadlines": {
+            "GET": {
+                "summary": "Get Recent Top Security Headlines",
+                "description": "Returns 14 days specified number of headlines for a given security.",
+                "operationId": "GetRecentTopSecurityHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMarketHeadlines": {
+            "GET": {
+                "summary": "Get Historical Market Headlines",
+                "description": "Returns all market headlines that were published in a specified time frame.",
+                "operationId": "GetHistoricalMarketHeadlines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMarketHeadlinesBySector": {
+            "GET": {
+                "summary": "Get Historical Market Headlines By Sector",
+                "description": "Returns all market headlines that were published in a specified time frame for a specified sector.",
+                "operationId": "GetHistoricalMarketHeadlinesBySector",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSectors": {
+            "GET": {
+                "summary": "List Sectors",
+                "description": "Provides a list of all available values for a given sector.",
+                "operationId": "ListSectors",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopSecuritySummaries": {
+            "GET": {
+                "summary": "Get Top Security Summaries",
+                "description": "Returns all headline summaries that were published today for a given security.",
+                "operationId": "GetTopSecuritySummaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopReleaseSummariesBySecurity": {
+            "GET": {
+                "summary": "Get Top Release Summaries By Security",
+                "description": "Return the top press releases summaries for a security.",
+                "operationId": "GetTopReleaseSummariesBySecurity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopMarketSummaries": {
+            "GET": {
+                "summary": "Get Top Market Summaries",
+                "description": "Return the top market summaries.",
+                "operationId": "GetTopMarketSummaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "List supported exchanges.",
+                "operationId": "ListExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListSymbols": {
+            "GET": {
+                "summary": "List Symbols",
+                "description": "This operation returns symbols in this exchange.",
+                "operationId": "ListSymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "GetHistoricalMarketHeadlines\/": {
+            "GET": {
+                "summary": "Historical Market Headlines",
+                "description": "Returns all market headlines that were published in a specified time frame.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetHistoricalMarketHeadlinesBySector\/": {
+            "GET": {
+                "summary": "Historical Market Headlines By Sector",
+                "description": "Returns all market headlines that were published in a specified time frame for a specified sector.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Sector",
+                        "in": "query",
+                        "description": "The business sector to search within."
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetHistoricalReleasesBySecurity\/": {
+            "GET": {
+                "summary": "Historical Releases By Security",
+                "description": "Returns all press releases that were published in a specified time frame for a given security.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetHistoricalSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Historical Security Headlines",
+                "description": "Returns all headlines that were published in a specified time frame for a given security.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "EndDate",
+                        "in": "query",
+                        "description": "The end date range."
+                    },
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "startDate",
+                        "in": "query",
+                        "description": "The start date range."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetMarketNewsDetails\/": {
+            "GET": {
+                "summary": "Market News Details",
+                "description": "Returns the summary content for a specified headline.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Reference",
+                        "in": "query",
+                        "description": "The URL of the news article."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTodaysMarketHeadlines\/": {
+            "GET": {
+                "summary": "Todays Market Headlines",
+                "description": "Returns all market headlines that were published today.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTodaysMarketHeadlinesBySector\/": {
+            "GET": {
+                "summary": "Todays Market Headlines By Sector",
+                "description": "Returns all market headlines that were published today for a specified sector.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Sector",
+                        "in": "query",
+                        "description": "The business sector to search within."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTodaysReleasesBySecurity\/": {
+            "GET": {
+                "summary": "Todays Releases By Security",
+                "description": "Returns all press releases that were published today for a given security.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTodaysSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Todays Security Headlines",
+                "description": "Returns all headlines that were published today for a given security.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTopMarketHeadlines\/": {
+            "GET": {
+                "summary": "Get Top Market Headlines",
+                "description": "Returns the most recent specified number of market headlines.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Count",
+                        "in": "query",
+                        "description": "Number of headlines to return"
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTopMarketHeadlinesBySector\/": {
+            "GET": {
+                "summary": "Top Market Headlines By Sector",
+                "description": "Returns the most recent specified number of market headlines associated with a specified sector.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Count",
+                        "in": "query",
+                        "description": "Number of headlines to return"
+                    },
+                    {
+                        "name": "Sector",
+                        "in": "query",
+                        "description": "The business sector to search within."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTopReleasesBySecurity": {
+            "GET": {
+                "summary": "Top Releases By Security",
+                "description": "Returns the most recent specified number of press releases for a given security.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Number of items to return."
+                    },
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "GetTopSecurityHeadlines\/": {
+            "GET": {
+                "summary": "Get Top Security Headlines",
+                "description": "Returns the most recent specified number of headlines for a given security.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Count",
+                        "in": "query",
+                        "description": "Number of headlines to return"
+                    },
+                    {
+                        "name": "Identifier",
+                        "in": "query",
+                        "description": "The ticker symbol for company"
+                    },
+                    {
+                        "name": "IdentifierType",
+                        "in": "query",
+                        "description": "The identifier to use."
+                    },
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        },
+        "ListSectors\/": {
+            "GET": {
+                "summary": "List Sectors",
+                "description": "Provides a list of all available values for a given sector.",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "_Token",
+                        "in": "query",
+                        "description": "The API Key"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleasesBySecurityInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleasesBySecurityHeader": {
+                "type": "object"
+            },
+            "GetTopReleasesBySecurityOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalReleasesBySecurityInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalReleasesBySecurityHeader": {
+                "type": "object"
+            },
+            "GetHistoricalReleasesBySecurityOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMarketNewsDetailsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMarketNewsDetailsHeader": {
+                "type": "object"
+            },
+            "GetMarketNewsDetailsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTodaysMarketHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopSecurityHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopSecurityHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTopSecurityHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTopMarketHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysReleasesBySecurityInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysReleasesBySecurityHeader": {
+                "type": "object"
+            },
+            "GetTodaysReleasesBySecurityOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSecurityHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSecurityHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSecurityHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketHeadlinesBySectorInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketHeadlinesBySectorHeader": {
+                "type": "object"
+            },
+            "GetTopMarketHeadlinesBySectorOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketReleasesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketReleasesHeader": {
+                "type": "object"
+            },
+            "GetTodaysMarketReleasesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketHeadlinesBySectorInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketHeadlinesBySectorHeader": {
+                "type": "object"
+            },
+            "GetTodaysMarketHeadlinesBySectorOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysSecurityHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysSecurityHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetTodaysSecurityHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecentTopSecurityHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecentTopSecurityHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetRecentTopSecurityHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMarketHeadlinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMarketHeadlinesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMarketHeadlinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMarketHeadlinesBySectorInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMarketHeadlinesBySectorHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMarketHeadlinesBySectorOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSectorsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSectorsHeader": {
+                "type": "object"
+            },
+            "ListSectorsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopSecuritySummariesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopSecuritySummariesHeader": {
+                "type": "object"
+            },
+            "GetTopSecuritySummariesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleaseSummariesBySecurityInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleaseSummariesBySecurityHeader": {
+                "type": "object"
+            },
+            "GetTopReleaseSummariesBySecurityOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketSummariesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketSummariesHeader": {
+                "type": "object"
+            },
+            "GetTopMarketSummariesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsHeader": {
+                "type": "object"
+            },
+            "ListSymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleasesBySecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleasesBySecurityResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalReleasesBySecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalReleasesBySecurityResponse_tns": {
+                "type": "object"
+            },
+            "GetMarketNewsDetails_tns": {
+                "type": "object",
+                "properties": {
+                    "Reference": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMarketNewsDetailsResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysMarketHeadlines_tns": {
+                "type": "object"
+            },
+            "GetTodaysMarketHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetTopSecurityHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopSecurityHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetTopMarketHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysReleasesBySecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysReleasesBySecurityResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSecurityHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSecurityHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetTopMarketHeadlinesBySector_tns": {
+                "type": "object",
+                "properties": {
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Sector": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketHeadlinesBySectorResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysMarketReleases_tns": {
+                "type": "object"
+            },
+            "GetTodaysMarketReleasesResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysMarketHeadlinesBySector_tns": {
+                "type": "object",
+                "properties": {
+                    "Sector": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysMarketHeadlinesBySectorResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysSecurityHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysSecurityHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetRecentTopSecurityHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecentTopSecurityHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMarketHeadlines_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMarketHeadlinesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMarketHeadlinesBySector_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Sector": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMarketHeadlinesBySectorResponse_tns": {
+                "type": "object"
+            },
+            "ListSectors_tns": {
+                "type": "object"
+            },
+            "ListSectorsResponse_tns": {
+                "type": "object"
+            },
+            "GetTopSecuritySummaries_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopSecuritySummariesResponse_tns": {
+                "type": "object"
+            },
+            "GetTopReleaseSummariesBySecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopReleaseSummariesBySecurityResponse_tns": {
+                "type": "object"
+            },
+            "GetTopMarketSummaries_tns": {
+                "type": "object",
+                "properties": {
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMarketSummariesResponse_tns": {
+                "type": "object"
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "ListSymbols_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListSymbolsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Security_tns": {
+                "type": "object",
+                "properties": {
+                    "CIK": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ISIN": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Valoren": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MostLiquidExchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CategoryOrIndustry": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityHeadline_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityHeadline": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTagGroup_tns": {
+                "type": "object",
+                "properties": {
+                    "TagGroup": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMarketHeadline_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketHeadline": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfString_tns": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityHeadlineSummary_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityHeadlineSummary": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMarketHeadlineSummary_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketHeadlineSummary": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "SecurityDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SecurityHeadline_tns": {
+                "type": "object",
+                "properties": {
+                    "Title": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Source": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Url": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "TagGroup_tns": {
+                "type": "object",
+                "properties": {
+                    "TagType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MarketHeadline_tns": {
+                "type": "object",
+                "properties": {
+                    "Title": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UTCOffset": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Source": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Url": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SecurityDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSecurity_tns": {
+                "type": "object",
+                "properties": {
+                    "Security": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
