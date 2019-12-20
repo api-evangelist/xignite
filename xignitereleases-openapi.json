@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "XigniteReleases",
+        "description": "Company Press Release API List",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httphttp:\/\/www.xignite.com\/xReleases.xml\/"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
