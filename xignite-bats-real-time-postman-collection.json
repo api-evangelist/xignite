@@ -1,0 +1,261 @@
+{
+    "id": "e6a9775a6e761727d44b36a8996d2be5",
+    "name": "Xignite BATS Real Time",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "cef39808c800a128a8294e057b6bae06",
+            "name": "Get Bars",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetBars",
+            "description": "Returns a set of bars for a stock and a time range during the trading day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "737399e50249a2a54f35d5feaada8edb",
+            "name": "Get Real Quote",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuote",
+            "description": "Returns real time stock quote for a given stock ticker",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "5db98561f245a24404d8f321c7f4dfb9",
+            "name": "Get Real Quotes",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuotes",
+            "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "46c1fc131482b18fbdace157bb576e1e",
+            "name": "Get Real Quotes By Identifiers",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuotesByIdentifiers",
+            "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "bf90cc320f89d89b4d91e65ae49d8909",
+            "name": "Get Real Quote By Identifier",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuoteByIdentifier",
+            "description": "Returns a real-time quote for a security based on the last trade execution.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "a48bb84d7fff9379048e7313f5dbbdf5",
+            "name": "List Traded Symbols",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/ListTradedSymbols",
+            "description": "Returns all symbols and names that are traded recently",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "591aefd01af9d434a79b22fdb350b0a5",
+            "name": "Get Bar",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetBar",
+            "description": "Returns a single bar for a specific time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        },
+        {
+            "id": "51d96d4bd37179ef108c21d47347b33b",
+            "name": "Get Chart Bars",
+            "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime, Bars",
+            "description": "Returns a set of partial bars for a stock and a time range during the trading day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "rawModeData": ""
+        }
+    ]
+}
