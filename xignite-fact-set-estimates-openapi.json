@@ -1,0 +1,894 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Fact Set Estimates",
+        "description": "This web service provides global estimate data.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates"
+    ],
+    "paths": {
+        "\/GetEstimates": {
+            "GET": {
+                "summary": "Get Estimates",
+                "description": "Get Estimates on AsOfDate",
+                "operationId": "GetEstimates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestRecommendationSummaries": {
+            "GET": {
+                "summary": "Get Latest Recommendation Summaries",
+                "description": "Get Latest Recommendation Summary",
+                "operationId": "GetLatestRecommendationSummaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListExchanges": {
+            "GET": {
+                "summary": "List Exchanges",
+                "description": "List Exchanges",
+                "operationId": "ListExchanges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListCompanies": {
+            "GET": {
+                "summary": "List Companies",
+                "description": "List Symbols",
+                "operationId": "ListCompanies",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListEstimates": {
+            "GET": {
+                "summary": "List Estimates",
+                "description": "List Estimates",
+                "operationId": "ListEstimates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestEstimates": {
+            "GET": {
+                "summary": "Get Latest Estimates",
+                "description": "Get Latest Estimates",
+                "operationId": "GetLatestEstimates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEstimatesRange": {
+            "GET": {
+                "summary": "Get Estimates Range",
+                "description": "Get Estimates Range",
+                "operationId": "GetEstimatesRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRecommendationSummaryRange": {
+            "GET": {
+                "summary": "Get Recommendation Summary Range",
+                "description": "Get Recommendation Summaries in Range",
+                "operationId": "GetRecommendationSummaryRange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRecommendationSummaries": {
+            "GET": {
+                "summary": "Get Recommendation Summaries",
+                "description": "Get Recommendation Summaries on AsOfDate",
+                "operationId": "GetRecommendationSummaries",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimatesHeader": {
+                "type": "object"
+            },
+            "GetEstimatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRecommendationSummariesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRecommendationSummariesHeader": {
+                "type": "object"
+            },
+            "GetLatestRecommendationSummariesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListExchangesHeader": {
+                "type": "object"
+            },
+            "ListExchangesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCompaniesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCompaniesHeader": {
+                "type": "object"
+            },
+            "ListCompaniesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListEstimatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListEstimatesHeader": {
+                "type": "object"
+            },
+            "ListEstimatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestEstimatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestEstimatesHeader": {
+                "type": "object"
+            },
+            "GetLatestEstimatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimatesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimatesRangeHeader": {
+                "type": "object"
+            },
+            "GetEstimatesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecommendationSummaryRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecommendationSummaryRangeHeader": {
+                "type": "object"
+            },
+            "GetRecommendationSummaryRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecommendationSummariesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecommendationSummariesHeader": {
+                "type": "object"
+            },
+            "GetRecommendationSummariesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimates_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EstimateTypes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReportType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EstimateFiscalPeriod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpdatedSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimatesResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestRecommendationSummaries_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpdatedSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRecommendationSummariesResponse_tns": {
+                "type": "object"
+            },
+            "ListExchanges_tns": {
+                "type": "object"
+            },
+            "ListExchangesResponse_tns": {
+                "type": "object"
+            },
+            "ListCompanies_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartSymbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndSymbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListCompaniesResponse_tns": {
+                "type": "object"
+            },
+            "ListEstimates_tns": {
+                "type": "object"
+            },
+            "ListEstimatesResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestEstimates_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EstimateTypes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReportType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpdatedSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestEstimatesResponse_tns": {
+                "type": "object"
+            },
+            "GetEstimatesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EstimateTypes": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ReportType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EstimateFiscalPeriod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpdatedSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEstimatesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetRecommendationSummaryRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpdatedSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecommendationSummaryRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetRecommendationSummaries_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpdatedSince": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRecommendationSummariesResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCompanyEstimates_tns": {
+                "type": "object",
+                "properties": {
+                    "CompanyEstimates": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCompanyRecommendationSummary_tns": {
+                "type": "object",
+                "properties": {
+                    "CompanyRecommendationSummary": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "ExchangeDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCompany_tns": {
+                "type": "object",
+                "properties": {
+                    "Company": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEstimateDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "EstimateDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Company_tns": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CIK": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "SEDOL": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ISIN": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FactSetSecurityID": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FactSetIssuerID": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Valoren": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PrimaryMarket": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PrimaryMarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Sector": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Industry": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StatementTemplate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEstimatesSet_tns": {
+                "type": "object",
+                "properties": {
+                    "EstimatesSet": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRecommendationSummary_tns": {
+                "type": "object",
+                "properties": {
+                    "RecommendationSummary": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExchangeDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketIdentificationCode": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Market": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Region": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "EstimateDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ValueType": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Unit": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Source": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DataGroup": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "RecommendationSummary_tns": {
+                "type": "object",
+                "properties": {
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfBuyRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfOverweightRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfHoldRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfUnderweightRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfSellRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TotalNumberOfRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RecommendationScore": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "NumberOfUnreportedRecommendations": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "TargetPrice": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Recommendation": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastUpdated": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEstimate_tns": {
+                "type": "object",
+                "properties": {
+                    "Estimate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Estimate_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RelativeFiscalPeriod": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Estimates": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "UpRevisions": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DownRevisions": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Low": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "High": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StandardDeviation": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Median": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LastUpdated": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
