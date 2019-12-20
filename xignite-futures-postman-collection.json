@@ -1,0 +1,2028 @@
+{
+    "id": "232168163e2be1f3b08ef94c080443a8",
+    "name": "Xignite Futures",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "251898f8cdfcc44877320b7fc3c14003",
+            "name": "Get Future Symbol",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetFutureSymbol",
+            "description": "Returns the symbol for a future based on its month and year.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "40ad4f773a2011533a3e57a2040d7f72",
+            "name": "Get Reverse Future Symbol",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetReverseFutureSymbol",
+            "description": "Returns the symbol for a future based on its month and year.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3985c7ec7d31e05b46669ef454e3ef35",
+            "name": "Get Termination Schedule",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetTerminationSchedule",
+            "description": "Provide a termination schedule for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "d3ecc3fb6bb2aaae4fc898795f78264c",
+            "name": "Get Next Future",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetNextFuture",
+            "description": "Get the next immediate future contract for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "35b4b6f6d076d42fc49fea51abf9f96b",
+            "name": "Get Future",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetFuture",
+            "description": "Provide information about a commodity future.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "050b569a89ce5106b5b67d0f2f4d7b5a",
+            "name": "List Exchanges",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListExchanges",
+            "description": "List commmodities future exchanges and indicates which ones are supported.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "afdb8f71f5c29ffba91d0b8f18815248",
+            "name": "List Future Categories",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListFutureCategories",
+            "description": "List commmodities future categories.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ceec730794cd9a33eab56c282da380b",
+            "name": "List Swaps",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListSwaps",
+            "description": "List all commodity swaps and the exchange on which they are traded.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ba816d83c20e04f4b04fbfa5b7edfb2f",
+            "name": "List Futures",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListFutures",
+            "description": "List all commodity futures and the exchange on which they are traded.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c91a3d341d9fa79e08635343269e9c9",
+            "name": "List Front Month Contracts",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListFrontMonthContracts",
+            "description": "List all commodity future Front Month Contracts.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "05966d907b8dc3f85c646442d83baa5f",
+            "name": "List Futures By Category",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListFuturesByCategory",
+            "description": "List futures information by byfuture category.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "668d14bf913cd1e7e009bba0bda016a7",
+            "name": "List Futures By Exchange",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListFuturesByExchange",
+            "description": "List futures information by exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "17ba836bff6b64372291f584e4f26294",
+            "name": "List Swaps By Exchange",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/ListSwapsByExchange",
+            "description": "List swaps information by exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "8641a03c1e2632e8e7ea4c2b251fc95c",
+            "name": "Get Delayed Swap",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedSwap",
+            "description": "Returns a delayed quote for a NYMEX swap contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "57bf6494c3d91411eea0bc0133faa4ee",
+            "name": "Get Delayed Future",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedFuture",
+            "description": "Returns a delayed quote for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d1fd448cfe65da3d4638992b896a87f",
+            "name": "Get Delayed Front Future",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedFrontFuture",
+            "description": "Returns a delayed quote for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9aad844f04919307e37939ae48dce3e3",
+            "name": "Get All Delayed Futures",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetAllDelayedFutures",
+            "description": "Returns delayed quotes for all contracts for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "8656977825609162d15053330fc3848f",
+            "name": "Get Top Delayed Futures",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetTopDelayedFutures",
+            "description": "Returns delayed quotes for a given number of contract (front-future first) for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "706c8db376bb5ed2ec631991f3ab45b8",
+            "name": "Get All Delayed Swaps",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetAllDelayedSwaps",
+            "description": "Returns delayed quotes for all contracts for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "7c1ab76f3bb3d867c8e8a2024af7cb1b",
+            "name": "Get Delayed Futures",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedFutures",
+            "description": "Returns delayed quotes for multiple future contracts.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "bfd5516ba31ad901924af6fc54cd011e",
+            "name": "Get Delayed Future Strip",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedFutureStrip",
+            "description": "Returns a delayed future strip for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "5222e913c2d8ee3697241e1543f9683b",
+            "name": "Get Historical Future Strip",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalFutureStrip",
+            "description": "Returns a future strip for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "785d6e509648408b4b5dbb31ebb64981",
+            "name": "Get Historical Swap Strip",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalSwapStrip",
+            "description": "Returns a future strip for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "c68af4cbf92d852ebfe8dcb4ef1f80d0",
+            "name": "Get Delayed Spot",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedSpot",
+            "description": "Returns a delayed spot quote for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "0ea17d2f6d2c6182a1c6222f1c507781",
+            "name": "Get Delayed Spots",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedSpots",
+            "description": "Returns delayed quotes for multiple commodities.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "8de7e3e49cd8d389835e17b32ad43350",
+            "name": "Get Delayed Future By Session",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedFutureBySession",
+            "description": "Returns a delayed quote for a future contract by exchange session.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1210788fe2b2898a300e3633dc3134a1",
+            "name": "Get All Delayed Futures By Session",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetAllDelayedFuturesBySession",
+            "description": "Returns delayed quotes for all contracts for a commodity by exchange session.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "7431e887c0fc6a5a0330b13540e4fdfd",
+            "name": "Get Delayed Futures By Session",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetDelayedFuturesBySession",
+            "description": "Returns delayed quotes for multiple future contracts by exchange session.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "6d598b1315d3a9f29c96acc6195cf7db",
+            "name": "Get Historical Future",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalFuture",
+            "description": "Returns a historical quote for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "df5ef12da1d66ce2cdc36d235ceabae3",
+            "name": "Get Historical Futures",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalFutures",
+            "description": "Returns historical quotes for multiple future contracts.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "68f2ec40b7ecdc79b6b52ed812d076db",
+            "name": "Get All Historical Futures With Status",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetAllHistoricalFuturesWithStatus",
+            "description": "Returns historical quotes for all contracts for a commodity as of a specific date including status information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "32131ebb4fe7bf3ecb561f765c66238e",
+            "name": "Get All Historical Futures",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetAllHistoricalFutures",
+            "description": "Returns historical quotes for all contracts for a commodity as of a specific date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "b0c8e825b1577946775aa371e4a0ba26",
+            "name": "Get Historical Future Range",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalFutureRange",
+            "description": "Returns a range of historical quotes for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9bd919fbc414a285a760ab8cab7cb1f0",
+            "name": "Get Historical Swap",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalSwap",
+            "description": "Returns a historical quote for a future swap.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "db63d6b9e23837c0c56e98d268175eca",
+            "name": "Get Historical Swap Range",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalSwapRange",
+            "description": "Returns a range of historical quotes for a future swap.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1d45a3393484472e95dd70128e09705a",
+            "name": "Get Historical Swaps",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalSwaps",
+            "description": "Returns historical quotes for multiple future swaps.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4dbb7653c5d8f3ccd4d2526cf205ef9",
+            "name": "Get All Historical Swaps",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetAllHistoricalSwaps",
+            "description": "Returns historical quotes for all contracts for a commodity swap as of a specific date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac42c85202daaf1f55c773c0c3dbad8b",
+            "name": "Get Historical Commodity Range",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalCommodityRange",
+            "description": "Returns a range of historical quotes for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b3507b28536431ffe64f2349c6074a0",
+            "name": "Get Historical Commodity Monthly Range",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalCommodityMonthlyRange",
+            "description": "Returns a range of historical quotes for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9f82bc22a2732eba5cfddd5afb5d757b",
+            "name": "Get Historical Spot Range",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalSpotRange",
+            "description": "Returns a range of commodity spot prices for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "29c38fdebf0784bb9c2ba92260f2f6f9",
+            "name": "Get Historical Spot Monthly Range",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalSpotMonthlyRange",
+            "description": "Returns a range of commodity spot prices for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "207e1b75a4a4f2bd195fd5847339f5b7",
+            "name": "Get Tick",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetTick",
+            "description": "Returns an intraday tick for a future contract as of a specific time in the day.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b2e65c4d3ad3c4884bbe31f5f4b023d",
+            "name": "Get Ticks",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetTicks",
+            "description": "Returns a range of intraday ticks for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "b27249eee6c37a0663b415a9f99ff159",
+            "name": "Get Historical Ticks",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalTicks",
+            "description": "Returns a historical range of ticks for a security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "c28a73ef6e8f08765651babad4e3d58e",
+            "name": "Get Historical Ticks As Of Date",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetHistoricalTicksAsOfDate",
+            "description": "Returns a historical range of ticks for a security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2b29261a4cc764772dbe01c7aeb0d74e",
+            "name": "Get Intraday Future Chart",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesIntraday, Future, ",
+            "description": "Get a standard intraday price chart for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "73d66a28e98f3d89453fa93036ba28db",
+            "name": "Get Intraday Future Chart Binary",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesIntraday, Future, , Binary",
+            "description": "Get a standard intraday price chart for a future contract in binary format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f058700d3a0a3ad3997b5ce7ee8ecb6",
+            "name": "Get Intraday Future Chart Custom",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesIntraday, Future, , Custom",
+            "description": "Get a custom intraday price chart for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1f3df93808a85a32fff02dc15447721f",
+            "name": "Get Intraday Future Chart Custom Binary",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesIntraday, Future, , Custom, Binary",
+            "description": "Get a custom intraday price chart for a future contract in binary format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "43322ec39b68a6066799349cdd50160b",
+            "name": "Get Historical Future Chart",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Future, ",
+            "description": "Get a standard historical price chart for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "f1910f2f12d1fb4e7ea09f87800ec1b3",
+            "name": "Get Historical Future Chart Binary",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Future, , Binary",
+            "description": "Get a standard historical price chart for a future contract in binary format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9cbfd5982072e5e5224f6f36f5aa9dae",
+            "name": "Get Historical Future Chart Custom",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Future, , Custom",
+            "description": "Get a custom historical chart for a future contract in binary format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "5afebb83791c9f49d85db4c5c52ee114",
+            "name": "Get Historical Future Chart Custom Binary",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Future, , Custom, Binary",
+            "description": "Draw a custom historical chart for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a776317f9a95b888b6b86de97de9676",
+            "name": "Get Historical Commodity Chart",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Commodity, ",
+            "description": "Get a historical chart for a commodity.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa425b333f49e08fccdcd48adc0eff31",
+            "name": "Get Historical Commodity Chart Binary",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Commodity, , Binary",
+            "description": "Get a historical chart for a commodity in binary format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "4611a5ee5a181836748c49534941470e",
+            "name": "Get Historical Commodity Chart Custom",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Commodity, , Custom",
+            "description": "Get a custom historical chart for a commodity in binary format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed83201f543b571c3b512a0d10d93c76",
+            "name": "Get Historical Commodity Chart Custom Binary",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, Commodity, , Custom, Binary",
+            "description": "Draw a custom historical chart for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "2beee7060d7e76cdcf1b1a51a0989ca0",
+            "name": "Get Intraday Chart Design",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesIntraday, , Design",
+            "description": "Returns the default settings for the intraday future chart.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "691f16e158a2259f01a8e34b0bbd4b8f",
+            "name": "Get Historical Chart Design",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFuturesHistorical, , Design",
+            "description": "Returns the default settings for the historical future chart.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "ff310dcd766ce686c6ce097734ffc56f",
+            "name": "Get Future Option",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetFutureOption",
+            "description": "Returns a specific future option.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3c0177a6d7228aa15d8a65dd9ad08391",
+            "name": "Get Top Industry Headlines",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetTopIndustryHeadlines",
+            "description": "Return the top press releases for an industry.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "7378910594df892d5364738982536b2a",
+            "name": "Get Todays Industry Headlines",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetTodaysIndustryHeadlines",
+            "description": "Return press releases for today for an industry.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "1bc87ecc7cec37cca7ece2a3e64339a4",
+            "name": "Get Last Industry Headlines",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetLastIndustryHeadlines",
+            "description": "Return the last press releases since a certain time for an industry.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "60d3b948624e9ebd974015929d0251ee",
+            "name": "Get Future Option Chain",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetFutureOptionChain",
+            "description": "Returns an option chain for a future contract.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        },
+        {
+            "id": "a84ccb553111f721ee43cce229369d50",
+            "name": "Get Future Options By Strike Price",
+            "url": "httpswww.xignite.comxFutures.json\/XigniteFutures\/GetFutureOptionsByStrikePrice",
+            "description": "Returns an option chain for a future contract matching a list of prices.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "232168163e2be1f3b08ef94c080443a8",
+            "rawModeData": ""
+        }
+    ]
+}
