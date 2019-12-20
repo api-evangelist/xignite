@@ -1,0 +1,3273 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Rates",
+        "description": "Provide information about interest rates.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxRates.json\/XigniteRates"
+    ],
+    "paths": {
+        "\/GetLIBORSecure": {
+            "GET": {
+                "summary": "Get LIBOR Secure",
+                "description": "Returns Libor as of a date",
+                "operationId": "PostGetliborsecure",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLIBOR": {
+            "GET": {
+                "summary": "Get LIBOR",
+                "description": "Returns Libor as of a date",
+                "operationId": "PostGetlibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetStateRate": {
+            "GET": {
+                "summary": "Get State Rate",
+                "description": "Returns a state rate",
+                "operationId": "PostGetstaterate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetStateRates": {
+            "GET": {
+                "summary": "Get State Rates",
+                "description": "Returns state rates for a date range.",
+                "operationId": "PostGetstaterates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFederalRate": {
+            "GET": {
+                "summary": "Get Federal Rate",
+                "description": "Returns a federal discount borrowing rate",
+                "operationId": "PostGetfederalrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFederalRates": {
+            "GET": {
+                "summary": "Get Federal Rates",
+                "description": "Returns federal discount borrowing for a date range.",
+                "operationId": "PostGetfederalrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetForwardRateAgreement": {
+            "GET": {
+                "summary": "Get Forward Rate Agreement",
+                "description": "Returns a calculated Forward Rate Agreement as of a date",
+                "operationId": "PostGetforwardrateagreement",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEuroDollarFRAStrip": {
+            "GET": {
+                "summary": "Get Euro DollarFRA Strip",
+                "description": "Returns an IMM EuroDollar Synthetic Forward Rate strip",
+                "operationId": "PostGeteurodollarfrastrip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSwapRate": {
+            "GET": {
+                "summary": "Get Swap Rate",
+                "description": "Returns a Swap rate",
+                "operationId": "PostGetswaprate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSwapRateFamily": {
+            "GET": {
+                "summary": "Get Swap Rate Family",
+                "description": "Returns a Swap rate Family",
+                "operationId": "PostGetswapratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSwapRate": {
+            "GET": {
+                "summary": "Get Historical Swap Rate",
+                "description": "Returns a Swap rate as of a historical date",
+                "operationId": "PostGethistoricalswaprate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalSwapRateRange": {
+            "GET": {
+                "summary": "Get Historical Swap Rate Range",
+                "description": "Returns a Swap rate as of a historical date",
+                "operationId": "PostGethistoricalswapraterange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetREIBOR": {
+            "GET": {
+                "summary": "Get REIBOR",
+                "description": "Returns a REIBOR as of a date",
+                "operationId": "PostGetreibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHIBOR": {
+            "GET": {
+                "summary": "Get HIBOR",
+                "description": "Returns a HIBOR as of a date",
+                "operationId": "PostGethibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSOFIBOR": {
+            "GET": {
+                "summary": "Get SOFIBOR",
+                "description": "Returns a SOFIBOR as of a date",
+                "operationId": "PostGetsofibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetREIBID": {
+            "GET": {
+                "summary": "Get REIBID",
+                "description": "Returns a REIBID as of a date",
+                "operationId": "PostGetreib",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetOIBOR": {
+            "GET": {
+                "summary": "Get OIBOR",
+                "description": "Returns a OIBOR as of a date",
+                "operationId": "PostGetoibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSIBOR": {
+            "GET": {
+                "summary": "Get SIBOR",
+                "description": "Returns a SIBOR as of a date",
+                "operationId": "PostGetsibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCIBOR": {
+            "GET": {
+                "summary": "Get CIBOR",
+                "description": "Returns a CIBOR as of a date",
+                "operationId": "PostGetcibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSTIBOR": {
+            "GET": {
+                "summary": "Get STIBOR",
+                "description": "Returns a STIBOR as of a date",
+                "operationId": "PostGetstibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetVILIBOR": {
+            "GET": {
+                "summary": "Get VILIBOR",
+                "description": "Returns a VILIBOR as of a date",
+                "operationId": "PostGetvilibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetWIBOR": {
+            "GET": {
+                "summary": "Get WIBOR",
+                "description": "Returns a WIBOR as of a date",
+                "operationId": "PostGetwibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetEURIBOR": {
+            "GET": {
+                "summary": "Get EURIBOR",
+                "description": "Returns a EURIBOR as of a date",
+                "operationId": "PostGeteuribor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalLIBOR": {
+            "GET": {
+                "summary": "Get Historical LIBOR",
+                "description": "",
+                "operationId": "PostGethistoricallibor",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetWSJRate": {
+            "GET": {
+                "summary": "Get WSJ Rate",
+                "description": "Returns a specific interest rate.",
+                "operationId": "PostGetwsjrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTelerate3750": {
+            "GET": {
+                "summary": "Get Telerate3750",
+                "description": "Returns LIBOR rates as published daily on the Telerate 3750 screen at about 11:00 AM London time.",
+                "operationId": "PostGettelerate3750",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastLondonFixing": {
+            "GET": {
+                "summary": "Get Last London Fixing",
+                "description": "Returns last UK Gold or Silver Fixings.",
+                "operationId": "PostGetlastlondonfixing",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListRates": {
+            "GET": {
+                "summary": "List Rates",
+                "description": "List supported interest rates.",
+                "operationId": "PostListrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/ListRatesByRateFamily": {
+            "GET": {
+                "summary": "List Rates By Rate Family",
+                "description": "List supported interest rates from a RateFamilyType.",
+                "operationId": "PostListratesbyratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/SearchRates": {
+            "GET": {
+                "summary": "Search Rates",
+                "description": "Search rate names and description",
+                "operationId": "PostSearchrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateSymbol": {
+            "GET": {
+                "summary": "Get Rate Symbol",
+                "description": "Returns the symbol for a rate.",
+                "operationId": "PostGetratesymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateFromSymbol": {
+            "GET": {
+                "summary": "Get Rate From Symbol",
+                "description": "Returns the symbol for a rate.",
+                "operationId": "PostGetratefromsymbol",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRate": {
+            "GET": {
+                "summary": "Get Rate",
+                "description": "Returns a rate as of a specific date.",
+                "operationId": "PostGetrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateFamilyTable": {
+            "GET": {
+                "summary": "Get Rate Family Table",
+                "description": "Returns a rate table for a rate family.",
+                "operationId": "PostGetratefamilytable",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAverageRate": {
+            "GET": {
+                "summary": "Get Average Rate",
+                "description": "Returns an average rate as of a specific date.",
+                "operationId": "PostGetaveragerate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAverageRates": {
+            "GET": {
+                "summary": "Get Average Rates",
+                "description": "Returns average rate for a period.",
+                "operationId": "PostGetaveragerates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateMovingAverage": {
+            "GET": {
+                "summary": "Get Rate Moving Average",
+                "description": "Returns a moving  average rate as of a specific date",
+                "operationId": "PostGetratemovingaverage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDailyAverage": {
+            "GET": {
+                "summary": "Get Daily Average",
+                "description": "Returns a daily average rate as of a specific date",
+                "operationId": "PostGetdailyaverage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetMonthlyTreasuryAverage": {
+            "GET": {
+                "summary": "Get Monthly Treasury Average",
+                "description": "Returns a daily average rate as of a specific date",
+                "operationId": "PostGetmonthlytreasuryaverage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateFamily": {
+            "GET": {
+                "summary": "Get Rate Family",
+                "description": "Returns a collection of related rate as of a specific date",
+                "operationId": "PostGetratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTodaysRate": {
+            "GET": {
+                "summary": "Get Todays Rate",
+                "description": "Returns end of day closing value for a rate",
+                "operationId": "PostGettodaysrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestRate": {
+            "GET": {
+                "summary": "Get Latest Rate",
+                "description": "Returns latest value for a rate.",
+                "operationId": "PostGetlatestrate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestRateSpecial": {
+            "GET": {
+                "summary": "Get Latest Rate Special",
+                "description": "Returns latest value for a rate.",
+                "operationId": "PostGetlatestratespecial",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLatestRateFamily": {
+            "GET": {
+                "summary": "Get Latest Rate Family",
+                "description": "Returns latest values for a rate family.",
+                "operationId": "PostGetlatestratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRealTimeRate": {
+            "GET": {
+                "summary": "Get Real Time Rate",
+                "description": "Returns the value for a rate as of a specific time in the day.",
+                "operationId": "PostGetrealtimerate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateAsOfTime": {
+            "GET": {
+                "summary": "Get Rate As Of Time",
+                "description": "Returns the value for a rate as of a specific time in the day.",
+                "operationId": "PostGetrateasoftime",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalRates": {
+            "GET": {
+                "summary": "Get Historical Rates",
+                "description": "Returns a rate for a range of dates.",
+                "operationId": "PostGethistoricalrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalWeeklyRates": {
+            "GET": {
+                "summary": "Get Historical Weekly Rates",
+                "description": "Returns a rate for a range of dates.",
+                "operationId": "PostGethistoricalweeklyrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalRateFamily": {
+            "GET": {
+                "summary": "Get Historical Rate Family",
+                "description": "Returns a rate family and for a range of dates.",
+                "operationId": "PostGethistoricalratefamily",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateDescription": {
+            "GET": {
+                "summary": "Get Rate Description",
+                "description": "Returns a description for a rate.",
+                "operationId": "PostGetratedescription",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetRateStatistics": {
+            "GET": {
+                "summary": "Get Rate Statistics",
+                "description": "Returns statistics for available rates.",
+                "operationId": "PostGetratestatistics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Draw, Rate, , Custom": {
+            "GET": {
+                "summary": "Draw Rate Chart Custom",
+                "description": "Draw a custom rate chart for a date range.",
+                "operationId": "PostDrawratechartcustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Draw, Rate, ": {
+            "GET": {
+                "summary": "Draw Rate Chart",
+                "description": "Draw a standard rate chart for a date range.",
+                "operationId": "PostDrawratechart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "Draw, Rate, , Preset": {
+            "GET": {
+                "summary": "Draw Rate Chart Preset",
+                "description": "Draw a standard rate chart for a date range.",
+                "operationId": "PostDrawratechartpreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        ", Design": {
+            "GET": {
+                "summary": "Get Chart Design",
+                "description": "Returns the default design class for the rate Chart.",
+                "operationId": "PostGetchartdesign",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/DrawYieldCurve": {
+            "GET": {
+                "summary": "Draw Yield Curve",
+                "description": "Draw a yield curve for a rate family.",
+                "operationId": "PostDrawyieldcurve",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/DrawYieldCurvePreset": {
+            "GET": {
+                "summary": "Draw Yield Curve Preset",
+                "description": "Draw a yield curve for a rate family.",
+                "operationId": "PostDrawyieldcurvepreset",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/DrawYieldCurveCustom": {
+            "GET": {
+                "summary": "Draw Yield Curve Custom",
+                "description": "Draw a yield curve for a rate family.",
+                "operationId": "PostDrawyieldcurvecustom",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/Interpolate": {
+            "GET": {
+                "summary": "Interpolate",
+                "description": "Interpolate a data series using various methodologies.",
+                "operationId": "PostInterpolate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetFHLBankRates": {
+            "GET": {
+                "summary": "Get FHL Bank Rates",
+                "description": "Returns Federal Home Loan Bank rates.",
+                "operationId": "PostGetfhlbankrates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAuctionResult": {
+            "GET": {
+                "summary": "Get Auction Result",
+                "description": "Returns an auction result by cusip.",
+                "operationId": "PostGetauctionresult",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAuctionResults": {
+            "GET": {
+                "summary": "Get Auction Results",
+                "description": "Returns auction results by date.",
+                "operationId": "PostGetauctionresults",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecureInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecureHeader": {
+                "type": "object"
+            },
+            "GetLIBORSecureOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORHeader": {
+                "type": "object"
+            },
+            "GetLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetStateRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetStateRateHeader": {
+                "type": "object"
+            },
+            "GetStateRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetStateRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetStateRatesHeader": {
+                "type": "object"
+            },
+            "GetStateRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFederalRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFederalRateHeader": {
+                "type": "object"
+            },
+            "GetFederalRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFederalRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFederalRatesHeader": {
+                "type": "object"
+            },
+            "GetFederalRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetForwardRateAgreementInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetForwardRateAgreementHeader": {
+                "type": "object"
+            },
+            "GetForwardRateAgreementOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEuroDollarFRAStripInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEuroDollarFRAStripHeader": {
+                "type": "object"
+            },
+            "GetEuroDollarFRAStripOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapRateHeader": {
+                "type": "object"
+            },
+            "GetSwapRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSwapRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetSwapRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRateHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSwapRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRateRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRateRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalSwapRateRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBORHeader": {
+                "type": "object"
+            },
+            "GetREIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHIBORHeader": {
+                "type": "object"
+            },
+            "GetHIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSOFIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSOFIBORHeader": {
+                "type": "object"
+            },
+            "GetSOFIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBIDInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBIDHeader": {
+                "type": "object"
+            },
+            "GetREIBIDOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOIBORHeader": {
+                "type": "object"
+            },
+            "GetOIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSIBORHeader": {
+                "type": "object"
+            },
+            "GetSIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCIBORHeader": {
+                "type": "object"
+            },
+            "GetCIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSTIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSTIBORHeader": {
+                "type": "object"
+            },
+            "GetSTIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVILIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVILIBORHeader": {
+                "type": "object"
+            },
+            "GetVILIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWIBORHeader": {
+                "type": "object"
+            },
+            "GetWIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEURIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEURIBORHeader": {
+                "type": "object"
+            },
+            "GetEURIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLIBORInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLIBORHeader": {
+                "type": "object"
+            },
+            "GetHistoricalLIBOROutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWSJRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWSJRateHeader": {
+                "type": "object"
+            },
+            "GetWSJRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTelerate3750Input": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTelerate3750Header": {
+                "type": "object"
+            },
+            "GetTelerate3750Output": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastLondonFixingInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastLondonFixingHeader": {
+                "type": "object"
+            },
+            "GetLastLondonFixingOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesHeader": {
+                "type": "object"
+            },
+            "ListRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesByRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesByRateFamilyHeader": {
+                "type": "object"
+            },
+            "ListRatesByRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchRatesHeader": {
+                "type": "object"
+            },
+            "SearchRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateSymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateSymbolHeader": {
+                "type": "object"
+            },
+            "GetRateSymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFromSymbolInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFromSymbolHeader": {
+                "type": "object"
+            },
+            "GetRateFromSymbolOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateHeader": {
+                "type": "object"
+            },
+            "GetRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyTableInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyTableHeader": {
+                "type": "object"
+            },
+            "GetRateFamilyTableOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageRateHeader": {
+                "type": "object"
+            },
+            "GetAverageRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageRatesHeader": {
+                "type": "object"
+            },
+            "GetAverageRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateMovingAverageInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateMovingAverageHeader": {
+                "type": "object"
+            },
+            "GetRateMovingAverageOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyAverageInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyAverageHeader": {
+                "type": "object"
+            },
+            "GetDailyAverageOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMonthlyTreasuryAverageInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMonthlyTreasuryAverageHeader": {
+                "type": "object"
+            },
+            "GetMonthlyTreasuryAverageOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTodaysRateHeader": {
+                "type": "object"
+            },
+            "GetTodaysRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateHeader": {
+                "type": "object"
+            },
+            "GetLatestRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateSpecialInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateSpecialHeader": {
+                "type": "object"
+            },
+            "GetLatestRateSpecialOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLatestRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetLatestRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeRateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeRateHeader": {
+                "type": "object"
+            },
+            "GetRealTimeRateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateAsOfTimeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateAsOfTimeHeader": {
+                "type": "object"
+            },
+            "GetRateAsOfTimeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRatesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyRatesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRateFamilyInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRateFamilyHeader": {
+                "type": "object"
+            },
+            "GetHistoricalRateFamilyOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateDescriptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateDescriptionHeader": {
+                "type": "object"
+            },
+            "GetRateDescriptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateStatisticsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateStatisticsHeader": {
+                "type": "object"
+            },
+            "GetRateStatisticsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartCustomHeader": {
+                "type": "object"
+            },
+            "DrawRateChartCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartHeader": {
+                "type": "object"
+            },
+            "DrawRateChartOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartPresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartPresetHeader": {
+                "type": "object"
+            },
+            "DrawRateChartPresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetChartDesignHeader": {
+                "type": "object"
+            },
+            "GetChartDesignOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveHeader": {
+                "type": "object"
+            },
+            "DrawYieldCurveOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurvePresetInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurvePresetHeader": {
+                "type": "object"
+            },
+            "DrawYieldCurvePresetOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveCustomInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveCustomHeader": {
+                "type": "object"
+            },
+            "DrawYieldCurveCustomOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "InterpolateInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "InterpolateHeader": {
+                "type": "object"
+            },
+            "InterpolateOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFHLBankRatesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFHLBankRatesHeader": {
+                "type": "object"
+            },
+            "GetFHLBankRatesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAuctionResultInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAuctionResultHeader": {
+                "type": "object"
+            },
+            "GetAuctionResultOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAuctionResultsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAuctionResultsHeader": {
+                "type": "object"
+            },
+            "GetAuctionResultsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecure_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORSecureResponse_tns": {
+                "type": "object"
+            },
+            "GetLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetStateRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetStateRateResponse_tns": {
+                "type": "object"
+            },
+            "GetStateRates_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetStateRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetFederalRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFederalRateResponse_tns": {
+                "type": "object"
+            },
+            "GetFederalRates_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFederalRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetForwardRateAgreement_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetForwardRateAgreementResponse_tns": {
+                "type": "object"
+            },
+            "GetEuroDollarFRAStrip_tns": {
+                "type": "object"
+            },
+            "GetEuroDollarFRAStripResponse_tns": {
+                "type": "object"
+            },
+            "GetSwapRate_tns": {
+                "type": "object"
+            },
+            "GetSwapRateResponse_tns": {
+                "type": "object"
+            },
+            "GetSwapRateFamily_tns": {
+                "type": "object"
+            },
+            "GetSwapRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSwapRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRateResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalSwapRateRange_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalSwapRateRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetREIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetHIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetSOFIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSOFIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetREIBID_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetREIBIDResponse_tns": {
+                "type": "object"
+            },
+            "GetOIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetOIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetSIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetCIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetSTIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSTIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetVILIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetVILIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetWIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetEURIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetEURIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalLIBOR_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalLIBORResponse_tns": {
+                "type": "object"
+            },
+            "GetWSJRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Qualifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetWSJRateResponse_tns": {
+                "type": "object"
+            },
+            "GetTelerate3750_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTelerate3750Response_tns": {
+                "type": "object"
+            },
+            "GetLastLondonFixing_tns": {
+                "type": "object"
+            },
+            "GetLastLondonFixingResponse_tns": {
+                "type": "object"
+            },
+            "ListRates_tns": {
+                "type": "object"
+            },
+            "ListRatesResponse_tns": {
+                "type": "object"
+            },
+            "ListRatesByRateFamily_tns": {
+                "type": "object",
+                "properties": {
+                    "RateFamilyType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ListRatesByRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "SearchRates_tns": {
+                "type": "object",
+                "properties": {
+                    "Pattern": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "SearchRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetRateSymbol_tns": {
+                "type": "object"
+            },
+            "GetRateSymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetRateFromSymbol_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFromSymbolResponse_tns": {
+                "type": "object"
+            },
+            "GetRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateResponse_tns": {
+                "type": "object"
+            },
+            "GetRateFamilyTable_tns": {
+                "type": "object"
+            },
+            "GetRateFamilyTableResponse_tns": {
+                "type": "object"
+            },
+            "GetAverageRate_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageRateResponse_tns": {
+                "type": "object"
+            },
+            "GetAverageRates_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAverageRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetRateMovingAverage_tns": {
+                "type": "object",
+                "properties": {
+                    "AveragePeriods": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateMovingAverageResponse_tns": {
+                "type": "object"
+            },
+            "GetDailyAverage_tns": {
+                "type": "object",
+                "properties": {
+                    "CalendarDays": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDailyAverageResponse_tns": {
+                "type": "object"
+            },
+            "GetMonthlyTreasuryAverage_tns": {
+                "type": "object",
+                "properties": {
+                    "Month": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Year": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetMonthlyTreasuryAverageResponse_tns": {
+                "type": "object"
+            },
+            "GetRateFamily_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetTodaysRate_tns": {
+                "type": "object"
+            },
+            "GetTodaysRateResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestRate_tns": {
+                "type": "object"
+            },
+            "GetLatestRateResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestRateSpecial_tns": {
+                "type": "object"
+            },
+            "GetLatestRateSpecialResponse_tns": {
+                "type": "object"
+            },
+            "GetLatestRateFamily_tns": {
+                "type": "object"
+            },
+            "GetLatestRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetRealTimeRate_tns": {
+                "type": "object",
+                "properties": {
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRealTimeRateResponse_tns": {
+                "type": "object"
+            },
+            "GetRateAsOfTime_tns": {
+                "type": "object",
+                "properties": {
+                    "Time": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetRateAsOfTimeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalRates_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyRates_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalRateFamily_tns": {
+                "type": "object",
+                "properties": {
+                    "FromDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ToDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalRateFamilyResponse_tns": {
+                "type": "object"
+            },
+            "GetRateDescription_tns": {
+                "type": "object"
+            },
+            "GetRateDescriptionResponse_tns": {
+                "type": "object"
+            },
+            "GetRateStatistics_tns": {
+                "type": "object"
+            },
+            "GetRateStatisticsResponse_tns": {
+                "type": "object"
+            },
+            "DrawRateChartCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartCustomResponse_tns": {
+                "type": "object"
+            },
+            "DrawRateChart_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartResponse_tns": {
+                "type": "object"
+            },
+            "DrawRateChartPreset_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawRateChartPresetResponse_tns": {
+                "type": "object"
+            },
+            "GetChartDesign_tns": {
+                "type": "object"
+            },
+            "GetChartDesignResponse_tns": {
+                "type": "object"
+            },
+            "DrawYieldCurve_tns": {
+                "type": "object",
+                "properties": {
+                    "OnDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetLatestRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveResponse_tns": {
+                "type": "object"
+            },
+            "DrawYieldCurvePreset_tns": {
+                "type": "object",
+                "properties": {
+                    "OnDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetLatestRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Preset": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurvePresetResponse_tns": {
+                "type": "object"
+            },
+            "DrawYieldCurveCustom_tns": {
+                "type": "object",
+                "properties": {
+                    "OnDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "GetLatestRate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Width": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Height": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "DrawYieldCurveCustomResponse_tns": {
+                "type": "object"
+            },
+            "Interpolate_tns": {
+                "type": "object",
+                "properties": {
+                    "KnownXValues": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "KnownYValues": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "XValuesToPlot": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "InterpolateResponse_tns": {
+                "type": "object"
+            },
+            "GetFHLBankRates_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "FHLBankTerm": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetFHLBankRatesResponse_tns": {
+                "type": "object"
+            },
+            "GetAuctionResult_tns": {
+                "type": "object",
+                "properties": {
+                    "CUSIP": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAuctionResultResponse_tns": {
+                "type": "object"
+            },
+            "GetAuctionResults_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAuctionResultsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfInterestRate_tns": {
+                "type": "object",
+                "properties": {
+                    "InterestRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfEuroDollarFRA_tns": {
+                "type": "object",
+                "properties": {
+                    "EuroDollarFRA": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSwapRate_tns": {
+                "type": "object",
+                "properties": {
+                    "SwapRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "RateDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateStatistics_tns": {
+                "type": "object",
+                "properties": {
+                    "RateStatistics": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfFHLBankRate_tns": {
+                "type": "object",
+                "properties": {
+                    "FHLBankRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfAuctionResult_tns": {
+                "type": "object",
+                "properties": {
+                    "AuctionResult": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRate_tns": {
+                "type": "object",
+                "properties": {
+                    "Rate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTelerate3750Column_tns": {
+                "type": "object",
+                "properties": {
+                    "Telerate3750Column": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateTableLine_tns": {
+                "type": "object",
+                "properties": {
+                    "RateTableLine": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHistoricalInterestRates_tns": {
+                "type": "object",
+                "properties": {
+                    "HistoricalInterestRates": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfInt_tns": {
+                "type": "object",
+                "properties": {
+                    "int": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfDouble_tns": {
+                "type": "object",
+                "properties": {
+                    "double": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Rate_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Value": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Text": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfLIBORRate_tns": {
+                "type": "object",
+                "properties": {
+                    "LIBORRate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfRateTableCell_tns": {
+                "type": "object",
+                "properties": {
+                    "RateTableCell": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
