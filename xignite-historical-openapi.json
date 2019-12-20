@@ -1,0 +1,2453 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Historical",
+        "description": "This web service provides historical security pricing for US equities.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpswww.xignite.comxHistorical.json\/XigniteHistorical"
+    ],
+    "paths": {
+        "\/GetHistoricalQuoteAdjusted": {
+            "GET": {
+                "summary": "Get Historical Quote Adjusted",
+                "description": "Returns a quote as of a historical date. This includes split and dividends adjusted price.",
+                "operationId": "PostGethistoricalquoteadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuotesAdjusted": {
+            "GET": {
+                "summary": "Get Historical Quotes Adjusted",
+                "description": "Returns a quote as of a historical date. This includes split and dividends adjusted price.",
+                "operationId": "PostGethistoricalquotesadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMonthlyQuotesRangeAdjusted": {
+            "GET": {
+                "summary": "Get Historical Monthly Quotes Range Adjusted",
+                "description": "This operation returns end of month quotes for a US equity. This includes split and dividends adjusted price.",
+                "operationId": "PostGethistoricalmonthlyquotesrangeadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuotesAsOfAdjusted": {
+            "GET": {
+                "summary": "Get Historical Quotes As Of Adjusted",
+                "description": "This operation returns a range of quotes for a security. This includes split and dividends adjusted price.",
+                "operationId": "PostGethistoricalquotesasofadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuotesRangeAdjusted": {
+            "GET": {
+                "summary": "Get Historical Quotes Range Adjusted",
+                "description": "This operation returns a complete range of stock quotes for a US equity. This includes and dividends adjusted price.",
+                "operationId": "PostGethistoricalquotesrangeadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalWeeklyQuotesRangeAdjusted": {
+            "GET": {
+                "summary": "Get Historical Weekly Quotes Range Adjusted",
+                "description": "This operation returns end of week quotes for a US equity. This includes split and dividends adjusted price.",
+                "operationId": "PostGethistoricalweeklyquotesrangeadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuarterlyQuotesRangeAdjusted": {
+            "GET": {
+                "summary": "Get Historical Quarterly Quotes Range Adjusted",
+                "description": "This operation returns end of quarter quotes for a US equity. This includes split and dividends adjusted price.",
+                "operationId": "PostGethistoricalquarterlyquotesrangeadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastClosingPrice": {
+            "GET": {
+                "summary": "Get Last Closing Price",
+                "description": "Returns last closing price for a security.",
+                "operationId": "PostGetlastclosingprice",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastClosingPriceAdjusted": {
+            "GET": {
+                "summary": "Get Last Closing Price Adjusted",
+                "description": "Returns last closing price for a security. This include the splits and dividends adjusted price",
+                "operationId": "PostGetlastclosingpriceadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastClosingPrices": {
+            "GET": {
+                "summary": "Get Last Closing Prices",
+                "description": "Returns last closing price for a collection of securities.",
+                "operationId": "PostGetlastclosingprices",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastClosingPricesAdjusted": {
+            "GET": {
+                "summary": "Get Last Closing Prices Adjusted",
+                "description": "Returns last closing price for a collection of securities.This include the splits and dividends adjusted price",
+                "operationId": "PostGetlastclosingpricesadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastClosingPricesOrdered": {
+            "GET": {
+                "summary": "Get Last Closing Prices Ordered",
+                "description": "Returns last closing price for a collection of securities.",
+                "operationId": "PostGetlastclosingpricesordered",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetLastClosingPricesOrderedAdjusted": {
+            "GET": {
+                "summary": "Get Last Closing Prices Ordered Adjusted",
+                "description": "Returns last closing price for a collection of securities.This include the splits and dividends adjusted price",
+                "operationId": "PostGetlastclosingpricesorderedadjusted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalHighLow": {
+            "GET": {
+                "summary": "Get Historical High Low",
+                "description": "Returns a historical high low for a time range.",
+                "operationId": "PostGethistoricalhighlow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuote": {
+            "GET": {
+                "summary": "Get Historical Quote",
+                "description": "Returns a quote as of a historical date. This includes split adjusted price.",
+                "operationId": "PostGethistoricalquote",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuotes": {
+            "GET": {
+                "summary": "Get Historical Quotes",
+                "description": "Returns a quote as of a historical date. This includes split adjusted price.",
+                "operationId": "PostGethistoricalquotes",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuotesAsOf": {
+            "GET": {
+                "summary": "Get Historical Quotes As Of",
+                "description": "This operation returns a range of quotes for a security.",
+                "operationId": "PostGethistoricalquotesasof",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuotesRange": {
+            "GET": {
+                "summary": "Get Historical Quotes Range",
+                "description": "This operation returns a complete range of stock quotes for a US equity. This includes split adjusted price.",
+                "operationId": "PostGethistoricalquotesrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalMonthlyQuotesRange": {
+            "GET": {
+                "summary": "Get Historical Monthly Quotes Range",
+                "description": "This operation returns end of month quotes for a US equity. This includes split adjusted price.",
+                "operationId": "PostGethistoricalmonthlyquotesrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalWeeklyQuotesRange": {
+            "GET": {
+                "summary": "Get Historical Weekly Quotes Range",
+                "description": "This operation returns end of week quotes for a US equity. This includes split adjusted price.",
+                "operationId": "PostGethistoricalweeklyquotesrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalQuarterlyQuotesRange": {
+            "GET": {
+                "summary": "Get Historical Quarterly Quotes Range",
+                "description": "This operation returns end of quarter quotes for a US equity. This includes split adjusted price.",
+                "operationId": "PostGethistoricalquarterlyquotesrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopMovers": {
+            "GET": {
+                "summary": "Get Top Movers",
+                "description": "This operation returns quote information about the top moving equities from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettopmovers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopMoversByExchange": {
+            "GET": {
+                "summary": "Get Top Movers By Exchange",
+                "description": "This operation returns quote information about the top moving equities from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettopmoversbyexchange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopGainers": {
+            "GET": {
+                "summary": "Get Top Gainers",
+                "description": "This operation returns quote information about the top gaining equities from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettopgainers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopLosers": {
+            "GET": {
+                "summary": "Get Top Losers",
+                "description": "This operation returns quote information about the top losing equities from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettoplosers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopMoversByMarketCapitalization": {
+            "GET": {
+                "summary": "Get Top Movers By Market Capitalization",
+                "description": "This operation returns quote information about the top moving equities filtered by market capitalization from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettopmoversbymarketcapitalization",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopGainersByMarketCapitalization": {
+            "GET": {
+                "summary": "Get Top Gainers By Market Capitalization",
+                "description": "This operation returns quote information about the top gaining equities filtered by market capitalization from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettopgainersbymarketcapitalization",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetTopLosersByMarketCapitalization": {
+            "GET": {
+                "summary": "Get Top Losers By Market Capitalization",
+                "description": "This operation returns quote information about the top losing equities filtered by market capitalization from NYSE, NASDAQ and AMEX.",
+                "operationId": "PostGettoplosersbymarketcapitalization",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDividendHistory": {
+            "GET": {
+                "summary": "Get Dividend History",
+                "description": "Get dividend history for a stock.",
+                "operationId": "PostGetdivendhistory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetDividendHistoryRange": {
+            "GET": {
+                "summary": "Get Dividend History Range",
+                "description": "Get dividend history for a stock.",
+                "operationId": "PostGetdivendhistoryrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedDividendHistory": {
+            "GET": {
+                "summary": "Get Extended Dividend History",
+                "description": "Get extended dividend history for a stock.",
+                "operationId": "PostGetextendeddivendhistory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetExtendedDividendHistoryRange": {
+            "GET": {
+                "summary": "Get Extended Dividend History Range",
+                "description": "Get extended dividend history range for a stock.",
+                "operationId": "PostGetextendeddivendhistoryrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetCompleteDividendHistoryRange": {
+            "GET": {
+                "summary": "Get Complete Dividend History Range",
+                "description": "Get extended dividend history range for a stock.",
+                "operationId": "PostGetcompletedivendhistoryrange",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSplitHistory": {
+            "GET": {
+                "summary": "Get Split History",
+                "description": "Get split history for a stock for a date range.",
+                "operationId": "PostGetsplithistory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllSplits": {
+            "GET": {
+                "summary": "Get All Splits",
+                "description": "Get all splits for a date range.",
+                "operationId": "PostGetallsplits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllExtendedDividends": {
+            "GET": {
+                "summary": "Get All Extended Dividends",
+                "description": "Get all extended dividend for a date range.",
+                "operationId": "PostGetallextendeddivends",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAllDividends": {
+            "GET": {
+                "summary": "Get All Dividends",
+                "description": "Get all splits for a date range.",
+                "operationId": "PostGetalldivends",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSplitRatio": {
+            "GET": {
+                "summary": "Get Split Ratio",
+                "description": "Return the cumulative split ratio for a security between two dates. For instance, if a security saw a 3:1 split and 2:1 split during the period, the split ratio 6 is returned. Returns 1 if no split occurred.",
+                "operationId": "PostGetsplitratio",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetSymbols": {
+            "GET": {
+                "summary": "Get Symbols",
+                "description": "Returns a list of symbols available in the historical database.",
+                "operationId": "PostGetsymbols",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetAdvancesAndDeclines": {
+            "GET": {
+                "summary": "Get Advances And Declines",
+                "description": "Returns numbers of advancing and declining stocks by price and volume across exchanges. For more information, go to http:\/\/www.xignite.com\/",
+                "operationId": "PostGetadvancesanddeclines",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/GetHistoricalStatistics": {
+            "GET": {
+                "summary": "Get Historical Statistics",
+                "description": "Returns Historical statistics for a security. For more information, go to http:\/\/www.xignite.com\/",
+                "operationId": "PostGethistoricalstatistics",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuoteAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyQuotesRangeAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyQuotesRangeAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyQuotesRangeAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAsOfAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAsOfAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesAsOfAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesRangeAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesRangeAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesRangeAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyQuotesRangeAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyQuotesRangeAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyQuotesRangeAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuarterlyQuotesRangeAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuarterlyQuotesRangeAdjustedHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuarterlyQuotesRangeAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPriceInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPriceHeader": {
+                "type": "object"
+            },
+            "GetLastClosingPriceOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPriceAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPriceAdjustedHeader": {
+                "type": "object"
+            },
+            "GetLastClosingPriceAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesHeader": {
+                "type": "object"
+            },
+            "GetLastClosingPricesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesAdjustedHeader": {
+                "type": "object"
+            },
+            "GetLastClosingPricesAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesOrderedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesOrderedHeader": {
+                "type": "object"
+            },
+            "GetLastClosingPricesOrderedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesOrderedAdjustedInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesOrderedAdjustedHeader": {
+                "type": "object"
+            },
+            "GetLastClosingPricesOrderedAdjustedOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalHighLowInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalHighLowHeader": {
+                "type": "object"
+            },
+            "GetHistoricalHighLowOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuoteOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAsOfInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAsOfHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesAsOfOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyQuotesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyQuotesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyQuotesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyQuotesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyQuotesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyQuotesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuarterlyQuotesRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuarterlyQuotesRangeHeader": {
+                "type": "object"
+            },
+            "GetHistoricalQuarterlyQuotesRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversHeader": {
+                "type": "object"
+            },
+            "GetTopMoversOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversByExchangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversByExchangeHeader": {
+                "type": "object"
+            },
+            "GetTopMoversByExchangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopGainersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopGainersHeader": {
+                "type": "object"
+            },
+            "GetTopGainersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopLosersInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopLosersHeader": {
+                "type": "object"
+            },
+            "GetTopLosersOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversByMarketCapitalizationInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversByMarketCapitalizationHeader": {
+                "type": "object"
+            },
+            "GetTopMoversByMarketCapitalizationOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopGainersByMarketCapitalizationInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopGainersByMarketCapitalizationHeader": {
+                "type": "object"
+            },
+            "GetTopGainersByMarketCapitalizationOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopLosersByMarketCapitalizationInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopLosersByMarketCapitalizationHeader": {
+                "type": "object"
+            },
+            "GetTopLosersByMarketCapitalizationOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDividendHistoryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDividendHistoryHeader": {
+                "type": "object"
+            },
+            "GetDividendHistoryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDividendHistoryRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDividendHistoryRangeHeader": {
+                "type": "object"
+            },
+            "GetDividendHistoryRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedDividendHistoryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedDividendHistoryHeader": {
+                "type": "object"
+            },
+            "GetExtendedDividendHistoryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedDividendHistoryRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedDividendHistoryRangeHeader": {
+                "type": "object"
+            },
+            "GetExtendedDividendHistoryRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCompleteDividendHistoryRangeInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCompleteDividendHistoryRangeHeader": {
+                "type": "object"
+            },
+            "GetCompleteDividendHistoryRangeOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSplitHistoryInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSplitHistoryHeader": {
+                "type": "object"
+            },
+            "GetSplitHistoryOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllSplitsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllSplitsHeader": {
+                "type": "object"
+            },
+            "GetAllSplitsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllExtendedDividendsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllExtendedDividendsHeader": {
+                "type": "object"
+            },
+            "GetAllExtendedDividendsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDividendsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDividendsHeader": {
+                "type": "object"
+            },
+            "GetAllDividendsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSplitRatioInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSplitRatioHeader": {
+                "type": "object"
+            },
+            "GetSplitRatioOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSymbolsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSymbolsHeader": {
+                "type": "object"
+            },
+            "GetSymbolsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAdvancesAndDeclinesInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAdvancesAndDeclinesHeader": {
+                "type": "object"
+            },
+            "GetAdvancesAndDeclinesOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalStatisticsInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalStatisticsHeader": {
+                "type": "object"
+            },
+            "GetHistoricalStatisticsOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyQuotesRangeAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyQuotesRangeAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesAsOfAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Periods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAsOfAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesRangeAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesRangeAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyQuotesRangeAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyQuotesRangeAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuarterlyQuotesRangeAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuarterlyQuotesRangeAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetLastClosingPrice_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPriceResponse_tns": {
+                "type": "object"
+            },
+            "GetLastClosingPriceAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPriceAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetLastClosingPrices_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesResponse_tns": {
+                "type": "object"
+            },
+            "GetLastClosingPricesAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetLastClosingPricesOrdered_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesOrderedResponse_tns": {
+                "type": "object"
+            },
+            "GetLastClosingPricesOrderedAdjusted_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetLastClosingPricesOrderedAdjustedResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalHighLow_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalHighLowResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuoteResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuotes_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifiers": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesAsOf_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Periods": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesAsOfResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuotesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuotesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalMonthlyQuotesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalMonthlyQuotesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalWeeklyQuotesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalWeeklyQuotesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalQuarterlyQuotesRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalQuarterlyQuotesRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetTopMovers_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversResponse_tns": {
+                "type": "object"
+            },
+            "GetTopMoversByExchange_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversByExchangeResponse_tns": {
+                "type": "object"
+            },
+            "GetTopGainers_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopGainersResponse_tns": {
+                "type": "object"
+            },
+            "GetTopLosers_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopLosersResponse_tns": {
+                "type": "object"
+            },
+            "GetTopMoversByMarketCapitalization_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LowCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "HighCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopMoversByMarketCapitalizationResponse_tns": {
+                "type": "object"
+            },
+            "GetTopGainersByMarketCapitalization_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LowCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "HighCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopGainersByMarketCapitalizationResponse_tns": {
+                "type": "object"
+            },
+            "GetTopLosersByMarketCapitalization_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "LowCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "HighCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetTopLosersByMarketCapitalizationResponse_tns": {
+                "type": "object"
+            },
+            "GetDividendHistory_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDividendHistoryResponse_tns": {
+                "type": "object"
+            },
+            "GetDividendHistoryRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetDividendHistoryRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedDividendHistory_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedDividendHistoryResponse_tns": {
+                "type": "object"
+            },
+            "GetExtendedDividendHistoryRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetExtendedDividendHistoryRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetCompleteDividendHistoryRange_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetCompleteDividendHistoryRangeResponse_tns": {
+                "type": "object"
+            },
+            "GetSplitHistory_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSplitHistoryResponse_tns": {
+                "type": "object"
+            },
+            "GetAllSplits_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllSplitsResponse_tns": {
+                "type": "object"
+            },
+            "GetAllExtendedDividends_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllExtendedDividendsResponse_tns": {
+                "type": "object"
+            },
+            "GetAllDividends_tns": {
+                "type": "object",
+                "properties": {
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAllDividendsResponse_tns": {
+                "type": "object"
+            },
+            "GetSplitRatio_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetSplitRatioResponse_tns": {
+                "type": "object"
+            },
+            "GetSymbols_tns": {
+                "type": "object"
+            },
+            "GetSymbolsResponse_tns": {
+                "type": "object"
+            },
+            "GetAdvancesAndDeclines_tns": {
+                "type": "object",
+                "properties": {
+                    "AsOfDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetAdvancesAndDeclinesResponse_tns": {
+                "type": "object"
+            },
+            "GetHistoricalStatistics_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetHistoricalStatisticsResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IHeader_Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfHistoricalQuote_tns": {
+                "type": "object",
+                "properties": {
+                    "HistoricalQuote": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTop_tns": {
+                "type": "object",
+                "properties": {
+                    "Top": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfTopByCapitalization_tns": {
+                "type": "object",
+                "properties": {
+                    "TopByCapitalization": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSplitHistory_tns": {
+                "type": "object",
+                "properties": {
+                    "SplitHistory": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfDividend_tns": {
+                "type": "object",
+                "properties": {
+                    "Dividend": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfExtendedDividend_tns": {
+                "type": "object",
+                "properties": {
+                    "ExtendedDividend": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfCompleteDividend_tns": {
+                "type": "object",
+                "properties": {
+                    "CompleteDividend": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfSplit_tns": {
+                "type": "object",
+                "properties": {
+                    "Split": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfString_tns": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfMarketChange_tns": {
+                "type": "object",
+                "properties": {
+                    "MarketChange": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ExtendedDividend_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ExDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RecordDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PayDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Amount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Yield": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "CompleteDividend_tns": {
+                "type": "object",
+                "properties": {
+                    "Symbol": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "ExDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "RecordDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PayDate": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Amount": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Yield": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Currency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Code": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "PaymentFrequency": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "DeclaredDate": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Split_tns": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Ratio": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "CumulatedRatio": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Text": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "MarketChange_tns": {
+                "type": "object",
+                "properties": {
+                    "Exchange": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Type": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Count": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
