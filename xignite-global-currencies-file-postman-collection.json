@@ -1,0 +1,44 @@
+{
+    "id": "2d27c1fb77a12191a3b20fb0527a0c0c",
+    "name": "Xignite Global Currencies File",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "23f80c37027d01844f7a1fd92f0159a9",
+            "name": "Get File",
+            "url": "httpscloudfiles.xignite.comxGlobalCurrenciesFile.json\/XigniteGlobalCurrenciesFile\/GetFile",
+            "description": "Get File",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2d27c1fb77a12191a3b20fb0527a0c0c",
+            "rawModeData": ""
+        }
+    ]
+}
