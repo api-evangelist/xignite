@@ -1,0 +1,664 @@
+{
+    "id": "d2ac8121d04680fc51588275dd160896",
+    "name": "Xignite Calendar",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "dd8e0f1a83ee35f82ec32666ac8b8aeb",
+            "name": "Get Events For Next Number Of Days",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForNextNumberOfDays",
+            "description": "Get events for the next number of days into the future.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "0112cc4d0bbb840677e1a77e5959b6ff",
+            "name": "Get Events For Week",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForWeek",
+            "description": "Get all the events released during the week specified. Weeks are Monday - Sunday.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "e6885f25b2b04f4b9caab7cb11d4fbcc",
+            "name": "List Country Codes",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/ListCountryCodes",
+            "description": "Get all of the country codes available to query on.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "487818b04d71b7cd4dca62236d7d843f",
+            "name": "List Event Codes",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/ListEventCodes",
+            "description": "Get all of the event codes available to query on.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "16794e399964667f549e59a98ff057c4",
+            "name": "Get Event Details",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventDetails",
+            "description": "Get the details for the specified event.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "419e13cdb1850232aea63b9febf18757",
+            "name": "Get Multiple Event Details",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetMultipleEventDetails",
+            "description": "Get the details for the specified events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "5984e92b834e8d8c37490c3f0a124911",
+            "name": "Get Events By Country Code",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsByCountryCode",
+            "description": "Get events based on the country code and optionally within a specified released range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "560c96a08491dc9ef33f54978a22acb5",
+            "name": "Get Most Recent Events By Event Code",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetMostRecentEventsByEventCode",
+            "description": "Get the most recent events based on the event code and count.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "9adf9515acb0c0a3d610a601ce25c04b",
+            "name": "Get Events By Event Code",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsByEventCode",
+            "description": "Get events based on the event code and optionally within a specified released range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "937a413a1a47d9622c0e28ea06e127be",
+            "name": "Get Events By Event Name",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsByEventName",
+            "description": "Get events based on the event name and optionally within a specified released range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "291d621a86323c5aec27d06b76303c02",
+            "name": "Get Events For Date",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForDate",
+            "description": "Get events for the specified date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "07bd1f676b323915de6c3feb72d8c394",
+            "name": "Get Events For Month",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForMonth",
+            "description": "Get events for the specified date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "9db5e8a0f921e946dd53d5d284b44a9e",
+            "name": "Get Events For Range",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForRange",
+            "description": "Get events for the specified range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "d76704c090254b484aeb787b8e2714af",
+            "name": "Get Events For Range Length",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForRangeLength",
+            "description": "Get events for the date specified and next number of days past it.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "d773903778edd67063e2e59e8b49146e",
+            "name": "Get Events For Today",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForToday",
+            "description": "Get all the events released today.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "10b855cf775f4b94c736b66ccbcf12d3",
+            "name": "Get Events For Tomorrow",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForTomorrow",
+            "description": "Get all the events released tomorrow.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "e7965844e98671110bf992da390ffd4c",
+            "name": "Get Events Released For Range",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsReleasedForRange",
+            "description": "Get events released for the specified range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "fbecd9f3858cf2e7c896a4f2089353b8",
+            "name": "Get Events Released For Range Length",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsReleasedForRangeLength",
+            "description": "Get events released for the date specified and next number of days past it.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "c3ce3f053782f3fa6503413c4799d72d",
+            "name": "Search Events",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/SearchEvents",
+            "description": "Perform a complex query on events.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "46b63259258c91af45e0dacbc4fbccdb",
+            "name": "Get Latest Update Time Stamp",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetLatestUpdateTimeStamp",
+            "description": "Get latest update TimeStamp for this service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc11f909773eabc70337b07c51ad3fc8",
+            "name": "Get Service Demonstration",
+            "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetServiceDemonstration",
+            "description": "Get demonstration for this service.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "rawModeData": ""
+        }
+    ]
+}
