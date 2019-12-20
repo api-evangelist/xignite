@@ -1,0 +1,830 @@
+{
+    "name": "Xignite",
+    "description": "Financial market data on-demand. Xignite financial Web services help build smarter websites and applications in minutes with zero up-front investment.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+    "tags": [
+        " platinum",
+        "accounts",
+        "articles",
+        "bond markets",
+        "business",
+        "charts",
+        "currencies",
+        "economic",
+        "energy",
+        "financial",
+        "financial news api",
+        "financial services",
+        "general data",
+        "getting started example",
+        "gold",
+        "have api",
+        "javascript",
+        "logos",
+        "market data",
+        "markets",
+        "metals",
+        "palladium",
+        "pedestal",
+        "precious metals",
+        "profile",
+        "service api",
+        "silver",
+        "statistics",
+        "trading",
+        "transcripts"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/xignite\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "XigniteGlobalNews",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xigniteglobalnews-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xigniteglobalnews.json"
+                }
+            ]
+        },
+        {
+            "name": "XigniteReleases",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignitereleases-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignitereleases.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Futures",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-futures-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-futures.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Metals",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-metals-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-metals.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Indices Real Time",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-indices-real-time-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-indices-real-time.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Bonds",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-bonds-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-bonds.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Municipal Bond Master",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-municipal-bond-master-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-municipal-bond-master.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Indices",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-indices-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-indices.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Historical",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-historical-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-historical.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Options",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-options-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-options.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Master",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-master-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-master.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Indices Historical",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-indices-historical-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-indices-historical.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Futures",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-futures-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-futures.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite InterBanks",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-interbanks-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-interbanks.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite NASDAQ Last Sale",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-nasdaq-last-sale-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-nasdaq-last-sale.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Real Time Options",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-real-time-options-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-real-time-options.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Currencies File",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-currencies-file-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-currencies-file.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Holidays",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-holidays-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-holidays.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Currencies",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-currencies-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-currencies.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Fact Set Estimates",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-fact-set-estimates-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-fact-set-estimates.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Super Quotes",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-super-quotes-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-super-quotes.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Logos",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-logos-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-logos.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite IPOs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-ipos-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-ipos.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Calendar",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-calendar-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-calendar.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Money Markets",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-money-markets-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-money-markets.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Real Time Futures",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-real-time-futures-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-real-time-futures.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Rates",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-rates-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-rates.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Statistics",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-statistics-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-statistics.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Historical",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-historical-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-historical.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Options File",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-options-file-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-options-file.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite BATS Real Time",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-bats-real-time-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-bats-real-time.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite VWAP",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-vwap-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-vwap.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite NAVs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-navs-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-navs.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global News",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-news-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-news.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Global Option Master",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-global-option-master-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-global-option-master.json"
+                }
+            ]
+        },
+        {
+            "name": "Xignite Releases",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/xignite-logo.png",
+            "humanURL": "http:\/\/xignite.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/xignite-releases-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/xignite-releases.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": ".NET SDK",
+            "url": "http:\/\/xignite.github.io\/DotNetSDK\/"
+        },
+        {
+            "type": "Base",
+            "url": "http:\/\/globalmaster.xignite.com"
+        },
+        {
+            "type": "Case Studies",
+            "url": "https:\/\/resources.xignite.com\/case-studies"
+        },
+        {
+            "type": "Case Studies",
+            "url": "http:\/\/www.xignite.com\/market-data\/resources\/case-studies\/"
+        },
+        {
+            "type": "Blog",
+            "url": "https:\/\/resources.xignite.com\/xignite-blog"
+        },
+        {
+            "type": "Contact Form",
+            "url": "http:\/\/www.xignite.com\/market-data\/contact-us"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/xignite"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/xignite"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/www.xignite.com\/developers"
+        },
+        {
+            "type": "Email",
+            "url": "support@xignite.com"
+        },
+        {
+            "type": "Email",
+            "url": "accounting@xignite.com"
+        },
+        {
+            "type": "Email",
+            "url": "sales@xignite.com"
+        },
+        {
+            "type": "Email",
+            "url": "marketing@xignite.com"
+        },
+        {
+            "type": "Email",
+            "url": "info@xignite.com"
+        },
+        {
+            "type": "Email",
+            "url": "jobs@xignite.com"
+        },
+        {
+            "type": "Email",
+            "url": "klangstaff@xignite.com"
+        },
+        {
+            "type": "FAQ",
+            "url": "http:\/\/www.xignite.com\/Support\/FAQs.aspx"
+        },
+        {
+            "type": "Getting Started",
+            "url": "http:\/\/www.xignite.com\/Support\/GettingStarted.aspx"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/Xignite"
+        },
+        {
+            "type": "Java SDK",
+            "url": "http:\/\/xignite.github.io\/JavaSDK\/"
+        },
+        {
+            "type": "News",
+            "url": "https:\/\/xignite.com\/news"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/www.xignite.com\/Documents\/PrivacyPolicy.aspx"
+        },
+        {
+            "type": "Support",
+            "url": "http:\/\/www.xignite.com\/Support\/SupportPlans.aspx"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.xignite.com\/market-data\/blog\/tech\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/www.xignite.com\/market-data\/feed\/"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "http:\/\/www.xignite.com\/Policies\/SiteUseTerms.aspx"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/xignite"
+        },
+        {
+            "type": "Videos",
+            "url": "http:\/\/www.xignite.com\/market-data\/resources\/videos\/"
+        },
+        {
+            "type": "Webinars",
+            "url": "http:\/\/www.xignite.com\/market-data\/resources\/webinars\/"
+        },
+        {
+            "type": "Webinars",
+            "url": "https:\/\/resources.xignite.com\/webinars"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.xignite.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/xignite.com"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/xignite.com\/"
+        },
+        {
+            "type": "White Papers",
+            "url": "http:\/\/www.xignite.com\/market-data\/resources\/white-papers\/"
+        }
+    ]
+}
