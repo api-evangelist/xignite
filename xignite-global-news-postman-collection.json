@@ -1,0 +1,1294 @@
+{
+    "id": "6b4b1091d1bec1795be0185fe1772c59",
+    "name": "Xignite Global News",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "abc25654f154a1d3af6b7fa2764dc0c0",
+            "name": "Get Top Releases By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopReleasesBySecurity",
+            "description": "Return the top press releases for a security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "927db572e4d3d3b1b19dece9dafb94f0",
+            "name": "Get Historical Releases By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalReleasesBySecurity",
+            "description": "Return press releases headlines for a security and a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "123e3b5ae4f8be2b5af27e7319eb9250",
+            "name": "Get Market News Details",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetMarketNewsDetails",
+            "description": "Returns the summary content for a specified headline.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "35213600570aabeb21dd7df926c9c719",
+            "name": "Get Todays Market Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysMarketHeadlines",
+            "description": "Returns all market headlines that were published today.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "230c5cd19bcbf8f727e7a8f3673fc21c",
+            "name": "Get Top Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopSecurityHeadlines",
+            "description": "Returns the most recent specified number of headlines for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "f314107850c56fc602ba2f20f6aadaae",
+            "name": "Get Top Market Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopMarketHeadlines",
+            "description": "Returns the most recent specified number of market headlines.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "989d48b0ac188cfd7eb7cf806e07e3b6",
+            "name": "Get Todays Releases By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysReleasesBySecurity",
+            "description": "Return press releases for a security for today.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d59445bd528128c8b0c5789364d4e45",
+            "name": "Get Historical Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalSecurityHeadlines",
+            "description": "Returns all headlines that were published in a specified time frame for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "2cb66353ee8eb5147d301cddcf05b0fe",
+            "name": "Get Top Market Headlines By Sector",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopMarketHeadlinesBySector",
+            "description": "Returns the most recent specified number of market headlines associated with a specified sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "17615149748a56addf28a55be887a7b6",
+            "name": "Get Todays Market Releases",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysMarketReleases",
+            "description": "Return press releases for today.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "a853c2842ccb7613f89b691e3ff761f8",
+            "name": "Get Todays Market Headlines By Sector",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysMarketHeadlinesBySector",
+            "description": "Returns all market headlines that were published today for a specified sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "dce2707b9b61e11dc8ba75c2306efbe9",
+            "name": "Get Todays Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysSecurityHeadlines",
+            "description": "Returns all headlines that were published today for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "f416a11e87d8884d7a5db5849f6af7eb",
+            "name": "Get Recent Top Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetRecentTopSecurityHeadlines",
+            "description": "Returns 14 days specified number of headlines for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f150d163a7708166cabd2ac388965f5",
+            "name": "Get Historical Market Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalMarketHeadlines",
+            "description": "Returns all market headlines that were published in a specified time frame.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "3cc91fbf48ba9df8e160e1f9f43991fb",
+            "name": "Get Historical Market Headlines By Sector",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalMarketHeadlinesBySector",
+            "description": "Returns all market headlines that were published in a specified time frame for a specified sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "dc170d1ca192242728cfaa0eda169b9d",
+            "name": "List Sectors",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/ListSectors",
+            "description": "Provides a list of all available values for a given sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "e9437b2013d477c362920017a704a5c7",
+            "name": "Get Top Security Summaries",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopSecuritySummaries",
+            "description": "Returns all headline summaries that were published today for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ecf86c56105858493d3f9c113147104",
+            "name": "Get Top Release Summaries By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopReleaseSummariesBySecurity",
+            "description": "Return the top press releases summaries for a security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "796191b629e9beb10d5ecd723fad162c",
+            "name": "Get Top Market Summaries",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopMarketSummaries",
+            "description": "Return the top market summaries.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "b9b9321254bc578226ce9f501bafdc4d",
+            "name": "List Exchanges",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/ListExchanges",
+            "description": "List supported exchanges.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "933a230abf63ff163fd9df697e3fac7e",
+            "name": "List Symbols",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/ListSymbols",
+            "description": "This operation returns symbols in this exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "32ec8f003998b2850371ecf8758887af",
+            "name": "Historical Market Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalMarketHeadlines\/",
+            "description": "Returns all market headlines that were published in a specified time frame.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "62b2a7fa96e3894e0fa54363a55bb442",
+            "name": "Historical Market Headlines By Sector",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalMarketHeadlinesBySector\/",
+            "description": "Returns all market headlines that were published in a specified time frame for a specified sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Sector",
+                    "description": "The business sector to search within.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "9be277c4cd92f266bc29bc92983db9e8",
+            "name": "Historical Releases By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalReleasesBySecurity\/",
+            "description": "Returns all press releases that were published in a specified time frame for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "979179c39d1bcb6e4891623be25aee3b",
+            "name": "Historical Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalSecurityHeadlines\/",
+            "description": "Returns all headlines that were published in a specified time frame for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "EndDate",
+                    "description": "The end date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startDate",
+                    "description": "The start date range.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "d8335f8a38ae8c82ffd624bbb29578c7",
+            "name": "Market News Details",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetMarketNewsDetails\/",
+            "description": "Returns the summary content for a specified headline.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Reference",
+                    "description": "The URL of the news article.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "42c0f0c841e85965ab466f198c8a55ee",
+            "name": "Todays Market Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysMarketHeadlines\/",
+            "description": "Returns all market headlines that were published today.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "2228589d5461d29812bc854557b9dc2b",
+            "name": "Todays Market Headlines By Sector",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysMarketHeadlinesBySector\/",
+            "description": "Returns all market headlines that were published today for a specified sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Sector",
+                    "description": "The business sector to search within.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "86e0a55a798b1dbf22a34d57c4b3eb72",
+            "name": "Todays Releases By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysReleasesBySecurity\/",
+            "description": "Returns all press releases that were published today for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1011f473fb41434c3567b3d3ae2a991",
+            "name": "Todays Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysSecurityHeadlines\/",
+            "description": "Returns all headlines that were published today for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "881d7f99218a8f4c3c136585372337e4",
+            "name": "Get Top Market Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopMarketHeadlines\/",
+            "description": "Returns the most recent specified number of market headlines.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Count",
+                    "description": "Number of headlines to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "9cec60c747c4191b7932d53a747b68cd",
+            "name": "Top Market Headlines By Sector",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopMarketHeadlinesBySector\/",
+            "description": "Returns the most recent specified number of market headlines associated with a specified sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Count",
+                    "description": "Number of headlines to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Sector",
+                    "description": "The business sector to search within.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "da1dd35f311519fefa9735d17c49de9d",
+            "name": "Top Releases By Security",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopReleasesBySecurity",
+            "description": "Returns the most recent specified number of press releases for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "country",
+                    "description": "Number of items to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "65f7c4e0f815a4f1ecd85d420935996b",
+            "name": "Get Top Security Headlines",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopSecurityHeadlines\/",
+            "description": "Returns the most recent specified number of headlines for a given security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Count",
+                    "description": "Number of headlines to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "Identifier",
+                    "description": "The ticker symbol for company",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "IdentifierType",
+                    "description": "The identifier to use.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        },
+        {
+            "id": "be145b638616ad4afe99081703c18c3c",
+            "name": "List Sectors",
+            "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/ListSectors\/",
+            "description": "Provides a list of all available values for a given sector.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "_Token",
+                    "description": "The API Key",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "rawModeData": ""
+        }
+    ]
+}
