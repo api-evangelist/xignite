@@ -1,0 +1,912 @@
+{
+    "id": "065f69e579a7606a8c2784e1220b3abb",
+    "name": "Xignite Global Historical",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "57aa52cdc39bde52e946f2ddb4b085e4",
+            "name": "Get Global Last Closing Price",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalLastClosingPrice",
+            "description": "Returns last closing price for a security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7f59f94cd9579967c449fe51b89f9dc7",
+            "name": "Get Global Last Closing Prices",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalLastClosingPrices",
+            "description": "Returns last closing price for a collection of securities.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "cced009ab4223311ed2696deccf3b9b4",
+            "name": "Get Global Historical Quote",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuote",
+            "description": "Returns a quote as of a historical date. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "a8272a1e14474f272e71306bf2d1e55b",
+            "name": "Get End Of Day Quote",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetEndOfDayQuote",
+            "description": "Returns a quote as of a historical date. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7568f9cd320c5ff715bc34c5968739c9",
+            "name": "Get End Of Day Quotes",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetEndOfDayQuotes",
+            "description": "Returns a quote as of a historical date. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "1c7f5e9fcc064d97f696af012a0c5d91",
+            "name": "Get End Of Day Quotes Range",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetEndOfDayQuotesRange",
+            "description": "Returns a quote a complete range of stock quotes for a given equity. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "94420b1205a7f2d6c4a314bbfc6ae383",
+            "name": "Get Global Historical Quotes",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotes",
+            "description": "Returns quotes as of a historical date. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "cec7ad20e41ef11f8741c3ced9f5d958",
+            "name": "Get Global Historical Quotes As Of",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotesAsOf",
+            "description": "This operation returns a range of quotes for a security.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "a62dbcf1494910897369e97f8fb0094f",
+            "name": "Get Global Historical Quotes Range",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotesRange",
+            "description": "This operation returns a complete range of stock quotes for a given equity. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "dbb94dc14edb74a98a25b76ea3e7f24c",
+            "name": "Get Global Historical Quotes Range Extended",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotesRangeExtended",
+            "description": "This operation returns a complete range of global historical quotes extended for a given equity. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "757bc6716b669119387f4c07f1ce870f",
+            "name": "Get Global Historical Weekly Quotes Range",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalWeeklyQuotesRange",
+            "description": "Returns a range of weekly Global Historical quotes for a security. For more information, go to http:\/\/www.xignite.com\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "b4f5ee7eb797b1e86484f74dea04f8bd",
+            "name": "Get Global Historical Weekly Quotes Range Extended",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalWeeklyQuotesRangeExtended",
+            "description": "Returns a range of weekly Global Historical quotes extended for a security. For more information, go to http:\/\/www.xignite.com\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "7dabda4c7dec6a00108a0fdcf1215b92",
+            "name": "Get Global Historical Quarterly Quotes Range",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuarterlyQuotesRange",
+            "description": "Returns a range of quarterly Global Historical quotes for a security. For more information, go to http:\/\/www.xignite.com\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "ebfa8a6c461b7161a788c71a5f4844fa",
+            "name": "Get Global Historical Statistics",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalStatistics",
+            "description": "Returns Global Historical statistics for a security. For more information, go to http:\/\/www.xignite.com\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f80c95665d88cc4d0ca1844c9f229b1",
+            "name": "Get Global Historical Monthly Quotes Range",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalMonthlyQuotesRange",
+            "description": "This operation returns a range of monthly quotes for an equity based on the specified date range. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "02ea8ce88612652eaa637bff99d25b61",
+            "name": "Get Global Historical Monthly Quotes Range Extended",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalMonthlyQuotesRangeExtended",
+            "description": "This operation returns a range of monthly quotes extended for an equity based on the specified date range. This includes the adjusted price as specified.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "3046cd043ca9fac45106ee77bef5c496",
+            "name": "Get Top Movers By Exchange",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetTopMoversByExchange",
+            "description": "This operation returns quote information about the top moving equities for the requested exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "c24018c9e0e8b24abb69553a3d320cdc",
+            "name": "Get Top Gainers By Exchange",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetTopGainersByExchange",
+            "description": "This operation returns quote information about the top gaining equities for the requested exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "491cd6a70cf0fb224c85744017aec09c",
+            "name": "Get Top Losers By Exchange",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetTopLosersByExchange",
+            "description": "This operation returns quote information about the top losing equities for the requested exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "84fcfd7147417d2aba9a0e97da0bc05a",
+            "name": "Get All Splits By Exchange",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetAllSplitsByExchange",
+            "description": "Get all splits for a date range in the specified exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "e06ddb5657ae568edada928ea07e53e6",
+            "name": "Get Split Ratio",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetSplitRatio",
+            "description": "Return the cumulative split ratio for a security between two dates. For instance, if a security saw a 3:1 split and 2:1 split during the period, the split ratio 6 is returned. Returns 1 if no split occurred.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "d64f4012c949f7d611f3d2676202cd17",
+            "name": "Get Split History",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetSplitHistory",
+            "description": "Get split history for a stock for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "8e8a8c8bb9248dd8b75835ba558c9a5f",
+            "name": "Get All Cash Dividends By Exchange",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetAllCashDividendsByExchange",
+            "description": "Get all cash dividends for a date range in the specified exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "ddd20499539867e3a749e6dcfe09e836",
+            "name": "Get Cash Dividend Total",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetCashDividendTotal",
+            "description": "Return the cumulative cash dividend total for a security between two dates.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "b8d7d7ddc99926c2d44f7d829e76e86b",
+            "name": "Get Cash Dividend History",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetCashDividendHistory",
+            "description": "Get cash dividend history for a stock for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "92d1eea29c388326a5a575cecabf6284",
+            "name": "Get All Corporate Actions By Exchange",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetAllCorporateActionsByExchange",
+            "description": "Get all corporate actions for a date range in the specified exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "63b9ec69b42a2360b57375002eeda498",
+            "name": "Get Corporate Action History",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetCorporateActionHistory",
+            "description": "Get the corporate action history for a stock for a date range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a39799b9575dd7caa4c277795bbd331",
+            "name": "List Symbols",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/ListSymbols",
+            "description": "Get all symbols in the specified exchange.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        },
+        {
+            "id": "d59afcc16c507e53664a40ca8dc4f9e7",
+            "name": "List Exchanges",
+            "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/ListExchanges",
+            "description": "This operation returns exchanges information.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "rawModeData": ""
+        }
+    ]
+}
