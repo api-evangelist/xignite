@@ -1,0 +1,44 @@
+{
+    "id": "2f2bf4dcd39c46111502495defb9a0dc",
+    "name": "Xignite Municipal Bond Master",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "026305ca3710dc27ac868a6ea3e6e591",
+            "name": "Get Bond Description",
+            "url": "httpsmunicipalbondmaster.xignite.comxmunicipalbondmaster.json\/XigniteMunicipalBondMaster\/GetBondDescription",
+            "description": "This service returns description of one or more Municipal Bonds that match the identifier provided. If a CUSIP is provided in the input one Municipal Bond is returned, if IssueIdentifier is provided one or more bonds related to that Issue are returned.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "2f2bf4dcd39c46111502495defb9a0dc",
+            "rawModeData": ""
+        }
+    ]
+}
