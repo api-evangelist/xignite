@@ -1,0 +1,478 @@
+{
+    "id": "4010a2ac4f89b7f6d1792dfcaa146118",
+    "name": "Xignite Global Holidays",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "7a9272b9afa759dad89bd3ef373a8d22",
+            "name": "List Exchanges",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListExchanges",
+            "description": "List exchanges.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "0aeb06bc216118d5a68862153021d2e3",
+            "name": "List Currencies",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListCurrencies",
+            "description": "List currencies.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "d6255f3ebc633ad4bd5484fdddc77539",
+            "name": "List Financial Centers",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListFinancialCenters",
+            "description": "List financial centers.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "4941f4ca5e9f2bf2839d370149666f57",
+            "name": "Get Holidays",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetHolidays",
+            "description": "Get holidays.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "5fe32ad85e345b418c6f85ea239269c1",
+            "name": "List Holidays",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListHolidays",
+            "description": "List holidays.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "64156b1362ee72438bef7b76af8f9edd",
+            "name": "Get Next Date",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetNextDate",
+            "description": "Get next date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "60e8e6e3ee1e7812e2534f5006afdc3f",
+            "name": "Get Prior Date",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetPriorDate",
+            "description": "Get prior date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "98963c0827d6b30eb22cc06d6f94d771",
+            "name": "Get Day Count",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetDayCount",
+            "description": "Get day count.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "984852452909b27c34585887812cde65",
+            "name": "Get Exchange Date Time",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetExchangeDateTime",
+            "description": "Get exchange date time.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "bb29f22c6b064d83e1cbd8fd98674644",
+            "name": "Get Exchange Hours",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetExchangeHours",
+            "description": "Get exchange hours.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "a38f7217e36d36ebbadde80bebc11031",
+            "name": "Get Exchange Hours Range",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetExchangeHoursRange",
+            "description": "Get exchange hours range.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "a52b0148be856e2f1a27f9ab6b3915d5",
+            "name": "Are Exchanges Open",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/AreExchangesOpen",
+            "description": "Are exchanges open.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "44f22d444c6c452f78a15b50db47f6c8",
+            "name": "Is Exchange Open On Date",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/IsExchangeOpenOnDate",
+            "description": "Is exchange open on date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "58e71ae3b09d44deb321e6ab9403e8a0",
+            "name": "Get Settlement Date",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetSettlementDate",
+            "description": "Get settlement date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        },
+        {
+            "id": "05d8fc171955393e7fc02c38283bf3d0",
+            "name": "Is Settlement Date",
+            "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/IsSettlementDate",
+            "description": "Is settlement date.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "GET",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "body",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "rawModeData": ""
+        }
+    ]
+}
