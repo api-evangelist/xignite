@@ -1,0 +1,126 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Xignite Municipal Bond Master",
+        "description": "XigniteMunicipalBondMaster web service provides security master data and associated reference data for municipal bonds issued by states, counties, cities, and special tax districts, along with special agencies of state and local governments.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsmunicipalbondmaster.xignite.comxmunicipalbondmaster.json\/XigniteMunicipalBondMaster"
+    ],
+    "paths": {
+        "\/GetBondDescription": {
+            "GET": {
+                "summary": "Get Bond Description",
+                "description": "This service returns description of one or more Municipal Bonds that match the identifier provided. If a CUSIP is provided in the input one Municipal Bond is returned, if IssueIdentifier is provided one or more bonds related to that Issue are returned.",
+                "operationId": "GetBondDescription",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Security": {
+                "type": "object",
+                "properties": {
+                    "UsernameToken": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Timestamp": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondDescriptionInput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondDescriptionHeader": {
+                "type": "object"
+            },
+            "GetBondDescriptionOutput": {
+                "type": "object",
+                "properties": {
+                    "Envelope": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "Identifier": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "IdentifierType": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "GetBondDescriptionResponse_tns": {
+                "type": "object"
+            },
+            "Header_tns": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Password": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Tracer": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "ArrayOfBondDescription_tns": {
+                "type": "object",
+                "properties": {
+                    "BondDescription": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            },
+            "Common_tns": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Identity": {
+                        "description": "",
+                        "type": "post"
+                    },
+                    "Delay": {
+                        "description": "",
+                        "type": "post"
+                    }
+                }
+            }
+        }
+    }
+}
