@@ -1,5 +1,5 @@
 {
-    "id": "2d27c1fb77a12191a3b20fb0527a0c0c",
+    "id": "5ae4da1bf85cbc823b47bc407874aca7",
     "name": "Xignite Global Currencies File",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "23f80c37027d01844f7a1fd92f0159a9",
+            "id": "208532b963267f1fc024040ab518feaf",
             "name": "Get File",
             "url": "httpscloudfiles.xignite.comxGlobalCurrenciesFile.json\/XigniteGlobalCurrenciesFile\/GetFile",
             "description": "Get File",
@@ -37,7 +37,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2d27c1fb77a12191a3b20fb0527a0c0c",
+            "collectionId": "5ae4da1bf85cbc823b47bc407874aca7",
             "rawModeData": ""
         }
     ]
