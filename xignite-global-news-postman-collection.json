@@ -1,5 +1,5 @@
 {
-    "id": "6b4b1091d1bec1795be0185fe1772c59",
+    "id": "9199fc402b0d4e3bff6662c6b6b6fea4",
     "name": "Xignite Global News",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "abc25654f154a1d3af6b7fa2764dc0c0",
+            "id": "691d37c8603a0461f33ff105c1e10ad4",
             "name": "Get Top Releases By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopReleasesBySecurity",
             "description": "Return the top press releases for a security.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "927db572e4d3d3b1b19dece9dafb94f0",
+            "id": "07a8b8e37b620e6f976d63486bb4d8ff",
             "name": "Get Historical Releases By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalReleasesBySecurity",
             "description": "Return press releases headlines for a security and a date range.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "123e3b5ae4f8be2b5af27e7319eb9250",
+            "id": "582121e124f3842c81f3aac0a624b7ae",
             "name": "Get Market News Details",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetMarketNewsDetails",
             "description": "Returns the summary content for a specified headline.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "35213600570aabeb21dd7df926c9c719",
+            "id": "548c45420e87c9f48bc199e460fe6aac",
             "name": "Get Todays Market Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysMarketHeadlines",
             "description": "Returns all market headlines that were published today.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "230c5cd19bcbf8f727e7a8f3673fc21c",
+            "id": "5ad85eee6d7fd5e36033583612d6acbb",
             "name": "Get Top Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopSecurityHeadlines",
             "description": "Returns the most recent specified number of headlines for a given security.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "f314107850c56fc602ba2f20f6aadaae",
+            "id": "f3af64eb338badabeec0df0f45f15982",
             "name": "Get Top Market Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopMarketHeadlines",
             "description": "Returns the most recent specified number of market headlines.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "989d48b0ac188cfd7eb7cf806e07e3b6",
+            "id": "e8b25e1e5eafae33c562ecc35abfe4ed",
             "name": "Get Todays Releases By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysReleasesBySecurity",
             "description": "Return press releases for a security for today.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "0d59445bd528128c8b0c5789364d4e45",
+            "id": "0efdd9d13c4ebfa450f63e924300437e",
             "name": "Get Historical Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalSecurityHeadlines",
             "description": "Returns all headlines that were published in a specified time frame for a given security.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "2cb66353ee8eb5147d301cddcf05b0fe",
+            "id": "4a2f24d8e579c649c0b81b9c3e33e453",
             "name": "Get Top Market Headlines By Sector",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopMarketHeadlinesBySector",
             "description": "Returns the most recent specified number of market headlines associated with a specified sector.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "17615149748a56addf28a55be887a7b6",
+            "id": "b11d09f90cd7566d533481074d2e85eb",
             "name": "Get Todays Market Releases",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysMarketReleases",
             "description": "Return press releases for today.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "a853c2842ccb7613f89b691e3ff761f8",
+            "id": "c972822dff1acceca45cbe7caef9244d",
             "name": "Get Todays Market Headlines By Sector",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysMarketHeadlinesBySector",
             "description": "Returns all market headlines that were published today for a specified sector.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "dce2707b9b61e11dc8ba75c2306efbe9",
+            "id": "743a384cf4a9997980e7e40bb5ddfbd0",
             "name": "Get Todays Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTodaysSecurityHeadlines",
             "description": "Returns all headlines that were published today for a given security.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "f416a11e87d8884d7a5db5849f6af7eb",
+            "id": "eab6241427ec584512d19933ee105527",
             "name": "Get Recent Top Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetRecentTopSecurityHeadlines",
             "description": "Returns 14 days specified number of headlines for a given security.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "2f150d163a7708166cabd2ac388965f5",
+            "id": "b40b41f64d0db99a3273ab4aa407b855",
             "name": "Get Historical Market Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalMarketHeadlines",
             "description": "Returns all market headlines that were published in a specified time frame.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "3cc91fbf48ba9df8e160e1f9f43991fb",
+            "id": "efecae5f5d7515ade62c97fad37970b6",
             "name": "Get Historical Market Headlines By Sector",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetHistoricalMarketHeadlinesBySector",
             "description": "Returns all market headlines that were published in a specified time frame for a specified sector.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "dc170d1ca192242728cfaa0eda169b9d",
+            "id": "e78dac4e514579f2f20accc1d32595b8",
             "name": "List Sectors",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/ListSectors",
             "description": "Provides a list of all available values for a given sector.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "e9437b2013d477c362920017a704a5c7",
+            "id": "0ca973a53e70ddeb54cdafbc4d63d05b",
             "name": "Get Top Security Summaries",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopSecuritySummaries",
             "description": "Returns all headline summaries that were published today for a given security.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "2ecf86c56105858493d3f9c113147104",
+            "id": "378ebf738ecebe3985b55dcdb768b65f",
             "name": "Get Top Release Summaries By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopReleaseSummariesBySecurity",
             "description": "Return the top press releases summaries for a security.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "796191b629e9beb10d5ecd723fad162c",
+            "id": "29a51107678759344bcba17b11cb115f",
             "name": "Get Top Market Summaries",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/GetTopMarketSummaries",
             "description": "Return the top market summaries.",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "b9b9321254bc578226ce9f501bafdc4d",
+            "id": "60087535fa34b2f3b9a7d505fb0a9228",
             "name": "List Exchanges",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/ListExchanges",
             "description": "List supported exchanges.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "933a230abf63ff163fd9df697e3fac7e",
+            "id": "060dc52fbf4e7676d78ca73fe4912750",
             "name": "List Symbols",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/\/ListSymbols",
             "description": "This operation returns symbols in this exchange.",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "32ec8f003998b2850371ecf8758887af",
+            "id": "e765459b46711493542360ab4b211906",
             "name": "Historical Market Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalMarketHeadlines\/",
             "description": "Returns all market headlines that were published in a specified time frame.",
@@ -702,11 +702,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "62b2a7fa96e3894e0fa54363a55bb442",
+            "id": "e9c2430a2c3e4fd674be1c9045875ee8",
             "name": "Historical Market Headlines By Sector",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalMarketHeadlinesBySector\/",
             "description": "Returns all market headlines that were published in a specified time frame for a specified sector.",
@@ -754,11 +754,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "9be277c4cd92f266bc29bc92983db9e8",
+            "id": "0a87cf957e4d4e0a953e138af3f36517",
             "name": "Historical Releases By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalReleasesBySecurity\/",
             "description": "Returns all press releases that were published in a specified time frame for a given security.",
@@ -813,11 +813,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "979179c39d1bcb6e4891623be25aee3b",
+            "id": "b32f8dd3dd069dd4de6c7a7bfcee239f",
             "name": "Historical Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetHistoricalSecurityHeadlines\/",
             "description": "Returns all headlines that were published in a specified time frame for a given security.",
@@ -872,11 +872,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "d8335f8a38ae8c82ffd624bbb29578c7",
+            "id": "3b17d9b3d1f1b9aef34c40d2678a7719",
             "name": "Market News Details",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetMarketNewsDetails\/",
             "description": "Returns the summary content for a specified headline.",
@@ -910,11 +910,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "42c0f0c841e85965ab466f198c8a55ee",
+            "id": "826ead0c95f24304a923f464434fd82a",
             "name": "Todays Market Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysMarketHeadlines\/",
             "description": "Returns all market headlines that were published today.",
@@ -941,11 +941,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "2228589d5461d29812bc854557b9dc2b",
+            "id": "7f64a5d15184e60891bf553b86999937",
             "name": "Todays Market Headlines By Sector",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysMarketHeadlinesBySector\/",
             "description": "Returns all market headlines that were published today for a specified sector.",
@@ -979,11 +979,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "86e0a55a798b1dbf22a34d57c4b3eb72",
+            "id": "5b3854cf2b86966520e1a224793ce13d",
             "name": "Todays Releases By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysReleasesBySecurity\/",
             "description": "Returns all press releases that were published today for a given security.",
@@ -1024,11 +1024,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "e1011f473fb41434c3567b3d3ae2a991",
+            "id": "4ccdc7a5bac89296ca0c05bcf13a8128",
             "name": "Todays Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTodaysSecurityHeadlines\/",
             "description": "Returns all headlines that were published today for a given security.",
@@ -1069,11 +1069,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "881d7f99218a8f4c3c136585372337e4",
+            "id": "5c952c04af9714b56d7c8ca7081eff28",
             "name": "Get Top Market Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopMarketHeadlines\/",
             "description": "Returns the most recent specified number of market headlines.",
@@ -1107,11 +1107,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "9cec60c747c4191b7932d53a747b68cd",
+            "id": "7dbb3fdfaa1e151b6154eb7d0992d0b3",
             "name": "Top Market Headlines By Sector",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopMarketHeadlinesBySector\/",
             "description": "Returns the most recent specified number of market headlines associated with a specified sector.",
@@ -1152,11 +1152,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "da1dd35f311519fefa9735d17c49de9d",
+            "id": "a5000e768509ebdfb57187529dcb8fe9",
             "name": "Top Releases By Security",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopReleasesBySecurity",
             "description": "Returns the most recent specified number of press releases for a given security.",
@@ -1204,11 +1204,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "65f7c4e0f815a4f1ecd85d420935996b",
+            "id": "10f1f05c54db2bf68cd702b9298bfd52",
             "name": "Get Top Security Headlines",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/GetTopSecurityHeadlines\/",
             "description": "Returns the most recent specified number of headlines for a given security.",
@@ -1256,11 +1256,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         },
         {
-            "id": "be145b638616ad4afe99081703c18c3c",
+            "id": "ba02a5149afdfdcfb6f02f0838561896",
             "name": "List Sectors",
             "url": "httpsglobalnews.xignite.comxGlobalNews.xml\/ListSectors\/",
             "description": "Provides a list of all available values for a given sector.",
@@ -1287,7 +1287,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b4b1091d1bec1795be0185fe1772c59",
+            "collectionId": "9199fc402b0d4e3bff6662c6b6b6fea4",
             "rawModeData": ""
         }
     ]
