@@ -1,5 +1,5 @@
 {
-    "id": "8afa16c8631125ed17491db84772a863",
+    "id": "13043b4f635dfb664365123fd99e43f6",
     "name": "Xignite Global Indices Historical",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "f9433e0ce9331ccdc9501be9358d0860",
+            "id": "66e6588c7cd292b1a76f8274c53849eb",
             "name": "Get Historical Index Values",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndexValues",
             "description": "Get historical index values.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "f0b66bfb75966cc700b2f904b5d0510d",
+            "id": "5617cd86b9481d0b2e0335ffad4fcb3c",
             "name": "Get Last Closing Indices Value",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetLastClosingIndicesValue",
             "description": "Get last closing indices value.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "5077b0c07ff58fb337a307d1157a2f42",
+            "id": "92d89a571d86151e14150431d5ebafea",
             "name": "Get Historical Indices Value",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndicesValue",
             "description": "Get historical indices value.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "44bbb613c99783236b3eb0fbd8d817e6",
+            "id": "99eecef2a77e540b5ab549616d4cc0a0",
             "name": "Get Last Closing Index Value",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetLastClosingIndexValue",
             "description": "Get last closing index value.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "df7fa21b2e36a71546a3bf0a4bfc2afb",
+            "id": "e7af48f13878c39139f3d7e62a520b43",
             "name": "Get Historical Index Value",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndexValue",
             "description": "Get historical index value.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "26754ef18bc4de8ac70c895b0b5831ad",
+            "id": "762c8f1871e64bc39988e0c4d527571c",
             "name": "Get Historical Index Values Trailing",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetHistoricalIndexValuesTrailing",
             "description": "Get historical index values trailing.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "e054641e5399fd43cb6297c31360c725",
+            "id": "0680221dd8e7fe5183e9ff8f48dcb614",
             "name": "Get Index Symbol Mapping By Old Symbol",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetIndexSymbolMappingByOldSymbol",
             "description": "Get index symbol mapping by old symbol.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "84a03ae6fd96038e4cd3c4ee314e6c04",
+            "id": "5efcaddb8d0957000d83267db65e8925",
             "name": "Get Index Symbol Mappings By Old Symbols",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetIndexSymbolMappingsByOldSymbols",
             "description": "Get index symbol mappings by old symbols.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "64f9c2ac69a2d38e782b3318cd0cb9ef",
+            "id": "cb57721564ae1053d5f94cfa1ed5b8c5",
             "name": "List Index Groups",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/ListIndexGroups",
             "description": "List index groups.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "5e3c94230d48dafcb837436d1d33cd7e",
+            "id": "4491a1309e6413f7807ef21183866b47",
             "name": "List Indices By Index Group",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/ListIndicesByIndexGroup",
             "description": "List indices by index group.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "27eff034146b7811c815639c9dd022e4",
+            "id": "9a415b96267720f27defa7615bcb85a0",
             "name": "Search Indices By Name",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/SearchIndicesByName",
             "description": "Search indices by name.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "874ef3c27c4e8dd9af8b15a53e7043aa",
+            "id": "9ee26ece574d733b798de854ed45b453",
             "name": "Get Chart Bars",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical, Bars",
             "description": "Get chart bars.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         },
         {
-            "id": "7659c9fc20b1228eaacc73472a20d3c0",
+            "id": "02a3c8bd0a5e83e9c6395d4347e1458f",
             "name": "Get Index Bars",
             "url": "httpsglobalindiceshistorical.xignite.comxglobalindiceshistorical.json\/XigniteGlobalIndicesHistorical\/GetIndexBars",
             "description": "Get index bars.",
@@ -409,7 +409,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8afa16c8631125ed17491db84772a863",
+            "collectionId": "13043b4f635dfb664365123fd99e43f6",
             "rawModeData": ""
         }
     ]
