@@ -1,5 +1,5 @@
 {
-    "id": "365297e31e5ae156dbfe2450e082c7ce",
+    "id": "0a3400e2717c4fefa826adf592c6c948",
     "name": "Xignite Global Metals",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "09fbff494e14722f0821a4d8f6da02de",
+            "id": "f0c17eae39a32994a8d36839dc11f4f8",
             "name": "Get Real Time Metal Quotes",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetRealTimeMetalQuotes",
             "description": "Get real time exchange rate.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "f3d5fb1fa679be7488ee3ee409525d90",
+            "id": "e332ac7619a6cb9394c31b3644f02d40",
             "name": "Get Historical Metal Quotes",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalMetalQuotes",
             "description": "Get cross sectional historical metal quotes at a given time.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "d8badaccf85a900277a5093b57a40efd",
+            "id": "33fc3a9de3830f01283ea0d6a1915069",
             "name": "Get Real Time Metal Quote",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetRealTimeMetalQuote",
             "description": "Get real time metal quote.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "2ca11b43128aaaf3c1eed7a8f48c489c",
+            "id": "7747dff9be26c3559be29b9daf37a853",
             "name": "Get Chart Bars",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals, Bars",
             "description": "Get intraday bars of specified intervals within a time range.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "121207dd9573e61ec0f0246d96f8761b",
+            "id": "69d48d0cb350d5b28dba25282ea55506",
             "name": "List Metals",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/ListMetals",
             "description": "List all Metals.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "63605b3dc9c9a0442bb03e4987ee8d62",
+            "id": "fd3af2c3bac26ba5034625c8272b5cdc",
             "name": "Get Real Time Extended Metal Quote",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetRealTimeExtendedMetalQuote",
             "description": "Get real time extended metal quote.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "29c00fd8a92a321798394045aa5be845",
+            "id": "576a747aa00cfc024a0e487c319b52f5",
             "name": "Get Historical Metal Quote",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalMetalQuote",
             "description": "Get historical metal quote at a given time.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "7f5f0a51a34e67a04e2446528a1b96c2",
+            "id": "bb6d5545e3ba822da1095528059f6734",
             "name": "Get Latest Historical Metal Quote",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLatestHistoricalMetalQuote",
             "description": "Get historical metal quote by a given time.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "d0234f5f2aaeaaf70038997b307b4a10",
+            "id": "580d863962bbd188141b433af8b2f1b7",
             "name": "Get Latest Historical Metal Quotes",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLatestHistoricalMetalQuotes",
             "description": "Get cross sectional historical metal quotes by a given time.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "65c6b0a31e058aae8dc31601a580303c",
+            "id": "c5038a4e0aa147efa411dc87195be26f",
             "name": "Get Historical Metal Quotes Range",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalMetalQuotesRange",
             "description": "Get historical metal quotes time series.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "0fb0aca8a9998962a4deec0018902b1e",
+            "id": "d3c1a4bc94e86a040521942f1c129255",
             "name": "Get London Historical Metal Quotes Range",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLondonHistoricalMetalQuotesRange",
             "description": "Get historical metal quotes based on Legacy London spot prices.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "5351abe41369f25fb60a7f00b092d45b",
+            "id": "69e1ec60b39474e905cc258c391c956b",
             "name": "Get Tick",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetTick",
             "description": "Get intraday tick at given time.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "1da6f24a39b7cb51855e57fbd24426ef",
+            "id": "fe9beb8baf3e4e8581e91d665590697c",
             "name": "Get Ticks",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetTicks",
             "description": "Get intraday ticks of specified intervals within a time range.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "8a43cf990ee3ca7584944e4ec2ff97dd",
+            "id": "fc7926bebe7598a3d5c0839cbb4321ff",
             "name": "Get Bar",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetBar",
             "description": "Get intraday bar at given time.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "6dc510f5282d5a387afafc94caa2f38b",
+            "id": "cb378b91ffcd289920bf7c449a82e45f",
             "name": "Get Bars",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetBars",
             "description": "Get intraday bars of specified intervals within a time range.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "023d97d7c8ce6e84b8a42f6b4429bb17",
+            "id": "8d214f9f42287933bb0825c8812b407e",
             "name": "Get London Fixing",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetLondonFixing",
             "description": "Get last london fixing metal quotes.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "c99a6e4ac671950664f69e83619a16e2",
+            "id": "09f5be5f2436524e4bef6d2f0f00cb4b",
             "name": "Get Historical London Fixing Range",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetHistoricalLondonFixingRange",
             "description": "Get historical london fixing metal quotes time series.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "09e2993885628aee31f82385a5517751",
+            "id": "6e821382dd7fc76288de8f640eeb9db1",
             "name": "Get Top Industry Headlines",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetTopIndustryHeadlines",
             "description": "Get top industry headlines.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         },
         {
-            "id": "61c7d4ae0758dbaba010cc3e439f2cfb",
+            "id": "670ddac694a7c1f0b7fcb2576bb7b45b",
             "name": "Get Base Metal Price",
             "url": "httpsglobalmetals.xignite.comxGlobalMetals.json\/XigniteGlobalMetals\/GetBaseMetalPrice",
             "description": "Get base metal price.",
@@ -595,7 +595,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "365297e31e5ae156dbfe2450e082c7ce",
+            "collectionId": "0a3400e2717c4fefa826adf592c6c948",
             "rawModeData": ""
         }
     ]
