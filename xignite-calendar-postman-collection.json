@@ -1,5 +1,5 @@
 {
-    "id": "d2ac8121d04680fc51588275dd160896",
+    "id": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
     "name": "Xignite Calendar",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "dd8e0f1a83ee35f82ec32666ac8b8aeb",
+            "id": "01c7a1ecc93077e9ea73c1db3c4120b8",
             "name": "Get Events For Next Number Of Days",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForNextNumberOfDays",
             "description": "Get events for the next number of days into the future.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "0112cc4d0bbb840677e1a77e5959b6ff",
+            "id": "f7868eaec93b1707ce1434b8fd6dac49",
             "name": "Get Events For Week",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForWeek",
             "description": "Get all the events released during the week specified. Weeks are Monday - Sunday.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "e6885f25b2b04f4b9caab7cb11d4fbcc",
+            "id": "abc2cb5639ff9758a8f4bc3e2d8cc371",
             "name": "List Country Codes",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/ListCountryCodes",
             "description": "Get all of the country codes available to query on.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "487818b04d71b7cd4dca62236d7d843f",
+            "id": "b93c65df0295da5876bcb07d27c461f0",
             "name": "List Event Codes",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/ListEventCodes",
             "description": "Get all of the event codes available to query on.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "16794e399964667f549e59a98ff057c4",
+            "id": "5a8b1736ff8ae7deae6c7fadac603c96",
             "name": "Get Event Details",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventDetails",
             "description": "Get the details for the specified event.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "419e13cdb1850232aea63b9febf18757",
+            "id": "3457da92efa684286df0df6352c6e71e",
             "name": "Get Multiple Event Details",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetMultipleEventDetails",
             "description": "Get the details for the specified events.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "5984e92b834e8d8c37490c3f0a124911",
+            "id": "2e69204443ebff3510ecc412386dad52",
             "name": "Get Events By Country Code",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsByCountryCode",
             "description": "Get events based on the country code and optionally within a specified released range.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "560c96a08491dc9ef33f54978a22acb5",
+            "id": "a3c708330b74a859190e832a14355631",
             "name": "Get Most Recent Events By Event Code",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetMostRecentEventsByEventCode",
             "description": "Get the most recent events based on the event code and count.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "9adf9515acb0c0a3d610a601ce25c04b",
+            "id": "1cd7a4a10d846316a05b16837f4e5ca0",
             "name": "Get Events By Event Code",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsByEventCode",
             "description": "Get events based on the event code and optionally within a specified released range.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "937a413a1a47d9622c0e28ea06e127be",
+            "id": "c383c58fd02553795f5673c7587547d2",
             "name": "Get Events By Event Name",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsByEventName",
             "description": "Get events based on the event name and optionally within a specified released range.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "291d621a86323c5aec27d06b76303c02",
+            "id": "b7cf5c9883f7ecb7fac917314c197e25",
             "name": "Get Events For Date",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForDate",
             "description": "Get events for the specified date.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "07bd1f676b323915de6c3feb72d8c394",
+            "id": "5e5ee936013655134017ef72af87612a",
             "name": "Get Events For Month",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForMonth",
             "description": "Get events for the specified date.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "9db5e8a0f921e946dd53d5d284b44a9e",
+            "id": "17d902df7423bef31af7f864310793f5",
             "name": "Get Events For Range",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForRange",
             "description": "Get events for the specified range.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "d76704c090254b484aeb787b8e2714af",
+            "id": "e0075e2743589c1220a41ee75eb1069b",
             "name": "Get Events For Range Length",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForRangeLength",
             "description": "Get events for the date specified and next number of days past it.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "d773903778edd67063e2e59e8b49146e",
+            "id": "63a99025c13338f9e95e73642f125a59",
             "name": "Get Events For Today",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForToday",
             "description": "Get all the events released today.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "10b855cf775f4b94c736b66ccbcf12d3",
+            "id": "5f100ecac1abcc7bcd62a5a1cc135580",
             "name": "Get Events For Tomorrow",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsForTomorrow",
             "description": "Get all the events released tomorrow.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "e7965844e98671110bf992da390ffd4c",
+            "id": "34afad355053cf0de5215cfc5825c7f3",
             "name": "Get Events Released For Range",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsReleasedForRange",
             "description": "Get events released for the specified range.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "fbecd9f3858cf2e7c896a4f2089353b8",
+            "id": "f11a45559cea945e0baf87c502d85529",
             "name": "Get Events Released For Range Length",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetEventsReleasedForRangeLength",
             "description": "Get events released for the date specified and next number of days past it.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "c3ce3f053782f3fa6503413c4799d72d",
+            "id": "f5163694292129d3087a60baed127ad0",
             "name": "Search Events",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/SearchEvents",
             "description": "Perform a complex query on events.",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "46b63259258c91af45e0dacbc4fbccdb",
+            "id": "d8416b32eafc3615022a90beac6c731e",
             "name": "Get Latest Update Time Stamp",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetLatestUpdateTimeStamp",
             "description": "Get latest update TimeStamp for this service.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         },
         {
-            "id": "bc11f909773eabc70337b07c51ad3fc8",
+            "id": "e76e4a025eee38027a7cf1f9bac363a4",
             "name": "Get Service Demonstration",
             "url": "httpswww.xignite.comxCalendar.json\/XigniteCalendar\/GetServiceDemonstration",
             "description": "Get demonstration for this service.",
@@ -657,7 +657,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d2ac8121d04680fc51588275dd160896",
+            "collectionId": "94dd7bd59ef0e0f3aee6f8e4799c59cf",
             "rawModeData": ""
         }
     ]
