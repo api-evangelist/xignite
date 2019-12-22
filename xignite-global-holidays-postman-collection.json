@@ -1,5 +1,5 @@
 {
-    "id": "4010a2ac4f89b7f6d1792dfcaa146118",
+    "id": "3537fe57ca6c66ce71ebb1eb6e203d7c",
     "name": "Xignite Global Holidays",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "7a9272b9afa759dad89bd3ef373a8d22",
+            "id": "524ee08df84d0b5367885160af0251e4",
             "name": "List Exchanges",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListExchanges",
             "description": "List exchanges.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "0aeb06bc216118d5a68862153021d2e3",
+            "id": "83b16787ef9bae1420ea19af8939346f",
             "name": "List Currencies",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListCurrencies",
             "description": "List currencies.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "d6255f3ebc633ad4bd5484fdddc77539",
+            "id": "db09f879a4137429be9f5bd07230a2c1",
             "name": "List Financial Centers",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListFinancialCenters",
             "description": "List financial centers.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "4941f4ca5e9f2bf2839d370149666f57",
+            "id": "545eeffe1cd22ff07353f12e4b6a6001",
             "name": "Get Holidays",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetHolidays",
             "description": "Get holidays.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "5fe32ad85e345b418c6f85ea239269c1",
+            "id": "0736a8320a8a9025ead20d844c55a59a",
             "name": "List Holidays",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/ListHolidays",
             "description": "List holidays.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "64156b1362ee72438bef7b76af8f9edd",
+            "id": "cff65f54d5ae4cc5ab79766f00d2e7d4",
             "name": "Get Next Date",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetNextDate",
             "description": "Get next date.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "60e8e6e3ee1e7812e2534f5006afdc3f",
+            "id": "7026d63ef48ff69543c1860aa407f502",
             "name": "Get Prior Date",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetPriorDate",
             "description": "Get prior date.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "98963c0827d6b30eb22cc06d6f94d771",
+            "id": "b34ffa72c84890f6d40a4c565e6bb27f",
             "name": "Get Day Count",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetDayCount",
             "description": "Get day count.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "984852452909b27c34585887812cde65",
+            "id": "7cc887adcdce98f28a4a4001965cd24c",
             "name": "Get Exchange Date Time",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetExchangeDateTime",
             "description": "Get exchange date time.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "bb29f22c6b064d83e1cbd8fd98674644",
+            "id": "0a576d698bd9a3fdd0c22a70d97a609b",
             "name": "Get Exchange Hours",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetExchangeHours",
             "description": "Get exchange hours.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "a38f7217e36d36ebbadde80bebc11031",
+            "id": "dcebc51b550ba4d65b04fef1138df518",
             "name": "Get Exchange Hours Range",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetExchangeHoursRange",
             "description": "Get exchange hours range.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "a52b0148be856e2f1a27f9ab6b3915d5",
+            "id": "76f13b1cb26371b7d252156327afe61d",
             "name": "Are Exchanges Open",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/AreExchangesOpen",
             "description": "Are exchanges open.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "44f22d444c6c452f78a15b50db47f6c8",
+            "id": "c66bc17243ecd13902d0646268bb5ff0",
             "name": "Is Exchange Open On Date",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/IsExchangeOpenOnDate",
             "description": "Is exchange open on date.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "58e71ae3b09d44deb321e6ab9403e8a0",
+            "id": "1883d78584664fb2a731bb852b0725d8",
             "name": "Get Settlement Date",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/GetSettlementDate",
             "description": "Get settlement date.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         },
         {
-            "id": "05d8fc171955393e7fc02c38283bf3d0",
+            "id": "4396441d43270f98f5d7c91cc1b90e9b",
             "name": "Is Settlement Date",
             "url": "httpsglobalholidays.xignite.comxGlobalHolidays.json\/XigniteGlobalHolidays\/IsSettlementDate",
             "description": "Is settlement date.",
@@ -471,7 +471,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4010a2ac4f89b7f6d1792dfcaa146118",
+            "collectionId": "3537fe57ca6c66ce71ebb1eb6e203d7c",
             "rawModeData": ""
         }
     ]
