@@ -1,5 +1,5 @@
 {
-    "id": "065f69e579a7606a8c2784e1220b3abb",
+    "id": "8d9ae5467dbe2cf0f693dcf435aa8131",
     "name": "Xignite Global Historical",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "57aa52cdc39bde52e946f2ddb4b085e4",
+            "id": "eedfb556d5c78ce1c6f19d94dee6b34d",
             "name": "Get Global Last Closing Price",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalLastClosingPrice",
             "description": "Returns last closing price for a security.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "7f59f94cd9579967c449fe51b89f9dc7",
+            "id": "3020f78b746bcad5ae2071e3cc511b81",
             "name": "Get Global Last Closing Prices",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalLastClosingPrices",
             "description": "Returns last closing price for a collection of securities.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "cced009ab4223311ed2696deccf3b9b4",
+            "id": "970e40e196498bee3df16504b9766a14",
             "name": "Get Global Historical Quote",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuote",
             "description": "Returns a quote as of a historical date. This includes the adjusted price as specified.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "a8272a1e14474f272e71306bf2d1e55b",
+            "id": "5d41c9746e5e3c44378240cf8f41d4ed",
             "name": "Get End Of Day Quote",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetEndOfDayQuote",
             "description": "Returns a quote as of a historical date. This includes the adjusted price as specified.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "7568f9cd320c5ff715bc34c5968739c9",
+            "id": "c44fc940d6005bba27b446d86fcfe234",
             "name": "Get End Of Day Quotes",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetEndOfDayQuotes",
             "description": "Returns a quote as of a historical date. This includes the adjusted price as specified.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "1c7f5e9fcc064d97f696af012a0c5d91",
+            "id": "a2935b78dedd2f198488ccb8744a6df0",
             "name": "Get End Of Day Quotes Range",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetEndOfDayQuotesRange",
             "description": "Returns a quote a complete range of stock quotes for a given equity. This includes the adjusted price as specified.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "94420b1205a7f2d6c4a314bbfc6ae383",
+            "id": "d73dcdfe95f1c46046c6cc4fbd154ff7",
             "name": "Get Global Historical Quotes",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotes",
             "description": "Returns quotes as of a historical date. This includes the adjusted price as specified.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "cec7ad20e41ef11f8741c3ced9f5d958",
+            "id": "d7a5c79d714aceab17eac43698c72612",
             "name": "Get Global Historical Quotes As Of",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotesAsOf",
             "description": "This operation returns a range of quotes for a security.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "a62dbcf1494910897369e97f8fb0094f",
+            "id": "d3ec91b8dc0d17b9b89584e53c67150e",
             "name": "Get Global Historical Quotes Range",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotesRange",
             "description": "This operation returns a complete range of stock quotes for a given equity. This includes the adjusted price as specified.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "dbb94dc14edb74a98a25b76ea3e7f24c",
+            "id": "ed9332ac1a7d724967f4465521f59281",
             "name": "Get Global Historical Quotes Range Extended",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuotesRangeExtended",
             "description": "This operation returns a complete range of global historical quotes extended for a given equity. This includes the adjusted price as specified.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "757bc6716b669119387f4c07f1ce870f",
+            "id": "f2182cee87cf8d6c7a21bfed826fa0e2",
             "name": "Get Global Historical Weekly Quotes Range",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalWeeklyQuotesRange",
             "description": "Returns a range of weekly Global Historical quotes for a security. For more information, go to http:\/\/www.xignite.com\/",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "b4f5ee7eb797b1e86484f74dea04f8bd",
+            "id": "0da8c9a19434269f2e8b06ab58c93665",
             "name": "Get Global Historical Weekly Quotes Range Extended",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalWeeklyQuotesRangeExtended",
             "description": "Returns a range of weekly Global Historical quotes extended for a security. For more information, go to http:\/\/www.xignite.com\/",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "7dabda4c7dec6a00108a0fdcf1215b92",
+            "id": "9cb94be028bea765e5f0967eb96d1fed",
             "name": "Get Global Historical Quarterly Quotes Range",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalQuarterlyQuotesRange",
             "description": "Returns a range of quarterly Global Historical quotes for a security. For more information, go to http:\/\/www.xignite.com\/",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "ebfa8a6c461b7161a788c71a5f4844fa",
+            "id": "3ba28ff54d2f847b25ecd5899e1ac7b3",
             "name": "Get Global Historical Statistics",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalStatistics",
             "description": "Returns Global Historical statistics for a security. For more information, go to http:\/\/www.xignite.com\/",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "0f80c95665d88cc4d0ca1844c9f229b1",
+            "id": "99d042e9cbadba5166e77ee44bab0299",
             "name": "Get Global Historical Monthly Quotes Range",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalMonthlyQuotesRange",
             "description": "This operation returns a range of monthly quotes for an equity based on the specified date range. This includes the adjusted price as specified.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "02ea8ce88612652eaa637bff99d25b61",
+            "id": "06358c3d942956a4f8c06b4746d35665",
             "name": "Get Global Historical Monthly Quotes Range Extended",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetGlobalHistoricalMonthlyQuotesRangeExtended",
             "description": "This operation returns a range of monthly quotes extended for an equity based on the specified date range. This includes the adjusted price as specified.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "3046cd043ca9fac45106ee77bef5c496",
+            "id": "863078c753d6d7e5b5d2b21e22cd07eb",
             "name": "Get Top Movers By Exchange",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetTopMoversByExchange",
             "description": "This operation returns quote information about the top moving equities for the requested exchange.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "c24018c9e0e8b24abb69553a3d320cdc",
+            "id": "ce3723925e9bd524466e4b99100b1336",
             "name": "Get Top Gainers By Exchange",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetTopGainersByExchange",
             "description": "This operation returns quote information about the top gaining equities for the requested exchange.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "491cd6a70cf0fb224c85744017aec09c",
+            "id": "a1973997591e61dc09a7dda4196b3568",
             "name": "Get Top Losers By Exchange",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetTopLosersByExchange",
             "description": "This operation returns quote information about the top losing equities for the requested exchange.",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "84fcfd7147417d2aba9a0e97da0bc05a",
+            "id": "566aae58bba0a5d8c5865f2c361f666f",
             "name": "Get All Splits By Exchange",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetAllSplitsByExchange",
             "description": "Get all splits for a date range in the specified exchange.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "e06ddb5657ae568edada928ea07e53e6",
+            "id": "22dce8a50e15f8ab375902f073d47c77",
             "name": "Get Split Ratio",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetSplitRatio",
             "description": "Return the cumulative split ratio for a security between two dates. For instance, if a security saw a 3:1 split and 2:1 split during the period, the split ratio 6 is returned. Returns 1 if no split occurred.",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "d64f4012c949f7d611f3d2676202cd17",
+            "id": "3e2c4e651b3f338561ab0c70fcc1cdf2",
             "name": "Get Split History",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetSplitHistory",
             "description": "Get split history for a stock for a date range.",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "8e8a8c8bb9248dd8b75835ba558c9a5f",
+            "id": "326793419083342515ccd59e4964d7f7",
             "name": "Get All Cash Dividends By Exchange",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetAllCashDividendsByExchange",
             "description": "Get all cash dividends for a date range in the specified exchange.",
@@ -719,11 +719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "ddd20499539867e3a749e6dcfe09e836",
+            "id": "88bb3d2710b44edb2cd4c53701359ae0",
             "name": "Get Cash Dividend Total",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetCashDividendTotal",
             "description": "Return the cumulative cash dividend total for a security between two dates.",
@@ -750,11 +750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "b8d7d7ddc99926c2d44f7d829e76e86b",
+            "id": "f51213a857b232eca0f859d86b451603",
             "name": "Get Cash Dividend History",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetCashDividendHistory",
             "description": "Get cash dividend history for a stock for a date range.",
@@ -781,11 +781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "92d1eea29c388326a5a575cecabf6284",
+            "id": "eacea6750821854c259fbe608e323e8a",
             "name": "Get All Corporate Actions By Exchange",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetAllCorporateActionsByExchange",
             "description": "Get all corporate actions for a date range in the specified exchange.",
@@ -812,11 +812,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "63b9ec69b42a2360b57375002eeda498",
+            "id": "674c43fd8090b5840c6798da1119b873",
             "name": "Get Corporate Action History",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/GetCorporateActionHistory",
             "description": "Get the corporate action history for a stock for a date range.",
@@ -843,11 +843,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "6a39799b9575dd7caa4c277795bbd331",
+            "id": "5fc0e9a114802b94277d451693b7fb25",
             "name": "List Symbols",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/ListSymbols",
             "description": "Get all symbols in the specified exchange.",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         },
         {
-            "id": "d59afcc16c507e53664a40ca8dc4f9e7",
+            "id": "43dca1f5bf63141248eb9c9fac6c4a8a",
             "name": "List Exchanges",
             "url": "httpswww.xignite.comxGlobalHistorical.json\/XigniteGlobalHistorical\/ListExchanges",
             "description": "This operation returns exchanges information.",
@@ -905,7 +905,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "065f69e579a7606a8c2784e1220b3abb",
+            "collectionId": "8d9ae5467dbe2cf0f693dcf435aa8131",
             "rawModeData": ""
         }
     ]
