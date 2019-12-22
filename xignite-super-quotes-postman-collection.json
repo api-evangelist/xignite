@@ -1,5 +1,5 @@
 {
-    "id": "095b7e15169270cc2e93ef03929561e6",
+    "id": "60a035eb4a03ac1d09175fcf76d40530",
     "name": "Xignite Super Quotes",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b9a47e1cbe6acc618adfa293adafb5c6",
+            "id": "524fb8495682a39e3c8a55271b870f0f",
             "name": "Get Quote",
             "url": "httpssuperquotes.xignite.comxSuperQuotes.json\/XigniteSuperQuotes\/GetQuote",
             "description": "Returns a quote for a given security.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "095b7e15169270cc2e93ef03929561e6",
+            "collectionId": "60a035eb4a03ac1d09175fcf76d40530",
             "rawModeData": ""
         },
         {
-            "id": "ab848587239e1505d3a0f22d50188428",
+            "id": "52b72c263fd871011d2944a8a7c98bee",
             "name": "Get Quotes",
             "url": "httpssuperquotes.xignite.comxSuperQuotes.json\/XigniteSuperQuotes\/GetQuotes",
             "description": "Returns quotes for given securities.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "095b7e15169270cc2e93ef03929561e6",
+            "collectionId": "60a035eb4a03ac1d09175fcf76d40530",
             "rawModeData": ""
         },
         {
-            "id": "2dbe74c11922b39365848837f33bfcd0",
+            "id": "f81a53e06fbc8fc4616f7f75c4770e66",
             "name": "Get Chart Bars",
             "url": "httpssuperquotes.xignite.comxSuperQuotes.json\/XigniteSuperQuotes, Bars",
             "description": "Returns ChartBars for given security.",
@@ -99,7 +99,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "095b7e15169270cc2e93ef03929561e6",
+            "collectionId": "60a035eb4a03ac1d09175fcf76d40530",
             "rawModeData": ""
         }
     ]
