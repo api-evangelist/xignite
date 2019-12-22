@@ -1,5 +1,5 @@
 {
-    "id": "e6a9775a6e761727d44b36a8996d2be5",
+    "id": "0a759252550ab1a111e5f3b6bbb90bfd",
     "name": "Xignite BATS Real Time",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "cef39808c800a128a8294e057b6bae06",
+            "id": "108354208e52dfc2db49b25d76defb64",
             "name": "Get Bars",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetBars",
             "description": "Returns a set of bars for a stock and a time range during the trading day.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "737399e50249a2a54f35d5feaada8edb",
+            "id": "fab3f2077683399ffa2315680890bb46",
             "name": "Get Real Quote",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuote",
             "description": "Returns real time stock quote for a given stock ticker",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "5db98561f245a24404d8f321c7f4dfb9",
+            "id": "18f495d8ca6d250edcd0693ac1bd0852",
             "name": "Get Real Quotes",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuotes",
             "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "46c1fc131482b18fbdace157bb576e1e",
+            "id": "1d12e6e9ea0d50887933b063392c89cb",
             "name": "Get Real Quotes By Identifiers",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuotesByIdentifiers",
             "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "bf90cc320f89d89b4d91e65ae49d8909",
+            "id": "1dc138705b7251435513f0096683366f",
             "name": "Get Real Quote By Identifier",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetRealQuoteByIdentifier",
             "description": "Returns a real-time quote for a security based on the last trade execution.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "a48bb84d7fff9379048e7313f5dbbdf5",
+            "id": "e4cd8de3266e927560a589417fa53cba",
             "name": "List Traded Symbols",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/ListTradedSymbols",
             "description": "Returns all symbols and names that are traded recently",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "591aefd01af9d434a79b22fdb350b0a5",
+            "id": "5e9a50e8acc5082f64e5905bb7165bd4",
             "name": "Get Bar",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime\/GetBar",
             "description": "Returns a single bar for a specific time.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         },
         {
-            "id": "51d96d4bd37179ef108c21d47347b33b",
+            "id": "85f51ae543518a0aee0708c1084b72b1",
             "name": "Get Chart Bars",
             "url": "httpsbatsrealtime.xignite.comxBATSRealTime.json\/XigniteBATSRealTime, Bars",
             "description": "Returns a set of partial bars for a stock and a time range during the trading day.",
@@ -254,7 +254,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e6a9775a6e761727d44b36a8996d2be5",
+            "collectionId": "0a759252550ab1a111e5f3b6bbb90bfd",
             "rawModeData": ""
         }
     ]
