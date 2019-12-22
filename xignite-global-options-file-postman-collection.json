@@ -1,5 +1,5 @@
 {
-    "id": "90cea52aa0937b26bce5429b0738cd43",
+    "id": "2e2bf8cb48537a33990d70231a7cc490",
     "name": "Xignite Global Options File",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b6dd7705269a6afe23cce7edcafa3591",
+            "id": "34a6a19eb94528022a6dcc2cd6cfa8ee",
             "name": "Get File",
             "url": "httpscloudfiles.xignite.comxGlobalOptionsFile.json\/XigniteGlobalOptionsFile\/GetFile",
             "description": "Get file",
@@ -37,7 +37,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "90cea52aa0937b26bce5429b0738cd43",
+            "collectionId": "2e2bf8cb48537a33990d70231a7cc490",
             "rawModeData": ""
         }
     ]
