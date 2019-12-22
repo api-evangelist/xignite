@@ -1,5 +1,5 @@
 {
-    "id": "a14ec8c4fb06bd73469a5f442667d306",
+    "id": "61fc2a27d51d6be7ee4174c99a147d3e",
     "name": "Xignite Historical",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "bc1bd431f1bd2e03745c92bc8a30295e",
+            "id": "10639ee732630de0d72b24f40b653bce",
             "name": "Get Historical Quote Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuoteAdjusted",
             "description": "Returns a quote as of a historical date. This includes split and dividends adjusted price.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "c69f43d4a9e7d62744eb7f9e92f649d4",
+            "id": "6439a097e98f2327482bc98fab6bf4cc",
             "name": "Get Historical Quotes Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuotesAdjusted",
             "description": "Returns a quote as of a historical date. This includes split and dividends adjusted price.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "ac7edd0d99d09e0d072f732b7a3984de",
+            "id": "d9740a0a99b59c463487c25ba18afaee",
             "name": "Get Historical Monthly Quotes Range Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalMonthlyQuotesRangeAdjusted",
             "description": "This operation returns end of month quotes for a US equity. This includes split and dividends adjusted price.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "3494075df8e5cb0da01db179e1fa4319",
+            "id": "06909f69b4abb0fbbd74c3fbf2c77135",
             "name": "Get Historical Quotes As Of Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuotesAsOfAdjusted",
             "description": "This operation returns a range of quotes for a security. This includes split and dividends adjusted price.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "84fc2df582e8df59f9ee74b4ac969438",
+            "id": "ce316b93103260bbd5b5647e38a9374b",
             "name": "Get Historical Quotes Range Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuotesRangeAdjusted",
             "description": "This operation returns a complete range of stock quotes for a US equity. This includes and dividends adjusted price.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "5991f78852c3f5bf572ad1a66dd6f7de",
+            "id": "2e8b7e32b229875ce08186b4e6f170ee",
             "name": "Get Historical Weekly Quotes Range Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalWeeklyQuotesRangeAdjusted",
             "description": "This operation returns end of week quotes for a US equity. This includes split and dividends adjusted price.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "401101c6a886732e21a1545827cac7f5",
+            "id": "3306615193234d49a1ae1d562bfa33d3",
             "name": "Get Historical Quarterly Quotes Range Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuarterlyQuotesRangeAdjusted",
             "description": "This operation returns end of quarter quotes for a US equity. This includes split and dividends adjusted price.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "1b69ea72b72f6247a14b8643c28f0d6e",
+            "id": "b36ade5536de92087758392d8d6387f1",
             "name": "Get Last Closing Price",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetLastClosingPrice",
             "description": "Returns last closing price for a security.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "b81d24f2fca9d9f7ecd1333db1048a77",
+            "id": "80ce54e0f2c5db298e473bfa404ed3a2",
             "name": "Get Last Closing Price Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetLastClosingPriceAdjusted",
             "description": "Returns last closing price for a security. This include the splits and dividends adjusted price",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "da1a89a6b76234f4cdcc70ffe9be870e",
+            "id": "4049e3845c9cbe12f0e10cdcf34335b1",
             "name": "Get Last Closing Prices",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetLastClosingPrices",
             "description": "Returns last closing price for a collection of securities.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "d820a244296813df6a8f70df2ab75c0f",
+            "id": "81519438eb2dd8af29235a1f266cc234",
             "name": "Get Last Closing Prices Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetLastClosingPricesAdjusted",
             "description": "Returns last closing price for a collection of securities.This include the splits and dividends adjusted price",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "2d9b1563cf12303f8fd37b99e70c1905",
+            "id": "990cf18d3217204c573ff1f4bb5fa25e",
             "name": "Get Last Closing Prices Ordered",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetLastClosingPricesOrdered",
             "description": "Returns last closing price for a collection of securities.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "227c41c5fed995b8212e3b6804c6dd21",
+            "id": "47aacf9fb6c152c417324995f1270e03",
             "name": "Get Last Closing Prices Ordered Adjusted",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetLastClosingPricesOrderedAdjusted",
             "description": "Returns last closing price for a collection of securities.This include the splits and dividends adjusted price",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "1c22be03362e20457d1550fc180b995c",
+            "id": "0e747d294c9ed23312cab5b1897c9c68",
             "name": "Get Historical High Low",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalHighLow",
             "description": "Returns a historical high low for a time range.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "363b55e88babd8192f0216305ae86fa7",
+            "id": "f0a95b87c23891bbb6fc868a4a35b863",
             "name": "Get Historical Quote",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuote",
             "description": "Returns a quote as of a historical date. This includes split adjusted price.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "32ceaa85a538f4c4c668b28e9ebc6d93",
+            "id": "a15df5ee4822cd7a571e278db0a71625",
             "name": "Get Historical Quotes",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuotes",
             "description": "Returns a quote as of a historical date. This includes split adjusted price.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "316b9d48b4dddfbc895f0506ac9ee4ed",
+            "id": "bf640aa36c15c4b95c4e095c105107ee",
             "name": "Get Historical Quotes As Of",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuotesAsOf",
             "description": "This operation returns a range of quotes for a security.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "46c205614cf3e44fda8dd87d885dc296",
+            "id": "1ea69930631352820d9b353cb9d9e03d",
             "name": "Get Historical Quotes Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuotesRange",
             "description": "This operation returns a complete range of stock quotes for a US equity. This includes split adjusted price.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "8d675fdf9f349b8152a52928c32d63d5",
+            "id": "eafdb8960ed2bc85bcb7093ae531c99a",
             "name": "Get Historical Monthly Quotes Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalMonthlyQuotesRange",
             "description": "This operation returns end of month quotes for a US equity. This includes split adjusted price.",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "78ae43b5f6164c0aea27d7c481451772",
+            "id": "c517c92533c4cdf406dccfa32feab055",
             "name": "Get Historical Weekly Quotes Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalWeeklyQuotesRange",
             "description": "This operation returns end of week quotes for a US equity. This includes split adjusted price.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "16fe09c56e4d851f8909bd667da72f0a",
+            "id": "54fa0840984d4b314cd76f91c751c5bc",
             "name": "Get Historical Quarterly Quotes Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalQuarterlyQuotesRange",
             "description": "This operation returns end of quarter quotes for a US equity. This includes split adjusted price.",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "8317b6fabd512376b55ee8a4a1ab791c",
+            "id": "ddcf0c3e3d47f5fcfe2e2ad8ab700cf5",
             "name": "Get Top Movers",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopMovers",
             "description": "This operation returns quote information about the top moving equities from NYSE, NASDAQ and AMEX.",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "94de9d386da6d1e71936d8a4f2e50abc",
+            "id": "f1e7dd71c65fd32d2850c618d0816367",
             "name": "Get Top Movers By Exchange",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopMoversByExchange",
             "description": "This operation returns quote information about the top moving equities from NYSE, NASDAQ and AMEX.",
@@ -719,11 +719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "1c2a7eefd674fbcdd2885db5bf2e226d",
+            "id": "dc373fb7d70fea7821e47f0cb0bcfc43",
             "name": "Get Top Gainers",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopGainers",
             "description": "This operation returns quote information about the top gaining equities from NYSE, NASDAQ and AMEX.",
@@ -750,11 +750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "a3a6b23e895efb85e5984ad0625825a3",
+            "id": "67e361c93c55591df014611c40b4773d",
             "name": "Get Top Losers",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopLosers",
             "description": "This operation returns quote information about the top losing equities from NYSE, NASDAQ and AMEX.",
@@ -781,11 +781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "457a28a5ce11ec82b41529fd55575c81",
+            "id": "2815b293480aa9367489e4c7a6a0bda2",
             "name": "Get Top Movers By Market Capitalization",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopMoversByMarketCapitalization",
             "description": "This operation returns quote information about the top moving equities filtered by market capitalization from NYSE, NASDAQ and AMEX.",
@@ -812,11 +812,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "ddcb9976438062c69b5fabafe68dc72c",
+            "id": "c599a451ded5385f9f0df40084dd816c",
             "name": "Get Top Gainers By Market Capitalization",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopGainersByMarketCapitalization",
             "description": "This operation returns quote information about the top gaining equities filtered by market capitalization from NYSE, NASDAQ and AMEX.",
@@ -843,11 +843,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "8e4097eba5af8a834178430747f8dee9",
+            "id": "6e179851ee55b461094ddc7986c02e39",
             "name": "Get Top Losers By Market Capitalization",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetTopLosersByMarketCapitalization",
             "description": "This operation returns quote information about the top losing equities filtered by market capitalization from NYSE, NASDAQ and AMEX.",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "f2907c6fcff28f21fc1c7b6211ae44b9",
+            "id": "c30a34374ffffa5cf3cee9bcfc6311fc",
             "name": "Get Dividend History",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetDividendHistory",
             "description": "Get dividend history for a stock.",
@@ -905,11 +905,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "b8ff3997079e23ffb943e2d97b90255e",
+            "id": "61231e5dbcc71e32ca13bf12d0093ad2",
             "name": "Get Dividend History Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetDividendHistoryRange",
             "description": "Get dividend history for a stock.",
@@ -936,11 +936,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "d1a789a7b31e59f53f8e5d6773e5be4f",
+            "id": "9b9da6ab0eabd83240d5a43758e76f93",
             "name": "Get Extended Dividend History",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetExtendedDividendHistory",
             "description": "Get extended dividend history for a stock.",
@@ -967,11 +967,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "81051f7d931d9b9f8594b634c1320ccb",
+            "id": "9c375f7237cce69e5c4f6626b0a74855",
             "name": "Get Extended Dividend History Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetExtendedDividendHistoryRange",
             "description": "Get extended dividend history range for a stock.",
@@ -998,11 +998,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "1cb7daf124b2eb1b2568e4f6939f1bd1",
+            "id": "479fb9bdce4d7f90c273765912f536d6",
             "name": "Get Complete Dividend History Range",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetCompleteDividendHistoryRange",
             "description": "Get extended dividend history range for a stock.",
@@ -1029,11 +1029,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "53c5e5be6ebd0a236a059617b9090bdb",
+            "id": "97f9a1eb4b84766419f996a3a11462e6",
             "name": "Get Split History",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetSplitHistory",
             "description": "Get split history for a stock for a date range.",
@@ -1060,11 +1060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "23596a6d63230af779f716b8d10338f6",
+            "id": "eccfa22ccd673515ef9783e3aff0bcd5",
             "name": "Get All Splits",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetAllSplits",
             "description": "Get all splits for a date range.",
@@ -1091,11 +1091,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "77779aa6131b9ba4368a096c38461b43",
+            "id": "0a5e825fe1c9f27830d00d4b80118800",
             "name": "Get All Extended Dividends",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetAllExtendedDividends",
             "description": "Get all extended dividend for a date range.",
@@ -1122,11 +1122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "c5602a9632311f91bacb057cc6fea5eb",
+            "id": "a5e2248d941e04a96af5b61f05b7824c",
             "name": "Get All Dividends",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetAllDividends",
             "description": "Get all splits for a date range.",
@@ -1153,11 +1153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "b152a054e1ca4403ff48fd4cca9d569a",
+            "id": "39e68647a584f995317946be0f3743d1",
             "name": "Get Split Ratio",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetSplitRatio",
             "description": "Return the cumulative split ratio for a security between two dates. For instance, if a security saw a 3:1 split and 2:1 split during the period, the split ratio 6 is returned. Returns 1 if no split occurred.",
@@ -1184,11 +1184,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "b2aeeb93768eb0fb04f3065b626cb3cf",
+            "id": "8fc35a6931a2890f2e83f857a3c09300",
             "name": "Get Symbols",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetSymbols",
             "description": "Returns a list of symbols available in the historical database.",
@@ -1215,11 +1215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "b5c362aab9b952e99b3bc1a5e14ab96f",
+            "id": "42351a735c1430887d1535483cd511dc",
             "name": "Get Advances And Declines",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetAdvancesAndDeclines",
             "description": "Returns numbers of advancing and declining stocks by price and volume across exchanges. For more information, go to http:\/\/www.xignite.com\/",
@@ -1246,11 +1246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         },
         {
-            "id": "42c4ff20c6b6d671be490fb527e32810",
+            "id": "67f154163d59af5371bc40bf528f55d2",
             "name": "Get Historical Statistics",
             "url": "httpswww.xignite.comxHistorical.json\/XigniteHistorical\/GetHistoricalStatistics",
             "description": "Returns Historical statistics for a security. For more information, go to http:\/\/www.xignite.com\/",
@@ -1277,7 +1277,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a14ec8c4fb06bd73469a5f442667d306",
+            "collectionId": "61fc2a27d51d6be7ee4174c99a147d3e",
             "rawModeData": ""
         }
     ]
