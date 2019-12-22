@@ -1,5 +1,5 @@
 {
-    "id": "f41f8f060192b95b73141ea4ca708c2c",
+    "id": "926b2bcbf67f8bd8e0e6c827b3f207b3",
     "name": "Xignite Fact Set Estimates",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b957e18fcb508bb59ade27bea33d509c",
+            "id": "ae005c303fcc7b65f977bcd1dce054cb",
             "name": "Get Estimates",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetEstimates",
             "description": "Get Estimates on AsOfDate",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "9a432081d0a71f1a581c7a809892ece2",
+            "id": "497cf3187810b97d204540b046eb92c9",
             "name": "Get Latest Recommendation Summaries",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetLatestRecommendationSummaries",
             "description": "Get Latest Recommendation Summary",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "a1c58c865d5ca5be34f782ac6d5bfbbe",
+            "id": "d5465bd21f9d5f5ae3b38121c2faa95a",
             "name": "List Exchanges",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/ListExchanges",
             "description": "List Exchanges",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "bfaeba3fbabf90a435d610d4aa3e0365",
+            "id": "e691316543c3d58ffb95c427bcf2b00d",
             "name": "List Companies",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/ListCompanies",
             "description": "List Symbols",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "f5f6edad11ebb56f57a2328034b2ab21",
+            "id": "468d859496647502531537a8fe73eea9",
             "name": "List Estimates",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/ListEstimates",
             "description": "List Estimates",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "20e070dcef19f6f3f14664ae7709fc3a",
+            "id": "026d337155bde3d0d0a4c479afc4075e",
             "name": "Get Latest Estimates",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetLatestEstimates",
             "description": "Get Latest Estimates",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "150ccad5e1d76e47ee0a1f13bfa5663d",
+            "id": "58c947774d28cae21428cb6d8c5d1be4",
             "name": "Get Estimates Range",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetEstimatesRange",
             "description": "Get Estimates Range",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "8137e90e4747ddcf6ca6591c348297d0",
+            "id": "e5f795e18e1863cbd3b56e0607559957",
             "name": "Get Recommendation Summary Range",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetRecommendationSummaryRange",
             "description": "Get Recommendation Summaries in Range",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         },
         {
-            "id": "736c59fcc3f40e6875704951673f5fbc",
+            "id": "02b80e5702555ede9b8f976e78103061",
             "name": "Get Recommendation Summaries",
             "url": "httpsfactsetestimates.xignite.comxFactSetEstimates.json\/XigniteFactSetEstimates\/GetRecommendationSummaries",
             "description": "Get Recommendation Summaries on AsOfDate",
@@ -285,7 +285,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f41f8f060192b95b73141ea4ca708c2c",
+            "collectionId": "926b2bcbf67f8bd8e0e6c827b3f207b3",
             "rawModeData": ""
         }
     ]
