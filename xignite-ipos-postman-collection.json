@@ -1,5 +1,5 @@
 {
-    "id": "fc8be1d3ad633b53c0a9bd51698521ab",
+    "id": "38ec5676e35bbed852820368d7ae49bd",
     "name": "Xignite IPOs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b7173b14100c5ff23a87ce700429c6d1",
+            "id": "1040a1c8413d2895defe195273ec4323",
             "name": "Get IPO",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPO",
             "description": "Post getipo",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "dc85cd04b63b865a0747fd108e8a7030",
+            "id": "2e8e8c364a766deeae8b5c477799697b",
             "name": "Get IPO Calendar",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOCalendar",
             "description": "Post getipocalendar",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "1fbcb53ef1699ff4556a88c765f3a027",
+            "id": "1394165d582c436f4fbe9599ad24945c",
             "name": "Get IPO Calendar By Exchange",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOCalendarByExchange",
             "description": "Post getipocalendarbyexchange",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "a852be0c5b71f6ae4dd958840922a82a",
+            "id": "099162cee31dcd2437c203943a8ec849",
             "name": "List Exchanges",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/ListExchanges",
             "description": "Post listexchanges",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "f5091bf28d0af43e66d26a8068e57ebe",
+            "id": "d393a810d8009414b74fa2d8957d2588",
             "name": "Get IPO By Status",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOByStatus",
             "description": "Post getipobystatus",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "cd7995a89ca80a0497f1af5b12ff7a8c",
+            "id": "70b0da5e6afcb97c461ef0c2a4c538ec",
             "name": "Get IPO List",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOList",
             "description": "Post getipolist",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "da71b1ef8201ba27dcf45bf2f3859684",
+            "id": "767f78591e50cdc2f4689b19b7b25507",
             "name": "Get IPO Details",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPODetails",
             "description": "Post getipodetails",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "e1cb740413e659a638f8715f077db41a",
+            "id": "b5668fd910aecd00d8b094c6223038be",
             "name": "Search IPO By Symbol",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/SearchIPOBySymbol",
             "description": "Post searchipobysymbol",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "7282df76db4147ac8cd2dcb8d10873e4",
+            "id": "d322a6d33a782495798028fac65afc08",
             "name": "Search IPO By Name",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/SearchIPOByName",
             "description": "Post searchipobyname",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         },
         {
-            "id": "3d16146b02986e149713e54397573998",
+            "id": "e92a4e1b4152b6cadb53657636ab714c",
             "name": "Get IPO Performance",
             "url": "httpsipos.xignite.comxIPOs.json\/XigniteIPOs\/GetIPOPerformance",
             "description": "Post getipoperformance",
@@ -316,7 +316,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fc8be1d3ad633b53c0a9bd51698521ab",
+            "collectionId": "38ec5676e35bbed852820368d7ae49bd",
             "rawModeData": ""
         }
     ]
