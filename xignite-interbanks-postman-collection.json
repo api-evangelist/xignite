@@ -1,5 +1,5 @@
 {
-    "id": "91c5db2978e91772516ac239f7ce6d1a",
+    "id": "1368ee3e3f45f754a197ce631733bfcd",
     "name": "Xignite InterBanks",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "bc89948ce2461d0b7eeaa430c64e3cb2",
+            "id": "f01507aea0a8890bcfb1d9839876247d",
             "name": "List Rates",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/ListRates",
             "description": "List supported interest rates.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "cb7e3d9f450efe8e94b76a13a2a8d447",
+            "id": "0ec76bdeaf15249ba78d7f5a230bd0ae",
             "name": "Search Rates",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/SearchRates",
             "description": "Search rate names and description",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "d871b97bf5afb11063e71bf78150712c",
+            "id": "08ff2c51761de56321b165d0edb0b6a0",
             "name": "Get LIBOR Secure",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLIBORSecure",
             "description": "Returns Libor as of a date",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "fba92f3b23bc4b66ff74d588e24265ee",
+            "id": "aa6b80045ddc7412c05b426fa5eb5418",
             "name": "Get LIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLIBOR",
             "description": "Returns Libor as of a date",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "ae62cc196c78691fc14bbbf3ea66791a",
+            "id": "4fa5083d5e83c8194e2d11121cd52739",
             "name": "Get REIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetREIBOR",
             "description": "Returns a REIBOR as of a date",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "e2b78cee3fa6c6942c9d9a47751e8893",
+            "id": "f7fa1ccf140ba6f4ca740287433f7c07",
             "name": "Get H I BOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHIBOR",
             "description": "Returns a HIBOR as of a date",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "af7389b9ca9572f269318deea5d1c963",
+            "id": "e89410d0c59b0f311a9ca72fc61d61e3",
             "name": "Get BUBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBUBOR",
             "description": "Returns a BUBOR as of a date",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "398ba88abe1ae8576a41fa2a57590c4b",
+            "id": "5ccae1eba1ada97fc6671934dc00f0de",
             "name": "Get SOFIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSOFIBOR",
             "description": "Returns a SOFIBOR as of a date",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "5e737ac13822a3f142ce805ecb8ceda8",
+            "id": "958df1a27d0c468180347363038468d6",
             "name": "Get REIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetREIBID",
             "description": "Returns a REIBID as of a date",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "12b83b1b3b7c99e83b381e259580a8f2",
+            "id": "5e4e4e204a816ce819d67f13af3ccabb",
             "name": "Get OIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetOIBOR",
             "description": "Returns a OIBOR as of a date",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "2179ecc6e24c669152c1c64e0b0d47bf",
+            "id": "d5e08085fb8bdf8cf0fa27eab9771071",
             "name": "Get SIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSIBOR",
             "description": "Returns a SIBOR as of a date",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "7c497b87945fb1faea9264d53ec3e697",
+            "id": "75d46cbd649b95532542e0a61f981362",
             "name": "Get CIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCIBOR",
             "description": "Returns a CIBOR as of a date",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "28d671dd85755e432a22aa85a1d0c089",
+            "id": "b41ce06ccef7c69d02f4a11d79b4dc07",
             "name": "Get STIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSTIBOR",
             "description": "Returns a STIBOR as of a date",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "51fb022b8713219a9ebab3e14187ab63",
+            "id": "e4eef3ce16c5d06293020c9f20be081d",
             "name": "Get WIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetWIBOR",
             "description": "Returns a WIBOR as of a date",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "978bc8d54ff82346be414b4cbe32cb88",
+            "id": "9e8ccfbc9ef7c53f1618159b5a78252e",
             "name": "Get VILIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetVILIBOR",
             "description": "Returns a VILIBOR as of a date",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "286daf6a84134cd2386f9876018dea11",
+            "id": "329392b95bd0d23519c4bc68f4cfb559",
             "name": "Get EURIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetEURIBOR",
             "description": "Returns a EURIBOR as of a date",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "354dbe922cc597c021e1ba3fb2084ad6",
+            "id": "8f7df388ed2b26792474bd7fbb8563f3",
             "name": "Get PRIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetPRIBOR",
             "description": "Returns a PRIBOR as of a date",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "3ef5a63b58f2a4b7ae6b4748d17c8003",
+            "id": "53e95a57cb3c55cd6bc1c8ffcba9d7b6",
             "name": "Get KORIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKORIBOR",
             "description": "Returns a KORIBOR as of a date",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "a0338ac670921e21c2e9de23ce2d16b2",
+            "id": "2773d6a2b258559d5d6d5ceedaccda4c",
             "name": "Get MIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMIBOR",
             "description": "Returns a MIBOR as of a date",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "d2f30a8e7738d4a99829b8ac5740743c",
+            "id": "6fe4886de10d96512225a927ba0d6833",
             "name": "Get MIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMIBID",
             "description": "Returns a MIBOID as of a date",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "d63a856d8eb1f4aadac9517c2d7927ba",
+            "id": "dc2b50454094ab518b4264fdd6a2acaa",
             "name": "Get SABOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSABOR",
             "description": "Returns a SABOR as of a date",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "d31bf7555a88a589978a5d0b2fba84c6",
+            "id": "ba76c758ba606c40549ba95f88533e00",
             "name": "Get TAIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTAIBOR",
             "description": "Returns a TAIBOR as of a date",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "176299c5a4b2938ea0ee4a0b194f5026",
+            "id": "db7087b6ddc83deb5b82cc143de4fcaa",
             "name": "Get TURKIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTURKIBOR",
             "description": "Returns a TURKIBOR as of a date",
@@ -719,11 +719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "ba346633aedcee8e858b6f108bbaa841",
+            "id": "9862262e722439c6a00f060abca668e5",
             "name": "Get MEXIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMEXIBOR",
             "description": "Returns a MEXIBOR as of a date",
@@ -750,11 +750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "373485018be08c7a0750fd1169626776",
+            "id": "ba3fb45df1ace6373c84a27996857366",
             "name": "Get TELBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTELBOR",
             "description": "Returns a TELBOR as of a date",
@@ -781,11 +781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "b974c95064c9f1e177447b4d35951302",
+            "id": "9efedae977d0478dcd4b529ec3f0fc3b",
             "name": "Get CHILIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCHILIBOR",
             "description": "Returns a TELBOR as of a date",
@@ -812,11 +812,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "dfacf7521a86ad58613261a47713d42a",
+            "id": "e9f53eb420bb9b72e742eee3593ed51e",
             "name": "Get CHIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCHIBOR",
             "description": "Returns a CHIBOR as of a date",
@@ -843,11 +843,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "98c5f604f4727b9f3071987eb30ea95a",
+            "id": "5c19e59b209e1fb2a87960a1c5931a7c",
             "name": "Get CDOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCDOR",
             "description": "Returns a CDOR as of a date",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "66c0e0222b6c773574a981bced8afe21",
+            "id": "6e8dc062a288368ea7eb9e488cec866f",
             "name": "Get KAIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKAIBOR",
             "description": "Returns a KAIBOR as of a date",
@@ -905,11 +905,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "abb413ae20296a612ec63169ea5df40e",
+            "id": "b5977d509e42aa45dcc9553da8edc3e9",
             "name": "Get KIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKIBOR",
             "description": "Returns a KIBOR as of a date",
@@ -936,11 +936,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "7dcf760ebf21b096fa26d258a6318d05",
+            "id": "24a98c8ed6e7ca359d80de2330f35666",
             "name": "Get KIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKIBID",
             "description": "Returns a KIBID as of a date",
@@ -967,11 +967,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "434240304eac847da4bbf1a3759f5c8a",
+            "id": "0fa77b37afec7022a8e96abadd663563",
             "name": "Get SHIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetSHIBOR",
             "description": "Returns a SHIBOR as of a date",
@@ -998,11 +998,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "4cb409efbdb8a4b235b66edbe71c1f9f",
+            "id": "21e29e31b5759f44100be3217cd73a88",
             "name": "Get JIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetJIBOR",
             "description": "Returns a JIBOR as of a date",
@@ -1029,11 +1029,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "11557c53782ef7931ea3c5c6732de8f9",
+            "id": "3ca80602b056c47562c55ec9a513821f",
             "name": "Get KLIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetKLIBOR",
             "description": "Returns a KLIBOR as of a date",
@@ -1060,11 +1060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "43a08dc9317de9bf302010246aeb190e",
+            "id": "16edb6e944216c4ad557d46735abce72",
             "name": "Get TIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTIBOR",
             "description": "Returns a TIBOR as of a date",
@@ -1091,11 +1091,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "6c0be740bbc671f5ce4e472675ed5560",
+            "id": "29657549fc801aba214038f3b94e742e",
             "name": "Get PHIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetPHIBOR",
             "description": "Returns a PHIBOR as of a date",
@@ -1122,11 +1122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "f642d151885237824ad834af1a627d27",
+            "id": "c71c6e5822274a5e290b8cb6a0e351e1",
             "name": "Get BKIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBKIBOR",
             "description": "Returns a BKIBOR as of a date",
@@ -1153,11 +1153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "940fe1af9a3eb2b9e31eda204ee7f809",
+            "id": "77cfa62561e7ff46dd37c82047ac59e3",
             "name": "Get VNIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetVNIBOR",
             "description": "Returns a VNIBOR as of a date",
@@ -1184,11 +1184,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "2972489002194194b688b24c31257335",
+            "id": "3d5c3debf0b56db393202ea40d9edf1e",
             "name": "Get MOSIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMOSIBOR",
             "description": "Returns a MOSIBOR as of a date",
@@ -1215,11 +1215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "5cf7834de7167bbdde1cf7d1cfd74e3f",
+            "id": "4c97bae1c05935c58260831ec1bcf65b",
             "name": "Get MOSIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetMOSIBID",
             "description": "Returns a MOSIBID as of a date",
@@ -1246,11 +1246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "9808baccd0fc30e29bafa11dbf130b66",
+            "id": "df2b8c1264a2b048dc46fe61875a5e7a",
             "name": "Get Historical LIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHistoricalLIBOR",
             "description": "",
@@ -1277,11 +1277,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "e344c2875886f70048800c75bae4443a",
+            "id": "df53949b422f71bcc20bf32fd7e17ac5",
             "name": "Get BRAZIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBRAZIBOR",
             "description": "Returns a BRAZIBOR as of a date",
@@ -1308,11 +1308,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "c358524b70ce66394756ae81f8e2b91c",
+            "id": "9932fb3b2d559cd862bf7bc00aee3e96",
             "name": "Get TRLIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTRLIBOR",
             "description": "Returns a TRLIBOR as of a date",
@@ -1339,11 +1339,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "5a3ae9338b08730a907ea3d117a44f92",
+            "id": "543f91b033b394b4c083d3b2c49815d7",
             "name": "Get TRLIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTRLIBID",
             "description": "Returns a TRLIBID as of a date",
@@ -1370,11 +1370,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "d90faabff4368070049e95062e344958",
+            "id": "ebf49c2c499411c95f2e68e7a0baf878",
             "name": "Get BRIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBRIBOR",
             "description": "Returns a BRIBOR as of a date",
@@ -1401,11 +1401,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "82e09ea470f610374bb97083abbbe47b",
+            "id": "172c4f98ce078a9a28e7cdd70526f78c",
             "name": "Get BRIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBRIBID",
             "description": "Returns a BRIBID as of a date",
@@ -1432,11 +1432,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "77652632b35c95fa4e6f31d2ae779706",
+            "id": "47b185312b66d1592a2961100a73e273",
             "name": "Get RIGIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRIGIBOR",
             "description": "Returns a RIGIBOR as of a date",
@@ -1463,11 +1463,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "313ee7ddecacfede8eb27227db2a3ed1",
+            "id": "709b9ae01945363e9e95b4a7ec35b4eb",
             "name": "Get RIGIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRIGIBID",
             "description": "Returns a RIGIBID as of a date",
@@ -1494,11 +1494,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "34051799907d156120f0a782555b790a",
+            "id": "ca310852253ba004eb6e0fe992a45a6f",
             "name": "Get AIDIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetAIDIBOR",
             "description": "Returns a AIDIBOR as of a date",
@@ -1525,11 +1525,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "4491c6c0763e22260fb95e7076c13af4",
+            "id": "f99b8fd1408eb1684e97742275f99070",
             "name": "Get JIBAR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetJIBAR",
             "description": "Returns a JIBAR as of a date",
@@ -1556,11 +1556,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "2ac07c612d16c801766e631b25816a64",
+            "id": "2e84b0fabe50c592e577834763e6da82",
             "name": "Get BAIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetBAIBOR",
             "description": "Returns a BAIBOR as of a date",
@@ -1587,11 +1587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "a5090eedfb5c9d48f2f4e90dac15943d",
+            "id": "fcb91aa998ea5479e00c20a7d0d98216",
             "name": "Get COLIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetCOLIBOR",
             "description": "Returns a COLIBOR as of a date",
@@ -1618,11 +1618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "1dd09ec0a69f50a11a741c51939fe78b",
+            "id": "d5b122a7c0e53bf9ef348ec5ec942b56",
             "name": "Get TALIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTALIBOR",
             "description": "Returns a TALIBOR as of a date",
@@ -1649,11 +1649,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "74e1a2559c631448b2ac986f139a0c1f",
+            "id": "b383cb4ac6de2f5847a0a17e0e4f1c9f",
             "name": "Get TALIBID",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTALIBID",
             "description": "Returns a TALIBID as of a date",
@@ -1680,11 +1680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "f26bb96e1e0c50e8ade9813977f5bd01",
+            "id": "0e8346ed0a9b9c88a1595b07cb6c656c",
             "name": "Get Rate",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRate",
             "description": "Returns a rate as of a specific date.",
@@ -1711,11 +1711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "af7a1e6dc6193c95da479a7366c3f799",
+            "id": "67a9294d82a94916b5645e2c59cac027",
             "name": "Get Rate Family Table",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRateFamilyTable",
             "description": "Returns a rate table for a rate family.",
@@ -1742,11 +1742,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "1bbd4b0145d078bf02534d0a31dbd6fe",
+            "id": "b15722e8f1219adaff42b73fbb8b922d",
             "name": "Get Rate Family",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRateFamily",
             "description": "Returns a collection of related rate as of a specific date",
@@ -1773,11 +1773,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "418ae09d35dac0b777d5557ae2d49b8c",
+            "id": "17e8002989094cde4c01e20eb661d6e7",
             "name": "Get Todays Rate",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetTodaysRate",
             "description": "Returns end of day closing value for a rate",
@@ -1804,11 +1804,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "2f27cd4e2138465527327b0bc32b5fdd",
+            "id": "af1f2fb35ebe0299a05df45f75241e36",
             "name": "Get Latest Rate",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLatestRate",
             "description": "Returns latest value for a rate.",
@@ -1835,11 +1835,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "09f82e4530650f28986b2b51fce213f3",
+            "id": "1b6f9c301cf1a10f217b712af1fe230b",
             "name": "Get Latest LIBOR",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLatestLIBOR",
             "description": "Returns latest value for a LIBOR rate.",
@@ -1866,11 +1866,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "fcbee70ae2f1b229f9846456035e515c",
+            "id": "84eeef1e6948b159ef7be49276d684a5",
             "name": "Get Latest Rate Family",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetLatestRateFamily",
             "description": "Returns latest values for a rate family.",
@@ -1897,11 +1897,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "664d56296c55fe71054705189542e550",
+            "id": "8bb78f67c31d6a4615add52fc232360d",
             "name": "Get Historical Rates",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHistoricalRates",
             "description": "Returns a rate for a range of dates.",
@@ -1928,11 +1928,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "64d7ea1a8895bdf5c360b23d48636b52",
+            "id": "be96d4f9c78ae4b373bb92e2f7263e7c",
             "name": "Get Historical Rate Family",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetHistoricalRateFamily",
             "description": "Returns a rate family and for a range of dates.",
@@ -1959,11 +1959,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "e56643b8521f3d5590259fed7c22c19e",
+            "id": "6fe1dcd26d71a86a9fc67e697182849f",
             "name": "Get Rate Description",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/GetRateDescription",
             "description": "Returns a description for a rate.",
@@ -1990,11 +1990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "368a4c52aff2f5d60ee441afa9713a4f",
+            "id": "e94d65fd99bfe1527867be0e305c08fc",
             "name": "Draw Rate Chart Custom",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanksDraw, Rate, , Custom",
             "description": "Draw a custom rate chart for a date range.",
@@ -2021,11 +2021,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "d9dee9eefffb6b6f8bab13d6ebd05929",
+            "id": "0980665f63f36a9a70889345e6548a6c",
             "name": "Draw Rate Chart",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanksDraw, Rate, ",
             "description": "Draw a standard rate chart for a date range.",
@@ -2052,11 +2052,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "6cc401d74a9f494ca284f9b665a0c4d7",
+            "id": "e478040489629a176eeb40d5606d7d1d",
             "name": "Draw Rate Chart Preset",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanksDraw, Rate, , Preset",
             "description": "Draw a standard rate chart for a date range.",
@@ -2083,11 +2083,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "7f690654c56e180a4e8c3349c334c06d",
+            "id": "3cf801d8010442b71ada594d6b6428c8",
             "name": "Get Chart Design",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks, Design",
             "description": "Returns the default design class for the rate Chart.",
@@ -2114,11 +2114,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "23b06b755b88dd547b52812faca1c9f8",
+            "id": "1c6acfaeca4dd1296ad8c934ba15eeaa",
             "name": "Draw Yield Curve",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/DrawYieldCurve",
             "description": "Draw a yield curve for a rate family.",
@@ -2145,11 +2145,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "e6c33f843679dd5e3408f00b1c56a92a",
+            "id": "a6d208523cf76c6e42d5ac80cd69fe09",
             "name": "Draw Yield Curve Preset",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/DrawYieldCurvePreset",
             "description": "Draw a yield curve for a rate family.",
@@ -2176,11 +2176,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         },
         {
-            "id": "fb86c210bdb659f010a413efe0504353",
+            "id": "a20de858b749c5aa2e7782744b3c729d",
             "name": "Draw Yield Curve Custom",
             "url": "httpswww.xignite.comxInterBanks.json\/XigniteInterBanks\/DrawYieldCurveCustom",
             "description": "Draw a yield curve for a rate family.",
@@ -2207,7 +2207,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "91c5db2978e91772516ac239f7ce6d1a",
+            "collectionId": "1368ee3e3f45f754a197ce631733bfcd",
             "rawModeData": ""
         }
     ]
