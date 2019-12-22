@@ -1,5 +1,5 @@
 {
-    "id": "aaddca728e742c9b74db59dfd2ce7605",
+    "id": "a61bb6843762c14f996031db8d34a363",
     "name": "Xignite Releases",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "ff0712eb15d4afd86fbacb643a8157bc",
+            "id": "f9b39ba95b492b11178dcdf941fd4190",
             "name": "Get Historical Market Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetHistoricalMarketHeadlines\/",
             "description": "Returns market headlines for a date range.",
@@ -58,11 +58,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "2fba94ce4f7c2aa0795d2a4790ff6b96",
+            "id": "180c0492fd3f1c814d7dc2851c83f6c0",
             "name": "Get Historical Security Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetHistoricalSecurityHeadlines\/",
             "description": "Returns headlines for a company and a date range.",
@@ -124,11 +124,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "da6603e814b3a61682256400ae62aaeb",
+            "id": "b4c6401ed70e598a76d7a169b6740198",
             "name": "Get Last Market Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetLastMarketHeadlines\/",
             "description": "Returns market headlines published since a specific date and time.",
@@ -162,11 +162,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "4f90ecad023346ad235964bb66a4052a",
+            "id": "f8023ffb909314b619525b3e10e62f99",
             "name": "Get Last Security Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetLastSecurityHeadlines\/",
             "description": "Returns headlines for a company published since a specific date and time.",
@@ -214,11 +214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "0ac8a748da45eaac783bbbb00119442d",
+            "id": "46a39f12c189fb50b5bdb1135395f658",
             "name": "Get Release Content",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetReleaseContent\/",
             "description": "Return detailed information about a release as well as its content.",
@@ -252,11 +252,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "ae0a4d3254641261f258881670cc8751",
+            "id": "23aa65dbad649d80e2607681359d7b5e",
             "name": "Get Todays Security Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetTodaysSecurityHeadlines",
             "description": "Returns headlines for a company published today.",
@@ -297,11 +297,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "3dc434b06fe45c37d3d9afe96714c9db",
+            "id": "f2b22ec6f7cf222bdbdbc15db43a46bb",
             "name": "Get Top Market Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetTopMarketHeadlines\/",
             "description": "Returns a given number of market headlines published most recently.",
@@ -335,11 +335,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "6a801919d1279053f3ab49ab89f0cb6a",
+            "id": "61d92e550e84f776ee655d58923c67d9",
             "name": "Get Top Security Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/GetTopSecurityHeadlines\/",
             "description": "Returns a given number of company headlines published most recently.",
@@ -358,11 +358,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "1bf9552e908cdc183353bbdc3216e8f2",
+            "id": "ba8d9f5c3d4452eb646648e982e0da42",
             "name": "Search Market Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/SearchMarketHeadlines\/",
             "description": "Search market headlines across all companies based on date, source, and title.",
@@ -417,11 +417,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         },
         {
-            "id": "cddf9e22cb1597e7effd624a040794a8",
+            "id": "ad0206377cd5431c17973a4c96903f9c",
             "name": "Search Security Headlines",
             "url": "httpshttp:\/\/www.xignite.com\/xReleases.xml\/SearchSecurityHeadlines\/",
             "description": "Search headlines for a company across all companies based on date, source, and title.",
@@ -490,7 +490,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "aaddca728e742c9b74db59dfd2ce7605",
+            "collectionId": "a61bb6843762c14f996031db8d34a363",
             "rawModeData": ""
         }
     ]
