@@ -1,5 +1,5 @@
 {
-    "id": "31e3e560c490bdf7a6822204fb2f2af0",
+    "id": "e8f55fa29a41e9d8207a54e22c9b4ab4",
     "name": "Xignite Global Indices Real Time",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "c420abf306827cf748f76fa4da047d78",
+            "id": "bc6c443fba9995aa2720b63a77c02c1a",
             "name": "Get Real Time Indices Value",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetRealTimeIndicesValue",
             "description": "Get real time indices value.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "5e474e898a87587ba25fc3b4642e4afa",
+            "id": "75cf63d404fe839ad6037ae961168f24",
             "name": "Get Index Bar",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexBar",
             "description": "Get index bar.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "faddefa7d7c32077c29dce6e7a4a8f08",
+            "id": "6cb9cc71a6e9d6cbcbdb3b0a155af301",
             "name": "Get Index Bars",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexBars",
             "description": "Get index bars.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "41dac58bd984353869db7c3e84fa5e0a",
+            "id": "77624b72059fafe57902afdad1dc02e3",
             "name": "Get Chart Bars",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime, Bars",
             "description": "Get chart bars.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "84c1b282cc953efad93bd5629396adcf",
+            "id": "2a50cb15e9cb4cd44851641b0b9ebd72",
             "name": "Get Index Symbol Mapping By Old Symbol",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexSymbolMappingByOldSymbol",
             "description": "Get index symbol mapping by old symbol.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "9b0663dee848977c232930ccfa3b84e4",
+            "id": "0d91c19d485f384414194a6be1ed2ad6",
             "name": "Get Index Symbol Mappings By Old Symbols",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetIndexSymbolMappingsByOldSymbols",
             "description": "Get index symbol mappings by old symbols.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "2982305d8f4b32d76e21ec509fa1be5c",
+            "id": "d7b58ed5031eba42947195b50b7614a7",
             "name": "Get Real Time Index Value",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/GetRealTimeIndexValue",
             "description": "Get real time index value.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "c8ece436016eceadfc7027475ed8234c",
+            "id": "69418c1594c6252f5c33d62af43213e6",
             "name": "List Index Groups",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/ListIndexGroups",
             "description": "List index groups.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "fad1433068818991f3f7692a6a3ca8ea",
+            "id": "b0e5ecf219ab483e47f40bfccd6a686f",
             "name": "List Indices By Index Group",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/ListIndicesByIndexGroup",
             "description": "List indices by index group.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         },
         {
-            "id": "32a58d7b7ad9bcddb005ceabefa7825a",
+            "id": "54ad5800452927308a7a0e6464445923",
             "name": "Search Indices By Name",
             "url": "httpsglobalindicesrealtime.xignite.comxglobalindicesrealtime.json\/XigniteGlobalIndicesRealTime\/SearchIndicesByName",
             "description": "Search indices by name.",
@@ -316,7 +316,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "31e3e560c490bdf7a6822204fb2f2af0",
+            "collectionId": "e8f55fa29a41e9d8207a54e22c9b4ab4",
             "rawModeData": ""
         }
     ]
