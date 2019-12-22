@@ -1,5 +1,5 @@
 {
-    "id": "8353a70a264e93ee3274eab575ceba1c",
+    "id": "92aee5ab99da8c3987cdbc2f84191d35",
     "name": "Xignite VWAP",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a3b3f75915f75bc3891995714e4abd60",
+            "id": "90e830d53ddaab53b42c680bede9d173",
             "name": "Get Historical Daily VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalDailyVWAP",
             "description": "Returns historical daily VWAP information for a date range",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "03b95c25859553a2d0699a3ecf527bdb",
+            "id": "0e3531ddae55055d1751a3088af2c6e0",
             "name": "Get Historical VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalVWAP",
             "description": "Returns historical VWAP information for a date range",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "0f080cce6201655c0729f970e27af85d",
+            "id": "8d414f8814fab279358e86ecb499f3b9",
             "name": "Get Historical Monthly VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalMonthlyVWAP",
             "description": "Returns historical monthly VWAP information for a date range.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "b5275747ca20e7e20822323ac7531f31",
+            "id": "75392cbc21d3ead439f760f28811848c",
             "name": "Get Historical Weekly VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalWeeklyVWAP",
             "description": "Returns historical weekly VWAP information for a date range.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "7dda832feaeda98bce2d76f70dc50545",
+            "id": "62a292b078315cb94adc3c6d9707635c",
             "name": "Get Historical Period VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalPeriodVWAP",
             "description": "Returns historical VWAP information for a date range.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "223b5e80e0d90fbafc94544e0dc6b2d2",
+            "id": "799e2fd6671c14449b52566664291159",
             "name": "Get Intraday VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetIntradayVWAP",
             "description": "Returns an intraday VWAP for a security based on the trades performed in a time range.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "cf929f474abe96b35cc4a9abaf834146",
+            "id": "56b8ad58610512d0b88327b78b00cf4f",
             "name": "Get Historical Intraday VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetHistoricalIntradayVWAP",
             "description": "Returns a historical intraday VWAP for a security based on the trades performed in a time range.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "969c02d92a2cb5ed468673748c131994",
+            "id": "8a985f7a5f5561489d4b264ead97ec4b",
             "name": "Get Corporate Intraday VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetCorporateIntradayVWAP",
             "description": "Returns a corporate intraday VWAP for a security based on the trades performed in a time range.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "383495c28126289fc6e499124367df9a",
+            "id": "78f339d6328a28587814f646d5c48e04",
             "name": "Get Corporate Historical VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetCorporateHistoricalVWAP",
             "description": "Returns a corporate intraday VWAP for a security based on the trades performed in a time range.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "b120e55936a1dbc70e7d1c157d0a8fd5",
+            "id": "a6dc78ca79cc53610c093109eff190a0",
             "name": "Get Delayed VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetDelayedVWAP",
             "description": "Returns an intraday VWAP for a security based on all trades for the day up to the 15\/20 minutes delayed quote.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "8f64ea76f4c3d6ef631f46c77c964a9f",
+            "id": "e77b39ec96d0ac8cea0b29d5dc1f2cd3",
             "name": "Get Real Time VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/GetRealTimeVWAP",
             "description": "Returns a real-time VWAP for a security based on all INET trades.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "e176e9b27b558a5795d1665ee7267874",
+            "id": "6c887db85d897544cc79895e2e7792ac",
             "name": "Get1 Minute VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get1MinuteVWAP",
             "description": "Returns an intraday VWAP for a security based on trades executed in the last 1 minute of the 15\/20 minutes delayed quote.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "87efe5ab134693da2f5ac91c3916c1f0",
+            "id": "fbc8cd68df79ce07771f7d579ea26fee",
             "name": "Get5 Minute VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get5MinuteVWAP",
             "description": "Returns an intraday VWAP for a security based on trades executed in the last 5 minutes of the 15\/20 minutes delayed quote.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "8873995aa6e627a789aba144cf2b62aa",
+            "id": "59d98cb5ca2b673745a60405b9374a5b",
             "name": "Get10 Minute VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get10MinuteVWAP",
             "description": "Returns an intraday VWAP for a security based on trades executed in the last 10 minutes of the 15\/20 minutes delayed quote.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "71039cdb57479e5c90822bb9c85a748e",
+            "id": "4e0f4f75b6cdf8c6f2ab5e481ab4ce05",
             "name": "Get30 Minute VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get30MinuteVWAP",
             "description": "Returns an intraday VWAP for a security based on trades executed in the last 30 minutes of the 15\/20 minutes delayed quote.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         },
         {
-            "id": "ab98b346695edf45ea8923e65513a8c4",
+            "id": "d9aa7a6abb539e21471d4c2f4de2d2f6",
             "name": "Get60 Minute VWAP",
             "url": "httpswww.xignite.comxVWAP.json\/XigniteVWAP\/Get60MinuteVWAP",
             "description": "Returns an intraday VWAP for a security based on trades executed in the last hour of the 15\/20 minutes delayed quote.",
@@ -502,7 +502,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8353a70a264e93ee3274eab575ceba1c",
+            "collectionId": "92aee5ab99da8c3987cdbc2f84191d35",
             "rawModeData": ""
         }
     ]
