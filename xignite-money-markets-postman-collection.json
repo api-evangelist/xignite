@@ -1,5 +1,5 @@
 {
-    "id": "d840e8d62d4395ef5237c00b00947038",
+    "id": "3c26f160a62613c747390eee2462203b",
     "name": "Xignite Money Markets",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "6009b00a2c400270f5b2de9e4596814e",
+            "id": "33db408e643ee1318b2cd8596415b335",
             "name": "Get Swap Rate",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRate",
             "description": "Returns a Swap rate",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "03e83f44f09e0bdcd2d21c4207c5a7ba",
+            "id": "88bad5d5c4310c8ac2e621b96b4dd22a",
             "name": "List Rates",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/ListRates",
             "description": "List supported interest rates.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "22c1a52a2eeb5a2de0d6d2bf78b81453",
+            "id": "99d857f00982f813284da52c083d2cea",
             "name": "Search Rates",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/SearchRates",
             "description": "Search rate names and description",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "52e273e15b8668057de27f98f0d8d972",
+            "id": "a4fc2f3e6b3772d58a3d5e509e0a5ae9",
             "name": "Get Forward Rate Agreement",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetForwardRateAgreement",
             "description": "Returns a calculated Forward Rate Agreement as of a date",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "9b55bb6cf96b64bfe87162b4e1c202bb",
+            "id": "9ee4f3941a9aa70273deb9d49d7863c2",
             "name": "Get Euro Dollar FRA Strip",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetEuroDollarFRAStrip",
             "description": "Returns an IMM EuroDollar Synthetic Forward Rate strip",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "f41d744c947cde087e58df2513cab209",
+            "id": "a973fbbb603e9c3a87fce7d8413ca99e",
             "name": "Get Swaption",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwaption",
             "description": "Returns a Swaption rate",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "b1d37a4d369fa4d87192e74460dd8da1",
+            "id": "f1c97d6a42d73727bdc6a3962d5ba935",
             "name": "Get Swaption Family",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwaptionFamily",
             "description": "Returns a Swaption rate Family",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "5ad76e0adbdee186e3206b679342d3ff",
+            "id": "2a15c80fed0e568afb8f52144c3fe712",
             "name": "Get Historical Swaption",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwaption",
             "description": "Returns a Swaption as of a historical date",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "2229a10bfcfbe2481a4eddccde28580b",
+            "id": "6198f8cf821dc52883e204bb551eff6e",
             "name": "Get Historical Swaption Family",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwaptionFamily",
             "description": "Returns a Swaption rate Family",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "cabc6b78bffd241933e53e0a00d7dd71",
+            "id": "45f0a46872cfbca97ae775843feb7f9d",
             "name": "Get Swap Rate Family",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRateFamily",
             "description": "Returns a Swap rate Family",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "ed1befef911b6b2eb93734b6eeeb3d55",
+            "id": "91c51a0cc57d8dcec28233e2ec927fc5",
             "name": "Get Historical Swap Rate",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRate",
             "description": "Returns a Swap rate as of a historical date",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "56b1fd50409cbf39cfd9014c8a48ace3",
+            "id": "a2e0eb1bb0d0731126ee31e0cc71c426",
             "name": "Get Historical Swap Rate Range",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRateRange",
             "description": "Returns a Swap rate as of a historical date",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "c7b1e9782fff4ad61eafe8064383681a",
+            "id": "f6f48733b7b5cf9559f577ae448464e4",
             "name": "Get Swap Rate Extended",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRateExtended",
             "description": "Returns latest Swap rate",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "794f2821bc03031c511656fa42c1f1d0",
+            "id": "1098c886c57890e467b4318129756562",
             "name": "Get Swap Rate Family Extended",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetSwapRateFamilyExtended",
             "description": "Returns latest Swap rate family",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "baf342f9a5603232dba6897b7515f4e6",
+            "id": "cc91ce35f9fc141b82c7b3927bba6794",
             "name": "Get Historical Swap Rate Extended",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRateExtended",
             "description": "Returns historical swap rate",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "4e9adbc1536ccf3a4aaecd762607fa98",
+            "id": "58933d1a5ac5e2b07718df4f410d984d",
             "name": "Get Historical Swap Rate Extended Range",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetHistoricalSwapRateExtendedRange",
             "description": "Returns historical Swap rate range",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "fc426d9a653bdcde3e5442543efa3ca2",
+            "id": "3ffb995bc259096035520b5737bd8ab4",
             "name": "List Swap Rates",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/ListSwapRates",
             "description": "Returns swap rate currencies and tenors",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "2023b92cddf332bd0d9c1aa2689f3b58",
+            "id": "efbc9a2de413fab8d758909b08c6d440",
             "name": "Get Treasury Rate",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetTreasuryRate",
             "description": "Returns a real-time Treasury rate",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         },
         {
-            "id": "f2ae3c48868725543c7520bfbf1bbe45",
+            "id": "92954924f65c56d11c2b85113db5d706",
             "name": "Get Treasury Rate Family",
             "url": "httpswww.xignite.comxMoneyMarkets.json\/XigniteMoneyMarkets\/GetTreasuryRateFamily",
             "description": "Returns a real-time Treasury rate family.",
@@ -595,7 +595,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d840e8d62d4395ef5237c00b00947038",
+            "collectionId": "3c26f160a62613c747390eee2462203b",
             "rawModeData": ""
         }
     ]
