@@ -1,5 +1,5 @@
 {
-    "id": "d40b6f61196a039df7a64578c7157901",
+    "id": "f3c82f282ff139dfb10a5b05f7d87fdf",
     "name": "Xignite Bonds",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "675c080a9cff6378d40073a3abb2c37d",
+            "id": "cbecb5641f9895c68d190f30b2c2ff2b",
             "name": "Get Price Composite",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetPriceComposite",
             "description": "Returns price data composite including last sale price, yield and daily and yearly Open, High, Low prices for a specific bond reported by price source selected in the input. Return against this operation counts as three hits.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "636bb88eaa4a466a5596f55ebf6b50d9",
+            "id": "f36674616429aa0dc4b95d496c933367",
             "name": "Get Last Sale",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetLastSale",
             "description": "Returns Last Sale price for a specific bond as reported by the price source selected in the input. Request against this operation counts as one hit.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "84979b4ccb94d1458a773a8d8efcff83",
+            "id": "ad4e6db898cd779a0a9dad47f5f7bad5",
             "name": "Get Daily Open High Low Close Price",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetDailyOpenHighLowClosePrice",
             "description": "Returns daily Open, High, Low, Close (OHLC) prices for a specific bond reported by the price source selected in the input. Daily OHLC data is provided for the most recent date for which data is provided by the price source. Request against this operation counts as one hit.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "7758a9317149002c52fddb8c9c91c2c2",
+            "id": "114c230c117839e9fa417dcf4d41a35e",
             "name": "Get Yearly High Low Price",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetYearlyHighLowPrice",
             "description": "Returns yearly high, low prices for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "e64b8fcb6eb482957d584388c11ec1da",
+            "id": "abcbc78e1afdc1007525a6a7e5efa759",
             "name": "Get Yield",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetYield",
             "description": "Returns Yield to maturity for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "d6265aee6eab8a27e20c76631371c431",
+            "id": "46cb05673b4af9e161e78a8d0546940f",
             "name": "Get Accrued Interest",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetAccruedInterest",
             "description": "Returns Accrued Interest for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "870362e8604887fda734ce17d6d520d0",
+            "id": "6ba803288a21b7b3bd2ac103e62ba293",
             "name": "Get Duration And Convexity",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetDurationAndConvexity",
             "description": "Returns Duration and Convexity for a specific bond reported by the price source selected in the input. Request against this operation counts as one hit.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "02d16eb24284ee588e001d20e1804300",
+            "id": "6988fe982aff2e73b769fc1e3426b22a",
             "name": "Get Bond Calculation",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetBondCalculation",
             "description": "Returns Price, Yield, Accrued Interest and other bond analytics data for a specific bond reported by the price source selected in the input. Request against this operation counts as four hits.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "e09f9a732b2908cd97dc64b50e371236",
+            "id": "df50ad656dc0b7e2dd3bad304953d3b0",
             "name": "Get Price Composites",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetPriceComposites",
             "description": "Returns price data composite including last sale price, yield and daily and yearly Open, High, Low prices for the list of bonds specified in the input. Each PriceComposite object returned in the output counts as three hits.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "8f904f3381e5d8fae323fa6b783e123e",
+            "id": "54c9bb4332df4f523ec06bc31c1a4832",
             "name": "Get Last Sales",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetLastSales",
             "description": "Returns Last Sale price for the list of bonds specified in the input, as reported by the price source selected in the input. Each LastSale object in the result counts as one hit.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "346e0b52d79805cb6db77ff4742cad9a",
+            "id": "a4c7be03d65b0afba51ade451927d57f",
             "name": "Get Daily Open High Low Close Prices",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetDailyOpenHighLowClosePrices",
             "description": "Returns daily Open, High, Low, Close (OHLC) prices for the list of bonds specified in the input. Daily OHLC data is provided for the most recent date for which data is provided by the price source. Each DailyOpenHighLowClosePrice object  returned counts as one hit.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "373dc1ec7b8df7a4fc59104f15ad130c",
+            "id": "23d7e36414eaa44e365c7ee4a5442580",
             "name": "Get Yearly High Low Prices",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetYearlyHighLowPrices",
             "description": "Returns yearly high, low prices for the list of bonds specified in the input, as reported by the price source selected in the input. Each YearlyHighLowPrice object returned counts as one hit.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "d835498d69318248e6fb3b79983203e0",
+            "id": "4fd8480f298cae1bf741ed45c42e2bf9",
             "name": "Get Yields",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetYields",
             "description": "Returns Yield to maturity for the list of bonds specified in the input, as reported by the price source selected in the input. Each Yields object returned counts as one hit.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "3065fb4fd07728bcfc955c2b8bc6a6c3",
+            "id": "197202513cc151e7338db8f59bef588a",
             "name": "Get Accrued Interests",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetAccruedInterests",
             "description": "Returns Accrued Interest for the list of bonds specified in the input. Each AccruedInterest object in the result counts as one hit.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "6c0af8243ba968947a602a821eb92c55",
+            "id": "6f42bbf5b5fda2c8ada2cc8ef1c7193e",
             "name": "Get Duration And Convexities",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetDurationAndConvexities",
             "description": "Returns Duration and Convexity for a list of bonds provided in the input. Each DurationAndConvexity object in the result counts as one hit.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "e1c5770ab9cc35f6288ea10ef389fea7",
+            "id": "96f52f986706ddcb21c0927d81883f2d",
             "name": "Get Bond Calculations",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/GetBondCalculations",
             "description": "Returns Price, Yield, Accrued Interest and other bond analytics data for a list of bonds provided in the input. Each BondCalculations object in the result counts as four hits.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "dbace23f5122f583c2d63157893b7a2e",
+            "id": "b4c058752a14f808be339a28e51354d8",
             "name": "List Bond Types",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/ListBondTypes",
             "description": "",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         },
         {
-            "id": "c6b6d3f3de4e91b67c2ffa432f167f48",
+            "id": "d3865a3e04a67fe84e86cee82cb72494",
             "name": "List Symbols",
             "url": "httpsbonds.xignite.comxBonds.json\/XigniteBonds\/ListSymbols",
             "description": "",
@@ -564,7 +564,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d40b6f61196a039df7a64578c7157901",
+            "collectionId": "f3c82f282ff139dfb10a5b05f7d87fdf",
             "rawModeData": ""
         }
     ]
