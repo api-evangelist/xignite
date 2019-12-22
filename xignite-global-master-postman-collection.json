@@ -1,5 +1,5 @@
 {
-    "id": "5c13dd4cb16a00deab6930532f38f68b",
+    "id": "033eb01f0bf134dbe19e34299d1a9f76",
     "name": "Xignite Global Master",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "69b81d3bd6cc6870e5bbaae62b2e5be8",
+            "id": "74a909627a25c6bb9f40273a7cfeb58e",
             "name": "Get Security",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetSecurity",
             "description": "Get a list of securities.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "112d99c4ab163614c8fc793c8f7f6f28",
+            "id": "a4ff38bb5b4260c05ca3114f14817fa1",
             "name": "Get Securities",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetSecurities",
             "description": "Get a list of securities.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "1fabc8dbbd25615b3ee61f9e9aabc741",
+            "id": "3108b0807329ec7334de0a4eebff6615",
             "name": "Get Instrument",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetInstrument",
             "description": "Get a list of instruments.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "f6248a761f5a4fc8f7a0e011dee10644",
+            "id": "413ca0ffb349bf5d9e093fa81b79eede",
             "name": "Get Instruments",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetInstruments",
             "description": "Get a list of instruments.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "ac13967d648456e94316d0f0b06a342f",
+            "id": "ec2f2109331c4835bf56382ee984ce8c",
             "name": "Get Issuer",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetIssuer",
             "description": "Get a list of issuers.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "2455d103f559ec8c27b5e6c1c535ea06",
+            "id": "567d845678e24ba801a3cbd1324f47e8",
             "name": "Get Issuers",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetIssuers",
             "description": "Get a list of issuers",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "6448ba2fa5ad3700975f25f76d71e6fb",
+            "id": "ea5a4464fe54f64f3138c7e66ba8cc43",
             "name": "Get Issuer By Company Identifier",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetIssuerByCompanyIdentifier",
             "description": "Get a issuer by the company identifier.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "ab9b9751c0a919ad53f964ca083d7089",
+            "id": "d25c8155a82986ee82aff535a203a9ab",
             "name": "Get Master By Identifier",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByIdentifier",
             "description": "Get master records by identifier.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "2804a594cf4a5013a1f876b33884a7cb",
+            "id": "c649ccb54f6c25c23f65dd5c0dc17c0f",
             "name": "Get Master By Identifiers",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByIdentifiers",
             "description": "Get master records by identifiers.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "eed47aae2bef3040eb8897ceaacf0c4c",
+            "id": "23fc00f067b3feeb01e72e7afda79dca",
             "name": "Get Master By Exchange",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByExchange",
             "description": "Get master records by exchange.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "786db2a8b2aa869909b4a51a9e88a561",
+            "id": "9df5a0a926349d3d725da878f0d92786",
             "name": "Get Master By Exchange Changes",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByExchangeChanges",
             "description": "Get a master record by exchange and the last modified since date",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "b9135ee5891f824670ff002a023e7d52",
+            "id": "126809ce2367d1bc00f95ea49c34261a",
             "name": "Get Master By Sector",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterBySector",
             "description": "Old version of the service. Customers should use GetMasterByGlobalSector",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "701666fd6ca3af04c8d1a0a911fd32c4",
+            "id": "2eeead6f2c021d3503f1637fa5d6c89d",
             "name": "Get Master By Industry",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByIndustry",
             "description": "Old version of the service. Customers should use GetMasterByGlobalIndustry",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "0fa39cce0d0e03d4c55c220bbfc1865d",
+            "id": "7787725f8e7f00640d00548d8fff1d55",
             "name": "Get Master By Global Sector",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByGlobalSector",
             "description": "Get master records by sector.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "0ffa6fea8f2328f9890e684853a8d92f",
+            "id": "6575eb5bb2afacabe3adf7f2ec3657ce",
             "name": "Get Master By Global Industry",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterByGlobalIndustry",
             "description": "Get master records by industry.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "9cc121dee2d349d1f741b77dd6da8bda",
+            "id": "1c38928f5df09e01546d64d9d2c344fb",
             "name": "List Exchanges",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListExchanges",
             "description": "Get the possible exchanges.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "c7393bfdf9857d87041a636048f7aab5",
+            "id": "0734886fbe0a12d4d0daf0a117d430a8",
             "name": "List Industries",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListIndustries",
             "description": "Get the possible industries.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "9680d7c1a066510ba986e811d210b6cc",
+            "id": "158aae55cb97c926a5b03dcf0418b162",
             "name": "List Instrument Classes",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListInstrumentClasses",
             "description": "Get the possible instrument classes.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "1e9059d9473b47768c194752c5769119",
+            "id": "f20fe8a34d76db1edecf4b80d70b62f5",
             "name": "List Sectors",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListSectors",
             "description": "Get the possible sectors.",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "623406d8de161c2bf31b8c50e7b069d0",
+            "id": "b80621ead000d7c4051e02592aa805d4",
             "name": "List Global Industries",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListGlobalIndustries",
             "description": "Get the possible industries.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "fd20fa006e5d0e7520afb796edfcd411",
+            "id": "6df74eeea95b06c113df8900f98ee30f",
             "name": "List Global Sectors",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListGlobalSectors",
             "description": "Get the possible sectors.",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "d442235b3f7f88c6abd50f1ac639d98c",
+            "id": "7079207377f0f4842a7ee1fcb0b4688e",
             "name": "List MIC To Legacy Exchange",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListMICToLegacyExchange",
             "description": "Get the legacy exchanges.",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "bce3f9e1f7dd33ee3678b0cf84a2c2cd",
+            "id": "f39efb76543fce40da0233c0a78a1d8b",
             "name": "List MIC To Legacy Suffix",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListMICToLegacySuffix",
             "description": "Get the legacy exchange suffix.",
@@ -719,11 +719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "f1b8737727a80c12961e70bbc5d532b4",
+            "id": "4310fa4df8fc4b0577ab640beb2a4462",
             "name": "List Identifiers By Exchange",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListIdentifiersByExchange",
             "description": "Returns all the Indetifiers and names for securities listed on an exchange.",
@@ -750,11 +750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "4cf7da8fb83ce171ea2d5c7eed770aea",
+            "id": "4dc3ccbe45f9d29d182251880f322cda",
             "name": "List Symbol Changes",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/ListSymbolChanges",
             "description": "This operation returns symbols changed in this exchange.",
@@ -781,11 +781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         },
         {
-            "id": "9ca907f828369e195ff038bea05a4fe4",
+            "id": "db5492062b9cd71bd4a383f0a2b20067",
             "name": "Get Master Statistics By Exchange",
             "url": "httpsglobalmaster.xignite.comxglobalmaster.json\/XigniteGlobalMaster\/GetMasterStatisticsByExchange",
             "description": "Get statistical information about exchanges.",
@@ -812,7 +812,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "5c13dd4cb16a00deab6930532f38f68b",
+            "collectionId": "033eb01f0bf134dbe19e34299d1a9f76",
             "rawModeData": ""
         }
     ]
