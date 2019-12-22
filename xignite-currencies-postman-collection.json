@@ -1,5 +1,5 @@
 {
-    "id": "9da3a05b6d7b81bf74dfaae435c81364",
+    "id": "cf4cf7269e630273a3e586664a0787dd",
     "name": "Xignite Currencies",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "3dc378b6c7b2a599b24b1c70410a9f77",
+            "id": "b419d078a9e199cb10cb821c5d69033d",
             "name": "List Currencies",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/ListCurrencies",
             "description": "List supported currencies.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "1055ae4dc1665a674266300bb3c2586a",
+            "id": "568bc65262810743d9bc58c13498f713",
             "name": "List Active Currencies",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/ListActiveCurrencies",
             "description": "List supported currencies.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "6561242380e964f4f3ba3b45442b7a4d",
+            "id": "7b5a235bbce5c502bbc2b69adc26b1ea",
             "name": "List Official Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/ListOfficialRates",
             "description": "List supported official rates.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "9fc10b56c3dc1c8f9729b8f7ae140c1d",
+            "id": "cebcfc884a47bc59f57296ebb8d8ec90",
             "name": "Get Unit Of Account",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetUnitOfAccount",
             "description": "Get Unit Of Account.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "d489a095502b1d29cdffb789cd92fb46",
+            "id": "e7ecb1985c7583e3c7372c4109171608",
             "name": "Convert Real Time Value",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/ConvertRealTimeValue",
             "description": "Convert value from one currency to another in real-time.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "fa1e2a3fe754cbfd8bbd7f9f54991b0d",
+            "id": "2db81c69f0e6cbe0bc3b5a230a56e1da",
             "name": "Convert Historical Value",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/ConvertHistoricalValue",
             "description": "Convert value from one currency to another as of a historical date.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "fdba906935a3bdec3888ce15d14a79e7",
+            "id": "da03f714fe38494569a705060fb2ba33",
             "name": "Get Real Time Forward Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeForwardRate",
             "description": "Returns a set of real-time currency forward rates.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "c1290c9aeff93cd42d6d1ae68bafc900",
+            "id": "d91e77534f74d073b9f486b6d078bf4a",
             "name": "Get Real Time Cross Rate As String",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRateAsString",
             "description": "Returns a real-time currency cross-rate.",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "98ec03a036418252a89d5a7e1299078f",
+            "id": "16b63b202a23b8a0243d4fca0fa4b144",
             "name": "Get Latest Cross Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetLatestCrossRate",
             "description": "Returns the latest possible cross rate.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "cf2f0916b68e84bd8ad0b06bf70de8ae",
+            "id": "617e429a8bfbb2231bdbab60510d92f4",
             "name": "Get Latest Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetLatestCrossRates",
             "description": "Returns the latest possible cross rate.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "642fef1ca0e4f528a3eabb8b502d8ecb",
+            "id": "4f62a8a4f1a0b9b86509d2e2dceb83ee",
             "name": "Get Real Time Cross Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRate",
             "description": "Returns a real-time currency cross-rate.",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "630f0649a4f08f27657a01439fa15a12",
+            "id": "ec8b4ae93a4f325c3c51fe0f7b45c7e7",
             "name": "Get Real Time Cross Rate G M T",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRateGMT",
             "description": "Returns a real-time currency cross-rate with the times in GMT.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "c18977b9fcd2b17a09fbdc12018a368c",
+            "id": "98734368bb727b92a48780eb5272167d",
             "name": "Get Raw Cross Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRawCrossRate",
             "description": "Returns a real-time currency cross-rate.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "79f6ec2c2d0c4a97743c822afb6fadef",
+            "id": "780b7259e346b1db3824621f0245752f",
             "name": "Get Raw Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRawCrossRates",
             "description": "Returns a real-time currency cross-rate.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "93fb59e1df45f92011036a7e63fecb30",
+            "id": "ef9798f6242920dc64f6f3b54bf89f65",
             "name": "Get Real Time Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRates",
             "description": "Returns the latest possible cross rate.",
@@ -471,11 +471,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "e11d0a51e0a622f658d091748b5aaf7d",
+            "id": "0ebd8e77c9ce9e119e6558e800df4dcf",
             "name": "Get Historical Cross Rate Tables",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRateTables",
             "description": "Returns historical currency cross-rate tables for a range of dates.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "ef3b1b5950b894de55a6a0171468cc68",
+            "id": "3c671b3dd78f8bb63e648e4d3b66837e",
             "name": "Get Historical Cross Rate Tables Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRateTablesBidAsk",
             "description": "Returns historical currency cross-rate tables for a range of dates.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "b133be531b45e9d0f2f010a35fd8c2ce",
+            "id": "345cf63e7c7e83e346880304126b94d7",
             "name": "Get Currency Report",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetCurrencyReport",
             "description": "Returns historical currency cross-rate tables for a range of dates.",
@@ -564,11 +564,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "f99e3c4c6012151ed445599e0616069b",
+            "id": "145b25481e9167ba2f55c823b2c0968e",
             "name": "Get Historical Cross Rate Table",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRateTable",
             "description": "Returns a historical currency cross-rate table.",
@@ -595,11 +595,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "166d276481ee208b203a3136a5f143d7",
+            "id": "c9ddbb47fd0b48ed9e4df4b16aa142fb",
             "name": "Get Historical Cross Rate Table Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRateTableBidAsk",
             "description": "Returns a historical currency cross-rate table.",
@@ -626,11 +626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "0f5fcf470af04a475c80a71572b0ff71",
+            "id": "587d3186e687b85713ff74c435918fa0",
             "name": "Get Real Time Cross Rate Table",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRateTable",
             "description": "Returns a real-time currency cross-rate table.",
@@ -657,11 +657,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "d82d5f6429ea79d02ea440017d9b405a",
+            "id": "797d5f2f0288f95244983e52aa929705",
             "name": "Get Real Time Cross Rate Table With Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRateTableWithBidAsk",
             "description": "Returns a real-time currency cross-rate table.",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "3d12b9991459233cbbfe6a2edca56842",
+            "id": "02b91322c326f4ef64bd345ee2a8998f",
             "name": "Get All Cross Rates For A Currency",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetAllCrossRatesForACurrency",
             "description": "Returns all valid cross rates for a currency.",
@@ -719,11 +719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "e150ae4447e8685b67d0cdc350116a60",
+            "id": "1acc3a651ddf5815e0db70dc54c94784",
             "name": "Get Real Time Cross Rate Table As H T M L",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetRealTimeCrossRateTableAsHTML",
             "description": "Returns a real-time currency cross-rate table as an HTML Output.",
@@ -750,11 +750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "c156fe56db4e7b8fd74a0e76748fde32",
+            "id": "096e2ec38d734cc6a5e491de3aec8010",
             "name": "Get Simple Real Time Cross Rate Table As H T M L",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetSimpleRealTimeCrossRateTableAsHTML",
             "description": "Returns a real-time currency cross-rate table as an HTML Output.",
@@ -781,11 +781,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "201ad56a2daf19ec59d3e26b928c8d9c",
+            "id": "57d7918ad784a6b89dd515facb204146",
             "name": "Get Historical Cross Rate Table As H T M L",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRateTableAsHTML",
             "description": "Returns a historical currency cross-rate table as an HTML Output.",
@@ -812,11 +812,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "6f31d5f34490c2fb3423d3c6fc9f4206",
+            "id": "9d9d77a83f1ae32b2c0fb9441268ed26",
             "name": "Get Historical Cross Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRate",
             "description": "Returns a cross-rate as of a historical date.",
@@ -843,11 +843,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "bd6c2550808698425a11eec7d9ca4b4a",
+            "id": "df5a7ec635608b4595737c21c0f27b3f",
             "name": "Get Historical Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRates",
             "description": "Returns multiple cross-rates as of a historical date.",
@@ -874,11 +874,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "69b7159451e56e547bf79c7f8a7ecf28",
+            "id": "d8545b4dff5d70ce9ce7d7d48ecd03fe",
             "name": "Get Historical Cross Rate Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRateBidAsk",
             "description": "Returns a cross-rate with bid\/ask as of a historical date.",
@@ -905,11 +905,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "bbd0cf8635118dbd56d78966f402bc4c",
+            "id": "9894990548e953afb6c2c3a61e1510bd",
             "name": "Get Historical Cross Rates Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRatesBidAsk",
             "description": "Returns multiple cross-rates with bid\/ask as of a historical date.",
@@ -936,11 +936,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "8b03666361b2bc9fa69e2d25460f11af",
+            "id": "b59a8b13e7efa300a8fbd6dbb41f91fe",
             "name": "Get Historical Cross Rates Range",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRatesRange",
             "description": "This operation returns a range of cross-rates for a currency pair.",
@@ -967,11 +967,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "78d1ce3e712f82447d4d12fbd89e39ba",
+            "id": "c7aa260ff35bf3de864310c1eb4c90eb",
             "name": "Get Historical Cross Rates Bid Ask Range",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRatesBidAskRange",
             "description": "This operation returns a range of cross-rates for a currency pair.",
@@ -998,11 +998,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "91aa35ce52a13a495168f2d2d8ea160a",
+            "id": "03045dbcfb1f008e03a172bf7f62c0bb",
             "name": "Get Historical Cross Rates As Of",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRatesAsOf",
             "description": "This operation returns a range of cross-rates for a currency pair.",
@@ -1029,11 +1029,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "d13095fc0dd40df5aca1e31b4bc27108",
+            "id": "7fa2bf48d9108ac762fce2a92c3b3aba",
             "name": "Get Historical Cross Rates Bid Ask As Of",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalCrossRatesBidAskAsOf",
             "description": "This operation returns a range of cross-rates for a currency pair.",
@@ -1060,11 +1060,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "2ef8c5af0c29f7d08150c9987f74bf2c",
+            "id": "bd45c443de2cb678790faadeecd5d1f4",
             "name": "Get Official Cross Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetOfficialCrossRate",
             "description": "Returns an official cross-rate as of a historical date.",
@@ -1091,11 +1091,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "b14cf775bd406d51d9a7c43f59694d3a",
+            "id": "5fa19463380839003fb21a15f5455e86",
             "name": "Get Official Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetOfficialCrossRates",
             "description": "Returns an official cross-rate as of a historical date.",
@@ -1122,11 +1122,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "f5137356e4e5b45f7817fd647be5c493",
+            "id": "39a042ff8ed39d238cd11653b684cc85",
             "name": "Get Official Cross Rate Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetOfficialCrossRateBidAsk",
             "description": "Returns an official cross-rate as of a historical date.",
@@ -1153,11 +1153,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "9e9fd619444e585dd5cbff1e6d89be80",
+            "id": "b73716607c81205b5d92ece4a00836f4",
             "name": "Get Official Cross Rates Bid Ask",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetOfficialCrossRatesBidAsk",
             "description": "Returns an official cross-rate as of a historical date.",
@@ -1184,11 +1184,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "623d37a33df447e1be86be9ac635f873",
+            "id": "2b20f3185a362f1a048003e89c7418c3",
             "name": "Get Mutiple Historical Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetMutipleHistoricalCrossRates",
             "description": "Returns multiple cross-rates as of a historical date.",
@@ -1215,11 +1215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "223ec456951cfb2fed0f23e64dc8ff1b",
+            "id": "cb7b48fe7bba7bbcd11c5560b2281170",
             "name": "Get Average Historical Cross Rates",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetAverageHistoricalCrossRates",
             "description": "This operation returns an array average daily historical cross-rates for a period.",
@@ -1246,11 +1246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "8253bb620641becfa8bf605563a70286",
+            "id": "c96f8b2d57d72db8a40212027448fdd4",
             "name": "Get Average Historical Cross Rate",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetAverageHistoricalCrossRate",
             "description": "This operation returns an average daily historical cross-rates for a period.",
@@ -1277,11 +1277,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "bd7d4c54841b0abb176a06313d5c7dcb",
+            "id": "051a692768742622f8ce036b1a4848b1",
             "name": "Get Historical Monthly Cross Rates Range",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalMonthlyCrossRatesRange",
             "description": "This operation returns a complete range of stock quotes for a currency pair.",
@@ -1308,11 +1308,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "f0b49e441e3bcd40cd87400a596016dc",
+            "id": "fd1462c181c3b891dc22922f3cbd38cb",
             "name": "Get Cross Rate Change",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetCrossRateChange",
             "description": "This operation returns the changes in a cross-rates over the last 6 months.",
@@ -1339,11 +1339,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "a03e97fd9f02af157f8fe0fa8687173f",
+            "id": "26f1f3ef184cba4502d6b2aad13903be",
             "name": "Get Currency Chart Custom",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, , Custom",
             "description": "Draw a custom currency chart for a date range.",
@@ -1370,11 +1370,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "d353d8add27ace408fbc9b2622e9f86b",
+            "id": "37cb401ea4d94809930906d15fa2b903",
             "name": "Get Currency Chart Custom Binary",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, , Custom, Binary",
             "description": "Draw a custom currency chart for a date range.",
@@ -1401,11 +1401,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "a3e9ead0d1d0b9b67741609628d49bca",
+            "id": "7829f85f59844d9fd36e2210dd711f9d",
             "name": "Get Currency Chart",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, ",
             "description": "Draw a historical currency chart for a date range.",
@@ -1432,11 +1432,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "71f08ab20a4fec7b361846f7f57fab18",
+            "id": "f3c6dc39cb3bb42ec4b34f4afab90cb6",
             "name": "Get Currency Chart Binary",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, , Binary",
             "description": "Draw a historical currency chart for a date range in binary format.",
@@ -1463,11 +1463,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "b804e2467737c7abe8078bc57b26332c",
+            "id": "524a8a40cba2ccccbe5b4c1957860f63",
             "name": "Get Currency Intraday Chart",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, Intraday, ",
             "description": "Draw a intraday currency chart for a time range",
@@ -1494,11 +1494,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "43e1eb3d1a48dfe226da37e1ddeabdc5",
+            "id": "e58adf15582e9e5aadb903ea64e20424",
             "name": "Get Currency Intraday Chart Custom Binary",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, Intraday, , Custom, Binary",
             "description": "Draw a intraday currency chart for a time range in a binary format",
@@ -1525,11 +1525,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "6335de892a047ec7ee94f6dba91dbf07",
+            "id": "d1070de00e9129e86273b409c99cf916",
             "name": "Get Currency Intraday Chart Custom",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrenciesCurrency, Intraday, , Custom",
             "description": "Draw a intraday currency chart for a time range in a binary format",
@@ -1556,11 +1556,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "698e4082191d308f1338dd3f7ed812dd",
+            "id": "c854d9f456dc8faad6f8beeefbdae339",
             "name": "Get Chart Design",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies, Design",
             "description": "Returns the default design class for the currency Chart.",
@@ -1587,11 +1587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "600da3ac51e2d2030d967fb465b4c3f5",
+            "id": "b14d6a724aa844142efc393ff2360a44",
             "name": "Get Tick",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetTick",
             "description": "Returns a tick for a currency pair as of a specific time in the day.",
@@ -1618,11 +1618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "8184d71d5fd9df63fad866cadf8a735f",
+            "id": "353b131ade3ccd6c50b0d51f61e763d8",
             "name": "Get Ticks",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetTicks",
             "description": "Returns a range of ticks for a currency pair.",
@@ -1649,11 +1649,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "c3726b66914b4a95aa2835551cb09fee",
+            "id": "4a1a6a406a41fd055da7af3ab4473534",
             "name": "Get Historical Ticks",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalTicks",
             "description": "Returns a range of ticks for a currency pair.",
@@ -1680,11 +1680,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "4fc5e5d927595e03bb6ede9fb82092f6",
+            "id": "2fd1e64530172644b0ede0520f58d2c9",
             "name": "Get Historical High Low",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetHistoricalHighLow",
             "description": "Returns the high and the low ticks for a historical time range.",
@@ -1711,11 +1711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         },
         {
-            "id": "2d7c15f935a8a244cd13b39bd83ebc1c",
+            "id": "087825ddb7ced0826c29b1cedabdaa0c",
             "name": "Get Intraday High Low",
             "url": "httpswww.xignite.com\/xCurrencies.json\/XigniteCurrencies\/GetIntradayHighLow",
             "description": "Returns the high and the low ticks for today.",
@@ -1742,7 +1742,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9da3a05b6d7b81bf74dfaae435c81364",
+            "collectionId": "cf4cf7269e630273a3e586664a0787dd",
             "rawModeData": ""
         }
     ]
