@@ -1,5 +1,5 @@
 {
-    "id": "60e30d45868cfc00c7063b3ef5a30974",
+    "id": "7e3721340b7daae717fdce892e1ad137",
     "name": "Xignite NASDAQ Last Sale",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "52e8792fd5b71f89366328a776ff6eec",
+            "id": "55d9cba07f6de12fa8638651c91d8781",
             "name": "Get Last Sale",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSale",
             "description": "Returns real time stock quote for a given stock ticker",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "f13440b06ad25d47f9545a2d53f5631c",
+            "id": "8e4155bf00bdb4bd8af7eb58ca3b40e4",
             "name": "Get Last Sales",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSales",
             "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "b0594335440ce1d0c77610299256c68b",
+            "id": "f397a13112744687fa55ea81ea8dccf1",
             "name": "Get Bar",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetBar",
             "description": "Returns a single bar for a specific time.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "c17fdaaec61e93b272a53da22ffdf9cb",
+            "id": "610b73150fa952b496ff8fc40434418b",
             "name": "Get Bars",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetBars",
             "description": "Returns a set of bars for a stock and a time range during the trading day.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "602cf39e02b8778a89f87b9cbe85a78e",
+            "id": "f0a2aab7b602d8bfea320ac4cb57554c",
             "name": "Get Chart Bars",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale, Bars",
             "description": "Returns a set of partial bars for a stock and a time range during the trading day.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "cf0361ca782ccc40563e1618db5bab6d",
+            "id": "b5d40c17873cdb301afb08c08fe1c661",
             "name": "Get Last Sale By Identifier",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSaleByIdentifier",
             "description": "Returns a real-time quote for a security based on the last trade execution.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "aba627891927670edc73ebf51061568f",
+            "id": "fd4b7dd4923c3a238dcdd358439088b8",
             "name": "Get Last Sales By Identifiers",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSalesByIdentifiers",
             "description": "Returns a real-time quote for a security based on the last trade execution.",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "5a656f5fdb256292552dffed38bee7ff",
+            "id": "ae83c6995a527b0ba324c646a90dab14",
             "name": "Get Last Sale With Fallback",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSaleWithFallback",
             "description": "Returns real time stock quote for a given stock ticker",
@@ -254,11 +254,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "5b6af7347de062aa04ebb4e33f6b4487",
+            "id": "2dbe8e10cc53fb1d0694b77a737550a5",
             "name": "Get Last Sale By Identifier With Fallback",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSaleByIdentifierWithFallback",
             "description": "Returns a real-time quote for a security based on the last trade execution.",
@@ -285,11 +285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "525c8146b48a812ca9e69e007a3d9dbb",
+            "id": "0a91e1ca3bdd0af98461b127eebc9ba1",
             "name": "Get Last Sales With Fallback",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetLastSalesWithFallback",
             "description": "Returns a collection of real time stock quotes for a comma-separated list of stock quotes.",
@@ -316,11 +316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "f99994735e1dea16b484d3bb3f681cea",
+            "id": "da5dbabd71e0f5671d4dec61704add58",
             "name": "List Traded Symbols",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/ListTradedSymbols",
             "description": "Returns all symbols and names that are traded",
@@ -347,11 +347,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "043708a1e734b41e8b28689a34d4b106",
+            "id": "d0928429f42977f0b9904bc8d061bbca",
             "name": "Get Quote",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetQuote",
             "description": "Returns a real-time NASDAQ BASIC quote for given security.",
@@ -378,11 +378,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "5a7f5a0d87f87284aff25ab44a576b0e",
+            "id": "c413007cac57959bfc2c516e1a9e4801",
             "name": "Get Quotes",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetQuotes",
             "description": "Returns real-time NASDAQ BASIC quotes for given securities.",
@@ -409,11 +409,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "1d0c3a50288d30900021f8a9ff3e1b8c",
+            "id": "b2f9d42b1394fac87089dc4123451b19",
             "name": "Get Extended Quote",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetExtendedQuote",
             "description": "Returns a real-time NASDAQ BASIC quote for given security.",
@@ -440,11 +440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         },
         {
-            "id": "d792b6bc02175f433396825e41863251",
+            "id": "1bfcc727c7fa4cf0ae4e5f9660f05f94",
             "name": "Get Extended Quotes",
             "url": "httpsnasdaqlastsale.xignite.comxNASDAQLastSale.json\/XigniteNASDAQLastSale\/GetExtendedQuotes",
             "description": "Returns real-time NASDAQ BASIC quotes for given securities.",
@@ -471,7 +471,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "60e30d45868cfc00c7063b3ef5a30974",
+            "collectionId": "7e3721340b7daae717fdce892e1ad137",
             "rawModeData": ""
         }
     ]
