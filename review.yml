@@ -1,0 +1,155 @@
+aid: xignite
+name: Xignite
+review:
+  question: Does Xignite still expose a documented, self-serve public API surface after
+    its acquisition by QUODD?
+  answer: true
+  date: '2026-07-21'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Xignite (founded 2000, a pioneer of cloud market data APIs) was acquired by
+    QUODD, a NewSpring Holdings platform company, in February 2023. The corporate
+    site xignite.com now 301-redirects its root and marketing paths to quodd.com,
+    but the Xignite developer catalog remains fully live: the developer hub at
+    https://www.xignite.com/developers (HTTP 200) lists ~45 API products across
+    equities, forex, crypto, indices, options, futures, fixed income, funds,
+    corporate actions, news, ESG, and reference data, each with a live product
+    documentation page under /product/ (23 pages verified HTTP 200 in this
+    review). The APIs themselves are live: each product runs on its own
+    subdomain (globalquotes.xignite.com, globalcurrencies.xignite.com,
+    crypto.xignite.com, navs.xignite.com, etc.) and unauthenticated requests to
+    documented operations return real JSON envelopes with
+    Outcome "RegistrationError" and a message inviting registration - proof of a
+    working, token-gated but publicly reachable REST surface. Xignite publishes
+    OpenAPI 3.0.4 specifications for the whole catalog in its official GitHub
+    org (github.com/Xignite/swaggerhub, last commit 2026-01-26); 22 specs were
+    harvested verbatim into openapi/ in this repo. Onboarding is hybrid: a free
+    trial page (https://www.xignite.com/xignite-trial, HTTP 200) exists, but
+    registration-help and support paths redirect to quodd.com/support and the
+    "Get started" call-to-action goes to marketdata.quodd.com/contact-us, so the
+    posture is trending sales-assisted under QUODD. QUODD also runs a newer,
+    separate developer platform at developer.quodd.com (Docusaurus; REST snap
+    API with 24-hour username/password-issued tokens, plus gRPC APIs). No
+    public pricing page was found, and no status page was found
+    (status.xignite.com does not resolve).
+  authentication: |
+    Xignite legacy APIs authenticate with an API token per request; unregistered
+    calls are identified by IP address and capped ("Maximum number of
+    unregistered requests exceeded... Your request was authenticated using your
+    IP address", Identity: "IP" in live responses). Token management is done
+    from the xignite.com account settings page. The newer QUODD developer
+    platform issues 24-hour bearer tokens from username/password credentials.
+  transports:
+    - protocol: REST
+      scheme: https
+      note: Per-product subdomains (e.g. globalquotes.xignite.com) with JSON, XML,
+        and CSV response formats selected via URL infix (e.g. /xGlobalQuotes.json/).
+        Confirmed live with real responses on 7 services.
+      documented: true
+    - protocol: FlatFiles
+      scheme: https
+      note: Bulk file products (historical equities, bonds, options, currencies,
+        corporate actions files) delivered via cloudfiles.xignite.com per the
+        XigniteCloudFiles and *File OpenAPI specs.
+      documented: true
+    - protocol: Streaming
+      scheme: https
+      note: CloudStreaming product page is live and marketed as streaming quotes
+        directly to applications, but its transport (WebSocket or otherwise) is
+        not documented publicly; no public spec exists for it. Not modeled.
+      documented: partial
+    - protocol: gRPC
+      scheme: https
+      note: Offered on the successor QUODD developer platform
+        (developer.quodd.com Snap gRPC and Ticker Info gRPC docs), not on the
+        legacy Xignite catalog itself.
+      documented: true
+  endpointsProbed:
+    - url: https://globalquotes.xignite.com/v3/xGlobalQuotes.json/GetGlobalDelayedQuote
+      status: 200
+      note: Live JSON envelope, Outcome RegistrationError for unauthenticated call.
+    - url: https://globalcurrencies.xignite.com/xGlobalCurrencies.json/GetRealTimeRate?Symbol=EURUSD
+      status: 200
+      note: Live JSON envelope, RegistrationError.
+    - url: https://globalnews.xignite.com/xGlobalNews.json/GetTopMarketSummaries
+      status: 200
+      note: Live JSON envelope, RegistrationError.
+    - url: https://factsetfundamentals.xignite.com/xFactSetFundamentals.json/GetFundamentals
+      status: 200
+      note: Live JSON envelope, RegistrationError.
+    - url: https://crypto.xignite.com/xCrypto.json/GetChartBars
+      status: 200
+    - url: https://navs.xignite.com/v2/xNAVs.json/GetAdjustmentFactors
+      status: 200
+    - url: https://globalindices.xignite.com/xGlobalIndices.json/GetChartBars
+      status: 200
+    - url: https://globalmetals.xignite.com/xGlobalMetals.json/GetBar
+      status: 200
+    - url: https://globalhistorical.xignite.com/v3/xGlobalHistorical.json/GetChartBars
+      status: 200
+      note: Live JSON envelope, RegistrationError.
+    - url: https://www.xignite.com/developers
+      status: 200
+      note: Full API catalog page, still served from xignite.com.
+    - url: https://www.xignite.com/xignite-trial
+      status: 200
+      note: Free trial signup page.
+    - url: https://www.xignite.com/
+      status: 301
+      note: Root redirects to https://www.quodd.com/.
+    - url: https://developer.quodd.com/
+      status: 200
+      note: Successor QUODD developer platform (REST + gRPC docs).
+    - url: https://developer.xignite.com/
+      status: 0
+      note: Does not resolve (DNS failure).
+    - url: https://docs.xignite.com/
+      status: 0
+      note: Does not resolve (DNS failure).
+    - url: https://api.xignite.com/
+      status: 0
+      note: Does not resolve (DNS failure); APIs live on per-product subdomains instead.
+    - url: https://status.xignite.com/
+      status: 0
+      note: Does not resolve; no public status page found.
+openapi:
+  harvested: true
+  provenance: |
+    22 OpenAPI 3.0.4 documents copied verbatim from the official Xignite GitHub
+    repository github.com/Xignite/swaggerhub (src/ directory, default branch,
+    last commit 2026-01-26, "Merge pull request #233"). File names were mapped
+    from XigniteGlobalQuotes.json to openapi/xignite-global-quotes-openapi.json
+    and so on; contents are unmodified. The repository also contains specs for
+    additional products (BATS/NASDAQ last sale, FactSet estimates, ETFs, IPOs,
+    logos, option/bond masters, file variants) not yet listed in apis.yml.
+sources:
+  - url: https://www.xignite.com/developers
+    type: Portal
+    note: Live Xignite developer catalog listing ~45 API products with links to
+      per-product developer resources, .NET/Java SDKs, and token settings.
+  - url: https://github.com/Xignite/swaggerhub
+    type: GitHubRepository
+    note: Official Xignite org repo publishing OpenAPI 3.0.4 specs for the catalog;
+      actively maintained (last commit 2026-01-26).
+  - url: https://developer.quodd.com/
+    type: Portal
+    note: QUODD developer platform (Docusaurus) with RESTful API, Snap gRPC API,
+      and Ticker Info gRPC API docs; token auth with 24-hour expiry.
+  - url: https://www.businesswire.com/news/home/20230216005179/en/QUODD-Acquires-Xignite-to-Capture-Larger-Portion-of-Cloud-Native-Market-Data-Industry
+    type: PressRelease
+    note: February 16, 2023 announcement of QUODD acquiring Xignite; cites 500+
+      market data API endpoints from 150+ sources.
+  - url: https://www.quodd.com/support
+    type: Support
+    note: Xignite registration-help now redirects here; support@quodd.com.
+actions:
+  apisYmlUpdated: true
+  openapiPath: openapi/
+  reason: |
+    Bootstrap profile. The Xignite catalog is real, live, documented, and has
+    official machine-readable OpenAPI specs, so 23 API entries were cataloged
+    (22 with harvested specs; CloudStreaming has no public spec and its
+    transport is undocumented, so nothing was fabricated for it). Ownership by
+    QUODD and the hybrid self-serve/sales-assisted posture are recorded in the
+    provider description.
