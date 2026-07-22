@@ -1,0 +1,53 @@
+generated: '2026-07-22'
+method: searched
+source: https://github.com/Xignite + https://www.nuget.org/packages/Xignite.Sdk
+packages:
+- language: csharp
+  registry: nuget
+  name: Xignite.Sdk
+  version: 1.1.0.1
+  url: https://www.nuget.org/packages/Xignite.Sdk
+  install: dotnet add package Xignite.Sdk
+  official: true
+  note: NuGet owner is the xignite account; described as "An SDK for Xignite Webservice APIs".
+- language: csharp
+  registry: github
+  name: DotNetSDK
+  url: https://github.com/Xignite/DotNetSDK
+  install: git clone https://github.com/Xignite/DotNetSDK
+  official: true
+  note: Xignite SDK for .NET 4.5, published in the Xignite GitHub org.
+- language: java
+  registry: github
+  name: JavaSDK
+  url: https://github.com/Xignite/JavaSDK
+  install: git clone https://github.com/Xignite/JavaSDK
+  official: true
+  note: Xignite SDK for Java 7, published in the Xignite GitHub org.
+- language: javascript
+  registry: npm
+  name: xignite
+  version: 1.1.2
+  url: https://www.npmjs.com/package/xignite
+  install: npm install xignite
+  official: false
+  note: Community module (publisher tcorc) to pull data from the Xignite API.
+samples:
+- name: Java-Hello-World
+  url: https://github.com/Xignite/Java-Hello-World
+  official: true
+- name: Python-Hello-World
+  url: https://github.com/Xignite/Python-Hello-World
+  official: true
+- name: Ruby-Hello-World
+  url: https://github.com/Xignite/Ruby-Hello-World
+  official: true
+- name: NodeJs-Hello-World
+  url: https://github.com/Xignite/NodeJs-Hello-World
+  official: true
+- name: R-Hello-World
+  url: https://github.com/Xignite/R-Hello-World
+  official: true
+- name: Matlab-Hello-World
+  url: https://github.com/Xignite/Matlab-Hello-World
+  official: true

@@ -1,0 +1,839 @@
+openapi: 3.0.4
+info:
+  title: XigniteBonds CloudAlerts XigniteGlobalHolidays API
+  version: 1.0.3
+servers:
+- url: https://globalholidays.xignite.com
+security:
+- basic: []
+tags:
+- name: XigniteGlobalHolidays
+paths:
+  /xGlobalHolidays/ListExchanges:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exchange'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exchange'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exchange'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exchange'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Exchange'
+  /xGlobalHolidays/ListCurrencies:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Currency'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Currency'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Currency'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Currency'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Currency'
+  /xGlobalHolidays/ListFinancialCenters:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FinancialCenter'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FinancialCenter'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FinancialCenter'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FinancialCenter'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FinancialCenter'
+  /xGlobalHolidays/GetHolidays:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Location
+        in: query
+        schema:
+          type: string
+      - name: LocationType
+        in: query
+        schema:
+          type: string
+      - name: StartDate
+        in: query
+        schema:
+          type: string
+      - name: EndDate
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+  /xGlobalHolidays/ListHolidays:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Location
+        in: query
+        schema:
+          type: string
+      - name: LocationType
+        in: query
+        schema:
+          type: string
+      - name: Year
+        in: query
+        schema:
+          type: integer
+          format: int32
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Holiday'
+  /xGlobalHolidays/GetNextDate:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Location
+        in: query
+        schema:
+          type: string
+      - name: LocationType
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+  /xGlobalHolidays/GetPriorDate:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Location
+        in: query
+        schema:
+          type: string
+      - name: LocationType
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/StringResult'
+  /xGlobalHolidays/GetDayCount:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Location
+        in: query
+        schema:
+          type: string
+      - name: LocationType
+        in: query
+        schema:
+          type: string
+      - name: StartDate
+        in: query
+        schema:
+          type: string
+      - name: EndDate
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IntegerResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IntegerResult'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IntegerResult'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/IntegerResult'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/IntegerResult'
+  /xGlobalHolidays/GetExchangeDateTime:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeDateTime'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeDateTime'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeDateTime'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeDateTime'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/ExchangeDateTime'
+  /xGlobalHolidays/GetExchangeHours:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      - name: TimeZone
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeHours'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeHours'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeHours'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeHours'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/ExchangeHours'
+  /xGlobalHolidays/GetExchangeHoursRange:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      - name: StartDate
+        in: query
+        schema:
+          type: string
+      - name: EndDate
+        in: query
+        schema:
+          type: string
+      - name: TimeZone
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeHours'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeHours'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeHours'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeHours'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeHours'
+  /xGlobalHolidays/AreExchangesOpen:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchanges
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeStatus'
+            text/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeStatus'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeStatus'
+            text/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeStatus'
+            text/csv:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ExchangeStatus'
+  /xGlobalHolidays/IsExchangeOpenOnDate:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+  /xGlobalHolidays/GetSettlementDate:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SettlementSchedule'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/SettlementSchedule'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SettlementSchedule'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/SettlementSchedule'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/SettlementSchedule'
+  /xGlobalHolidays/IsSettlementDate:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/ExchangeSchedule'
+  /xGlobalHolidays/GetExchangePhases:
+    get:
+      tags:
+      - XigniteGlobalHolidays
+      parameters:
+      - name: Exchange
+        in: query
+        schema:
+          type: string
+      - name: Date
+        in: query
+        schema:
+          type: string
+      - name: TimeZone
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExchangePhases'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ExchangePhases'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangePhases'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ExchangePhases'
+            text/csv:
+              schema:
+                $ref: '#/components/schemas/ExchangePhases'
+components:
+  schemas:
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type: string
+          nullable: true
+        Message:
+          type: string
+          nullable: true
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    Holiday:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Location:
+            type: string
+            nullable: true
+          Date:
+            type: string
+            nullable: true
+          Name:
+            type: string
+            nullable: true
+          FullHoliday:
+            type: boolean
+          EarlyClose:
+            type: boolean
+        additionalProperties: false
+    SettlementSchedule:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type: string
+            nullable: true
+          TradeDate:
+            type: string
+            nullable: true
+          SettlementDate:
+            type: string
+            nullable: true
+        additionalProperties: false
+    ExchangeDateTime:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type: string
+            nullable: true
+          Date:
+            type: string
+            nullable: true
+          Time:
+            type: string
+            nullable: true
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
+    Phase:
+      type: object
+      properties:
+        Name:
+          type: string
+          nullable: true
+        Type:
+          type: string
+          nullable: true
+        Start:
+          type: string
+          nullable: true
+        End:
+          type: string
+          nullable: true
+      additionalProperties: false
+    StringResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    Exchange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type: string
+            nullable: true
+          Name:
+            type: string
+            nullable: true
+        additionalProperties: false
+    Currency:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CurrencyCode:
+            type: string
+            nullable: true
+          CountryCode:
+            type: string
+            nullable: true
+          RelatedFinancialCentre:
+            type: string
+            nullable: true
+        additionalProperties: false
+    ExchangeHours:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type: string
+            nullable: true
+          Date:
+            type: string
+            nullable: true
+          IsOpen:
+            type: boolean
+          OpenTime:
+            type: string
+            nullable: true
+          CloseTime:
+            type: string
+            nullable: true
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    ExchangeStatus:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type: string
+            nullable: true
+          Open:
+            type: boolean
+        additionalProperties: false
+    IntegerResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ExchangePhases:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type: string
+            nullable: true
+          Date:
+            type: string
+            nullable: true
+          UTCOffset:
+            type: integer
+            format: int32
+          IsOpen:
+            type: boolean
+          Day:
+            type: string
+            nullable: true
+          DayType:
+            type: string
+            nullable: true
+          Phases:
+            type: array
+            items:
+              $ref: '#/components/schemas/Phase'
+            nullable: true
+        additionalProperties: false
+    FinancialCenter:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FinancialCenterCode:
+            type: string
+            nullable: true
+          CurrencyCode:
+            type: string
+            nullable: true
+          CountryCode:
+            type: string
+            nullable: true
+          FinancialCenterName:
+            type: string
+            nullable: true
+        additionalProperties: false
+    ExchangeSchedule:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type: string
+            nullable: true
+          Date:
+            type: string
+            nullable: true
+          Open:
+            type: boolean
+          OpenTime:
+            type: string
+            nullable: true
+          CloseTime:
+            type: string
+            nullable: true
+        additionalProperties: false
+  securitySchemes:
+    basic:
+      type: apiKey
+      description: Token for your account.
+      name: _token
+      in: query

@@ -1,0 +1,27 @@
+generated: '2026-07-22'
+method: generated
+note: No provider-published agent skills or AGENTS.md found; these are generated from the OpenAPI specs.
+  Xignite specs carry no operationIds, so operations are referenced as METHOD /path (the operation name
+  is the final path segment).
+skills:
+- file: xignite-get-delayed-quote.md
+  name: Get a delayed global stock quote
+  api: openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  operations:
+  - GET /v3/xGlobalQuotes/ListExchanges
+  - GET /v3/xGlobalQuotes/ListSymbols
+  - GET /v3/xGlobalQuotes/GetGlobalDelayedQuote
+- file: xignite-convert-currency.md
+  name: Get a real-time FX rate and convert an amount
+  api: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+  operations:
+  - GET /xGlobalCurrencies/ListActiveCurrencies
+  - GET /xGlobalCurrencies/GetRealTimeRate
+  - GET /xGlobalCurrencies/ConvertRealTimeValue
+- file: xignite-historical-prices-and-dividends.md
+  name: Pull historical prices and dividend history
+  api: openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  operations:
+  - GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotesRange
+  - GET /v3/xGlobalHistorical/GetCashDividendHistory
+  - GET /v3/xGlobalHistorical/GetAdjustmentFactors

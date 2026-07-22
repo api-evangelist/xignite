@@ -1,0 +1,30 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ (all specs) + https://www.xignite.com/developers
+standards:
+- id: apikey-auth
+  conforms: true
+  evidence: every spec declares an apiKey securityScheme named _token in the query string
+- id: oauth2
+  conforms: false
+  evidence: no oauth2 securitySchemes in any spec; token-based apiKey only
+- id: oidc
+  conforms: false
+  evidence: no openIdConnect securityScheme; no /.well-known/openid-configuration
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: errors are returned in-band as an Outcome enum (Success/SystemError/RequestError/RegistrationError)
+    inside HTTP 200 responses, not application/problem+json
+- id: json-api
+  conforms: false
+  evidence: vendor-specific response envelopes, not JSON:API
+- id: odata
+  conforms: false
+  evidence: RPC-style GET operations (/vN/xService/OperationName), not OData
+- id: multi-format-responses
+  conforms: true
+  evidence: services return JSON, XML, or CSV per the product documentation (developer catalog)
+- id: uri-path-versioning
+  conforms: true
+  evidence: most services version in the URI path (/v3/xGlobalQuotes/...); some (xGlobalCurrencies, xAlerts)
+    are unversioned

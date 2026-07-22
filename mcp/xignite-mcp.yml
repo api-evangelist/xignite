@@ -1,0 +1,1073 @@
+generated: '2026-07-22'
+method: derived
+status: candidate
+note: No official Xignite/QUODD MCP server was found (docs, npm, MCP registries searched). This is a candidate
+  tool list derived one-tool-per-operation from the OpenAPI specs in openapi/. Xignite specs carry no
+  operationIds, so tools are keyed by HTTP method + path; the operation name is the final path segment.
+  All operations are HTTP GET reads authenticated with the _token query parameter.
+server:
+  name: xignite
+  transport: http
+tools:
+- name: cloudalerts_create_alert
+  description: CreateAlert on the alerts.xignite.com service
+  source_operation: openapi/xignite-cloudalerts-api-openapi.yml#GET /xAlerts/CreateAlert
+- name: cloudalerts_delete_alerts
+  description: DeleteAlerts on the alerts.xignite.com service
+  source_operation: openapi/xignite-cloudalerts-api-openapi.yml#GET /xAlerts/DeleteAlerts
+- name: cloudalerts_search_alerts
+  description: SearchAlerts on the alerts.xignite.com service
+  source_operation: openapi/xignite-cloudalerts-api-openapi.yml#GET /xAlerts/SearchAlerts
+- name: bonds_list_bonds
+  description: ListBonds on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/ListBonds
+- name: bonds_list_bond_types
+  description: ListBondTypes on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/ListBondTypes
+- name: bonds_get_last_sale
+  description: GetLastSale on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/GetLastSale
+- name: bonds_get_last_sales
+  description: GetLastSales on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/GetLastSales
+- name: bonds_get_price_composite
+  description: GetPriceComposite on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/GetPriceComposite
+- name: bonds_get_price_composites
+  description: GetPriceComposites on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/GetPriceComposites
+- name: bonds_get_daily_open_high_low_close_price
+  description: GetDailyOpenHighLowClosePrice on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/GetDailyOpenHighLowClosePrice
+- name: bonds_get_daily_open_high_low_close_prices
+  description: GetDailyOpenHighLowClosePrices on the bonds.xignite.com service
+  source_operation: openapi/xignite-xignitebonds-api-openapi.yml#GET /xBonds/GetDailyOpenHighLowClosePrices
+- name: cloudfiles_get_file
+  description: GetFile on the cloudfiles.xignite.com service
+  source_operation: openapi/xignite-xignitecloudfiles-api-openapi.yml#GET /xCloudFiles/GetFile
+- name: crypto_get_historical_quote_range
+  description: GetHistoricalQuoteRange on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetHistoricalQuoteRange
+- name: crypto_get_exchange_historical_quote_range
+  description: GetExchangeHistoricalQuoteRange on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetExchangeHistoricalQuoteRange
+- name: crypto_get_historical_quotes
+  description: GetHistoricalQuotes on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetHistoricalQuotes
+- name: crypto_get_quotes
+  description: GetQuotes on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetQuotes
+- name: crypto_get_reference_data
+  description: GetReferenceData on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetReferenceData
+- name: crypto_get_top_crypto_headlines
+  description: GetTopCryptoHeadlines on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetTopCryptoHeadlines
+- name: crypto_get_top_market_headlines
+  description: GetTopMarketHeadlines on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetTopMarketHeadlines
+- name: crypto_list_cryptos
+  description: ListCryptos on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/ListCryptos
+- name: crypto_list_exchanges
+  description: ListExchanges on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/ListExchanges
+- name: crypto_list_news_categories
+  description: ListNewsCategories on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/ListNewsCategories
+- name: crypto_list_news_sources
+  description: ListNewsSources on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/ListNewsSources
+- name: crypto_list_reference_data
+  description: ListReferenceData on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/ListReferenceData
+- name: crypto_get_chart_bars
+  description: GetChartBars on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetChartBars
+- name: crypto_get_exchange_quotes
+  description: GetExchangeQuotes on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/GetExchangeQuotes
+- name: crypto_list_top_coins
+  description: ListTopCoins on the crypto.xignite.com service
+  source_operation: openapi/xignite-xignitecrypto-api-openapi.yml#GET /xCrypto/ListTopCoins
+- name: earningscalendar_list_exchanges
+  description: ListExchanges on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/ListExchanges
+- name: earningscalendar_list_symbols
+  description: ListSymbols on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/ListSymbols
+- name: earningscalendar_list_earning_calendar_items
+  description: ListEarningCalendarItems on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/ListEarningCalendarItems
+- name: earningscalendar_get_earning_calendar_item
+  description: GetEarningCalendarItem on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetEarningCalendarItem
+- name: earningscalendar_get_earning_calendar_items
+  description: GetEarningCalendarItems on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetEarningCalendarItems
+- name: earningscalendar_get_earning_call
+  description: GetEarningCall on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetEarningCall
+- name: earningscalendar_get_conference_call_information
+  description: GetConferenceCallInformation on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetConferenceCallInformation
+- name: earningscalendar_get_replay_information
+  description: GetReplayInformation on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetReplayInformation
+- name: earningscalendar_get_announcement
+  description: GetAnnouncement on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetAnnouncement
+- name: earningscalendar_get_earning_calendar_day
+  description: GetEarningCalendarDay on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetEarningCalendarDay
+- name: earningscalendar_get_earning_calendar_range
+  description: GetEarningCalendarRange on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetEarningCalendarRange
+- name: earningscalendar_get_earning_dates
+  description: GetEarningDates on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetEarningDates
+- name: earningscalendar_get_board_meeting
+  description: GetBoardMeeting on the earningscalendar.xignite.com service
+  source_operation: openapi/xignite-xigniteearningscalendar-api-openapi.yml#GET /xEarningsCalendar/GetBoardMeeting
+- name: factsetfundamentals_list_companies
+  description: ListCompanies on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/ListCompanies
+- name: factsetfundamentals_list_exchanges
+  description: ListExchanges on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/ListExchanges
+- name: factsetfundamentals_list_exchanges_by_region
+  description: ListExchangesByRegion on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/ListExchangesByRegion
+- name: factsetfundamentals_list_fundamentals
+  description: ListFundamentals on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/ListFundamentals
+- name: factsetfundamentals_list_fundamentals_by_data_group
+  description: ListFundamentalsByDataGroup on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/ListFundamentalsByDataGroup
+- name: factsetfundamentals_list_sectors_and_industries
+  description: ListSectorsAndIndustries on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/ListSectorsAndIndustries
+- name: factsetfundamentals_search_fundamentals
+  description: SearchFundamentals on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/SearchFundamentals
+- name: factsetfundamentals_get_latest_fundamentals
+  description: GetLatestFundamentals on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetLatestFundamentals
+- name: factsetfundamentals_get_fundamentals
+  description: GetFundamentals on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetFundamentals
+- name: factsetfundamentals_get_fundamentals_fiscal_range
+  description: GetFundamentalsFiscalRange on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetFundamentalsFiscalRange
+- name: factsetfundamentals_get_fundamentals_daily_range
+  description: GetFundamentalsDailyRange on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetFundamentalsDailyRange
+- name: factsetfundamentals_get_financial_statements
+  description: GetFinancialStatements on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetFinancialStatements
+- name: factsetfundamentals_get_balance_sheets
+  description: GetBalanceSheets on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetBalanceSheets
+- name: factsetfundamentals_get_cash_flow_statements
+  description: GetCashFlowStatements on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetCashFlowStatements
+- name: factsetfundamentals_get_income_statements
+  description: GetIncomeStatements on the factsetfundamentals.xignite.com service
+  source_operation: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml#GET /xFactSetFundamentals/GetIncomeStatements
+- name: globalcorporateactions_list_exchanges
+  description: ListExchanges on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/ListExchanges
+- name: globalcorporateactions_list_event_types
+  description: ListEventTypes on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/ListEventTypes
+- name: globalcorporateactions_list_symbols
+  description: ListSymbols on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/ListSymbols
+- name: globalcorporateactions_list_symbol_changes
+  description: ListSymbolChanges on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/ListSymbolChanges
+- name: globalcorporateactions_list_identifier_changes
+  description: ListIdentifierChanges on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/ListIdentifierChanges
+- name: globalcorporateactions_list_listing_changes
+  description: ListListingChanges on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/ListListingChanges
+- name: globalcorporateactions_get_event_summaries
+  description: GetEventSummaries on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetEventSummaries
+- name: globalcorporateactions_get_event_summaries_by_exchange
+  description: GetEventSummariesByExchange on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetEventSummariesByExchange
+- name: globalcorporateactions_get_distributions
+  description: GetDistributions on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetDistributions
+- name: globalcorporateactions_get_distributions_by_exchange
+  description: GetDistributionsByExchange on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetDistributionsByExchange
+- name: globalcorporateactions_get_splits
+  description: GetSplits on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetSplits
+- name: globalcorporateactions_get_splits_by_exchange
+  description: GetSplitsByExchange on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetSplitsByExchange
+- name: globalcorporateactions_get_spinoffs
+  description: GetSpinoffs on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetSpinoffs
+- name: globalcorporateactions_get_mergers
+  description: GetMergers on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetMergers
+- name: globalcorporateactions_get_takeovers
+  description: GetTakeovers on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetTakeovers
+- name: globalcorporateactions_get_tender_offers
+  description: GetTenderOffers on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetTenderOffers
+- name: globalcorporateactions_get_rights
+  description: GetRights on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetRights
+- name: globalcorporateactions_get_rights_by_exchange
+  description: GetRightsByExchange on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetRightsByExchange
+- name: globalcorporateactions_get_security_swap
+  description: GetSecuritySwap on the globalcorporateactions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml#GET /xGlobalCorporateActions/GetSecuritySwap
+- name: globalcurrencies_list_currencies
+  description: ListCurrencies on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/ListCurrencies
+- name: globalcurrencies_list_active_currencies
+  description: ListActiveCurrencies on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/ListActiveCurrencies
+- name: globalcurrencies_convert_real_time_value
+  description: ConvertRealTimeValue on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/ConvertRealTimeValue
+- name: globalcurrencies_convert_historical_value
+  description: ConvertHistoricalValue on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/ConvertHistoricalValue
+- name: globalcurrencies_get_real_time_rate
+  description: GetRealTimeRate on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetRealTimeRate
+- name: globalcurrencies_get_real_time_rates
+  description: GetRealTimeRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetRealTimeRates
+- name: globalcurrencies_get_all_real_time_rates
+  description: GetAllRealTimeRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetAllRealTimeRates
+- name: globalcurrencies_get_real_time_rate_table
+  description: GetRealTimeRateTable on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetRealTimeRateTable
+- name: globalcurrencies_list_official_rates
+  description: ListOfficialRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/ListOfficialRates
+- name: globalcurrencies_get_historical_rate
+  description: GetHistoricalRate on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetHistoricalRate
+- name: globalcurrencies_get_latest_historical_rate
+  description: GetLatestHistoricalRate on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetLatestHistoricalRate
+- name: globalcurrencies_get_historical_rates
+  description: GetHistoricalRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetHistoricalRates
+- name: globalcurrencies_get_latest_historical_rates
+  description: GetLatestHistoricalRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetLatestHistoricalRates
+- name: globalcurrencies_get_historical_rates_range
+  description: GetHistoricalRatesRange on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetHistoricalRatesRange
+- name: globalcurrencies_get_historical_rates_ranges
+  description: GetHistoricalRatesRanges on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetHistoricalRatesRanges
+- name: globalcurrencies_get_bar
+  description: GetBar on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetBar
+- name: globalcurrencies_get_bars
+  description: GetBars on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetBars
+- name: globalcurrencies_get_chart_bars
+  description: GetChartBars on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetChartBars
+- name: globalcurrencies_get_official_historical_rate
+  description: GetOfficialHistoricalRate on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetOfficialHistoricalRate
+- name: globalcurrencies_get_official_rate
+  description: GetOfficialRate on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetOfficialRate
+- name: globalcurrencies_get_official_rates
+  description: GetOfficialRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetOfficialRates
+- name: globalcurrencies_get_official_historical_rates
+  description: GetOfficialHistoricalRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetOfficialHistoricalRates
+- name: globalcurrencies_get_london_historical_rates_range
+  description: GetLondonHistoricalRatesRange on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetLondonHistoricalRatesRange
+- name: globalcurrencies_get_forward_rate
+  description: GetForwardRate on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/GetForwardRate
+- name: globalcurrencies_list_forward_rates
+  description: ListForwardRates on the globalcurrencies.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml#GET /xGlobalCurrencies/ListForwardRates
+- name: globalesg_list_exchanges
+  description: ListExchanges on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/ListExchanges
+- name: globalesg_list_symbols
+  description: ListSymbols on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/ListSymbols
+- name: globalesg_list_categories
+  description: ListCategories on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/ListCategories
+- name: globalesg_list_involvements
+  description: ListInvolvements on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/ListInvolvements
+- name: globalesg_get_e_s_g_scores
+  description: GetESGScores on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetESGScores
+- name: globalesg_get_historical_e_s_g_scores_range
+  description: GetHistoricalESGScoresRange on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetHistoricalESGScoresRange
+- name: globalesg_get_e_s_g_categories
+  description: GetESGCategories on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetESGCategories
+- name: globalesg_get_historical_e_s_g_categories_range
+  description: GetHistoricalESGCategoriesRange on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetHistoricalESGCategoriesRange
+- name: globalesg_get_temperature_scores
+  description: GetTemperatureScores on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetTemperatureScores
+- name: globalesg_get_emissions
+  description: GetEmissions on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetEmissions
+- name: globalesg_get_global_compact_scores
+  description: GetGlobalCompactScores on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetGlobalCompactScores
+- name: globalesg_get_historical_global_compact_scores_range
+  description: GetHistoricalGlobalCompactScoresRange on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetHistoricalGlobalCompactScoresRange
+- name: globalesg_get_involvements
+  description: GetInvolvements on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/GetInvolvements
+- name: globalesg_screen_by_involvements
+  description: ScreenByInvolvements on the globalesg.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalesg-api-openapi.yml#GET /xGlobalESG/ScreenByInvolvements
+- name: globalfundfundamentals_list_countries
+  description: ListCountries on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/ListCountries
+- name: globalfundfundamentals_list_funds_by_country
+  description: ListFundsByCountry on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/ListFundsByCountry
+- name: globalfundfundamentals_list_fund_types
+  description: ListFundTypes on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/ListFundTypes
+- name: globalfundfundamentals_list_fund_fundamentals
+  description: ListFundFundamentals on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/ListFundFundamentals
+- name: globalfundfundamentals_get_fund_fundamentals
+  description: GetFundFundamentals on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundFundamentals
+- name: globalfundfundamentals_get_fund_fundamentals_range
+  description: GetFundFundamentalsRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundFundamentalsRange
+- name: globalfundfundamentals_get_fund_profiles
+  description: GetFundProfiles on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundProfiles
+- name: globalfundfundamentals_get_fund_fee_schedules
+  description: GetFundFeeSchedules on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundFeeSchedules
+- name: globalfundfundamentals_get_fund_holdings
+  description: GetFundHoldings on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundHoldings
+- name: globalfundfundamentals_get_fund_holdings_range
+  description: GetFundHoldingsRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundHoldingsRange
+- name: globalfundfundamentals_get_fund_managers
+  description: GetFundManagers on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundManagers
+- name: globalfundfundamentals_get_fund_managers_range
+  description: GetFundManagersRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundManagersRange
+- name: globalfundfundamentals_get_fund_month_end_trailing_returns
+  description: GetFundMonthEndTrailingReturns on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundMonthEndTrailingReturns
+- name: globalfundfundamentals_get_fund_month_end_trailing_returns_range
+  description: GetFundMonthEndTrailingReturnsRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundMonthEndTrailingReturnsRange
+- name: globalfundfundamentals_get_fund_quarter_end_trailing_returns
+  description: GetFundQuarterEndTrailingReturns on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundQuarterEndTrailingReturns
+- name: globalfundfundamentals_get_fund_quarter_end_trailing_returns_range
+  description: GetFundQuarterEndTrailingReturnsRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundQuarterEndTrailingReturnsRange
+- name: globalfundfundamentals_get_fund_n_a_vs
+  description: GetFundNAVs on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundNAVs
+- name: globalfundfundamentals_get_fund_historical_n_a_vs
+  description: GetFundHistoricalNAVs on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundHistoricalNAVs
+- name: globalfundfundamentals_get_fund_dividend_history
+  description: GetFundDividendHistory on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundDividendHistory
+- name: globalfundfundamentals_get_fund_breakdowns
+  description: GetFundBreakdowns on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundBreakdowns
+- name: globalfundfundamentals_get_fund_breakdowns_range
+  description: GetFundBreakdownsRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundBreakdownsRange
+- name: globalfundfundamentals_get_fund_full_holdings
+  description: GetFundFullHoldings on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundFullHoldings
+- name: globalfundfundamentals_get_fund_full_holdings_range
+  description: GetFundFullHoldingsRange on the globalfundfundamentals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml#GET /V2/xGlobalFundFundamentals/GetFundFullHoldingsRange
+- name: globalfutures_list_base_futures
+  description: ListBaseFutures on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/ListBaseFutures
+- name: globalfutures_list_future_chain
+  description: ListFutureChain on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/ListFutureChain
+- name: globalfutures_list_future_exchanges
+  description: ListFutureExchanges on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/ListFutureExchanges
+- name: globalfutures_list_option_chain
+  description: ListOptionChain on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/ListOptionChain
+- name: globalfutures_get_front_month_future
+  description: GetFrontMonthFuture on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetFrontMonthFuture
+- name: globalfutures_get_future
+  description: GetFuture on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetFuture
+- name: globalfutures_search_futures
+  description: SearchFutures on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/SearchFutures
+- name: globalfutures_map_legacy_base_symbol
+  description: MapLegacyBaseSymbol on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/MapLegacyBaseSymbol
+- name: globalfutures_get_all_future_quotes
+  description: GetAllFutureQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetAllFutureQuotes
+- name: globalfutures_get_all_option_quotes
+  description: GetAllOptionQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetAllOptionQuotes
+- name: globalfutures_get_spot_future_quote
+  description: GetSpotFutureQuote on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetSpotFutureQuote
+- name: globalfutures_get_latest_front_month_future_quotes
+  description: GetLatestFrontMonthFutureQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetLatestFrontMonthFutureQuotes
+- name: globalfutures_get_latest_future_option_quote
+  description: GetLatestFutureOptionQuote on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetLatestFutureOptionQuote
+- name: globalfutures_get_latest_future_option_quotes
+  description: GetLatestFutureOptionQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetLatestFutureOptionQuotes
+- name: globalfutures_get_latest_future_quote
+  description: GetLatestFutureQuote on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetLatestFutureQuote
+- name: globalfutures_get_latest_future_quotes
+  description: GetLatestFutureQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetLatestFutureQuotes
+- name: globalfutures_get_future_option_quote
+  description: GetFutureOptionQuote on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetFutureOptionQuote
+- name: globalfutures_get_future_option_quotes
+  description: GetFutureOptionQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetFutureOptionQuotes
+- name: globalfutures_get_future_quote
+  description: GetFutureQuote on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetFutureQuote
+- name: globalfutures_get_future_quotes
+  description: GetFutureQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetFutureQuotes
+- name: globalfutures_get_swap_quote
+  description: GetSwapQuote on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetSwapQuote
+- name: globalfutures_get_historical_swap_quotes
+  description: GetHistoricalSwapQuotes on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetHistoricalSwapQuotes
+- name: globalfutures_get_historical_future_quotes_range
+  description: GetHistoricalFutureQuotesRange on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetHistoricalFutureQuotesRange
+- name: globalfutures_get_chart_bars
+  description: GetChartBars on the globalfutures.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalfutures-api-openapi.yml#GET /V2/xGlobalFutures/GetChartBars
+- name: globalhistorical_list_exchanges
+  description: ListExchanges on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/ListExchanges
+- name: globalhistorical_list_symbols
+  description: ListSymbols on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/ListSymbols
+- name: globalhistorical_list_symbol_changes
+  description: ListSymbolChanges on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/ListSymbolChanges
+- name: globalhistorical_list_symbols_with_adjusted_factors
+  description: ListSymbolsWithAdjustedFactors on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/ListSymbolsWithAdjustedFactors
+- name: globalhistorical_get_cash_dividend_history
+  description: GetCashDividendHistory on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetCashDividendHistory
+- name: globalhistorical_get_cash_dividends_by_exchange
+  description: GetCashDividendsByExchange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetCashDividendsByExchange
+- name: globalhistorical_get_split_history
+  description: GetSplitHistory on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetSplitHistory
+- name: globalhistorical_get_splits_by_exchange
+  description: GetSplitsByExchange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetSplitsByExchange
+- name: globalhistorical_get_global_historical_quotes
+  description: GetGlobalHistoricalQuotes on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotes
+- name: globalhistorical_get_global_historical_quotes_trailing
+  description: GetGlobalHistoricalQuotesTrailing on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotesTrailing
+- name: globalhistorical_get_global_historical_quotes_range
+  description: GetGlobalHistoricalQuotesRange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotesRange
+- name: globalhistorical_get_global_historical_weekly_quotes_range
+  description: GetGlobalHistoricalWeeklyQuotesRange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalWeeklyQuotesRange
+- name: globalhistorical_get_global_historical_monthly_quotes_range
+  description: GetGlobalHistoricalMonthlyQuotesRange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalMonthlyQuotesRange
+- name: globalhistorical_get_global_historical_quarterly_quotes_range
+  description: GetGlobalHistoricalQuarterlyQuotesRange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalQuarterlyQuotesRange
+- name: globalhistorical_get_global_historical_trades
+  description: GetGlobalHistoricalTrades on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalTrades
+- name: globalhistorical_get_global_historical_trades_range
+  description: GetGlobalHistoricalTradesRange on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalTradesRange
+- name: globalhistorical_get_adjustment_factors
+  description: GetAdjustmentFactors on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetAdjustmentFactors
+- name: globalhistorical_get_global_historical_v_w_a_p
+  description: GetGlobalHistoricalVWAP on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetGlobalHistoricalVWAP
+- name: globalhistorical_get_chart_bars
+  description: GetChartBars on the globalhistorical.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalhistorical-api-openapi.yml#GET /v3/xGlobalHistorical/GetChartBars
+- name: globalholidays_list_exchanges
+  description: ListExchanges on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/ListExchanges
+- name: globalholidays_list_currencies
+  description: ListCurrencies on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/ListCurrencies
+- name: globalholidays_list_financial_centers
+  description: ListFinancialCenters on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/ListFinancialCenters
+- name: globalholidays_get_holidays
+  description: GetHolidays on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetHolidays
+- name: globalholidays_list_holidays
+  description: ListHolidays on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/ListHolidays
+- name: globalholidays_get_next_date
+  description: GetNextDate on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetNextDate
+- name: globalholidays_get_prior_date
+  description: GetPriorDate on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetPriorDate
+- name: globalholidays_get_day_count
+  description: GetDayCount on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetDayCount
+- name: globalholidays_get_exchange_date_time
+  description: GetExchangeDateTime on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetExchangeDateTime
+- name: globalholidays_get_exchange_hours
+  description: GetExchangeHours on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetExchangeHours
+- name: globalholidays_get_exchange_hours_range
+  description: GetExchangeHoursRange on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetExchangeHoursRange
+- name: globalholidays_are_exchanges_open
+  description: AreExchangesOpen on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/AreExchangesOpen
+- name: globalholidays_is_exchange_open_on_date
+  description: IsExchangeOpenOnDate on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/IsExchangeOpenOnDate
+- name: globalholidays_get_settlement_date
+  description: GetSettlementDate on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetSettlementDate
+- name: globalholidays_is_settlement_date
+  description: IsSettlementDate on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/IsSettlementDate
+- name: globalholidays_get_exchange_phases
+  description: GetExchangePhases on the globalholidays.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalholidays-api-openapi.yml#GET /xGlobalHolidays/GetExchangePhases
+- name: globalindices_list_index_groups
+  description: ListIndexGroups on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/ListIndexGroups
+- name: globalindices_list_indices
+  description: ListIndices on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/ListIndices
+- name: globalindices_list_indices_by_index_group
+  description: ListIndicesByIndexGroup on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/ListIndicesByIndexGroup
+- name: globalindices_get_index_symbol_mapping_by_old_symbol
+  description: GetIndexSymbolMappingByOldSymbol on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetIndexSymbolMappingByOldSymbol
+- name: globalindices_get_index_symbol_mappings_by_old_symbols
+  description: GetIndexSymbolMappingsByOldSymbols on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetIndexSymbolMappingsByOldSymbols
+- name: globalindices_search_indices_by_name
+  description: SearchIndicesByName on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/SearchIndicesByName
+- name: globalindices_get_delayed_index_value
+  description: GetDelayedIndexValue on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetDelayedIndexValue
+- name: globalindices_get_delayed_indices_value
+  description: GetDelayedIndicesValue on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetDelayedIndicesValue
+- name: globalindices_get_index_bar
+  description: GetIndexBar on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetIndexBar
+- name: globalindices_get_index_bars
+  description: GetIndexBars on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetIndexBars
+- name: globalindices_get_chart_bars
+  description: GetChartBars on the globalindices.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalindices-api-openapi.yml#GET /xGlobalIndices/GetChartBars
+- name: globalmaster_list_exchanges
+  description: ListExchanges on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListExchanges
+- name: globalmaster_list_industries
+  description: ListIndustries on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListIndustries
+- name: globalmaster_list_sectors
+  description: ListSectors on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListSectors
+- name: globalmaster_list_instrument_classes
+  description: ListInstrumentClasses on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListInstrumentClasses
+- name: globalmaster_list_global_industries
+  description: ListGlobalIndustries on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListGlobalIndustries
+- name: globalmaster_list_global_sectors
+  description: ListGlobalSectors on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListGlobalSectors
+- name: globalmaster_list_m_i_c_to_legacy_exchange
+  description: ListMICToLegacyExchange on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListMICToLegacyExchange
+- name: globalmaster_list_m_i_c_to_legacy_suffix
+  description: ListMICToLegacySuffix on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListMICToLegacySuffix
+- name: globalmaster_list_symbol_changes
+  description: ListSymbolChanges on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListSymbolChanges
+- name: globalmaster_list_identifiers_by_exchange
+  description: ListIdentifiersByExchange on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/ListIdentifiersByExchange
+- name: globalmaster_get_security
+  description: GetSecurity on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetSecurity
+- name: globalmaster_get_securities
+  description: GetSecurities on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetSecurities
+- name: globalmaster_get_instrument
+  description: GetInstrument on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetInstrument
+- name: globalmaster_get_instruments
+  description: GetInstruments on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetInstruments
+- name: globalmaster_get_issuer
+  description: GetIssuer on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetIssuer
+- name: globalmaster_get_issuers
+  description: GetIssuers on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetIssuers
+- name: globalmaster_get_issuer_by_company_identifier
+  description: GetIssuerByCompanyIdentifier on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetIssuerByCompanyIdentifier
+- name: globalmaster_get_master_by_identifier
+  description: GetMasterByIdentifier on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByIdentifier
+- name: globalmaster_get_master_by_identifiers
+  description: GetMasterByIdentifiers on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByIdentifiers
+- name: globalmaster_lookup_security
+  description: LookupSecurity on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/LookupSecurity
+- name: globalmaster_get_master_by_exchange
+  description: GetMasterByExchange on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByExchange
+- name: globalmaster_get_master_by_exchange_changes
+  description: GetMasterByExchangeChanges on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByExchangeChanges
+- name: globalmaster_get_master_by_sector
+  description: GetMasterBySector on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterBySector
+- name: globalmaster_get_master_by_industry
+  description: GetMasterByIndustry on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByIndustry
+- name: globalmaster_get_master_by_global_sector
+  description: GetMasterByGlobalSector on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByGlobalSector
+- name: globalmaster_get_master_by_global_industry
+  description: GetMasterByGlobalIndustry on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterByGlobalIndustry
+- name: globalmaster_get_master_statistics_by_exchange
+  description: GetMasterStatisticsByExchange on the globalmaster.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmaster-api-openapi.yml#GET /xGlobalMaster/GetMasterStatisticsByExchange
+- name: globalmetals_list_metals
+  description: ListMetals on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/ListMetals
+- name: globalmetals_get_real_time_metal_quote
+  description: GetRealTimeMetalQuote on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetRealTimeMetalQuote
+- name: globalmetals_get_real_time_metal_quotes
+  description: GetRealTimeMetalQuotes on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetRealTimeMetalQuotes
+- name: globalmetals_get_real_time_extended_metal_quote
+  description: GetRealTimeExtendedMetalQuote on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetRealTimeExtendedMetalQuote
+- name: globalmetals_get_historical_metal_quote
+  description: GetHistoricalMetalQuote on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetHistoricalMetalQuote
+- name: globalmetals_get_bar
+  description: GetBar on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetBar
+- name: globalmetals_get_bars
+  description: GetBars on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetBars
+- name: globalmetals_get_base_metal_price
+  description: GetBaseMetalPrice on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetBaseMetalPrice
+- name: globalmetals_get_chart_bars
+  description: GetChartBars on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetChartBars
+- name: globalmetals_get_historical_london_fixing_range
+  description: GetHistoricalLondonFixingRange on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetHistoricalLondonFixingRange
+- name: globalmetals_get_historical_metal_quotes
+  description: GetHistoricalMetalQuotes on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetHistoricalMetalQuotes
+- name: globalmetals_get_historical_metal_quotes_range
+  description: GetHistoricalMetalQuotesRange on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetHistoricalMetalQuotesRange
+- name: globalmetals_get_latest_historical_metal_quote
+  description: GetLatestHistoricalMetalQuote on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetLatestHistoricalMetalQuote
+- name: globalmetals_get_latest_historical_metal_quotes
+  description: GetLatestHistoricalMetalQuotes on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetLatestHistoricalMetalQuotes
+- name: globalmetals_get_london_fixing
+  description: GetLondonFixing on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetLondonFixing
+- name: globalmetals_get_london_historical_metal_quotes_range
+  description: GetLondonHistoricalMetalQuotesRange on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetLondonHistoricalMetalQuotesRange
+- name: globalmetals_get_top_industry_headlines
+  description: GetTopIndustryHeadlines on the globalmetals.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalmetals-api-openapi.yml#GET /xGlobalMetals/GetTopIndustryHeadlines
+- name: globalnews_get_todays_market_headlines
+  description: GetTodaysMarketHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTodaysMarketHeadlines
+- name: globalnews_get_todays_market_releases
+  description: GetTodaysMarketReleases on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTodaysMarketReleases
+- name: globalnews_get_todays_market_headlines_by_sector
+  description: GetTodaysMarketHeadlinesBySector on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTodaysMarketHeadlinesBySector
+- name: globalnews_get_todays_security_headlines
+  description: GetTodaysSecurityHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTodaysSecurityHeadlines
+- name: globalnews_get_market_headlines_by_query
+  description: GetMarketHeadlinesByQuery on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetMarketHeadlinesByQuery
+- name: globalnews_get_top_market_headlines
+  description: GetTopMarketHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopMarketHeadlines
+- name: globalnews_get_top_market_headlines_by_sector
+  description: GetTopMarketHeadlinesBySector on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopMarketHeadlinesBySector
+- name: globalnews_get_recent_top_security_headlines
+  description: GetRecentTopSecurityHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetRecentTopSecurityHeadlines
+- name: globalnews_get_top_security_headlines
+  description: GetTopSecurityHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopSecurityHeadlines
+- name: globalnews_get_historical_security_headlines
+  description: GetHistoricalSecurityHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetHistoricalSecurityHeadlines
+- name: globalnews_get_historical_market_headlines
+  description: GetHistoricalMarketHeadlines on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetHistoricalMarketHeadlines
+- name: globalnews_get_historical_market_releases
+  description: GetHistoricalMarketReleases on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetHistoricalMarketReleases
+- name: globalnews_get_historical_market_headlines_by_sector
+  description: GetHistoricalMarketHeadlinesBySector on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetHistoricalMarketHeadlinesBySector
+- name: globalnews_get_market_news_details
+  description: GetMarketNewsDetails on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetMarketNewsDetails
+- name: globalnews_get_todays_releases_by_security
+  description: GetTodaysReleasesBySecurity on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTodaysReleasesBySecurity
+- name: globalnews_get_top_releases_by_security
+  description: GetTopReleasesBySecurity on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopReleasesBySecurity
+- name: globalnews_get_historical_releases_by_security
+  description: GetHistoricalReleasesBySecurity on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetHistoricalReleasesBySecurity
+- name: globalnews_list_sectors
+  description: ListSectors on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/ListSectors
+- name: globalnews_get_top_security_summaries
+  description: GetTopSecuritySummaries on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopSecuritySummaries
+- name: globalnews_get_top_release_summaries_by_security
+  description: GetTopReleaseSummariesBySecurity on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopReleaseSummariesBySecurity
+- name: globalnews_get_top_market_summaries
+  description: GetTopMarketSummaries on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/GetTopMarketSummaries
+- name: globalnews_list_exchanges
+  description: ListExchanges on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/ListExchanges
+- name: globalnews_list_symbols
+  description: ListSymbols on the globalnews.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalnews-api-openapi.yml#GET /xGlobalNews/ListSymbols
+- name: globaloptions_get_option_greeks
+  description: GetOptionGreeks on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetOptionGreeks
+- name: globaloptions_get_option_greeks_by_chain
+  description: GetOptionGreeksByChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetOptionGreeksByChain
+- name: globaloptions_get_all_option_greeks_by_chain
+  description: GetAllOptionGreeksByChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetAllOptionGreeksByChain
+- name: globaloptions_get_all_equity_option_chain
+  description: GetAllEquityOptionChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetAllEquityOptionChain
+- name: globaloptions_get_all_extended_equity_option_chain
+  description: GetAllExtendedEquityOptionChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetAllExtendedEquityOptionChain
+- name: globaloptions_get_black_scholes_option_value
+  description: GetBlackScholesOptionValue on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetBlackScholesOptionValue
+- name: globaloptions_get_equity_option
+  description: GetEquityOption on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetEquityOption
+- name: globaloptions_get_equity_option_by_symbol
+  description: GetEquityOptionBySymbol on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetEquityOptionBySymbol
+- name: globaloptions_get_equity_option_by_symbols
+  description: GetEquityOptionBySymbols on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetEquityOptionBySymbols
+- name: globaloptions_get_equity_option_chain
+  description: GetEquityOptionChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetEquityOptionChain
+- name: globaloptions_get_equity_option_symbol
+  description: GetEquityOptionSymbol on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetEquityOptionSymbol
+- name: globaloptions_get_extended_equity_option
+  description: GetExtendedEquityOption on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetExtendedEquityOption
+- name: globaloptions_get_extended_equity_option_by_symbol
+  description: GetExtendedEquityOptionBySymbol on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetExtendedEquityOptionBySymbol
+- name: globaloptions_get_extended_equity_option_by_symbols
+  description: GetExtendedEquityOptionBySymbols on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetExtendedEquityOptionBySymbols
+- name: globaloptions_get_extended_equity_option_chain
+  description: GetExtendedEquityOptionChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetExtendedEquityOptionChain
+- name: globaloptions_get_extended_option_chain
+  description: GetExtendedOptionChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetExtendedOptionChain
+- name: globaloptions_get_option_chain
+  description: GetOptionChain on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetOptionChain
+- name: globaloptions_list_underlying_symbols
+  description: ListUnderlyingSymbols on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/ListUnderlyingSymbols
+- name: globaloptions_get_chart_bars
+  description: GetChartBars on the globaloptions.xignite.com service
+  source_operation: openapi/xignite-xigniteglobaloptions-api-openapi.yml#GET /xGlobalOptions/GetChartBars
+- name: globalquotes_list_symbol_changes
+  description: ListSymbolChanges on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/ListSymbolChanges
+- name: globalquotes_list_symbols
+  description: ListSymbols on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/ListSymbols
+- name: globalquotes_list_exchanges
+  description: ListExchanges on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/ListExchanges
+- name: globalquotes_get_global_extended_quote
+  description: GetGlobalExtendedQuote on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetGlobalExtendedQuote
+- name: globalquotes_get_global_delayed_quote
+  description: GetGlobalDelayedQuote on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetGlobalDelayedQuote
+- name: globalquotes_get_global_extended_quotes
+  description: GetGlobalExtendedQuotes on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetGlobalExtendedQuotes
+- name: globalquotes_get_global_delayed_quotes
+  description: GetGlobalDelayedQuotes on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetGlobalDelayedQuotes
+- name: globalquotes_get_global_delayed_v_w_a_p
+  description: GetGlobalDelayedVWAP on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetGlobalDelayedVWAP
+- name: globalquotes_get_top_market_movers
+  description: GetTopMarketMovers on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetTopMarketMovers
+- name: globalquotes_get_auction_prices
+  description: GetAuctionPrices on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetAuctionPrices
+- name: globalquotes_get_chart_bars
+  description: GetChartBars on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetChartBars
+- name: globalquotes_get_bars
+  description: GetBars on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetBars
+- name: globalquotes_get_bar
+  description: GetBar on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetBar
+- name: globalquotes_get_global_intraday_v_w_a_p
+  description: GetGlobalIntradayVWAP on the globalquotes.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalquotes-api-openapi.yml#GET /v3/xGlobalQuotes/GetGlobalIntradayVWAP
+- name: globalrealtime_list_symbol_changes
+  description: ListSymbolChanges on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/ListSymbolChanges
+- name: globalrealtime_list_symbols
+  description: ListSymbols on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/ListSymbols
+- name: globalrealtime_list_exchanges
+  description: ListExchanges on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/ListExchanges
+- name: globalrealtime_get_global_extended_quote
+  description: GetGlobalExtendedQuote on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetGlobalExtendedQuote
+- name: globalrealtime_get_global_real_time_quote
+  description: GetGlobalRealTimeQuote on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetGlobalRealTimeQuote
+- name: globalrealtime_get_global_extended_quotes
+  description: GetGlobalExtendedQuotes on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetGlobalExtendedQuotes
+- name: globalrealtime_get_global_real_time_quotes
+  description: GetGlobalRealTimeQuotes on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetGlobalRealTimeQuotes
+- name: globalrealtime_get_auction_prices
+  description: GetAuctionPrices on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetAuctionPrices
+- name: globalrealtime_get_global_real_time_v_w_a_p
+  description: GetGlobalRealTimeVWAP on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetGlobalRealTimeVWAP
+- name: globalrealtime_get_top_market_movers
+  description: GetTopMarketMovers on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetTopMarketMovers
+- name: globalrealtime_get_chart_bars
+  description: GetChartBars on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetChartBars
+- name: globalrealtime_get_bars
+  description: GetBars on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetBars
+- name: globalrealtime_get_bar
+  description: GetBar on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetBar
+- name: globalrealtime_get_global_intraday_v_w_a_p
+  description: GetGlobalIntradayVWAP on the globalrealtime.xignite.com service
+  source_operation: openapi/xignite-xigniteglobalrealtime-api-openapi.yml#GET /v3/xGlobalRealTime/GetGlobalIntradayVWAP
+- name: moneymarkets_list_rates
+  description: ListRates on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/ListRates
+- name: moneymarkets_list_swap_rates
+  description: ListSwapRates on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/ListSwapRates
+- name: moneymarkets_search_rates
+  description: SearchRates on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/SearchRates
+- name: moneymarkets_get_swap_rate
+  description: GetSwapRate on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetSwapRate
+- name: moneymarkets_get_swap_rate_extended
+  description: GetSwapRateExtended on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetSwapRateExtended
+- name: moneymarkets_get_swap_rate_family
+  description: GetSwapRateFamily on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetSwapRateFamily
+- name: moneymarkets_get_swap_rate_family_extended
+  description: GetSwapRateFamilyExtended on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetSwapRateFamilyExtended
+- name: moneymarkets_get_historical_swap_rate
+  description: GetHistoricalSwapRate on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetHistoricalSwapRate
+- name: moneymarkets_get_historical_swap_rate_extended
+  description: GetHistoricalSwapRateExtended on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetHistoricalSwapRateExtended
+- name: moneymarkets_get_historical_swap_rate_range
+  description: GetHistoricalSwapRateRange on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetHistoricalSwapRateRange
+- name: moneymarkets_get_historical_swap_rate_extended_range
+  description: GetHistoricalSwapRateExtendedRange on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetHistoricalSwapRateExtendedRange
+- name: moneymarkets_get_treasury_rate
+  description: GetTreasuryRate on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetTreasuryRate
+- name: moneymarkets_get_treasury_rate_family
+  description: GetTreasuryRateFamily on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetTreasuryRateFamily
+- name: moneymarkets_get_historical_swaption
+  description: GetHistoricalSwaption on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetHistoricalSwaption
+- name: moneymarkets_get_historical_swaption_family
+  description: GetHistoricalSwaptionFamily on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetHistoricalSwaptionFamily
+- name: moneymarkets_get_swaption
+  description: GetSwaption on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetSwaption
+- name: moneymarkets_get_swaption_family
+  description: GetSwaptionFamily on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetSwaptionFamily
+- name: moneymarkets_get_forward_rate_agreement
+  description: GetForwardRateAgreement on the moneymarkets.xignite.com service
+  source_operation: openapi/xignite-xignitemoneymarkets-api-openapi.yml#GET /xMoneyMarkets/GetForwardRateAgreement
+- name: navs_list_symbols
+  description: ListSymbols on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/ListSymbols
+- name: navs_list_new_symbols
+  description: ListNewSymbols on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/ListNewSymbols
+- name: navs_get_dividend_history
+  description: GetDividendHistory on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetDividendHistory
+- name: navs_get_cash_dividend_history
+  description: GetCashDividendHistory on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetCashDividendHistory
+- name: navs_get_all_cash_dividend_history
+  description: GetAllCashDividendHistory on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetAllCashDividendHistory
+- name: navs_get_n_a_v
+  description: GetNAV on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetNAV
+- name: navs_get_n_a_vs
+  description: GetNAVs on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetNAVs
+- name: navs_get_historical_n_a_vs
+  description: GetHistoricalNAVs on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetHistoricalNAVs
+- name: navs_get_historical_n_a_vs_trailing
+  description: GetHistoricalNAVsTrailing on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetHistoricalNAVsTrailing
+- name: navs_get_latest_n_a_v
+  description: GetLatestNAV on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetLatestNAV
+- name: navs_get_latest_n_a_vs
+  description: GetLatestNAVs on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetLatestNAVs
+- name: navs_get_historical_n_a_vs_range
+  description: GetHistoricalNAVsRange on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetHistoricalNAVsRange
+- name: navs_get_historical_n_a_vs_as_of
+  description: GetHistoricalNAVsAsOf on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetHistoricalNAVsAsOf
+- name: navs_get_split_history
+  description: GetSplitHistory on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetSplitHistory
+- name: navs_get_splits_by_exchange
+  description: GetSplitsByExchange on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetSplitsByExchange
+- name: navs_get_adjustment_factors
+  description: GetAdjustmentFactors on the navs.xignite.com service
+  source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetAdjustmentFactors

@@ -1,0 +1,43 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/xignite-cloudalerts-api-openapi.yml, openapi/xignite-xignitebonds-api-openapi.yml,
+  openapi/xignite-xignitecloudfiles-api-openapi.yml, openapi/xignite-xignitecrypto-api-openapi.yml,
+  openapi/xignite-xigniteearningscalendar-api-openapi.yml, openapi/xignite-xignitefactsetfundamentals-api-openapi.yml,
+  openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml, openapi/xignite-xigniteglobalcurrencies-api-openapi.yml,
+  openapi/xignite-xigniteglobalesg-api-openapi.yml, openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml,
+  openapi/xignite-xigniteglobalfutures-api-openapi.yml, openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  ...
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - query
+schemes:
+- name: basic
+  type: apiKey
+  in: query
+  parameter: _token
+  description: Token for your account.
+  sources:
+  - openapi/xignite-cloudalerts-api-openapi.yml
+  - openapi/xignite-xignitebonds-api-openapi.yml
+  - openapi/xignite-xignitecloudfiles-api-openapi.yml
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+  - openapi/xignite-xigniteearningscalendar-api-openapi.yml
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalfutures-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalholidays-api-openapi.yml
+  - openapi/xignite-xigniteglobalindices-api-openapi.yml
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+  - openapi/xignite-xigniteglobalmetals-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+  - openapi/xignite-xignitemoneymarkets-api-openapi.yml
+  - openapi/xignite-xignitenavs-api-openapi.yml

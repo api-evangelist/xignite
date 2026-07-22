@@ -1,0 +1,532 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ components.schemas $ref graph (all specs)
+note: Entity-relationship graph derived from schema $ref links across the 22 Xignite service specs. The
+  shared envelope entity is Common (Outcome/Message/Identity/Delay); Security is the core instrument entity
+  referenced by quotes, bars, and corporate-action entities. Identifiers are exchange-qualified symbols
+  (for example IBM.XNYS) rather than opaque ids.
+entities:
+- entity: AlternateSecurityIdentifier
+  sources:
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+- entity: Bar
+  sources:
+  - openapi/xignite-xigniteglobalindices-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+- entity: BondLastSale
+  sources:
+  - openapi/xignite-xignitebonds-api-openapi.yml
+- entity: BondResult
+  sources:
+  - openapi/xignite-xignitebonds-api-openapi.yml
+- entity: BondType
+  sources:
+  - openapi/xignite-xignitebonds-api-openapi.yml
+- entity: Breakdown
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: BreakdownRecord
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: BreakdownSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: CashDividend
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- entity: Categories
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: CategoryDescription
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: ChartBar
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+  - openapi/xignite-xigniteglobalfutures-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalindices-api-openapi.yml
+  - openapi/xignite-xigniteglobalmetals-api-openapi.yml
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+- entity: Common
+  sources:
+  - openapi/xignite-cloudalerts-api-openapi.yml
+  - openapi/xignite-xignitebonds-api-openapi.yml
+  - openapi/xignite-xignitecloudfiles-api-openapi.yml
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+  - openapi/xignite-xigniteearningscalendar-api-openapi.yml
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalfutures-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalholidays-api-openapi.yml
+  - openapi/xignite-xigniteglobalindices-api-openapi.yml
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+  - openapi/xignite-xigniteglobalmetals-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+  - openapi/xignite-xignitemoneymarkets-api-openapi.yml
+  - openapi/xignite-xignitenavs-api-openapi.yml
+- entity: Company
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- entity: CompanyDescription
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: CompanyEmissions
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: CorporateActionsEventType
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: Country
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: CountryDescription
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: Crypto
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: Currency
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: CurrencyDescription
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: CustomAttribute
+  sources:
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+- entity: DailyOpenHighLowClose
+  sources:
+  - openapi/xignite-xignitebonds-api-openapi.yml
+- entity: Distribution
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: Dividend
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+  - openapi/xignite-xignitenavs-api-openapi.yml
+- entity: ESGScore
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: EventSummary
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: EventSymbol
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- entity: Exchange
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: ExchangeDescription
+  sources:
+  - openapi/xignite-xigniteearningscalendar-api-openapi.yml
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+- entity: ExchangeDividend
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- entity: ExchangeHistoricalQuote
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: ExchangeList
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+- entity: ExchangeQuote
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: ExchangeSplit
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xignitenavs-api-openapi.yml
+- entity: FeeSchedules
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FeeSchedulesSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FinancialStatement
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- entity: ForwardContract
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: ForwardRateDescription
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: Fund
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FundDescription
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FundFundamentalDescription
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FundType
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: Fundamental
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FundamentalDescription
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- entity: FundamentalsSet
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: FutureDescription
+  sources:
+  - openapi/xignite-xigniteglobalfutures-api-openapi.yml
+- entity: GlobalCompactScore
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: Greeks
+  sources:
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+- entity: GreeksByExpiration
+  sources:
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+- entity: HistoricalQuote
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- entity: HistoricalVWAP
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- entity: HoldingsSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: IdentifierChange
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: IdentifierRecord
+  sources:
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+- entity: IndexDescriptionDto
+  sources:
+  - openapi/xignite-xigniteglobalindices-api-openapi.yml
+- entity: IndexQuote
+  sources:
+  - openapi/xignite-xigniteglobalindices-api-openapi.yml
+- entity: Industry
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- entity: InstrumentIdentifierBrief
+  sources:
+  - openapi/xignite-xignitebonds-api-openapi.yml
+- entity: Involved
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: InvolvementDescription
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: Item
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- entity: ListingChange
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: LoadAdjustedTrailingReturns
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: LookUpSecurity
+  sources:
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+- entity: ManagersSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: MarketHeadline
+  sources:
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+- entity: Merger
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: Metal
+  sources:
+  - openapi/xignite-xigniteglobalmetals-api-openapi.yml
+- entity: MetalDescription
+  sources:
+  - openapi/xignite-xigniteglobalmetals-api-openapi.yml
+- entity: MonthEndTrailingReturnsSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: NAVs
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: NewsHeadline
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: NewsSource
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: OfficialCountry
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: OfficialCurrency
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: OptionSummary
+  sources:
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+- entity: Phase
+  sources:
+  - openapi/xignite-xigniteglobalholidays-api-openapi.yml
+- entity: PossibleValue
+  sources:
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+- entity: ProfileBreakdown
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: ProfilesSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: QuarterEndLoadAdjustedTrailingReturns
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: QuarterEndTrailingReturns
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: QuarterEndTrailingReturnsSet
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: Quote
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: QuoteCurrencyItem
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: RateTableLine
+  sources:
+  - openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- entity: RecordBreakDownBase
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: ReferenceDescription
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: Rights
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: Sector
+  sources:
+  - openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- entity: Security
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+- entity: SecurityDescription
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+- entity: SecurityDistributions
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: SecurityEvent
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: SecurityHeadline
+  sources:
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+- entity: SecurityRights
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: SecuritySwap
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: Spinoff
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: Split
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: SymbolChange
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalmaster-api-openapi.yml
+  - openapi/xignite-xigniteglobalquotes-api-openapi.yml
+  - openapi/xignite-xigniteglobalrealtime-api-openapi.yml
+- entity: SymbolChangeList
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- entity: SymbolDescription
+  sources:
+  - openapi/xignite-xigniteearningscalendar-api-openapi.yml
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: SymbolList
+  sources:
+  - openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+- entity: TagGroup
+  sources:
+  - openapi/xignite-xigniteglobalnews-api-openapi.yml
+- entity: Takeover
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: TemperatureScore
+  sources:
+  - openapi/xignite-xigniteglobalesg-api-openapi.yml
+- entity: TenderOffer
+  sources:
+  - openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- entity: TopCoin
+  sources:
+  - openapi/xignite-xignitecrypto-api-openapi.yml
+- entity: TradedPrice
+  sources:
+  - openapi/xignite-xignitebonds-api-openapi.yml
+- entity: TrailingReturns
+  sources:
+  - openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- entity: UnderlyingSecurity
+  sources:
+  - openapi/xignite-xigniteglobaloptions-api-openapi.yml
+relationships:
+- from: Sector
+  relationship: has_many
+  to: Industry
+  via: Industries
+  source: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- from: FinancialStatement
+  relationship: has_many
+  to: Item
+  via: Items
+  source: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- from: FundamentalsSet
+  relationship: has_many
+  to: Fundamental
+  via: Fundamentals
+  source: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
+- from: SecurityRights
+  relationship: has_many
+  to: Rights
+  via: RightsSet
+  source: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- from: SecurityDistributions
+  relationship: has_many
+  to: Distribution
+  via: DistributionSet
+  source: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- from: SecurityEvent
+  relationship: has_many
+  to: EventSummary
+  via: EventSummaries
+  source: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
+- from: OfficialCountry
+  relationship: has_many
+  to: OfficialCurrency
+  via: OfficialCurrencies
+  source: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- from: Currency
+  relationship: has_many
+  to: Country
+  via: Countries
+  source: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- from: RateTableLine
+  relationship: has_many
+  to: QuoteCurrencyItem
+  via: Columns
+  source: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+- from: CountryDescription
+  relationship: has_many
+  to: FundType
+  via: FundTypes
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: BreakdownSet
+  relationship: has_many
+  to: BreakdownRecord
+  via: BreakdownRecords
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: HoldingsSet
+  relationship: has_many
+  to: HoldingsBreakdown
+  via: Holdings
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: ManagersSet
+  relationship: has_many
+  to: ManagerBreakdown
+  via: ManagerBreakdowns
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: Breakdown
+  relationship: has_many
+  to: BreakdownSet
+  via: BreakdownSets
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: FeeSchedules
+  relationship: has_many
+  to: FeeSchedule
+  via: FeeSchedule
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: FundDescription
+  relationship: has_many
+  to: ExchangeDescription
+  via: ExchangeDescriptions
+  source: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
+- from: ExchangeList
+  relationship: has_many
+  to: ExchangeDescription
+  via: ExchangeDescriptions
+  source: openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- from: SymbolList
+  relationship: has_many
+  to: SecurityDescription
+  via: SecurityDescriptions
+  source: openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- from: SymbolChangeList
+  relationship: has_many
+  to: SymbolChange
+  via: SymbolChanges
+  source: openapi/xignite-xigniteglobalhistorical-api-openapi.yml
+- from: SecurityHeadline
+  relationship: has_many
+  to: TagGroup
+  via: Tags
+  source: openapi/xignite-xigniteglobalnews-api-openapi.yml
+- from: MarketHeadline
+  relationship: has_many
+  to: Security
+  via: Securities
+  source: openapi/xignite-xigniteglobalnews-api-openapi.yml
+- from: MarketHeadline
+  relationship: has_many
+  to: TagGroup
+  via: Tags
+  source: openapi/xignite-xigniteglobalnews-api-openapi.yml
+- from: GreeksByExpiration
+  relationship: has_many
+  to: OptionGreeks
+  via: CallOptionGreeks
+  source: openapi/xignite-xigniteglobaloptions-api-openapi.yml
+- from: GreeksByExpiration
+  relationship: has_many
+  to: OptionGreeks
+  via: PutOptionGreeks
+  source: openapi/xignite-xigniteglobaloptions-api-openapi.yml

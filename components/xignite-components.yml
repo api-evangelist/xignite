@@ -1,0 +1,18 @@
+generated: '2026-07-22'
+method: searched
+source: https://github.com/Xignite
+components:
+- family: Search / typeahead
+  name: xignite-typeahead
+  kind: javascript-plugin
+  url: https://github.com/Xignite/xignite-typeahead
+  description: Client-side typeahead plugin for XigniteSearch — embeds symbol/instrument search suggestions
+    in web apps.
+  official: true
+- family: Search / typeahead
+  name: xignitetypeahead-legacy
+  kind: jquery-plugin
+  url: https://github.com/Xignite/xignitetypeahead-legacy
+  description: Legacy jQuery plugin for XigniteSearch typeahead.
+  official: true
+  status: legacy

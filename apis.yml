@@ -2,15 +2,25 @@ aid: xignite
 url: https://raw.githubusercontent.com/api-evangelist/xignite/refs/heads/main/apis.yml
 name: Xignite
 kind: company
-description: Xignite pioneered cloud-based financial market data APIs, offering a catalog
-  of 40+ REST web services covering equities, forex, crypto, indices, options, futures, fixed
-  income, mutual funds, corporate actions, news, ESG, and reference data. Each API lives on
-  its own subdomain (for example globalquotes.xignite.com) and returns JSON, XML, or CSV,
-  with bulk datasets delivered as files via CloudFiles and streaming quotes via its CloudStreaming
-  product. Founded in 2000, Xignite was acquired by QUODD (a NewSpring Holdings company) in
-  February 2023; the xignite.com developer catalog remains live while corporate pages redirect
+description: Xignite pioneered cloud-based financial market data APIs, offering a catalog of 40+ REST
+  web services covering equities, forex, crypto, indices, options, futures, fixed income, mutual funds,
+  corporate actions, news, ESG, and reference data. Each API lives on its own subdomain (for example globalquotes.xignite.com)
+  and returns JSON, XML, or CSV, with bulk datasets delivered as files via CloudFiles and streaming quotes
+  via its CloudStreaming product. Founded in 2000, Xignite was acquired by QUODD (a NewSpring Holdings
+  company) in February 2023; the xignite.com developer catalog remains live while corporate pages redirect
   to quodd.com, and QUODD runs a newer developer platform at developer.quodd.com.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/xignite.png
 tags:
 - Financial
 - Market Data
@@ -27,7 +37,7 @@ tags:
 - ESG
 - News
 created: '2026-07-21'
-modified: '2026-07-21'
+modified: '2026-07-22'
 specificationVersion: '0.19'
 apis:
 - aid: xignite:xignite-global-quotes-api
@@ -42,11 +52,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/global-stock-quote-data/
     type: Documentation
-  - url: openapi/xignite-global-quotes-openapi.json
+  - url: openapi/xignite-xigniteglobalquotes-api-openapi.yml
     type: OpenAPI
-  description: Delayed stock quotes for equities across global exchanges, served as REST operations
-    (GetGlobalDelayedQuote, symbol changes, chart bars) in JSON, XML, or CSV from the globalquotes.xignite.com
-    service.
+  - url: overlays/xignite-xigniteglobalquotes-overlay.yaml
+    type: Overlay
+  description: Delayed stock quotes for equities across global exchanges, served as REST operations (GetGlobalDelayedQuote,
+    symbol changes, chart bars) in JSON, XML, or CSV from the globalquotes.xignite.com service.
 - aid: xignite:xignite-global-real-time-api
   name: Xignite Global Real-Time API
   tags:
@@ -59,10 +70,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/global-real-time-stock-quote-data/
     type: Documentation
-  - url: openapi/xignite-global-real-time-openapi.json
+  - url: openapi/xignite-xigniteglobalrealtime-api-openapi.yml
     type: OpenAPI
-  description: Real-time stock quote data for global equities via REST request/response operations
-    on the globalrealtime.xignite.com service.
+  - url: overlays/xignite-xigniteglobalrealtime-overlay.yaml
+    type: Overlay
+  description: Real-time stock quote data for global equities via REST request/response operations on
+    the globalrealtime.xignite.com service.
 - aid: xignite:xignite-global-historical-api
   name: Xignite Global Historical API
   tags:
@@ -75,11 +88,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/historical-stock-prices/
     type: Documentation
-  - url: openapi/xignite-global-historical-openapi.json
+  - url: openapi/xignite-xigniteglobalhistorical-api-openapi.yml
     type: OpenAPI
-  description: End-of-day and historical equity prices including historical quote ranges,
-    chart bars, adjustment factors, and cash dividend history from the globalhistorical.xignite.com
-    service.
+  - url: overlays/xignite-xigniteglobalhistorical-overlay.yaml
+    type: Overlay
+  description: End-of-day and historical equity prices including historical quote ranges, chart bars,
+    adjustment factors, and cash dividend history from the globalhistorical.xignite.com service.
 - aid: xignite:xignite-global-currencies-api
   name: Xignite Global Currencies API
   tags:
@@ -92,11 +106,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/forex/
     type: Documentation
-  - url: openapi/xignite-global-currencies-openapi.json
+  - url: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
     type: OpenAPI
-  description: Real-time, historical, and average foreign exchange rates - one of Xignite's
-    longest-running and most widely used APIs - served from the globalcurrencies.xignite.com
-    service.
+  - url: overlays/xignite-xigniteglobalcurrencies-overlay.yaml
+    type: Overlay
+  description: Real-time, historical, and average foreign exchange rates - one of Xignite's longest-running
+    and most widely used APIs - served from the globalcurrencies.xignite.com service.
 - aid: xignite:xignite-global-metals-api
   name: Xignite Global Metals API
   tags:
@@ -109,10 +124,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/gold-metal/
     type: Documentation
-  - url: openapi/xignite-global-metals-openapi.json
+  - url: openapi/xignite-xigniteglobalmetals-api-openapi.yml
     type: OpenAPI
-  description: Spot prices, bars, and historical rates for precious metals such as gold, silver,
-    platinum, and palladium from the globalmetals.xignite.com service.
+  - url: overlays/xignite-xigniteglobalmetals-overlay.yaml
+    type: Overlay
+  description: Spot prices, bars, and historical rates for precious metals such as gold, silver, platinum,
+    and palladium from the globalmetals.xignite.com service.
 - aid: xignite:xignite-crypto-api
   name: Xignite Crypto API
   tags:
@@ -125,10 +142,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/cryptocurrency-api/
     type: Documentation
-  - url: openapi/xignite-crypto-openapi.json
+  - url: openapi/xignite-xignitecrypto-api-openapi.yml
     type: OpenAPI
-  description: Cryptocurrency market data including quotes, chart bars, and historical prices
-    for digital assets from the crypto.xignite.com service.
+  - url: overlays/xignite-xignitecrypto-overlay.yaml
+    type: Overlay
+  description: Cryptocurrency market data including quotes, chart bars, and historical prices for digital
+    assets from the crypto.xignite.com service.
 - aid: xignite:xignite-global-indices-api
   name: Xignite Global Indices API
   tags:
@@ -141,10 +160,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/index-values/
     type: Documentation
-  - url: openapi/xignite-global-indices-openapi.json
+  - url: openapi/xignite-xigniteglobalindices-api-openapi.yml
     type: OpenAPI
-  description: Stock market index and benchmark values with chart bars and index metadata
-    from the globalindices.xignite.com service.
+  - url: overlays/xignite-xigniteglobalindices-overlay.yaml
+    type: Overlay
+  description: Stock market index and benchmark values with chart bars and index metadata from the globalindices.xignite.com
+    service.
 - aid: xignite:xignite-global-options-api
   name: Xignite Global Options API
   tags:
@@ -157,10 +178,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/global-option-price-data/
     type: Documentation
-  - url: openapi/xignite-global-options-openapi.json
+  - url: openapi/xignite-xigniteglobaloptions-api-openapi.yml
     type: OpenAPI
-  description: Option price data including quotes and chains for listed equity options from
-    the globaloptions.xignite.com service.
+  - url: overlays/xignite-xigniteglobaloptions-overlay.yaml
+    type: Overlay
+  description: Option price data including quotes and chains for listed equity options from the globaloptions.xignite.com
+    service.
 - aid: xignite:xignite-global-futures-api
   name: Xignite Global Futures API
   tags:
@@ -173,10 +196,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/XigniteGlobalFutures/
     type: Documentation
-  - url: openapi/xignite-global-futures-openapi.json
+  - url: openapi/xignite-xigniteglobalfutures-api-openapi.yml
     type: OpenAPI
-  description: Futures contract prices and metadata across commodity, index, and financial
-    futures from the globalfutures.xignite.com service.
+  - url: overlays/xignite-xigniteglobalfutures-overlay.yaml
+    type: Overlay
+  description: Futures contract prices and metadata across commodity, index, and financial futures from
+    the globalfutures.xignite.com service.
 - aid: xignite:xignite-bonds-api
   name: Xignite Bonds API
   tags:
@@ -189,8 +214,10 @@ apis:
   properties:
   - url: https://www.xignite.com/product/bond-prices/
     type: Documentation
-  - url: openapi/xignite-bonds-openapi.json
+  - url: openapi/xignite-xignitebonds-api-openapi.yml
     type: OpenAPI
+  - url: overlays/xignite-xignitebonds-overlay.yaml
+    type: Overlay
   description: Bond price data for fixed income securities from the bonds.xignite.com service.
 - aid: xignite:xignite-money-markets-api
   name: Xignite Money Markets API
@@ -204,8 +231,10 @@ apis:
   properties:
   - url: https://www.xignite.com/product/swaps-treasuries-data/
     type: Documentation
-  - url: openapi/xignite-money-markets-openapi.json
+  - url: openapi/xignite-xignitemoneymarkets-api-openapi.yml
     type: OpenAPI
+  - url: overlays/xignite-xignitemoneymarkets-overlay.yaml
+    type: Overlay
   description: Money market, treasury, swap, and interbank rate data from the moneymarkets.xignite.com
     service.
 - aid: xignite:xignite-global-master-api
@@ -220,10 +249,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/global-security-master-data/
     type: Documentation
-  - url: openapi/xignite-global-master-openapi.json
+  - url: openapi/xignite-xigniteglobalmaster-api-openapi.yml
     type: OpenAPI
-  description: Global security master and reference data - symbology, listings, identifiers,
-    and instrument metadata - from the globalmaster.xignite.com service.
+  - url: overlays/xignite-xigniteglobalmaster-overlay.yaml
+    type: Overlay
+  description: Global security master and reference data - symbology, listings, identifiers, and instrument
+    metadata - from the globalmaster.xignite.com service.
 - aid: xignite:xignite-global-corporate-actions-api
   name: Xignite Global Corporate Actions API
   tags:
@@ -236,10 +267,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/XigniteGlobalCorporateActions/
     type: Documentation
-  - url: openapi/xignite-global-corporate-actions-openapi.json
+  - url: openapi/xignite-xigniteglobalcorporateactions-api-openapi.yml
     type: OpenAPI
-  description: Corporate action events such as dividends, splits, mergers, and symbol changes
-    from the globalcorporateactions.xignite.com service.
+  - url: overlays/xignite-xigniteglobalcorporateactions-overlay.yaml
+    type: Overlay
+  description: Corporate action events such as dividends, splits, mergers, and symbol changes from the
+    globalcorporateactions.xignite.com service.
 - aid: xignite:xignite-global-news-api
   name: Xignite Global News API
   tags:
@@ -252,10 +285,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/company-financial-news/
     type: Documentation
-  - url: openapi/xignite-global-news-openapi.json
+  - url: openapi/xignite-xigniteglobalnews-api-openapi.yml
     type: OpenAPI
-  description: Company financial news headlines, market summaries, and press release data
-    from the globalnews.xignite.com service.
+  - url: overlays/xignite-xigniteglobalnews-overlay.yaml
+    type: Overlay
+  description: Company financial news headlines, market summaries, and press release data from the globalnews.xignite.com
+    service.
 - aid: xignite:xignite-earnings-calendar-api
   name: Xignite Earnings Calendar API
   tags:
@@ -268,8 +303,10 @@ apis:
   properties:
   - url: https://www.xignite.com/product/earnings-calendar-data/
     type: Documentation
-  - url: openapi/xignite-earnings-calendar-openapi.json
+  - url: openapi/xignite-xigniteearningscalendar-api-openapi.yml
     type: OpenAPI
+  - url: overlays/xignite-xigniteearningscalendar-overlay.yaml
+    type: Overlay
   description: Company earnings announcement dates and earnings calendar data from the earningscalendar.xignite.com
     service.
 - aid: xignite:xignite-navs-api
@@ -284,10 +321,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/mutual-fund-NAVs/
     type: Documentation
-  - url: openapi/xignite-navs-openapi.json
+  - url: openapi/xignite-xignitenavs-api-openapi.yml
     type: OpenAPI
-  description: Mutual fund net asset values (NAVs), adjustment factors, and fund pricing history
-    from the navs.xignite.com service.
+  - url: overlays/xignite-xignitenavs-overlay.yaml
+    type: Overlay
+  description: Mutual fund net asset values (NAVs), adjustment factors, and fund pricing history from
+    the navs.xignite.com service.
 - aid: xignite:xignite-global-fund-fundamentals-api
   name: Xignite Global Fund Fundamentals API
   tags:
@@ -300,10 +339,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/global-fund-market-data/
     type: Documentation
-  - url: openapi/xignite-global-fund-fundamentals-openapi.json
+  - url: openapi/xignite-xigniteglobalfundfundamentals-api-openapi.yml
     type: OpenAPI
-  description: Fund fundamental data - holdings, performance, and profile details for mutual
-    funds and ETFs - from the globalfundfundamentals.xignite.com service.
+  - url: overlays/xignite-xigniteglobalfundfundamentals-overlay.yaml
+    type: Overlay
+  description: Fund fundamental data - holdings, performance, and profile details for mutual funds and
+    ETFs - from the globalfundfundamentals.xignite.com service.
 - aid: xignite:xignite-factset-fundamentals-api
   name: Xignite FactSet Fundamentals API
   tags:
@@ -316,10 +357,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/factset-fundamentals-financials/
     type: Documentation
-  - url: openapi/xignite-factset-fundamentals-openapi.json
+  - url: openapi/xignite-xignitefactsetfundamentals-api-openapi.yml
     type: OpenAPI
-  description: Company fundamentals and financial statement data sourced from FactSet, served
-    from the factsetfundamentals.xignite.com service.
+  - url: overlays/xignite-xignitefactsetfundamentals-overlay.yaml
+    type: Overlay
+  description: Company fundamentals and financial statement data sourced from FactSet, served from the
+    factsetfundamentals.xignite.com service.
 - aid: xignite:xignite-global-esg-api
   name: Xignite Global ESG API
   tags:
@@ -332,8 +375,10 @@ apis:
   properties:
   - url: https://www.xignite.com/product/esg-api/
     type: Documentation
-  - url: openapi/xignite-global-esg-openapi.json
+  - url: openapi/xignite-xigniteglobalesg-api-openapi.yml
     type: OpenAPI
+  - url: overlays/xignite-xigniteglobalesg-overlay.yaml
+    type: Overlay
   description: Environmental, social, and governance (ESG) data for companies from the globalesg.xignite.com
     service.
 - aid: xignite:xignite-global-holidays-api
@@ -348,10 +393,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/exchange-hours-calendars/
     type: Documentation
-  - url: openapi/xignite-global-holidays-openapi.json
+  - url: openapi/xignite-xigniteglobalholidays-api-openapi.yml
     type: OpenAPI
-  description: Exchange trading hours, market holidays, and calendar data for global exchanges
-    from the globalholidays.xignite.com service.
+  - url: overlays/xignite-xigniteglobalholidays-overlay.yaml
+    type: Overlay
+  description: Exchange trading hours, market holidays, and calendar data for global exchanges from the
+    globalholidays.xignite.com service.
 - aid: xignite:xignite-cloud-alerts-api
   name: Xignite CloudAlerts API
   tags:
@@ -364,10 +411,12 @@ apis:
   properties:
   - url: https://www.xignite.com/product/market-data-alerts/
     type: Documentation
-  - url: openapi/xignite-cloud-alerts-openapi.json
+  - url: openapi/xignite-cloudalerts-api-openapi.yml
     type: OpenAPI
-  description: Market event alerting - create and manage alerts on market data conditions
-    - from the alerts.xignite.com service.
+  - url: overlays/xignite-cloudalerts-overlay.yaml
+    type: Overlay
+  description: Market event alerting - create and manage alerts on market data conditions - from the alerts.xignite.com
+    service.
 - aid: xignite:xignite-cloud-streaming-api
   name: Xignite CloudStreaming API
   tags:
@@ -379,9 +428,9 @@ apis:
   properties:
   - url: https://www.xignite.com/product/CloudStreaming/
     type: Documentation
-  description: Streaming product for pushing real-time quotes directly to applications. The
-    product page is live but transport details (protocol, endpoints) are only documented behind
-    registration; no public spec was found, so none is included here.
+  description: Streaming product for pushing real-time quotes directly to applications. The product page
+    is live but transport details (protocol, endpoints) are only documented behind registration; no public
+    spec was found, so none is included here.
 - aid: xignite:xignite-cloud-files-api
   name: Xignite CloudFiles API
   tags:
@@ -394,12 +443,19 @@ apis:
   properties:
   - url: https://www.xignite.com/product/historical-equities-prices-file/
     type: Documentation
-  - url: openapi/xignite-cloud-files-openapi.json
+  - url: openapi/xignite-xignitecloudfiles-api-openapi.yml
     type: OpenAPI
-  description: Bulk file delivery service behind Xignite's file products (historical equity
-    prices, bonds, options, currencies, and corporate actions files), served from the cloudfiles.xignite.com
-    service.
+  - url: overlays/xignite-xignitecloudfiles-overlay.yaml
+    type: Overlay
+  description: Bulk file delivery service behind Xignite's file products (historical equity prices, bonds,
+    options, currencies, and corporate actions files), served from the cloudfiles.xignite.com service.
 common:
+- type: DomainSecurity
+  url: security/xignite-domain-security.yml
+- type: AgenticAccess
+  url: agentic-access/xignite-agentic-access.yml
+- type: Authentication
+  url: authentication/xignite-authentication.yml
 - type: Website
   url: https://www.quodd.com/
 - type: Portal
@@ -420,6 +476,32 @@ common:
   url: https://quodd.com/privacy-policy
 - type: Support
   url: https://quodd.com/support
+- type: APIReference
+  url: https://www.xignite.com/developers
+- type: GettingStarted
+  url: https://www.xignite.com/Support/GettingStarted.aspx
+- type: Packages
+  url: packages/xignite-packages.yml
+- type: SDKs
+  url: packages/xignite-packages.yml
+- type: MCPServer
+  url: mcp/xignite-mcp.yml
+- type: LLMsTxt
+  url: llms/xignite-llms.txt
+- type: Conformance
+  url: conformance/xignite-conformance.yml
+- type: ErrorCatalog
+  url: errors/xignite-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/xignite-lifecycle.yml
+- type: Conventions
+  url: conventions/xignite-conventions.yml
+- type: Components
+  url: components/xignite-components.yml
+- type: DataModel
+  url: data-model/xignite-data-model.yml
+- type: AgentSkill
+  url: skills/_index.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

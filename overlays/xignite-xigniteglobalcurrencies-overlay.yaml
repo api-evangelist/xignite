@@ -1,0 +1,13 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Xignite xigniteglobalcurrencies
+  version: 1.0.0
+extends: openapi/xignite-xigniteglobalcurrencies-api-openapi.yml
+actions:
+- target: $.info
+  update:
+    x-apievangelist-provider: xignite
+    x-apievangelist-source: https://github.com/Xignite/swaggerhub
+    x-apievangelist-notes: Server URL corrected to the per-service host https://globalcurrencies.xignite.com
+      (a prior refine pass had flattened all servers to bonds.xignite.com). Authentication is an apiKey
+      _token query parameter; every response is HTTP 200 with an in-band Outcome envelope (Success/SystemError/RequestError/RegistrationError).

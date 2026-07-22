@@ -1,0 +1,20 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ paths + https://www.xignite.com + https://quodd.com
+versioning:
+  scheme: uri-path
+  current: v3
+  note: Most services version in the URI path (/v3/xService/Operation); xGlobalCurrencies and xAlerts
+    operations are unversioned. No published versioning policy document was found.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No public deprecation policy or RFC 8594 Sunset header support found.
+status_page: null
+sla: null
+business_lifecycle:
+  note: Xignite was acquired by QUODD (a NewSpring Holdings company) in February 2023. The xignite.com
+    developer catalog and API services remain live, while corporate pages redirect to quodd.com and new
+    development is directed at developer.quodd.com — treat the Xignite catalog as maintenance-mode with
+    QUODD as the successor platform.
+deprecated_operations: []

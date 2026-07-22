@@ -1,0 +1,27 @@
+generated: '2026-07-22'
+method: searched
+note: www.xignite.com serves the QUODD marketing page (HTML shell) for unknown paths including /.well-known/*,
+  so HTTP 200 responses there are not real well-known documents. API service hosts (for example globalquotes.xignite.com)
+  return 404 or an HTML catch-all page. No well-known documents were found; no raw files saved.
+hosts:
+- host: https://www.xignite.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: html-shell (QUODD marketing page), not a security.txt
+  - path: /llms.txt
+    status: 200
+    result: html-shell (QUODD marketing page), not an llms.txt
+- host: https://quodd.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://globalquotes.xignite.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /openapi.json
+    status: 200
+    result: html-shell (site catch-all page), not an OpenAPI document
+  - path: /swagger.json
+    status: 404

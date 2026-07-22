@@ -1,0 +1,33 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ Common + OutcomeTypes schemas (shared across all specs)
+format: vendor-envelope
+envelope:
+  note: Xignite services return HTTP 200 for both success and failure. Every response carries a shared
+    envelope (schema Common) with Outcome, Message, Identity, and Delay fields; errors are signaled in-band
+    by the Outcome enum plus a human-readable Message.
+  fields:
+  - Outcome
+  - Message
+  - Identity
+  - Delay
+problems:
+- outcome: Success
+  title: Request succeeded
+  severity: none
+  source: components.schemas.OutcomeTypes
+- outcome: RequestError
+  title: Request error
+  detail: The request was invalid — a bad symbol, malformed parameter, or unsupported argument. Inspect
+    the Message field and correct the request.
+  source: components.schemas.OutcomeTypes
+- outcome: RegistrationError
+  title: Registration / authentication error
+  detail: The _token credential is missing, invalid, or not entitled to the requested service. Verify
+    the account token and product entitlements.
+  source: components.schemas.OutcomeTypes
+- outcome: SystemError
+  title: System error
+  detail: A provider-side failure occurred while servicing the request. Retry later; contact support if
+    it persists.
+  source: components.schemas.OutcomeTypes

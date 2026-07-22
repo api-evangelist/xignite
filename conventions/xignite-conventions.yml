@@ -1,0 +1,40 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ (all specs) + https://www.xignite.com/developers
+architecture:
+  style: RPC-over-HTTP GET
+  note: Each product is its own subdomain service (globalquotes.xignite.com, bonds.xignite.com, ...).
+    Operations are GET requests of the form /vN/xServiceName/OperationName with query parameters; operation
+    names use Get*/List*/Convert* verbs. Specs carry no operationIds — the operation name is the final
+    path segment.
+authentication:
+  style: apiKey
+  parameter: _token
+  in: query
+  cross_link: authentication/xignite-authentication.yml
+idempotency:
+  supported: false
+  note: No Idempotency-Key contract is documented. All catalogued operations are HTTP GET reads (safe/idempotent
+    by HTTP semantics), but CloudAlerts tunnels writes (CreateAlert, DeleteAlerts) over GET, so no formal
+    idempotency guarantee exists for those.
+pagination:
+  style: none
+  note: No cursor/offset pagination convention; range operations bound results with StartDate/EndDate
+    style query parameters.
+formats:
+  response_formats:
+  - JSON
+  - XML
+  - CSV
+  note: Per the product documentation, services return JSON, XML, or CSV.
+error_envelope:
+  shape: Outcome/Message/Identity/Delay on every response, HTTP 200 for success and failure
+  cross_link: errors/xignite-problem-types.yml
+versioning:
+  scheme: uri-path (v3 on most services)
+  cross_link: lifecycle/xignite-lifecycle.yml
+rate_limits:
+  note: No rate-limit headers or published rate-limit policy found.
+request_tracing:
+  note: No request-id tracing header documented; the Identity field of the response envelope echoes the
+    authenticated identity.
