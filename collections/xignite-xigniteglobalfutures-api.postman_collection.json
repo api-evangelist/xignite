@@ -1,0 +1,2355 @@
+{
+  "item": [
+    {
+      "id": "99174a17-acd7-4a66-b6ee-1f7ef9cb5869",
+      "name": "XigniteGlobalFutures",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "5211f009-68c7-43ae-b017-d0190b787e17",
+          "name": "/V2/xGlobalFutures/ListBaseFutures",
+          "request": {
+            "name": "/V2/xGlobalFutures/ListBaseFutures",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "ListBaseFutures"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a44cf285-4741-44e2-b7d2-82222473a9d6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "ListBaseFutures"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8134.417128346184,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 4640,\n    \"Name\": \"string\",\n    \"Month\": 7584,\n    \"Year\": 8945,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Currencies\",\n    \"ContractSize\": 474.46917373770935\n  },\n  {\n    \"Delay\": 9869.815799577489,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1138,\n    \"Name\": \"string\",\n    \"Month\": 2042,\n    \"Year\": 3539,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Commodities\",\n    \"ContractSize\": 3288.3744988447893\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2d39f760-6f71-44c5-a00d-c45e012e026e",
+          "name": "/V2/xGlobalFutures/ListFutureChain",
+          "request": {
+            "name": "/V2/xGlobalFutures/ListFutureChain",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "ListFutureChain"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Basesymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a30312a8-342d-423c-83ad-ef5eaa9072cd",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "ListFutureChain"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Basesymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8134.417128346184,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 4640,\n    \"Name\": \"string\",\n    \"Month\": 7584,\n    \"Year\": 8945,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Currencies\",\n    \"ContractSize\": 474.46917373770935\n  },\n  {\n    \"Delay\": 9869.815799577489,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1138,\n    \"Name\": \"string\",\n    \"Month\": 2042,\n    \"Year\": 3539,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Commodities\",\n    \"ContractSize\": 3288.3744988447893\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "65f950fd-efa5-45f7-bb23-12cfa7cc014b",
+          "name": "/V2/xGlobalFutures/ListFutureExchanges",
+          "request": {
+            "name": "/V2/xGlobalFutures/ListFutureExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "ListFutureExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6b3507ba-21a3-468e-a367-693696f1b920",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "ListFutureExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9746.361980642141,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Name\": \"string\",\n    \"Description\": \"string\",\n    \"MIC\": \"string\",\n    \"Group\": \"string\",\n    \"Realtime\": false\n  },\n  {\n    \"Delay\": 6861.215293809638,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"Description\": \"string\",\n    \"MIC\": \"string\",\n    \"Group\": \"string\",\n    \"Realtime\": false\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1430270c-c1ba-4f92-91cd-32a9f0007e13",
+          "name": "/V2/xGlobalFutures/ListOptionChain",
+          "request": {
+            "name": "/V2/xGlobalFutures/ListOptionChain",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "ListOptionChain"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Futuresymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Style",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8f2b6648-d6b1-4c6f-ace2-8c720972706a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "ListOptionChain"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Futuresymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Style",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4877.963364859367,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 2141,\n    \"Name\": \"string\",\n    \"Month\": 2839,\n    \"Year\": 8403,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"StrikeDate\": \"string\",\n    \"StrikePrice\": 1454.4077787479614,\n    \"Type\": \"Call\"\n  },\n  {\n    \"Delay\": 1334.8021833356315,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 2640,\n    \"Name\": \"string\",\n    \"Month\": 7409,\n    \"Year\": 8505,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"StrikeDate\": \"string\",\n    \"StrikePrice\": 6297.142010800079,\n    \"Type\": \"Call\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "18bea8b8-f3f2-4f1f-8fc4-4ddbdf555ec1",
+          "name": "/V2/xGlobalFutures/GetFrontMonthFuture",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetFrontMonthFuture",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetFrontMonthFuture"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "19f53a1a-5c15-4f96-8b5d-51eb370ea1a5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetFrontMonthFuture"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2427.9371494860748,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Symbol\": \"string\",\n  \"Valoren\": 7491,\n  \"Name\": \"string\",\n  \"Month\": 584,\n  \"Year\": 2712,\n  \"Exchange\": \"string\",\n  \"BaseSymbol\": \"string\",\n  \"ExchangeSymbol\": \"string\",\n  \"Expiration\": \"string\",\n  \"Type\": \"Commodities\",\n  \"ContractSize\": 711.7027365688156\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b006d115-86e5-41b0-a608-90716d85db4c",
+          "name": "/V2/xGlobalFutures/GetFuture",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetFuture",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetFuture"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "660cb2ca-249b-4b24-85bb-a3da57634ff4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetFuture"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2427.9371494860748,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Symbol\": \"string\",\n  \"Valoren\": 7491,\n  \"Name\": \"string\",\n  \"Month\": 584,\n  \"Year\": 2712,\n  \"Exchange\": \"string\",\n  \"BaseSymbol\": \"string\",\n  \"ExchangeSymbol\": \"string\",\n  \"Expiration\": \"string\",\n  \"Type\": \"Commodities\",\n  \"ContractSize\": 711.7027365688156\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d3e3f1f8-4388-41b9-8d3d-f44b2a06ff7f",
+          "name": "/V2/xGlobalFutures/SearchFutures",
+          "request": {
+            "name": "/V2/xGlobalFutures/SearchFutures",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "SearchFutures"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Name",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "84cc2601-91d4-4549-a63a-74071ef8e174",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "SearchFutures"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8134.417128346184,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 4640,\n    \"Name\": \"string\",\n    \"Month\": 7584,\n    \"Year\": 8945,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Currencies\",\n    \"ContractSize\": 474.46917373770935\n  },\n  {\n    \"Delay\": 9869.815799577489,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1138,\n    \"Name\": \"string\",\n    \"Month\": 2042,\n    \"Year\": 3539,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Commodities\",\n    \"ContractSize\": 3288.3744988447893\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "79bd9486-f911-4e59-8453-2ee83f39f42c",
+          "name": "/V2/xGlobalFutures/MapLegacyBaseSymbol",
+          "request": {
+            "name": "/V2/xGlobalFutures/MapLegacyBaseSymbol",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "MapLegacyBaseSymbol"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "LegacyIdentifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LegacyExchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "73d5c4e4-bf19-4c62-a17c-e0f6734dc8c8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "MapLegacyBaseSymbol"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "LegacyIdentifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "LegacyExchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4710.544257939089,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"LegacyExchange\": \"string\",\n  \"LegacySymbol\": \"string\",\n  \"NewExchange\": \"string\",\n  \"NewSymbol\": \"string\",\n  \"V1Root\": \"string\",\n  \"PriceMultiplier\": 4448.609433815871\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "956426c6-b569-4f3b-9fb0-a77bf2873dcf",
+          "name": "/V2/xGlobalFutures/GetAllFutureQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetAllFutureQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetAllFutureQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c162f051-f3fe-41ab-86af-03d4a14d3b18",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetAllFutureQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5948.247716369456,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 756.0765643458744,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 2338,\n      \"Name\": \"string\",\n      \"Month\": 9494,\n      \"Year\": 2732,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 3174.4154258248536\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 8017.812572598698,\n    \"High\": 297.6283557779558,\n    \"Low\": 4591.069957218358,\n    \"Last\": 1979.8194987392037,\n    \"Bid\": 790.7774701063574,\n    \"Ask\": 2398.4883649638946,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1299.3572634085538,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 6791.887420701866,\n    \"OpenInterest\": 3625.606591416657,\n    \"PreviousClose\": 4860.683746215955,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 3584.4019878661725,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 2165.7841912348254,\n    \"PercentChange\": 4788.002239671238,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  },\n  {\n    \"Delay\": 8801.8169593328,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 815.3627563667387,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8012,\n      \"Name\": \"string\",\n      \"Month\": 4705,\n      \"Year\": 8722,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 1306.7959520410034\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 9871.852099314872,\n    \"High\": 8804.804148461613,\n    \"Low\": 9685.978000161025,\n    \"Last\": 1082.568214736812,\n    \"Bid\": 651.352796939032,\n    \"Ask\": 8876.90570795832,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1679.982796585422,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 3396.5323407241667,\n    \"OpenInterest\": 9925.205201726123,\n    \"PreviousClose\": 1343.941241825788,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 311.20836815060284,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 9027.989259409713,\n    \"PercentChange\": 9145.777765405048,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cc0e1e8c-3f92-4e00-9e67-1fef70be8fb1",
+          "name": "/V2/xGlobalFutures/GetAllOptionQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetAllOptionQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetAllOptionQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TradedOnly",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4ab59ce0-cfd5-4458-b2a3-8f9c7eebc536",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetAllOptionQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TradedOnly",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3796.7945465772723,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"FutureOption\": {\n      \"Delay\": 5719.1893668325865,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8336,\n      \"Name\": \"string\",\n      \"Month\": 820,\n      \"Year\": 7914,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"StrikeDate\": \"string\",\n      \"StrikePrice\": 5722.200363312531,\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 929.7765030303318,\n    \"Close\": 9338.111633071163,\n    \"High\": 4838.568130085874,\n    \"Low\": 4038.7547274079748,\n    \"Last\": 8410.314526386594,\n    \"Bid\": 4537.731000195287,\n    \"Ask\": 9526.528979823543,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 9562.93123684124,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 2692.1764035096185,\n    \"OpenInterest\": 905.0890887619023,\n    \"PreviousClose\": 8209.031403694475,\n    \"PreviousCloseDate\": \"string\",\n    \"Change\": 7232.364623091528,\n    \"PercentChange\": 7274.1912580858325,\n    \"Currency\": \"string\"\n  },\n  {\n    \"Delay\": 7246.588264812972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"FutureOption\": {\n      \"Delay\": 3040.7708692822166,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 5932,\n      \"Name\": \"string\",\n      \"Month\": 7386,\n      \"Year\": 3244,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"StrikeDate\": \"string\",\n      \"StrikePrice\": 8433.855206072689,\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 2213.5188121808023,\n    \"Close\": 5115.8600344558845,\n    \"High\": 3556.949812836191,\n    \"Low\": 1988.9754859239872,\n    \"Last\": 9547.442421671463,\n    \"Bid\": 4000.9436404071384,\n    \"Ask\": 3961.661450556765,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 6727.914864091843,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 506.7949466601096,\n    \"OpenInterest\": 2637.2499953572606,\n    \"PreviousClose\": 6499.378953027694,\n    \"PreviousCloseDate\": \"string\",\n    \"Change\": 2464.2604188780206,\n    \"PercentChange\": 6354.836899491022,\n    \"Currency\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "19a86a8b-150f-453a-8c18-4bb176795d6b",
+          "name": "/V2/xGlobalFutures/GetSpotFutureQuote",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetSpotFutureQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetSpotFutureQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0f1b45be-2cb2-4d26-9e50-56115c44fc81",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetSpotFutureQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4689.099138552592,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Future\": {\n    \"Delay\": 2595.352456810878,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1462,\n    \"Name\": \"string\",\n    \"Month\": 4090,\n    \"Year\": 7200,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Indices\",\n    \"ContractSize\": 8447.448771112568\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCDate\": \"string\",\n  \"UTCTime\": \"string\",\n  \"Open\": 6359.451748978051,\n  \"High\": 3903.521103932357,\n  \"Low\": 3393.8921910816675,\n  \"Last\": 5279.15480135109,\n  \"Bid\": 8558.10967260619,\n  \"Ask\": 3155.55504385192,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"Settle\": 9467.555488869128,\n  \"SettleDate\": \"string\",\n  \"SettleTime\": \"string\",\n  \"Volume\": 7091.415550890091,\n  \"OpenInterest\": 8359.98357416738,\n  \"PreviousClose\": 2458.1484102790896,\n  \"PreviousCloseDate\": \"string\",\n  \"PreviousSettle\": 5092.908795329162,\n  \"PreviousSettleDate\": \"string\",\n  \"Change\": 5846.503618619942,\n  \"PercentChange\": 2708.346229044223,\n  \"Currency\": \"string\",\n  \"Identifier\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "95794976-74e8-412a-8eab-bc5920f6963f",
+          "name": "/V2/xGlobalFutures/GetLatestFrontMonthFutureQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetLatestFrontMonthFutureQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetLatestFrontMonthFutureQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1b3a4362-03cc-401b-9d7e-c3f074267e3f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetLatestFrontMonthFutureQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5948.247716369456,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 756.0765643458744,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 2338,\n      \"Name\": \"string\",\n      \"Month\": 9494,\n      \"Year\": 2732,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 3174.4154258248536\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 8017.812572598698,\n    \"High\": 297.6283557779558,\n    \"Low\": 4591.069957218358,\n    \"Last\": 1979.8194987392037,\n    \"Bid\": 790.7774701063574,\n    \"Ask\": 2398.4883649638946,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1299.3572634085538,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 6791.887420701866,\n    \"OpenInterest\": 3625.606591416657,\n    \"PreviousClose\": 4860.683746215955,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 3584.4019878661725,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 2165.7841912348254,\n    \"PercentChange\": 4788.002239671238,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  },\n  {\n    \"Delay\": 8801.8169593328,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 815.3627563667387,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8012,\n      \"Name\": \"string\",\n      \"Month\": 4705,\n      \"Year\": 8722,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 1306.7959520410034\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 9871.852099314872,\n    \"High\": 8804.804148461613,\n    \"Low\": 9685.978000161025,\n    \"Last\": 1082.568214736812,\n    \"Bid\": 651.352796939032,\n    \"Ask\": 8876.90570795832,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1679.982796585422,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 3396.5323407241667,\n    \"OpenInterest\": 9925.205201726123,\n    \"PreviousClose\": 1343.941241825788,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 311.20836815060284,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 9027.989259409713,\n    \"PercentChange\": 9145.777765405048,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6e970dc6-fa49-43c0-b3a2-a6b9041f5e64",
+          "name": "/V2/xGlobalFutures/GetLatestFutureOptionQuote",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetLatestFutureOptionQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetLatestFutureOptionQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "385f503f-11c9-4569-ac72-2478ae783283",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetLatestFutureOptionQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5898.370252385894,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"FutureOption\": {\n    \"Delay\": 8100.95646406067,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 95,\n    \"Name\": \"string\",\n    \"Month\": 7628,\n    \"Year\": 8166,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"StrikeDate\": \"string\",\n    \"StrikePrice\": 3986.1862485691136,\n    \"Type\": \"Call\"\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCDate\": \"string\",\n  \"UTCTime\": \"string\",\n  \"Open\": 4168.151190208961,\n  \"Close\": 4119.774401531021,\n  \"High\": 2629.7705386051184,\n  \"Low\": 7776.515185553424,\n  \"Last\": 2194.5272395324932,\n  \"Bid\": 6942.149534020118,\n  \"Ask\": 6106.894139330394,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"Settle\": 8602.963957032714,\n  \"SettleDate\": \"string\",\n  \"SettleTime\": \"string\",\n  \"Volume\": 9055.580965236102,\n  \"OpenInterest\": 4532.071388358068,\n  \"PreviousClose\": 8613.24525737387,\n  \"PreviousCloseDate\": \"string\",\n  \"Change\": 2658.852631475738,\n  \"PercentChange\": 2716.2188009756405,\n  \"Currency\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5bf0819c-94de-49a2-a76e-64c95c965563",
+          "name": "/V2/xGlobalFutures/GetLatestFutureOptionQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetLatestFutureOptionQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetLatestFutureOptionQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3ea102fb-f1f5-4f29-b16f-56bd31591891",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetLatestFutureOptionQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3796.7945465772723,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"FutureOption\": {\n      \"Delay\": 5719.1893668325865,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8336,\n      \"Name\": \"string\",\n      \"Month\": 820,\n      \"Year\": 7914,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"StrikeDate\": \"string\",\n      \"StrikePrice\": 5722.200363312531,\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 929.7765030303318,\n    \"Close\": 9338.111633071163,\n    \"High\": 4838.568130085874,\n    \"Low\": 4038.7547274079748,\n    \"Last\": 8410.314526386594,\n    \"Bid\": 4537.731000195287,\n    \"Ask\": 9526.528979823543,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 9562.93123684124,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 2692.1764035096185,\n    \"OpenInterest\": 905.0890887619023,\n    \"PreviousClose\": 8209.031403694475,\n    \"PreviousCloseDate\": \"string\",\n    \"Change\": 7232.364623091528,\n    \"PercentChange\": 7274.1912580858325,\n    \"Currency\": \"string\"\n  },\n  {\n    \"Delay\": 7246.588264812972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"FutureOption\": {\n      \"Delay\": 3040.7708692822166,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 5932,\n      \"Name\": \"string\",\n      \"Month\": 7386,\n      \"Year\": 3244,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"StrikeDate\": \"string\",\n      \"StrikePrice\": 8433.855206072689,\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 2213.5188121808023,\n    \"Close\": 5115.8600344558845,\n    \"High\": 3556.949812836191,\n    \"Low\": 1988.9754859239872,\n    \"Last\": 9547.442421671463,\n    \"Bid\": 4000.9436404071384,\n    \"Ask\": 3961.661450556765,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 6727.914864091843,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 506.7949466601096,\n    \"OpenInterest\": 2637.2499953572606,\n    \"PreviousClose\": 6499.378953027694,\n    \"PreviousCloseDate\": \"string\",\n    \"Change\": 2464.2604188780206,\n    \"PercentChange\": 6354.836899491022,\n    \"Currency\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7c3b2255-ecd0-4998-a20c-a231ff55cfaa",
+          "name": "/V2/xGlobalFutures/GetLatestFutureQuote",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetLatestFutureQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetLatestFutureQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ba27a48b-2194-46e4-8c4c-2166e46fd9fd",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetLatestFutureQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4689.099138552592,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Future\": {\n    \"Delay\": 2595.352456810878,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1462,\n    \"Name\": \"string\",\n    \"Month\": 4090,\n    \"Year\": 7200,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Indices\",\n    \"ContractSize\": 8447.448771112568\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCDate\": \"string\",\n  \"UTCTime\": \"string\",\n  \"Open\": 6359.451748978051,\n  \"High\": 3903.521103932357,\n  \"Low\": 3393.8921910816675,\n  \"Last\": 5279.15480135109,\n  \"Bid\": 8558.10967260619,\n  \"Ask\": 3155.55504385192,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"Settle\": 9467.555488869128,\n  \"SettleDate\": \"string\",\n  \"SettleTime\": \"string\",\n  \"Volume\": 7091.415550890091,\n  \"OpenInterest\": 8359.98357416738,\n  \"PreviousClose\": 2458.1484102790896,\n  \"PreviousCloseDate\": \"string\",\n  \"PreviousSettle\": 5092.908795329162,\n  \"PreviousSettleDate\": \"string\",\n  \"Change\": 5846.503618619942,\n  \"PercentChange\": 2708.346229044223,\n  \"Currency\": \"string\",\n  \"Identifier\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "94729645-8f0b-45b2-9ea4-d9cd15da1a67",
+          "name": "/V2/xGlobalFutures/GetLatestFutureQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetLatestFutureQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetLatestFutureQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7868fb1c-30e5-4d04-8d40-40ecf8d6e4ce",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetLatestFutureQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5948.247716369456,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 756.0765643458744,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 2338,\n      \"Name\": \"string\",\n      \"Month\": 9494,\n      \"Year\": 2732,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 3174.4154258248536\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 8017.812572598698,\n    \"High\": 297.6283557779558,\n    \"Low\": 4591.069957218358,\n    \"Last\": 1979.8194987392037,\n    \"Bid\": 790.7774701063574,\n    \"Ask\": 2398.4883649638946,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1299.3572634085538,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 6791.887420701866,\n    \"OpenInterest\": 3625.606591416657,\n    \"PreviousClose\": 4860.683746215955,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 3584.4019878661725,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 2165.7841912348254,\n    \"PercentChange\": 4788.002239671238,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  },\n  {\n    \"Delay\": 8801.8169593328,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 815.3627563667387,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8012,\n      \"Name\": \"string\",\n      \"Month\": 4705,\n      \"Year\": 8722,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 1306.7959520410034\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 9871.852099314872,\n    \"High\": 8804.804148461613,\n    \"Low\": 9685.978000161025,\n    \"Last\": 1082.568214736812,\n    \"Bid\": 651.352796939032,\n    \"Ask\": 8876.90570795832,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1679.982796585422,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 3396.5323407241667,\n    \"OpenInterest\": 9925.205201726123,\n    \"PreviousClose\": 1343.941241825788,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 311.20836815060284,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 9027.989259409713,\n    \"PercentChange\": 9145.777765405048,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cb960060-23ca-4a20-ad58-3dfbb38cede4",
+          "name": "/V2/xGlobalFutures/GetFutureOptionQuote",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetFutureOptionQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetFutureOptionQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "03f350c8-368b-427d-8c5d-7edb412d3ff7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetFutureOptionQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5898.370252385894,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"FutureOption\": {\n    \"Delay\": 8100.95646406067,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 95,\n    \"Name\": \"string\",\n    \"Month\": 7628,\n    \"Year\": 8166,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"StrikeDate\": \"string\",\n    \"StrikePrice\": 3986.1862485691136,\n    \"Type\": \"Call\"\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCDate\": \"string\",\n  \"UTCTime\": \"string\",\n  \"Open\": 4168.151190208961,\n  \"Close\": 4119.774401531021,\n  \"High\": 2629.7705386051184,\n  \"Low\": 7776.515185553424,\n  \"Last\": 2194.5272395324932,\n  \"Bid\": 6942.149534020118,\n  \"Ask\": 6106.894139330394,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"Settle\": 8602.963957032714,\n  \"SettleDate\": \"string\",\n  \"SettleTime\": \"string\",\n  \"Volume\": 9055.580965236102,\n  \"OpenInterest\": 4532.071388358068,\n  \"PreviousClose\": 8613.24525737387,\n  \"PreviousCloseDate\": \"string\",\n  \"Change\": 2658.852631475738,\n  \"PercentChange\": 2716.2188009756405,\n  \"Currency\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4fd75e85-3d71-42d0-9fc4-902d03fbbf00",
+          "name": "/V2/xGlobalFutures/GetFutureOptionQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetFutureOptionQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetFutureOptionQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "58c52983-646b-4892-88b6-5af4d5829732",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetFutureOptionQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3796.7945465772723,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"FutureOption\": {\n      \"Delay\": 5719.1893668325865,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8336,\n      \"Name\": \"string\",\n      \"Month\": 820,\n      \"Year\": 7914,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"StrikeDate\": \"string\",\n      \"StrikePrice\": 5722.200363312531,\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 929.7765030303318,\n    \"Close\": 9338.111633071163,\n    \"High\": 4838.568130085874,\n    \"Low\": 4038.7547274079748,\n    \"Last\": 8410.314526386594,\n    \"Bid\": 4537.731000195287,\n    \"Ask\": 9526.528979823543,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 9562.93123684124,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 2692.1764035096185,\n    \"OpenInterest\": 905.0890887619023,\n    \"PreviousClose\": 8209.031403694475,\n    \"PreviousCloseDate\": \"string\",\n    \"Change\": 7232.364623091528,\n    \"PercentChange\": 7274.1912580858325,\n    \"Currency\": \"string\"\n  },\n  {\n    \"Delay\": 7246.588264812972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"FutureOption\": {\n      \"Delay\": 3040.7708692822166,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 5932,\n      \"Name\": \"string\",\n      \"Month\": 7386,\n      \"Year\": 3244,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"StrikeDate\": \"string\",\n      \"StrikePrice\": 8433.855206072689,\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 2213.5188121808023,\n    \"Close\": 5115.8600344558845,\n    \"High\": 3556.949812836191,\n    \"Low\": 1988.9754859239872,\n    \"Last\": 9547.442421671463,\n    \"Bid\": 4000.9436404071384,\n    \"Ask\": 3961.661450556765,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 6727.914864091843,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 506.7949466601096,\n    \"OpenInterest\": 2637.2499953572606,\n    \"PreviousClose\": 6499.378953027694,\n    \"PreviousCloseDate\": \"string\",\n    \"Change\": 2464.2604188780206,\n    \"PercentChange\": 6354.836899491022,\n    \"Currency\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e61b7922-90b1-4bbc-9375-8cf798a21970",
+          "name": "/V2/xGlobalFutures/GetFutureQuote",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetFutureQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetFutureQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "80f2ab92-c9d1-4385-aa7f-7550591a6f71",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetFutureQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4689.099138552592,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Future\": {\n    \"Delay\": 2595.352456810878,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1462,\n    \"Name\": \"string\",\n    \"Month\": 4090,\n    \"Year\": 7200,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Indices\",\n    \"ContractSize\": 8447.448771112568\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCDate\": \"string\",\n  \"UTCTime\": \"string\",\n  \"Open\": 6359.451748978051,\n  \"High\": 3903.521103932357,\n  \"Low\": 3393.8921910816675,\n  \"Last\": 5279.15480135109,\n  \"Bid\": 8558.10967260619,\n  \"Ask\": 3155.55504385192,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"Settle\": 9467.555488869128,\n  \"SettleDate\": \"string\",\n  \"SettleTime\": \"string\",\n  \"Volume\": 7091.415550890091,\n  \"OpenInterest\": 8359.98357416738,\n  \"PreviousClose\": 2458.1484102790896,\n  \"PreviousCloseDate\": \"string\",\n  \"PreviousSettle\": 5092.908795329162,\n  \"PreviousSettleDate\": \"string\",\n  \"Change\": 5846.503618619942,\n  \"PercentChange\": 2708.346229044223,\n  \"Currency\": \"string\",\n  \"Identifier\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6d47aa9e-b48e-4928-b63f-71a1a1a7b5b6",
+          "name": "/V2/xGlobalFutures/GetFutureQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetFutureQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetFutureQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d50f6849-a38f-41f2-a3c4-3060d75de836",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetFutureQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5948.247716369456,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 756.0765643458744,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 2338,\n      \"Name\": \"string\",\n      \"Month\": 9494,\n      \"Year\": 2732,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 3174.4154258248536\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 8017.812572598698,\n    \"High\": 297.6283557779558,\n    \"Low\": 4591.069957218358,\n    \"Last\": 1979.8194987392037,\n    \"Bid\": 790.7774701063574,\n    \"Ask\": 2398.4883649638946,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1299.3572634085538,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 6791.887420701866,\n    \"OpenInterest\": 3625.606591416657,\n    \"PreviousClose\": 4860.683746215955,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 3584.4019878661725,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 2165.7841912348254,\n    \"PercentChange\": 4788.002239671238,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  },\n  {\n    \"Delay\": 8801.8169593328,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 815.3627563667387,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8012,\n      \"Name\": \"string\",\n      \"Month\": 4705,\n      \"Year\": 8722,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 1306.7959520410034\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 9871.852099314872,\n    \"High\": 8804.804148461613,\n    \"Low\": 9685.978000161025,\n    \"Last\": 1082.568214736812,\n    \"Bid\": 651.352796939032,\n    \"Ask\": 8876.90570795832,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1679.982796585422,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 3396.5323407241667,\n    \"OpenInterest\": 9925.205201726123,\n    \"PreviousClose\": 1343.941241825788,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 311.20836815060284,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 9027.989259409713,\n    \"PercentChange\": 9145.777765405048,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f1667792-c0d8-4f66-90e3-ae341ca41670",
+          "name": "/V2/xGlobalFutures/GetSwapQuote",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetSwapQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetSwapQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b9529e10-6582-4fd5-ab58-4739a8c36ef4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetSwapQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4689.099138552592,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Future\": {\n    \"Delay\": 2595.352456810878,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Valoren\": 1462,\n    \"Name\": \"string\",\n    \"Month\": 4090,\n    \"Year\": 7200,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"ExchangeSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"Type\": \"Indices\",\n    \"ContractSize\": 8447.448771112568\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCDate\": \"string\",\n  \"UTCTime\": \"string\",\n  \"Open\": 6359.451748978051,\n  \"High\": 3903.521103932357,\n  \"Low\": 3393.8921910816675,\n  \"Last\": 5279.15480135109,\n  \"Bid\": 8558.10967260619,\n  \"Ask\": 3155.55504385192,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"Settle\": 9467.555488869128,\n  \"SettleDate\": \"string\",\n  \"SettleTime\": \"string\",\n  \"Volume\": 7091.415550890091,\n  \"OpenInterest\": 8359.98357416738,\n  \"PreviousClose\": 2458.1484102790896,\n  \"PreviousCloseDate\": \"string\",\n  \"PreviousSettle\": 5092.908795329162,\n  \"PreviousSettleDate\": \"string\",\n  \"Change\": 5846.503618619942,\n  \"PercentChange\": 2708.346229044223,\n  \"Currency\": \"string\",\n  \"Identifier\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "98edaf56-050b-41e5-b36a-822f6d78e6c1",
+          "name": "/V2/xGlobalFutures/GetHistoricalSwapQuotes",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetHistoricalSwapQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetHistoricalSwapQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "22a40f7d-7304-40a2-af02-11c0720a8171",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetHistoricalSwapQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5948.247716369456,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 756.0765643458744,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 2338,\n      \"Name\": \"string\",\n      \"Month\": 9494,\n      \"Year\": 2732,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 3174.4154258248536\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 8017.812572598698,\n    \"High\": 297.6283557779558,\n    \"Low\": 4591.069957218358,\n    \"Last\": 1979.8194987392037,\n    \"Bid\": 790.7774701063574,\n    \"Ask\": 2398.4883649638946,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1299.3572634085538,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 6791.887420701866,\n    \"OpenInterest\": 3625.606591416657,\n    \"PreviousClose\": 4860.683746215955,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 3584.4019878661725,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 2165.7841912348254,\n    \"PercentChange\": 4788.002239671238,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  },\n  {\n    \"Delay\": 8801.8169593328,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 815.3627563667387,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8012,\n      \"Name\": \"string\",\n      \"Month\": 4705,\n      \"Year\": 8722,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 1306.7959520410034\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 9871.852099314872,\n    \"High\": 8804.804148461613,\n    \"Low\": 9685.978000161025,\n    \"Last\": 1082.568214736812,\n    \"Bid\": 651.352796939032,\n    \"Ask\": 8876.90570795832,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1679.982796585422,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 3396.5323407241667,\n    \"OpenInterest\": 9925.205201726123,\n    \"PreviousClose\": 1343.941241825788,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 311.20836815060284,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 9027.989259409713,\n    \"PercentChange\": 9145.777765405048,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d1dce1ec-9d87-494e-8a98-2e9af6aaab54",
+          "name": "/V2/xGlobalFutures/GetHistoricalFutureQuotesRange",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetHistoricalFutureQuotesRange",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetHistoricalFutureQuotesRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d6a0011a-ccc0-45a7-971b-b734b91c9f6a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetHistoricalFutureQuotesRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5948.247716369456,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 756.0765643458744,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 2338,\n      \"Name\": \"string\",\n      \"Month\": 9494,\n      \"Year\": 2732,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 3174.4154258248536\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 8017.812572598698,\n    \"High\": 297.6283557779558,\n    \"Low\": 4591.069957218358,\n    \"Last\": 1979.8194987392037,\n    \"Bid\": 790.7774701063574,\n    \"Ask\": 2398.4883649638946,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1299.3572634085538,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 6791.887420701866,\n    \"OpenInterest\": 3625.606591416657,\n    \"PreviousClose\": 4860.683746215955,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 3584.4019878661725,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 2165.7841912348254,\n    \"PercentChange\": 4788.002239671238,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  },\n  {\n    \"Delay\": 8801.8169593328,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Future\": {\n      \"Delay\": 815.3627563667387,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"Valoren\": 8012,\n      \"Name\": \"string\",\n      \"Month\": 4705,\n      \"Year\": 8722,\n      \"Exchange\": \"string\",\n      \"BaseSymbol\": \"string\",\n      \"ExchangeSymbol\": \"string\",\n      \"Expiration\": \"string\",\n      \"Type\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ContractSize\": 1306.7959520410034\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCDate\": \"string\",\n    \"UTCTime\": \"string\",\n    \"Open\": 9871.852099314872,\n    \"High\": 8804.804148461613,\n    \"Low\": 9685.978000161025,\n    \"Last\": 1082.568214736812,\n    \"Bid\": 651.352796939032,\n    \"Ask\": 8876.90570795832,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"Settle\": 1679.982796585422,\n    \"SettleDate\": \"string\",\n    \"SettleTime\": \"string\",\n    \"Volume\": 3396.5323407241667,\n    \"OpenInterest\": 9925.205201726123,\n    \"PreviousClose\": 1343.941241825788,\n    \"PreviousCloseDate\": \"string\",\n    \"PreviousSettle\": 311.20836815060284,\n    \"PreviousSettleDate\": \"string\",\n    \"Change\": 9027.989259409713,\n    \"PercentChange\": 9145.777765405048,\n    \"Currency\": \"string\",\n    \"Identifier\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ddc90aab-1be4-4c41-95aa-c1d5758140fa",
+          "name": "/V2/xGlobalFutures/GetChartBars",
+          "request": {
+            "name": "/V2/xGlobalFutures/GetChartBars",
+            "description": {},
+            "url": {
+              "path": [
+                "V2",
+                "xGlobalFutures",
+                "GetChartBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IncludeExtended",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4711177d-6424-4919-a0d4-8dfe7e276c97",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "V2",
+                    "xGlobalFutures",
+                    "GetChartBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "IncludeExtended",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 813.5451177830877,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Timing\": \"string\",\n  \"FutureDescription\": {\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Name\": \"string\",\n    \"Month\": 4476,\n    \"Year\": 6806,\n    \"Exchange\": \"string\",\n    \"BaseSymbol\": \"string\",\n    \"Expiration\": \"string\",\n    \"ContractSize\": 2247.6693099667054\n  },\n  \"ChartBars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 4407.7525861107115,\n      \"Open\": 5669.770809053945,\n      \"High\": 8210.854064109775,\n      \"Low\": 311.6818344774186,\n      \"Close\": 3053.4864139378537,\n      \"Volume\": 394.62781783419666,\n      \"Trades\": 1210,\n      \"TWAP\": 1772.777579007677,\n      \"VWAP\": 6071.023087937614,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 2363.2137412193165\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 1528.2256330843459,\n      \"Open\": 6810.812078472016,\n      \"High\": 8375.921198618893,\n      \"Low\": 8604.466462724227,\n      \"Close\": 8102.611850000199,\n      \"Volume\": 4665.16115044905,\n      \"Trades\": 1281,\n      \"TWAP\": 6575.535365018965,\n      \"VWAP\": 7411.128217346348,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 8373.256657513362\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalfutures.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "93980f60-7007-422d-8eb4-75ac771bd784",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalFutures API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

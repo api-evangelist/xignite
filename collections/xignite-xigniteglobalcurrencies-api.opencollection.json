@@ -1,0 +1,688 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalCurrencies API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalCurrencies",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/ListCurrencies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/ListCurrencies"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/ListActiveCurrencies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/ListActiveCurrencies"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/ConvertRealTimeValue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/ConvertRealTimeValue",
+            "params": [
+              {
+                "name": "From",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "To",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Amount",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/ConvertHistoricalValue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/ConvertHistoricalValue",
+            "params": [
+              {
+                "name": "From",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "To",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Amount",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetRealTimeRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetRealTimeRate",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetRealTimeRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetRealTimeRates",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetAllRealTimeRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetAllRealTimeRates",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetRealTimeRateTable",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetRealTimeRateTable",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/ListOfficialRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/ListOfficialRates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetHistoricalRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetHistoricalRate",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetLatestHistoricalRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetLatestHistoricalRate",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetHistoricalRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetHistoricalRates",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetLatestHistoricalRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetLatestHistoricalRates",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetHistoricalRatesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetHistoricalRatesRange",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetHistoricalRatesRanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetHistoricalRatesRanges",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetBar",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetBar",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetBars",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TickPrecision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TickPeriods",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetChartBars",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetOfficialHistoricalRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetOfficialHistoricalRate",
+            "params": [
+              {
+                "name": "Country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetOfficialRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetOfficialRate",
+            "params": [
+              {
+                "name": "Country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetOfficialRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetOfficialRates",
+            "params": [
+              {
+                "name": "Country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetOfficialHistoricalRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetOfficialHistoricalRates",
+            "params": [
+              {
+                "name": "Country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetLondonHistoricalRatesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetLondonHistoricalRatesRange",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/GetForwardRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/GetForwardRate",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCurrencies/ListForwardRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcurrencies.xignite.com/xGlobalCurrencies/ListForwardRates"
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

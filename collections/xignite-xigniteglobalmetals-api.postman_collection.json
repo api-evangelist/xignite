@@ -1,0 +1,1917 @@
+{
+  "item": [
+    {
+      "id": "27095ffd-adb2-4468-965d-252d5025200e",
+      "name": "XigniteGlobalMetals",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "fdd402e4-b14b-4b4b-84ad-41defa1617a4",
+          "name": "/xGlobalMetals/ListMetals",
+          "request": {
+            "name": "/xGlobalMetals/ListMetals",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "ListMetals"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5475f476-0ad4-4350-84a2-654861dfc15a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "ListMetals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9857.184052199373,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"MetalList\": [\n    {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"Type\": \"string\",\n      \"Active\": true,\n      \"Message\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"Type\": \"string\",\n      \"Active\": true,\n      \"Message\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c7b88d52-243d-41cd-85e1-6f2aa5c8879b",
+          "name": "/xGlobalMetals/GetRealTimeMetalQuote",
+          "request": {
+            "name": "/xGlobalMetals/GetRealTimeMetalQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetRealTimeMetalQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "170cc13e-c732-49c4-a62d-d76e582103aa",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetRealTimeMetalQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9360.608938874822,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Name\": \"string\",\n  \"Symbol\": \"string\",\n  \"Unit\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Currency\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"Bid\": 2702.297856708911,\n  \"Mid\": 4690.733304087845,\n  \"Ask\": 768.0841208988743,\n  \"Spread\": 4979.315773401657,\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "26dcd7a3-92da-4ab8-a669-c6fcad965a82",
+          "name": "/xGlobalMetals/GetRealTimeMetalQuotes",
+          "request": {
+            "name": "/xGlobalMetals/GetRealTimeMetalQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetRealTimeMetalQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "95b21c37-9305-4b03-9bc4-88c9894ea61a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetRealTimeMetalQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8448.27223507708,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"Unit\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"Bid\": 9446.46184290633,\n    \"Mid\": 7248.973867610227,\n    \"Ask\": 9674.202186706443,\n    \"Spread\": 5833.452105188803,\n    \"Source\": \"string\"\n  },\n  {\n    \"Delay\": 5292.301661001136,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"Unit\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"Bid\": 8402.370395657346,\n    \"Mid\": 5164.189601529528,\n    \"Ask\": 3083.480112179774,\n    \"Spread\": 7529.625331263204,\n    \"Source\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4c09e24c-a8f2-4437-b159-3d18ab2add75",
+          "name": "/xGlobalMetals/GetRealTimeExtendedMetalQuote",
+          "request": {
+            "name": "/xGlobalMetals/GetRealTimeExtendedMetalQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetRealTimeExtendedMetalQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "51594d44-98c7-432f-b873-21a6ec50855c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetRealTimeExtendedMetalQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6428.505453651025,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Name\": \"string\",\n  \"Symbol\": \"string\",\n  \"Unit\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Currency\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"Bid\": 6551.949165805854,\n  \"Ask\": 9128.421025723503,\n  \"Spread\": 2542.969783791872,\n  \"Open\": 1139.1442040974541,\n  \"High\": 7745.498109367673,\n  \"Low\": 2278.7907814571718,\n  \"Close\": 7008.737495909632,\n  \"Average\": 1538.1954233149775,\n  \"PreviousClose\": 4625.512048875367,\n  \"PreviousCloseDate\": \"string\",\n  \"Change\": 4333.2751104996705,\n  \"PercentChange\": 5747.663851541462,\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c0534980-b864-4921-b922-ae193e5fec88",
+          "name": "/xGlobalMetals/GetHistoricalMetalQuote",
+          "request": {
+            "name": "/xGlobalMetals/GetHistoricalMetalQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetHistoricalMetalQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d2ed030e-dde1-411f-9257-074cd5cd8d89",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetHistoricalMetalQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9841.474337227666,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Name\": \"string\",\n  \"Symbol\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Currency\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 266.13813716465097,\n  \"High\": 5932.686910135725,\n  \"Low\": 6364.093018590431,\n  \"Close\": 6753.912308026404,\n  \"Average\": 6843.003931207266\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ab312e4e-4fa6-46ad-894d-6e738732278b",
+          "name": "/xGlobalMetals/GetBar",
+          "request": {
+            "name": "/xGlobalMetals/GetBar",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetBar"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8c97e214-06c1-4efc-8de0-e08fa6a1f346",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetBar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2932.7059237025665,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Symbol\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 3626.5234969782923,\n  \"High\": 4500.97760374562,\n  \"Low\": 3191.339442941191,\n  \"Close\": 3557.795043569365,\n  \"Average\": 7684.953472399061,\n  \"Volume\": 1740.214968121767\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fdc5e94d-0805-4b52-b755-4ff631a97baf",
+          "name": "/xGlobalMetals/GetBars",
+          "request": {
+            "name": "/xGlobalMetals/GetBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TickPrecision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TickPeriods",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "04510718-6eeb-4a14-a49b-70869a7676f3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TickPrecision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TickPeriods",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7643.46593854919,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2782.3526909768348,\n    \"High\": 7521.996341842465,\n    \"Low\": 8783.2892000543,\n    \"Close\": 9551.054098754095,\n    \"Average\": 7462.7201941231315,\n    \"Volume\": 842.120032413598\n  },\n  {\n    \"Delay\": 9320.643647774492,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8430.76243706081,\n    \"High\": 965.3625743828176,\n    \"Low\": 4415.637513829312,\n    \"Close\": 1312.1250649368444,\n    \"Average\": 9303.228604261838,\n    \"Volume\": 6423.625409452053\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bcc4a8b7-7bae-434d-93cf-27d90b28ef1f",
+          "name": "/xGlobalMetals/GetBaseMetalPrice",
+          "request": {
+            "name": "/xGlobalMetals/GetBaseMetalPrice",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetBaseMetalPrice"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "MetalType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2c2fb24d-49ef-43d4-9877-e32297f1d61a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetBaseMetalPrice"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "MetalType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8865.441025737418,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Name\": \"string\",\n  \"Symbol\": \"string\",\n  \"Currency\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"Price\": 6789.794104196753,\n  \"Unit\": \"string\",\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "72449e3b-a9be-4b46-b6eb-19934f46afa6",
+          "name": "/xGlobalMetals/GetChartBars",
+          "request": {
+            "name": "/xGlobalMetals/GetChartBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetChartBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9bead2a2-35f8-47ce-8e7e-2c7e9a70fa51",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetChartBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8312.932234460584,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Timing\": \"string\",\n  \"PriceType\": \"string\",\n  \"MetalDescription\": {\n    \"Symbol\": \"string\",\n    \"Currency\": \"string\",\n    \"Name\": \"string\",\n    \"Unit\": \"string\",\n    \"Type\": \"string\"\n  },\n  \"ChartBars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 5456.532775572979,\n      \"Open\": 5324.397409820365,\n      \"High\": 8299.776227691722,\n      \"Low\": 7568.515196490947,\n      \"Close\": 7382.600227065717,\n      \"Volume\": 2490.078280746315,\n      \"Trades\": 4666,\n      \"TWAP\": 9024.21221674333,\n      \"VWAP\": 3287.2420710816764,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 5897.788962176084\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 2609.751316615766,\n      \"Open\": 7563.7713879145995,\n      \"High\": 783.0788964255441,\n      \"Low\": 9190.121968645388,\n      \"Close\": 8821.108790460594,\n      \"Volume\": 3017.0128187284263,\n      \"Trades\": 9572,\n      \"TWAP\": 4068.8309499393818,\n      \"VWAP\": 2280.4704134573417,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 2800.74087210875\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9dc06fe4-1650-4e4c-934c-5e4a9aadfd11",
+          "name": "/xGlobalMetals/GetHistoricalLondonFixingRange",
+          "request": {
+            "name": "/xGlobalMetals/GetHistoricalLondonFixingRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetHistoricalLondonFixingRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "07d5d0ac-cfb4-4285-be91-9fec8336bbd1",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetHistoricalLondonFixingRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7368.050080250558,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"Fixing\": \"string\",\n    \"Price\": 8382.999764662003,\n    \"Unit\": \"string\",\n    \"Source\": \"string\"\n  },\n  {\n    \"Delay\": 2668.486373384731,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"Fixing\": \"string\",\n    \"Price\": 9936.806330008207,\n    \"Unit\": \"string\",\n    \"Source\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "aa9ba204-8001-4ba6-a1b8-002b6d9c1706",
+          "name": "/xGlobalMetals/GetHistoricalMetalQuotes",
+          "request": {
+            "name": "/xGlobalMetals/GetHistoricalMetalQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetHistoricalMetalQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8b5b870f-30fb-4151-8840-ecd56ee00d1e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetHistoricalMetalQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7964.291385648596,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 668.7181432088307,\n    \"High\": 1934.4362708267215,\n    \"Low\": 9017.781878399854,\n    \"Close\": 5817.4022732634985,\n    \"Average\": 1803.1391553609833\n  },\n  {\n    \"Delay\": 6912.11274163015,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 4556.779188117246,\n    \"High\": 6150.0972645694255,\n    \"Low\": 7194.161019814167,\n    \"Close\": 6989.062493309074,\n    \"Average\": 8903.210190406615\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bfd2784f-ba1c-46a9-be8a-8ae71bda5669",
+          "name": "/xGlobalMetals/GetHistoricalMetalQuotesRange",
+          "request": {
+            "name": "/xGlobalMetals/GetHistoricalMetalQuotesRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetHistoricalMetalQuotesRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "135b6cd6-75cd-4c38-8692-74c4733185d9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetHistoricalMetalQuotesRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7964.291385648596,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 668.7181432088307,\n    \"High\": 1934.4362708267215,\n    \"Low\": 9017.781878399854,\n    \"Close\": 5817.4022732634985,\n    \"Average\": 1803.1391553609833\n  },\n  {\n    \"Delay\": 6912.11274163015,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 4556.779188117246,\n    \"High\": 6150.0972645694255,\n    \"Low\": 7194.161019814167,\n    \"Close\": 6989.062493309074,\n    \"Average\": 8903.210190406615\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "22244f3e-d2c8-4a56-b208-cc37f3196fbb",
+          "name": "/xGlobalMetals/GetLatestHistoricalMetalQuote",
+          "request": {
+            "name": "/xGlobalMetals/GetLatestHistoricalMetalQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetLatestHistoricalMetalQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3246f807-98e1-4e3d-a81c-b1670c025c5f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetLatestHistoricalMetalQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9841.474337227666,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Name\": \"string\",\n  \"Symbol\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Currency\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 266.13813716465097,\n  \"High\": 5932.686910135725,\n  \"Low\": 6364.093018590431,\n  \"Close\": 6753.912308026404,\n  \"Average\": 6843.003931207266\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bbaf8f95-43fe-44d2-8360-bb5d9bd036a9",
+          "name": "/xGlobalMetals/GetLatestHistoricalMetalQuotes",
+          "request": {
+            "name": "/xGlobalMetals/GetLatestHistoricalMetalQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetLatestHistoricalMetalQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8be60cce-9d7d-4f54-88ad-a70739bcfc55",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetLatestHistoricalMetalQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7964.291385648596,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 668.7181432088307,\n    \"High\": 1934.4362708267215,\n    \"Low\": 9017.781878399854,\n    \"Close\": 5817.4022732634985,\n    \"Average\": 1803.1391553609833\n  },\n  {\n    \"Delay\": 6912.11274163015,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 4556.779188117246,\n    \"High\": 6150.0972645694255,\n    \"Low\": 7194.161019814167,\n    \"Close\": 6989.062493309074,\n    \"Average\": 8903.210190406615\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "af5d976e-0372-453f-9674-2f0921bacc88",
+          "name": "/xGlobalMetals/GetLondonFixing",
+          "request": {
+            "name": "/xGlobalMetals/GetLondonFixing",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetLondonFixing"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c7261137-7288-4bee-bfa7-cfcef5171fff",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetLondonFixing"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1094.5475251565117,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Name\": \"string\",\n  \"Symbol\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Currency\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"Fixing\": \"string\",\n  \"Price\": 1661.4365097165985,\n  \"Unit\": \"string\",\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fc6c2426-e588-4e7e-bcd9-ad5d55736b1b",
+          "name": "/xGlobalMetals/GetLondonHistoricalMetalQuotesRange",
+          "request": {
+            "name": "/xGlobalMetals/GetLondonHistoricalMetalQuotesRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetLondonHistoricalMetalQuotesRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "57954ccb-bd07-4278-9035-4360fc77733b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetLondonHistoricalMetalQuotesRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7964.291385648596,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 668.7181432088307,\n    \"High\": 1934.4362708267215,\n    \"Low\": 9017.781878399854,\n    \"Close\": 5817.4022732634985,\n    \"Average\": 1803.1391553609833\n  },\n  {\n    \"Delay\": 6912.11274163015,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Currency\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 4556.779188117246,\n    \"High\": 6150.0972645694255,\n    \"Low\": 7194.161019814167,\n    \"Close\": 6989.062493309074,\n    \"Average\": 8903.210190406615\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "279243fd-2012-4501-878c-2592351969ba",
+          "name": "/xGlobalMetals/GetTopIndustryHeadlines",
+          "request": {
+            "name": "/xGlobalMetals/GetTopIndustryHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMetals",
+                "GetTopIndustryHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bf54b49e-b237-4b7d-aea1-d4ea6daff674",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMetals",
+                    "GetTopIndustryHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8513.20272110597,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Headline\": \"string\",\n    \"Source\": \"string\",\n    \"Summary\": \"string\",\n    \"Time\": \"string\",\n    \"Url\": \"string\"\n  },\n  {\n    \"Delay\": 8576.260379961763,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Headline\": \"string\",\n    \"Source\": \"string\",\n    \"Summary\": \"string\",\n    \"Time\": \"string\",\n    \"Url\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalmetals.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "2a2c79ab-20d5-4f98-837c-208b3e8a6d8d",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalMetals API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

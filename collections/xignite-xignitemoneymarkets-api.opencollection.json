@@ -1,0 +1,480 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteMoneyMarkets API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteMoneyMarkets",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/ListRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/ListRates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/ListSwapRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/ListSwapRates",
+            "params": [
+              {
+                "name": "SwapType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/SearchRates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/SearchRates",
+            "params": [
+              {
+                "name": "Pattern",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetSwapRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetSwapRate",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetSwapRateExtended",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetSwapRateExtended",
+            "params": [
+              {
+                "name": "SwapType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Tenor",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FloatingReferenceRate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetSwapRateFamily",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetSwapRateFamily",
+            "params": [
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetSwapRateFamilyExtended",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetSwapRateFamilyExtended",
+            "params": [
+              {
+                "name": "SwapType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FloatingReferenceRate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetHistoricalSwapRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetHistoricalSwapRate",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetHistoricalSwapRateExtended",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetHistoricalSwapRateExtended",
+            "params": [
+              {
+                "name": "SwapType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Tenor",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FloatingReferenceRate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetHistoricalSwapRateRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetHistoricalSwapRateRange",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetHistoricalSwapRateExtendedRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetHistoricalSwapRateExtendedRange",
+            "params": [
+              {
+                "name": "SwapType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Tenor",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FloatingReferenceRate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetTreasuryRate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetTreasuryRate",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetTreasuryRateFamily",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetTreasuryRateFamily",
+            "params": [
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetHistoricalSwaption",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetHistoricalSwaption",
+            "params": [
+              {
+                "name": "FirstType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SecondType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetHistoricalSwaptionFamily",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetHistoricalSwaptionFamily",
+            "params": [
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetSwaption",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetSwaption",
+            "params": [
+              {
+                "name": "FirstType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SecondType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetSwaptionFamily",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetSwaptionFamily",
+            "params": [
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xMoneyMarkets/GetForwardRateAgreement",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://moneymarkets.xignite.com/xMoneyMarkets/GetForwardRateAgreement",
+            "params": [
+              {
+                "name": "FirstType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SecondType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

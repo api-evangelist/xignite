@@ -1,0 +1,1539 @@
+{
+  "item": [
+    {
+      "id": "0813b478-7154-47f8-9a4c-ac7110a58b62",
+      "name": "XigniteCrypto",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "648ae3e4-74de-44d2-accb-f71b5061349a",
+          "name": "/xCrypto/GetHistoricalQuoteRange",
+          "request": {
+            "name": "/xCrypto/GetHistoricalQuoteRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetHistoricalQuoteRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ee51d93e-dc48-47aa-84a9-85ae73b92d9c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetHistoricalQuoteRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4730.980246932903,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"CryptoHistoricalQuotes\": [\n    {\n      \"Delay\": 548.9910207064141,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RequestError\",\n      \"Symbol\": \"string\",\n      \"StartDateTime\": \"string\",\n      \"EndDateTime\": \"string\",\n      \"Open\": 5970.985792161237,\n      \"High\": 6286.133962740942,\n      \"Low\": 8673.532138829589,\n      \"Close\": 37.792976727166746,\n      \"Volume\": 4519.204028433509,\n      \"Change\": 7897.731879727205,\n      \"PercentChange\": 5550.736793137623,\n      \"Currency\": \"string\"\n    },\n    {\n      \"Delay\": 5570.694824055305,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"Symbol\": \"string\",\n      \"StartDateTime\": \"string\",\n      \"EndDateTime\": \"string\",\n      \"Open\": 1307.3282929343377,\n      \"High\": 1066.0903717098668,\n      \"Low\": 5869.818712514066,\n      \"Close\": 6935.484314037217,\n      \"Volume\": 1839.782670047071,\n      \"Change\": 4707.254415435474,\n      \"PercentChange\": 3958.9173856560624,\n      \"Currency\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4eb1d2a5-bc2d-4876-97a7-99ba7d41c5ba",
+          "name": "/xCrypto/GetExchangeHistoricalQuoteRange",
+          "request": {
+            "name": "/xCrypto/GetExchangeHistoricalQuoteRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetExchangeHistoricalQuoteRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b98a4234-bf36-4ba4-911a-c5ba17ca63ae",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetExchangeHistoricalQuoteRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9412.84783062364,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"ExchangeHistoricalQuote\": {\n      \"Symbol\": \"string\",\n      \"Exchange\": \"string\",\n      \"Identifier\": \"string\",\n      \"StartDateTime\": \"string\",\n      \"EndDateTime\": \"string\",\n      \"Open\": 6961.06691394991,\n      \"High\": 9409.11547274239,\n      \"Low\": 9173.987320458948,\n      \"Close\": 8432.160855738552,\n      \"Bid\": 4214.183269525936,\n      \"Ask\": 5384.1874077869725,\n      \"Volume\": 7436.380469867274,\n      \"Change\": 5861.107957932217,\n      \"PercentChange\": 4496.017222685143,\n      \"Currency\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 5190.071709786247,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"ExchangeHistoricalQuote\": {\n      \"Symbol\": \"string\",\n      \"Exchange\": \"string\",\n      \"Identifier\": \"string\",\n      \"StartDateTime\": \"string\",\n      \"EndDateTime\": \"string\",\n      \"Open\": 2163.6440037786797,\n      \"High\": 3319.2832124751712,\n      \"Low\": 9657.770100779488,\n      \"Close\": 8368.829307971691,\n      \"Bid\": 1544.0911169755311,\n      \"Ask\": 7843.828579988253,\n      \"Volume\": 2960.269081806307,\n      \"Change\": 709.2727392104592,\n      \"PercentChange\": 156.67587982838515,\n      \"Currency\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7a01dde6-5d59-42bc-8024-f17cf6f1bac2",
+          "name": "/xCrypto/GetHistoricalQuotes",
+          "request": {
+            "name": "/xCrypto/GetHistoricalQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetHistoricalQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c6b1c678-2530-4333-a19e-0ccdfc2bcb60",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetHistoricalQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5979.325138614636,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"HistoricalQuote\": {\n      \"Delay\": 5011.72391689764,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"StartDateTime\": \"string\",\n      \"EndDateTime\": \"string\",\n      \"Open\": 2863.8443950022784,\n      \"High\": 5726.254000860582,\n      \"Low\": 5981.015693574971,\n      \"Close\": 8908.652663901077,\n      \"Volume\": 4017.8870110213106,\n      \"Change\": 1575.1600149122823,\n      \"PercentChange\": 5813.080599256998,\n      \"Currency\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 6329.654815749225,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"HistoricalQuote\": {\n      \"Delay\": 8426.258363500847,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": \"string\",\n      \"StartDateTime\": \"string\",\n      \"EndDateTime\": \"string\",\n      \"Open\": 2856.31327439286,\n      \"High\": 7143.09683759365,\n      \"Low\": 1885.8423513355438,\n      \"Close\": 2001.3133636591906,\n      \"Volume\": 3903.6837013541194,\n      \"Change\": 2124.3813140523093,\n      \"PercentChange\": 3429.79898237049,\n      \"Currency\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "99904136-b829-4165-b99e-87e703222bd3",
+          "name": "/xCrypto/GetQuotes",
+          "request": {
+            "name": "/xCrypto/GetQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "257edd05-5306-4d34-b067-32730f9e7d7f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8403.164056465006,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Quote\": {\n      \"Symbol\": \"string\",\n      \"Exchange\": \"string\",\n      \"DateTime\": \"string\",\n      \"Open\": 1157.9930790038861,\n      \"High\": 7795.7115283521925,\n      \"Low\": 7582.282001603428,\n      \"Last\": 4086.133459217358,\n      \"Median\": 7063.525901181639,\n      \"Volume\": 3131.983954443275,\n      \"MarketCapitalization\": 7529.796176649351,\n      \"Change\": 2591.4794130684704,\n      \"PercentChange\": 4290.219560795704,\n      \"High52Weeks\": 5295.559762963886,\n      \"Low52Weeks\": 9089.131537571107,\n      \"Currency\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 7483.179626930021,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Quote\": {\n      \"Symbol\": \"string\",\n      \"Exchange\": \"string\",\n      \"DateTime\": \"string\",\n      \"Open\": 5015.764744332386,\n      \"High\": 8290.237780727019,\n      \"Low\": 1086.1350818401495,\n      \"Last\": 4267.443027948302,\n      \"Median\": 9987.585844671456,\n      \"Volume\": 4960.47585624366,\n      \"MarketCapitalization\": 7817.181611599475,\n      \"Change\": 1677.2674575333936,\n      \"PercentChange\": 5385.714751948289,\n      \"High52Weeks\": 2430.505985834588,\n      \"Low52Weeks\": 9831.025431536957,\n      \"Currency\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e82d1823-3d21-49f5-b922-083b38737be3",
+          "name": "/xCrypto/GetReferenceData",
+          "request": {
+            "name": "/xCrypto/GetReferenceData",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetReferenceData"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DataTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f2c0dfd5-1ae7-42a3-9d46-993531fff76d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetReferenceData"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "DataTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3229.7753812038763,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"ReferenceDataSet\": [\n      {\n        \"Delay\": 8278.994379832342,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"AsOfDate\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": \"string\",\n        \"LastUpdated\": \"string\"\n      },\n      {\n        \"Delay\": 6807.9669659911215,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"AsOfDate\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": \"string\",\n        \"LastUpdated\": \"string\"\n      }\n    ]\n  },\n  {\n    \"Delay\": 4517.919584750605,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"ReferenceDataSet\": [\n      {\n        \"Delay\": 4872.312042674182,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"AsOfDate\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": \"string\",\n        \"LastUpdated\": \"string\"\n      },\n      {\n        \"Delay\": 8021.088667794082,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"AsOfDate\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": \"string\",\n        \"LastUpdated\": \"string\"\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "141d508b-1e42-4d22-9565-91741f575455",
+          "name": "/xCrypto/GetTopCryptoHeadlines",
+          "request": {
+            "name": "/xCrypto/GetTopCryptoHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetTopCryptoHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeCategories",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDateTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4de7972b-3ccb-4e37-9193-29430ebd014f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetTopCryptoHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeCategories",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDateTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4279.017282642534,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"NewsHeadlines\": [\n    {\n      \"DateTime\": \"string\",\n      \"Title\": \"string\",\n      \"Url\": \"string\",\n      \"NewsSource\": {\n        \"Code\": \"string\",\n        \"Name\": \"string\",\n        \"Language\": \"string\",\n        \"Image\": \"string\"\n      },\n      \"Summary\": \"string\",\n      \"ImageUrl\": \"string\",\n      \"Tags\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Categories\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"DateTime\": \"string\",\n      \"Title\": \"string\",\n      \"Url\": \"string\",\n      \"NewsSource\": {\n        \"Code\": \"string\",\n        \"Name\": \"string\",\n        \"Language\": \"string\",\n        \"Image\": \"string\"\n      },\n      \"Summary\": \"string\",\n      \"ImageUrl\": \"string\",\n      \"Tags\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Categories\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "72995a37-2bf2-49ab-925e-d1c062cec323",
+          "name": "/xCrypto/GetTopMarketHeadlines",
+          "request": {
+            "name": "/xCrypto/GetTopMarketHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetTopMarketHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "NewsSources",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Categories",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeCategories",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDateTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6598fd35-ee5b-4405-afb8-c1bbbc58198b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetTopMarketHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "NewsSources",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Categories",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeCategories",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDateTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2082.2645931173124,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"NewsHeadlines\": [\n    {\n      \"DateTime\": \"string\",\n      \"Title\": \"string\",\n      \"Url\": \"string\",\n      \"NewsSource\": {\n        \"Code\": \"string\",\n        \"Name\": \"string\",\n        \"Language\": \"string\",\n        \"Image\": \"string\"\n      },\n      \"Summary\": \"string\",\n      \"ImageUrl\": \"string\",\n      \"Tags\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Categories\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"DateTime\": \"string\",\n      \"Title\": \"string\",\n      \"Url\": \"string\",\n      \"NewsSource\": {\n        \"Code\": \"string\",\n        \"Name\": \"string\",\n        \"Language\": \"string\",\n        \"Image\": \"string\"\n      },\n      \"Summary\": \"string\",\n      \"ImageUrl\": \"string\",\n      \"Tags\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Categories\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "122a847a-049a-497f-bf46-12b2a257c072",
+          "name": "/xCrypto/ListCryptos",
+          "request": {
+            "name": "/xCrypto/ListCryptos",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "ListCryptos"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cbf12718-07b1-4d9c-b08e-ff01834cf4d2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "ListCryptos"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4800.775167232993,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Cryptos\": [\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\"\n    },\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dce31ebf-3dca-4221-be45-99cf4ad7a21f",
+          "name": "/xCrypto/ListExchanges",
+          "request": {
+            "name": "/xCrypto/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4290b451-0cf4-4798-94c6-92f3e238418f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 7132.079654992017,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Exchanges\": [\n    {\n      \"Name\": \"string\",\n      \"Code\": \"string\",\n      \"Description\": \"string\",\n      \"Country\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"Code\": \"string\",\n      \"Description\": \"string\",\n      \"Country\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "698c120b-a733-49ac-89d2-a14cf56a158c",
+          "name": "/xCrypto/ListNewsCategories",
+          "request": {
+            "name": "/xCrypto/ListNewsCategories",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "ListNewsCategories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c80e826e-d301-4e60-ae12-2fe66fd63c94",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "ListNewsCategories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3329.2255083774003,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8dec1714-d773-4fea-a664-2db37898ec5c",
+          "name": "/xCrypto/ListNewsSources",
+          "request": {
+            "name": "/xCrypto/ListNewsSources",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "ListNewsSources"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d4ea1e05-6587-458c-a8f5-32957c3bfbee",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "ListNewsSources"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5147.093266031468,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"NewsSources\": [\n    {\n      \"Code\": \"string\",\n      \"Name\": \"string\",\n      \"Language\": \"string\",\n      \"Image\": \"string\"\n    },\n    {\n      \"Code\": \"string\",\n      \"Name\": \"string\",\n      \"Language\": \"string\",\n      \"Image\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "67910e6f-34d9-442a-9622-d6ebf0aae678",
+          "name": "/xCrypto/ListReferenceData",
+          "request": {
+            "name": "/xCrypto/ListReferenceData",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "ListReferenceData"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f68e99f7-0b39-4665-93b1-a4aab8b4bcc8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "ListReferenceData"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3593.7806904126146,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"ReferenceDescriptions\": [\n    {\n      \"Description\": \"string\",\n      \"Name\": \"string\",\n      \"Type\": \"string\"\n    },\n    {\n      \"Description\": \"string\",\n      \"Name\": \"string\",\n      \"Type\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "14ce09c5-0678-4a14-b3ce-fe63a034fe3f",
+          "name": "/xCrypto/GetChartBars",
+          "request": {
+            "name": "/xCrypto/GetChartBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetChartBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4072aef6-33a8-485a-87e2-8233e0c359fe",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetChartBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9237.887592216532,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Symbol\": \"string\",\n  \"Currency\": \"string\",\n  \"Exchange\": \"string\",\n  \"ChartBars\": [\n    {\n      \"StartTime\": \"string\",\n      \"EndTime\": \"string\",\n      \"Open\": 6090.106605468456,\n      \"High\": 7308.838489061991,\n      \"Low\": 7773.332779990154,\n      \"Close\": 2231.1983685230953,\n      \"Trades\": 5954,\n      \"Volume\": 3392.704463479347,\n      \"TWAP\": 5915.074643142234,\n      \"VWAP\": 3866.6260679967977\n    },\n    {\n      \"StartTime\": \"string\",\n      \"EndTime\": \"string\",\n      \"Open\": 7615.65751030038,\n      \"High\": 9411.107696568559,\n      \"Low\": 1944.8904078910534,\n      \"Close\": 9597.378121954674,\n      \"Trades\": 8797,\n      \"Volume\": 1067.7993716089384,\n      \"TWAP\": 934.7464049328958,\n      \"VWAP\": 7774.231770027466\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4f50ebe8-3d37-427c-bc5d-27d3e26cef91",
+          "name": "/xCrypto/GetExchangeQuotes",
+          "request": {
+            "name": "/xCrypto/GetExchangeQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "GetExchangeQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e7bc3828-2697-4abc-85c2-b448f121d90a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "GetExchangeQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7427.653866660241,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"ExchangeQuote\": {\n      \"Symbol\": \"string\",\n      \"Exchange\": \"string\",\n      \"Identifier\": \"string\",\n      \"DateTime\": \"string\",\n      \"Open\": 4450.006405954065,\n      \"High\": 9206.053257782458,\n      \"Low\": 3614.5447210988336,\n      \"Last\": 5866.473506616009,\n      \"VolumeCurrentHour\": 8914.963649971629,\n      \"Volume24Hour\": 4943.138184217893,\n      \"LastVolume\": 4790.233538912726,\n      \"Bid\": 5545.6545308742725,\n      \"BidSize\": 5104.920537057569,\n      \"BidTime\": \"string\",\n      \"Ask\": 6547.85631506002,\n      \"AskSize\": 783.7852877590823,\n      \"AskTime\": \"string\",\n      \"Change\": 3498.917843808137,\n      \"PercentChange\": 4541.892080223245,\n      \"Currency\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 1863.448086044961,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"ExchangeQuote\": {\n      \"Symbol\": \"string\",\n      \"Exchange\": \"string\",\n      \"Identifier\": \"string\",\n      \"DateTime\": \"string\",\n      \"Open\": 1260.0223237613407,\n      \"High\": 7088.918204622368,\n      \"Low\": 7560.386798971263,\n      \"Last\": 4107.53611645679,\n      \"VolumeCurrentHour\": 1459.2314842339372,\n      \"Volume24Hour\": 186.34999974878718,\n      \"LastVolume\": 6280.032876475649,\n      \"Bid\": 2952.6014171794,\n      \"BidSize\": 4881.363023322861,\n      \"BidTime\": \"string\",\n      \"Ask\": 1703.5494161283382,\n      \"AskSize\": 35.392353265671915,\n      \"AskTime\": \"string\",\n      \"Change\": 5318.171290958111,\n      \"PercentChange\": 4024.7679459497153,\n      \"Currency\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f89c0caf-9e61-4712-8eb7-24df588c3c6b",
+          "name": "/xCrypto/ListTopCoins",
+          "request": {
+            "name": "/xCrypto/ListTopCoins",
+            "description": {},
+            "url": {
+              "path": [
+                "xCrypto",
+                "ListTopCoins"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f797730f-614c-4e70-aeb5-b1035a51053f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xCrypto",
+                    "ListTopCoins"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9721.272055808564,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"TopCoins\": [\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"Currency\": \"string\",\n      \"MarketCapitalization\": 8489.09432084,\n      \"Volume\": 1965.9029988830157\n    },\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"Currency\": \"string\",\n      \"MarketCapitalization\": 2132.138225300948,\n      \"Volume\": 1389.3623716276727\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://crypto.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "25009acd-98f8-44e0-a5a9-915d3f1bdf9e",
+    "name": "XigniteBonds CloudAlerts XigniteCrypto API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

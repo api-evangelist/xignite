@@ -1,0 +1,112 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CloudAlerts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xAlerts/CreateAlert",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://alerts.xignite.com/xAlerts/CreateAlert",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "API",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Condition",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Reset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CallbackURL",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xAlerts/DeleteAlerts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://alerts.xignite.com/xAlerts/DeleteAlerts",
+            "params": [
+              {
+                "name": "AlertIdentifiers",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xAlerts/SearchAlerts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://alerts.xignite.com/xAlerts/SearchAlerts",
+            "params": [
+              {
+                "name": "Pattern",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

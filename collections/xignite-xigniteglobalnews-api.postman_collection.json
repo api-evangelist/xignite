@@ -1,0 +1,2202 @@
+{
+  "item": [
+    {
+      "id": "b1f6930f-a7cd-4714-bb5a-fab796765405",
+      "name": "XigniteGlobalNews",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f585c8b5-fc37-4144-b403-9ef75b5285d6",
+          "name": "/xGlobalNews/GetTodaysMarketHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetTodaysMarketHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTodaysMarketHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ae678708-6850-43db-ab01-c94787b6553f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTodaysMarketHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1123.610186913997,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5308.313480878634,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 3367.298390601324,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "13c79b79-6719-4540-add8-33c106de1e8c",
+          "name": "/xGlobalNews/GetTodaysMarketReleases",
+          "request": {
+            "name": "/xGlobalNews/GetTodaysMarketReleases",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTodaysMarketReleases"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "aeb130c1-9334-48b4-9044-9b724bc7d540",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTodaysMarketReleases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "48bf45cd-5a8d-4871-a080-2be2c81dd1d2",
+          "name": "/xGlobalNews/GetTodaysMarketHeadlinesBySector",
+          "request": {
+            "name": "/xGlobalNews/GetTodaysMarketHeadlinesBySector",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTodaysMarketHeadlinesBySector"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Sector",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "918f4438-db85-4455-9314-707a5ef298c1",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTodaysMarketHeadlinesBySector"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Sector",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "195602ea-e4ca-4cf2-aa10-f2d2f95c7aab",
+          "name": "/xGlobalNews/GetTodaysSecurityHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetTodaysSecurityHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTodaysSecurityHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "effed212-8301-46ff-8c35-1340814482ea",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTodaysSecurityHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4112.972117868359,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5751.86396490211,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5009.546207440932,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "94685c57-4cdf-4fde-9840-786f833fe5ba",
+          "name": "/xGlobalNews/GetMarketHeadlinesByQuery",
+          "request": {
+            "name": "/xGlobalNews/GetMarketHeadlinesByQuery",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetMarketHeadlinesByQuery"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "QueryText",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "798af56d-3512-423f-87e0-01d7bbcc3a71",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetMarketHeadlinesByQuery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "QueryText",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6fb63025-b839-4a7c-a567-669a5d47cfe0",
+          "name": "/xGlobalNews/GetTopMarketHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetTopMarketHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopMarketHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b530553b-e410-4e55-aeef-01a62ae4a5f4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopMarketHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8f8c488b-ec62-4ec5-9b88-d5a61e9b58fa",
+          "name": "/xGlobalNews/GetTopMarketHeadlinesBySector",
+          "request": {
+            "name": "/xGlobalNews/GetTopMarketHeadlinesBySector",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopMarketHeadlinesBySector"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sector",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e61b7bc8-9cea-4ae7-ad6e-533237aa85e7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopMarketHeadlinesBySector"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "Sector",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "63719194-2f35-405a-91ce-71e89530cfa6",
+          "name": "/xGlobalNews/GetRecentTopSecurityHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetRecentTopSecurityHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetRecentTopSecurityHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8cb4d6e3-f547-4236-bd86-9b078b293d13",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetRecentTopSecurityHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5930.667731744836,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2351.882701613571,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5737.199537445048,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5f26c781-d94e-4fe1-b118-90d9951ba846",
+          "name": "/xGlobalNews/GetTopSecurityHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetTopSecurityHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopSecurityHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "03ed8d79-7440-439b-8766-a7aef5432cb8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopSecurityHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5930.667731744836,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2351.882701613571,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5737.199537445048,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b23177b1-a69c-485a-b4c2-74f06c45668e",
+          "name": "/xGlobalNews/GetHistoricalSecurityHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetHistoricalSecurityHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetHistoricalSecurityHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "03a59e09-f486-4bae-ba8c-04478c8efcfa",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetHistoricalSecurityHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5930.667731744836,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2351.882701613571,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5737.199537445048,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "009915f9-3c7e-49b8-aa79-cfbaf72a0071",
+          "name": "/xGlobalNews/GetHistoricalMarketHeadlines",
+          "request": {
+            "name": "/xGlobalNews/GetHistoricalMarketHeadlines",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetHistoricalMarketHeadlines"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cf6d12ec-16ae-4844-a1d2-a3bf60f7f870",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetHistoricalMarketHeadlines"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ba8a2e92-1a26-4987-9018-5ead633997bd",
+          "name": "/xGlobalNews/GetHistoricalMarketReleases",
+          "request": {
+            "name": "/xGlobalNews/GetHistoricalMarketReleases",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetHistoricalMarketReleases"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2c21690f-0556-440c-a2e0-35371d3ba01f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetHistoricalMarketReleases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "529dc3ba-dd05-43b4-b22a-ec7dedb059fb",
+          "name": "/xGlobalNews/GetHistoricalMarketHeadlinesBySector",
+          "request": {
+            "name": "/xGlobalNews/GetHistoricalMarketHeadlinesBySector",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetHistoricalMarketHeadlinesBySector"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sector",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e2aed0b9-ea55-47b0-be84-bbc01380713a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetHistoricalMarketHeadlinesBySector"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Sector",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4863.453937263456,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Headlines\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2915.5409505019657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": true,\n          \"CategoryOrIndustry\": \"string\"\n        },\n        {\n          \"CIK\": \"string\",\n          \"CUSIP\": \"string\",\n          \"Symbol\": \"string\",\n          \"ISIN\": \"string\",\n          \"Valoren\": \"string\",\n          \"Name\": \"string\",\n          \"Market\": \"string\",\n          \"MarketIdentificationCode\": \"string\",\n          \"MostLiquidExchange\": false,\n          \"CategoryOrIndustry\": \"string\"\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4525.379985355879,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d8dfd27c-70b5-4f24-bb3f-5dbcbe118066",
+          "name": "/xGlobalNews/GetMarketNewsDetails",
+          "request": {
+            "name": "/xGlobalNews/GetMarketNewsDetails",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetMarketNewsDetails"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Reference",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0911040f-264b-4aa4-bd1d-bbca0fed16e1",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetMarketNewsDetails"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Reference",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2245.2142802315166,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Headline\": \"string\",\n  \"Time\": \"string\",\n  \"Source\": \"string\",\n  \"Url\": \"string\",\n  \"Summary\": \"string\",\n  \"Tags\": [\n    {\n      \"TagType\": \"string\",\n      \"TagValues\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"TagType\": \"string\",\n      \"TagValues\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ],\n  \"PaywallType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9aee773b-2550-4c24-b639-758c9a060f9b",
+          "name": "/xGlobalNews/GetTodaysReleasesBySecurity",
+          "request": {
+            "name": "/xGlobalNews/GetTodaysReleasesBySecurity",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTodaysReleasesBySecurity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fa745d02-9658-477f-bf5a-b0a8c0a6011d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTodaysReleasesBySecurity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5930.667731744836,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2351.882701613571,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5737.199537445048,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9f5d436e-29b6-40e3-af59-a3aba66ffcf1",
+          "name": "/xGlobalNews/GetTopReleasesBySecurity",
+          "request": {
+            "name": "/xGlobalNews/GetTopReleasesBySecurity",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopReleasesBySecurity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5d3e209e-4e44-494e-a5b7-79f91cadc406",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopReleasesBySecurity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5930.667731744836,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2351.882701613571,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5737.199537445048,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cf4ee17e-0a79-4936-8fdd-c7c5b6fde92b",
+          "name": "/xGlobalNews/GetHistoricalReleasesBySecurity",
+          "request": {
+            "name": "/xGlobalNews/GetHistoricalReleasesBySecurity",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetHistoricalReleasesBySecurity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9d439376-0b27-4541-85a3-a8f94eb94a84",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetHistoricalReleasesBySecurity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5930.667731744836,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Headlines\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2351.882701613571,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 5737.199537445048,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        },\n        {\n          \"TagType\": \"string\",\n          \"TagValues\": [\n            \"string\",\n            \"string\"\n          ]\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "037ad6d5-50c2-4c60-9f1a-0062136f8183",
+          "name": "/xGlobalNews/ListSectors",
+          "request": {
+            "name": "/xGlobalNews/ListSectors",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "ListSectors"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f2389e98-e130-4040-9d49-00d007a8f709",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "ListSectors"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9239.496892823498,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Sectors\": [\n    \"string\",\n    \"string\"\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e98de33e-05e4-43bc-97fb-30b0399b3772",
+          "name": "/xGlobalNews/GetTopSecuritySummaries",
+          "request": {
+            "name": "/xGlobalNews/GetTopSecuritySummaries",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopSecuritySummaries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5ccd8da8-1255-4a6b-98d8-2c38b0aec202",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopSecuritySummaries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1753.2123325120597,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"HeadlineSummaries\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 2843.408230345459,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 1604.8061512852896,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "319017d9-9026-49aa-9bdc-adc5fccbe6c8",
+          "name": "/xGlobalNews/GetTopReleaseSummariesBySecurity",
+          "request": {
+            "name": "/xGlobalNews/GetTopReleaseSummariesBySecurity",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopReleaseSummariesBySecurity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7b903517-03c2-4d66-aeeb-481bc17d15fc",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopReleaseSummariesBySecurity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8205.579148493598,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"HeadlineSummaries\": [\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 8126.636843719657,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4308.146957855465,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "70abcaaf-922c-4039-a178-ff511395a938",
+          "name": "/xGlobalNews/GetTopMarketSummaries",
+          "request": {
+            "name": "/xGlobalNews/GetTopMarketSummaries",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "GetTopMarketSummaries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Count",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cb6c34e8-a50e-44b6-a622-d916e0e10d9c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "GetTopMarketSummaries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Count",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6218.064984435619,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"HeadlineSummaries\": [\n    {\n      \"Securities\": [\n        {\n          \"CIK\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CUSIP\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ISIN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Valoren\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Market\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MarketIdentificationCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MostLiquidExchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CategoryOrIndustry\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"CIK\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CUSIP\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ISIN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Valoren\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Market\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MarketIdentificationCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MostLiquidExchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CategoryOrIndustry\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 648.0135633341899,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    },\n    {\n      \"Securities\": [\n        {\n          \"CIK\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CUSIP\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ISIN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Valoren\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Market\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MarketIdentificationCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MostLiquidExchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CategoryOrIndustry\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"CIK\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CUSIP\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ISIN\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Valoren\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Market\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MarketIdentificationCode\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"MostLiquidExchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CategoryOrIndustry\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"Title\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 486.2780351191398,\n      \"Source\": \"string\",\n      \"Url\": \"string\",\n      \"Images\": [\n        \"string\",\n        \"string\"\n      ],\n      \"Tags\": [\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"TagType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"TagValues\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"PaywallType\": \"string\",\n      \"Summary\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b255b168-c563-4802-a70f-06ef7b84a8cf",
+          "name": "/xGlobalNews/ListExchanges",
+          "request": {
+            "name": "/xGlobalNews/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e8fecf63-a746-4d1c-a917-40900ed87609",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"ExchangeDescriptions\": [\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\"\n    },\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d318678e-1e25-47f6-aab2-d7c9a9e94529",
+          "name": "/xGlobalNews/ListSymbols",
+          "request": {
+            "name": "/xGlobalNews/ListSymbols",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalNews",
+                "ListSymbols"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9ce80cb1-1083-41b7-a142-abb9ba798e14",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalNews",
+                    "ListSymbols"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Exchange\": {\n    \"MarketIdentificationCode\": \"string\",\n    \"Market\": \"string\"\n  },\n  \"SecurityDescriptions\": [\n    {\n      \"Symbol\": \"string\",\n      \"Currency\": \"string\",\n      \"Name\": \"string\",\n      \"InstrumentClass\": \"string\"\n    },\n    {\n      \"Symbol\": \"string\",\n      \"Currency\": \"string\",\n      \"Name\": \"string\",\n      \"InstrumentClass\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalnews.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "6b794b0f-2e8b-4d8a-a22b-4afa70b378b4",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalNews API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,846 @@
+{
+  "item": [
+    {
+      "id": "01978f00-cd63-45d7-a99d-6275cb69d355",
+      "name": "XigniteBonds",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "16a2ce05-1f25-44a0-8d9c-bd564ee47bea",
+          "name": "/xBonds/ListBonds",
+          "request": {
+            "name": "/xBonds/ListBonds",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "ListBonds"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "BondType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "80993658-85a5-4855-b3b8-8200ca9d87c4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "ListBonds"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "BondType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4860.160211242565,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"BondType\": \"string\",\n  \"StartSymbol\": \"string\",\n  \"EndSymbol\": \"string\",\n  \"Securities\": [\n    {\n      \"Symbol\": \"string\",\n      \"FIGI\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\",\n      \"Description\": \"string\",\n      \"PriceSource\": \"string\"\n    },\n    {\n      \"Symbol\": \"string\",\n      \"FIGI\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\",\n      \"Description\": \"string\",\n      \"PriceSource\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e00c469d-c877-422f-b306-0262535b197f",
+          "name": "/xBonds/ListBondTypes",
+          "request": {
+            "name": "/xBonds/ListBondTypes",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "ListBondTypes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cbd66d80-ec66-48e4-aa94-96eb82d40983",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "ListBondTypes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8842.90529478282,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"BondTypes\": [\n    {\n      \"Code\": \"string\",\n      \"Type\": \"string\",\n      \"Name\": \"string\"\n    },\n    {\n      \"Code\": \"string\",\n      \"Type\": \"string\",\n      \"Name\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7e109e88-6195-4dfc-9ad4-fb0c73882144",
+          "name": "/xBonds/GetLastSale",
+          "request": {
+            "name": "/xBonds/GetLastSale",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "GetLastSale"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f6f5ad2f-d8c2-4713-9cb1-d840982e0522",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "GetLastSale"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1228.6923191842825,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"InstrumentIdentifierBrief\": {\n    \"Valoren\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\"\n  },\n  \"BondLastSale\": {\n    \"ShortName\": \"string\",\n    \"Symbol\": \"string\",\n    \"PriceSource\": \"string\",\n    \"Currency\": \"string\",\n    \"LastSale\": 1204.0704054128714,\n    \"LastSaleSize\": 5529,\n    \"LastSaleDate\": \"string\",\n    \"LastSaleTime\": \"string\",\n    \"YieldToMaturity\": 2483.4125207928328,\n    \"PriceUsedForCalculations\": 8263.986213143548,\n    \"PriceUsedForCalculationsDate\": \"string\",\n    \"PriceUsedForCalculationsTime\": \"string\"\n  },\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3cd5051f-4f67-44a0-8cfd-53ea4851682a",
+          "name": "/xBonds/GetLastSales",
+          "request": {
+            "name": "/xBonds/GetLastSales",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "GetLastSales"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cd7ca45f-a721-4fb5-a71f-dd0677a51434",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "GetLastSales"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9108.288091104563,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"InstrumentIdentifierBrief\": {\n      \"Valoren\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\"\n    },\n    \"BondLastSale\": {\n      \"ShortName\": \"string\",\n      \"Symbol\": \"string\",\n      \"PriceSource\": \"string\",\n      \"Currency\": \"string\",\n      \"LastSale\": 6360.613943927711,\n      \"LastSaleSize\": 8085,\n      \"LastSaleDate\": \"string\",\n      \"LastSaleTime\": \"string\",\n      \"YieldToMaturity\": 7532.637529008927,\n      \"PriceUsedForCalculations\": 8544.138312028455,\n      \"PriceUsedForCalculationsDate\": \"string\",\n      \"PriceUsedForCalculationsTime\": \"string\"\n    },\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 2122.0370660978174,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"InstrumentIdentifierBrief\": {\n      \"Valoren\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\"\n    },\n    \"BondLastSale\": {\n      \"ShortName\": \"string\",\n      \"Symbol\": \"string\",\n      \"PriceSource\": \"string\",\n      \"Currency\": \"string\",\n      \"LastSale\": 9974.663426640112,\n      \"LastSaleSize\": 7929,\n      \"LastSaleDate\": \"string\",\n      \"LastSaleTime\": \"string\",\n      \"YieldToMaturity\": 4481.758904968454,\n      \"PriceUsedForCalculations\": 2871.847055617689,\n      \"PriceUsedForCalculationsDate\": \"string\",\n      \"PriceUsedForCalculationsTime\": \"string\"\n    },\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a10550ee-5527-47ff-a493-64359d253e21",
+          "name": "/xBonds/GetPriceComposite",
+          "request": {
+            "name": "/xBonds/GetPriceComposite",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "GetPriceComposite"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d2653950-c64b-4542-81e4-bd7b1cf6f7fe",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "GetPriceComposite"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8428.308573368087,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"InstrumentIdentifierBrief\": {\n    \"Valoren\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\"\n  },\n  \"TradedPrice\": {\n    \"ShortName\": \"string\",\n    \"Symbol\": \"string\",\n    \"PriceSource\": \"string\",\n    \"Currency\": \"string\",\n    \"LastSale\": 5560.648051300224,\n    \"LastSaleDate\": \"string\",\n    \"LastSaleTime\": \"string\",\n    \"LastSaleSize\": 2686,\n    \"DailyOpen\": 5704.838958433523,\n    \"DailyOpenDate\": \"string\",\n    \"DailyOpenTime\": \"string\",\n    \"DailyHigh\": 4465.207345637086,\n    \"DailyHighDate\": \"string\",\n    \"DailyHighTime\": \"string\",\n    \"DailyLow\": 3109.7284745074385,\n    \"DailyLowDate\": \"string\",\n    \"DailyLowTime\": \"string\",\n    \"YearlyHigh\": 2977.8578595987938,\n    \"YearlyHighDate\": \"string\",\n    \"YearlyLow\": 1269.5084606606233,\n    \"YearlyLowDate\": \"string\",\n    \"LastYearClose\": 1965.703686983723,\n    \"LastYearCloseDate\": \"string\",\n    \"YieldToMaturity\": 44.02633235311093,\n    \"PriceUsedForCalculations\": 9949.61838371657,\n    \"PriceUsedForCalculationsDate\": \"string\",\n    \"PriceUsedForCalculationsTime\": \"string\"\n  },\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "39de652d-cf92-4e94-b185-9be8b22aa707",
+          "name": "/xBonds/GetPriceComposites",
+          "request": {
+            "name": "/xBonds/GetPriceComposites",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "GetPriceComposites"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b844fc65-7b98-4bd2-b70e-68653f986c13",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "GetPriceComposites"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8330.481217396802,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"InstrumentIdentifierBrief\": {\n      \"Valoren\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\"\n    },\n    \"TradedPrice\": {\n      \"ShortName\": \"string\",\n      \"Symbol\": \"string\",\n      \"PriceSource\": \"string\",\n      \"Currency\": \"string\",\n      \"LastSale\": 9624.500743547984,\n      \"LastSaleDate\": \"string\",\n      \"LastSaleTime\": \"string\",\n      \"LastSaleSize\": 9343,\n      \"DailyOpen\": 4411.942706433052,\n      \"DailyOpenDate\": \"string\",\n      \"DailyOpenTime\": \"string\",\n      \"DailyHigh\": 7581.310663367702,\n      \"DailyHighDate\": \"string\",\n      \"DailyHighTime\": \"string\",\n      \"DailyLow\": 1946.663218274559,\n      \"DailyLowDate\": \"string\",\n      \"DailyLowTime\": \"string\",\n      \"YearlyHigh\": 6050.606190975035,\n      \"YearlyHighDate\": \"string\",\n      \"YearlyLow\": 2459.9376051616096,\n      \"YearlyLowDate\": \"string\",\n      \"LastYearClose\": 5922.707137581864,\n      \"LastYearCloseDate\": \"string\",\n      \"YieldToMaturity\": 4280.051619491905,\n      \"PriceUsedForCalculations\": 9289.771285455763,\n      \"PriceUsedForCalculationsDate\": \"string\",\n      \"PriceUsedForCalculationsTime\": \"string\"\n    },\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 2122.8453581942163,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"InstrumentIdentifierBrief\": {\n      \"Valoren\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\"\n    },\n    \"TradedPrice\": {\n      \"ShortName\": \"string\",\n      \"Symbol\": \"string\",\n      \"PriceSource\": \"string\",\n      \"Currency\": \"string\",\n      \"LastSale\": 1251.9353256973486,\n      \"LastSaleDate\": \"string\",\n      \"LastSaleTime\": \"string\",\n      \"LastSaleSize\": 9370,\n      \"DailyOpen\": 3742.798066196761,\n      \"DailyOpenDate\": \"string\",\n      \"DailyOpenTime\": \"string\",\n      \"DailyHigh\": 1957.8059107120848,\n      \"DailyHighDate\": \"string\",\n      \"DailyHighTime\": \"string\",\n      \"DailyLow\": 8142.506808215172,\n      \"DailyLowDate\": \"string\",\n      \"DailyLowTime\": \"string\",\n      \"YearlyHigh\": 5105.068636508552,\n      \"YearlyHighDate\": \"string\",\n      \"YearlyLow\": 719.2212726843638,\n      \"YearlyLowDate\": \"string\",\n      \"LastYearClose\": 2206.3864835205627,\n      \"LastYearCloseDate\": \"string\",\n      \"YieldToMaturity\": 150.71476018604923,\n      \"PriceUsedForCalculations\": 8380.295565253253,\n      \"PriceUsedForCalculationsDate\": \"string\",\n      \"PriceUsedForCalculationsTime\": \"string\"\n    },\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b45b2959-dca0-4488-8014-13c91a28c07c",
+          "name": "/xBonds/GetDailyOpenHighLowClosePrice",
+          "request": {
+            "name": "/xBonds/GetDailyOpenHighLowClosePrice",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "GetDailyOpenHighLowClosePrice"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b33180c9-2ff8-4dce-936f-ae7199ec67ec",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "GetDailyOpenHighLowClosePrice"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3111.247709274121,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"InstrumentIdentifierBrief\": {\n    \"Valoren\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\"\n  },\n  \"DailyOpenHighLowClose\": {\n    \"ShortName\": \"string\",\n    \"Symbol\": \"string\",\n    \"PriceSource\": \"string\",\n    \"Currency\": \"string\",\n    \"DailyOpen\": 3549.6121894411112,\n    \"DailyOpenDate\": \"string\",\n    \"DailyOpenTime\": \"string\",\n    \"DailyHigh\": 4095.717182804337,\n    \"DailyHighDate\": \"string\",\n    \"DailyHighTime\": \"string\",\n    \"DailyLow\": 9711.095505173666,\n    \"DailyLowDate\": \"string\",\n    \"DailyLowTime\": \"string\",\n    \"DailyClose\": 5256.077108003384,\n    \"DailyCloseDate\": \"string\",\n    \"DailyCloseTime\": \"string\"\n  },\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6d88ad21-826a-4012-beaf-cd1b7a0a65dd",
+          "name": "/xBonds/GetDailyOpenHighLowClosePrices",
+          "request": {
+            "name": "/xBonds/GetDailyOpenHighLowClosePrices",
+            "description": {},
+            "url": {
+              "path": [
+                "xBonds",
+                "GetDailyOpenHighLowClosePrices"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceSource",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9e72642b-d55c-4096-8289-d78316e6acd8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xBonds",
+                    "GetDailyOpenHighLowClosePrices"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceSource",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9143.1817823825,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"InstrumentIdentifierBrief\": {\n      \"Valoren\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\"\n    },\n    \"DailyOpenHighLowClose\": {\n      \"ShortName\": \"string\",\n      \"Symbol\": \"string\",\n      \"PriceSource\": \"string\",\n      \"Currency\": \"string\",\n      \"DailyOpen\": 3349.878235702295,\n      \"DailyOpenDate\": \"string\",\n      \"DailyOpenTime\": \"string\",\n      \"DailyHigh\": 6418.934617939449,\n      \"DailyHighDate\": \"string\",\n      \"DailyHighTime\": \"string\",\n      \"DailyLow\": 930.1811960550788,\n      \"DailyLowDate\": \"string\",\n      \"DailyLowTime\": \"string\",\n      \"DailyClose\": 4224.243715614727,\n      \"DailyCloseDate\": \"string\",\n      \"DailyCloseTime\": \"string\"\n    },\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3885.855830400756,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"InstrumentIdentifierBrief\": {\n      \"Valoren\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\"\n    },\n    \"DailyOpenHighLowClose\": {\n      \"ShortName\": \"string\",\n      \"Symbol\": \"string\",\n      \"PriceSource\": \"string\",\n      \"Currency\": \"string\",\n      \"DailyOpen\": 7453.739577430669,\n      \"DailyOpenDate\": \"string\",\n      \"DailyOpenTime\": \"string\",\n      \"DailyHigh\": 7005.349307654513,\n      \"DailyHighDate\": \"string\",\n      \"DailyHighTime\": \"string\",\n      \"DailyLow\": 1967.9467682313712,\n      \"DailyLowDate\": \"string\",\n      \"DailyLowTime\": \"string\",\n      \"DailyClose\": 5970.611943535454,\n      \"DailyCloseDate\": \"string\",\n      \"DailyCloseTime\": \"string\"\n    },\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://bonds.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a0e1601f-8154-42be-ae9a-4efb6100689a",
+    "name": "CloudAlerts XigniteBonds API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

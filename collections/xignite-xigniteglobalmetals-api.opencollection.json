@@ -1,0 +1,558 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalMetals API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalMetals",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/ListMetals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/ListMetals"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetRealTimeMetalQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetRealTimeMetalQuote",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetRealTimeMetalQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetRealTimeMetalQuotes",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetRealTimeExtendedMetalQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetRealTimeExtendedMetalQuote",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetHistoricalMetalQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetHistoricalMetalQuote",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetBar",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetBar",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetBars",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TickPrecision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TickPeriods",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetBaseMetalPrice",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetBaseMetalPrice",
+            "params": [
+              {
+                "name": "MetalType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetChartBars",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetHistoricalLondonFixingRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetHistoricalLondonFixingRange",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetHistoricalMetalQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetHistoricalMetalQuotes",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetHistoricalMetalQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetHistoricalMetalQuotesRange",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetLatestHistoricalMetalQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetLatestHistoricalMetalQuote",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetLatestHistoricalMetalQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetLatestHistoricalMetalQuotes",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetLondonFixing",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetLondonFixing",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetLondonHistoricalMetalQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetLondonHistoricalMetalQuotesRange",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMetals/GetTopIndustryHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmetals.xignite.com/xGlobalMetals/GetTopIndustryHeadlines",
+            "params": [
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

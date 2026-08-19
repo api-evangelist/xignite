@@ -1,0 +1,712 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalHistorical API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalHistorical",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/ListSymbolChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/ListSymbolChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ChangesSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/ListSymbolsWithAdjustedFactors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/ListSymbolsWithAdjustedFactors",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ChangesSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetCashDividendHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetCashDividendHistory",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CorporateActionsAdjusted",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetCashDividendsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetCashDividendsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CorporateActionsAdjusted",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetSplitHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetSplitHistory",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetSplitsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetSplitsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReturnLatest",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotesTrailing",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalQuotesTrailing",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Periods",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalQuotesRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalWeeklyQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalWeeklyQuotesRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalMonthlyQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalMonthlyQuotesRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalQuarterlyQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalQuarterlyQuotesRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalTrades",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalTrades",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReturnLatest",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalTradesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalTradesRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetAdjustmentFactors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetAdjustmentFactors",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetGlobalHistoricalVWAP",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetGlobalHistoricalVWAP",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "HistoricalVWAPType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalHistorical/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalhistorical.xignite.com/v3/xGlobalHistorical/GetChartBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeExtended",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,1513 @@
+{
+  "item": [
+    {
+      "id": "40bc0044-bc22-4214-850d-f350cb064027",
+      "name": "XigniteGlobalQuotes",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c402e78d-f430-49be-b16e-e931eb9178fb",
+          "name": "/v3/xGlobalQuotes/ListSymbolChanges",
+          "request": {
+            "name": "/v3/xGlobalQuotes/ListSymbolChanges",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "ListSymbolChanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ChangesSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c22e112f-08f6-44fc-adcd-18bcaa57653b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "ListSymbolChanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ChangesSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 7241.297139945908,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DateTime\": \"string\",\n  \"SymbolChanges\": [\n    {\n      \"Symbol\": \"string\",\n      \"OldSymbol\": \"string\",\n      \"Name\": \"string\",\n      \"OldName\": \"string\",\n      \"Exchange\": \"string\",\n      \"OldExchange\": \"string\",\n      \"Currency\": \"string\",\n      \"OldCurrency\": \"string\",\n      \"Type\": \"string\",\n      \"InstrumentClass\": \"string\"\n    },\n    {\n      \"Symbol\": \"string\",\n      \"OldSymbol\": \"string\",\n      \"Name\": \"string\",\n      \"OldName\": \"string\",\n      \"Exchange\": \"string\",\n      \"OldExchange\": \"string\",\n      \"Currency\": \"string\",\n      \"OldCurrency\": \"string\",\n      \"Type\": \"string\",\n      \"InstrumentClass\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9770fbd7-551b-4a43-b6f1-ed0d7c02d153",
+          "name": "/v3/xGlobalQuotes/ListSymbols",
+          "request": {
+            "name": "/v3/xGlobalQuotes/ListSymbols",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "ListSymbols"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c434ae88-b1ff-4cbb-9236-ef14bc11c256",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "ListSymbols"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4583.314947462705,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Exchange\": {\n    \"MarketIdentificationCode\": \"string\",\n    \"Market\": \"string\"\n  },\n  \"SecurityDescriptions\": [\n    {\n      \"Symbol\": \"string\",\n      \"Currency\": \"string\",\n      \"Name\": \"string\"\n    },\n    {\n      \"Symbol\": \"string\",\n      \"Currency\": \"string\",\n      \"Name\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d953d641-ef64-48c8-910e-c75175588df9",
+          "name": "/v3/xGlobalQuotes/ListExchanges",
+          "request": {
+            "name": "/v3/xGlobalQuotes/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bb6fa95f-c755-4071-b7fd-c2f4462a2691",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9962.540805049666,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"ExchangeDescriptions\": [\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\"\n    },\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6bb5919b-5b99-49b8-b22c-e8ff19f43e88",
+          "name": "/v3/xGlobalQuotes/GetGlobalExtendedQuote",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetGlobalExtendedQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetGlobalExtendedQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7112cc39-6111-4ff3-ab5b-d7db239aefb6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetGlobalExtendedQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 609.1765353003309,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCOffset\": 9330.565276672884,\n  \"Open\": 9941.402721905994,\n  \"Close\": 9848.80687168319,\n  \"High\": 7929.387413055948,\n  \"Low\": 5592.208276919693,\n  \"Last\": 6949.375806161291,\n  \"LastSize\": 4510.733579781677,\n  \"Volume\": 2666.139439616828,\n  \"PreviousClose\": 8374.356382386126,\n  \"PreviousCloseDate\": \"string\",\n  \"ChangeFromPreviousClose\": 1805.0835126291254,\n  \"PercentChangeFromPreviousClose\": 4037.8935892863,\n  \"Bid\": 9013.78161786124,\n  \"BidSize\": 7368.198037723777,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"Ask\": 9747.755836943621,\n  \"AskSize\": 1754.3468362984427,\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"High52Weeks\": 6953.767568295466,\n  \"Low52Weeks\": 8788.016986835128,\n  \"Currency\": \"string\",\n  \"TradingHalted\": true,\n  \"BidMarketIdentificationCode\": \"string\",\n  \"AskMarketIdentificationCode\": \"string\",\n  \"LastMarketIdentificationCode\": \"string\",\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\",\n  \"VolumeDate\": \"string\",\n  \"ExtendedHoursDate\": \"string\",\n  \"ExtendedHoursTime\": \"string\",\n  \"ExtendedHoursType\": \"string\",\n  \"ExtendedHoursPrice\": 2144.6614442507794,\n  \"ExtendedHoursChange\": 4721.424814017128,\n  \"ExtendedHoursPercentChange\": 8330.852938779108,\n  \"ExtendedHoursTradeConditions\": \"string\",\n  \"LimitDate\": \"string\",\n  \"LimitTime\": \"string\",\n  \"LimitDown\": 7554.134702977177,\n  \"LimitUp\": 8811.297892076947\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6232c878-d43a-4ebd-b4e3-925a27d33ebb",
+          "name": "/v3/xGlobalQuotes/GetGlobalDelayedQuote",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetGlobalDelayedQuote",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetGlobalDelayedQuote"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cd8ed7d2-7b8c-400c-8b6e-3bce9479ae05",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetGlobalDelayedQuote"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9559.149253727248,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCOffset\": 3356.120800675285,\n  \"Open\": 5818.955261261705,\n  \"Close\": 7052.661696625068,\n  \"High\": 1111.91109409126,\n  \"Low\": 422.13780059150884,\n  \"Last\": 8020.771848361098,\n  \"LastSize\": 4689.150950533481,\n  \"Volume\": 3123.027204675046,\n  \"PreviousClose\": 3948.6468720820753,\n  \"PreviousCloseDate\": \"string\",\n  \"ChangeFromPreviousClose\": 8337.798616640826,\n  \"PercentChangeFromPreviousClose\": 2630.165032492031,\n  \"Bid\": 8075.046717909722,\n  \"BidSize\": 6597.584819727863,\n  \"BidDate\": \"string\",\n  \"BidTime\": \"string\",\n  \"Ask\": 5496.724146294282,\n  \"AskSize\": 5371.9161879027415,\n  \"AskDate\": \"string\",\n  \"AskTime\": \"string\",\n  \"High52Weeks\": 8121.058744991074,\n  \"Low52Weeks\": 5423.539690244773,\n  \"Currency\": \"string\",\n  \"TradingHalted\": false,\n  \"BidMarketIdentificationCode\": \"string\",\n  \"AskMarketIdentificationCode\": \"string\",\n  \"LastMarketIdentificationCode\": \"string\",\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6ad200ce-c57c-4808-9105-71ff29873c0e",
+          "name": "/v3/xGlobalQuotes/GetGlobalExtendedQuotes",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetGlobalExtendedQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetGlobalExtendedQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "34f1566c-b80d-43c5-b779-9cb2e6d0d9ee",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetGlobalExtendedQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5801.09431669449,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"Security\": {\n      \"nullable\": true,\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 112.59681718570835,\n    \"Open\": 7164.040725604941,\n    \"Close\": 3962.9729424497796,\n    \"High\": 7555.307617086877,\n    \"Low\": 6032.911604907145,\n    \"Last\": 8036.965106451572,\n    \"LastSize\": 9464.989715359898,\n    \"Volume\": 9338.76157003781,\n    \"PreviousClose\": 2679.2258822267736,\n    \"PreviousCloseDate\": \"string\",\n    \"ChangeFromPreviousClose\": 4592.179694216217,\n    \"PercentChangeFromPreviousClose\": 1829.089265674927,\n    \"Bid\": 8243.113496725322,\n    \"BidSize\": 2752.021342022536,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"Ask\": 1800.5763905372341,\n    \"AskSize\": 684.1077610386037,\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"High52Weeks\": 9154.885825700745,\n    \"Low52Weeks\": 4536.174470820945,\n    \"Currency\": \"string\",\n    \"TradingHalted\": true,\n    \"BidMarketIdentificationCode\": \"string\",\n    \"AskMarketIdentificationCode\": \"string\",\n    \"LastMarketIdentificationCode\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"VolumeDate\": \"string\",\n    \"ExtendedHoursDate\": \"string\",\n    \"ExtendedHoursTime\": \"string\",\n    \"ExtendedHoursType\": \"string\",\n    \"ExtendedHoursPrice\": 8317.33894502376,\n    \"ExtendedHoursChange\": 3304.382451611798,\n    \"ExtendedHoursPercentChange\": 5455.018087250129,\n    \"ExtendedHoursTradeConditions\": \"string\",\n    \"LimitDate\": \"string\",\n    \"LimitTime\": \"string\",\n    \"LimitDown\": 3639.0940980398345,\n    \"LimitUp\": 2595.0143951740156\n  },\n  {\n    \"Delay\": 3717.4875270957473,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"Security\": {\n      \"nullable\": true,\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 2771.5736166728357,\n    \"Open\": 4830.625140368226,\n    \"Close\": 7146.53497812521,\n    \"High\": 5690.312896991016,\n    \"Low\": 2706.532273890362,\n    \"Last\": 344.6649432487092,\n    \"LastSize\": 2308.959584236787,\n    \"Volume\": 9893.269609975638,\n    \"PreviousClose\": 6340.759619929495,\n    \"PreviousCloseDate\": \"string\",\n    \"ChangeFromPreviousClose\": 6670.269860526524,\n    \"PercentChangeFromPreviousClose\": 7149.6527758696375,\n    \"Bid\": 1540.9094641724207,\n    \"BidSize\": 1771.4084024995614,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"Ask\": 9375.101405930885,\n    \"AskSize\": 2287.058653240459,\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"High52Weeks\": 6050.306623681004,\n    \"Low52Weeks\": 4045.3993250046105,\n    \"Currency\": \"string\",\n    \"TradingHalted\": false,\n    \"BidMarketIdentificationCode\": \"string\",\n    \"AskMarketIdentificationCode\": \"string\",\n    \"LastMarketIdentificationCode\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"VolumeDate\": \"string\",\n    \"ExtendedHoursDate\": \"string\",\n    \"ExtendedHoursTime\": \"string\",\n    \"ExtendedHoursType\": \"string\",\n    \"ExtendedHoursPrice\": 7929.203116171284,\n    \"ExtendedHoursChange\": 2850.4632250390027,\n    \"ExtendedHoursPercentChange\": 8211.673634457613,\n    \"ExtendedHoursTradeConditions\": \"string\",\n    \"LimitDate\": \"string\",\n    \"LimitTime\": \"string\",\n    \"LimitDown\": 1490.2986312552491,\n    \"LimitUp\": 3898.150934564073\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "adbf154b-2785-4bcc-9c30-bc5042955b47",
+          "name": "/v3/xGlobalQuotes/GetGlobalDelayedQuotes",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetGlobalDelayedQuotes",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetGlobalDelayedQuotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4f51adda-74f6-445d-8b80-f60b89be6a7f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetGlobalDelayedQuotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9709.703936845423,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Security\": {\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"MostLiquidExchange\": false,\n      \"CategoryOrIndustry\": \"string\"\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 3669.408818294978,\n    \"Open\": 1832.690278775374,\n    \"Close\": 573.8095504675944,\n    \"High\": 9181.05798081884,\n    \"Low\": 9188.277102535669,\n    \"Last\": 7876.535320187887,\n    \"LastSize\": 878.2205924409858,\n    \"Volume\": 5577.015616973412,\n    \"PreviousClose\": 6480.6009200229455,\n    \"PreviousCloseDate\": \"string\",\n    \"ChangeFromPreviousClose\": 3109.4060468581365,\n    \"PercentChangeFromPreviousClose\": 3860.15337943014,\n    \"Bid\": 5511.26882006645,\n    \"BidSize\": 3542.4444522519825,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"Ask\": 1196.6627454237978,\n    \"AskSize\": 7378.85007855374,\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"High52Weeks\": 9264.966992027155,\n    \"Low52Weeks\": 8709.977287653881,\n    \"Currency\": \"string\",\n    \"TradingHalted\": false,\n    \"BidMarketIdentificationCode\": \"string\",\n    \"AskMarketIdentificationCode\": \"string\",\n    \"LastMarketIdentificationCode\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 216.51381274262027,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Security\": {\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"MostLiquidExchange\": true,\n      \"CategoryOrIndustry\": \"string\"\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 494.2899255267397,\n    \"Open\": 8571.598404836383,\n    \"Close\": 2538.2666389385013,\n    \"High\": 9278.023478741583,\n    \"Low\": 8867.819681360914,\n    \"Last\": 7049.862544536697,\n    \"LastSize\": 9540.386712424175,\n    \"Volume\": 4784.492991674822,\n    \"PreviousClose\": 7313.483130698332,\n    \"PreviousCloseDate\": \"string\",\n    \"ChangeFromPreviousClose\": 7549.620263731843,\n    \"PercentChangeFromPreviousClose\": 5952.532249695003,\n    \"Bid\": 120.3407861011796,\n    \"BidSize\": 4618.351643988853,\n    \"BidDate\": \"string\",\n    \"BidTime\": \"string\",\n    \"Ask\": 6683.191150294625,\n    \"AskSize\": 4851.45921331267,\n    \"AskDate\": \"string\",\n    \"AskTime\": \"string\",\n    \"High52Weeks\": 9822.193265729615,\n    \"Low52Weeks\": 6890.7088356882105,\n    \"Currency\": \"string\",\n    \"TradingHalted\": false,\n    \"BidMarketIdentificationCode\": \"string\",\n    \"AskMarketIdentificationCode\": \"string\",\n    \"LastMarketIdentificationCode\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4622f32e-c9e9-4122-ad9e-f49c34d6a2d4",
+          "name": "/v3/xGlobalQuotes/GetGlobalDelayedVWAP",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetGlobalDelayedVWAP",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetGlobalDelayedVWAP"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8c858feb-4e1e-4751-9015-37a114630f98",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetGlobalDelayedVWAP"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5529.572884215056,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Date\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndTime\": \"string\",\n  \"UTCOffset\": 830.3174851942586,\n  \"VWAPType\": \"Period\",\n  \"VWAP\": 9995.321170680809,\n  \"High\": 7502.000602761759,\n  \"Low\": 1300.5625073142446,\n  \"Average\": 1660.2150146204785,\n  \"Amount\": 4672.245831469099,\n  \"Volume\": 9317.314910670173,\n  \"Trades\": 3562,\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e0594485-07f4-43d5-ba8b-cd2fc74decd7",
+          "name": "/v3/xGlobalQuotes/GetTopMarketMovers",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetTopMarketMovers",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetTopMarketMovers"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "MarketMoverType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "NumberOfMarketMovers",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchanges",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "680dcf43-febe-4e14-983e-62017992d958",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetTopMarketMovers"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "MarketMoverType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "NumberOfMarketMovers",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "Exchanges",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4999.734493308711,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"MarketMoverType\": \"string\",\n  \"NumberOfMarketMovers\": 1908,\n  \"Exchanges\": \"string\",\n  \"InstrumentClass\": \"string\",\n  \"Universe\": \"string\",\n  \"Movers\": [\n    {\n      \"Delay\": 3321.7867917841936,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RegistrationError\",\n      \"MarketMoverType\": \"string\",\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4563.1290403891335,\n      \"Last\": 3386.3156817351237,\n      \"ChangeFromPreviousClose\": 9384.274010661711,\n      \"PercentChangeFromPreviousClose\": 669.8858742805513,\n      \"Volume\": 9798.534271705912,\n      \"Currency\": \"string\"\n    },\n    {\n      \"Delay\": 8592.889804286611,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RegistrationError\",\n      \"MarketMoverType\": \"string\",\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 231.08446323563015,\n      \"Last\": 535.2896879881508,\n      \"ChangeFromPreviousClose\": 9619.667136252267,\n      \"PercentChangeFromPreviousClose\": 5902.356942280247,\n      \"Volume\": 7394.5945971873225,\n      \"Currency\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0a129a9f-fcfc-49ab-9d9f-f5303b22c752",
+          "name": "/v3/xGlobalQuotes/GetAuctionPrices",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetAuctionPrices",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetAuctionPrices"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "307c5bc8-2ace-466e-8d9c-1d7d102c5e6c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetAuctionPrices"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3802.6150431754813,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Security\": {\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"MostLiquidExchange\": true,\n      \"CategoryOrIndustry\": \"string\"\n    },\n    \"OpeningAuction\": 3554.3898246162744,\n    \"OpeningAuctionSize\": 7817.788086708616,\n    \"OpeningAuctionDate\": \"string\",\n    \"OpeningAuctionTime\": \"string\",\n    \"ClosingAuction\": 9263.690116797097,\n    \"ClosingAuctionSize\": 4132.689210783743,\n    \"ClosingAuctionDate\": \"string\",\n    \"ClosingAuctionTime\": \"string\",\n    \"LastAuction\": 3261.2859311133425,\n    \"LastAuctionSize\": 2035.4927226219465,\n    \"PreviousClosingAuction\": 2668.983207753344,\n    \"PreviousClosingAuctionDate\": \"string\",\n    \"UTCOffset\": 6311.939378446475,\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 915.6652595291404,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Security\": {\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"MostLiquidExchange\": true,\n      \"CategoryOrIndustry\": \"string\"\n    },\n    \"OpeningAuction\": 3227.5447226441843,\n    \"OpeningAuctionSize\": 9625.50365328982,\n    \"OpeningAuctionDate\": \"string\",\n    \"OpeningAuctionTime\": \"string\",\n    \"ClosingAuction\": 361.99354091920213,\n    \"ClosingAuctionSize\": 0.6891605277348223,\n    \"ClosingAuctionDate\": \"string\",\n    \"ClosingAuctionTime\": \"string\",\n    \"LastAuction\": 5698.8181658778385,\n    \"LastAuctionSize\": 7467.843035322448,\n    \"PreviousClosingAuction\": 4475.035333321369,\n    \"PreviousClosingAuctionDate\": \"string\",\n    \"UTCOffset\": 4902.865858962422,\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8b68b673-39b4-4c1a-9c48-fd8dc265df65",
+          "name": "/v3/xGlobalQuotes/GetChartBars",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetChartBars",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetChartBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdjustmentMethod",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IncludeExtended",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3f9ac0e8-b02b-44e6-86a8-3be4ad4ec2de",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetChartBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "AdjustmentMethod",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IncludeExtended",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3008.680597235338,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"ChartBars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 5884.547538181787,\n      \"Open\": 371.77792304295076,\n      \"High\": 7991.714896932631,\n      \"Low\": 7400.379332337374,\n      \"Close\": 2789.2664022076374,\n      \"Volume\": 5693.599470354092,\n      \"Trades\": 3289,\n      \"TWAP\": 897.7489385869275,\n      \"VWAP\": 7960.880682995139,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 1283.288365300067\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 7849.073762114071,\n      \"Open\": 79.58173153431503,\n      \"High\": 2069.7348749463918,\n      \"Low\": 5608.730867394891,\n      \"Close\": 3034.2518556646082,\n      \"Volume\": 6640.225023664699,\n      \"Trades\": 2505,\n      \"TWAP\": 2000.8377948021282,\n      \"VWAP\": 7796.581829833672,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 8752.381455948638\n    }\n  ],\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\",\n  \"Timing\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7c9077dc-f95a-4e23-a1c3-27ea19c56a84",
+          "name": "/v3/xGlobalQuotes/GetBars",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetBars",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3878ff90-4481-47bf-9ad4-5cc61f00dfa5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5549.622804064324,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\",\n  \"Bars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 6710.147517180678,\n      \"Open\": 419.277315887866,\n      \"High\": 6829.471637754384,\n      \"Low\": 124.98315022550611,\n      \"Close\": 611.8802289296199,\n      \"Volume\": 1649.7945703709481,\n      \"Trades\": 9567,\n      \"TWAP\": 507.12980247013985,\n      \"VWAP\": 9422.63609677143\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 4776.1883549047125,\n      \"Open\": 6609.312559842043,\n      \"High\": 9801.828846583858,\n      \"Low\": 1126.6290329788642,\n      \"Close\": 2495.1936789453166,\n      \"Volume\": 9905.200786821422,\n      \"Trades\": 850,\n      \"TWAP\": 6649.714010919635,\n      \"VWAP\": 2080.370240603101\n    }\n  ],\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6c45f342-e817-4e78-b7e1-5a6a6a09fee9",
+          "name": "/v3/xGlobalQuotes/GetBar",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetBar",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetBar"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "be791e54-8040-49b8-974f-9936c0bff901",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetBar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4227.569629565212,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Bar\": {\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"UTCOffset\": 2376.394496555313,\n    \"Open\": 6305.263609871212,\n    \"High\": 6460.679463103955,\n    \"Low\": 7748.230952380566,\n    \"Close\": 8851.481999318115,\n    \"Volume\": 698.2395141963938,\n    \"Trades\": 6926,\n    \"TWAP\": 8782.568935633328,\n    \"VWAP\": 9966.573685860863\n  },\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "172dbc04-5ff6-4d9b-a618-330b101b48df",
+          "name": "/v3/xGlobalQuotes/GetGlobalIntradayVWAP",
+          "request": {
+            "name": "/v3/xGlobalQuotes/GetGlobalIntradayVWAP",
+            "description": {},
+            "url": {
+              "path": [
+                "v3",
+                "xGlobalQuotes",
+                "GetGlobalIntradayVWAP"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9792ea75-9c7e-457f-a7c9-29fb3ea43f6f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v3",
+                    "xGlobalQuotes",
+                    "GetGlobalIntradayVWAP"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5529.572884215056,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Security\": {\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Date\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndTime\": \"string\",\n  \"UTCOffset\": 830.3174851942586,\n  \"VWAPType\": \"Period\",\n  \"VWAP\": 9995.321170680809,\n  \"High\": 7502.000602761759,\n  \"Low\": 1300.5625073142446,\n  \"Average\": 1660.2150146204785,\n  \"Amount\": 4672.245831469099,\n  \"Volume\": 9317.314910670173,\n  \"Trades\": 3562,\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalquotes.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "bcabdc41-c18d-4136-825a-0524dd96065b",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalQuotes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

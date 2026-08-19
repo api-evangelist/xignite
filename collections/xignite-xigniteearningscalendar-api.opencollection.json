@@ -1,0 +1,305 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteEarningsCalendar API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteEarningsCalendar",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/ListExchanges",
+            "params": [
+              {
+                "name": "Region",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/ListEarningCalendarItems",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/ListEarningCalendarItems"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetEarningCalendarItem",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetEarningCalendarItem",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetEarningCalendarItems",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetEarningCalendarItems",
+            "params": [
+              {
+                "name": "Types",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetEarningCall",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetEarningCall",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetConferenceCallInformation",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetConferenceCallInformation",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetReplayInformation",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetReplayInformation",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetAnnouncement",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetAnnouncement",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetEarningCalendarDay",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetEarningCalendarDay",
+            "params": [
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MinimumMarketCap",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetEarningCalendarRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetEarningCalendarRange",
+            "params": [
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "MinimumMarketCap",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetEarningDates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetEarningDates",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xEarningsCalendar/GetBoardMeeting",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://earningscalendar.xignite.com/xEarningsCalendar/GetBoardMeeting",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

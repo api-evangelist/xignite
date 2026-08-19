@@ -1,0 +1,719 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalOptions API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalOptions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetOptionGreeks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetOptionGreeks",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CalculationType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetOptionGreeksByChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetOptionGreeksByChain",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Month",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CalculationType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetAllOptionGreeksByChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetAllOptionGreeksByChain",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CalculationType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetAllEquityOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetAllEquityOptionChain",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetAllExtendedEquityOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetAllExtendedEquityOptionChain",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetBlackScholesOptionValue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetBlackScholesOptionValue",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StockPrice",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StrikePrice",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "YearsToMaturity",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "RiskFreeRate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Volatility",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetEquityOption",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetEquityOption",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Month",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StrikePrice",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetEquityOptionBySymbol",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetEquityOptionBySymbol",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetEquityOptionBySymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetEquityOptionBySymbols",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetEquityOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetEquityOptionChain",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Month",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetEquityOptionSymbol",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetEquityOptionSymbol",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Month",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StrikePrice",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetExtendedEquityOption",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetExtendedEquityOption",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Month",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StrikePrice",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetExtendedEquityOptionBySymbol",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetExtendedEquityOptionBySymbol",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetExtendedEquityOptionBySymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetExtendedEquityOptionBySymbols",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetExtendedEquityOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetExtendedEquityOptionChain",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Month",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetExtendedOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetExtendedOptionChain",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExpirationDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CallPutType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetOptionChain",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExpirationDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "CallPutType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "OptionExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/ListUnderlyingSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/ListUnderlyingSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalOptions/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globaloptions.xignite.com/xGlobalOptions/GetChartBars",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "SymbologyType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeExtended",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

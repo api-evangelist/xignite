@@ -1,0 +1,2804 @@
+{
+  "item": [
+    {
+      "id": "d558a538-3483-4853-b475-4f0c463ba1ab",
+      "name": "XigniteGlobalMaster",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c51d103f-29d5-423f-9535-0560398acc4a",
+          "name": "/xGlobalMaster/ListExchanges",
+          "request": {
+            "name": "/xGlobalMaster/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3a63eef6-9cea-4483-ac1d-2da85e045adb",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8620.299035234084,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataProvider\": \"Telekurs\",\n  \"PossibleValuesOf\": \"string\",\n  \"Values\": [\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "21d265f9-0c74-46ed-9e52-70783c9fe3fc",
+          "name": "/xGlobalMaster/ListIndustries",
+          "request": {
+            "name": "/xGlobalMaster/ListIndustries",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListIndustries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6d2fdd8f-1b71-43ce-9abc-b5957efc3fda",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListIndustries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6836.136714408588,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataProvider\": \"Telekurs\",\n  \"PossibleValuesOf\": \"string\",\n  \"Values\": [\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "acb7a30f-30cb-48ba-ac9e-dfd7f7d48a1b",
+          "name": "/xGlobalMaster/ListSectors",
+          "request": {
+            "name": "/xGlobalMaster/ListSectors",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListSectors"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "70a8d1df-4f68-4839-9c2e-6d1204438154",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListSectors"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6836.136714408588,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataProvider\": \"Telekurs\",\n  \"PossibleValuesOf\": \"string\",\n  \"Values\": [\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2a13994d-c6f9-4033-8fb5-7b8a67dec258",
+          "name": "/xGlobalMaster/ListInstrumentClasses",
+          "request": {
+            "name": "/xGlobalMaster/ListInstrumentClasses",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListInstrumentClasses"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d64d39b1-b5ce-4b14-a9ff-cb7270257c1a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListInstrumentClasses"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6836.136714408588,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataProvider\": \"Telekurs\",\n  \"PossibleValuesOf\": \"string\",\n  \"Values\": [\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dbbc44b2-f8b3-4411-815d-2df49b003d1c",
+          "name": "/xGlobalMaster/ListGlobalIndustries",
+          "request": {
+            "name": "/xGlobalMaster/ListGlobalIndustries",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListGlobalIndustries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "30b7f11d-f114-4739-a7fe-cd6df7c91d76",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListGlobalIndustries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6836.136714408588,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataProvider\": \"Telekurs\",\n  \"PossibleValuesOf\": \"string\",\n  \"Values\": [\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b23a2fa9-e9bd-4364-9e0c-75e60ac0f778",
+          "name": "/xGlobalMaster/ListGlobalSectors",
+          "request": {
+            "name": "/xGlobalMaster/ListGlobalSectors",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListGlobalSectors"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5a6a882c-5bc0-40e2-8e9e-a5653670f09e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListGlobalSectors"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6836.136714408588,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataProvider\": \"Telekurs\",\n  \"PossibleValuesOf\": \"string\",\n  \"Values\": [\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"ProviderValue\": \"string\",\n      \"XigniteValue\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "adf1c7b7-689f-4100-bc1e-4f298316ca3e",
+          "name": "/xGlobalMaster/ListMICToLegacyExchange",
+          "request": {
+            "name": "/xGlobalMaster/ListMICToLegacyExchange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListMICToLegacyExchange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a1ad6c33-53ae-47a6-a65f-87662966d55f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListMICToLegacyExchange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5239.504843495673,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\"\n  },\n  {\n    \"Delay\": 7811.312318632379,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c3d91320-666c-4041-ad74-e5965d5d778a",
+          "name": "/xGlobalMaster/ListMICToLegacySuffix",
+          "request": {
+            "name": "/xGlobalMaster/ListMICToLegacySuffix",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListMICToLegacySuffix"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9f98e8ac-53ca-47b0-b813-6148b69525df",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListMICToLegacySuffix"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5239.504843495673,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\"\n  },\n  {\n    \"Delay\": 7811.312318632379,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9dac3a9b-4c44-463a-bd19-6b171edaae0e",
+          "name": "/xGlobalMaster/ListSymbolChanges",
+          "request": {
+            "name": "/xGlobalMaster/ListSymbolChanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListSymbolChanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ChangesSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f0cf8599-e617-49e1-b844-d93e493a32c5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListSymbolChanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ChangesSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 7597.944724517638,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"DateTime\": \"string\",\n  \"SymbolChanges\": [\n    {\n      \"Symbol\": \"string\",\n      \"OldSymbol\": \"string\",\n      \"Name\": \"string\",\n      \"OldName\": \"string\",\n      \"Exchange\": \"string\",\n      \"OldExchange\": \"string\",\n      \"Currency\": \"string\",\n      \"OldCurrency\": \"string\",\n      \"Type\": \"string\",\n      \"InstrumentClass\": \"string\"\n    },\n    {\n      \"Symbol\": \"string\",\n      \"OldSymbol\": \"string\",\n      \"Name\": \"string\",\n      \"OldName\": \"string\",\n      \"Exchange\": \"string\",\n      \"OldExchange\": \"string\",\n      \"Currency\": \"string\",\n      \"OldCurrency\": \"string\",\n      \"Type\": \"string\",\n      \"InstrumentClass\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "959b9cbd-6cad-4b95-af3e-a6c66436d25e",
+          "name": "/xGlobalMaster/ListIdentifiersByExchange",
+          "request": {
+            "name": "/xGlobalMaster/ListIdentifiersByExchange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "ListIdentifiersByExchange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b7ca7b3c-054f-4868-adfd-c8843c85a157",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "ListIdentifiersByExchange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5057.22737222402,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"IdentifierType\": \"string\",\n  \"Exchange\": \"string\",\n  \"InstrumentClass\": \"string\",\n  \"Count\": 6949,\n  \"ArrayOfIdentifierRecords\": [\n    {\n      \"Name\": \"string\",\n      \"Identifier\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"Identifier\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "14b0908a-46a0-4e90-80b0-1e9e02c3e7ac",
+          "name": "/xGlobalMaster/GetSecurity",
+          "request": {
+            "name": "/xGlobalMaster/GetSecurity",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetSecurity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "26ae6c06-7abf-48b7-a611-46b571e2cbb4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetSecurity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 2671.6092480987772,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Currency\": \"string\",\n    \"Exchange\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Active\": false,\n    \"AlternateSecurityIdentifiers\": [\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"CUSIP\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      },\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"CIK\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      }\n    ],\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"ExchangeWebsite\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 6562.334982249676,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Currency\": \"string\",\n    \"Exchange\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Active\": true,\n    \"AlternateSecurityIdentifiers\": [\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"Unknown\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      },\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"SEDOL\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      }\n    ],\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"Telekurs\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5c0719f0-eb36-4fe6-93b1-836ee50da87c",
+          "name": "/xGlobalMaster/GetSecurities",
+          "request": {
+            "name": "/xGlobalMaster/GetSecurities",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetSecurities"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fcab075b-45b1-4bcd-82a7-aa4a5efab73a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetSecurities"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1944.9348537548483,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Currency\": \"string\",\n    \"Exchange\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Active\": true,\n    \"AlternateSecurityIdentifiers\": [\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"CIK\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      },\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"CIK\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      }\n    ],\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"FactSet\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 5406.573056366836,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Currency\": \"string\",\n    \"Exchange\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Active\": false,\n    \"AlternateSecurityIdentifiers\": [\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"Unknown\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      },\n      {\n        \"AlternateIdentifier\": \"string\",\n        \"IdentifierType\": \"SEDOL\",\n        \"StartDate\": \"string\",\n        \"EndDate\": \"string\"\n      }\n    ],\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"LegacyXignite\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "888d891c-5c7f-42c2-8362-664a9c52f3f4",
+          "name": "/xGlobalMaster/GetInstrument",
+          "request": {
+            "name": "/xGlobalMaster/GetInstrument",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetInstrument"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IncludeRelated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e1a81e8d-a3d0-4c99-a46f-f19e6be6c9e9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetInstrument"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeRelated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5697.322695164333,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"InstrumentClass\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"MostLiquidExchange\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"CFICode\": \"string\",\n    \"Description\": \"string\",\n    \"Active\": true,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Securities\": [\n      {\n        \"Delay\": 640.7682833794181,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": false,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": true,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      },\n      {\n        \"Delay\": 8096.223484965511,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": true,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": true,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"ExchangeWebsite\"\n  },\n  {\n    \"Delay\": 4679.645184667215,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"InstrumentClass\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"MostLiquidExchange\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"CFICode\": \"string\",\n    \"Description\": \"string\",\n    \"Active\": true,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Securities\": [\n      {\n        \"Delay\": 2224.946041642637,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": false,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": true,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      },\n      {\n        \"Delay\": 8175.373486639776,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": true,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": false,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"ManualXignite\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c2271c11-5748-4d97-8086-861309ec2017",
+          "name": "/xGlobalMaster/GetInstruments",
+          "request": {
+            "name": "/xGlobalMaster/GetInstruments",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetInstruments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IncludeRelated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b0d68a7d-99b0-4f0e-b747-40de4133ec7b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetInstruments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeRelated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5719.959742462109,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"InstrumentClass\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"MostLiquidExchange\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"CFICode\": \"string\",\n    \"Description\": \"string\",\n    \"Active\": false,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Securities\": [\n      {\n        \"Delay\": 5996.250181206921,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": false,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": true,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      },\n      {\n        \"Delay\": 4837.395468387666,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": false,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": true,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"ManualXignite\"\n  },\n  {\n    \"Delay\": 3234.926595070068,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"InstrumentClass\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"MostLiquidExchange\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"CFICode\": \"string\",\n    \"Description\": \"string\",\n    \"Active\": true,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Securities\": [\n      {\n        \"Delay\": 702.9928646592709,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": true,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": false,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      },\n      {\n        \"Delay\": 9561.543747200109,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": \"string\",\n        \"Name\": \"string\",\n        \"SEDOL\": \"string\",\n        \"Currency\": \"string\",\n        \"Exchange\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"HomeTradingPlace\": false,\n        \"FIGI\": \"string\",\n        \"CompositeFIGI\": \"string\",\n        \"Active\": true,\n        \"AlternateSecurityIdentifiers\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\"\n      }\n    ],\n    \"DataProvider\": \"Telekurs\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "db17c01b-f607-47bb-8d3b-1629d70f3006",
+          "name": "/xGlobalMaster/GetIssuer",
+          "request": {
+            "name": "/xGlobalMaster/GetIssuer",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetIssuer"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IncludeRelated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "367c7478-73f9-4d0a-bbda-64651621713b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetIssuer"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeRelated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 6362.603677035594,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"CIK\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"CompanyIdentifier\": \"string\",\n    \"Domicile\": \"string\",\n    \"Active\": false,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Instruments\": [\n      {\n        \"Delay\": 4817.392290862445,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": true,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      {\n        \"Delay\": 3647.3628407232495,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": false,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    ],\n    \"DataProvider\": \"XigniteComposite\",\n    \"Classifications\": [\n      {\n        \"Delay\": 9138.35355002693,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      },\n      {\n        \"Delay\": 3431.116124116749,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      }\n    ],\n    \"FactSetEntityId\": \"string\"\n  },\n  {\n    \"Delay\": 7360.594984494044,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"CIK\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"CompanyIdentifier\": \"string\",\n    \"Domicile\": \"string\",\n    \"Active\": true,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Instruments\": [\n      {\n        \"Delay\": 5183.72739812994,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": true,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      {\n        \"Delay\": 3239.44417268664,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": true,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    ],\n    \"DataProvider\": \"ManualXignite\",\n    \"Classifications\": [\n      {\n        \"Delay\": 8584.97208525107,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      },\n      {\n        \"Delay\": 697.9034740237289,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      }\n    ],\n    \"FactSetEntityId\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3b3d0176-915f-4d8a-bf03-37357df40ad8",
+          "name": "/xGlobalMaster/GetIssuers",
+          "request": {
+            "name": "/xGlobalMaster/GetIssuers",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetIssuers"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IncludeRelated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fcded4d7-4014-42b7-9a9a-5e819d6acde4",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetIssuers"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeRelated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1912.7875686671036,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"CIK\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"CompanyIdentifier\": \"string\",\n    \"Domicile\": \"string\",\n    \"Active\": true,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Instruments\": [\n      {\n        \"Delay\": 3448.837162445143,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": true,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      {\n        \"Delay\": 62.61432900630748,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": false,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    ],\n    \"DataProvider\": \"LegacyXignite\",\n    \"Classifications\": [\n      {\n        \"Delay\": 1884.705277693043,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      },\n      {\n        \"Delay\": 8219.178325702882,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      }\n    ],\n    \"FactSetEntityId\": \"string\"\n  },\n  {\n    \"Delay\": 8206.29563598776,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"CIK\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"CompanyIdentifier\": \"string\",\n    \"Domicile\": \"string\",\n    \"Active\": true,\n    \"CustomAttributes\": [\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      },\n      {\n        \"Name\": \"string\",\n        \"DataType\": \"string\",\n        \"Value\": \"string\"\n      }\n    ],\n    \"Instruments\": [\n      {\n        \"Delay\": 2904.1363072027993,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": false,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      {\n        \"Delay\": 3793.6535577324526,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": \"string\",\n        \"Name\": \"string\",\n        \"CUSIP\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"ActiveDate\": \"string\",\n        \"InactiveDate\": \"string\",\n        \"MostLiquidExchange\": \"string\",\n        \"Identifier\": \"string\",\n        \"IdentifierType\": \"string\",\n        \"CFICode\": \"string\",\n        \"Description\": \"string\",\n        \"Active\": false,\n        \"CustomAttributes\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"Securities\": [\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        ],\n        \"DataProvider\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    ],\n    \"DataProvider\": \"LegacyXignite\",\n    \"Classifications\": [\n      {\n        \"Delay\": 9131.41998041916,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      },\n      {\n        \"Delay\": 6360.1969237764115,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Industry\": \"string\",\n        \"Sector\": \"string\",\n        \"Scheme\": \"string\",\n        \"ClassificationCode\": \"string\"\n      }\n    ],\n    \"FactSetEntityId\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "223f1246-c70a-44f7-8e7b-8fb423e79f6c",
+          "name": "/xGlobalMaster/GetIssuerByCompanyIdentifier",
+          "request": {
+            "name": "/xGlobalMaster/GetIssuerByCompanyIdentifier",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetIssuerByCompanyIdentifier"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IncludeRelated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f4c11ee1-be25-48a0-9551-19ec87d60331",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetIssuerByCompanyIdentifier"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IncludeRelated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9957.136818590485,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Name\": \"string\",\n  \"CIK\": \"string\",\n  \"Industry\": \"string\",\n  \"Sector\": \"string\",\n  \"ActiveDate\": \"string\",\n  \"InactiveDate\": \"string\",\n  \"CompanyIdentifier\": \"string\",\n  \"Domicile\": \"string\",\n  \"Active\": true,\n  \"CustomAttributes\": [\n    {\n      \"Name\": \"string\",\n      \"DataType\": \"string\",\n      \"Value\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"DataType\": \"string\",\n      \"Value\": \"string\"\n    }\n  ],\n  \"Instruments\": [\n    {\n      \"Delay\": 4188.802474768374,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"InstrumentClass\": \"string\",\n      \"Name\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"ActiveDate\": \"string\",\n      \"InactiveDate\": \"string\",\n      \"MostLiquidExchange\": \"string\",\n      \"Identifier\": \"string\",\n      \"IdentifierType\": \"string\",\n      \"CFICode\": \"string\",\n      \"Description\": \"string\",\n      \"Active\": true,\n      \"CustomAttributes\": [\n        {\n          \"Name\": \"string\",\n          \"DataType\": \"string\",\n          \"Value\": \"string\"\n        },\n        {\n          \"Name\": \"string\",\n          \"DataType\": \"string\",\n          \"Value\": \"string\"\n        }\n      ],\n      \"Securities\": [\n        {\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SEDOL\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Currency\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Exchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ActiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"InactiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"HomeTradingPlace\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"FIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CompositeFIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Active\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AlternateSecurityIdentifiers\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CustomAttributes\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DataProvider\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identifier\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"IdentifierType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SEDOL\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Currency\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Exchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ActiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"InactiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"HomeTradingPlace\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"FIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CompositeFIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Active\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AlternateSecurityIdentifiers\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CustomAttributes\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DataProvider\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identifier\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"IdentifierType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"DataProvider\": \"ExchangeWebsite\"\n    },\n    {\n      \"Delay\": 2873.975142262638,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"InstrumentClass\": \"string\",\n      \"Name\": \"string\",\n      \"CUSIP\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"ActiveDate\": \"string\",\n      \"InactiveDate\": \"string\",\n      \"MostLiquidExchange\": \"string\",\n      \"Identifier\": \"string\",\n      \"IdentifierType\": \"string\",\n      \"CFICode\": \"string\",\n      \"Description\": \"string\",\n      \"Active\": false,\n      \"CustomAttributes\": [\n        {\n          \"Name\": \"string\",\n          \"DataType\": \"string\",\n          \"Value\": \"string\"\n        },\n        {\n          \"Name\": \"string\",\n          \"DataType\": \"string\",\n          \"Value\": \"string\"\n        }\n      ],\n      \"Securities\": [\n        {\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SEDOL\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Currency\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Exchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ActiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"InactiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"HomeTradingPlace\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"FIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CompositeFIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Active\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AlternateSecurityIdentifiers\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CustomAttributes\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DataProvider\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identifier\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"IdentifierType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Symbol\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Name\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"SEDOL\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Currency\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Exchange\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"ActiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"InactiveDate\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"HomeTradingPlace\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"FIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CompositeFIGI\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Active\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"AlternateSecurityIdentifiers\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"CustomAttributes\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"DataProvider\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Identifier\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"IdentifierType\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"DataProvider\": \"FactSet\"\n    }\n  ],\n  \"DataProvider\": \"ExchangeWebsite\",\n  \"Classifications\": [\n    {\n      \"Delay\": 3638.9596738813957,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"Scheme\": \"string\",\n      \"ClassificationCode\": \"string\"\n    },\n    {\n      \"Delay\": 9450.49731079283,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RequestError\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"Scheme\": \"string\",\n      \"ClassificationCode\": \"string\"\n    }\n  ],\n  \"FactSetEntityId\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5e1105b9-f656-4c06-8d61-b2a9224b7e24",
+          "name": "/xGlobalMaster/GetMasterByIdentifier",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByIdentifier",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByIdentifier"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "207a6a5a-b531-44c9-9cb3-55d6b05cde27",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByIdentifier"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b55ccb5c-d7c2-4599-b153-ad4260f03890",
+          "name": "/xGlobalMaster/GetMasterByIdentifiers",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByIdentifiers",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByIdentifiers"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a0edb00d-95f4-4c7a-b088-b6ec1e42073e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByIdentifiers"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c3666f9e-2b19-484a-85ef-0221f1805b2a",
+          "name": "/xGlobalMaster/LookupSecurity",
+          "request": {
+            "name": "/xGlobalMaster/LookupSecurity",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "LookupSecurity"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7b7f12e2-09bd-4964-acf9-243c5b2cac22",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "LookupSecurity"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1125.354993919504,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Name\": \"string\",\n  \"Securities\": [\n    {\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Currency\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"SEDOL\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"Name\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"HomeTradingPlace\": false,\n      \"Active\": true,\n      \"MostLiquidExchange\": true\n    },\n    {\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Currency\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"SEDOL\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"Name\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"HomeTradingPlace\": true,\n      \"Active\": false,\n      \"MostLiquidExchange\": false\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b4375f80-0171-4610-b460-085b4529c235",
+          "name": "/xGlobalMaster/GetMasterByExchange",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByExchange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByExchange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "85bf7058-5f2e-41ef-90d3-819a256b14a5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByExchange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8e765fe9-0325-4bac-bbc6-7cbad5138da2",
+          "name": "/xGlobalMaster/GetMasterByExchangeChanges",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByExchangeChanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByExchangeChanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartModifiedDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndModifiedDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "89e5cd80-4749-4aa9-ba7b-84a8eddce03a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByExchangeChanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartModifiedDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndModifiedDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "50d3f33a-de50-493f-94f8-09a5b409e94c",
+          "name": "/xGlobalMaster/GetMasterBySector",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterBySector",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterBySector"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sector",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cdd76a1a-cb30-4dc4-980d-8474053d8cc1",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterBySector"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Sector",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ab2c5fdb-d821-4ee9-919a-153f80e3e99f",
+          "name": "/xGlobalMaster/GetMasterByIndustry",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByIndustry",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByIndustry"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Industry",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e448051a-061b-4756-a0fa-9ad4d05b8855",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByIndustry"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Industry",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1168355b-6250-4fac-b745-d162a9fe14e0",
+          "name": "/xGlobalMaster/GetMasterByGlobalSector",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByGlobalSector",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByGlobalSector"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sector",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4f0e483b-685b-40fa-bbdd-bc4887c37e59",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByGlobalSector"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Sector",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cbd053cd-491b-4bba-997b-f7a8f085077d",
+          "name": "/xGlobalMaster/GetMasterByGlobalIndustry",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterByGlobalIndustry",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterByGlobalIndustry"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Industry",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ef74041d-684a-4b18-a224-05c5d8df4177",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterByGlobalIndustry"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Industry",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1094.19207527941,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": false,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  },\n  {\n    \"Delay\": 3368.362409618165,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"SEDOL\": \"string\",\n    \"CFICode\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"ExchangeName\": \"string\",\n    \"Sector\": \"string\",\n    \"Industry\": \"string\",\n    \"Exchange\": \"string\",\n    \"Currency\": \"string\",\n    \"ActiveDate\": \"string\",\n    \"InactiveDate\": \"string\",\n    \"LastUpdateDate\": \"string\",\n    \"HomeTradingPlace\": true,\n    \"CompanyIdentifier\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "38a2e37c-cbf6-464f-a5d2-59c84984f337",
+          "name": "/xGlobalMaster/GetMasterStatisticsByExchange",
+          "request": {
+            "name": "/xGlobalMaster/GetMasterStatisticsByExchange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalMaster",
+                "GetMasterStatisticsByExchange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InstrumentClass",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "322201f6-1e9c-4645-8685-98cac0c91c44",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalMaster",
+                    "GetMasterStatisticsByExchange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InstrumentClass",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 645.576533054002,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Count\": 838,\n  \"Exchange\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalmaster.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3c6038d9-8393-449a-895c-d5dcaefb7133",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalMaster API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

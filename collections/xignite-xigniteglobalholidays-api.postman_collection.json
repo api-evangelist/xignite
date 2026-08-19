@@ -1,0 +1,1561 @@
+{
+  "item": [
+    {
+      "id": "35d2dced-e716-49ae-8470-5b641e8dec23",
+      "name": "XigniteGlobalHolidays",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d1809ac2-f74f-4d40-ade6-f3917180fbe5",
+          "name": "/xGlobalHolidays/ListExchanges",
+          "request": {
+            "name": "/xGlobalHolidays/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d66a70eb-5efe-46a9-9b89-078b2f4e9bf1",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9388.039744214477,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\"\n  },\n  {\n    \"Delay\": 6824.86774770828,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Name\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "db01fa56-760a-4061-9d0a-29b90d66658d",
+          "name": "/xGlobalHolidays/ListCurrencies",
+          "request": {
+            "name": "/xGlobalHolidays/ListCurrencies",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "ListCurrencies"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c8e5bc48-421a-4ff4-bf8f-4b529bf2f67d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "ListCurrencies"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 6623.636799123128,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"CurrencyCode\": \"string\",\n    \"CountryCode\": \"string\",\n    \"RelatedFinancialCentre\": \"string\"\n  },\n  {\n    \"Delay\": 8007.866152571708,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"CurrencyCode\": \"string\",\n    \"CountryCode\": \"string\",\n    \"RelatedFinancialCentre\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c0c87330-ba94-4551-8d7a-f640f8dd82c6",
+          "name": "/xGlobalHolidays/ListFinancialCenters",
+          "request": {
+            "name": "/xGlobalHolidays/ListFinancialCenters",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "ListFinancialCenters"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ddb30337-5583-4af8-8684-484cb98aaa27",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "ListFinancialCenters"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9704.408885952082,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"FinancialCenterCode\": \"string\",\n    \"CurrencyCode\": \"string\",\n    \"CountryCode\": \"string\",\n    \"FinancialCenterName\": \"string\"\n  },\n  {\n    \"Delay\": 6647.973296445771,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"FinancialCenterCode\": \"string\",\n    \"CurrencyCode\": \"string\",\n    \"CountryCode\": \"string\",\n    \"FinancialCenterName\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "96fabd1d-a158-49a3-a028-f9fb024de4f8",
+          "name": "/xGlobalHolidays/GetHolidays",
+          "request": {
+            "name": "/xGlobalHolidays/GetHolidays",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetHolidays"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Location",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LocationType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3115e3fb-302b-4aa9-b347-68c3640e6e81",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetHolidays"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Location",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "LocationType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4469.13258042212,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Location\": \"string\",\n    \"Date\": \"string\",\n    \"Name\": \"string\",\n    \"FullHoliday\": false,\n    \"EarlyClose\": false\n  },\n  {\n    \"Delay\": 5777.666390719598,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Location\": \"string\",\n    \"Date\": \"string\",\n    \"Name\": \"string\",\n    \"FullHoliday\": true,\n    \"EarlyClose\": true\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fea798a4-ca68-4da1-8b37-3b2021d7b1ad",
+          "name": "/xGlobalHolidays/ListHolidays",
+          "request": {
+            "name": "/xGlobalHolidays/ListHolidays",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "ListHolidays"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Location",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LocationType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Year",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7cf05658-8dae-45f8-ba8a-f12fa875c9a9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "ListHolidays"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Location",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "LocationType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Year",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4469.13258042212,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Location\": \"string\",\n    \"Date\": \"string\",\n    \"Name\": \"string\",\n    \"FullHoliday\": false,\n    \"EarlyClose\": false\n  },\n  {\n    \"Delay\": 5777.666390719598,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Location\": \"string\",\n    \"Date\": \"string\",\n    \"Name\": \"string\",\n    \"FullHoliday\": true,\n    \"EarlyClose\": true\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0c4853cb-4dd3-42c5-87ad-34da9b2488bf",
+          "name": "/xGlobalHolidays/GetNextDate",
+          "request": {
+            "name": "/xGlobalHolidays/GetNextDate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetNextDate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Location",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LocationType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fe913669-9ca7-402d-bd9c-f9791bf4478a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetNextDate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Location",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "LocationType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6835.55237591523,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "56d4155f-acd5-4213-a13f-adbe7baed361",
+          "name": "/xGlobalHolidays/GetPriorDate",
+          "request": {
+            "name": "/xGlobalHolidays/GetPriorDate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetPriorDate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Location",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LocationType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bb916e3c-8591-410f-b3f2-be60a31c2811",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetPriorDate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Location",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "LocationType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6835.55237591523,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8422f435-c1f3-4f7b-a8d2-2b34003af614",
+          "name": "/xGlobalHolidays/GetDayCount",
+          "request": {
+            "name": "/xGlobalHolidays/GetDayCount",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetDayCount"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Location",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "LocationType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5b10f39a-47a7-4d10-8ab3-9644b4c8b664",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetDayCount"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Location",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "LocationType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6835.55237591523,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0a2f4aa3-8722-45cd-8b7a-b88792fbb129",
+          "name": "/xGlobalHolidays/GetExchangeDateTime",
+          "request": {
+            "name": "/xGlobalHolidays/GetExchangeDateTime",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetExchangeDateTime"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f8edaa78-9533-4f9c-a553-06439b39ae83",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetExchangeDateTime"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1734.3707801133157,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Exchange\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCOffset\": 3447.6844329546507\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "61a9de19-ecf0-4d25-a17b-00a358251085",
+          "name": "/xGlobalHolidays/GetExchangeHours",
+          "request": {
+            "name": "/xGlobalHolidays/GetExchangeHours",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetExchangeHours"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TimeZone",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0843c9eb-c1b2-4e3b-9cbe-10afb888edcb",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetExchangeHours"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TimeZone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6101.171555147725,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Exchange\": \"string\",\n  \"Date\": \"string\",\n  \"IsOpen\": true,\n  \"OpenTime\": \"string\",\n  \"CloseTime\": \"string\",\n  \"UTCOffset\": 4101.62562193554\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "062825ce-8d0e-45ee-b190-fa73d268b3dc",
+          "name": "/xGlobalHolidays/GetExchangeHoursRange",
+          "request": {
+            "name": "/xGlobalHolidays/GetExchangeHoursRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetExchangeHoursRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TimeZone",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "44fa5075-2ec4-476b-8bcb-7183aa12e47b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetExchangeHoursRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TimeZone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 96.53721659905857,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Exchange\": \"string\",\n    \"Date\": \"string\",\n    \"IsOpen\": true,\n    \"OpenTime\": \"string\",\n    \"CloseTime\": \"string\",\n    \"UTCOffset\": 281.4698957912487\n  },\n  {\n    \"Delay\": 9007.788653532234,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Exchange\": \"string\",\n    \"Date\": \"string\",\n    \"IsOpen\": true,\n    \"OpenTime\": \"string\",\n    \"CloseTime\": \"string\",\n    \"UTCOffset\": 5242.445981872654\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "aa190ae1-f7b6-4591-b57c-8f93632754e2",
+          "name": "/xGlobalHolidays/AreExchangesOpen",
+          "request": {
+            "name": "/xGlobalHolidays/AreExchangesOpen",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "AreExchangesOpen"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchanges",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c7b94447-c0d0-4126-83b8-0e944cece6c6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "AreExchangesOpen"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchanges",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 2821.6549444830653,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"Open\": true\n  },\n  {\n    \"Delay\": 9805.48756458192,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"Open\": true\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4fb0b0fc-1700-43b2-b2fc-93d399df8be1",
+          "name": "/xGlobalHolidays/IsExchangeOpenOnDate",
+          "request": {
+            "name": "/xGlobalHolidays/IsExchangeOpenOnDate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "IsExchangeOpenOnDate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "eccaabe5-314d-4061-9fb0-a59338d54a65",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "IsExchangeOpenOnDate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6752.190519841309,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Symbol\": \"string\",\n  \"Date\": \"string\",\n  \"Open\": true,\n  \"OpenTime\": \"string\",\n  \"CloseTime\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c2dbe4ca-f93a-436a-bc27-7c3401e2e1a1",
+          "name": "/xGlobalHolidays/GetSettlementDate",
+          "request": {
+            "name": "/xGlobalHolidays/GetSettlementDate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetSettlementDate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "56c24b26-27d9-4c51-9ee7-588c3d7bbd8b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetSettlementDate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 249.8916899775938,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Symbol\": \"string\",\n  \"TradeDate\": \"string\",\n  \"SettlementDate\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "22d42bb9-869b-45fe-8486-cdbfed3be230",
+          "name": "/xGlobalHolidays/IsSettlementDate",
+          "request": {
+            "name": "/xGlobalHolidays/IsSettlementDate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "IsSettlementDate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "09eb30c8-0019-4661-8846-2cec05980f00",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "IsSettlementDate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6752.190519841309,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Symbol\": \"string\",\n  \"Date\": \"string\",\n  \"Open\": true,\n  \"OpenTime\": \"string\",\n  \"CloseTime\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d2645fe3-88bb-4eb2-bcca-dca4115255ff",
+          "name": "/xGlobalHolidays/GetExchangePhases",
+          "request": {
+            "name": "/xGlobalHolidays/GetExchangePhases",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalHolidays",
+                "GetExchangePhases"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Date",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TimeZone",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "59fb7e63-6608-4912-8214-ff22d99c24e9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalHolidays",
+                    "GetExchangePhases"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TimeZone",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5753.103125678594,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Exchange\": \"string\",\n  \"Date\": \"string\",\n  \"UTCOffset\": 3038,\n  \"IsOpen\": false,\n  \"Day\": \"string\",\n  \"DayType\": \"string\",\n  \"Phases\": [\n    {\n      \"Name\": \"string\",\n      \"Type\": \"string\",\n      \"Start\": \"string\",\n      \"End\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"Type\": \"string\",\n      \"Start\": \"string\",\n      \"End\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalholidays.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "9fbca492-0f06-4e48-a001-7f0109242fd6",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalHolidays API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

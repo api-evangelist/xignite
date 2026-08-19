@@ -1,0 +1,483 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteNAVs API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteNAVs",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/ListSymbols",
+            "params": [
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/ListNewSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/ListNewSymbols",
+            "params": [
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetDividendHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetDividendHistory",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetCashDividendHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetCashDividendHistory",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetAllCashDividendHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetAllCashDividendHistory",
+            "params": [
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetNAV",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetNAV",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetNAVs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetNAVs",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetHistoricalNAVs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetHistoricalNAVs",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetHistoricalNAVsTrailing",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetHistoricalNAVsTrailing",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Periods",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetLatestNAV",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetLatestNAV",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetLatestNAVs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetLatestNAVs",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetHistoricalNAVsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetHistoricalNAVsRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetHistoricalNAVsAsOf",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetHistoricalNAVsAsOf",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Periods",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetSplitHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetSplitHistory",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetSplitsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetSplitsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/xNAVs/GetAdjustmentFactors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://navs.xignite.com/v2/xNAVs/GetAdjustmentFactors",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

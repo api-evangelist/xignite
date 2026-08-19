@@ -1,0 +1,1830 @@
+{
+  "item": [
+    {
+      "id": "16b7d78e-ce70-4940-a42c-5a00a6d57801",
+      "name": "XigniteMoneyMarkets",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "dff7d903-f667-4349-a899-44346898f766",
+          "name": "/xMoneyMarkets/ListRates",
+          "request": {
+            "name": "/xMoneyMarkets/ListRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "ListRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a2d01028-8c41-4a5d-adbf-3fa84bc75b23",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "ListRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8042797b-bdce-4455-b3f7-c328df85c45e",
+          "name": "/xMoneyMarkets/ListSwapRates",
+          "request": {
+            "name": "/xMoneyMarkets/ListSwapRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "ListSwapRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "SwapType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2843d73e-f2e2-493e-9244-286026ee3335",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "ListSwapRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "SwapType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e805f6f9-821f-4317-a48f-ea589141b34f",
+          "name": "/xMoneyMarkets/SearchRates",
+          "request": {
+            "name": "/xMoneyMarkets/SearchRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "SearchRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Pattern",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "79f2f80b-b65f-4090-a843-3cb2f7e3349b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "SearchRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Pattern",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cc303d10-c2d3-427f-b11a-f6226c9101f7",
+          "name": "/xMoneyMarkets/GetSwapRate",
+          "request": {
+            "name": "/xMoneyMarkets/GetSwapRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetSwapRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "95e52e44-bc6f-4031-a692-8e1aba48ad38",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetSwapRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "364ea8f9-3b34-4314-845f-53584c232f83",
+          "name": "/xMoneyMarkets/GetSwapRateExtended",
+          "request": {
+            "name": "/xMoneyMarkets/GetSwapRateExtended",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetSwapRateExtended"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "SwapType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Tenor",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FloatingReferenceRate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9d5829ff-7430-404c-bb68-2225528e677c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetSwapRateExtended"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "SwapType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Tenor",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FloatingReferenceRate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "04121a39-9bdf-467b-a843-00ec745f2c40",
+          "name": "/xMoneyMarkets/GetSwapRateFamily",
+          "request": {
+            "name": "/xMoneyMarkets/GetSwapRateFamily",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetSwapRateFamily"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6353f0d9-3928-4e65-a302-7333ec9e233c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetSwapRateFamily"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d94ef4d6-5bb2-49a1-83db-b133029e0f64",
+          "name": "/xMoneyMarkets/GetSwapRateFamilyExtended",
+          "request": {
+            "name": "/xMoneyMarkets/GetSwapRateFamilyExtended",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetSwapRateFamilyExtended"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "SwapType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FloatingReferenceRate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "be66755f-3bf0-42f3-a08b-ca9cacaec550",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetSwapRateFamilyExtended"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "SwapType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FloatingReferenceRate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "eec815a3-4a66-41a3-a7a6-9b25be1c5239",
+          "name": "/xMoneyMarkets/GetHistoricalSwapRate",
+          "request": {
+            "name": "/xMoneyMarkets/GetHistoricalSwapRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetHistoricalSwapRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e8efa70c-974f-4e43-a4d1-3c06dd086a7b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetHistoricalSwapRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ad5f57fa-b3c9-47af-81a7-6abb04602aec",
+          "name": "/xMoneyMarkets/GetHistoricalSwapRateExtended",
+          "request": {
+            "name": "/xMoneyMarkets/GetHistoricalSwapRateExtended",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetHistoricalSwapRateExtended"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "SwapType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Tenor",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FloatingReferenceRate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e42438e3-ce1d-4395-b5d4-fd8300f6c235",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetHistoricalSwapRateExtended"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "SwapType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Tenor",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FloatingReferenceRate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b8058b4c-3161-4f7b-9e39-ce6b70a6db7f",
+          "name": "/xMoneyMarkets/GetHistoricalSwapRateRange",
+          "request": {
+            "name": "/xMoneyMarkets/GetHistoricalSwapRateRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetHistoricalSwapRateRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a4111128-5ad9-4cee-af39-4c04617cf3fa",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetHistoricalSwapRateRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8c4b664a-52a1-4640-b244-5b84fefccae8",
+          "name": "/xMoneyMarkets/GetHistoricalSwapRateExtendedRange",
+          "request": {
+            "name": "/xMoneyMarkets/GetHistoricalSwapRateExtendedRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetHistoricalSwapRateExtendedRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "SwapType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Tenor",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FloatingReferenceRate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1e6b9298-77eb-413d-9a0a-38c4a216fe87",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetHistoricalSwapRateExtendedRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "SwapType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Tenor",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FloatingReferenceRate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2cb3a7d7-6c66-4e3c-990a-44c3f30ea63a",
+          "name": "/xMoneyMarkets/GetTreasuryRate",
+          "request": {
+            "name": "/xMoneyMarkets/GetTreasuryRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetTreasuryRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e9dabb73-dd6c-4f3f-8f39-3ebab49fcecf",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetTreasuryRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "268e7409-7bb9-4a3f-aeed-8932d9fd2025",
+          "name": "/xMoneyMarkets/GetTreasuryRateFamily",
+          "request": {
+            "name": "/xMoneyMarkets/GetTreasuryRateFamily",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetTreasuryRateFamily"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6d0e43dd-5afb-435d-a1ec-fef9e3b10fb7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetTreasuryRateFamily"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a4948626-7b20-473f-ba55-5e8d034b5893",
+          "name": "/xMoneyMarkets/GetHistoricalSwaption",
+          "request": {
+            "name": "/xMoneyMarkets/GetHistoricalSwaption",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetHistoricalSwaption"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "FirstType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SecondType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6065d1d5-951e-45fa-83b0-81443d72df65",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetHistoricalSwaption"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "FirstType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "SecondType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9923e94f-f82a-46f4-8488-1d76453976e4",
+          "name": "/xMoneyMarkets/GetHistoricalSwaptionFamily",
+          "request": {
+            "name": "/xMoneyMarkets/GetHistoricalSwaptionFamily",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetHistoricalSwaptionFamily"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "32e1a508-6446-40a5-8425-7d7de2369c40",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetHistoricalSwaptionFamily"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6c038f11-fafd-427d-ad8e-2799ef6f6e7a",
+          "name": "/xMoneyMarkets/GetSwaption",
+          "request": {
+            "name": "/xMoneyMarkets/GetSwaption",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetSwaption"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "FirstType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SecondType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "720a455b-8cfb-47da-be3e-88793c8d669b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetSwaption"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "FirstType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "SecondType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5f4359e2-7cbf-4607-bca8-fcac3d58b043",
+          "name": "/xMoneyMarkets/GetSwaptionFamily",
+          "request": {
+            "name": "/xMoneyMarkets/GetSwaptionFamily",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetSwaptionFamily"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "73aac972-d462-4fb5-8883-ccb40a9b123f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetSwaptionFamily"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8500.239409452972,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\"\n  },\n  {\n    \"Delay\": 1891.7828051954566,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ed95c4a2-25b0-4243-9f6c-3a0a478ff149",
+          "name": "/xMoneyMarkets/GetForwardRateAgreement",
+          "request": {
+            "name": "/xMoneyMarkets/GetForwardRateAgreement",
+            "description": {},
+            "url": {
+              "path": [
+                "xMoneyMarkets",
+                "GetForwardRateAgreement"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "FirstType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "SecondType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Currency",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "03c3ccf4-7a32-482c-bdbf-726bbda078eb",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xMoneyMarkets",
+                    "GetForwardRateAgreement"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "FirstType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "SecondType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Currency",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4958.289314251205,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://moneymarkets.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "d0198058-bef6-4e1a-984b-42ff7ade7bfd",
+    "name": "XigniteBonds CloudAlerts XigniteMoneyMarkets API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

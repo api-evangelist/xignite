@@ -1,0 +1,567 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalFutures API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalFutures",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/ListBaseFutures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/ListBaseFutures",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/ListFutureChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/ListFutureChain",
+            "params": [
+              {
+                "name": "Basesymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/ListFutureExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/ListFutureExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/ListOptionChain",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/ListOptionChain",
+            "params": [
+              {
+                "name": "Futuresymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Style",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetFrontMonthFuture",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetFrontMonthFuture",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetFuture",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetFuture",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/SearchFutures",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/SearchFutures",
+            "params": [
+              {
+                "name": "Name",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/MapLegacyBaseSymbol",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/MapLegacyBaseSymbol",
+            "params": [
+              {
+                "name": "LegacyIdentifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "LegacyExchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetAllFutureQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetAllFutureQuotes",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetAllOptionQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetAllOptionQuotes",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TradedOnly",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetSpotFutureQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetSpotFutureQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetLatestFrontMonthFutureQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetLatestFrontMonthFutureQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetLatestFutureOptionQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetLatestFutureOptionQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetLatestFutureOptionQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetLatestFutureOptionQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetLatestFutureQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetLatestFutureQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetLatestFutureQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetLatestFutureQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetFutureOptionQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetFutureOptionQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetFutureOptionQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetFutureOptionQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetFutureQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetFutureQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetFutureQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetFutureQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetSwapQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetSwapQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetHistoricalSwapQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetHistoricalSwapQuotes",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetHistoricalFutureQuotesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetHistoricalFutureQuotesRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFutures/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfutures.xignite.com/V2/xGlobalFutures/GetChartBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeExtended",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

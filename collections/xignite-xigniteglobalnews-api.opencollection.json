@@ -1,0 +1,534 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalNews API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalNews",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTodaysMarketHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTodaysMarketHeadlines"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTodaysMarketReleases",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTodaysMarketReleases"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTodaysMarketHeadlinesBySector",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTodaysMarketHeadlinesBySector",
+            "params": [
+              {
+                "name": "Sector",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTodaysSecurityHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTodaysSecurityHeadlines",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetMarketHeadlinesByQuery",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetMarketHeadlinesByQuery",
+            "params": [
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "QueryText",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopMarketHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopMarketHeadlines",
+            "params": [
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopMarketHeadlinesBySector",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopMarketHeadlinesBySector",
+            "params": [
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Sector",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetRecentTopSecurityHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetRecentTopSecurityHeadlines",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopSecurityHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopSecurityHeadlines",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetHistoricalSecurityHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetHistoricalSecurityHeadlines",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetHistoricalMarketHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetHistoricalMarketHeadlines",
+            "params": [
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetHistoricalMarketReleases",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetHistoricalMarketReleases",
+            "params": [
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetHistoricalMarketHeadlinesBySector",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetHistoricalMarketHeadlinesBySector",
+            "params": [
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Sector",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetMarketNewsDetails",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetMarketNewsDetails",
+            "params": [
+              {
+                "name": "Reference",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTodaysReleasesBySecurity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTodaysReleasesBySecurity",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopReleasesBySecurity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopReleasesBySecurity",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetHistoricalReleasesBySecurity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetHistoricalReleasesBySecurity",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/ListSectors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/ListSectors"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopSecuritySummaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopSecuritySummaries",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopReleaseSummariesBySecurity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopReleaseSummariesBySecurity",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/GetTopMarketSummaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/GetTopMarketSummaries",
+            "params": [
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalNews/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalnews.xignite.com/xGlobalNews/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

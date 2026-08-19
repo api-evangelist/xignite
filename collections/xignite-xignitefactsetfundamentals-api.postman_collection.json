@@ -1,0 +1,1693 @@
+{
+  "item": [
+    {
+      "id": "139730eb-472c-4038-8a19-8e99c77b9d90",
+      "name": "XigniteFactSetFundamentals",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "67d23673-2431-4f4b-b550-e987843b8e63",
+          "name": "/xFactSetFundamentals/ListCompanies",
+          "request": {
+            "name": "/xFactSetFundamentals/ListCompanies",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "ListCompanies"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "MarketIdentificationCode",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "345d93cd-521e-494a-a494-87b9e91febe8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "ListCompanies"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "MarketIdentificationCode",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6801.911402082767,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Companies\": [\n    {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "497cc84f-740a-4ae2-ad6a-2bd0ffead65f",
+          "name": "/xFactSetFundamentals/ListExchanges",
+          "request": {
+            "name": "/xFactSetFundamentals/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "6995e62b-acee-44a3-b005-75a4abfa73cb",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1583.9361815229047,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"ExchangeDescriptions\": [\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"Region\": \"string\"\n    },\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"Region\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9e07a966-2875-4eb2-85db-4e482caa3425",
+          "name": "/xFactSetFundamentals/ListExchangesByRegion",
+          "request": {
+            "name": "/xFactSetFundamentals/ListExchangesByRegion",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "ListExchangesByRegion"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Regions",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a973729e-3229-446d-abae-9315ff75d955",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "ListExchangesByRegion"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Regions",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3269.5493122881094,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"ExchangeDescriptions\": [\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"Region\": \"string\"\n    },\n    {\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"Region\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bcee6101-131f-4e14-9348-279486de48f0",
+          "name": "/xFactSetFundamentals/ListFundamentals",
+          "request": {
+            "name": "/xFactSetFundamentals/ListFundamentals",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "ListFundamentals"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f428d19f-d0a0-4b0c-9afc-e9263eee8f15",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "ListFundamentals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2612.0428261184193,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"FundamentalDescriptions\": [\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"ValueType\": \"string\",\n      \"Unit\": \"string\",\n      \"Description\": \"string\",\n      \"Source\": \"string\",\n      \"DataGroup\": \"string\"\n    },\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"ValueType\": \"string\",\n      \"Unit\": \"string\",\n      \"Description\": \"string\",\n      \"Source\": \"string\",\n      \"DataGroup\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dc4338b8-dea5-44c8-851f-0ead0396e1bf",
+          "name": "/xFactSetFundamentals/ListFundamentalsByDataGroup",
+          "request": {
+            "name": "/xFactSetFundamentals/ListFundamentalsByDataGroup",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "ListFundamentalsByDataGroup"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "DataGroups",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3bae7813-cbb8-4df1-bda8-d7643dabfbaf",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "ListFundamentalsByDataGroup"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "DataGroups",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8087.921951924773,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"FundamentalDescriptions\": [\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"ValueType\": \"string\",\n      \"Unit\": \"string\",\n      \"Description\": \"string\",\n      \"Source\": \"string\",\n      \"DataGroup\": \"string\"\n    },\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"ValueType\": \"string\",\n      \"Unit\": \"string\",\n      \"Description\": \"string\",\n      \"Source\": \"string\",\n      \"DataGroup\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1355633d-5733-42c7-923f-08158d02687a",
+          "name": "/xFactSetFundamentals/ListSectorsAndIndustries",
+          "request": {
+            "name": "/xFactSetFundamentals/ListSectorsAndIndustries",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "ListSectorsAndIndustries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dbeec307-cdf9-44f4-b943-ee40cfa4e642",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "ListSectorsAndIndustries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3857.934384565298,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Sectors\": [\n    {\n      \"Code\": \"string\",\n      \"Name\": \"string\",\n      \"Industries\": [\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        },\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        }\n      ]\n    },\n    {\n      \"Code\": \"string\",\n      \"Name\": \"string\",\n      \"Industries\": [\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        },\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b193f1ab-4df6-415c-8cf9-941f9f34920d",
+          "name": "/xFactSetFundamentals/SearchFundamentals",
+          "request": {
+            "name": "/xFactSetFundamentals/SearchFundamentals",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "SearchFundamentals"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Pattern",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a43de215-98dd-4acf-8c4a-74a6c8c615e6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "SearchFundamentals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Pattern",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8087.921951924773,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"FundamentalDescriptions\": [\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"ValueType\": \"string\",\n      \"Unit\": \"string\",\n      \"Description\": \"string\",\n      \"Source\": \"string\",\n      \"DataGroup\": \"string\"\n    },\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"ValueType\": \"string\",\n      \"Unit\": \"string\",\n      \"Description\": \"string\",\n      \"Source\": \"string\",\n      \"DataGroup\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0b9bce7e-acca-4f2c-811e-70d183b9d8d3",
+          "name": "/xFactSetFundamentals/GetLatestFundamentals",
+          "request": {
+            "name": "/xFactSetFundamentals/GetLatestFundamentals",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetLatestFundamentals"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FundamentalTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "607e28d8-6294-468c-b3ce-6b1ce7254288",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetLatestFundamentals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FundamentalTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7097.780964059109,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"Delay\": 1925.0742582180403,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a119586f-2847-4110-99e1-9f08af2cd952",
+          "name": "/xFactSetFundamentals/GetFundamentals",
+          "request": {
+            "name": "/xFactSetFundamentals/GetFundamentals",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetFundamentals"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FundamentalTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4c82472d-4aec-4482-b010-49cdb2a38176",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetFundamentals"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FundamentalTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4724.8880368992195,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"Delay\": 8681.864342436773,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4346f69d-8e88-478b-9829-afc89f44af70",
+          "name": "/xFactSetFundamentals/GetFundamentalsFiscalRange",
+          "request": {
+            "name": "/xFactSetFundamentals/GetFundamentalsFiscalRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetFundamentalsFiscalRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FundamentalTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "eaf48441-1edf-4d34-9efa-a5e427c4ddb0",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetFundamentalsFiscalRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FundamentalTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4724.8880368992195,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"Delay\": 8681.864342436773,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8f2cbb74-702a-4f06-b192-915b9f9fbaf6",
+          "name": "/xFactSetFundamentals/GetFundamentalsDailyRange",
+          "request": {
+            "name": "/xFactSetFundamentals/GetFundamentalsDailyRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetFundamentalsDailyRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FundamentalTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "01993c3b-e526-4ed3-a32e-5c1b2b239b74",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetFundamentalsDailyRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FundamentalTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4724.8880368992195,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"Delay\": 8681.864342436773,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FundamentalsSets\": [\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      },\n      {\n        \"AsOfDate\": \"string\",\n        \"Currency\": \"string\",\n        \"Fundamentals\": [\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Outcome\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Message\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"ReportType\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"IsRestated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Date\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"LastUpdated\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ]\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "63e5e7db-034a-428f-8269-307242c220b3",
+          "name": "/xFactSetFundamentals/GetFinancialStatements",
+          "request": {
+            "name": "/xFactSetFundamentals/GetFinancialStatements",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetFinancialStatements"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StatementTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c5f5f514-9e38-4ac6-9cbe-8a860d6b36d7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetFinancialStatements"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StatementTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5689.32202282518,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FinancialStatements\": [\n      {\n        \"StatementType\": \"IncomeStatement\",\n        \"ReportType\": \"string\",\n        \"StatementTemplate\": \"Insurance\",\n        \"FiscalPeriodEndDate\": \"string\",\n        \"IsRestated\": false,\n        \"Currency\": \"string\",\n        \"Items\": [\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"FilingStatus\": \"string\"\n      },\n      {\n        \"StatementType\": \"BalanceSheet\",\n        \"ReportType\": \"string\",\n        \"StatementTemplate\": \"Bank\",\n        \"FiscalPeriodEndDate\": \"string\",\n        \"IsRestated\": false,\n        \"Currency\": \"string\",\n        \"Items\": [\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"FilingStatus\": \"string\"\n      }\n    ]\n  },\n  {\n    \"Delay\": 4799.2574737808045,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"FinancialStatements\": [\n      {\n        \"StatementType\": \"BalanceSheet\",\n        \"ReportType\": \"string\",\n        \"StatementTemplate\": \"OtherFinancial\",\n        \"FiscalPeriodEndDate\": \"string\",\n        \"IsRestated\": true,\n        \"Currency\": \"string\",\n        \"Items\": [\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"FilingStatus\": \"string\"\n      },\n      {\n        \"StatementType\": \"CashFlowStatement\",\n        \"ReportType\": \"string\",\n        \"StatementTemplate\": \"OtherFinancial\",\n        \"FiscalPeriodEndDate\": \"string\",\n        \"IsRestated\": false,\n        \"Currency\": \"string\",\n        \"Items\": [\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          },\n          {\n            \"Type\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Level\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Value\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Order\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            },\n            \"Unit\": {\n              \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n            }\n          }\n        ],\n        \"FilingStatus\": \"string\"\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "083ba91a-12f5-498b-8673-8f466af342f7",
+          "name": "/xFactSetFundamentals/GetBalanceSheets",
+          "request": {
+            "name": "/xFactSetFundamentals/GetBalanceSheets",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetBalanceSheets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "01ab5fa5-1bd0-4dbf-b00c-61e75bf16678",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetBalanceSheets"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4281.998247406716,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"BalanceSheet\": {\n      \"StatementType\": \"BalanceSheet\",\n      \"ReportType\": \"string\",\n      \"StatementTemplate\": \"Bank\",\n      \"FiscalPeriodEndDate\": \"string\",\n      \"IsRestated\": true,\n      \"Currency\": \"string\",\n      \"Items\": [\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"FilingStatus\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 2761.4827352532734,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"BalanceSheet\": {\n      \"StatementType\": \"IncomeStatement\",\n      \"ReportType\": \"string\",\n      \"StatementTemplate\": \"Bank\",\n      \"FiscalPeriodEndDate\": \"string\",\n      \"IsRestated\": false,\n      \"Currency\": \"string\",\n      \"Items\": [\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"FilingStatus\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3e4b92aa-e00e-4cad-9a98-924f1bebce97",
+          "name": "/xFactSetFundamentals/GetCashFlowStatements",
+          "request": {
+            "name": "/xFactSetFundamentals/GetCashFlowStatements",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetCashFlowStatements"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "49c38ed4-a7b9-42fc-a2eb-f778b4a87fe8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetCashFlowStatements"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 6853.995629681477,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"CashFlowStatement\": {\n      \"StatementType\": \"BalanceSheet\",\n      \"ReportType\": \"string\",\n      \"StatementTemplate\": \"Industrial\",\n      \"FiscalPeriodEndDate\": \"string\",\n      \"IsRestated\": true,\n      \"Currency\": \"string\",\n      \"Items\": [\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"FilingStatus\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 8764.162551414101,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"CashFlowStatement\": {\n      \"StatementType\": \"IncomeStatement\",\n      \"ReportType\": \"string\",\n      \"StatementTemplate\": \"Insurance\",\n      \"FiscalPeriodEndDate\": \"string\",\n      \"IsRestated\": true,\n      \"Currency\": \"string\",\n      \"Items\": [\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"FilingStatus\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ec1571a1-4cda-44e9-8e7f-3f29495d6d1a",
+          "name": "/xFactSetFundamentals/GetIncomeStatements",
+          "request": {
+            "name": "/xFactSetFundamentals/GetIncomeStatements",
+            "description": {},
+            "url": {
+              "path": [
+                "xFactSetFundamentals",
+                "GetIncomeStatements"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ReportType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExcludeRestated",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "UpdatedSince",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fb14a0c9-eff0-4291-8f8b-ff74e46d33e5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xFactSetFundamentals",
+                    "GetIncomeStatements"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ReportType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExcludeRestated",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "UpdatedSince",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3641.5957715341874,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"IncomeStatement\": {\n      \"StatementType\": \"CashFlowStatement\",\n      \"ReportType\": \"string\",\n      \"StatementTemplate\": \"Industrial\",\n      \"FiscalPeriodEndDate\": \"string\",\n      \"IsRestated\": true,\n      \"Currency\": \"string\",\n      \"Items\": [\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"FilingStatus\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 4326.206037554198,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Company\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"SEDOL\": \"string\",\n      \"ISIN\": \"string\",\n      \"FactSetSecurityID\": \"string\",\n      \"FactSetIssuerID\": \"string\",\n      \"Valoren\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"PrimaryMarket\": \"string\",\n      \"PrimaryMarketIdentificationCode\": \"string\",\n      \"Sector\": \"string\",\n      \"Industry\": \"string\",\n      \"StatementTemplate\": \"string\"\n    },\n    \"IncomeStatement\": {\n      \"StatementType\": \"CashFlowStatement\",\n      \"ReportType\": \"string\",\n      \"StatementTemplate\": \"Bank\",\n      \"FiscalPeriodEndDate\": \"string\",\n      \"IsRestated\": true,\n      \"Currency\": \"string\",\n      \"Items\": [\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        },\n        {\n          \"Type\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Level\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Value\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Order\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          },\n          \"Unit\": {\n            \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n          }\n        }\n      ],\n      \"FilingStatus\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://factsetfundamentals.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "9bc2b81e-50e6-42f6-a352-7f64918290b5",
+    "name": "XigniteBonds CloudAlerts XigniteFactSetFundamentals API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

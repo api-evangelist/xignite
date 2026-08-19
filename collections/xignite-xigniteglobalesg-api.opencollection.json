@@ -1,0 +1,460 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalESG API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalESG",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalESG/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/ListExchanges",
+            "params": [
+              {
+                "name": "Region",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "DataPackage",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/ListCategories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/ListCategories"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/ListInvolvements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/ListInvolvements"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetESGScores",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetESGScores",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetHistoricalESGScoresRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetHistoricalESGScoresRange",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetESGCategories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetESGCategories",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetHistoricalESGCategoriesRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetHistoricalESGCategoriesRange",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetTemperatureScores",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetTemperatureScores",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetEmissions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetEmissions",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetGlobalCompactScores",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetGlobalCompactScores",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetHistoricalGlobalCompactScoresRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetHistoricalGlobalCompactScoresRange",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/GetInvolvements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/GetInvolvements",
+            "params": [
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InvolvementTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PercentThreshold",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalESG/ScreenByInvolvements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalesg.xignite.com/xGlobalESG/ScreenByInvolvements",
+            "params": [
+              {
+                "name": "InvolvementTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Sector",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Industry",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Region",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PercentThreshold",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Involvement",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,490 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteFactSetFundamentals API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteFactSetFundamentals",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/ListCompanies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/ListCompanies",
+            "params": [
+              {
+                "name": "MarketIdentificationCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/ListExchangesByRegion",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/ListExchangesByRegion",
+            "params": [
+              {
+                "name": "Regions",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/ListFundamentals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/ListFundamentals"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/ListFundamentalsByDataGroup",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/ListFundamentalsByDataGroup",
+            "params": [
+              {
+                "name": "DataGroups",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/ListSectorsAndIndustries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/ListSectorsAndIndustries"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/SearchFundamentals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/SearchFundamentals",
+            "params": [
+              {
+                "name": "Pattern",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetLatestFundamentals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetLatestFundamentals",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundamentalTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetFundamentals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetFundamentals",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundamentalTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetFundamentalsFiscalRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetFundamentalsFiscalRange",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundamentalTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetFundamentalsDailyRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetFundamentalsDailyRange",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundamentalTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetFinancialStatements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetFinancialStatements",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StatementTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetBalanceSheets",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetBalanceSheets",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetCashFlowStatements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetCashFlowStatements",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xFactSetFundamentals/GetIncomeStatements",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://factsetfundamentals.xignite.com/xFactSetFundamentals/GetIncomeStatements",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ReportType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeRestated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

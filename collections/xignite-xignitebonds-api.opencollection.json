@@ -1,0 +1,230 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "CloudAlerts XigniteBonds API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteBonds",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xBonds/ListBonds",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/ListBonds",
+            "params": [
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "BondType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/ListBondTypes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/ListBondTypes"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/GetLastSale",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/GetLastSale",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/GetLastSales",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/GetLastSales",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/GetPriceComposite",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/GetPriceComposite",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/GetPriceComposites",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/GetPriceComposites",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/GetDailyOpenHighLowClosePrice",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/GetDailyOpenHighLowClosePrice",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xBonds/GetDailyOpenHighLowClosePrices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://bonds.xignite.com/xBonds/GetDailyOpenHighLowClosePrices",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PriceSource",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,387 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalHolidays API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalHolidays",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/ListCurrencies",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/ListCurrencies"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/ListFinancialCenters",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/ListFinancialCenters"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetHolidays",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetHolidays",
+            "params": [
+              {
+                "name": "Location",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "LocationType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/ListHolidays",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/ListHolidays",
+            "params": [
+              {
+                "name": "Location",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "LocationType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Year",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetNextDate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetNextDate",
+            "params": [
+              {
+                "name": "Location",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "LocationType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetPriorDate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetPriorDate",
+            "params": [
+              {
+                "name": "Location",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "LocationType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetDayCount",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetDayCount",
+            "params": [
+              {
+                "name": "Location",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "LocationType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetExchangeDateTime",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetExchangeDateTime",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetExchangeHours",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetExchangeHours",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TimeZone",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetExchangeHoursRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetExchangeHoursRange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TimeZone",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/AreExchangesOpen",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/AreExchangesOpen",
+            "params": [
+              {
+                "name": "Exchanges",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/IsExchangeOpenOnDate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/IsExchangeOpenOnDate",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetSettlementDate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetSettlementDate",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/IsSettlementDate",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/IsSettlementDate",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalHolidays/GetExchangePhases",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalholidays.xignite.com/xGlobalHolidays/GetExchangePhases",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "TimeZone",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

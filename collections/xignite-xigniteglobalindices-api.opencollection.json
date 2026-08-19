@@ -1,0 +1,306 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalIndices API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalIndices",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/ListIndexGroups",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/ListIndexGroups"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/ListIndices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/ListIndices",
+            "params": [
+              {
+                "name": "IndexGroup",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PageSize",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "NextPage",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/ListIndicesByIndexGroup",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/ListIndicesByIndexGroup",
+            "params": [
+              {
+                "name": "IndexGroup",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetIndexSymbolMappingByOldSymbol",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetIndexSymbolMappingByOldSymbol",
+            "params": [
+              {
+                "name": "OldSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetIndexSymbolMappingsByOldSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetIndexSymbolMappingsByOldSymbols",
+            "params": [
+              {
+                "name": "OldSymbols",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/SearchIndicesByName",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/SearchIndicesByName",
+            "params": [
+              {
+                "name": "IndexName",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetDelayedIndexValue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetDelayedIndexValue",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetDelayedIndicesValue",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetDelayedIndicesValue",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetIndexBar",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetIndexBar",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetIndexBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetIndexBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalIndices/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalindices.xignite.com/xGlobalIndices/GetChartBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeExtended",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

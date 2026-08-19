@@ -1071,3 +1071,9 @@ tools:
 - name: navs_get_adjustment_factors
   description: GetAdjustmentFactors on the navs.xignite.com service
   source_operation: openapi/xignite-xignitenavs-api-openapi.yml#GET /v2/xNAVs/GetAdjustmentFactors
+deployment:
+  mode: none
+  verified: derived
+  tools: 354
+  checked: '2026-08-12'
+  source: catalog MCP census

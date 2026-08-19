@@ -1,0 +1,407 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalQuotes API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalQuotes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/ListSymbolChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/ListSymbolChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ChangesSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetGlobalExtendedQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetGlobalExtendedQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetGlobalDelayedQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetGlobalDelayedQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetGlobalExtendedQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetGlobalExtendedQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetGlobalDelayedQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetGlobalDelayedQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetGlobalDelayedVWAP",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetGlobalDelayedVWAP",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetTopMarketMovers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetTopMarketMovers",
+            "params": [
+              {
+                "name": "MarketMoverType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "NumberOfMarketMovers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchanges",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetAuctionPrices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetAuctionPrices",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetChartBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeExtended",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetBar",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetBar",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalQuotes/GetGlobalIntradayVWAP",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalquotes.xignite.com/v3/xGlobalQuotes/GetGlobalIntradayVWAP",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

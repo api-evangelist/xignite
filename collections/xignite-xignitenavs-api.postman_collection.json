@@ -1,0 +1,1758 @@
+{
+  "item": [
+    {
+      "id": "07b3cc34-85e0-40ab-b91f-e88acaa3dab8",
+      "name": "XigniteNAVs",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e95e0ac7-e690-4f3d-a69e-d111f7ef886f",
+          "name": "/v2/xNAVs/ListSymbols",
+          "request": {
+            "name": "/v2/xNAVs/ListSymbols",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "ListSymbols"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "StartSymbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndSymbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2daf1791-95bd-4a04-ae06-27c10ac73962",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "ListSymbols"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "StartSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9771.868691043184,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"SymbolType\": \"IntradayIndicativeValue\",\n    \"ListingSymbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"CategoryOrIndustry\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Domicile\": \"string\"\n  },\n  {\n    \"Delay\": 4401.728208497148,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"SymbolType\": \"NetAssetValue\",\n    \"ListingSymbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"CategoryOrIndustry\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Domicile\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "98f0d269-b99b-4b94-991f-51ff155104e3",
+          "name": "/v2/xNAVs/ListNewSymbols",
+          "request": {
+            "name": "/v2/xNAVs/ListNewSymbols",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "ListNewSymbols"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "55edaf24-e327-4b35-b0d7-6684e1f3efdf",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "ListNewSymbols"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4793.442970223158,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"DateAdded\": \"string\"\n  },\n  {\n    \"Delay\": 8969.16214084471,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Symbol\": \"string\",\n    \"DateAdded\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d13d4181-6ce9-4e0c-add3-78a6c70616d6",
+          "name": "/v2/xNAVs/GetDividendHistory",
+          "request": {
+            "name": "/v2/xNAVs/GetDividendHistory",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetDividendHistory"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "63081b93-2474-475e-8333-7e9314e48053",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetDividendHistory"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6200.336071083489,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Symbol\": \"string\",\n  \"Dividends\": [\n    {\n      \"Date\": \"string\",\n      \"Amount\": 4130.727885897799\n    },\n    {\n      \"Date\": \"string\",\n      \"Amount\": 5218.289998737226\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3d6b1ae5-6bb0-4c26-b2a8-7974ff6a2d77",
+          "name": "/v2/xNAVs/GetCashDividendHistory",
+          "request": {
+            "name": "/v2/xNAVs/GetCashDividendHistory",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetCashDividendHistory"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7051adc8-0c7a-48e7-bbe5-744c5a20cab7",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetCashDividendHistory"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2471.5427632601272,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Security\": {\n    \"Delay\": 9219.288044556155,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Dividends\": [\n    {\n      \"Delay\": 9729.462917385155,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"Security\": {\n        \"CIK\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CUSIP\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ISIN\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Valoren\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Market\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MarketIdentificationCode\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MostLiquidExchange\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CategoryOrIndustry\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"Currency\": \"string\",\n      \"Code\": \"string\",\n      \"Type\": \"string\",\n      \"PaymentFrequency\": \"string\",\n      \"DeclaredDate\": \"string\",\n      \"RecordDate\": \"string\",\n      \"PayDate\": \"string\",\n      \"ExDate\": \"string\",\n      \"DividendAmount\": 9072.376424112694,\n      \"DataConfidence\": \"string\"\n    },\n    {\n      \"Delay\": 4785.320648312823,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RequestError\",\n      \"Security\": {\n        \"CIK\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CUSIP\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ISIN\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Valoren\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Market\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MarketIdentificationCode\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MostLiquidExchange\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CategoryOrIndustry\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"Currency\": \"string\",\n      \"Code\": \"string\",\n      \"Type\": \"string\",\n      \"PaymentFrequency\": \"string\",\n      \"DeclaredDate\": \"string\",\n      \"RecordDate\": \"string\",\n      \"PayDate\": \"string\",\n      \"ExDate\": \"string\",\n      \"DividendAmount\": 3819.370609814466,\n      \"DataConfidence\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "96bac15e-be25-45eb-b806-b03d370f3a0d",
+          "name": "/v2/xNAVs/GetAllCashDividendHistory",
+          "request": {
+            "name": "/v2/xNAVs/GetAllCashDividendHistory",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetAllCashDividendHistory"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ce21890e-84b3-4dc6-869f-77f45a1e3cf2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetAllCashDividendHistory"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1301.932648148979,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Security\": {\n      \"Delay\": 3981.3978467775623,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"MostLiquidExchange\": false,\n      \"CategoryOrIndustry\": \"string\"\n    },\n    \"Dividends\": [\n      {\n        \"Delay\": 1868.9246640668978,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Security\": {\n          \"nullable\": true,\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Currency\": \"string\",\n        \"Code\": \"string\",\n        \"Type\": \"string\",\n        \"PaymentFrequency\": \"string\",\n        \"DeclaredDate\": \"string\",\n        \"RecordDate\": \"string\",\n        \"PayDate\": \"string\",\n        \"ExDate\": \"string\",\n        \"DividendAmount\": 9146.203963992337,\n        \"DataConfidence\": \"string\"\n      },\n      {\n        \"Delay\": 1343.4916498193538,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Security\": {\n          \"nullable\": true,\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Currency\": \"string\",\n        \"Code\": \"string\",\n        \"Type\": \"string\",\n        \"PaymentFrequency\": \"string\",\n        \"DeclaredDate\": \"string\",\n        \"RecordDate\": \"string\",\n        \"PayDate\": \"string\",\n        \"ExDate\": \"string\",\n        \"DividendAmount\": 6917.9738858899245,\n        \"DataConfidence\": \"string\"\n      }\n    ]\n  },\n  {\n    \"Delay\": 6944.185798217918,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Security\": {\n      \"Delay\": 9418.248294778303,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"MostLiquidExchange\": true,\n      \"CategoryOrIndustry\": \"string\"\n    },\n    \"Dividends\": [\n      {\n        \"Delay\": 1695.5572349463089,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Security\": {\n          \"nullable\": true,\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Currency\": \"string\",\n        \"Code\": \"string\",\n        \"Type\": \"string\",\n        \"PaymentFrequency\": \"string\",\n        \"DeclaredDate\": \"string\",\n        \"RecordDate\": \"string\",\n        \"PayDate\": \"string\",\n        \"ExDate\": \"string\",\n        \"DividendAmount\": 4449.363149621214,\n        \"DataConfidence\": \"string\"\n      },\n      {\n        \"Delay\": 5250.129271360893,\n        \"Identity\": \"string\",\n        \"Message\": \"string\",\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Security\": {\n          \"nullable\": true,\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Currency\": \"string\",\n        \"Code\": \"string\",\n        \"Type\": \"string\",\n        \"PaymentFrequency\": \"string\",\n        \"DeclaredDate\": \"string\",\n        \"RecordDate\": \"string\",\n        \"PayDate\": \"string\",\n        \"ExDate\": \"string\",\n        \"DividendAmount\": 8660.787120030194,\n        \"DataConfidence\": \"string\"\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d25d1a5f-addf-43d4-8426-cb79328dbdb2",
+          "name": "/v2/xNAVs/GetNAV",
+          "request": {
+            "name": "/v2/xNAVs/GetNAV",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetNAV"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "474f0616-ab9e-4bc5-9c4e-40c42aef6fe3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetNAV"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4404.214623638669,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Fund\": {\n    \"Delay\": 9397.398074634104,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"SymbolType\": \"NetAssetValue\",\n    \"ListingSymbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"CategoryOrIndustry\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Domicile\": \"string\"\n  },\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"UTCOffset\": 50.51892619766241,\n  \"NAV\": 4523.430589585179,\n  \"PreviousNAV\": 2342.0080516903085,\n  \"Change\": 4894.840435524039,\n  \"PercentChange\": 6033.642882590428,\n  \"SevenDayYield\": 5974.494798267264,\n  \"PreviousSevenDayYield\": 4066.3868077207753,\n  \"PremiumDiscount\": 7904.129114061522,\n  \"Currency\": \"string\",\n  \"CumulativeAdjustmentFactor\": 4636.116179576675\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "31ddebf4-1abb-4c61-9fdb-ec0c8c5e7c60",
+          "name": "/v2/xNAVs/GetNAVs",
+          "request": {
+            "name": "/v2/xNAVs/GetNAVs",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetNAVs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5a2afd24-3c42-4d71-b566-511d2518d8dd",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetNAVs"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9886.970870370575,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Fund\": {\n      \"Delay\": 2830.3104651052645,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"SymbolType\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ListingSymbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"CategoryOrIndustry\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Domicile\": \"string\"\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 7622.671158396064,\n    \"NAV\": 5698.771685036322,\n    \"PreviousNAV\": 7710.45556964417,\n    \"Change\": 7889.065815593035,\n    \"PercentChange\": 6909.859542845846,\n    \"SevenDayYield\": 296.6916787022056,\n    \"PreviousSevenDayYield\": 2213.6816442832564,\n    \"PremiumDiscount\": 9865.603144626528,\n    \"Currency\": \"string\",\n    \"CumulativeAdjustmentFactor\": 2950.8423091214686\n  },\n  {\n    \"Delay\": 4217.076674387611,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Fund\": {\n      \"Delay\": 1010.6553918299111,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CIK\": \"string\",\n      \"CUSIP\": \"string\",\n      \"Symbol\": \"string\",\n      \"SymbolType\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ListingSymbol\": \"string\",\n      \"ISIN\": \"string\",\n      \"Valoren\": \"string\",\n      \"Name\": \"string\",\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"CategoryOrIndustry\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Domicile\": \"string\"\n    },\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 2282.868874886913,\n    \"NAV\": 3915.953631621253,\n    \"PreviousNAV\": 2212.644990189734,\n    \"Change\": 6628.812026955202,\n    \"PercentChange\": 3235.241492639096,\n    \"SevenDayYield\": 8164.785285597729,\n    \"PreviousSevenDayYield\": 7526.257230595836,\n    \"PremiumDiscount\": 5008.435139209782,\n    \"Currency\": \"string\",\n    \"CumulativeAdjustmentFactor\": 5521.266879137248\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "30591c77-3609-4c04-abdb-5cb7e2bab013",
+          "name": "/v2/xNAVs/GetHistoricalNAVs",
+          "request": {
+            "name": "/v2/xNAVs/GetHistoricalNAVs",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetHistoricalNAVs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdjustmentMethod",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1d44e6ab-9220-4b87-a8c2-b031baa92189",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetHistoricalNAVs"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AdjustmentMethod",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8630.464783352769,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Fund\": {\n    \"Delay\": 1775.7045155215578,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"SymbolType\": \"IntradayIndicativeValue\",\n    \"ListingSymbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"CategoryOrIndustry\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Domicile\": \"string\"\n  },\n  \"StartDate\": \"string\",\n  \"EndDate\": \"string\",\n  \"NAVs\": [\n    {\n      \"Delay\": 993.461905958829,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"Fund\": {\n        \"CIK\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CUSIP\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"SymbolType\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ListingSymbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ISIN\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Valoren\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Market\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MarketIdentificationCode\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CategoryOrIndustry\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Domicile\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 3459.863247613206,\n      \"NAV\": 3826.400722188652,\n      \"PreviousNAV\": 1218.100851824232,\n      \"Change\": 6925.360538058426,\n      \"PercentChange\": 2711.0940122848415,\n      \"SevenDayYield\": 3974.641149938817,\n      \"PreviousSevenDayYield\": 1052.5285900202075,\n      \"PremiumDiscount\": 6557.788339887698,\n      \"Currency\": \"string\",\n      \"CumulativeAdjustmentFactor\": 8953.550984777905\n    },\n    {\n      \"Delay\": 1958.446151727944,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"SystemError\",\n      \"Fund\": {\n        \"CIK\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CUSIP\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"SymbolType\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ListingSymbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ISIN\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Valoren\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Market\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MarketIdentificationCode\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CategoryOrIndustry\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Domicile\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 9914.048743679334,\n      \"NAV\": 6369.794194965693,\n      \"PreviousNAV\": 5514.573402105998,\n      \"Change\": 1413.8986361625516,\n      \"PercentChange\": 6223.8014724631375,\n      \"SevenDayYield\": 6315.203594536768,\n      \"PreviousSevenDayYield\": 2580.5996032181256,\n      \"PremiumDiscount\": 5280.983731356557,\n      \"Currency\": \"string\",\n      \"CumulativeAdjustmentFactor\": 3384.6203566756562\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f89813e0-9160-45e0-9141-1ef4662c6e12",
+          "name": "/v2/xNAVs/GetHistoricalNAVsTrailing",
+          "request": {
+            "name": "/v2/xNAVs/GetHistoricalNAVsTrailing",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetHistoricalNAVsTrailing"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Periods",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdjustmentMethod",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2fb94cfc-6d83-4994-b42c-3b045d6cdaa9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetHistoricalNAVsTrailing"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Periods",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "AdjustmentMethod",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 3774.331056412402,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Fund\": {\n    \"Delay\": 5281.750307346653,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"SymbolType\": \"IntradayIndicativeValue\",\n    \"ListingSymbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"CategoryOrIndustry\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Domicile\": \"string\"\n  },\n  \"StartDate\": \"string\",\n  \"EndDate\": \"string\",\n  \"NAVs\": [\n    {\n      \"Delay\": 6539.369780451086,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RequestError\",\n      \"Fund\": {\n        \"CIK\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CUSIP\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"SymbolType\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ListingSymbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ISIN\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Valoren\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Market\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MarketIdentificationCode\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CategoryOrIndustry\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Domicile\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 4344.48433086738,\n      \"NAV\": 9481.02218457032,\n      \"PreviousNAV\": 4847.794483956203,\n      \"Change\": 28.072584522196298,\n      \"PercentChange\": 5364.927789118618,\n      \"SevenDayYield\": 8670.226369334976,\n      \"PreviousSevenDayYield\": 5659.658942673806,\n      \"PremiumDiscount\": 6044.363310953165,\n      \"Currency\": \"string\",\n      \"CumulativeAdjustmentFactor\": 5566.097237923674\n    },\n    {\n      \"Delay\": 7518.630309691777,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RequestError\",\n      \"Fund\": {\n        \"CIK\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CUSIP\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Symbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"SymbolType\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ListingSymbol\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ISIN\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Valoren\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Name\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Market\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"MarketIdentificationCode\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CategoryOrIndustry\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"InstrumentClass\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Domicile\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 1255.21110051105,\n      \"NAV\": 9344.045573190459,\n      \"PreviousNAV\": 1335.0166137373942,\n      \"Change\": 3117.2142845728877,\n      \"PercentChange\": 2926.185810833166,\n      \"SevenDayYield\": 9500.950215061235,\n      \"PreviousSevenDayYield\": 2590.4196901472155,\n      \"PremiumDiscount\": 4639.889409133907,\n      \"Currency\": \"string\",\n      \"CumulativeAdjustmentFactor\": 7893.236911158132\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d63fd969-41a7-4288-8494-da1ea04d0189",
+          "name": "/v2/xNAVs/GetLatestNAV",
+          "request": {
+            "name": "/v2/xNAVs/GetLatestNAV",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetLatestNAV"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bfd4a24d-8e5f-481c-8b39-bf262715240e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetLatestNAV"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 700.6159610115303,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"Delay\": 9878.962450861954,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"Date\": \"string\",\n  \"Last\": 5880.886953938607,\n  \"Open\": 3992.1374171401435,\n  \"LastClose\": 2438.8802046948,\n  \"ChangeFromOpen\": 9559.585783456907,\n  \"PercentChangeFromOpen\": 3233.0781347547345,\n  \"ChangeFromLastClose\": 9780.496395449936,\n  \"PercentChangeFromLastClose\": 342.41675907542344\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2cdc06af-3a20-4234-8ace-0cc8bed7bf19",
+          "name": "/v2/xNAVs/GetLatestNAVs",
+          "request": {
+            "name": "/v2/xNAVs/GetLatestNAVs",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetLatestNAVs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9a8a6fca-8678-4374-8b60-b1b90a791a89",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetLatestNAVs"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 4251.914083030822,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Security\": {\n      \"CIK\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CUSIP\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ISIN\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Valoren\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Name\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Market\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"MarketIdentificationCode\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"MostLiquidExchange\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CategoryOrIndustry\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Last\": 8749.168998794303,\n    \"Open\": 9849.679743189037,\n    \"LastClose\": 4940.187075088689,\n    \"ChangeFromOpen\": 2608.3199424919967,\n    \"PercentChangeFromOpen\": 4216.19668993324,\n    \"ChangeFromLastClose\": 7295.203682921464,\n    \"PercentChangeFromLastClose\": 6932.834384509867\n  },\n  {\n    \"Delay\": 7127.327794001389,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Security\": {\n      \"CIK\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CUSIP\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Symbol\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"ISIN\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Valoren\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Name\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Market\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"MarketIdentificationCode\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"MostLiquidExchange\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"CategoryOrIndustry\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n    },\n    \"Date\": \"string\",\n    \"Last\": 3926.4550877591655,\n    \"Open\": 3309.0520988077387,\n    \"LastClose\": 9560.731598243385,\n    \"ChangeFromOpen\": 6827.214567519703,\n    \"PercentChangeFromOpen\": 4314.888685201189,\n    \"ChangeFromLastClose\": 9898.445777372339,\n    \"PercentChangeFromLastClose\": 5361.143912286571\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9b32ec4d-3ef7-4deb-9844-1166ca3af7a0",
+          "name": "/v2/xNAVs/GetHistoricalNAVsRange",
+          "request": {
+            "name": "/v2/xNAVs/GetHistoricalNAVsRange",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetHistoricalNAVsRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a1bacb31-a131-4d78-9e31-e710dd4adfc3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetHistoricalNAVsRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9012.865551432393,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Security\": {\n    \"Delay\": 4770.9848008180725,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"StartDate\": \"string\",\n  \"EndDate\": \"string\",\n  \"NAVs\": [\n    {\n      \"Delay\": 3697.4921202646083,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Security\": {\n        \"nullable\": true,\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Date\": \"string\",\n      \"Last\": 9324.882359722817,\n      \"Open\": 2889.6034594399775,\n      \"LastClose\": 292.77312918051246,\n      \"ChangeFromOpen\": 6254.667468465303,\n      \"PercentChangeFromOpen\": 1410.5353754388038,\n      \"ChangeFromLastClose\": 8633.12689831079,\n      \"PercentChangeFromLastClose\": 5909.296866898673\n    },\n    {\n      \"Delay\": 3807.4520558136905,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Security\": {\n        \"nullable\": true,\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Date\": \"string\",\n      \"Last\": 2081.160526023098,\n      \"Open\": 2960.436798850604,\n      \"LastClose\": 5653.074718873547,\n      \"ChangeFromOpen\": 6017.213481582523,\n      \"PercentChangeFromOpen\": 7041.981777504035,\n      \"ChangeFromLastClose\": 6411.84724038155,\n      \"PercentChangeFromLastClose\": 3044.5680594030764\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2075f2ce-b642-487b-a663-84a4d113165c",
+          "name": "/v2/xNAVs/GetHistoricalNAVsAsOf",
+          "request": {
+            "name": "/v2/xNAVs/GetHistoricalNAVsAsOf",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetHistoricalNAVsAsOf"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Periods",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f119a27c-81fd-46bb-8903-8b65dd55c23e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetHistoricalNAVsAsOf"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Periods",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 306.9987379169581,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Security\": {\n    \"Delay\": 7366.856628300289,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n    },\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": false,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"StartDate\": \"string\",\n  \"EndDate\": \"string\",\n  \"NAVs\": [\n    {\n      \"Delay\": 2366.792309866389,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Security\": {\n        \"nullable\": true,\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Date\": \"string\",\n      \"Last\": 4122.982507423103,\n      \"Open\": 9957.586881123414,\n      \"LastClose\": 9931.993413083375,\n      \"ChangeFromOpen\": 4288.304178602615,\n      \"PercentChangeFromOpen\": 816.7626443311549,\n      \"ChangeFromLastClose\": 9943.667989643505,\n      \"PercentChangeFromLastClose\": 285.0983231305659\n    },\n    {\n      \"Delay\": 9957.942426806214,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": {\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Security\": {\n        \"nullable\": true,\n        \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"Date\": \"string\",\n      \"Last\": 6846.653392483305,\n      \"Open\": 5002.700883466966,\n      \"LastClose\": 9168.006392842359,\n      \"ChangeFromOpen\": 50.9203718841178,\n      \"PercentChangeFromOpen\": 4992.759561593877,\n      \"ChangeFromLastClose\": 3674.3378910184997,\n      \"PercentChangeFromLastClose\": 6906.345618295082\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0ad8a10e-e9f2-4923-b194-f2582c3554ba",
+          "name": "/v2/xNAVs/GetSplitHistory",
+          "request": {
+            "name": "/v2/xNAVs/GetSplitHistory",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetSplitHistory"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "180bf907-4b93-4166-8080-36d688191e70",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetSplitHistory"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8454.32497491845,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Security\": {\n    \"Delay\": 3225.1387758746164,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  },\n  \"StartDate\": \"string\",\n  \"EndDate\": \"string\",\n  \"CumulativeSplitRatio\": 1165.2235742827577,\n  \"Splits\": [\n    {\n      \"Delay\": 9697.981524058692,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"ExDate\": \"string\",\n      \"Numerator\": 3003.1996011977635,\n      \"Denominator\": 1500.9619724355705,\n      \"SplitRatio\": 3357.397826051458\n    },\n    {\n      \"Delay\": 2595.445591204585,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"Success\",\n      \"ExDate\": \"string\",\n      \"Numerator\": 7049.305350529998,\n      \"Denominator\": 7291.872628595799,\n      \"SplitRatio\": 7889.6182519236145\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b8176c42-81e6-44f2-84bc-73e56ab547d6",
+          "name": "/v2/xNAVs/GetSplitsByExchange",
+          "request": {
+            "name": "/v2/xNAVs/GetSplitsByExchange",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetSplitsByExchange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "ExDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "04b3fe3c-b76a-49a4-8df3-12ab013115db",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetSplitsByExchange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "ExDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8271.967270875022,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"ExchangeSplits\": [\n    {\n      \"Security\": {\n        \"Delay\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identity\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Message\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CIK\": \"string\",\n        \"CUSIP\": \"string\",\n        \"Symbol\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"Name\": \"string\",\n        \"Market\": \"string\",\n        \"MarketIdentificationCode\": \"string\",\n        \"MostLiquidExchange\": false,\n        \"CategoryOrIndustry\": \"string\"\n      },\n      \"Split\": {\n        \"Delay\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identity\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Message\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ExDate\": \"string\",\n        \"Numerator\": 1880.129172999393,\n        \"Denominator\": 6739.176109840523,\n        \"SplitRatio\": 9640.656994877843\n      }\n    },\n    {\n      \"Security\": {\n        \"Delay\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identity\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Message\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"CIK\": \"string\",\n        \"CUSIP\": \"string\",\n        \"Symbol\": \"string\",\n        \"ISIN\": \"string\",\n        \"Valoren\": \"string\",\n        \"Name\": \"string\",\n        \"Market\": \"string\",\n        \"MarketIdentificationCode\": \"string\",\n        \"MostLiquidExchange\": false,\n        \"CategoryOrIndustry\": \"string\"\n      },\n      \"Split\": {\n        \"Delay\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Identity\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Message\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"Outcome\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"ExDate\": \"string\",\n        \"Numerator\": 2556.0861035909434,\n        \"Denominator\": 2381.994522058475,\n        \"SplitRatio\": 3641.6603197164463\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3746c2ea-2a7c-4298-a0b6-07b93f50a4d0",
+          "name": "/v2/xNAVs/GetAdjustmentFactors",
+          "request": {
+            "name": "/v2/xNAVs/GetAdjustmentFactors",
+            "description": {},
+            "url": {
+              "path": [
+                "v2",
+                "xNAVs",
+                "GetAdjustmentFactors"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c0e2c3f5-8d6c-4442-ada9-a7088fadca0d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "v2",
+                    "xNAVs",
+                    "GetAdjustmentFactors"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5278.621955619908,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Security\": {\n    \"Delay\": 7835.191868768617,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"CIK\": \"string\",\n    \"CUSIP\": \"string\",\n    \"Symbol\": \"string\",\n    \"ISIN\": \"string\",\n    \"Valoren\": \"string\",\n    \"Name\": \"string\",\n    \"Market\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"MostLiquidExchange\": true,\n    \"CategoryOrIndustry\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://navs.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "72a10e9c-e9d1-4f14-8ff6-5f64b4b84087",
+    "name": "XigniteBonds CloudAlerts XigniteNAVs API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

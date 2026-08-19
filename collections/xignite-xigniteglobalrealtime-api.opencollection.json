@@ -1,0 +1,407 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalRealTime API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalRealTime",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/ListSymbolChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/ListSymbolChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ChangesSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetGlobalExtendedQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetGlobalExtendedQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetGlobalRealTimeQuote",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetGlobalRealTimeQuote",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetGlobalExtendedQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetGlobalExtendedQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetGlobalRealTimeQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetGlobalRealTimeQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetAuctionPrices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetAuctionPrices",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetGlobalRealTimeVWAP",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetGlobalRealTimeVWAP",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetTopMarketMovers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetTopMarketMovers",
+            "params": [
+              {
+                "name": "MarketMoverType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "NumberOfMarketMovers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Exchanges",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetChartBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeExtended",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetBar",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetBar",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v3/xGlobalRealTime/GetGlobalIntradayVWAP",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalrealtime.xignite.com/v3/xGlobalRealTime/GetGlobalIntradayVWAP",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

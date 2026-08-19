@@ -1,0 +1,1143 @@
+{
+  "item": [
+    {
+      "id": "ec374d7e-6128-4e96-af44-9e5d68a0654a",
+      "name": "XigniteGlobalIndices",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "95d9b995-8e28-40bf-94b3-ae4501517a18",
+          "name": "/xGlobalIndices/ListIndexGroups",
+          "request": {
+            "name": "/xGlobalIndices/ListIndexGroups",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "ListIndexGroups"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "43e23b00-bd56-45d2-9a31-cf7660f86a8a",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "ListIndexGroups"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5328.686123685713,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"Name\": \"string\",\n    \"Description\": \"string\"\n  },\n  {\n    \"Delay\": 7460.385267233581,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Name\": \"string\",\n    \"Description\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "588748e6-0eca-4bde-8b69-1fd12cae1f7b",
+          "name": "/xGlobalIndices/ListIndices",
+          "request": {
+            "name": "/xGlobalIndices/ListIndices",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "ListIndices"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IndexGroup",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PageSize",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "NextPage",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0892a754-87ca-45d7-9c43-c2809670110b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "ListIndices"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IndexGroup",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PageSize",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "NextPage",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 461.4969038364525,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"IndexSummaries\": [\n    {\n      \"Delay\": 4796.786715718499,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RegistrationError\",\n      \"IndexName\": \"string\",\n      \"Symbol\": \"string\",\n      \"IndexGroup\": \"string\",\n      \"Currency\": \"string\"\n    },\n    {\n      \"Delay\": 4177.794927711379,\n      \"Identity\": \"string\",\n      \"Message\": \"string\",\n      \"Outcome\": \"RequestError\",\n      \"IndexName\": \"string\",\n      \"Symbol\": \"string\",\n      \"IndexGroup\": \"string\",\n      \"Currency\": \"string\"\n    }\n  ],\n  \"NextPage\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e78fe764-7a09-4f5f-b26b-078d3933bde0",
+          "name": "/xGlobalIndices/ListIndicesByIndexGroup",
+          "request": {
+            "name": "/xGlobalIndices/ListIndicesByIndexGroup",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "ListIndicesByIndexGroup"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IndexGroup",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "aae2573b-7e19-4b92-9634-83378aa53024",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "ListIndicesByIndexGroup"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IndexGroup",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 606.5174581570143,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": 5303,\n    \"Currency\": \"string\"\n  },\n  {\n    \"Delay\": 3108.5026612040824,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": 1291,\n    \"Currency\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3d876ee5-7392-48f7-9014-fce7abda86b6",
+          "name": "/xGlobalIndices/GetIndexSymbolMappingByOldSymbol",
+          "request": {
+            "name": "/xGlobalIndices/GetIndexSymbolMappingByOldSymbol",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetIndexSymbolMappingByOldSymbol"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "OldSymbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e98d0fa3-eb0b-4f35-94cb-829568b42bc9",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetIndexSymbolMappingByOldSymbol"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "OldSymbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4602.0892143452975,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"Index\": {\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": \"string\",\n    \"Currency\": \"string\"\n  },\n  \"OldSymbol\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "97960faa-3087-4aab-9c78-cad306c7d773",
+          "name": "/xGlobalIndices/GetIndexSymbolMappingsByOldSymbols",
+          "request": {
+            "name": "/xGlobalIndices/GetIndexSymbolMappingsByOldSymbols",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetIndexSymbolMappingsByOldSymbols"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "OldSymbols",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e5f8f9bd-84bc-4e81-97de-6ca8851c301c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetIndexSymbolMappingsByOldSymbols"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "OldSymbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7719.902607002717,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Index\": {\n      \"IndexName\": \"string\",\n      \"Symbol\": \"string\",\n      \"IndexGroup\": \"string\",\n      \"Valoren\": \"string\",\n      \"Currency\": \"string\"\n    },\n    \"OldSymbol\": \"string\"\n  },\n  {\n    \"Delay\": 8331.764555669597,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Index\": {\n      \"IndexName\": \"string\",\n      \"Symbol\": \"string\",\n      \"IndexGroup\": \"string\",\n      \"Valoren\": \"string\",\n      \"Currency\": \"string\"\n    },\n    \"OldSymbol\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dfbb9b57-70e0-4738-8888-24d333e34ef6",
+          "name": "/xGlobalIndices/SearchIndicesByName",
+          "request": {
+            "name": "/xGlobalIndices/SearchIndicesByName",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "SearchIndicesByName"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IndexName",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "48c2a5ac-3fe6-4cc5-9d38-c996f8298649",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "SearchIndicesByName"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IndexName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 606.5174581570143,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": 5303,\n    \"Currency\": \"string\"\n  },\n  {\n    \"Delay\": 3108.5026612040824,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": 1291,\n    \"Currency\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0991710e-dae8-4b12-a2ba-c3f1a0825e73",
+          "name": "/xGlobalIndices/GetDelayedIndexValue",
+          "request": {
+            "name": "/xGlobalIndices/GetDelayedIndexValue",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetDelayedIndexValue"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8a19b9a7-dbe1-4947-a0cf-c3c84c86ce4f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetDelayedIndexValue"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6909.907251194679,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Identifier\": \"string\",\n  \"IdentifierType\": \"string\",\n  \"Index\": {\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": \"string\",\n    \"Currency\": \"string\"\n  },\n  \"Value\": {\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"UTCOffset\": 9358.21187517227,\n    \"Volume\": 1790.3813467122886,\n    \"Open\": 2569.764347608162,\n    \"High\": 2410.0837754690997,\n    \"Low\": 1022.6237115062276,\n    \"Last\": 226.58361871126132,\n    \"Close\": 4202.900235460919,\n    \"ChangeFromOpen\": 947.0756163052607,\n    \"PercentChangeFromOpen\": 6357.421700739655,\n    \"PreviousClose\": 3941.9166267405394,\n    \"PreviousCloseDate\": \"string\",\n    \"ChangeFromPreviousClose\": 6180.529985511011,\n    \"PercentChangeFromPreviousClose\": 9981.389713132023,\n    \"High52Weeks\": 5770.388884031567,\n    \"Low52Weeks\": 8898.683907052464\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9d9b3235-3ba3-409d-a93e-cab0e634f4bb",
+          "name": "/xGlobalIndices/GetDelayedIndicesValue",
+          "request": {
+            "name": "/xGlobalIndices/GetDelayedIndicesValue",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetDelayedIndicesValue"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "03626963-3cfa-4be7-8117-253f639d03c5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetDelayedIndicesValue"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1116.3719874715605,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Index\": {\n      \"IndexName\": \"string\",\n      \"Symbol\": \"string\",\n      \"IndexGroup\": \"string\",\n      \"Valoren\": \"string\",\n      \"Currency\": \"string\"\n    },\n    \"Value\": {\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 656.2497161656988,\n      \"Volume\": 2636.879908634003,\n      \"Open\": 7294.3142781917495,\n      \"High\": 6309.515560398095,\n      \"Low\": 3378.7200283334464,\n      \"Last\": 2684.855927192812,\n      \"Close\": 188.443125630825,\n      \"ChangeFromOpen\": 4951.106337185238,\n      \"PercentChangeFromOpen\": 7259.372168019965,\n      \"PreviousClose\": 1896.7248454107767,\n      \"PreviousCloseDate\": \"string\",\n      \"ChangeFromPreviousClose\": 8727.36946291048,\n      \"PercentChangeFromPreviousClose\": 2757.0087746900053,\n      \"High52Weeks\": 5198.919124709177,\n      \"Low52Weeks\": 14.726086767644642\n    }\n  },\n  {\n    \"Delay\": 3710.8724673036954,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"Identifier\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Index\": {\n      \"IndexName\": \"string\",\n      \"Symbol\": \"string\",\n      \"IndexGroup\": \"string\",\n      \"Valoren\": \"string\",\n      \"Currency\": \"string\"\n    },\n    \"Value\": {\n      \"Date\": \"string\",\n      \"Time\": \"string\",\n      \"UTCOffset\": 8294.596051725015,\n      \"Volume\": 1152.5939329488676,\n      \"Open\": 5964.16787020205,\n      \"High\": 4162.254697527858,\n      \"Low\": 9899.318357857286,\n      \"Last\": 1519.6833192074155,\n      \"Close\": 7048.021742372217,\n      \"ChangeFromOpen\": 187.4445097545885,\n      \"PercentChangeFromOpen\": 896.9865701891144,\n      \"PreviousClose\": 8449.13752225998,\n      \"PreviousCloseDate\": \"string\",\n      \"ChangeFromPreviousClose\": 1943.391218631455,\n      \"PercentChangeFromPreviousClose\": 831.1987097051455,\n      \"High52Weeks\": 1603.7767161271554,\n      \"Low52Weeks\": 5959.644926917944\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4c24ec60-8f64-42da-a90d-982e1b23c248",
+          "name": "/xGlobalIndices/GetIndexBar",
+          "request": {
+            "name": "/xGlobalIndices/GetIndexBar",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetIndexBar"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bd4caef9-7d71-4003-8729-241415b7c3a2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetIndexBar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 629.9772071012555,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Index\": {\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": \"string\",\n    \"Currency\": \"string\"\n  },\n  \"Bar\": {\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"UTCOffset\": 6815.768785464379,\n    \"Open\": 4167.678870610549,\n    \"High\": 8785.396362661524,\n    \"Low\": 8624.83794937347,\n    \"Close\": 4687.833408964723,\n    \"Volume\": 3686.5205458151318\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f9903656-bc27-4a02-ae0e-3680d75c4207",
+          "name": "/xGlobalIndices/GetIndexBars",
+          "request": {
+            "name": "/xGlobalIndices/GetIndexBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetIndexBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7eaebbf2-8b8e-4cbf-a762-6ba9ee92fb18",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetIndexBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 447.75873735571236,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Index\": {\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": \"string\",\n    \"Currency\": \"string\"\n  },\n  \"Bars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 7205.583732984112,\n      \"Open\": 4222.809083694774,\n      \"High\": 4210.04965323404,\n      \"Low\": 2283.4388988003416,\n      \"Close\": 1788.7253544090443,\n      \"Volume\": 9174.05560150165\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 7630.756687570451,\n      \"Open\": 4257.216608921261,\n      \"High\": 6657.284062129352,\n      \"Low\": 4349.673432602002,\n      \"Close\": 8777.561548994507,\n      \"Volume\": 528.0723555613498\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "66ee3baa-5701-4402-bb18-a37c50cee9b3",
+          "name": "/xGlobalIndices/GetChartBars",
+          "request": {
+            "name": "/xGlobalIndices/GetChartBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalIndices",
+                "GetChartBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AdjustmentMethod",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IncludeExtended",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "18ad4ddc-cbda-4623-a37c-381813411b61",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalIndices",
+                    "GetChartBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "AdjustmentMethod",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IncludeExtended",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6109.437047896944,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Timing\": \"string\",\n  \"Index\": {\n    \"IndexName\": \"string\",\n    \"Symbol\": \"string\",\n    \"IndexGroup\": \"string\",\n    \"Valoren\": \"string\",\n    \"Currency\": \"string\"\n  },\n  \"ChartBars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 5145.116643321049,\n      \"Open\": 3509.4070960929857,\n      \"High\": 4782.112721515393,\n      \"Low\": 4047.9669625123606,\n      \"Close\": 9771.431208520924,\n      \"Volume\": 7516.078433700531,\n      \"Trades\": 6421,\n      \"TWAP\": 473.31340282946945,\n      \"VWAP\": 3998.4701961131973,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 2917.322970570596\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 9804.929934894582,\n      \"Open\": 8219.568044098487,\n      \"High\": 2248.2406167187396,\n      \"Low\": 6684.364441539013,\n      \"Close\": 4680.026701562838,\n      \"Volume\": 5960.481731343668,\n      \"Trades\": 1751,\n      \"TWAP\": 4426.560027683223,\n      \"VWAP\": 6822.588630944507,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 7628.313125359523\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalindices.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5204569f-f280-4c85-8ff8-98c5c9de96bf",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalIndices API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

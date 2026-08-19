@@ -1,0 +1,605 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalCorporateActions API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalCorporateActions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/ListEventTypes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/ListEventTypes"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/ListSymbols",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/ListSymbols",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/ListSymbolChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/ListSymbolChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ChangesSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/ListIdentifierChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/ListIdentifierChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/ListListingChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/ListListingChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetEventSummaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetEventSummaries",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeEventNotes",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetEventSummariesByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetEventSummariesByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeEventNotes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EventTypes",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetDistributions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetDistributions",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeOptionalPayments",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetDistributionsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetDistributionsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Date",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "DateType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IncludeOptionalPayments",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetSplits",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetSplits",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetSplitsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetSplitsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetSpinoffs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetSpinoffs",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetMergers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetMergers",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetTakeovers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetTakeovers",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetTenderOffers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetTenderOffers",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetRights",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetRights",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetRightsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetRightsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalCorporateActions/GetSecuritySwap",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalcorporateactions.xignite.com/xGlobalCorporateActions/GetSecuritySwap",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierAsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

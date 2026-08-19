@@ -1,0 +1,744 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalMaster API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalMaster",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListIndustries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListIndustries"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListSectors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListSectors"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListInstrumentClasses",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListInstrumentClasses"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListGlobalIndustries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListGlobalIndustries"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListGlobalSectors",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListGlobalSectors"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListMICToLegacyExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListMICToLegacyExchange"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListMICToLegacySuffix",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListMICToLegacySuffix"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListSymbolChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListSymbolChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ChangesSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/ListIdentifiersByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/ListIdentifiersByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetSecurity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetSecurity",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetSecurities",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetSecurities",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetInstrument",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetInstrument",
+            "params": [
+              {
+                "name": "IncludeRelated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetInstruments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetInstruments",
+            "params": [
+              {
+                "name": "IncludeRelated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetIssuer",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetIssuer",
+            "params": [
+              {
+                "name": "IncludeRelated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetIssuers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetIssuers",
+            "params": [
+              {
+                "name": "IncludeRelated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetIssuerByCompanyIdentifier",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetIssuerByCompanyIdentifier",
+            "params": [
+              {
+                "name": "IncludeRelated",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByIdentifier",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByIdentifier",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByIdentifiers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByIdentifiers",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/LookupSecurity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/LookupSecurity",
+            "params": [
+              {
+                "name": "Name",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByExchangeChanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByExchangeChanges",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartModifiedDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndModifiedDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterBySector",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterBySector",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Sector",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByIndustry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByIndustry",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Industry",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByGlobalSector",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByGlobalSector",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Sector",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterByGlobalIndustry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterByGlobalIndustry",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Industry",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xGlobalMaster/GetMasterStatisticsByExchange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalmaster.xignite.com/xGlobalMaster/GetMasterStatisticsByExchange",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndSymbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "InstrumentClass",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

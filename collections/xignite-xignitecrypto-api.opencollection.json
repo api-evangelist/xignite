@@ -1,0 +1,403 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteCrypto API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteCrypto",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /xCrypto/GetHistoricalQuoteRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetHistoricalQuoteRange",
+            "params": [
+              {
+                "name": "Symbol",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetExchangeHistoricalQuoteRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetExchangeHistoricalQuoteRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "PeriodType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetHistoricalQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetHistoricalQuotes",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FixingTime",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetQuotes",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetReferenceData",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetReferenceData",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "DataTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetTopCryptoHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetTopCryptoHeadlines",
+            "params": [
+              {
+                "name": "Symbols",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeCategories",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDateTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetTopMarketHeadlines",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetTopMarketHeadlines",
+            "params": [
+              {
+                "name": "NewsSources",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Categories",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "ExcludeCategories",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDateTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/ListCryptos",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/ListCryptos",
+            "params": [
+              {
+                "name": "Exchange",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/ListExchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/ListExchanges"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/ListNewsCategories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/ListNewsCategories"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/ListNewsSources",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/ListNewsSources"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/ListReferenceData",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/ListReferenceData"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetChartBars",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetChartBars",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndTime",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Precision",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Period",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/GetExchangeQuotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/GetExchangeQuotes",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Currency",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /xCrypto/ListTopCoins",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://crypto.xignite.com/xCrypto/ListTopCoins",
+            "params": [
+              {
+                "name": "Type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Count",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,2586 @@
+{
+  "item": [
+    {
+      "id": "3ca6a32b-f674-4d4a-8a9e-29fefde0f0ec",
+      "name": "XigniteGlobalCurrencies",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "cdcdfc6c-3d5d-4542-b740-8101c49ee301",
+          "name": "/xGlobalCurrencies/ListCurrencies",
+          "request": {
+            "name": "/xGlobalCurrencies/ListCurrencies",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "ListCurrencies"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cb02594d-dafe-4759-a792-ddeee6b75c1c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "ListCurrencies"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1936.6463737829176,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"CurrencyList\": [\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"Plural\": \"string\",\n      \"Active\": false,\n      \"Digital\": true,\n      \"Message\": \"string\",\n      \"Countries\": [\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        },\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        }\n      ]\n    },\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"Plural\": \"string\",\n      \"Active\": true,\n      \"Digital\": false,\n      \"Message\": \"string\",\n      \"Countries\": [\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        },\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "064c038f-62e1-46fe-8023-a20b6036d71c",
+          "name": "/xGlobalCurrencies/ListActiveCurrencies",
+          "request": {
+            "name": "/xGlobalCurrencies/ListActiveCurrencies",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "ListActiveCurrencies"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7e9a2dcc-8715-4c80-a462-1fd7c6a37a0b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "ListActiveCurrencies"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6564.043690018651,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"CurrencyList\": [\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"Plural\": \"string\",\n      \"Active\": true,\n      \"Digital\": true,\n      \"Message\": \"string\",\n      \"Countries\": [\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        },\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        }\n      ]\n    },\n    {\n      \"Symbol\": \"string\",\n      \"Name\": \"string\",\n      \"Plural\": \"string\",\n      \"Active\": false,\n      \"Digital\": true,\n      \"Message\": \"string\",\n      \"Countries\": [\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        },\n        {\n          \"Code\": \"string\",\n          \"Name\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e6fb21a5-f1fa-4a89-91cc-02192326c118",
+          "name": "/xGlobalCurrencies/ConvertRealTimeValue",
+          "request": {
+            "name": "/xGlobalCurrencies/ConvertRealTimeValue",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "ConvertRealTimeValue"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "From",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "To",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Amount",
+                  "value": "<double>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "eb2fd596-a409-4ff1-ad8c-286a07dcdb0c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "ConvertRealTimeValue"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "From",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "To",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Amount",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4773.129281266893,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"FromCurrencySymbol\": \"string\",\n  \"FromCurrencyName\": \"string\",\n  \"ToCurrencySymbol\": \"string\",\n  \"ToCurrencyName\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"Amount\": 1947.7092853472145,\n  \"Result\": 7396.73093536383,\n  \"Rate\": 2859.554674616549,\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a9ddba10-af61-41bc-a7fe-b201e67e948f",
+          "name": "/xGlobalCurrencies/ConvertHistoricalValue",
+          "request": {
+            "name": "/xGlobalCurrencies/ConvertHistoricalValue",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "ConvertHistoricalValue"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "From",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "To",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Amount",
+                  "value": "<double>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4adb97d1-b6b9-4d83-a691-2f7b0e1ad7af",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "ConvertHistoricalValue"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "From",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "To",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Amount",
+                      "value": "<double>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4773.129281266893,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"FromCurrencySymbol\": \"string\",\n  \"FromCurrencyName\": \"string\",\n  \"ToCurrencySymbol\": \"string\",\n  \"ToCurrencyName\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"Amount\": 1947.7092853472145,\n  \"Result\": 7396.73093536383,\n  \"Rate\": 2859.554674616549,\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "13ca2136-6c92-4de8-ad13-230863a48396",
+          "name": "/xGlobalCurrencies/GetRealTimeRate",
+          "request": {
+            "name": "/xGlobalCurrencies/GetRealTimeRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetRealTimeRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0ac7730d-ec2d-47fc-aaa2-c938656f54eb",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetRealTimeRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9295.728689088413,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"BaseCurrency\": \"string\",\n  \"QuoteCurrency\": \"string\",\n  \"Symbol\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Bid\": 6853.599767036758,\n  \"Mid\": 9485.602413302588,\n  \"Ask\": 3474.272671493128,\n  \"Spread\": 5869.276530303709,\n  \"Text\": \"string\",\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "63d51127-449e-4674-9cf3-f6db7301bfb2",
+          "name": "/xGlobalCurrencies/GetRealTimeRates",
+          "request": {
+            "name": "/xGlobalCurrencies/GetRealTimeRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetRealTimeRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2b356c05-4859-42b8-b553-c1f86b30f306",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetRealTimeRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5931.020677656746,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Bid\": 9520.912500018085,\n    \"Mid\": 9060.421106213187,\n    \"Ask\": 1138.7152768346664,\n    \"Spread\": 5653.069450792637,\n    \"Text\": \"string\",\n    \"Source\": \"string\"\n  },\n  {\n    \"Delay\": 3001.1516026649674,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Bid\": 7932.1348503120025,\n    \"Mid\": 7584.970098734557,\n    \"Ask\": 4950.277385437784,\n    \"Spread\": 204.0408179609987,\n    \"Text\": \"string\",\n    \"Source\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4ef59d6a-a2b5-4e5f-8747-50844e978e7c",
+          "name": "/xGlobalCurrencies/GetAllRealTimeRates",
+          "request": {
+            "name": "/xGlobalCurrencies/GetAllRealTimeRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetAllRealTimeRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "48349a11-d963-4c40-9ac9-d38a54a9d4d5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetAllRealTimeRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5931.020677656746,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Bid\": 9520.912500018085,\n    \"Mid\": 9060.421106213187,\n    \"Ask\": 1138.7152768346664,\n    \"Spread\": 5653.069450792637,\n    \"Text\": \"string\",\n    \"Source\": \"string\"\n  },\n  {\n    \"Delay\": 3001.1516026649674,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"Date\": \"string\",\n    \"Time\": \"string\",\n    \"QuoteType\": \"string\",\n    \"Bid\": 7932.1348503120025,\n    \"Mid\": 7584.970098734557,\n    \"Ask\": 4950.277385437784,\n    \"Spread\": 204.0408179609987,\n    \"Text\": \"string\",\n    \"Source\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "629c2217-e7f6-49e5-bb47-bac163190c9a",
+          "name": "/xGlobalCurrencies/GetRealTimeRateTable",
+          "request": {
+            "name": "/xGlobalCurrencies/GetRealTimeRateTable",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetRealTimeRateTable"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a55fa1ce-0de1-4b41-9894-45f67942394c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetRealTimeRateTable"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 5188.675344494291,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Lines\": [\n    {\n      \"BaseCurrency\": \"string\",\n      \"Columns\": [\n        {\n          \"QuoteCurrency\": \"string\",\n          \"Rate\": 8255.0855478783\n        },\n        {\n          \"QuoteCurrency\": \"string\",\n          \"Rate\": 3944.4587558239273\n        }\n      ]\n    },\n    {\n      \"BaseCurrency\": \"string\",\n      \"Columns\": [\n        {\n          \"QuoteCurrency\": \"string\",\n          \"Rate\": 9714.403597666917\n        },\n        {\n          \"QuoteCurrency\": \"string\",\n          \"Rate\": 2083.6525345607447\n        }\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b6546c8d-0406-4e62-9cdd-619a39ca3d12",
+          "name": "/xGlobalCurrencies/ListOfficialRates",
+          "request": {
+            "name": "/xGlobalCurrencies/ListOfficialRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "ListOfficialRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d1246c6c-d2e8-432b-8059-e061972be2a8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "ListOfficialRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 9451.312417664,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"CountryList\": [\n    {\n      \"Country\": \"string\",\n      \"OfficialCurrencies\": [\n        {\n          \"Symbol\": \"string\",\n          \"Active\": false,\n          \"Message\": \"string\"\n        },\n        {\n          \"Symbol\": \"string\",\n          \"Active\": true,\n          \"Message\": \"string\"\n        }\n      ]\n    },\n    {\n      \"Country\": \"string\",\n      \"OfficialCurrencies\": [\n        {\n          \"Symbol\": \"string\",\n          \"Active\": true,\n          \"Message\": \"string\"\n        },\n        {\n          \"Symbol\": \"string\",\n          \"Active\": false,\n          \"Message\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a605ba19-a067-44ca-8e80-2373d2002c27",
+          "name": "/xGlobalCurrencies/GetHistoricalRate",
+          "request": {
+            "name": "/xGlobalCurrencies/GetHistoricalRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetHistoricalRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9b7c74c9-9ecb-42a6-ae2c-b81ebdb7efe2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetHistoricalRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4265.675324255519,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"BaseCurrency\": \"string\",\n  \"QuoteCurrency\": \"string\",\n  \"Symbol\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 6228.563989888063,\n  \"High\": 8450.462689258462,\n  \"Low\": 8577.727073742357,\n  \"Close\": 6322.398884633216,\n  \"Average\": 8377.643813724992\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f78a77ad-da73-4d28-a95d-f6e54f681c08",
+          "name": "/xGlobalCurrencies/GetLatestHistoricalRate",
+          "request": {
+            "name": "/xGlobalCurrencies/GetLatestHistoricalRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetLatestHistoricalRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d0c8b972-db1c-4c17-8d2c-f6e37bbc7123",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetLatestHistoricalRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4265.675324255519,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"BaseCurrency\": \"string\",\n  \"QuoteCurrency\": \"string\",\n  \"Symbol\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 6228.563989888063,\n  \"High\": 8450.462689258462,\n  \"Low\": 8577.727073742357,\n  \"Close\": 6322.398884633216,\n  \"Average\": 8377.643813724992\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9379e489-fd9e-4955-b0af-fa8e6f6e3121",
+          "name": "/xGlobalCurrencies/GetHistoricalRates",
+          "request": {
+            "name": "/xGlobalCurrencies/GetHistoricalRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetHistoricalRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8a358366-e6de-4747-a068-1ed202c26f84",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetHistoricalRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5394.570694526853,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2800.3899440698965,\n    \"High\": 1404.731657572459,\n    \"Low\": 8292.854165717119,\n    \"Close\": 4473.390550474555,\n    \"Average\": 7700.861159173719\n  },\n  {\n    \"Delay\": 1364.8566803054252,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8012.024476921992,\n    \"High\": 1263.6089539952288,\n    \"Low\": 4518.95014579291,\n    \"Close\": 4046.0117208763113,\n    \"Average\": 1072.443994030201\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "85d6f212-9b23-4183-8228-5094ffcbc94a",
+          "name": "/xGlobalCurrencies/GetLatestHistoricalRates",
+          "request": {
+            "name": "/xGlobalCurrencies/GetLatestHistoricalRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetLatestHistoricalRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2cd2a56d-700a-41ad-abdb-6560d1b839f5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetLatestHistoricalRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5394.570694526853,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2800.3899440698965,\n    \"High\": 1404.731657572459,\n    \"Low\": 8292.854165717119,\n    \"Close\": 4473.390550474555,\n    \"Average\": 7700.861159173719\n  },\n  {\n    \"Delay\": 1364.8566803054252,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8012.024476921992,\n    \"High\": 1263.6089539952288,\n    \"Low\": 4518.95014579291,\n    \"Close\": 4046.0117208763113,\n    \"Average\": 1072.443994030201\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0189bcd2-ce70-4a59-a109-511b8d5fe96d",
+          "name": "/xGlobalCurrencies/GetHistoricalRatesRange",
+          "request": {
+            "name": "/xGlobalCurrencies/GetHistoricalRatesRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetHistoricalRatesRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fa57438f-b982-4db9-9ee6-d8a53a6c0576",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetHistoricalRatesRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5394.570694526853,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2800.3899440698965,\n    \"High\": 1404.731657572459,\n    \"Low\": 8292.854165717119,\n    \"Close\": 4473.390550474555,\n    \"Average\": 7700.861159173719\n  },\n  {\n    \"Delay\": 1364.8566803054252,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8012.024476921992,\n    \"High\": 1263.6089539952288,\n    \"Low\": 4518.95014579291,\n    \"Close\": 4046.0117208763113,\n    \"Average\": 1072.443994030201\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0968ce71-0e45-4f9b-ab0e-df71bda7adba",
+          "name": "/xGlobalCurrencies/GetHistoricalRatesRanges",
+          "request": {
+            "name": "/xGlobalCurrencies/GetHistoricalRatesRanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetHistoricalRatesRanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "FixingTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PeriodType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2654e4bb-479a-4813-8f9c-4497c2c26fc6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetHistoricalRatesRanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "FixingTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PeriodType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5394.570694526853,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2800.3899440698965,\n    \"High\": 1404.731657572459,\n    \"Low\": 8292.854165717119,\n    \"Close\": 4473.390550474555,\n    \"Average\": 7700.861159173719\n  },\n  {\n    \"Delay\": 1364.8566803054252,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8012.024476921992,\n    \"High\": 1263.6089539952288,\n    \"Low\": 4518.95014579291,\n    \"Close\": 4046.0117208763113,\n    \"Average\": 1072.443994030201\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "153e17a8-9217-4a71-a04a-d56f40dd5cee",
+          "name": "/xGlobalCurrencies/GetBar",
+          "request": {
+            "name": "/xGlobalCurrencies/GetBar",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetBar"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5f594149-211c-4720-9ea0-288d37ddd744",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetBar"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1676.4897952534218,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Symbol\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 983.008494513088,\n  \"High\": 2101.193839049722,\n  \"Low\": 3091.620271636638,\n  \"Close\": 9529.580317051083,\n  \"Average\": 1216.3512027235236,\n  \"Volume\": 2598.9239513848215\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7192bc58-8c2b-47f6-ab3e-7c5662a39a5f",
+          "name": "/xGlobalCurrencies/GetBars",
+          "request": {
+            "name": "/xGlobalCurrencies/GetBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TickPrecision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "TickPeriods",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f88b805f-3856-4597-8fa6-c63d1305956b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TickPrecision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "TickPeriods",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9598.850591996295,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 7506.484884330868,\n    \"High\": 1715.956869151124,\n    \"Low\": 3626.4598363835053,\n    \"Close\": 6918.949370801854,\n    \"Average\": 8411.629254217138,\n    \"Volume\": 6033.794119191112\n  },\n  {\n    \"Delay\": 3651.623453612871,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 7215.276339360374,\n    \"High\": 8921.501580115748,\n    \"Low\": 1240.241185903993,\n    \"Close\": 9202.869946413237,\n    \"Average\": 804.6742944595109,\n    \"Volume\": 2520.5405433387573\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "441a10b7-3d2a-44f7-af98-8ac18dc552b9",
+          "name": "/xGlobalCurrencies/GetChartBars",
+          "request": {
+            "name": "/xGlobalCurrencies/GetChartBars",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetChartBars"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndTime",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PriceType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Precision",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Period",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "efe3dbc6-c27a-4ecc-bdb6-a434e0b3dec8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetChartBars"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndTime",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PriceType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Precision",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Period",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6437.0711891387455,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"Timing\": \"string\",\n  \"PriceType\": \"string\",\n  \"CurrencyDescription\": {\n    \"Symbol\": \"string\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\"\n  },\n  \"ChartBars\": [\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 4935.647744207553,\n      \"Open\": 8898.353116036475,\n      \"High\": 9887.293766141882,\n      \"Low\": 4536.860162293441,\n      \"Close\": 7794.884690271572,\n      \"Volume\": 3646.718053114456,\n      \"Trades\": 8312,\n      \"TWAP\": 4856.437067554413,\n      \"VWAP\": 2613.298517967253,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 8760.89235000617\n    },\n    {\n      \"StartDate\": \"string\",\n      \"StartTime\": \"string\",\n      \"EndDate\": \"string\",\n      \"EndTime\": \"string\",\n      \"UTCOffset\": 4624.265117055852,\n      \"Open\": 857.4896778132735,\n      \"High\": 8760.1275260647,\n      \"Low\": 6839.919247350677,\n      \"Close\": 5472.3501574487755,\n      \"Volume\": 2311.119554703054,\n      \"Trades\": 9378,\n      \"TWAP\": 3641.1188496031477,\n      \"VWAP\": 9854.527361886407,\n      \"Currency\": \"string\",\n      \"Session\": \"string\",\n      \"AdjustmentRatio\": 5638.206467938379\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "464ee382-5061-43c8-9d52-635c15b0aa12",
+          "name": "/xGlobalCurrencies/GetOfficialHistoricalRate",
+          "request": {
+            "name": "/xGlobalCurrencies/GetOfficialHistoricalRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetOfficialHistoricalRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "022f6597-2974-47ca-9804-f81cdb1a8208",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetOfficialHistoricalRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4265.675324255519,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"BaseCurrency\": \"string\",\n  \"QuoteCurrency\": \"string\",\n  \"Symbol\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 6228.563989888063,\n  \"High\": 8450.462689258462,\n  \"Low\": 8577.727073742357,\n  \"Close\": 6322.398884633216,\n  \"Average\": 8377.643813724992\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "87f8b96f-a551-4fe7-bdaf-97c7aa4ac55e",
+          "name": "/xGlobalCurrencies/GetOfficialRate",
+          "request": {
+            "name": "/xGlobalCurrencies/GetOfficialRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetOfficialRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "581e7d98-766d-49dd-a563-e1f04a5c710d",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetOfficialRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1428.0803653462526,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"BaseCurrency\": \"string\",\n  \"QuoteCurrency\": \"string\",\n  \"Symbol\": \"string\",\n  \"StartDate\": \"string\",\n  \"StartTime\": \"string\",\n  \"EndDate\": \"string\",\n  \"EndTime\": \"string\",\n  \"Open\": 9921.014139252235,\n  \"High\": 4208.029669834489,\n  \"Low\": 2602.913161262015,\n  \"Close\": 7904.926326602161,\n  \"Average\": 6423.592275572565,\n  \"Bid\": 6535.535378404793,\n  \"Ask\": 5315.805309095359,\n  \"Source\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "02b6833e-8d75-47d2-83f8-a2bd89fb5142",
+          "name": "/xGlobalCurrencies/GetOfficialRates",
+          "request": {
+            "name": "/xGlobalCurrencies/GetOfficialRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetOfficialRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8aedb489-3c38-49ae-92e5-c5a4d8c7252c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetOfficialRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 2260.9729445991966,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 9042.750388385646,\n    \"High\": 5218.074524079597,\n    \"Low\": 2009.1689069810693,\n    \"Close\": 9495.01670255262,\n    \"Average\": 7591.857929483808,\n    \"Bid\": 9303.769779341867,\n    \"Ask\": 8476.32793017715,\n    \"Source\": \"string\"\n  },\n  {\n    \"Delay\": 9623.032190407717,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 6815.0005054176,\n    \"High\": 9807.02603683787,\n    \"Low\": 2211.642304939466,\n    \"Close\": 1884.081694440909,\n    \"Average\": 237.5059958095771,\n    \"Bid\": 2860.10494697749,\n    \"Ask\": 3979.296604594962,\n    \"Source\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5a3b008d-3c8d-4cf9-962f-64660a7d6cb5",
+          "name": "/xGlobalCurrencies/GetOfficialHistoricalRates",
+          "request": {
+            "name": "/xGlobalCurrencies/GetOfficialHistoricalRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetOfficialHistoricalRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Symbols",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "84548194-1db5-45e0-8fa0-9f928296baa5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetOfficialHistoricalRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Symbols",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5394.570694526853,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2800.3899440698965,\n    \"High\": 1404.731657572459,\n    \"Low\": 8292.854165717119,\n    \"Close\": 4473.390550474555,\n    \"Average\": 7700.861159173719\n  },\n  {\n    \"Delay\": 1364.8566803054252,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8012.024476921992,\n    \"High\": 1263.6089539952288,\n    \"Low\": 4518.95014579291,\n    \"Close\": 4046.0117208763113,\n    \"Average\": 1072.443994030201\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "268d22e4-68c2-4e73-af8f-0a526061e982",
+          "name": "/xGlobalCurrencies/GetLondonHistoricalRatesRange",
+          "request": {
+            "name": "/xGlobalCurrencies/GetLondonHistoricalRatesRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetLondonHistoricalRatesRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "26f904d1-eecf-49d1-a963-4748968ea5d2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetLondonHistoricalRatesRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 5394.570694526853,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 2800.3899440698965,\n    \"High\": 1404.731657572459,\n    \"Low\": 8292.854165717119,\n    \"Close\": 4473.390550474555,\n    \"Average\": 7700.861159173719\n  },\n  {\n    \"Delay\": 1364.8566803054252,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"BaseCurrency\": \"string\",\n    \"QuoteCurrency\": \"string\",\n    \"Symbol\": \"string\",\n    \"StartDate\": \"string\",\n    \"StartTime\": \"string\",\n    \"EndDate\": \"string\",\n    \"EndTime\": \"string\",\n    \"Open\": 8012.024476921992,\n    \"High\": 1263.6089539952288,\n    \"Low\": 4518.95014579291,\n    \"Close\": 4046.0117208763113,\n    \"Average\": 1072.443994030201\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6f50dd6a-81ea-4190-b408-da8529942c7f",
+          "name": "/xGlobalCurrencies/GetForwardRate",
+          "request": {
+            "name": "/xGlobalCurrencies/GetForwardRate",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "GetForwardRate"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Symbol",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "33a6d9d4-2b88-48d7-80e2-6b278e192073",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "GetForwardRate"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Symbol",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 7407.986813063369,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"BaseCurrency\": \"string\",\n  \"QuoteCurrency\": \"string\",\n  \"Symbol\": \"string\",\n  \"QuoteType\": \"string\",\n  \"Date\": \"string\",\n  \"Time\": \"string\",\n  \"ForwardRates\": [\n    {\n      \"Bid\": 1428.7951633087648,\n      \"Mid\": 699.3523625801812,\n      \"Ask\": 5826.732568089053,\n      \"SpotRate\": 9801.136291294646,\n      \"Points\": 5067.296484313601\n    },\n    {\n      \"Bid\": 6397.9117608875595,\n      \"Mid\": 6419.47472828788,\n      \"Ask\": 1768.3586444129662,\n      \"SpotRate\": 3281.9406196173386,\n      \"Points\": 7600.08704205766\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "229815a1-c773-466c-8425-d0e48331a2d3",
+          "name": "/xGlobalCurrencies/ListForwardRates",
+          "request": {
+            "name": "/xGlobalCurrencies/ListForwardRates",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalCurrencies",
+                "ListForwardRates"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "58019812-0769-4659-a526-fdfac4c40aec",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalCurrencies",
+                    "ListForwardRates"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4588.484358901823,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"ForwardRateDescriptions\": [\n    {\n      \"BaseCurrency\": \"string\",\n      \"QuoteCurrency\": \"string\",\n      \"Symbol\": \"string\",\n      \"Expirations\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"BaseCurrency\": \"string\",\n      \"QuoteCurrency\": \"string\",\n      \"Symbol\": \"string\",\n      \"Expirations\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalcurrencies.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "9dfa2580-0663-4345-b339-49f2b0b61516",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalCurrencies API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

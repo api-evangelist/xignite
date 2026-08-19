@@ -1,0 +1,1583 @@
+{
+  "item": [
+    {
+      "id": "e802ed6b-2667-4fb2-8670-3f962587f702",
+      "name": "XigniteGlobalESG",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "85ec77d4-e7c4-43c3-a9a6-a56d809c75c0",
+          "name": "/xGlobalESG/ListExchanges",
+          "request": {
+            "name": "/xGlobalESG/ListExchanges",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "ListExchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Region",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "28445cf2-4710-48bc-9331-913202d9c75c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "ListExchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Region",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1479.8269789100138,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"Region\": \"string\",\n  \"ExchangeDescriptions\": [\n    {\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\"\n    },\n    {\n      \"Market\": \"string\",\n      \"MarketIdentificationCode\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "341bf442-9466-4673-bbe1-68110b988bec",
+          "name": "/xGlobalESG/ListSymbols",
+          "request": {
+            "name": "/xGlobalESG/ListSymbols",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "ListSymbols"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "DataPackage",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2c04a12c-46e1-47e7-9f7d-379243924997",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "ListSymbols"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "DataPackage",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8331.778354309608,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"DataPackage\": \"string\",\n  \"Market\": \"string\",\n  \"MarketIdentificationCode\": \"string\",\n  \"SymbolDescriptions\": [\n    {\n      \"CompanyName\": \"string\",\n      \"CompanyIdentifier\": \"string\",\n      \"CompanyDomicile\": \"string\",\n      \"CompanyRegion\": \"string\",\n      \"SecurityName\": \"string\",\n      \"Symbol\": \"string\"\n    },\n    {\n      \"CompanyName\": \"string\",\n      \"CompanyIdentifier\": \"string\",\n      \"CompanyDomicile\": \"string\",\n      \"CompanyRegion\": \"string\",\n      \"SecurityName\": \"string\",\n      \"Symbol\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "62afcdad-79ad-4094-bed5-7ad84f6d8095",
+          "name": "/xGlobalESG/ListCategories",
+          "request": {
+            "name": "/xGlobalESG/ListCategories",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "ListCategories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "91118214-3ead-4339-834b-b40d9981dcbc",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "ListCategories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 6070.608556690423,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"CategoryDescriptions\": [\n    {\n      \"Name\": \"string\",\n      \"Description\": \"string\",\n      \"Subscore\": \"string\"\n    },\n    {\n      \"Name\": \"string\",\n      \"Description\": \"string\",\n      \"Subscore\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "27225994-5d85-4c23-be09-bc4f9b94d7fa",
+          "name": "/xGlobalESG/ListInvolvements",
+          "request": {
+            "name": "/xGlobalESG/ListInvolvements",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "ListInvolvements"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c92d3b54-161f-4ecf-bf66-a147c1a4904f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "ListInvolvements"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 2728.8396757258006,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"InvolvementDescriptions\": [\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"Description\": \"string\"\n    },\n    {\n      \"Type\": \"string\",\n      \"Name\": \"string\",\n      \"Description\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "80b1357e-fea9-4314-9536-e817aeba7307",
+          "name": "/xGlobalESG/GetESGScores",
+          "request": {
+            "name": "/xGlobalESG/GetESGScores",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetESGScores"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5d3230b2-c36a-42e6-992c-3c3d484cd9e6",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetESGScores"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 3371.409580001984,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"ESGScore\": {\n      \"AsOfDate\": \"string\",\n      \"ESG\": 41.68881315491979,\n      \"Environmental\": 1509.3565093026884,\n      \"Social\": 4150.1161580323,\n      \"Governance\": 2309.219492172451,\n      \"Version\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 2641.459466000029,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"ESGScore\": {\n      \"AsOfDate\": \"string\",\n      \"ESG\": 3612.2226847144743,\n      \"Environmental\": 235.9154407687536,\n      \"Social\": 9304.836096513354,\n      \"Governance\": 5578.43021678623,\n      \"Version\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "10b26816-32f2-453e-9afc-f292de82d3ed",
+          "name": "/xGlobalESG/GetHistoricalESGScoresRange",
+          "request": {
+            "name": "/xGlobalESG/GetHistoricalESGScoresRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetHistoricalESGScoresRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Version",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f4c6dff4-1906-4e8e-a39e-e7dadfc99d26",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetHistoricalESGScoresRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Version",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 1282.030497240989,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RegistrationError\",\n  \"IdentifierType\": \"string\",\n  \"Identifier\": \"string\",\n  \"Security\": {\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"Market\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\"\n  },\n  \"ESGScores\": [\n    {\n      \"AsOfDate\": \"string\",\n      \"ESG\": 7994.281571950523,\n      \"Environmental\": 3181.700084493303,\n      \"Social\": 9924.678571323182,\n      \"Governance\": 7263.39968000607,\n      \"Version\": \"string\"\n    },\n    {\n      \"AsOfDate\": \"string\",\n      \"ESG\": 8927.459697322769,\n      \"Environmental\": 3588.0231783609083,\n      \"Social\": 9183.34375462964,\n      \"Governance\": 5393.647629472661,\n      \"Version\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "614b608b-4f5a-49bd-a1de-b6a78879e5d0",
+          "name": "/xGlobalESG/GetESGCategories",
+          "request": {
+            "name": "/xGlobalESG/GetESGCategories",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetESGCategories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c35e6c63-2761-4a33-9957-76552c63e3ff",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetESGCategories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1247.5081844727931,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"Categories\": {\n      \"AsOfDate\": \"string\",\n      \"Emissions\": 7362.897048384466,\n      \"EnvironmentalStewardship\": 8678.576193943323,\n      \"ResourceUse\": 7515.329638271029,\n      \"EnvironmentalSolutions\": 8929.225678457948,\n      \"Waste\": 4118.158936577513,\n      \"Water\": 2562.586882017842,\n      \"EnvironmentalManagement\": 1535.172057500137,\n      \"Diversity\": 5605.357021632861,\n      \"OccupationalHealthAndSafety\": 3789.835206790705,\n      \"TrainingAndDevelopment\": 5192.201477455779,\n      \"ProductAccess\": 6949.390093595943,\n      \"CommunityRelations\": 1665.4017192766967,\n      \"ProductQualityAndSafety\": 2969.8441170147603,\n      \"HumanRights\": 7483.385158064288,\n      \"LabourRights\": 4368.850151460882,\n      \"Compensation\": 6573.546877789459,\n      \"EmploymentQuality\": 5618.834153519294,\n      \"BusinessEthics\": 5431.71036966822,\n      \"CorporateGovernance\": 6534.074219880283,\n      \"Transparency\": 4166.809436452155,\n      \"ForensicAccounting\": 9894.619442355732,\n      \"CapitalStructure\": 8885.277404736757,\n      \"Version\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 7790.752594521358,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"Categories\": {\n      \"AsOfDate\": \"string\",\n      \"Emissions\": 9653.548823243293,\n      \"EnvironmentalStewardship\": 7073.70250502367,\n      \"ResourceUse\": 5596.236742611101,\n      \"EnvironmentalSolutions\": 1470.2288031658006,\n      \"Waste\": 4852.876422903281,\n      \"Water\": 5287.023561280941,\n      \"EnvironmentalManagement\": 9172.592518341773,\n      \"Diversity\": 5999.205802751889,\n      \"OccupationalHealthAndSafety\": 6363.106550715799,\n      \"TrainingAndDevelopment\": 3843.3318211405044,\n      \"ProductAccess\": 7355.144271575717,\n      \"CommunityRelations\": 4178.0974714291,\n      \"ProductQualityAndSafety\": 3806.5836477934345,\n      \"HumanRights\": 6874.285379681923,\n      \"LabourRights\": 2873.4083817389264,\n      \"Compensation\": 5987.071800059018,\n      \"EmploymentQuality\": 8205.133263189071,\n      \"BusinessEthics\": 2634.6591628686224,\n      \"CorporateGovernance\": 8019.58179487616,\n      \"Transparency\": 6549.7015091025305,\n      \"ForensicAccounting\": 4530.8292455436695,\n      \"CapitalStructure\": 1859.1607244029674,\n      \"Version\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3358e5df-c2f5-458a-96f6-72afb8d47fbf",
+          "name": "/xGlobalESG/GetHistoricalESGCategoriesRange",
+          "request": {
+            "name": "/xGlobalESG/GetHistoricalESGCategoriesRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetHistoricalESGCategoriesRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Version",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "15731478-1b77-4298-b59c-10b5a2e4703c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetHistoricalESGCategoriesRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Version",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4424.997052854806,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"IdentifierType\": \"string\",\n  \"Identifier\": \"string\",\n  \"Security\": {\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"Market\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\"\n  },\n  \"ESGCategories\": [\n    {\n      \"AsOfDate\": \"string\",\n      \"Emissions\": 5600.3598986489615,\n      \"EnvironmentalStewardship\": 1484.8167778756927,\n      \"ResourceUse\": 6918.051954727303,\n      \"EnvironmentalSolutions\": 1643.8683643369156,\n      \"Waste\": 9266.75999281598,\n      \"Water\": 3216.693276646122,\n      \"EnvironmentalManagement\": 2808.9257189205573,\n      \"Diversity\": 6391.457618114814,\n      \"OccupationalHealthAndSafety\": 7594.515255901031,\n      \"TrainingAndDevelopment\": 380.5248461927202,\n      \"ProductAccess\": 9117.282575646805,\n      \"CommunityRelations\": 7684.210801801624,\n      \"ProductQualityAndSafety\": 4306.4759839869475,\n      \"HumanRights\": 1018.7093066063968,\n      \"LabourRights\": 9589.328857216133,\n      \"Compensation\": 7546.100919452411,\n      \"EmploymentQuality\": 4025.514215409811,\n      \"BusinessEthics\": 6996.793395310128,\n      \"CorporateGovernance\": 1107.1451725248971,\n      \"Transparency\": 5591.7265957663585,\n      \"ForensicAccounting\": 1145.896040247857,\n      \"CapitalStructure\": 6242.063819815003,\n      \"Version\": \"string\"\n    },\n    {\n      \"AsOfDate\": \"string\",\n      \"Emissions\": 4367.803912786107,\n      \"EnvironmentalStewardship\": 599.2923099711956,\n      \"ResourceUse\": 7986.542258249218,\n      \"EnvironmentalSolutions\": 1494.5459916358473,\n      \"Waste\": 6347.947167031764,\n      \"Water\": 4822.481413165797,\n      \"EnvironmentalManagement\": 5026.074582340674,\n      \"Diversity\": 3918.298186793759,\n      \"OccupationalHealthAndSafety\": 6368.204440845936,\n      \"TrainingAndDevelopment\": 2987.276745809535,\n      \"ProductAccess\": 2351.2717494129897,\n      \"CommunityRelations\": 6242.175407340848,\n      \"ProductQualityAndSafety\": 2494.7473667657505,\n      \"HumanRights\": 3351.801072546475,\n      \"LabourRights\": 4070.3570277673684,\n      \"Compensation\": 3754.5393304727095,\n      \"EmploymentQuality\": 4295.1105147375165,\n      \"BusinessEthics\": 7580.559986523967,\n      \"CorporateGovernance\": 6026.4178222593755,\n      \"Transparency\": 9293.681380470107,\n      \"ForensicAccounting\": 5200.588932829489,\n      \"CapitalStructure\": 8399.13446470538,\n      \"Version\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ddabadb6-329b-47a7-835d-05d61b92f2a2",
+          "name": "/xGlobalESG/GetTemperatureScores",
+          "request": {
+            "name": "/xGlobalESG/GetTemperatureScores",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetTemperatureScores"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b2798278-49b1-48a7-a70f-964feeb3dd58",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetTemperatureScores"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 9664.785409423463,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"TemperatureScore\": {\n      \"AsOfDate\": \"string\",\n      \"NearTerm\": \"string\",\n      \"LongTerm\": \"string\",\n      \"Trend\": false,\n      \"Target\": false,\n      \"Scope3Reporting\": false,\n      \"InternationalEnergyAgencySector\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 8336.349973201486,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"TemperatureScore\": {\n      \"AsOfDate\": \"string\",\n      \"NearTerm\": \"string\",\n      \"LongTerm\": \"string\",\n      \"Trend\": true,\n      \"Target\": true,\n      \"Scope3Reporting\": false,\n      \"InternationalEnergyAgencySector\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fa6883d7-b24d-4d43-bd39-82f73245b273",
+          "name": "/xGlobalESG/GetEmissions",
+          "request": {
+            "name": "/xGlobalESG/GetEmissions",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetEmissions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3ef1e5b1-9d9c-4a84-b86d-482d8cee10b3",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetEmissions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7527.260365647627,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"CompanyEmissions\": {\n      \"AsOfDate\": \"string\",\n      \"Scope1Emissions\": 2544.931150782702,\n      \"Scope2Emissions\": 4910.807441679705,\n      \"Scope3Emissions\": 7992.750051472106,\n      \"ReportDate\": \"string\",\n      \"InternationalEnergyAgencySector\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 5455.208687277924,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"CompanyEmissions\": {\n      \"AsOfDate\": \"string\",\n      \"Scope1Emissions\": 6280.953282056622,\n      \"Scope2Emissions\": 9433.569585379179,\n      \"Scope3Emissions\": 5528.1143929730315,\n      \"ReportDate\": \"string\",\n      \"InternationalEnergyAgencySector\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cb522f44-7873-4aa7-ae73-966065072653",
+          "name": "/xGlobalESG/GetGlobalCompactScores",
+          "request": {
+            "name": "/xGlobalESG/GetGlobalCompactScores",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetGlobalCompactScores"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fdea5d18-f26a-4e58-a461-0155177e809c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetGlobalCompactScores"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 7765.680943526077,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"GlobalCompactScore\": {\n      \"AsOfDate\": \"string\",\n      \"GlobalCompact\": 3985.604304067729,\n      \"HumanRights\": 7527.180721893403,\n      \"LabourRights\": 5187.172198419597,\n      \"Environment\": 9658.115676962396,\n      \"AntiCorruption\": 3846.437127989397,\n      \"Version\": \"string\"\n    }\n  },\n  {\n    \"Delay\": 1220.7446864193682,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RegistrationError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"GlobalCompactScore\": {\n      \"AsOfDate\": \"string\",\n      \"GlobalCompact\": 9983.235136236084,\n      \"HumanRights\": 5317.968708696609,\n      \"LabourRights\": 5363.156698411227,\n      \"Environment\": 272.7445145218765,\n      \"AntiCorruption\": 1296.5340771545164,\n      \"Version\": \"string\"\n    }\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c553bab0-9fad-472c-9161-743f85844be7",
+          "name": "/xGlobalESG/GetHistoricalGlobalCompactScoresRange",
+          "request": {
+            "name": "/xGlobalESG/GetHistoricalGlobalCompactScoresRange",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetHistoricalGlobalCompactScoresRange"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Version",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c9ef811a-2d56-4cc8-a80a-b4c515f016cd",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetHistoricalGlobalCompactScoresRange"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Version",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 4799.802887343054,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"Success\",\n  \"IdentifierType\": \"string\",\n  \"Identifier\": \"string\",\n  \"Security\": {\n    \"Name\": \"string\",\n    \"Symbol\": \"string\",\n    \"MarketIdentificationCode\": \"string\",\n    \"Market\": \"string\",\n    \"InstrumentClass\": \"string\",\n    \"Industry\": \"string\",\n    \"Sector\": \"string\",\n    \"FIGI\": \"string\",\n    \"CompositeFIGI\": \"string\",\n    \"SEDOL\": \"string\",\n    \"Valoren\": \"string\",\n    \"ISIN\": \"string\",\n    \"CUSIP\": \"string\",\n    \"CIK\": \"string\"\n  },\n  \"GlobalCompactScores\": [\n    {\n      \"AsOfDate\": \"string\",\n      \"GlobalCompact\": 7049.02249337041,\n      \"HumanRights\": 1565.8545935136847,\n      \"LabourRights\": 3344.3590494493924,\n      \"Environment\": 2157.2438626777302,\n      \"AntiCorruption\": 999.4926333800724,\n      \"Version\": \"string\"\n    },\n    {\n      \"AsOfDate\": \"string\",\n      \"GlobalCompact\": 362.4687453524045,\n      \"HumanRights\": 7414.79798078006,\n      \"LabourRights\": 7917.189919454098,\n      \"Environment\": 2595.3021720058923,\n      \"AntiCorruption\": 9154.647851247402,\n      \"Version\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d46c801b-1abd-4eac-ae0c-35bee15bd509",
+          "name": "/xGlobalESG/GetInvolvements",
+          "request": {
+            "name": "/xGlobalESG/GetInvolvements",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "GetInvolvements"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifiers",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "IdentifierAsOfDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "InvolvementTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PercentThreshold",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "AsOfDate",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "964a3080-e08c-4f7f-928f-1d43e8ef72b5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "GetInvolvements"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "IdentifierAsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "InvolvementTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PercentThreshold",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "AsOfDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 8216.148965288374,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"RequestError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"Involvement\": [\n      {\n        \"Outcome\": \"string\",\n        \"Message\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": false,\n        \"PercentThreshold\": \"string\",\n        \"AsOfDate\": \"string\"\n      },\n      {\n        \"Outcome\": \"string\",\n        \"Message\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": false,\n        \"PercentThreshold\": \"string\",\n        \"AsOfDate\": \"string\"\n      }\n    ]\n  },\n  {\n    \"Delay\": 5541.898370565038,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"Security\": {\n      \"Name\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\",\n      \"Market\": \"string\",\n      \"InstrumentClass\": \"string\",\n      \"Industry\": \"string\",\n      \"Sector\": \"string\",\n      \"FIGI\": \"string\",\n      \"CompositeFIGI\": \"string\",\n      \"SEDOL\": \"string\",\n      \"Valoren\": \"string\",\n      \"ISIN\": \"string\",\n      \"CUSIP\": \"string\",\n      \"CIK\": \"string\"\n    },\n    \"Involvement\": [\n      {\n        \"Outcome\": \"string\",\n        \"Message\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": false,\n        \"PercentThreshold\": \"string\",\n        \"AsOfDate\": \"string\"\n      },\n      {\n        \"Outcome\": \"string\",\n        \"Message\": \"string\",\n        \"Type\": \"string\",\n        \"Value\": true,\n        \"PercentThreshold\": \"string\",\n        \"AsOfDate\": \"string\"\n      }\n    ]\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1f96a543-830e-4786-9b5a-e8cfd9d4ce34",
+          "name": "/xGlobalESG/ScreenByInvolvements",
+          "request": {
+            "name": "/xGlobalESG/ScreenByInvolvements",
+            "description": {},
+            "url": {
+              "path": [
+                "xGlobalESG",
+                "ScreenByInvolvements"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "InvolvementTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Sector",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Industry",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Exchange",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Region",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "PercentThreshold",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Involvement",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "340bd511-74d0-42f4-881a-24465172edf8",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xGlobalESG",
+                    "ScreenByInvolvements"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "InvolvementTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Sector",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Industry",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Region",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "PercentThreshold",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Involvement",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 7977.527569686975,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"SystemError\",\n  \"Sector\": \"string\",\n  \"Industry\": \"string\",\n  \"Exchange\": \"string\",\n  \"Region\": \"string\",\n  \"PercentThreshold\": \"string\",\n  \"Involvement\": \"string\",\n  \"Companies\": [\n    {\n      \"CompanyName\": \"string\",\n      \"CompanyIdentifier\": \"string\",\n      \"CompanyDomicile\": \"string\",\n      \"CompanyRegion\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\"\n    },\n    {\n      \"CompanyName\": \"string\",\n      \"CompanyIdentifier\": \"string\",\n      \"CompanyDomicile\": \"string\",\n      \"CompanyRegion\": \"string\",\n      \"Symbol\": \"string\",\n      \"MarketIdentificationCode\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://globalesg.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "6db45306-8b71-464f-b30e-8e36a1ddd03e",
+    "name": "XigniteBonds CloudAlerts XigniteGlobalESG API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,751 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "XigniteBonds CloudAlerts XigniteGlobalFundFundamentals API",
+    "version": "1.0.3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "_token",
+      "value": "{{_token}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "XigniteGlobalFundFundamentals",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/ListCountries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/ListCountries"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/ListFundsByCountry",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/ListFundsByCountry",
+            "params": [
+              {
+                "name": "CountryCode",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartName",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndName",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/ListFundTypes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/ListFundTypes"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/ListFundFundamentals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/ListFundFundamentals"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundFundamentals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundFundamentals",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundFundamentalTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundFundamentalsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundFundamentalsRange",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FundFundamentalTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundProfiles",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundProfiles",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundFeeSchedules",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundFeeSchedules",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "FeeScheduleTypes",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundHoldings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundHoldings",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundHoldingsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundHoldingsRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundManagers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundManagers",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundManagersRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundManagersRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundMonthEndTrailingReturns",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundMonthEndTrailingReturns",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundMonthEndTrailingReturnsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundMonthEndTrailingReturnsRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundQuarterEndTrailingReturns",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundQuarterEndTrailingReturns",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundQuarterEndTrailingReturnsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundQuarterEndTrailingReturnsRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundNAVs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundNAVs",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundHistoricalNAVs",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundHistoricalNAVs",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AdjustmentMethod",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundDividendHistory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundDividendHistory",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundBreakdowns",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundBreakdowns",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Breakdown",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundBreakdownsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundBreakdownsRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "Breakdown",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundFullHoldings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundFullHoldings",
+            "params": [
+              {
+                "name": "Identifiers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "AsOfDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /V2/xGlobalFundFundamentals/GetFundFullHoldingsRange",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://globalfundfundamentals.xignite.com/V2/xGlobalFundFundamentals/GetFundFullHoldingsRange",
+            "params": [
+              {
+                "name": "Identifier",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "IdentifierType",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "StartDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "EndDate",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "UpdatedSince",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

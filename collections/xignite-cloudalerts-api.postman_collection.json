@@ -1,0 +1,364 @@
+{
+  "item": [
+    {
+      "id": "8385acf5-5b92-4c40-97ca-a3bbd1fcde10",
+      "name": "CloudAlerts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f9910fb3-b575-47fc-91c4-ef6695c47170",
+          "name": "/xAlerts/CreateAlert",
+          "request": {
+            "name": "/xAlerts/CreateAlert",
+            "description": {},
+            "url": {
+              "path": [
+                "xAlerts",
+                "CreateAlert"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "IdentifierType",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Identifier",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "API",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Condition",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "Reset",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "StartDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "EndDate",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "CallbackURL",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "05e0cfda-cffa-46c6-b1b3-5181cd27fcdd",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xAlerts",
+                    "CreateAlert"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "IdentifierType",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Identifier",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "API",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Condition",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "Reset",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "StartDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "EndDate",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "CallbackURL",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Delay\": 8994.305350444432,\n  \"Identity\": \"string\",\n  \"Message\": \"string\",\n  \"Outcome\": \"RequestError\",\n  \"AlertIdentifier\": \"string\",\n  \"Status\": \"string\",\n  \"IdentifierType\": \"string\",\n  \"Identifier\": \"string\",\n  \"API\": \"string\",\n  \"Condition\": \"string\",\n  \"Reset\": \"string\",\n  \"CallbackURL\": \"string\",\n  \"StartDate\": \"string\",\n  \"LastTriggered\": \"string\",\n  \"EndDate\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "11fbdf1c-20fb-4a94-89c8-811939ae9ee6",
+          "name": "/xAlerts/DeleteAlerts",
+          "request": {
+            "name": "/xAlerts/DeleteAlerts",
+            "description": {},
+            "url": {
+              "path": [
+                "xAlerts",
+                "DeleteAlerts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "AlertIdentifiers",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8823f661-6723-4787-84f2-af67fdac4e63",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xAlerts",
+                    "DeleteAlerts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "AlertIdentifiers",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1874.1760933768403,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"AlertIdentifier\": \"string\",\n    \"Status\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"API\": \"string\",\n    \"Condition\": \"string\",\n    \"Reset\": \"string\",\n    \"CallbackURL\": \"string\",\n    \"StartDate\": \"string\",\n    \"LastTriggered\": \"string\",\n    \"EndDate\": \"string\"\n  },\n  {\n    \"Delay\": 8878.555169385694,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"AlertIdentifier\": \"string\",\n    \"Status\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"API\": \"string\",\n    \"Condition\": \"string\",\n    \"Reset\": \"string\",\n    \"CallbackURL\": \"string\",\n    \"StartDate\": \"string\",\n    \"LastTriggered\": \"string\",\n    \"EndDate\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f17c7055-440c-48e7-aa98-a7d7d69418d5",
+          "name": "/xAlerts/SearchAlerts",
+          "request": {
+            "name": "/xAlerts/SearchAlerts",
+            "description": {},
+            "url": {
+              "path": [
+                "xAlerts",
+                "SearchAlerts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "Pattern",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "52125346-09ce-49e3-8f3d-68e24f80ce3f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "xAlerts",
+                    "SearchAlerts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "Pattern",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "_token",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"Delay\": 1874.1760933768403,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"Success\",\n    \"AlertIdentifier\": \"string\",\n    \"Status\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"API\": \"string\",\n    \"Condition\": \"string\",\n    \"Reset\": \"string\",\n    \"CallbackURL\": \"string\",\n    \"StartDate\": \"string\",\n    \"LastTriggered\": \"string\",\n    \"EndDate\": \"string\"\n  },\n  {\n    \"Delay\": 8878.555169385694,\n    \"Identity\": \"string\",\n    \"Message\": \"string\",\n    \"Outcome\": \"SystemError\",\n    \"AlertIdentifier\": \"string\",\n    \"Status\": \"string\",\n    \"IdentifierType\": \"string\",\n    \"Identifier\": \"string\",\n    \"API\": \"string\",\n    \"Condition\": \"string\",\n    \"Reset\": \"string\",\n    \"CallbackURL\": \"string\",\n    \"StartDate\": \"string\",\n    \"LastTriggered\": \"string\",\n    \"EndDate\": \"string\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://alerts.xignite.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "_token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "8c951de0-8e1d-4852-9619-ba3947647e2c",
+    "name": "XigniteBonds CloudAlerts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
