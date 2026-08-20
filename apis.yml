@@ -98,6 +98,10 @@ apis:
   name: Xignite Global Currencies API
   tags:
   - Forex
+  - Currency
+  - Exchange Rates
+  tags_raw:
+  - Forex
   - Currencies
   - Exchange Rates
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -260,6 +264,10 @@ apis:
   tags:
   - Corporate Actions
   - Dividends
+  - Split
+  tags_raw:
+  - Corporate Actions
+  - Dividends
   - Splits
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.xignite.com/product/XigniteGlobalCorporateActions/
@@ -294,6 +302,10 @@ apis:
 - aid: xignite:xignite-earnings-calendar-api
   name: Xignite Earnings Calendar API
   tags:
+  - Earnings
+  - Calendar
+  - Event
+  tags_raw:
   - Earnings
   - Calendar
   - Events
@@ -403,6 +415,10 @@ apis:
   name: Xignite CloudAlerts API
   tags:
   - Alerts
+  - Event
+  - Notification
+  tags_raw:
+  - Alerts
   - Events
   - Notifications
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -434,6 +450,10 @@ apis:
 - aid: xignite:xignite-cloud-files-api
   name: Xignite CloudFiles API
   tags:
+  - File
+  - Bulk Data
+  - Downloads
+  tags_raw:
   - Files
   - Bulk Data
   - Downloads
