@@ -9,6 +9,18 @@ description: Xignite pioneered cloud-based financial market data APIs, offering 
   via its CloudStreaming product. Founded in 2000, Xignite was acquired by QUODD (a NewSpring Holdings
   company) in February 2023; the xignite.com developer catalog remains live while corporate pages redirect
   to quodd.com, and QUODD runs a newer developer platform at developer.quodd.com.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
