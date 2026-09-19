@@ -240,6 +240,10 @@ apis:
   tags:
   - Rates
   - Treasuries
+  - Swap
+  tags_raw:
+  - Rates
+  - Treasuries
   - Swaps
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.xignite.com/product/swaps-treasuries-data/
@@ -338,6 +342,10 @@ apis:
   tags:
   - Mutual Funds
   - NAV
+  - Fund
+  tags_raw:
+  - Mutual Funds
+  - NAV
   - Funds
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.xignite.com/product/mutual-fund-NAVs/
@@ -354,6 +362,10 @@ apis:
 - aid: xignite:xignite-global-fund-fundamentals-api
   name: Xignite Global Fund Fundamentals API
   tags:
+  - Fund
+  - Fundamentals
+  - Mutual Funds
+  tags_raw:
   - Funds
   - Fundamentals
   - Mutual Funds
@@ -372,6 +384,10 @@ apis:
 - aid: xignite:xignite-factset-fundamentals-api
   name: Xignite FactSet Fundamentals API
   tags:
+  - Fundamentals
+  - Financial
+  - FactSet
+  tags_raw:
   - Fundamentals
   - Financials
   - FactSet
@@ -408,6 +424,10 @@ apis:
 - aid: xignite:xignite-global-holidays-api
   name: Xignite Global Holidays API
   tags:
+  - Exchange
+  - Holidays
+  - Calendar
+  tags_raw:
   - Exchanges
   - Holidays
   - Calendars
