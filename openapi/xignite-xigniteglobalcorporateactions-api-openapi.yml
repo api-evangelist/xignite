@@ -1,6 +1,6 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteGlobalCorporateActions API
+  title: Xignite Global Corporate Actions API
   version: 1.0.3
 servers:
 - url: https://globalcorporateactions.xignite.com
@@ -32,6 +32,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeList'
+      summary: Get x global corporate actions list exchanges
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsListExchanges
+      x-operation-id-source: derived
   /xGlobalCorporateActions/ListEventTypes:
     get:
       tags:
@@ -55,6 +59,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EventTypeList'
+      summary: Get x global corporate actions list event types
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsListEventTypes
+      x-operation-id-source: derived
   /xGlobalCorporateActions/ListSymbols:
     get:
       tags:
@@ -91,6 +99,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SymbolList'
+      summary: Get x global corporate actions list symbols
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsListSymbols
+      x-operation-id-source: derived
   /xGlobalCorporateActions/ListSymbolChanges:
     get:
       tags:
@@ -123,6 +135,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SymbolChangeList'
+      summary: Get x global corporate actions list symbol changes
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsListSymbolChanges
+      x-operation-id-source: derived
   /xGlobalCorporateActions/ListIdentifierChanges:
     get:
       tags:
@@ -159,6 +175,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/IdentifierChangeList'
+      summary: Get x global corporate actions list identifier changes
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsListIdentifierChanges
+      x-operation-id-source: derived
   /xGlobalCorporateActions/ListListingChanges:
     get:
       tags:
@@ -199,6 +219,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ListingChangeList'
+      summary: Get x global corporate actions list listing changes
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsListListingChanges
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetEventSummaries:
     get:
       tags:
@@ -249,6 +273,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EventSummaryList'
+      summary: Get x global corporate actions get event summaries
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetEventSummaries
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetEventSummariesByExchange:
     get:
       tags:
@@ -290,6 +318,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityEventSummariesList'
+      summary: Get x global corporate actions get event summaries by exchange
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetEventSummariesByExchange
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetDistributions:
     get:
       tags:
@@ -340,6 +372,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/DistributionsList'
+      summary: Get x global corporate actions get distributions
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetDistributions
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetDistributionsByExchange:
     get:
       tags:
@@ -381,6 +417,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityDistributionsList'
+      summary: Get x global corporate actions get distributions by exchange
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetDistributionsByExchange
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetSplits:
     get:
       tags:
@@ -426,6 +466,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SplitList'
+      summary: Get x global corporate actions get splits
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetSplits
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetSplitsByExchange:
     get:
       tags:
@@ -458,6 +502,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeSplitList'
+      summary: Get x global corporate actions get splits by exchange
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetSplitsByExchange
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetSpinoffs:
     get:
       tags:
@@ -503,6 +551,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SpinoffList'
+      summary: Get x global corporate actions get spinoffs
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetSpinoffs
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetMergers:
     get:
       tags:
@@ -548,6 +600,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MergersList'
+      summary: Get x global corporate actions get mergers
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetMergers
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetTakeovers:
     get:
       tags:
@@ -593,6 +649,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/TakeoversList'
+      summary: Get x global corporate actions get takeovers
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetTakeovers
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetTenderOffers:
     get:
       tags:
@@ -638,6 +698,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/TenderOffersList'
+      summary: Get x global corporate actions get tender offers
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetTenderOffers
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetRights:
     get:
       tags:
@@ -683,6 +747,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/RightsList'
+      summary: Get x global corporate actions get rights
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetRights
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetRightsByExchange:
     get:
       tags:
@@ -715,6 +783,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityRightsList'
+      summary: Get x global corporate actions get rights by exchange
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetRightsByExchange
+      x-operation-id-source: derived
   /xGlobalCorporateActions/GetSecuritySwap:
     get:
       tags:
@@ -760,123 +832,57 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecuritySwapsList'
+      summary: Get x global corporate actions get security swap
+      x-summary-source: derived
+      operationId: getXGlobalCorporateActionsGetSecuritySwap
+      x-operation-id-source: derived
 components:
   schemas:
-    SecuritySwap:
-      type: object
-      properties:
-        ExDate:
-          type: string
-          nullable: true
-        RecordDate:
-          type: string
-          nullable: true
-        PayDate:
-          type: string
-          nullable: true
-        NumberOfInitialInstruments:
-          type: string
-          nullable: true
-        NumberOfNewInstruments:
-          type: string
-          nullable: true
-        DistributedSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-        IsDefaultOption:
-          type: boolean
-      additionalProperties: false
-    Rights:
-      type: object
-      properties:
-        ExDate:
-          type: string
-          nullable: true
-        RecordDate:
-          type: string
-          nullable: true
-        PayDate:
-          type: string
-          nullable: true
-        SubscriptionStartDate:
-          type: string
-          nullable: true
-        SubscriptionEndDate:
-          type: string
-          nullable: true
-        TradeStartDate:
-          type: string
-          nullable: true
-        TradeEndDate:
-          type: string
-          nullable: true
-        SplitDate:
-          type: string
-          nullable: true
-        IssuePrice:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        NumberOfInitialInstruments:
-          type: string
-          nullable: true
-        NumberOfNewInstruments:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-        DistributedSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-      additionalProperties: false
     EventSummary:
       type: object
       properties:
         EventType:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EffectiveDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         CompositeIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EventIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EventNotes:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Created:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         LastUpdated:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
       additionalProperties: false
-    TakeoversList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          TakeoverOptions:
-            type: array
-            items:
-              $ref: '#/components/schemas/Takeover'
-            nullable: true
-        additionalProperties: false
+    SecurityEvent:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        EventSummaries:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/EventSummary'
+      additionalProperties: false
     RightsList:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -885,427 +891,202 @@ components:
           Security:
             allOf:
             - $ref: '#/components/schemas/Security'
-            nullable: true
           SecurityRights:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/Rights'
-            nullable: true
-        additionalProperties: false
-    Split:
-      type: object
-      properties:
-        SplitRatio:
-          type: number
-          format: double
-        Denominator:
-          type: number
-          format: double
-        Numerator:
-          type: number
-          format: double
-        ExDate:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-      additionalProperties: false
-    SecurityRights:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-        RightsSet:
-          type: array
-          items:
-            $ref: '#/components/schemas/Rights'
-          nullable: true
-      additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeDescriptions:
-            type: array
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-            nullable: true
-        additionalProperties: false
-    SymbolList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            allOf:
-            - $ref: '#/components/schemas/ExchangeDescription'
-            nullable: true
-          SecurityDescriptions:
-            type: array
-            items:
-              $ref: '#/components/schemas/SecurityDescription'
-            nullable: true
-        additionalProperties: false
-    SecurityDistributions:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-        DistributionSet:
-          type: array
-          items:
-            $ref: '#/components/schemas/Distribution'
-          nullable: true
-      additionalProperties: false
-    TenderOffer:
-      type: object
-      properties:
-        EffectiveDate:
-          type: string
-          nullable: true
-        EventStatus:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-        OpenDate:
-          type: string
-          nullable: true
-        CloseDate:
-          type: string
-          nullable: true
-        RecordDate:
-          type: string
-          nullable: true
-        UnconditionalDate:
-          type: string
-          nullable: true
-        RegistrationDate:
-          type: string
-          nullable: true
-        OptionElectionDate:
-          type: string
-          nullable: true
-        WithdrawalFromDate:
-          type: string
-          nullable: true
-        WithdrawalToDate:
-          type: string
-          nullable: true
-        WithdrawalRights:
-          type: string
-          nullable: true
-        IsDefaultOption:
-          type: boolean
-        PayType:
-          type: string
-          nullable: true
-        PayDate:
-          type: string
-          nullable: true
-        NumberOfInitialInstruments:
-          type: string
-          nullable: true
-        NumberOfNewInstruments:
-          type: string
-          nullable: true
-        MinimumAmount:
-          type: string
-          nullable: true
-        MaximumAmount:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        OfferorCompanyIdentifier:
-          type: string
-          nullable: true
-        OfferorCompanyName:
-          type: string
-          nullable: true
-        IsHostile:
-          type: string
-          nullable: true
-        TargetQuantity:
-          type: string
-          nullable: true
-        TargetPercent:
-          type: string
-          nullable: true
-        PreOfferQuantity:
-          type: string
-          nullable: true
-        PreOfferPercent:
-          type: string
-          nullable: true
-        DutchAuction:
-          type: string
-          nullable: true
-        IsTakeover:
-          type: boolean
-        PaidSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-      additionalProperties: false
-    EventTypeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          EventTypes:
-            type: array
-            items:
-              $ref: '#/components/schemas/CorporateActionsEventType'
-            nullable: true
-        additionalProperties: false
-    SecurityDescription:
-      type: object
-      properties:
-        Symbol:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        Name:
-          type: string
-          nullable: true
-        InstrumentClass:
-          type: string
-          nullable: true
-      additionalProperties: false
-    EventSummaryList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          EventSummaries:
-            type: array
-            items:
-              $ref: '#/components/schemas/EventSummary'
-            nullable: true
-        additionalProperties: false
-    SecurityEvent:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-        EventSummaries:
-          type: array
-          items:
-            $ref: '#/components/schemas/EventSummary'
-          nullable: true
-      additionalProperties: false
-    IdentifierChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierChanges:
-            type: array
-            items:
-              $ref: '#/components/schemas/IdentifierChange'
-            nullable: true
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    SplitList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          Splits:
-            type: array
-            items:
-              $ref: '#/components/schemas/Split'
-            nullable: true
         additionalProperties: false
     Spinoff:
       type: object
       properties:
         ExDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         RecordDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         PayDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         WithdrawalFromDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         WithdrawalToDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         WithdrawalRights:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         PayType:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         IsDefaultOption:
           type: boolean
         OptionElectionDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EventIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         NumberOfInitialInstruments:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         NumberOfNewInstruments:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Amount:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Currency:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         SpunOffRatio:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         DistributedSecurity:
           allOf:
           - $ref: '#/components/schemas/Security'
-          nullable: true
       additionalProperties: false
-    Merger:
+    ListingChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ListingChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ListingChange'
+        additionalProperties: false
+    Rights:
       type: object
       properties:
-        EffectiveDate:
-          type: string
-          nullable: true
-        EventStatus:
-          type: string
-          nullable: true
-        CompositeIdentifier:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-        RelatedCompositeIdentifier:
-          type: string
-          nullable: true
+        ExDate:
+          type:
+          - string
+          - 'null'
         RecordDate:
-          type: string
-          nullable: true
-        AppointedDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         PayDate:
-          type: string
-          nullable: true
-        OptionElectionDate:
-          type: string
-          nullable: true
-        IsDefaultOption:
-          type: boolean
-        PayType:
-          type: string
-          nullable: true
-        NumberOfInitialInstruments:
-          type: string
-          nullable: true
-        NumberOfNewInstruments:
-          type: string
-          nullable: true
-        Amount:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
+        SubscriptionStartDate:
+          type:
+          - string
+          - 'null'
+        SubscriptionEndDate:
+          type:
+          - string
+          - 'null'
+        TradeStartDate:
+          type:
+          - string
+          - 'null'
+        TradeEndDate:
+          type:
+          - string
+          - 'null'
+        SplitDate:
+          type:
+          - string
+          - 'null'
+        IssuePrice:
+          type:
+          - string
+          - 'null'
         Currency:
-          type: string
-          nullable: true
-        WithdrawalFromDate:
-          type: string
-          nullable: true
-        WithdrawalToDate:
-          type: string
-          nullable: true
-        WithdrawalRights:
-          type: string
-          nullable: true
-        PaidSecurity:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        DistributedSecurity:
           allOf:
           - $ref: '#/components/schemas/Security'
-          nullable: true
       additionalProperties: false
-    SymbolChange:
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    ListingChange:
       type: object
       properties:
         EffectiveDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Type:
-          type: string
-          nullable: true
-        OldSymbol:
-          type: string
-          nullable: true
-        NewSymbol:
-          type: string
-          nullable: true
-        OldCurrency:
-          type: string
-          nullable: true
-        NewCurrency:
-          type: string
-          nullable: true
-        OldExchange:
-          type: string
-          nullable: true
-        NewExchange:
-          type: string
-          nullable: true
-        OldName:
-          type: string
-          nullable: true
-        NewName:
-          type: string
-          nullable: true
-        InstrumentClass:
-          type: string
-          nullable: true
-      additionalProperties: false
-    CorporateActionsEventType:
-      type: object
-      properties:
-        EventDescription:
-          type: string
-          nullable: true
-        EventType:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Name:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OldExchange:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
     SecuritySwapsList:
       allOf:
@@ -1315,388 +1096,52 @@ components:
           Security:
             allOf:
             - $ref: '#/components/schemas/Security'
-            nullable: true
           SecuritySwaps:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/SecuritySwap'
-            nullable: true
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    Security:
-      type: object
-      properties:
-        Name:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        MarketIdentificationCode:
-          type: string
-          nullable: true
-        Market:
-          type: string
-          nullable: true
-        InstrumentClass:
-          type: string
-          nullable: true
-        Industry:
-          type: string
-          nullable: true
-        Sector:
-          type: string
-          nullable: true
-        FIGI:
-          type: string
-          nullable: true
-        CompositeFIGI:
-          type: string
-          nullable: true
-        SEDOL:
-          type: string
-          nullable: true
-        Valoren:
-          type: string
-          nullable: true
-        ISIN:
-          type: string
-          nullable: true
-        CUSIP:
-          type: string
-          nullable: true
-        CIK:
-          type: string
-          nullable: true
-      additionalProperties: false
-    ExchangeSplit:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-        Split:
-          allOf:
-          - $ref: '#/components/schemas/Split'
-          nullable: true
-      additionalProperties: false
-    SecurityDistributionsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Market:
-            type: string
-            nullable: true
-          MarketIdentificationCode:
-            type: string
-            nullable: true
-          ExDate:
-            type: string
-            nullable: true
-          ExchangeDistributions:
-            type: array
-            items:
-              $ref: '#/components/schemas/SecurityDistributions'
-            nullable: true
-        additionalProperties: false
-    MergersList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          MergerOptions:
-            type: array
-            items:
-              $ref: '#/components/schemas/Merger'
-            nullable: true
         additionalProperties: false
     IdentifierChange:
       type: object
       properties:
         EffectiveDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         IdentifierType:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         OldIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         NewIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         OldSecurityName:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         NewSecurityName:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EventIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         ReferenceCompositeIdentifier:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         ReferenceEventType:
-          type: string
-          nullable: true
-      additionalProperties: false
-    Distribution:
-      type: object
-      properties:
-        PaymentType:
-          type: string
-          nullable: true
-        DividendType:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-        IsDefaultOption:
-          type: boolean
-        OptionElectionDate:
-          type: string
-          nullable: true
-        PaymentFrequency:
-          type: string
-          nullable: true
-        ExDate:
-          type: string
-          nullable: true
-        DeclaredDate:
-          type: string
-          nullable: true
-        PayDate:
-          type: string
-          nullable: true
-        RecordDate:
-          type: string
-          nullable: true
-        GrossDividendAmount:
-          type: string
-          nullable: true
-        NetDividendAmount:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        DeclaredGrossAmount:
-          type: string
-          nullable: true
-        DeclaredCurrency:
-          type: string
-          nullable: true
-        FXDate:
-          type: string
-          nullable: true
-        TaxRate:
-          type: string
-          nullable: true
-        NumberOfInitialInstruments:
-          type: string
-          nullable: true
-        NumberOfNewInstruments:
-          type: string
-          nullable: true
-        IsDistributedSecurityDifferent:
-          type: boolean
-        DistributedSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-      additionalProperties: false
-    TenderOffersList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          TenderOfferOptions:
-            type: array
-            items:
-              $ref: '#/components/schemas/TenderOffer'
-            nullable: true
-        additionalProperties: false
-    Takeover:
-      type: object
-      properties:
-        EffectiveDate:
-          type: string
-          nullable: true
-        EventStatus:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-        OpenDate:
-          type: string
-          nullable: true
-        CloseDate:
-          type: string
-          nullable: true
-        RecordDate:
-          type: string
-          nullable: true
-        UnconditionalDate:
-          type: string
-          nullable: true
-        RegistrationDate:
-          type: string
-          nullable: true
-        OptionElectionDate:
-          type: string
-          nullable: true
-        WithdrawalFromDate:
-          type: string
-          nullable: true
-        WithdrawalToDate:
-          type: string
-          nullable: true
-        WithdrawalRights:
-          type: string
-          nullable: true
-        IsDefaultOption:
-          type: boolean
-        PayType:
-          type: string
-          nullable: true
-        PayDate:
-          type: string
-          nullable: true
-        NumberOfInitialInstruments:
-          type: string
-          nullable: true
-        NumberOfNewInstruments:
-          type: string
-          nullable: true
-        MinimumAmount:
-          type: string
-          nullable: true
-        MaximumAmount:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        OfferorCompanyIdentifier:
-          type: string
-          nullable: true
-        OfferorCompanyName:
-          type: string
-          nullable: true
-        IsHostile:
-          type: string
-          nullable: true
-        TargetQuantity:
-          type: string
-          nullable: true
-        TargetPercent:
-          type: string
-          nullable: true
-        PreOfferQuantity:
-          type: string
-          nullable: true
-        PreOfferPercent:
-          type: string
-          nullable: true
-        DutchAuction:
-          type: string
-          nullable: true
-        PaidSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-      additionalProperties: false
-    ListingChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ListingChanges:
-            type: array
-            items:
-              $ref: '#/components/schemas/ListingChange'
-            nullable: true
-        additionalProperties: false
-    DistributionsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          Distributions:
-            type: array
-            items:
-              $ref: '#/components/schemas/Distribution'
-            nullable: true
-        additionalProperties: false
-    ListingChange:
-      type: object
-      properties:
-        EffectiveDate:
-          type: string
-          nullable: true
-        Type:
-          type: string
-          nullable: true
-        Name:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        OldExchange:
-          type: string
-          nullable: true
-        Exchange:
-          type: string
-          nullable: true
-        EventIdentifier:
-          type: string
-          nullable: true
-      additionalProperties: false
-    ExchangeDescription:
-      type: object
-      properties:
-        MarketIdentificationCode:
-          type: string
-          nullable: true
-        Market:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
       additionalProperties: false
     SpinoffList:
       allOf:
@@ -1706,23 +1151,307 @@ components:
           Security:
             allOf:
             - $ref: '#/components/schemas/Security'
-            nullable: true
           SpinoffOptions:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/Spinoff'
-            nullable: true
         additionalProperties: false
+    ExchangeSplit:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        Split:
+          allOf:
+          - $ref: '#/components/schemas/Split'
+      additionalProperties: false
+    Distribution:
+      type: object
+      properties:
+        PaymentType:
+          type:
+          - string
+          - 'null'
+        DividendType:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        IsDefaultOption:
+          type: boolean
+        OptionElectionDate:
+          type:
+          - string
+          - 'null'
+        PaymentFrequency:
+          type:
+          - string
+          - 'null'
+        ExDate:
+          type:
+          - string
+          - 'null'
+        DeclaredDate:
+          type:
+          - string
+          - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        RecordDate:
+          type:
+          - string
+          - 'null'
+        GrossDividendAmount:
+          type:
+          - string
+          - 'null'
+        NetDividendAmount:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        DeclaredGrossAmount:
+          type:
+          - string
+          - 'null'
+        DeclaredCurrency:
+          type:
+          - string
+          - 'null'
+        FXDate:
+          type:
+          - string
+          - 'null'
+        TaxRate:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        IsDistributedSecurityDifferent:
+          type: boolean
+        DistributedSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+      additionalProperties: false
+    CorporateActionsEventType:
+      type: object
+      properties:
+        EventDescription:
+          type:
+          - string
+          - 'null'
+        EventType:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Takeover:
+      type: object
+      properties:
+        EffectiveDate:
+          type:
+          - string
+          - 'null'
+        EventStatus:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        OpenDate:
+          type:
+          - string
+          - 'null'
+        CloseDate:
+          type:
+          - string
+          - 'null'
+        RecordDate:
+          type:
+          - string
+          - 'null'
+        UnconditionalDate:
+          type:
+          - string
+          - 'null'
+        RegistrationDate:
+          type:
+          - string
+          - 'null'
+        OptionElectionDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalFromDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalToDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalRights:
+          type:
+          - string
+          - 'null'
+        IsDefaultOption:
+          type: boolean
+        PayType:
+          type:
+          - string
+          - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        MinimumAmount:
+          type:
+          - string
+          - 'null'
+        MaximumAmount:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OfferorCompanyIdentifier:
+          type:
+          - string
+          - 'null'
+        OfferorCompanyName:
+          type:
+          - string
+          - 'null'
+        IsHostile:
+          type:
+          - string
+          - 'null'
+        TargetQuantity:
+          type:
+          - string
+          - 'null'
+        TargetPercent:
+          type:
+          - string
+          - 'null'
+        PreOfferQuantity:
+          type:
+          - string
+          - 'null'
+        PreOfferPercent:
+          type:
+          - string
+          - 'null'
+        DutchAuction:
+          type:
+          - string
+          - 'null'
+        PaidSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+      additionalProperties: false
+    SecurityRightsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          ExDate:
+            type:
+            - string
+            - 'null'
+          ExchangeRights:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SecurityRights'
+        additionalProperties: false
+    SecuritySwap:
+      type: object
+      properties:
+        ExDate:
+          type:
+          - string
+          - 'null'
+        RecordDate:
+          type:
+          - string
+          - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        DistributedSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        IsDefaultOption:
+          type: boolean
+      additionalProperties: false
     SecurityEventSummariesList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           SecurityEventSummaries:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/SecurityEvent'
-            nullable: true
         additionalProperties: false
     IdentifierTypes:
       enum:
@@ -1737,47 +1466,584 @@ components:
       - EventIdentifier
       - CompositeIdentifier
       type: string
-    SecurityRightsList:
+    ExchangeDescription:
+      type: object
+      properties:
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    SymbolChange:
+      type: object
+      properties:
+        EffectiveDate:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        OldSymbol:
+          type:
+          - string
+          - 'null'
+        NewSymbol:
+          type:
+          - string
+          - 'null'
+        OldCurrency:
+          type:
+          - string
+          - 'null'
+        NewCurrency:
+          type:
+          - string
+          - 'null'
+        OldExchange:
+          type:
+          - string
+          - 'null'
+        NewExchange:
+          type:
+          - string
+          - 'null'
+        OldName:
+          type:
+          - string
+          - 'null'
+        NewName:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    EventSummaryList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          EventSummaries:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/EventSummary'
+        additionalProperties: false
+    Security:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+        Industry:
+          type:
+          - string
+          - 'null'
+        Sector:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CompositeFIGI:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        CIK:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Merger:
+      type: object
+      properties:
+        EffectiveDate:
+          type:
+          - string
+          - 'null'
+        EventStatus:
+          type:
+          - string
+          - 'null'
+        CompositeIdentifier:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        RelatedCompositeIdentifier:
+          type:
+          - string
+          - 'null'
+        RecordDate:
+          type:
+          - string
+          - 'null'
+        AppointedDate:
+          type:
+          - string
+          - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        OptionElectionDate:
+          type:
+          - string
+          - 'null'
+        IsDefaultOption:
+          type: boolean
+        PayType:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        Amount:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        WithdrawalFromDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalToDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalRights:
+          type:
+          - string
+          - 'null'
+        PaidSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+      additionalProperties: false
+    TenderOffer:
+      type: object
+      properties:
+        EffectiveDate:
+          type:
+          - string
+          - 'null'
+        EventStatus:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        OpenDate:
+          type:
+          - string
+          - 'null'
+        CloseDate:
+          type:
+          - string
+          - 'null'
+        RecordDate:
+          type:
+          - string
+          - 'null'
+        UnconditionalDate:
+          type:
+          - string
+          - 'null'
+        RegistrationDate:
+          type:
+          - string
+          - 'null'
+        OptionElectionDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalFromDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalToDate:
+          type:
+          - string
+          - 'null'
+        WithdrawalRights:
+          type:
+          - string
+          - 'null'
+        IsDefaultOption:
+          type: boolean
+        PayType:
+          type:
+          - string
+          - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        MinimumAmount:
+          type:
+          - string
+          - 'null'
+        MaximumAmount:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OfferorCompanyIdentifier:
+          type:
+          - string
+          - 'null'
+        OfferorCompanyName:
+          type:
+          - string
+          - 'null'
+        IsHostile:
+          type:
+          - string
+          - 'null'
+        TargetQuantity:
+          type:
+          - string
+          - 'null'
+        TargetPercent:
+          type:
+          - string
+          - 'null'
+        PreOfferQuantity:
+          type:
+          - string
+          - 'null'
+        PreOfferPercent:
+          type:
+          - string
+          - 'null'
+        DutchAuction:
+          type:
+          - string
+          - 'null'
+        IsTakeover:
+          type: boolean
+        PaidSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+      additionalProperties: false
+    SecurityDistributionsList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Market:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           MarketIdentificationCode:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           ExDate:
-            type: string
-            nullable: true
-          ExchangeRights:
-            type: array
+            type:
+            - string
+            - 'null'
+          ExchangeDistributions:
+            type:
+            - array
+            - 'null'
             items:
-              $ref: '#/components/schemas/SecurityRights'
-            nullable: true
+              $ref: '#/components/schemas/SecurityDistributions'
         additionalProperties: false
+    IdentifierChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/IdentifierChange'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    TenderOffersList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          TenderOfferOptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/TenderOffer'
+        additionalProperties: false
+    MergersList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          MergerOptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Merger'
+        additionalProperties: false
+    SecurityRights:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        RightsSet:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/Rights'
+      additionalProperties: false
+    SecurityDescription:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    TakeoversList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          TakeoverOptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Takeover'
+        additionalProperties: false
+    SplitList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Splits:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Split'
+        additionalProperties: false
+    EventTypeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          EventTypes:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/CorporateActionsEventType'
+        additionalProperties: false
+    SymbolList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            allOf:
+            - $ref: '#/components/schemas/ExchangeDescription'
+          SecurityDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SecurityDescription'
+        additionalProperties: false
+    SecurityDistributions:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        DistributionSet:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/Distribution'
+      additionalProperties: false
     ExchangeSplitList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           ExchangeSplits:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/ExchangeSplit'
-            nullable: true
         additionalProperties: false
+    DistributionsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Distributions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Distribution'
+        additionalProperties: false
+    Split:
+      type: object
+      properties:
+        SplitRatio:
+          type: number
+          format: double
+        Denominator:
+          type: number
+          format: double
+        Numerator:
+          type: number
+          format: double
+        ExDate:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     SymbolChangeList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           SymbolChanges:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/SymbolChange'
-            nullable: true
+        additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
         additionalProperties: false
   securitySchemes:
     basic:

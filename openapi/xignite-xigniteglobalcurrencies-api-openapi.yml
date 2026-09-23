@@ -1,7 +1,7 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteGlobalCurrencies API
-  version: 1.0.3
+  title: Xignite Global Currencies API
+  version: 1.0.8
 servers:
 - url: https://globalcurrencies.xignite.com
 security:
@@ -32,6 +32,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Currencies'
+      summary: Get x global currencies list currencies
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesListCurrencies
+      x-operation-id-source: derived
   /xGlobalCurrencies/ListActiveCurrencies:
     get:
       tags:
@@ -55,6 +59,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Currencies'
+      summary: Get x global currencies list active currencies
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesListActiveCurrencies
+      x-operation-id-source: derived
   /xGlobalCurrencies/ConvertRealTimeValue:
     get:
       tags:
@@ -92,6 +100,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/RateConversion'
+      summary: Get x global currencies convert real time value
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesConvertRealTimeValue
+      x-operation-id-source: derived
   /xGlobalCurrencies/ConvertHistoricalValue:
     get:
       tags:
@@ -137,6 +149,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/RateConversion'
+      summary: Get x global currencies convert historical value
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesConvertHistoricalValue
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetRealTimeRate:
     get:
       tags:
@@ -165,6 +181,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Rate'
+      summary: Get x global currencies get real time rate
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetRealTimeRate
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetRealTimeRates:
     get:
       tags:
@@ -203,6 +223,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Rate'
+      summary: Get x global currencies get real time rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetRealTimeRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetAllRealTimeRates:
     get:
       tags:
@@ -241,6 +265,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Rate'
+      summary: Get x global currencies get all real time rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetAllRealTimeRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetRealTimeRateTable:
     get:
       tags:
@@ -273,6 +301,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/RateTable'
+      summary: Get x global currencies get real time rate table
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetRealTimeRateTable
+      x-operation-id-source: derived
   /xGlobalCurrencies/ListOfficialRates:
     get:
       tags:
@@ -296,6 +328,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/OfficialRates'
+      summary: Get x global currencies list official rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesListOfficialRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetHistoricalRate:
     get:
       tags:
@@ -336,6 +372,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get historical rate
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetHistoricalRate
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetLatestHistoricalRate:
     get:
       tags:
@@ -376,6 +416,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get latest historical rate
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetLatestHistoricalRate
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetHistoricalRates:
     get:
       tags:
@@ -426,6 +470,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get historical rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetHistoricalRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetLatestHistoricalRates:
     get:
       tags:
@@ -476,6 +524,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get latest historical rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetLatestHistoricalRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetHistoricalRatesRange:
     get:
       tags:
@@ -534,6 +586,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get historical rates range
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetHistoricalRatesRange
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetHistoricalRatesRanges:
     get:
       tags:
@@ -592,6 +648,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get historical rates ranges
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetHistoricalRatesRanges
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetBar:
     get:
       tags:
@@ -632,6 +692,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Bar'
+      summary: Get x global currencies get bar
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetBar
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetBars:
     get:
       tags:
@@ -695,6 +759,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Bar'
+      summary: Get x global currencies get bars
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetBars
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetChartBars:
     get:
       tags:
@@ -744,6 +812,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/CurrencyChartBars'
+      summary: Get x global currencies get chart bars
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetChartBars
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetOfficialHistoricalRate:
     get:
       tags:
@@ -780,6 +852,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get official historical rate
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetOfficialHistoricalRate
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetOfficialRate:
     get:
       tags:
@@ -816,6 +892,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/HistoricalRateBidAsk'
+      summary: Get x global currencies get official rate
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetOfficialRate
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetOfficialRates:
     get:
       tags:
@@ -862,6 +942,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRateBidAsk'
+      summary: Get x global currencies get official rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetOfficialRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetOfficialHistoricalRates:
     get:
       tags:
@@ -908,6 +992,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get official historical rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetOfficialHistoricalRates
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetLondonHistoricalRatesRange:
     get:
       tags:
@@ -954,6 +1042,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/HistoricalRate'
+      summary: Get x global currencies get london historical rates range
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetLondonHistoricalRatesRange
+      x-operation-id-source: derived
   /xGlobalCurrencies/GetForwardRate:
     get:
       tags:
@@ -982,6 +1074,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ForwardRate'
+      summary: Get x global currencies get forward rate
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesGetForwardRate
+      x-operation-id-source: derived
   /xGlobalCurrencies/ListForwardRates:
     get:
       tags:
@@ -1005,70 +1101,235 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ForwardRateList'
+      summary: Get x global currencies list forward rates
+      x-summary-source: derived
+      operationId: getXGlobalCurrenciesListForwardRates
+      x-operation-id-source: derived
 components:
   schemas:
-    Country:
+    Rate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BaseCurrency:
+            type:
+            - string
+            - 'null'
+          QuoteCurrency:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          QuoteType:
+            type:
+            - string
+            - 'null'
+          Bid:
+            type: number
+            format: double
+          Mid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          Spread:
+            type: number
+            format: double
+          Text:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    RateTable:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Lines:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/RateTableLine'
+        additionalProperties: false
+    Common:
       type: object
       properties:
-        Code:
-          type: string
-          nullable: true
-        Name:
-          type: string
-          nullable: true
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
-    OfficialCountry:
-      type: object
-      properties:
-        Country:
-          type: string
-          nullable: true
-        OfficialCurrencies:
-          type: array
-          items:
-            $ref: '#/components/schemas/OfficialCurrency'
-          nullable: true
-      additionalProperties: false
+    CurrencyChartBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Timing:
+            type:
+            - string
+            - 'null'
+          PriceType:
+            type:
+            - string
+            - 'null'
+          CurrencyDescription:
+            allOf:
+            - $ref: '#/components/schemas/CurrencyDescription'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
+        additionalProperties: false
+    ForwardRate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BaseCurrency:
+            type:
+            - string
+            - 'null'
+          QuoteCurrency:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          QuoteType:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          ForwardRates:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ForwardContract'
+        additionalProperties: false
     Currency:
       type: object
       properties:
         Symbol:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Name:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Plural:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Active:
           type: boolean
         Digital:
           type: boolean
         Message:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Countries:
-          type: array
+          type:
+          - array
+          - 'null'
           items:
             $ref: '#/components/schemas/Country'
-          nullable: true
+      additionalProperties: false
+    HistoricalRateBidAsk:
+      allOf:
+      - $ref: '#/components/schemas/HistoricalRate'
+      - type: object
+        properties:
+          Bid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ForwardContract:
+      type: object
+      properties:
+        Bid:
+          type: number
+          format: double
+        Mid:
+          type: number
+          format: double
+        Ask:
+          type: number
+          format: double
+        SpotRate:
+          type: number
+          format: double
+        Points:
+          type: number
+          format: double
       additionalProperties: false
     ChartBar:
       type: object
       properties:
         StartDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         StartTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EndDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EndTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         UTCOffset:
           type: number
           format: double
@@ -1097,11 +1358,13 @@ components:
           type: number
           format: double
         Currency:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Session:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         AdjustmentRatio:
           type: number
           format: double
@@ -1112,20 +1375,23 @@ components:
       - type: object
         properties:
           ForwardRateDescriptions:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/ForwardRateDescription'
-            nullable: true
         additionalProperties: false
-    QuoteCurrencyItem:
+    Country:
       type: object
       properties:
-        QuoteCurrency:
-          type: string
-          nullable: true
-        Rate:
-          type: number
-          format: double
+        Code:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
     Bar:
       allOf:
@@ -1133,20 +1399,25 @@ components:
       - type: object
         properties:
           Symbol:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           StartDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           StartTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           EndDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           EndTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Open:
             type: number
             format: double
@@ -1173,298 +1444,39 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    OfficialRates:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CountryList:
-            type: array
-            items:
-              $ref: '#/components/schemas/OfficialCountry'
-            nullable: true
-        additionalProperties: false
-    HistoricalRateBidAsk:
-      allOf:
-      - $ref: '#/components/schemas/HistoricalRate'
-      - type: object
-        properties:
-          Bid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          Source:
-            type: string
-            nullable: true
-        additionalProperties: false
-    OfficialCurrency:
-      type: object
-      properties:
-        Symbol:
-          type: string
-          nullable: true
-        Active:
-          type: boolean
-        Message:
-          type: string
-          nullable: true
-      additionalProperties: false
-    CurrencyDescription:
-      type: object
-      properties:
-        Symbol:
-          type: string
-          nullable: true
-        BaseCurrency:
-          type: string
-          nullable: true
-        QuoteCurrency:
-          type: string
-          nullable: true
-      additionalProperties: false
-    RateTable:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Lines:
-            type: array
-            items:
-              $ref: '#/components/schemas/RateTableLine'
-            nullable: true
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    Rate:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          BaseCurrency:
-            type: string
-            nullable: true
-          QuoteCurrency:
-            type: string
-            nullable: true
-          Symbol:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          Time:
-            type: string
-            nullable: true
-          QuoteType:
-            type: string
-            nullable: true
-          Bid:
-            type: number
-            format: double
-          Mid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          Spread:
-            type: number
-            format: double
-          Text:
-            type: string
-            nullable: true
-          Source:
-            type: string
-            nullable: true
-        additionalProperties: false
-    ForwardContract:
-      type: object
-      properties:
-        Bid:
-          type: number
-          format: double
-        Mid:
-          type: number
-          format: double
-        Ask:
-          type: number
-          format: double
-        SpotRate:
-          type: number
-          format: double
-        Points:
-          type: number
-          format: double
-      additionalProperties: false
-    RateTableLine:
-      type: object
-      properties:
-        BaseCurrency:
-          type: string
-          nullable: true
-        Columns:
-          type: array
-          items:
-            $ref: '#/components/schemas/QuoteCurrencyItem'
-          nullable: true
-      additionalProperties: false
-    ForwardRate:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          BaseCurrency:
-            type: string
-            nullable: true
-          QuoteCurrency:
-            type: string
-            nullable: true
-          Symbol:
-            type: string
-            nullable: true
-          QuoteType:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          Time:
-            type: string
-            nullable: true
-          ForwardRates:
-            type: array
-            items:
-              $ref: '#/components/schemas/ForwardContract'
-            nullable: true
-        additionalProperties: false
-    RateConversion:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FromCurrencySymbol:
-            type: string
-            nullable: true
-          FromCurrencyName:
-            type: string
-            nullable: true
-          ToCurrencySymbol:
-            type: string
-            nullable: true
-          ToCurrencyName:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          Time:
-            type: string
-            nullable: true
-          Amount:
-            type: number
-            format: double
-          Result:
-            type: number
-            format: double
-          Rate:
-            type: number
-            format: double
-          Source:
-            type: string
-            nullable: true
-        additionalProperties: false
-    ForwardRateDescription:
-      type: object
-      properties:
-        BaseCurrency:
-          type: string
-          nullable: true
-        QuoteCurrency:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        Expirations:
-          type: array
-          items:
-            type: string
-          nullable: true
-      additionalProperties: false
-    Currencies:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CurrencyList:
-            type: array
-            items:
-              $ref: '#/components/schemas/Currency'
-            nullable: true
-        additionalProperties: false
-    CurrencyChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Timing:
-            type: string
-            nullable: true
-          PriceType:
-            type: string
-            nullable: true
-          CurrencyDescription:
-            allOf:
-            - $ref: '#/components/schemas/CurrencyDescription'
-            nullable: true
-          ChartBars:
-            type: array
-            items:
-              $ref: '#/components/schemas/ChartBar'
-            nullable: true
-        additionalProperties: false
     HistoricalRate:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           BaseCurrency:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           QuoteCurrency:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Symbol:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           StartDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           StartTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           EndDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           EndTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Open:
             type: number
             format: double
@@ -1480,6 +1492,164 @@ components:
           Average:
             type: number
             format: double
+        additionalProperties: false
+    OfficialCurrency:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Active:
+          type: boolean
+        Message:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    OfficialRates:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CountryList:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/OfficialCountry'
+        additionalProperties: false
+    RateTableLine:
+      type: object
+      properties:
+        BaseCurrency:
+          type:
+          - string
+          - 'null'
+        Columns:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/QuoteCurrencyItem'
+      additionalProperties: false
+    OfficialCountry:
+      type: object
+      properties:
+        Country:
+          type:
+          - string
+          - 'null'
+        OfficialCurrencies:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/OfficialCurrency'
+      additionalProperties: false
+    ForwardRateDescription:
+      type: object
+      properties:
+        BaseCurrency:
+          type:
+          - string
+          - 'null'
+        QuoteCurrency:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Expirations:
+          type:
+          - array
+          - 'null'
+          items:
+            type: string
+      additionalProperties: false
+    CurrencyDescription:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        BaseCurrency:
+          type:
+          - string
+          - 'null'
+        QuoteCurrency:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    QuoteCurrencyItem:
+      type: object
+      properties:
+        QuoteCurrency:
+          type:
+          - string
+          - 'null'
+        Rate:
+          type: number
+          format: double
+      additionalProperties: false
+    RateConversion:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FromCurrencySymbol:
+            type:
+            - string
+            - 'null'
+          FromCurrencyName:
+            type:
+            - string
+            - 'null'
+          ToCurrencySymbol:
+            type:
+            - string
+            - 'null'
+          ToCurrencyName:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Amount:
+            type: number
+            format: double
+          Result:
+            type: number
+            format: double
+          Rate:
+            type: number
+            format: double
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Currencies:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CurrencyList:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Currency'
         additionalProperties: false
   securitySchemes:
     basic:

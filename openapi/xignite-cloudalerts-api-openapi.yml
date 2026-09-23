@@ -1,7 +1,7 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts API
-  version: 1.0.3
+  title: Cloud Alerts API
+  version: 1.0.2
 servers:
 - url: https://alerts.xignite.com
 security:
@@ -65,6 +65,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Alert'
+      summary: Get x alerts create alert
+      x-summary-source: derived
+      operationId: getXAlertsCreateAlert
+      x-operation-id-source: derived
   /xAlerts/DeleteAlerts:
     get:
       tags:
@@ -103,6 +107,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Alert'
+      summary: Get x alerts delete alerts
+      x-summary-source: derived
+      operationId: getXAlertsDeleteAlerts
+      x-operation-id-source: derived
   /xAlerts/SearchAlerts:
     get:
       tags:
@@ -141,24 +149,12 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Alert'
+      summary: Get x alerts search alerts
+      x-summary-source: derived
+      operationId: getXAlertsSearchAlerts
+      x-operation-id-source: derived
 components:
   schemas:
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
     OutcomeTypes:
       enum:
       - Success
@@ -166,44 +162,73 @@ components:
       - RequestError
       - RegistrationError
       type: string
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
     Alert:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           AlertIdentifier:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Status:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           IdentifierType:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Identifier:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           API:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Condition:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Reset:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           CallbackURL:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           StartDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           LastTriggered:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           EndDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
         additionalProperties: false
   securitySchemes:
     basic:

@@ -1,7 +1,7 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteMoneyMarkets API
-  version: 1.0.3
+  title: Xignite Money Markets API
+  version: 1.0.8
 servers:
 - url: https://moneymarkets.xignite.com
 security:
@@ -42,6 +42,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/RateDescription'
+      summary: Get x money markets list rates
+      x-summary-source: derived
+      operationId: getXMoneyMarketsListRates
+      x-operation-id-source: derived
   /xMoneyMarkets/ListSwapRates:
     get:
       tags:
@@ -84,6 +88,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SwapRateDescription'
+      summary: Get x money markets list swap rates
+      x-summary-source: derived
+      operationId: getXMoneyMarketsListSwapRates
+      x-operation-id-source: derived
   /xMoneyMarkets/SearchRates:
     get:
       tags:
@@ -122,6 +130,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/RateDescription'
+      summary: Get x money markets search rates
+      x-summary-source: derived
+      operationId: getXMoneyMarketsSearchRates
+      x-operation-id-source: derived
   /xMoneyMarkets/GetSwapRate:
     get:
       tags:
@@ -154,6 +166,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SwapRate'
+      summary: Get x money markets get swap rate
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetSwapRate
+      x-operation-id-source: derived
   /xMoneyMarkets/GetSwapRateExtended:
     get:
       tags:
@@ -194,6 +210,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SwapRateExtended'
+      summary: Get x money markets get swap rate extended
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetSwapRateExtended
+      x-operation-id-source: derived
   /xMoneyMarkets/GetSwapRateFamily:
     get:
       tags:
@@ -232,6 +252,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SwapRate'
+      summary: Get x money markets get swap rate family
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetSwapRateFamily
+      x-operation-id-source: derived
   /xMoneyMarkets/GetSwapRateFamilyExtended:
     get:
       tags:
@@ -278,6 +302,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SwapRateExtended'
+      summary: Get x money markets get swap rate family extended
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetSwapRateFamilyExtended
+      x-operation-id-source: derived
   /xMoneyMarkets/GetHistoricalSwapRate:
     get:
       tags:
@@ -314,6 +342,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SwapRate'
+      summary: Get x money markets get historical swap rate
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetHistoricalSwapRate
+      x-operation-id-source: derived
   /xMoneyMarkets/GetHistoricalSwapRateExtended:
     get:
       tags:
@@ -358,6 +390,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SwapRateExtended'
+      summary: Get x money markets get historical swap rate extended
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetHistoricalSwapRateExtended
+      x-operation-id-source: derived
   /xMoneyMarkets/GetHistoricalSwapRateRange:
     get:
       tags:
@@ -408,6 +444,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SwapRate'
+      summary: Get x money markets get historical swap rate range
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetHistoricalSwapRateRange
+      x-operation-id-source: derived
   /xMoneyMarkets/GetHistoricalSwapRateExtendedRange:
     get:
       tags:
@@ -466,6 +506,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/SwapRateExtended'
+      summary: Get x money markets get historical swap rate extended range
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetHistoricalSwapRateExtendedRange
+      x-operation-id-source: derived
   /xMoneyMarkets/GetTreasuryRate:
     get:
       tags:
@@ -498,6 +542,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/InterestRate'
+      summary: Get x money markets get treasury rate
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetTreasuryRate
+      x-operation-id-source: derived
   /xMoneyMarkets/GetTreasuryRateFamily:
     get:
       tags:
@@ -536,6 +584,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/InterestRate'
+      summary: Get x money markets get treasury rate family
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetTreasuryRateFamily
+      x-operation-id-source: derived
   /xMoneyMarkets/GetHistoricalSwaption:
     get:
       tags:
@@ -576,6 +628,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Swaption'
+      summary: Get x money markets get historical swaption
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetHistoricalSwaption
+      x-operation-id-source: derived
   /xMoneyMarkets/GetHistoricalSwaptionFamily:
     get:
       tags:
@@ -618,6 +674,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Swaption'
+      summary: Get x money markets get historical swaption family
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetHistoricalSwaptionFamily
+      x-operation-id-source: derived
   /xMoneyMarkets/GetSwaption:
     get:
       tags:
@@ -654,6 +714,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Swaption'
+      summary: Get x money markets get swaption
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetSwaption
+      x-operation-id-source: derived
   /xMoneyMarkets/GetSwaptionFamily:
     get:
       tags:
@@ -692,6 +756,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Swaption'
+      summary: Get x money markets get swaption family
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetSwaptionFamily
+      x-operation-id-source: derived
   /xMoneyMarkets/GetForwardRateAgreement:
     get:
       tags:
@@ -732,30 +800,20 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ForwardRateAgreement'
+      summary: Get x money markets get forward rate agreement
+      x-summary-source: derived
+      operationId: getXMoneyMarketsGetForwardRateAgreement
+      x-operation-id-source: derived
 components:
   schemas:
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    ForwardRateAgreement:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    SwapRate:
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    InterestRate:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -765,29 +823,45 @@ components:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    Swaption:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    InterestRate:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
     RateDescription:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    SwapRate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
     SwapRateDescription:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ForwardRateAgreement:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    Swaption:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object

@@ -1,7 +1,7 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteEarningsCalendar API
-  version: 1.0.3
+  title: Xignite Earnings Calendar API
+  version: 1.0.4
 servers:
 - url: https://earningscalendar.xignite.com
 security:
@@ -37,6 +37,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeList'
+      summary: Get x earnings calendar list exchanges
+      x-summary-source: derived
+      operationId: getXEarningsCalendarListExchanges
+      x-operation-id-source: derived
   /xEarningsCalendar/ListSymbols:
     get:
       tags:
@@ -65,6 +69,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SymbolList'
+      summary: Get x earnings calendar list symbols
+      x-summary-source: derived
+      operationId: getXEarningsCalendarListSymbols
+      x-operation-id-source: derived
   /xEarningsCalendar/ListEarningCalendarItems:
     get:
       tags:
@@ -88,6 +96,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FundamentalTypesItems'
+      summary: Get x earnings calendar list earning calendar items
+      x-summary-source: derived
+      operationId: getXEarningsCalendarListEarningCalendarItems
+      x-operation-id-source: derived
   /xEarningsCalendar/GetEarningCalendarItem:
     get:
       tags:
@@ -124,6 +136,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EarningCalendarItem'
+      summary: Get x earnings calendar get earning calendar item
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetEarningCalendarItem
+      x-operation-id-source: derived
   /xEarningsCalendar/GetEarningCalendarItems:
     get:
       tags:
@@ -160,6 +176,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityItemsSets'
+      summary: Get x earnings calendar get earning calendar items
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetEarningCalendarItems
+      x-operation-id-source: derived
   /xEarningsCalendar/GetEarningCall:
     get:
       tags:
@@ -192,6 +212,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EarningCall'
+      summary: Get x earnings calendar get earning call
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetEarningCall
+      x-operation-id-source: derived
   /xEarningsCalendar/GetConferenceCallInformation:
     get:
       tags:
@@ -224,6 +248,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ConferenceCallInformation'
+      summary: Get x earnings calendar get conference call information
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetConferenceCallInformation
+      x-operation-id-source: derived
   /xEarningsCalendar/GetReplayInformation:
     get:
       tags:
@@ -256,6 +284,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ReplayInformation'
+      summary: Get x earnings calendar get replay information
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetReplayInformation
+      x-operation-id-source: derived
   /xEarningsCalendar/GetAnnouncement:
     get:
       tags:
@@ -288,6 +320,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Announcement'
+      summary: Get x earnings calendar get announcement
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetAnnouncement
+      x-operation-id-source: derived
   /xEarningsCalendar/GetEarningCalendarDay:
     get:
       tags:
@@ -321,6 +357,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EarningCalendarDay'
+      summary: Get x earnings calendar get earning calendar day
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetEarningCalendarDay
+      x-operation-id-source: derived
   /xEarningsCalendar/GetEarningCalendarRange:
     get:
       tags:
@@ -358,6 +398,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EarningCalendar'
+      summary: Get x earnings calendar get earning calendar range
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetEarningCalendarRange
+      x-operation-id-source: derived
   /xEarningsCalendar/GetEarningDates:
     get:
       tags:
@@ -390,6 +434,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/EarningDates'
+      summary: Get x earnings calendar get earning dates
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetEarningDates
+      x-operation-id-source: derived
   /xEarningsCalendar/GetBoardMeeting:
     get:
       tags:
@@ -422,8 +470,82 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/BoardMeeting'
+      summary: Get x earnings calendar get board meeting
+      x-summary-source: derived
+      operationId: getXEarningsCalendarGetBoardMeeting
+      x-operation-id-source: derived
 components:
   schemas:
+    ConferenceCallInformation:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    SymbolDescription:
+      type: object
+      properties:
+        CompanyName:
+          type:
+          - string
+          - 'null'
+        CompanyIdentifier:
+          type:
+          - string
+          - 'null'
+        CompanyDomicile:
+          type:
+          - string
+          - 'null'
+        CompanyRegion:
+          type:
+          - string
+          - 'null'
+        SecurityName:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        DividendStatus:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    ReplayInformation:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    ExchangeDescription:
+      type: object
+      properties:
+        Market:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    EarningCall:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
     EarningCalendarDay:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -436,76 +558,44 @@ components:
           type: number
           format: double
         Identity:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Message:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Outcome:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
-    SymbolDescription:
-      type: object
-      properties:
-        CompanyName:
-          type: string
-          nullable: true
-        CompanyIdentifier:
-          type: string
-          nullable: true
-        CompanyDomicile:
-          type: string
-          nullable: true
-        CompanyRegion:
-          type: string
-          nullable: true
-        SecurityName:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        DividendStatus:
-          type: string
-          nullable: true
-      additionalProperties: false
+    BoardMeeting:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Region:
+            type:
+            - string
+            - 'null'
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
+        additionalProperties: false
     FundamentalTypesItems:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    ExchangeDescription:
-      type: object
-      properties:
-        Market:
-          type: string
-          nullable: true
-        MarketIdentificationCode:
-          type: string
-          nullable: true
-      additionalProperties: false
-    EarningCalendar:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    ConferenceCallInformation:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    EarningCall:
+    SecurityItemsSets:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -520,53 +610,32 @@ components:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    ReplayInformation:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    EarningCalendarItem:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    BoardMeeting:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Region:
-            type: string
-            nullable: true
-          ExchangeDescriptions:
-            type: array
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-            nullable: true
-        additionalProperties: false
     SymbolList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Market:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           MarketIdentificationCode:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           SymbolDescriptions:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/SymbolDescription'
-            nullable: true
         additionalProperties: false
-    SecurityItemsSets:
+    EarningCalendar:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    EarningCalendarItem:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object

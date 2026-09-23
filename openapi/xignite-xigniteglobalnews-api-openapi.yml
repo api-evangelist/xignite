@@ -1,6 +1,6 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteGlobalNews API
+  title: Xignite Global News API
   version: 1.0.3
 servers:
 - url: https://globalnews.xignite.com
@@ -32,6 +32,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get todays market headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTodaysMarketHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetTodaysMarketReleases:
     get:
       tags:
@@ -55,6 +59,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get todays market releases
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTodaysMarketReleases
+      x-operation-id-source: derived
   /xGlobalNews/GetTodaysMarketHeadlinesBySector:
     get:
       tags:
@@ -83,6 +91,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get todays market headlines by sector
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTodaysMarketHeadlinesBySector
+      x-operation-id-source: derived
   /xGlobalNews/GetTodaysSecurityHeadlines:
     get:
       tags:
@@ -115,6 +127,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get todays security headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTodaysSecurityHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetMarketHeadlinesByQuery:
     get:
       tags:
@@ -159,6 +175,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get market headlines by query
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetMarketHeadlinesByQuery
+      x-operation-id-source: derived
   /xGlobalNews/GetTopMarketHeadlines:
     get:
       tags:
@@ -188,6 +208,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get top market headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopMarketHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetTopMarketHeadlinesBySector:
     get:
       tags:
@@ -221,6 +245,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get top market headlines by sector
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopMarketHeadlinesBySector
+      x-operation-id-source: derived
   /xGlobalNews/GetRecentTopSecurityHeadlines:
     get:
       tags:
@@ -258,6 +286,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get recent top security headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetRecentTopSecurityHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetTopSecurityHeadlines:
     get:
       tags:
@@ -295,6 +327,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get top security headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopSecurityHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetHistoricalSecurityHeadlines:
     get:
       tags:
@@ -335,6 +371,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get historical security headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetHistoricalSecurityHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetHistoricalMarketHeadlines:
     get:
       tags:
@@ -367,6 +407,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get historical market headlines
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetHistoricalMarketHeadlines
+      x-operation-id-source: derived
   /xGlobalNews/GetHistoricalMarketReleases:
     get:
       tags:
@@ -399,6 +443,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get historical market releases
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetHistoricalMarketReleases
+      x-operation-id-source: derived
   /xGlobalNews/GetHistoricalMarketHeadlinesBySector:
     get:
       tags:
@@ -435,6 +483,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlines'
+      summary: Get x global news get historical market headlines by sector
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetHistoricalMarketHeadlinesBySector
+      x-operation-id-source: derived
   /xGlobalNews/GetMarketNewsDetails:
     get:
       tags:
@@ -463,6 +515,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketNewsItem'
+      summary: Get x global news get market news details
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetMarketNewsDetails
+      x-operation-id-source: derived
   /xGlobalNews/GetTodaysReleasesBySecurity:
     get:
       tags:
@@ -495,6 +551,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get todays releases by security
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTodaysReleasesBySecurity
+      x-operation-id-source: derived
   /xGlobalNews/GetTopReleasesBySecurity:
     get:
       tags:
@@ -532,6 +592,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get top releases by security
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopReleasesBySecurity
+      x-operation-id-source: derived
   /xGlobalNews/GetHistoricalReleasesBySecurity:
     get:
       tags:
@@ -572,6 +636,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlines'
+      summary: Get x global news get historical releases by security
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetHistoricalReleasesBySecurity
+      x-operation-id-source: derived
   /xGlobalNews/ListSectors:
     get:
       tags:
@@ -595,6 +663,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SectorList'
+      summary: Get x global news list sectors
+      x-summary-source: derived
+      operationId: getXGlobalNewsListSectors
+      x-operation-id-source: derived
   /xGlobalNews/GetTopSecuritySummaries:
     get:
       tags:
@@ -632,6 +704,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlineSummaries'
+      summary: Get x global news get top security summaries
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopSecuritySummaries
+      x-operation-id-source: derived
   /xGlobalNews/GetTopReleaseSummariesBySecurity:
     get:
       tags:
@@ -669,6 +745,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SecurityHeadlineSummaries'
+      summary: Get x global news get top release summaries by security
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopReleaseSummariesBySecurity
+      x-operation-id-source: derived
   /xGlobalNews/GetTopMarketSummaries:
     get:
       tags:
@@ -698,6 +778,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/MarketHeadlineSummaries'
+      summary: Get x global news get top market summaries
+      x-summary-source: derived
+      operationId: getXGlobalNewsGetTopMarketSummaries
+      x-operation-id-source: derived
   /xGlobalNews/ListExchanges:
     get:
       tags:
@@ -721,6 +805,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeList'
+      summary: Get x global news list exchanges
+      x-summary-source: derived
+      operationId: getXGlobalNewsListExchanges
+      x-operation-id-source: derived
   /xGlobalNews/ListSymbols:
     get:
       tags:
@@ -757,19 +845,105 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SymbolList'
+      summary: Get x global news list symbols
+      x-summary-source: derived
+      operationId: getXGlobalNewsListSymbols
+      x-operation-id-source: derived
 components:
   schemas:
-    SectorList:
+    MarketHeadlines:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Sectors:
-            type: array
+          Headlines:
+            type:
+            - array
+            - 'null'
             items:
-              type: string
-            nullable: true
+              $ref: '#/components/schemas/MarketHeadline'
         additionalProperties: false
+    MarketHeadlineSummaries:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          HeadlineSummaries:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/MarketHeadlineSummary'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    ExchangeDescription:
+      type: object
+      properties:
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    MarketNewsItem:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Headline:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+          Url:
+            type:
+            - string
+            - 'null'
+          Summary:
+            type:
+            - string
+            - 'null'
+          Tags:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/TagGroup'
+          PaywallType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    TagGroup:
+      type: object
+      properties:
+        TagType:
+          type:
+          - string
+          - 'null'
+        TagValues:
+          type:
+          - array
+          - 'null'
+          items:
+            type: string
+      additionalProperties: false
     Common:
       type: object
       properties:
@@ -777,11 +951,13 @@ components:
           type: number
           format: double
         Identity:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Message:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Outcome:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
@@ -790,141 +966,188 @@ components:
       type: object
       properties:
         CIK:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         CUSIP:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Symbol:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         ISIN:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Valoren:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Name:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Market:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         MarketIdentificationCode:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         MostLiquidExchange:
           type: boolean
         CategoryOrIndustry:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
       additionalProperties: false
-    ExchangeDescription:
-      type: object
-      properties:
-        MarketIdentificationCode:
-          type: string
-          nullable: true
-        Market:
-          type: string
-          nullable: true
-      additionalProperties: false
-    MarketHeadlineSummaries:
+    MarketHeadlineSummary:
       allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          HeadlineSummaries:
-            type: array
-            items:
-              $ref: '#/components/schemas/MarketHeadlineSummary'
-            nullable: true
-        additionalProperties: false
-    SymbolList:
-      type: object
-      properties:
-        Exchange:
-          allOf:
-          - $ref: '#/components/schemas/ExchangeDescription'
-          nullable: true
-        SecurityDescriptions:
-          type: array
-          items:
-            $ref: '#/components/schemas/SecurityDescription'
-          nullable: true
-      additionalProperties: false
-    SecurityHeadlineSummary:
-      allOf:
-      - $ref: '#/components/schemas/SecurityHeadline'
+      - $ref: '#/components/schemas/MarketHeadline'
       - type: object
         properties:
           Summary:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           PaywallType:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
         additionalProperties: false
+    ExchangeList:
+      type: object
+      properties:
+        ExchangeDescriptions:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/ExchangeDescription'
+      additionalProperties: false
     SecurityDescription:
       type: object
       properties:
         Symbol:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Currency:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Name:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         InstrumentClass:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
       additionalProperties: false
-    MarketNewsItem:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Headline:
+    SecurityHeadline:
+      type: object
+      properties:
+        Title:
+          type:
+          - string
+          - 'null'
+        Date:
+          type:
+          - string
+          - 'null'
+        Time:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Source:
+          type:
+          - string
+          - 'null'
+        Url:
+          type:
+          - string
+          - 'null'
+        Images:
+          type:
+          - array
+          - 'null'
+          items:
             type: string
-            nullable: true
-          Time:
+        Tags:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/TagGroup'
+        PaywallType:
+          type:
+          - string
+          - 'null'
+        Summary:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    MarketHeadline:
+      type: object
+      properties:
+        Securities:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/Security'
+        Title:
+          type:
+          - string
+          - 'null'
+        Date:
+          type:
+          - string
+          - 'null'
+        Time:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Source:
+          type:
+          - string
+          - 'null'
+        Url:
+          type:
+          - string
+          - 'null'
+        Images:
+          type:
+          - array
+          - 'null'
+          items:
             type: string
-            nullable: true
-          Source:
-            type: string
-            nullable: true
-          Url:
-            type: string
-            nullable: true
-          Summary:
-            type: string
-            nullable: true
-          Tags:
-            type: array
-            items:
-              $ref: '#/components/schemas/TagGroup'
-            nullable: true
-          PaywallType:
-            type: string
-            nullable: true
-        additionalProperties: false
-    SecurityHeadlines:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          Headlines:
-            type: array
-            items:
-              $ref: '#/components/schemas/SecurityHeadline'
-            nullable: true
-        additionalProperties: false
+        Tags:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/TagGroup'
+        PaywallType:
+          type:
+          - string
+          - 'null'
+        Summary:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     SecurityHeadlineSummaries:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -933,144 +1156,66 @@ components:
           Security:
             allOf:
             - $ref: '#/components/schemas/Security'
-            nullable: true
           HeadlineSummaries:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/SecurityHeadlineSummary'
-            nullable: true
         additionalProperties: false
-    SecurityHeadline:
+    SymbolList:
       type: object
       properties:
-        Title:
-          type: string
-          nullable: true
-        Date:
-          type: string
-          nullable: true
-        Time:
-          type: string
-          nullable: true
-        UTCOffset:
-          type: number
-          format: double
-        Source:
-          type: string
-          nullable: true
-        Url:
-          type: string
-          nullable: true
-        Images:
-          type: array
+        Exchange:
+          allOf:
+          - $ref: '#/components/schemas/ExchangeDescription'
+        SecurityDescriptions:
+          type:
+          - array
+          - 'null'
           items:
-            type: string
-          nullable: true
-        Tags:
-          type: array
-          items:
-            $ref: '#/components/schemas/TagGroup'
-          nullable: true
-        PaywallType:
-          type: string
-          nullable: true
-        Summary:
-          type: string
-          nullable: true
+            $ref: '#/components/schemas/SecurityDescription'
       additionalProperties: false
-    MarketHeadline:
-      type: object
-      properties:
-        Securities:
-          type: array
-          items:
-            $ref: '#/components/schemas/Security'
-          nullable: true
-        Title:
-          type: string
-          nullable: true
-        Date:
-          type: string
-          nullable: true
-        Time:
-          type: string
-          nullable: true
-        UTCOffset:
-          type: number
-          format: double
-        Source:
-          type: string
-          nullable: true
-        Url:
-          type: string
-          nullable: true
-        Images:
-          type: array
-          items:
-            type: string
-          nullable: true
-        Tags:
-          type: array
-          items:
-            $ref: '#/components/schemas/TagGroup'
-          nullable: true
-        PaywallType:
-          type: string
-          nullable: true
-        Summary:
-          type: string
-          nullable: true
-      additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    MarketHeadlineSummary:
-      allOf:
-      - $ref: '#/components/schemas/MarketHeadline'
-      - type: object
-        properties:
-          Summary:
-            type: string
-            nullable: true
-          PaywallType:
-            type: string
-            nullable: true
-        additionalProperties: false
-    TagGroup:
-      type: object
-      properties:
-        TagType:
-          type: string
-          nullable: true
-        TagValues:
-          type: array
-          items:
-            type: string
-          nullable: true
-      additionalProperties: false
-    ExchangeList:
-      type: object
-      properties:
-        ExchangeDescriptions:
-          type: array
-          items:
-            $ref: '#/components/schemas/ExchangeDescription'
-          nullable: true
-      additionalProperties: false
-    MarketHeadlines:
+    SecurityHeadlines:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
           Headlines:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
-              $ref: '#/components/schemas/MarketHeadline'
-            nullable: true
+              $ref: '#/components/schemas/SecurityHeadline'
+        additionalProperties: false
+    SecurityHeadlineSummary:
+      allOf:
+      - $ref: '#/components/schemas/SecurityHeadline'
+      - type: object
+        properties:
+          Summary:
+            type:
+            - string
+            - 'null'
+          PaywallType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    SectorList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Sectors:
+            type:
+            - array
+            - 'null'
+            items:
+              type: string
         additionalProperties: false
   securitySchemes:
     basic:

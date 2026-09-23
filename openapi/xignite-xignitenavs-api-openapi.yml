@@ -1,7 +1,7 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteNAVs API
-  version: 1.0.3
+  title: Xignite NA Vs API
+  version: 2.0.7
 servers:
 - url: https://navs.xignite.com
 security:
@@ -51,6 +51,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Fund'
+      summary: Get x navs list symbols
+      x-summary-source: derived
+      operationId: getV2XNAVsListSymbols
+      x-operation-id-source: derived
   /v2/xNAVs/ListNewSymbols:
     get:
       tags:
@@ -93,6 +97,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/NewFund'
+      summary: Get x navs list new symbols
+      x-summary-source: derived
+      operationId: getV2XNAVsListNewSymbols
+      x-operation-id-source: derived
   /v2/xNAVs/GetDividendHistory:
     get:
       tags:
@@ -134,6 +142,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/DividendHistory'
+      summary: Get x navs get dividend history
+      x-summary-source: derived
+      operationId: getV2XNAVsGetDividendHistory
+      x-operation-id-source: derived
   /v2/xNAVs/GetCashDividendHistory:
     get:
       tags:
@@ -175,6 +187,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/CompleteDividendHistory'
+      summary: Get x navs get cash dividend history
+      x-summary-source: derived
+      operationId: getV2XNAVsGetCashDividendHistory
+      x-operation-id-source: derived
   /v2/xNAVs/GetAllCashDividendHistory:
     get:
       tags:
@@ -217,6 +233,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/CompleteDividendHistory'
+      summary: Get x navs get all cash dividend history
+      x-summary-source: derived
+      operationId: getV2XNAVsGetAllCashDividendHistory
+      x-operation-id-source: derived
   /v2/xNAVs/GetNAV:
     get:
       tags:
@@ -250,6 +270,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/GlobalNAV'
+      summary: Get x navs get nav
+      x-summary-source: derived
+      operationId: getV2XNAVsGetNAV
+      x-operation-id-source: derived
   /v2/xNAVs/GetNAVs:
     get:
       tags:
@@ -293,6 +317,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/GlobalNAV'
+      summary: Get x navs get navs
+      x-summary-source: derived
+      operationId: getV2XNAVsGetNAVs
+      x-operation-id-source: derived
   /v2/xNAVs/GetHistoricalNAVs:
     get:
       tags:
@@ -339,6 +367,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/GlobalNAVs'
+      summary: Get x navs get historical navs
+      x-summary-source: derived
+      operationId: getV2XNAVsGetHistoricalNAVs
+      x-operation-id-source: derived
   /v2/xNAVs/GetHistoricalNAVsTrailing:
     get:
       tags:
@@ -391,6 +423,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/GlobalNAVs'
+      summary: Get x navs get historical navs trailing
+      x-summary-source: derived
+      operationId: getV2XNAVsGetHistoricalNAVsTrailing
+      x-operation-id-source: derived
   /v2/xNAVs/GetLatestNAV:
     get:
       tags:
@@ -424,6 +460,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FundNAV'
+      summary: Get x navs get latest nav
+      x-summary-source: derived
+      operationId: getV2XNAVsGetLatestNAV
+      x-operation-id-source: derived
   /v2/xNAVs/GetLatestNAVs:
     get:
       tags:
@@ -467,6 +507,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FundNAV'
+      summary: Get x navs get latest navs
+      x-summary-source: derived
+      operationId: getV2XNAVsGetLatestNAVs
+      x-operation-id-source: derived
   /v2/xNAVs/GetHistoricalNAVsRange:
     get:
       tags:
@@ -508,6 +552,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FundNAVs'
+      summary: Get x navs get historical navs range
+      x-summary-source: derived
+      operationId: getV2XNAVsGetHistoricalNAVsRange
+      x-operation-id-source: derived
   /v2/xNAVs/GetHistoricalNAVsAsOf:
     get:
       tags:
@@ -555,6 +603,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FundNAVs'
+      summary: Get x navs get historical navs as of
+      x-summary-source: derived
+      operationId: getV2XNAVsGetHistoricalNAVsAsOf
+      x-operation-id-source: derived
   /v2/xNAVs/GetSplitHistory:
     get:
       tags:
@@ -599,6 +651,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SplitHistory'
+      summary: Get x navs get split history
+      x-summary-source: derived
+      operationId: getV2XNAVsGetSplitHistory
+      x-operation-id-source: derived
   /v2/xNAVs/GetSplitsByExchange:
     get:
       tags:
@@ -631,6 +687,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeSplitsList'
+      summary: Get x navs get splits by exchange
+      x-summary-source: derived
+      operationId: getV2XNAVsGetSplitsByExchange
+      x-operation-id-source: derived
   /v2/xNAVs/GetAdjustmentFactors:
     get:
       tags:
@@ -671,8 +731,412 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/AdjustmentFactors'
+      summary: Get x navs get adjustment factors
+      x-summary-source: derived
+      operationId: getV2XNAVsGetAdjustmentFactors
+      x-operation-id-source: derived
 components:
   schemas:
+    DividendHistory:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Dividends:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Dividend'
+        additionalProperties: false
+    Dividend:
+      type: object
+      properties:
+        Date:
+          type:
+          - string
+          - 'null'
+        Amount:
+          type: number
+          format: double
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    ExchangeSplit:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        Split:
+          allOf:
+          - $ref: '#/components/schemas/Split'
+      additionalProperties: false
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      type: string
+    Security:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CIK:
+            type:
+            - string
+            - 'null'
+          CUSIP:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          ISIN:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          MostLiquidExchange:
+            type: boolean
+          CategoryOrIndustry:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Fund:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CIK:
+            type:
+            - string
+            - 'null'
+          CUSIP:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          SymbolType:
+            allOf:
+            - $ref: '#/components/schemas/SymbolType'
+          ListingSymbol:
+            type:
+            - string
+            - 'null'
+          ISIN:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          CategoryOrIndustry:
+            type:
+            - string
+            - 'null'
+          InstrumentClass:
+            type:
+            - string
+            - 'null'
+          Domicile:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    AdjustmentFactor:
+      type: object
+      additionalProperties: false
+    FundNAV:
+      allOf:
+      - $ref: '#/components/schemas/QuoteWithSecurity'
+      - type: object
+        properties:
+          Date:
+            type:
+            - string
+            - 'null'
+          Last:
+            type: number
+            format: double
+          Open:
+            type: number
+            format: double
+          LastClose:
+            type: number
+            format: double
+          ChangeFromOpen:
+            type: number
+            format: double
+          PercentChangeFromOpen:
+            type: number
+            format: double
+          ChangeFromLastClose:
+            type: number
+            format: double
+          PercentChangeFromLastClose:
+            type: number
+            format: double
+        additionalProperties: false
+    FundNAVs:
+      allOf:
+      - $ref: '#/components/schemas/QuoteWithSecurity'
+      - type: object
+        properties:
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          NAVs:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FundNAV'
+        additionalProperties: false
+    QuoteWithSecurity:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
+    PeriodTypes:
+      enum:
+      - Day
+      - Week
+      - Month
+      - Quarter
+      - Year
+      type: string
+    CompleteDividendHistory:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Dividends:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/CompleteDividend'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    SymbolType:
+      enum:
+      - NetAssetValue
+      - IntradayIndicativeValue
+      type: string
+    AdjustmentMethods:
+      enum:
+      - None
+      - DefaultValue
+      - SplitOnly
+      - CashDividendOnly
+      - SplitAndProportionalCashDividend
+      - All
+      type: string
+    CompleteDividend:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Currency:
+            type:
+            - string
+            - 'null'
+          Code:
+            type:
+            - string
+            - 'null'
+          Type:
+            type:
+            - string
+            - 'null'
+          PaymentFrequency:
+            type:
+            - string
+            - 'null'
+          DeclaredDate:
+            type:
+            - string
+            - 'null'
+          RecordDate:
+            type:
+            - string
+            - 'null'
+          PayDate:
+            type:
+            - string
+            - 'null'
+          ExDate:
+            type:
+            - string
+            - 'null'
+          DividendAmount:
+            type: number
+            format: double
+          DataConfidence:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    GlobalNAVs:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          NAVs:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/GlobalNAV'
+        additionalProperties: false
+    AdjustmentFactors:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          ArrayOfAdjustmentFactor:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/AdjustmentFactor'
+        additionalProperties: false
+    NewFund:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          DateAdded:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    SplitHistory:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          CumulativeSplitRatio:
+            type: number
+            format: double
+          Splits:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Split'
+        additionalProperties: false
     GlobalNAV:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -681,13 +1145,14 @@ components:
           Fund:
             allOf:
             - $ref: '#/components/schemas/Fund'
-            nullable: true
           Date:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Time:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           UTCOffset:
             type: number
             format: double
@@ -713,37 +1178,22 @@ components:
             type: number
             format: double
           Currency:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           CumulativeAdjustmentFactor:
             type: number
             format: double
         additionalProperties: false
-    DividendHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type: string
-            nullable: true
-          Dividends:
-            type: array
-            items:
-              $ref: '#/components/schemas/Dividend'
-            nullable: true
-        additionalProperties: false
-    AdjustmentFactor:
-      type: object
-      additionalProperties: false
     Split:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           ExDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Numerator:
             type: number
             format: double
@@ -754,359 +1204,18 @@ components:
             type: number
             format: double
         additionalProperties: false
-    AdjustmentMethods:
-      enum:
-      - None
-      - DefaultValue
-      - SplitOnly
-      - CashDividendOnly
-      - SplitAndProportionalCashDividend
-      - All
-      type: string
-    FundNAVs:
-      allOf:
-      - $ref: '#/components/schemas/QuoteWithSecurity'
-      - type: object
-        properties:
-          StartDate:
-            type: string
-            nullable: true
-          EndDate:
-            type: string
-            nullable: true
-          NAVs:
-            type: array
-            items:
-              $ref: '#/components/schemas/FundNAV'
-            nullable: true
-        additionalProperties: false
-    FundNAV:
-      allOf:
-      - $ref: '#/components/schemas/QuoteWithSecurity'
-      - type: object
-        properties:
-          Date:
-            type: string
-            nullable: true
-          Last:
-            type: number
-            format: double
-          Open:
-            type: number
-            format: double
-          LastClose:
-            type: number
-            format: double
-          ChangeFromOpen:
-            type: number
-            format: double
-          PercentChangeFromOpen:
-            type: number
-            format: double
-          ChangeFromLastClose:
-            type: number
-            format: double
-          PercentChangeFromLastClose:
-            type: number
-            format: double
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
     ExchangeSplitsList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           ExchangeSplits:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/ExchangeSplit'
-            nullable: true
         additionalProperties: false
-    SymbolType:
-      enum:
-      - NetAssetValue
-      - IntradayIndicativeValue
-      type: string
-    GlobalNAVs:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-            nullable: true
-          StartDate:
-            type: string
-            nullable: true
-          EndDate:
-            type: string
-            nullable: true
-          NAVs:
-            type: array
-            items:
-              $ref: '#/components/schemas/GlobalNAV'
-            nullable: true
-        additionalProperties: false
-    PeriodTypes:
-      enum:
-      - Day
-      - Week
-      - Month
-      - Quarter
-      - Year
-      type: string
-    CompleteDividendHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          Dividends:
-            type: array
-            items:
-              $ref: '#/components/schemas/CompleteDividend'
-            nullable: true
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    Security:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CIK:
-            type: string
-            nullable: true
-          CUSIP:
-            type: string
-            nullable: true
-          Symbol:
-            type: string
-            nullable: true
-          ISIN:
-            type: string
-            nullable: true
-          Valoren:
-            type: string
-            nullable: true
-          Name:
-            type: string
-            nullable: true
-          Market:
-            type: string
-            nullable: true
-          MarketIdentificationCode:
-            type: string
-            nullable: true
-          MostLiquidExchange:
-            type: boolean
-          CategoryOrIndustry:
-            type: string
-            nullable: true
-        additionalProperties: false
-    ExchangeSplit:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-          nullable: true
-        Split:
-          allOf:
-          - $ref: '#/components/schemas/Split'
-          nullable: true
-      additionalProperties: false
-    SplitHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          StartDate:
-            type: string
-            nullable: true
-          EndDate:
-            type: string
-            nullable: true
-          CumulativeSplitRatio:
-            type: number
-            format: double
-          Splits:
-            type: array
-            items:
-              $ref: '#/components/schemas/Split'
-            nullable: true
-        additionalProperties: false
-    AdjustmentFactors:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          ArrayOfAdjustmentFactor:
-            type: array
-            items:
-              $ref: '#/components/schemas/AdjustmentFactor'
-            nullable: true
-        additionalProperties: false
-    CompleteDividend:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-          Currency:
-            type: string
-            nullable: true
-          Code:
-            type: string
-            nullable: true
-          Type:
-            type: string
-            nullable: true
-          PaymentFrequency:
-            type: string
-            nullable: true
-          DeclaredDate:
-            type: string
-            nullable: true
-          RecordDate:
-            type: string
-            nullable: true
-          PayDate:
-            type: string
-            nullable: true
-          ExDate:
-            type: string
-            nullable: true
-          DividendAmount:
-            type: number
-            format: double
-          DataConfidence:
-            type: string
-            nullable: true
-        additionalProperties: false
-    Fund:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CIK:
-            type: string
-            nullable: true
-          CUSIP:
-            type: string
-            nullable: true
-          Symbol:
-            type: string
-            nullable: true
-          SymbolType:
-            allOf:
-            - $ref: '#/components/schemas/SymbolType'
-          ListingSymbol:
-            type: string
-            nullable: true
-          ISIN:
-            type: string
-            nullable: true
-          Valoren:
-            type: string
-            nullable: true
-          Name:
-            type: string
-            nullable: true
-          Market:
-            type: string
-            nullable: true
-          MarketIdentificationCode:
-            type: string
-            nullable: true
-          CategoryOrIndustry:
-            type: string
-            nullable: true
-          InstrumentClass:
-            type: string
-            nullable: true
-          Domicile:
-            type: string
-            nullable: true
-        additionalProperties: false
-    NewFund:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type: string
-            nullable: true
-          DateAdded:
-            type: string
-            nullable: true
-        additionalProperties: false
-    QuoteWithSecurity:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-            nullable: true
-        additionalProperties: false
-    Dividend:
-      type: object
-      properties:
-        Date:
-          type: string
-          nullable: true
-        Amount:
-          type: number
-          format: double
-      additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
   securitySchemes:
     basic:
       type: apiKey

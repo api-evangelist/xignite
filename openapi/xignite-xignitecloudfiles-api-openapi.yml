@@ -1,6 +1,6 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteCloudFiles API
+  title: Xignite Cloud Files API
   version: 1.0.3
 servers:
 - url: https://cloudfiles.xignite.com
@@ -37,19 +37,35 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/CloudFile'
+      summary: Get x cloud files get file
+      x-summary-source: derived
+      operationId: getXCloudFilesGetFile
+      x-operation-id-source: derived
 components:
   schemas:
+    CloudFile:
+      allOf:
+      - $ref: '#/components/schemas/FileDownload'
+      - type: object
+        properties:
+          FileName:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     FileDownload:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Name:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Url:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
         additionalProperties: false
     Common:
       type: object
@@ -58,11 +74,13 @@ components:
           type: number
           format: double
         Identity:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Message:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Outcome:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
@@ -74,15 +92,6 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    CloudFile:
-      allOf:
-      - $ref: '#/components/schemas/FileDownload'
-      - type: object
-        properties:
-          FileName:
-            type: string
-            nullable: true
-        additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

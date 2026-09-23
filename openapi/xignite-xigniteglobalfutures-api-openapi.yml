@@ -1,7 +1,7 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteGlobalFutures API
-  version: 1.0.3
+  title: Xignite Global Futures API
+  version: 1.0.2
 servers:
 - url: https://globalfutures.xignite.com
 security:
@@ -47,6 +47,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Future'
+      summary: Get x global futures list base futures
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesListBaseFutures
+      x-operation-id-source: derived
   /V2/xGlobalFutures/ListFutureChain:
     get:
       tags:
@@ -89,6 +93,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Future'
+      summary: Get x global futures list future chain
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesListFutureChain
+      x-operation-id-source: derived
   /V2/xGlobalFutures/ListFutureExchanges:
     get:
       tags:
@@ -122,6 +130,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureExchange'
+      summary: Get x global futures list future exchanges
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesListFutureExchanges
+      x-operation-id-source: derived
   /V2/xGlobalFutures/ListOptionChain:
     get:
       tags:
@@ -168,6 +180,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureOption'
+      summary: Get x global futures list option chain
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesListOptionChain
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetFrontMonthFuture:
     get:
       tags:
@@ -200,6 +216,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Future'
+      summary: Get x global futures get front month future
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetFrontMonthFuture
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetFuture:
     get:
       tags:
@@ -232,6 +252,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/Future'
+      summary: Get x global futures get future
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetFuture
+      x-operation-id-source: derived
   /V2/xGlobalFutures/SearchFutures:
     get:
       tags:
@@ -270,6 +294,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Future'
+      summary: Get x global futures search futures
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesSearchFutures
+      x-operation-id-source: derived
   /V2/xGlobalFutures/MapLegacyBaseSymbol:
     get:
       tags:
@@ -302,6 +330,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/BaseFuture'
+      summary: Get x global futures map legacy base symbol
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesMapLegacyBaseSymbol
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetAllFutureQuotes:
     get:
       tags:
@@ -349,6 +381,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get all future quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetAllFutureQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetAllOptionQuotes:
     get:
       tags:
@@ -395,6 +431,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureOptionQuote'
+      summary: Get x global futures get all option quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetAllOptionQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetSpotFutureQuote:
     get:
       tags:
@@ -427,6 +467,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get spot future quote
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetSpotFutureQuote
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetLatestFrontMonthFutureQuotes:
     get:
       tags:
@@ -465,6 +509,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get latest front month future quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetLatestFrontMonthFutureQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetLatestFutureOptionQuote:
     get:
       tags:
@@ -493,6 +541,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureOptionQuote'
+      summary: Get x global futures get latest future option quote
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetLatestFutureOptionQuote
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetLatestFutureOptionQuotes:
     get:
       tags:
@@ -531,6 +583,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureOptionQuote'
+      summary: Get x global futures get latest future option quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetLatestFutureOptionQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetLatestFutureQuote:
     get:
       tags:
@@ -559,6 +615,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get latest future quote
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetLatestFutureQuote
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetLatestFutureQuotes:
     get:
       tags:
@@ -597,6 +657,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get latest future quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetLatestFutureQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetFutureOptionQuote:
     get:
       tags:
@@ -629,6 +693,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureOptionQuote'
+      summary: Get x global futures get future option quote
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetFutureOptionQuote
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetFutureOptionQuotes:
     get:
       tags:
@@ -671,6 +739,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureOptionQuote'
+      summary: Get x global futures get future option quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetFutureOptionQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetFutureQuote:
     get:
       tags:
@@ -703,6 +775,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get future quote
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetFutureQuote
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetFutureQuotes:
     get:
       tags:
@@ -745,6 +821,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get future quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetFutureQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetSwapQuote:
     get:
       tags:
@@ -777,6 +857,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get swap quote
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetSwapQuote
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetHistoricalSwapQuotes:
     get:
       tags:
@@ -827,6 +911,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get historical swap quotes
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetHistoricalSwapQuotes
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetHistoricalFutureQuotesRange:
     get:
       tags:
@@ -877,6 +965,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FutureQuote'
+      summary: Get x global futures get historical future quotes range
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetHistoricalFutureQuotesRange
+      x-operation-id-source: derived
   /V2/xGlobalFutures/GetChartBars:
     get:
       tags:
@@ -931,107 +1023,28 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/FutureChartBars'
+      summary: Get x global futures get chart bars
+      x-summary-source: derived
+      operationId: getV2XGlobalFuturesGetChartBars
+      x-operation-id-source: derived
 components:
   schemas:
-    FutureOptionQuote:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FutureOption:
-            allOf:
-            - $ref: '#/components/schemas/FutureOption'
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          Time:
-            type: string
-            nullable: true
-          UTCDate:
-            type: string
-            nullable: true
-          UTCTime:
-            type: string
-            nullable: true
-          Open:
-            type: number
-            format: double
-          Close:
-            type: number
-            format: double
-          High:
-            type: number
-            format: double
-          Low:
-            type: number
-            format: double
-          Last:
-            type: number
-            format: double
-          Bid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          BidDate:
-            type: string
-            nullable: true
-          BidTime:
-            type: string
-            nullable: true
-          AskDate:
-            type: string
-            nullable: true
-          AskTime:
-            type: string
-            nullable: true
-          Settle:
-            type: number
-            format: double
-          SettleDate:
-            type: string
-            nullable: true
-          SettleTime:
-            type: string
-            nullable: true
-          Volume:
-            type: number
-            format: double
-          OpenInterest:
-            type: number
-            format: double
-          PreviousClose:
-            type: number
-            format: double
-          PreviousCloseDate:
-            type: string
-            nullable: true
-          Change:
-            type: number
-            format: double
-          PercentChange:
-            type: number
-            format: double
-          Currency:
-            type: string
-            nullable: true
-        additionalProperties: false
-    Future:
+    FutureOption:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Symbol:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Valoren:
             type: integer
             format: int64
           Name:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Month:
             type: integer
             format: int32
@@ -1039,131 +1052,48 @@ components:
             type: integer
             format: int32
           Exchange:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           BaseSymbol:
-            type: string
-            nullable: true
-          ExchangeSymbol:
-            type: string
-            nullable: true
-          Expiration:
-            type: string
-            nullable: true
-          Type:
-            allOf:
-            - $ref: '#/components/schemas/FutureTypes'
-          ContractSize:
+            type:
+            - string
+            - 'null'
+          StrikeDate:
+            type:
+            - string
+            - 'null'
+          StrikePrice:
             type: number
             format: double
+          Type:
+            allOf:
+            - $ref: '#/components/schemas/OptionTypes'
         additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    FutureTypes:
-      enum:
-      - Commodities
-      - Indices
-      - Currencies
-      - Swap
-      - Future
-      type: string
-    OptionTypes:
-      enum:
-      - Call
-      - Put
-      type: string
     FutureExchange:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Name:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Description:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           MIC:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Group:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Realtime:
             type: boolean
         additionalProperties: false
-    FutureChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Timing:
-            type: string
-            nullable: true
-          FutureDescription:
-            allOf:
-            - $ref: '#/components/schemas/FutureDescription'
-            nullable: true
-          ChartBars:
-            type: array
-            items:
-              $ref: '#/components/schemas/ChartBar'
-            nullable: true
-        additionalProperties: false
-    FutureDescription:
-      type: object
-      properties:
-        Identifier:
-          type: string
-          nullable: true
-        IdentifierType:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        ISIN:
-          type: string
-          nullable: true
-        CUSIP:
-          type: string
-          nullable: true
-        Name:
-          type: string
-          nullable: true
-        Month:
-          type: integer
-          format: int32
-        Year:
-          type: integer
-          format: int32
-        Exchange:
-          type: string
-          nullable: true
-        BaseSymbol:
-          type: string
-          nullable: true
-        Expiration:
-          type: string
-          nullable: true
-        ContractSize:
-          type: number
-          format: double
-      additionalProperties: false
     IdentifierTypes:
       enum:
       - Symbol
@@ -1182,20 +1112,89 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    FutureOption:
+    FutureDescription:
+      type: object
+      properties:
+        Identifier:
+          type:
+          - string
+          - 'null'
+        IdentifierType:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Month:
+          type: integer
+          format: int32
+        Year:
+          type: integer
+          format: int32
+        Exchange:
+          type:
+          - string
+          - 'null'
+        BaseSymbol:
+          type:
+          - string
+          - 'null'
+        Expiration:
+          type:
+          - string
+          - 'null'
+        ContractSize:
+          type: number
+          format: double
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    Future:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Symbol:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Valoren:
             type: integer
             format: int64
           Name:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Month:
             type: integer
             format: int32
@@ -1203,36 +1202,71 @@ components:
             type: integer
             format: int32
           Exchange:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           BaseSymbol:
-            type: string
-            nullable: true
-          StrikeDate:
-            type: string
-            nullable: true
-          StrikePrice:
-            type: number
-            format: double
+            type:
+            - string
+            - 'null'
+          ExchangeSymbol:
+            type:
+            - string
+            - 'null'
+          Expiration:
+            type:
+            - string
+            - 'null'
           Type:
             allOf:
-            - $ref: '#/components/schemas/OptionTypes'
+            - $ref: '#/components/schemas/FutureTypes'
+          ContractSize:
+            type: number
+            format: double
         additionalProperties: false
+    FutureChartBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Timing:
+            type:
+            - string
+            - 'null'
+          FutureDescription:
+            allOf:
+            - $ref: '#/components/schemas/FutureDescription'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
+        additionalProperties: false
+    OptionTypes:
+      enum:
+      - Call
+      - Put
+      type: string
     ChartBar:
       type: object
       properties:
         StartDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         StartTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EndDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         EndTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         UTCOffset:
           type: number
           format: double
@@ -1261,15 +1295,150 @@ components:
           type: number
           format: double
         Currency:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Session:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         AdjustmentRatio:
           type: number
           format: double
       additionalProperties: false
+    BaseFuture:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          LegacyExchange:
+            type:
+            - string
+            - 'null'
+          LegacySymbol:
+            type:
+            - string
+            - 'null'
+          NewExchange:
+            type:
+            - string
+            - 'null'
+          NewSymbol:
+            type:
+            - string
+            - 'null'
+          V1Root:
+            type:
+            - string
+            - 'null'
+          PriceMultiplier:
+            type: number
+            format: double
+        additionalProperties: false
+    FutureTypes:
+      enum:
+      - Commodities
+      - Indices
+      - Currencies
+      - Swap
+      - Future
+      type: string
+    FutureOptionQuote:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FutureOption:
+            allOf:
+            - $ref: '#/components/schemas/FutureOption'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCDate:
+            type:
+            - string
+            - 'null'
+          UTCTime:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: number
+            format: double
+          Close:
+            type: number
+            format: double
+          High:
+            type: number
+            format: double
+          Low:
+            type: number
+            format: double
+          Last:
+            type: number
+            format: double
+          Bid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          BidDate:
+            type:
+            - string
+            - 'null'
+          BidTime:
+            type:
+            - string
+            - 'null'
+          AskDate:
+            type:
+            - string
+            - 'null'
+          AskTime:
+            type:
+            - string
+            - 'null'
+          Settle:
+            type: number
+            format: double
+          SettleDate:
+            type:
+            - string
+            - 'null'
+          SettleTime:
+            type:
+            - string
+            - 'null'
+          Volume:
+            type: number
+            format: double
+          OpenInterest:
+            type: number
+            format: double
+          PreviousClose:
+            type: number
+            format: double
+          PreviousCloseDate:
+            type:
+            - string
+            - 'null'
+          Change:
+            type: number
+            format: double
+          PercentChange:
+            type: number
+            format: double
+          Currency:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     FutureQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1278,19 +1447,22 @@ components:
           Future:
             allOf:
             - $ref: '#/components/schemas/Future'
-            nullable: true
           Date:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Time:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           UTCDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           UTCTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Open:
             type: number
             format: double
@@ -1310,26 +1482,32 @@ components:
             type: number
             format: double
           BidDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           BidTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           AskDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           AskTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Settle:
             type: number
             format: double
           SettleDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           SettleTime:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Volume:
             type: number
             format: double
@@ -1340,14 +1518,16 @@ components:
             type: number
             format: double
           PreviousCloseDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           PreviousSettle:
             type: number
             format: double
           PreviousSettleDate:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Change:
             type: number
             format: double
@@ -1355,35 +1535,13 @@ components:
             type: number
             format: double
           Currency:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Identifier:
-            type: string
-            nullable: true
-        additionalProperties: false
-    BaseFuture:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          LegacyExchange:
-            type: string
-            nullable: true
-          LegacySymbol:
-            type: string
-            nullable: true
-          NewExchange:
-            type: string
-            nullable: true
-          NewSymbol:
-            type: string
-            nullable: true
-          V1Root:
-            type: string
-            nullable: true
-          PriceMultiplier:
-            type: number
-            format: double
+            type:
+            - string
+            - 'null'
         additionalProperties: false
   securitySchemes:
     basic:

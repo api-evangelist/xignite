@@ -1,6 +1,6 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: XigniteBonds CloudAlerts XigniteGlobalHolidays API
+  title: Xignite Global Holidays API
   version: 1.0.3
 servers:
 - url: https://globalholidays.xignite.com
@@ -42,6 +42,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Exchange'
+      summary: Get x global holidays list exchanges
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysListExchanges
+      x-operation-id-source: derived
   /xGlobalHolidays/ListCurrencies:
     get:
       tags:
@@ -75,6 +79,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Currency'
+      summary: Get x global holidays list currencies
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysListCurrencies
+      x-operation-id-source: derived
   /xGlobalHolidays/ListFinancialCenters:
     get:
       tags:
@@ -108,6 +116,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/FinancialCenter'
+      summary: Get x global holidays list financial centers
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysListFinancialCenters
+      x-operation-id-source: derived
   /xGlobalHolidays/GetHolidays:
     get:
       tags:
@@ -158,6 +170,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Holiday'
+      summary: Get x global holidays get holidays
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetHolidays
+      x-operation-id-source: derived
   /xGlobalHolidays/ListHolidays:
     get:
       tags:
@@ -205,6 +221,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Holiday'
+      summary: Get x global holidays list holidays
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysListHolidays
+      x-operation-id-source: derived
   /xGlobalHolidays/GetNextDate:
     get:
       tags:
@@ -241,6 +261,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/StringResult'
+      summary: Get x global holidays get next date
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetNextDate
+      x-operation-id-source: derived
   /xGlobalHolidays/GetPriorDate:
     get:
       tags:
@@ -277,6 +301,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/StringResult'
+      summary: Get x global holidays get prior date
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetPriorDate
+      x-operation-id-source: derived
   /xGlobalHolidays/GetDayCount:
     get:
       tags:
@@ -317,6 +345,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/IntegerResult'
+      summary: Get x global holidays get day count
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetDayCount
+      x-operation-id-source: derived
   /xGlobalHolidays/GetExchangeDateTime:
     get:
       tags:
@@ -345,6 +377,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeDateTime'
+      summary: Get x global holidays get exchange date time
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetExchangeDateTime
+      x-operation-id-source: derived
   /xGlobalHolidays/GetExchangeHours:
     get:
       tags:
@@ -381,6 +417,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeHours'
+      summary: Get x global holidays get exchange hours
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetExchangeHours
+      x-operation-id-source: derived
   /xGlobalHolidays/GetExchangeHoursRange:
     get:
       tags:
@@ -431,6 +471,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/ExchangeHours'
+      summary: Get x global holidays get exchange hours range
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetExchangeHoursRange
+      x-operation-id-source: derived
   /xGlobalHolidays/AreExchangesOpen:
     get:
       tags:
@@ -469,6 +513,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/ExchangeStatus'
+      summary: Get x global holidays are exchanges open
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysAreExchangesOpen
+      x-operation-id-source: derived
   /xGlobalHolidays/IsExchangeOpenOnDate:
     get:
       tags:
@@ -501,6 +549,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeSchedule'
+      summary: Get x global holidays is exchange open on date
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysIsExchangeOpenOnDate
+      x-operation-id-source: derived
   /xGlobalHolidays/GetSettlementDate:
     get:
       tags:
@@ -533,6 +585,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/SettlementSchedule'
+      summary: Get x global holidays get settlement date
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetSettlementDate
+      x-operation-id-source: derived
   /xGlobalHolidays/IsSettlementDate:
     get:
       tags:
@@ -565,6 +621,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangeSchedule'
+      summary: Get x global holidays is settlement date
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysIsSettlementDate
+      x-operation-id-source: derived
   /xGlobalHolidays/GetExchangePhases:
     get:
       tags:
@@ -601,146 +661,16 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ExchangePhases'
+      summary: Get x global holidays get exchange phases
+      x-summary-source: derived
+      operationId: getXGlobalHolidaysGetExchangePhases
+      x-operation-id-source: derived
 components:
   schemas:
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    Holiday:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Location:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          Name:
-            type: string
-            nullable: true
-          FullHoliday:
-            type: boolean
-          EarlyClose:
-            type: boolean
-        additionalProperties: false
-    SettlementSchedule:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type: string
-            nullable: true
-          TradeDate:
-            type: string
-            nullable: true
-          SettlementDate:
-            type: string
-            nullable: true
-        additionalProperties: false
-    ExchangeDateTime:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          Time:
-            type: string
-            nullable: true
-          UTCOffset:
-            type: number
-            format: double
-        additionalProperties: false
-    Phase:
-      type: object
-      properties:
-        Name:
-          type: string
-          nullable: true
-        Type:
-          type: string
-          nullable: true
-        Start:
-          type: string
-          nullable: true
-        End:
-          type: string
-          nullable: true
-      additionalProperties: false
     StringResult:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
-        additionalProperties: false
-    Exchange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type: string
-            nullable: true
-          Name:
-            type: string
-            nullable: true
-        additionalProperties: false
-    Currency:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CurrencyCode:
-            type: string
-            nullable: true
-          CountryCode:
-            type: string
-            nullable: true
-          RelatedFinancialCentre:
-            type: string
-            nullable: true
-        additionalProperties: false
-    ExchangeHours:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
-          IsOpen:
-            type: boolean
-          OpenTime:
-            type: string
-            nullable: true
-          CloseTime:
-            type: string
-            nullable: true
-          UTCOffset:
-            type: number
-            format: double
         additionalProperties: false
     OutcomeTypes:
       enum:
@@ -749,49 +679,155 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    ExchangeStatus:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type: string
-            nullable: true
-          Open:
-            type: boolean
-        additionalProperties: false
-    IntegerResult:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
     ExchangePhases:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Exchange:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Date:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           UTCOffset:
             type: integer
             format: int32
           IsOpen:
             type: boolean
           Day:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           DayType:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           Phases:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/Phase'
-            nullable: true
+        additionalProperties: false
+    Holiday:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Location:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          FullHoliday:
+            type: boolean
+          EarlyClose:
+            type: boolean
+        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    ExchangeSchedule:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: boolean
+          OpenTime:
+            type:
+            - string
+            - 'null'
+          CloseTime:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ExchangeDateTime:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
+    ExchangeHours:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          IsOpen:
+            type: boolean
+          OpenTime:
+            type:
+            - string
+            - 'null'
+          CloseTime:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
+    IntegerResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
         additionalProperties: false
     FinancialCenter:
       allOf:
@@ -799,37 +835,103 @@ components:
       - type: object
         properties:
           FinancialCenterCode:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           CurrencyCode:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           CountryCode:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           FinancialCenterName:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
         additionalProperties: false
-    ExchangeSchedule:
+    Phase:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        Start:
+          type:
+          - string
+          - 'null'
+        End:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    SettlementSchedule:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
           Symbol:
-            type: string
-            nullable: true
-          Date:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
+          TradeDate:
+            type:
+            - string
+            - 'null'
+          SettlementDate:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Currency:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CurrencyCode:
+            type:
+            - string
+            - 'null'
+          CountryCode:
+            type:
+            - string
+            - 'null'
+          RelatedFinancialCentre:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ExchangeStatus:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
           Open:
             type: boolean
-          OpenTime:
-            type: string
-            nullable: true
-          CloseTime:
-            type: string
-            nullable: true
+        additionalProperties: false
+    Exchange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
         additionalProperties: false
   securitySchemes:
     basic:

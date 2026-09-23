@@ -1,6 +1,6 @@
-openapi: 3.0.4
+openapi: 3.2.0
 info:
-  title: CloudAlerts XigniteBonds API
+  title: Xignite Bonds API
   version: 1.0.3
 servers:
 - url: https://bonds.xignite.com
@@ -49,6 +49,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/ListBondsResult'
+      summary: Get x bonds list bonds
+      x-summary-source: derived
+      operationId: getXBondsListBonds
+      x-operation-id-source: derived
   /xBonds/ListBondTypes:
     get:
       tags:
@@ -72,6 +76,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/BondTypeList'
+      summary: Get x bonds list bond types
+      x-summary-source: derived
+      operationId: getXBondsListBondTypes
+      x-operation-id-source: derived
   /xBonds/GetLastSale:
     get:
       tags:
@@ -110,6 +118,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/LastSale'
+      summary: Get x bonds get last sale
+      x-summary-source: derived
+      operationId: getXBondsGetLastSale
+      x-operation-id-source: derived
   /xBonds/GetLastSales:
     get:
       tags:
@@ -158,6 +170,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/LastSale'
+      summary: Get x bonds get last sales
+      x-summary-source: derived
+      operationId: getXBondsGetLastSales
+      x-operation-id-source: derived
   /xBonds/GetPriceComposite:
     get:
       tags:
@@ -196,6 +212,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/PriceComposite'
+      summary: Get x bonds get price composite
+      x-summary-source: derived
+      operationId: getXBondsGetPriceComposite
+      x-operation-id-source: derived
   /xBonds/GetPriceComposites:
     get:
       tags:
@@ -244,6 +264,10 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/PriceComposite'
+      summary: Get x bonds get price composites
+      x-summary-source: derived
+      operationId: getXBondsGetPriceComposites
+      x-operation-id-source: derived
   /xBonds/GetDailyOpenHighLowClosePrice:
     get:
       tags:
@@ -282,6 +306,10 @@ paths:
             text/csv:
               schema:
                 $ref: '#/components/schemas/DailyOpenHighLowClosePrice'
+      summary: Get x bonds get daily open high low close price
+      x-summary-source: derived
+      operationId: getXBondsGetDailyOpenHighLowClosePrice
+      x-operation-id-source: derived
   /xBonds/GetDailyOpenHighLowClosePrices:
     get:
       tags:
@@ -330,176 +358,28 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/DailyOpenHighLowClosePrice'
+      summary: Get x bonds get daily open high low close prices
+      x-summary-source: derived
+      operationId: getXBondsGetDailyOpenHighLowClosePrices
+      x-operation-id-source: derived
 components:
   schemas:
-    Common:
+    BondType:
       type: object
       properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type: string
-          nullable: true
-        Message:
-          type: string
-          nullable: true
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
+        Code:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
-    DailyOpenHighLowClose:
-      type: object
-      properties:
-        ShortName:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        PriceSource:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        DailyOpen:
-          type: number
-          format: double
-        DailyOpenDate:
-          type: string
-          nullable: true
-        DailyOpenTime:
-          type: string
-          nullable: true
-        DailyHigh:
-          type: number
-          format: double
-        DailyHighDate:
-          type: string
-          nullable: true
-        DailyHighTime:
-          type: string
-          nullable: true
-        DailyLow:
-          type: number
-          format: double
-        DailyLowDate:
-          type: string
-          nullable: true
-        DailyLowTime:
-          type: string
-          nullable: true
-        DailyClose:
-          type: number
-          format: double
-        DailyCloseDate:
-          type: string
-          nullable: true
-        DailyCloseTime:
-          type: string
-          nullable: true
-      additionalProperties: false
-    BondLastSale:
-      type: object
-      properties:
-        ShortName:
-          type: string
-          nullable: true
-        Symbol:
-          type: string
-          nullable: true
-        PriceSource:
-          type: string
-          nullable: true
-        Currency:
-          type: string
-          nullable: true
-        LastSale:
-          type: number
-          format: double
-        LastSaleSize:
-          type: integer
-          format: int32
-        LastSaleDate:
-          type: string
-          nullable: true
-        LastSaleTime:
-          type: string
-          nullable: true
-        YieldToMaturity:
-          type: number
-          format: double
-        PriceUsedForCalculations:
-          type: number
-          format: double
-        PriceUsedForCalculationsDate:
-          type: string
-          nullable: true
-        PriceUsedForCalculationsTime:
-          type: string
-          nullable: true
-      additionalProperties: false
-    ListBondsResult:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          BondType:
-            type: string
-            nullable: true
-          StartSymbol:
-            type: string
-            nullable: true
-          EndSymbol:
-            type: string
-            nullable: true
-          Securities:
-            type: array
-            items:
-              $ref: '#/components/schemas/BondResult'
-            nullable: true
-        additionalProperties: false
-    PriceComposite:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          InstrumentIdentifierBrief:
-            allOf:
-            - $ref: '#/components/schemas/InstrumentIdentifierBrief'
-            nullable: true
-          TradedPrice:
-            allOf:
-            - $ref: '#/components/schemas/TradedPrice'
-            nullable: true
-          Identifier:
-            type: string
-            nullable: true
-          IdentifierType:
-            type: string
-            nullable: true
-        additionalProperties: false
-    DailyOpenHighLowClosePrice:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          InstrumentIdentifierBrief:
-            allOf:
-            - $ref: '#/components/schemas/InstrumentIdentifierBrief'
-            nullable: true
-          DailyOpenHighLowClose:
-            allOf:
-            - $ref: '#/components/schemas/DailyOpenHighLowClose'
-            nullable: true
-          Identifier:
-            type: string
-            nullable: true
-          IdentifierType:
-            type: string
-            nullable: true
-        additionalProperties: false
     PriceSources:
       enum:
       - FINRA
@@ -522,18 +402,185 @@ components:
       - RequestError
       - RegistrationError
       type: string
+    DailyOpenHighLowClosePrice:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          InstrumentIdentifierBrief:
+            allOf:
+            - $ref: '#/components/schemas/InstrumentIdentifierBrief'
+          DailyOpenHighLowClose:
+            allOf:
+            - $ref: '#/components/schemas/DailyOpenHighLowClose'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ListBondsResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BondType:
+            type:
+            - string
+            - 'null'
+          StartSymbol:
+            type:
+            - string
+            - 'null'
+          EndSymbol:
+            type:
+            - string
+            - 'null'
+          Securities:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/BondResult'
+        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
     InstrumentIdentifierBrief:
       type: object
       properties:
         Valoren:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         CUSIP:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         ISIN:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    TradedPrice:
+      type: object
+      properties:
+        ShortName:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        PriceSource:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        LastSale:
+          type: number
+          format: double
+        LastSaleDate:
+          type:
+          - string
+          - 'null'
+        LastSaleTime:
+          type:
+          - string
+          - 'null'
+        LastSaleSize:
+          type: integer
+          format: int32
+        DailyOpen:
+          type: number
+          format: double
+        DailyOpenDate:
+          type:
+          - string
+          - 'null'
+        DailyOpenTime:
+          type:
+          - string
+          - 'null'
+        DailyHigh:
+          type: number
+          format: double
+        DailyHighDate:
+          type:
+          - string
+          - 'null'
+        DailyHighTime:
+          type:
+          - string
+          - 'null'
+        DailyLow:
+          type: number
+          format: double
+        DailyLowDate:
+          type:
+          - string
+          - 'null'
+        DailyLowTime:
+          type:
+          - string
+          - 'null'
+        YearlyHigh:
+          type: number
+          format: double
+        YearlyHighDate:
+          type:
+          - string
+          - 'null'
+        YearlyLow:
+          type: number
+          format: double
+        YearlyLowDate:
+          type:
+          - string
+          - 'null'
+        LastYearClose:
+          type: number
+          format: double
+        LastYearCloseDate:
+          type:
+          - string
+          - 'null'
+        YieldToMaturity:
+          type: number
+          format: double
+        PriceUsedForCalculations:
+          type: number
+          format: double
+        PriceUsedForCalculationsDate:
+          type:
+          - string
+          - 'null'
+        PriceUsedForCalculationsTime:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
     BondTypeList:
       allOf:
@@ -541,46 +588,12 @@ components:
       - type: object
         properties:
           BondTypes:
-            type: array
+            type:
+            - array
+            - 'null'
             items:
               $ref: '#/components/schemas/BondType'
-            nullable: true
         additionalProperties: false
-    BondType:
-      type: object
-      properties:
-        Code:
-          type: string
-          nullable: true
-        Type:
-          type: string
-          nullable: true
-        Name:
-          type: string
-          nullable: true
-      additionalProperties: false
-    BondResult:
-      type: object
-      properties:
-        Symbol:
-          type: string
-          nullable: true
-        FIGI:
-          type: string
-          nullable: true
-        CUSIP:
-          type: string
-          nullable: true
-        ISIN:
-          type: string
-          nullable: true
-        Description:
-          type: string
-          nullable: true
-        PriceSource:
-          type: string
-          nullable: true
-      additionalProperties: false
     LastSale:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -589,90 +602,115 @@ components:
           InstrumentIdentifierBrief:
             allOf:
             - $ref: '#/components/schemas/InstrumentIdentifierBrief'
-            nullable: true
           BondLastSale:
             allOf:
             - $ref: '#/components/schemas/BondLastSale'
-            nullable: true
           Identifier:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
           IdentifierType:
-            type: string
-            nullable: true
+            type:
+            - string
+            - 'null'
         additionalProperties: false
-    TradedPrice:
+    DailyOpenHighLowClose:
       type: object
       properties:
         ShortName:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Symbol:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         PriceSource:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         Currency:
-          type: string
-          nullable: true
-        LastSale:
-          type: number
-          format: double
-        LastSaleDate:
-          type: string
-          nullable: true
-        LastSaleTime:
-          type: string
-          nullable: true
-        LastSaleSize:
-          type: integer
-          format: int32
+          type:
+          - string
+          - 'null'
         DailyOpen:
           type: number
           format: double
         DailyOpenDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         DailyOpenTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         DailyHigh:
           type: number
           format: double
         DailyHighDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         DailyHighTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         DailyLow:
           type: number
           format: double
         DailyLowDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         DailyLowTime:
-          type: string
-          nullable: true
-        YearlyHigh:
+          type:
+          - string
+          - 'null'
+        DailyClose:
           type: number
           format: double
-        YearlyHighDate:
-          type: string
-          nullable: true
-        YearlyLow:
+        DailyCloseDate:
+          type:
+          - string
+          - 'null'
+        DailyCloseTime:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    BondLastSale:
+      type: object
+      properties:
+        ShortName:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        PriceSource:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        LastSale:
           type: number
           format: double
-        YearlyLowDate:
-          type: string
-          nullable: true
-        LastYearClose:
-          type: number
-          format: double
-        LastYearCloseDate:
-          type: string
-          nullable: true
+        LastSaleSize:
+          type: integer
+          format: int32
+        LastSaleDate:
+          type:
+          - string
+          - 'null'
+        LastSaleTime:
+          type:
+          - string
+          - 'null'
         YieldToMaturity:
           type: number
           format: double
@@ -680,11 +718,61 @@ components:
           type: number
           format: double
         PriceUsedForCalculationsDate:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
         PriceUsedForCalculationsTime:
-          type: string
-          nullable: true
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    PriceComposite:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          InstrumentIdentifierBrief:
+            allOf:
+            - $ref: '#/components/schemas/InstrumentIdentifierBrief'
+          TradedPrice:
+            allOf:
+            - $ref: '#/components/schemas/TradedPrice'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    BondResult:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+        PriceSource:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
   securitySchemes:
     basic:
