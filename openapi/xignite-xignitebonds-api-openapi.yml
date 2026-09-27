@@ -364,6 +364,116 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      type: string
+    BondTypeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BondTypes:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/BondType'
+        additionalProperties: false
+    BondResult:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+        PriceSource:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    PriceSources:
+      enum:
+      - FINRA
+      type: string
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    BondLastSale:
+      type: object
+      properties:
+        ShortName:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        PriceSource:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        LastSale:
+          type: number
+          format: double
+        LastSaleSize:
+          type: integer
+          format: int32
+        LastSaleDate:
+          type:
+          - string
+          - 'null'
+        LastSaleTime:
+          type:
+          - string
+          - 'null'
+        YieldToMaturity:
+          type: number
+          format: double
+        PriceUsedForCalculations:
+          type: number
+          format: double
+        PriceUsedForCalculationsDate:
+          type:
+          - string
+          - 'null'
+        PriceUsedForCalculationsTime:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     BondType:
       type: object
       properties:
@@ -380,29 +490,7 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    PriceSources:
-      enum:
-      - FINRA
-      type: string
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    DailyOpenHighLowClosePrice:
+    LastSale:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -410,9 +498,9 @@ components:
           InstrumentIdentifierBrief:
             allOf:
             - $ref: '#/components/schemas/InstrumentIdentifierBrief'
-          DailyOpenHighLowClose:
+          BondLastSale:
             allOf:
-            - $ref: '#/components/schemas/DailyOpenHighLowClose'
+            - $ref: '#/components/schemas/BondLastSale'
           Identifier:
             type:
             - string
@@ -422,60 +510,86 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    ListBondsResult:
+    PriceComposite:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          BondType:
+          InstrumentIdentifierBrief:
+            allOf:
+            - $ref: '#/components/schemas/InstrumentIdentifierBrief'
+          TradedPrice:
+            allOf:
+            - $ref: '#/components/schemas/TradedPrice'
+          Identifier:
             type:
             - string
             - 'null'
-          StartSymbol:
+          IdentifierType:
             type:
             - string
             - 'null'
-          EndSymbol:
-            type:
-            - string
-            - 'null'
-          Securities:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/BondResult'
         additionalProperties: false
-    Common:
+    DailyOpenHighLowClose:
       type: object
       properties:
-        Delay:
+        ShortName:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        PriceSource:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        DailyOpen:
           type: number
           format: double
-        Identity:
+        DailyOpenDate:
           type:
           - string
           - 'null'
-        Message:
+        DailyOpenTime:
           type:
           - string
           - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    InstrumentIdentifierBrief:
-      type: object
-      properties:
-        Valoren:
+        DailyHigh:
+          type: number
+          format: double
+        DailyHighDate:
           type:
           - string
           - 'null'
-        CUSIP:
+        DailyHighTime:
           type:
           - string
           - 'null'
-        ISIN:
+        DailyLow:
+          type: number
+          format: double
+        DailyLowDate:
+          type:
+          - string
+          - 'null'
+        DailyLowTime:
+          type:
+          - string
+          - 'null'
+        DailyClose:
+          type: number
+          format: double
+        DailyCloseDate:
+          type:
+          - string
+          - 'null'
+        DailyCloseTime:
           type:
           - string
           - 'null'
@@ -582,19 +696,25 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    BondTypeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          BondTypes:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/BondType'
-        additionalProperties: false
-    LastSale:
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    DailyOpenHighLowClosePrice:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -602,9 +722,9 @@ components:
           InstrumentIdentifierBrief:
             allOf:
             - $ref: '#/components/schemas/InstrumentIdentifierBrief'
-          BondLastSale:
+          DailyOpenHighLowClose:
             allOf:
-            - $ref: '#/components/schemas/BondLastSale'
+            - $ref: '#/components/schemas/DailyOpenHighLowClose'
           Identifier:
             type:
             - string
@@ -614,146 +734,10 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    DailyOpenHighLowClose:
+    InstrumentIdentifierBrief:
       type: object
       properties:
-        ShortName:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        PriceSource:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        DailyOpen:
-          type: number
-          format: double
-        DailyOpenDate:
-          type:
-          - string
-          - 'null'
-        DailyOpenTime:
-          type:
-          - string
-          - 'null'
-        DailyHigh:
-          type: number
-          format: double
-        DailyHighDate:
-          type:
-          - string
-          - 'null'
-        DailyHighTime:
-          type:
-          - string
-          - 'null'
-        DailyLow:
-          type: number
-          format: double
-        DailyLowDate:
-          type:
-          - string
-          - 'null'
-        DailyLowTime:
-          type:
-          - string
-          - 'null'
-        DailyClose:
-          type: number
-          format: double
-        DailyCloseDate:
-          type:
-          - string
-          - 'null'
-        DailyCloseTime:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    BondLastSale:
-      type: object
-      properties:
-        ShortName:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        PriceSource:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        LastSale:
-          type: number
-          format: double
-        LastSaleSize:
-          type: integer
-          format: int32
-        LastSaleDate:
-          type:
-          - string
-          - 'null'
-        LastSaleTime:
-          type:
-          - string
-          - 'null'
-        YieldToMaturity:
-          type: number
-          format: double
-        PriceUsedForCalculations:
-          type: number
-          format: double
-        PriceUsedForCalculationsDate:
-          type:
-          - string
-          - 'null'
-        PriceUsedForCalculationsTime:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    PriceComposite:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          InstrumentIdentifierBrief:
-            allOf:
-            - $ref: '#/components/schemas/InstrumentIdentifierBrief'
-          TradedPrice:
-            allOf:
-            - $ref: '#/components/schemas/TradedPrice'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    BondResult:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        FIGI:
+        Valoren:
           type:
           - string
           - 'null'
@@ -765,15 +749,31 @@ components:
           type:
           - string
           - 'null'
-        Description:
-          type:
-          - string
-          - 'null'
-        PriceSource:
-          type:
-          - string
-          - 'null'
       additionalProperties: false
+    ListBondsResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BondType:
+            type:
+            - string
+            - 'null'
+          StartSymbol:
+            type:
+            - string
+            - 'null'
+          EndSymbol:
+            type:
+            - string
+            - 'null'
+          Securities:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/BondResult'
+        additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

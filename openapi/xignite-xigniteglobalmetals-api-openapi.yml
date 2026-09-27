@@ -833,55 +833,28 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    MetalChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Timing:
-            type:
-            - string
-            - 'null'
-          PriceType:
-            type:
-            - string
-            - 'null'
-          MetalDescription:
-            allOf:
-            - $ref: '#/components/schemas/MetalDescription'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
-        additionalProperties: false
-    MarketNews:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Headline:
-            type:
-            - string
-            - 'null'
-          Source:
-            type:
-            - string
-            - 'null'
-          Summary:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          Url:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
+    Metal:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        Active:
+          type: boolean
+        Message:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     OutcomeTypes:
       enum:
       - Success
@@ -889,24 +862,105 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
+    Metals:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          MetalList:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Metal'
+        additionalProperties: false
+    MetalQuote:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Unit:
+            type:
+            - string
+            - 'null'
+          QuoteType:
+            type:
+            - string
+            - 'null'
+          Currency:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Bid:
+            type: number
+            format: double
+          Mid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          Spread:
+            type: number
+            format: double
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    BaseMetalPrice:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Currency:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Price:
+            type: number
+            format: double
+          Unit:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     MetalDescription:
       type: object
       properties:
@@ -927,28 +981,6 @@ components:
           - string
           - 'null'
         Type:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    Metal:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        Active:
-          type: boolean
-        Message:
           type:
           - string
           - 'null'
@@ -1064,63 +1096,6 @@ components:
             type: number
             format: double
         additionalProperties: false
-    Metals:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          MetalList:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Metal'
-        additionalProperties: false
-    LondonFixing:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          QuoteType:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          Fixing:
-            type:
-            - string
-            - 'null'
-          Price:
-            type: number
-            format: double
-          Unit:
-            type:
-            - string
-            - 'null'
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
     ExtendedMetalQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1196,7 +1171,74 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    MetalQuote:
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    MarketNews:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Headline:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+          Summary:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Url:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    MetalChartBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Timing:
+            type:
+            - string
+            - 'null'
+          PriceType:
+            type:
+            - string
+            - 'null'
+          MetalDescription:
+            allOf:
+            - $ref: '#/components/schemas/MetalDescription'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
+        additionalProperties: false
+    LondonFixing:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -1206,10 +1248,6 @@ components:
             - string
             - 'null'
           Symbol:
-            type:
-            - string
-            - 'null'
-          Unit:
             type:
             - string
             - 'null'
@@ -1229,45 +1267,7 @@ components:
             type:
             - string
             - 'null'
-          Bid:
-            type: number
-            format: double
-          Mid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          Spread:
-            type: number
-            format: double
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    BaseMetalPrice:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
+          Fixing:
             type:
             - string
             - 'null'

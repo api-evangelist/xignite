@@ -1029,71 +1029,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    FutureOption:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Valoren:
-            type: integer
-            format: int64
-          Name:
-            type:
-            - string
-            - 'null'
-          Month:
-            type: integer
-            format: int32
-          Year:
-            type: integer
-            format: int32
-          Exchange:
-            type:
-            - string
-            - 'null'
-          BaseSymbol:
-            type:
-            - string
-            - 'null'
-          StrikeDate:
-            type:
-            - string
-            - 'null'
-          StrikePrice:
-            type: number
-            format: double
-          Type:
-            allOf:
-            - $ref: '#/components/schemas/OptionTypes'
-        additionalProperties: false
-    FutureExchange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          Description:
-            type:
-            - string
-            - 'null'
-          MIC:
-            type:
-            - string
-            - 'null'
-          Group:
-            type:
-            - string
-            - 'null'
-          Realtime:
-            type: boolean
-        additionalProperties: false
     IdentifierTypes:
       enum:
       - Symbol
@@ -1105,340 +1040,6 @@ components:
       - FIGI
       - CompositeFIGI
       type: string
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    FutureDescription:
-      type: object
-      properties:
-        Identifier:
-          type:
-          - string
-          - 'null'
-        IdentifierType:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        CUSIP:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Month:
-          type: integer
-          format: int32
-        Year:
-          type: integer
-          format: int32
-        Exchange:
-          type:
-          - string
-          - 'null'
-        BaseSymbol:
-          type:
-          - string
-          - 'null'
-        Expiration:
-          type:
-          - string
-          - 'null'
-        ContractSize:
-          type: number
-          format: double
-      additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    Future:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Valoren:
-            type: integer
-            format: int64
-          Name:
-            type:
-            - string
-            - 'null'
-          Month:
-            type: integer
-            format: int32
-          Year:
-            type: integer
-            format: int32
-          Exchange:
-            type:
-            - string
-            - 'null'
-          BaseSymbol:
-            type:
-            - string
-            - 'null'
-          ExchangeSymbol:
-            type:
-            - string
-            - 'null'
-          Expiration:
-            type:
-            - string
-            - 'null'
-          Type:
-            allOf:
-            - $ref: '#/components/schemas/FutureTypes'
-          ContractSize:
-            type: number
-            format: double
-        additionalProperties: false
-    FutureChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Timing:
-            type:
-            - string
-            - 'null'
-          FutureDescription:
-            allOf:
-            - $ref: '#/components/schemas/FutureDescription'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
-        additionalProperties: false
-    OptionTypes:
-      enum:
-      - Call
-      - Put
-      type: string
-    ChartBar:
-      type: object
-      properties:
-        StartDate:
-          type:
-          - string
-          - 'null'
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        Session:
-          type:
-          - string
-          - 'null'
-        AdjustmentRatio:
-          type: number
-          format: double
-      additionalProperties: false
-    BaseFuture:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          LegacyExchange:
-            type:
-            - string
-            - 'null'
-          LegacySymbol:
-            type:
-            - string
-            - 'null'
-          NewExchange:
-            type:
-            - string
-            - 'null'
-          NewSymbol:
-            type:
-            - string
-            - 'null'
-          V1Root:
-            type:
-            - string
-            - 'null'
-          PriceMultiplier:
-            type: number
-            format: double
-        additionalProperties: false
-    FutureTypes:
-      enum:
-      - Commodities
-      - Indices
-      - Currencies
-      - Swap
-      - Future
-      type: string
-    FutureOptionQuote:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FutureOption:
-            allOf:
-            - $ref: '#/components/schemas/FutureOption'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          UTCDate:
-            type:
-            - string
-            - 'null'
-          UTCTime:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: number
-            format: double
-          Close:
-            type: number
-            format: double
-          High:
-            type: number
-            format: double
-          Low:
-            type: number
-            format: double
-          Last:
-            type: number
-            format: double
-          Bid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          BidDate:
-            type:
-            - string
-            - 'null'
-          BidTime:
-            type:
-            - string
-            - 'null'
-          AskDate:
-            type:
-            - string
-            - 'null'
-          AskTime:
-            type:
-            - string
-            - 'null'
-          Settle:
-            type: number
-            format: double
-          SettleDate:
-            type:
-            - string
-            - 'null'
-          SettleTime:
-            type:
-            - string
-            - 'null'
-          Volume:
-            type: number
-            format: double
-          OpenInterest:
-            type: number
-            format: double
-          PreviousClose:
-            type: number
-            format: double
-          PreviousCloseDate:
-            type:
-            - string
-            - 'null'
-          Change:
-            type: number
-            format: double
-          PercentChange:
-            type: number
-            format: double
-          Currency:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
     FutureQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1539,6 +1140,405 @@ components:
             - string
             - 'null'
           Identifier:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Future:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type: integer
+            format: int64
+          Name:
+            type:
+            - string
+            - 'null'
+          Month:
+            type: integer
+            format: int32
+          Year:
+            type: integer
+            format: int32
+          Exchange:
+            type:
+            - string
+            - 'null'
+          BaseSymbol:
+            type:
+            - string
+            - 'null'
+          ExchangeSymbol:
+            type:
+            - string
+            - 'null'
+          Expiration:
+            type:
+            - string
+            - 'null'
+          Type:
+            allOf:
+            - $ref: '#/components/schemas/FutureTypes'
+          ContractSize:
+            type: number
+            format: double
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    FutureTypes:
+      enum:
+      - Commodities
+      - Indices
+      - Currencies
+      - Swap
+      - Future
+      type: string
+    FutureChartBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Timing:
+            type:
+            - string
+            - 'null'
+          FutureDescription:
+            allOf:
+            - $ref: '#/components/schemas/FutureDescription'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
+        additionalProperties: false
+    FutureExchange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          Description:
+            type:
+            - string
+            - 'null'
+          MIC:
+            type:
+            - string
+            - 'null'
+          Group:
+            type:
+            - string
+            - 'null'
+          Realtime:
+            type: boolean
+        additionalProperties: false
+    FutureOption:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type: integer
+            format: int64
+          Name:
+            type:
+            - string
+            - 'null'
+          Month:
+            type: integer
+            format: int32
+          Year:
+            type: integer
+            format: int32
+          Exchange:
+            type:
+            - string
+            - 'null'
+          BaseSymbol:
+            type:
+            - string
+            - 'null'
+          StrikeDate:
+            type:
+            - string
+            - 'null'
+          StrikePrice:
+            type: number
+            format: double
+          Type:
+            allOf:
+            - $ref: '#/components/schemas/OptionTypes'
+        additionalProperties: false
+    BaseFuture:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          LegacyExchange:
+            type:
+            - string
+            - 'null'
+          LegacySymbol:
+            type:
+            - string
+            - 'null'
+          NewExchange:
+            type:
+            - string
+            - 'null'
+          NewSymbol:
+            type:
+            - string
+            - 'null'
+          V1Root:
+            type:
+            - string
+            - 'null'
+          PriceMultiplier:
+            type: number
+            format: double
+        additionalProperties: false
+    ChartBar:
+      type: object
+      properties:
+        StartDate:
+          type:
+          - string
+          - 'null'
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        Session:
+          type:
+          - string
+          - 'null'
+        AdjustmentRatio:
+          type: number
+          format: double
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    FutureDescription:
+      type: object
+      properties:
+        Identifier:
+          type:
+          - string
+          - 'null'
+        IdentifierType:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Month:
+          type: integer
+          format: int32
+        Year:
+          type: integer
+          format: int32
+        Exchange:
+          type:
+          - string
+          - 'null'
+        BaseSymbol:
+          type:
+          - string
+          - 'null'
+        Expiration:
+          type:
+          - string
+          - 'null'
+        ContractSize:
+          type: number
+          format: double
+      additionalProperties: false
+    OptionTypes:
+      enum:
+      - Call
+      - Put
+      type: string
+    FutureOptionQuote:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FutureOption:
+            allOf:
+            - $ref: '#/components/schemas/FutureOption'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCDate:
+            type:
+            - string
+            - 'null'
+          UTCTime:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: number
+            format: double
+          Close:
+            type: number
+            format: double
+          High:
+            type: number
+            format: double
+          Low:
+            type: number
+            format: double
+          Last:
+            type: number
+            format: double
+          Bid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          BidDate:
+            type:
+            - string
+            - 'null'
+          BidTime:
+            type:
+            - string
+            - 'null'
+          AskDate:
+            type:
+            - string
+            - 'null'
+          AskTime:
+            type:
+            - string
+            - 'null'
+          Settle:
+            type: number
+            format: double
+          SettleDate:
+            type:
+            - string
+            - 'null'
+          SettleTime:
+            type:
+            - string
+            - 'null'
+          Volume:
+            type: number
+            format: double
+          OpenInterest:
+            type: number
+            format: double
+          PreviousClose:
+            type: number
+            format: double
+          PreviousCloseDate:
+            type:
+            - string
+            - 'null'
+          Change:
+            type: number
+            format: double
+          PercentChange:
+            type: number
+            format: double
+          Currency:
             type:
             - string
             - 'null'

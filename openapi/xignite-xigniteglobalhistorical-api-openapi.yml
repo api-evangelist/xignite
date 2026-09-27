@@ -931,464 +931,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    CashDividendHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CorporateActionsAdjusted:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          IdentifierAsOfDate:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          StartDate:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          CumulativeCashDividend:
-            type: number
-            format: double
-          CashDividends:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/CashDividend'
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    ChartBarsSet:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
-        additionalProperties: false
-    HistoricalVWAP:
-      type: object
-      properties:
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        VWAPType:
-          type:
-          - string
-          - 'null'
-        VWAP:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Change:
-          type: number
-          format: double
-        PercentChange:
-          type: number
-          format: double
-        TWAP:
-          type: number
-          format: double
-        Amount:
-          type: number
-          format: double
-        Trades:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        CumulativeAdjustmentFactor:
-          type:
-          - number
-          - 'null'
-          format: double
-      additionalProperties: false
-    ExchangeSplit:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-        Split:
-          allOf:
-          - $ref: '#/components/schemas/Split'
-      additionalProperties: false
-    GlobalHistoricalVWAPs:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          AdjustmentMethodUsed:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          HistoricalVWAPs:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/HistoricalVWAP'
-        additionalProperties: false
-    SymbolChange:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        OldSymbol:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        OldName:
-          type:
-          - string
-          - 'null'
-        Exchange:
-          type:
-          - string
-          - 'null'
-        OldExchange:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        OldCurrency:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ExchangeDescription:
-      type: object
-      properties:
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    Security:
-      type: object
-      properties:
-        CIK:
-          type:
-          - string
-          - 'null'
-        CUSIP:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        SEDOL:
-          type:
-          - string
-          - 'null'
-        FIGI:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Sector:
-          type:
-          - string
-          - 'null'
-        Industry:
-          type:
-          - string
-          - 'null'
-        CompositeFIGI:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    AdjustmentFactor:
-      type: object
-      additionalProperties: false
-    ChartBar:
-      type: object
-      properties:
-        StartDateTime:
-          type:
-          - string
-          - 'null'
-        EndDateTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        CumulativeAdjustmentFactor:
-          type: number
-          format: double
-      additionalProperties: false
-    GlobalHistoricalQuotes:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          StartDate:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          HistoricalQuotes:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/HistoricalQuote'
-        additionalProperties: false
-    GlobalHistoricalQuote:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          HistoricalQuote:
-            allOf:
-            - $ref: '#/components/schemas/HistoricalQuote'
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    EventSymbol:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Exchange:
-          type:
-          - string
-          - 'null'
-        ExDate:
-          type:
-          - string
-          - 'null'
-        Event:
-          type:
-          - string
-          - 'null'
-        EventDescription:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    SecurityDescription:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    AdjustmentFactors:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          ArrayOfAdjustmentFactor:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/AdjustmentFactor'
-        additionalProperties: false
     HistoricalQuote:
       type: object
       properties:
@@ -1458,6 +1000,41 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    SymbolsWithAdjustedFactorsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          EventSymbols:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/EventSymbol'
+        additionalProperties: false
+    ChartBarsSet:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
+        additionalProperties: false
     SymbolList:
       type: object
       properties:
@@ -1470,6 +1047,159 @@ components:
           - 'null'
           items:
             $ref: '#/components/schemas/SecurityDescription'
+      additionalProperties: false
+    GlobalHistoricalQuotes:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          HistoricalQuotes:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/HistoricalQuote'
+        additionalProperties: false
+    Security:
+      type: object
+      properties:
+        CIK:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Sector:
+          type:
+          - string
+          - 'null'
+        Industry:
+          type:
+          - string
+          - 'null'
+        CompositeFIGI:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    GlobalHistoricalQuote:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          HistoricalQuote:
+            allOf:
+            - $ref: '#/components/schemas/HistoricalQuote'
+        additionalProperties: false
+    AdjustmentFactors:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          ArrayOfAdjustmentFactor:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/AdjustmentFactor'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    SecurityDescription:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
     SplitHistory:
       allOf:
@@ -1521,18 +1251,199 @@ components:
             items:
               $ref: '#/components/schemas/ExchangeDividend'
         additionalProperties: false
-    SymbolsWithAdjustedFactorsList:
+    CashDividendHistory:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          EventSymbols:
+          CorporateActionsAdjusted:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          IdentifierAsOfDate:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          CumulativeCashDividend:
+            type: number
+            format: double
+          CashDividends:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/EventSymbol'
+              $ref: '#/components/schemas/CashDividend'
         additionalProperties: false
+    ExchangeSplitsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeSplits:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeSplit'
+        additionalProperties: false
+    SymbolChange:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        OldSymbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        OldName:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+        OldExchange:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OldCurrency:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    AdjustmentFactor:
+      type: object
+      additionalProperties: false
+    ExchangeSplit:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        Split:
+          allOf:
+          - $ref: '#/components/schemas/Split'
+      additionalProperties: false
+    ExchangeList:
+      type: object
+      properties:
+        ExchangeDescriptions:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/ExchangeDescription'
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    EventSymbol:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+        ExDate:
+          type:
+          - string
+          - 'null'
+        Event:
+          type:
+          - string
+          - 'null'
+        EventDescription:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    SymbolChangeList:
+      type: object
+      properties:
+        DateTime:
+          type:
+          - string
+          - 'null'
+        SymbolChanges:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/SymbolChange'
+      additionalProperties: false
+    ExchangeDescription:
+      type: object
+      properties:
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     ExchangeDividend:
       type: object
       properties:
@@ -1542,6 +1453,104 @@ components:
         CashDividend:
           allOf:
           - $ref: '#/components/schemas/CashDividend'
+      additionalProperties: false
+    HistoricalVWAP:
+      type: object
+      properties:
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        VWAPType:
+          type:
+          - string
+          - 'null'
+        VWAP:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Change:
+          type: number
+          format: double
+        PercentChange:
+          type: number
+          format: double
+        TWAP:
+          type: number
+          format: double
+        Amount:
+          type: number
+          format: double
+        Trades:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        CumulativeAdjustmentFactor:
+          type:
+          - number
+          - 'null'
+          format: double
+      additionalProperties: false
+    ChartBar:
+      type: object
+      properties:
+        StartDateTime:
+          type:
+          - string
+          - 'null'
+        EndDateTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        CumulativeAdjustmentFactor:
+          type: number
+          format: double
       additionalProperties: false
     CashDividend:
       type: object
@@ -1578,6 +1587,33 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    GlobalHistoricalVWAPs:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          AdjustmentMethodUsed:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          HistoricalVWAPs:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/HistoricalVWAP'
+        additionalProperties: false
     Split:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1597,42 +1633,6 @@ components:
             type: number
             format: double
         additionalProperties: false
-    ExchangeSplitsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeSplits:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeSplit'
-        additionalProperties: false
-    SymbolChangeList:
-      type: object
-      properties:
-        DateTime:
-          type:
-          - string
-          - 'null'
-        SymbolChanges:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/SymbolChange'
-      additionalProperties: false
-    ExchangeList:
-      type: object
-      properties:
-        ExchangeDescriptions:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/ExchangeDescription'
-      additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

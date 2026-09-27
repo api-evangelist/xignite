@@ -838,271 +838,34 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    EventSummary:
-      type: object
-      properties:
-        EventType:
-          type:
-          - string
-          - 'null'
-        EffectiveDate:
-          type:
-          - string
-          - 'null'
-        CompositeIdentifier:
-          type:
-          - string
-          - 'null'
-        EventIdentifier:
-          type:
-          - string
-          - 'null'
-        EventNotes:
-          type:
-          - string
-          - 'null'
-        Created:
-          type:
-          - string
-          - 'null'
-        LastUpdated:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    SecurityEvent:
+    TenderOffersList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          TenderOfferOptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/TenderOffer'
+        additionalProperties: false
+    SecurityRights:
       type: object
       properties:
         Security:
           allOf:
           - $ref: '#/components/schemas/Security'
-        EventSummaries:
+        RightsSet:
           type:
           - array
           - 'null'
           items:
-            $ref: '#/components/schemas/EventSummary'
+            $ref: '#/components/schemas/Rights'
       additionalProperties: false
-    RightsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          SecurityRights:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Rights'
-        additionalProperties: false
-    Spinoff:
-      type: object
-      properties:
-        ExDate:
-          type:
-          - string
-          - 'null'
-        RecordDate:
-          type:
-          - string
-          - 'null'
-        PayDate:
-          type:
-          - string
-          - 'null'
-        WithdrawalFromDate:
-          type:
-          - string
-          - 'null'
-        WithdrawalToDate:
-          type:
-          - string
-          - 'null'
-        WithdrawalRights:
-          type:
-          - string
-          - 'null'
-        PayType:
-          type:
-          - string
-          - 'null'
-        IsDefaultOption:
-          type: boolean
-        OptionElectionDate:
-          type:
-          - string
-          - 'null'
-        EventIdentifier:
-          type:
-          - string
-          - 'null'
-        NumberOfInitialInstruments:
-          type:
-          - string
-          - 'null'
-        NumberOfNewInstruments:
-          type:
-          - string
-          - 'null'
-        Amount:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        SpunOffRatio:
-          type:
-          - string
-          - 'null'
-        DistributedSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-      additionalProperties: false
-    ListingChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ListingChanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ListingChange'
-        additionalProperties: false
-    Rights:
-      type: object
-      properties:
-        ExDate:
-          type:
-          - string
-          - 'null'
-        RecordDate:
-          type:
-          - string
-          - 'null'
-        PayDate:
-          type:
-          - string
-          - 'null'
-        SubscriptionStartDate:
-          type:
-          - string
-          - 'null'
-        SubscriptionEndDate:
-          type:
-          - string
-          - 'null'
-        TradeStartDate:
-          type:
-          - string
-          - 'null'
-        TradeEndDate:
-          type:
-          - string
-          - 'null'
-        SplitDate:
-          type:
-          - string
-          - 'null'
-        IssuePrice:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        NumberOfInitialInstruments:
-          type:
-          - string
-          - 'null'
-        NumberOfNewInstruments:
-          type:
-          - string
-          - 'null'
-        EventIdentifier:
-          type:
-          - string
-          - 'null'
-        DistributedSecurity:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-      additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    ListingChange:
-      type: object
-      properties:
-        EffectiveDate:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        OldExchange:
-          type:
-          - string
-          - 'null'
-        Exchange:
-          type:
-          - string
-          - 'null'
-        EventIdentifier:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    SecuritySwapsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          SecuritySwaps:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SecuritySwap'
-        additionalProperties: false
     IdentifierChange:
       type: object
       properties:
@@ -1143,31 +906,21 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    SpinoffList:
+    SymbolList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Security:
+          Exchange:
             allOf:
-            - $ref: '#/components/schemas/Security'
-          SpinoffOptions:
+            - $ref: '#/components/schemas/ExchangeDescription'
+          SecurityDescriptions:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/Spinoff'
+              $ref: '#/components/schemas/SecurityDescription'
         additionalProperties: false
-    ExchangeSplit:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-        Split:
-          allOf:
-          - $ref: '#/components/schemas/Split'
-      additionalProperties: false
     Distribution:
       type: object
       properties:
@@ -1251,14 +1004,175 @@ components:
           allOf:
           - $ref: '#/components/schemas/Security'
       additionalProperties: false
-    CorporateActionsEventType:
+    SpinoffList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          SpinoffOptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Spinoff'
+        additionalProperties: false
+    Security:
       type: object
       properties:
-        EventDescription:
+        Name:
           type:
           - string
           - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+        Industry:
+          type:
+          - string
+          - 'null'
+        Sector:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CompositeFIGI:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        CIK:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    TakeoversList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          TakeoverOptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Takeover'
+        additionalProperties: false
+    SecurityDistributionsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          ExDate:
+            type:
+            - string
+            - 'null'
+          ExchangeDistributions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SecurityDistributions'
+        additionalProperties: false
+    EventSummary:
+      type: object
+      properties:
         EventType:
+          type:
+          - string
+          - 'null'
+        EffectiveDate:
+          type:
+          - string
+          - 'null'
+        CompositeIdentifier:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        EventNotes:
+          type:
+          - string
+          - 'null'
+        Created:
+          type:
+          - string
+          - 'null'
+        LastUpdated:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    EventSummaryList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          EventSummaries:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/EventSummary'
+        additionalProperties: false
+    ListingChange:
+      type: object
+      properties:
+        EffectiveDate:
+          type:
+          - string
+          - 'null'
+        Type:
           type:
           - string
           - 'null'
@@ -1266,7 +1180,69 @@ components:
           type:
           - string
           - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OldExchange:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    SecurityDescription:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    SecuritySwapsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          SecuritySwaps:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SecuritySwap'
+        additionalProperties: false
     Takeover:
       type: object
       properties:
@@ -1384,30 +1360,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/Security'
       additionalProperties: false
-    SecurityRightsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Market:
-            type:
-            - string
-            - 'null'
-          MarketIdentificationCode:
-            type:
-            - string
-            - 'null'
-          ExDate:
-            type:
-            - string
-            - 'null'
-          ExchangeRights:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SecurityRights'
-        additionalProperties: false
     SecuritySwap:
       type: object
       properties:
@@ -1441,42 +1393,89 @@ components:
         IsDefaultOption:
           type: boolean
       additionalProperties: false
-    SecurityEventSummariesList:
+    ListingChangeList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          SecurityEventSummaries:
+          ListingChanges:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/SecurityEvent'
+              $ref: '#/components/schemas/ListingChange'
         additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      - EventIdentifier
-      - CompositeIdentifier
-      type: string
-    ExchangeDescription:
+    SecurityDistributions:
       type: object
       properties:
-        MarketIdentificationCode:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        DistributionSet:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/Distribution'
+      additionalProperties: false
+    Rights:
+      type: object
+      properties:
+        ExDate:
           type:
           - string
           - 'null'
-        Market:
+        RecordDate:
           type:
           - string
           - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        SubscriptionStartDate:
+          type:
+          - string
+          - 'null'
+        SubscriptionEndDate:
+          type:
+          - string
+          - 'null'
+        TradeStartDate:
+          type:
+          - string
+          - 'null'
+        TradeEndDate:
+          type:
+          - string
+          - 'null'
+        SplitDate:
+          type:
+          - string
+          - 'null'
+        IssuePrice:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        NumberOfInitialInstruments:
+          type:
+          - string
+          - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        EventIdentifier:
+          type:
+          - string
+          - 'null'
+        DistributedSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
       additionalProperties: false
     SymbolChange:
       type: object
@@ -1526,7 +1525,44 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    EventSummaryList:
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      - EventIdentifier
+      - CompositeIdentifier
+      type: string
+    IdentifierChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/IdentifierChange'
+        additionalProperties: false
+    EventTypeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          EventTypes:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/CorporateActionsEventType'
+        additionalProperties: false
+    MergersList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -1534,24 +1570,123 @@ components:
           Security:
             allOf:
             - $ref: '#/components/schemas/Security'
-          EventSummaries:
+          MergerOptions:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/EventSummary'
+              $ref: '#/components/schemas/Merger'
         additionalProperties: false
-    Security:
+    DistributionsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Distributions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Distribution'
+        additionalProperties: false
+    SecurityEventSummariesList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          SecurityEventSummaries:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SecurityEvent'
+        additionalProperties: false
+    CorporateActionsEventType:
       type: object
       properties:
+        EventDescription:
+          type:
+          - string
+          - 'null'
+        EventType:
+          type:
+          - string
+          - 'null'
         Name:
           type:
           - string
           - 'null'
-        Symbol:
+      additionalProperties: false
+    ExchangeSplit:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        Split:
+          allOf:
+          - $ref: '#/components/schemas/Split'
+      additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
+        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
           type:
           - string
           - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    ExchangeSplitList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeSplits:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeSplit'
+        additionalProperties: false
+    SymbolChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          SymbolChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SymbolChange'
+        additionalProperties: false
+    ExchangeDescription:
+      type: object
+      properties:
         MarketIdentificationCode:
           type:
           - string
@@ -1560,46 +1695,71 @@ components:
           type:
           - string
           - 'null'
-        InstrumentClass:
+      additionalProperties: false
+    Spinoff:
+      type: object
+      properties:
+        ExDate:
           type:
           - string
           - 'null'
-        Industry:
+        RecordDate:
           type:
           - string
           - 'null'
-        Sector:
+        PayDate:
           type:
           - string
           - 'null'
-        FIGI:
+        WithdrawalFromDate:
           type:
           - string
           - 'null'
-        CompositeFIGI:
+        WithdrawalToDate:
           type:
           - string
           - 'null'
-        SEDOL:
+        WithdrawalRights:
           type:
           - string
           - 'null'
-        Valoren:
+        PayType:
           type:
           - string
           - 'null'
-        ISIN:
+        IsDefaultOption:
+          type: boolean
+        OptionElectionDate:
           type:
           - string
           - 'null'
-        CUSIP:
+        EventIdentifier:
           type:
           - string
           - 'null'
-        CIK:
+        NumberOfInitialInstruments:
           type:
           - string
           - 'null'
+        NumberOfNewInstruments:
+          type:
+          - string
+          - 'null'
+        Amount:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        SpunOffRatio:
+          type:
+          - string
+          - 'null'
+        DistributedSecurity:
+          allOf:
+          - $ref: '#/components/schemas/Security'
       additionalProperties: false
     Merger:
       type: object
@@ -1797,7 +1957,7 @@ components:
           allOf:
           - $ref: '#/components/schemas/Security'
       additionalProperties: false
-    SecurityDistributionsList:
+    SecurityRightsList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -1814,109 +1974,12 @@ components:
             type:
             - string
             - 'null'
-          ExchangeDistributions:
+          ExchangeRights:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/SecurityDistributions'
-        additionalProperties: false
-    IdentifierChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierChanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/IdentifierChange'
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    TenderOffersList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          TenderOfferOptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/TenderOffer'
-        additionalProperties: false
-    MergersList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          MergerOptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Merger'
-        additionalProperties: false
-    SecurityRights:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-        RightsSet:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/Rights'
-      additionalProperties: false
-    SecurityDescription:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    TakeoversList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          TakeoverOptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Takeover'
+              $ref: '#/components/schemas/SecurityRights'
         additionalProperties: false
     SplitList:
       allOf:
@@ -1933,59 +1996,7 @@ components:
             items:
               $ref: '#/components/schemas/Split'
         additionalProperties: false
-    EventTypeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          EventTypes:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/CorporateActionsEventType'
-        additionalProperties: false
-    SymbolList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            allOf:
-            - $ref: '#/components/schemas/ExchangeDescription'
-          SecurityDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SecurityDescription'
-        additionalProperties: false
-    SecurityDistributions:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-        DistributionSet:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/Distribution'
-      additionalProperties: false
-    ExchangeSplitList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeSplits:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeSplit'
-        additionalProperties: false
-    DistributionsList:
+    RightsList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -1993,13 +2004,26 @@ components:
           Security:
             allOf:
             - $ref: '#/components/schemas/Security'
-          Distributions:
+          SecurityRights:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/Distribution'
+              $ref: '#/components/schemas/Rights'
         additionalProperties: false
+    SecurityEvent:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        EventSummaries:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/EventSummary'
+      additionalProperties: false
     Split:
       type: object
       properties:
@@ -2021,30 +2045,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    SymbolChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          SymbolChanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SymbolChange'
-        additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-        additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

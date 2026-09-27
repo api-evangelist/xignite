@@ -975,6 +975,44 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    NumericResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Value:
+            type: number
+            format: double
+        additionalProperties: false
+    GreeksByExpiration:
+      type: object
+      properties:
+        ExpirationDate:
+          type:
+          - string
+          - 'null'
+        CallOptionGreeks:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/OptionGreeks'
+        PutOptionGreeks:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/OptionGreeks'
+      additionalProperties: false
+    OptionsBaseOfExpirationOption:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
     OptionSummary:
       type: object
       properties:
@@ -994,80 +1032,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    Options:
-      allOf:
-      - $ref: '#/components/schemas/OptionsBaseOfExpirationOption'
-      - type: object
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
-    ExchangeDescription:
-      type: object
-      properties:
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    OptionChain:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExpirationDate:
-            type:
-            - string
-            - 'null'
-          Quote:
-            allOf:
-            - $ref: '#/components/schemas/QuickQuote'
-          Calls:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Option'
-          Puts:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Option'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-        additionalProperties: false
     Security:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1112,146 +1076,6 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    UnderlyingSymbolList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            allOf:
-            - $ref: '#/components/schemas/ExchangeDescription'
-          UnderlyingSecurityDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/UnderlyingSecurity'
-        additionalProperties: false
-    ChartBar:
-      type: object
-      properties:
-        StartDate:
-          type:
-          - string
-          - 'null'
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        Session:
-          type:
-          - string
-          - 'null'
-        AdjustmentRatio:
-          type: number
-          format: double
-      additionalProperties: false
-    OptionGreeks:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          SymbologyType:
-            type:
-            - string
-            - 'null'
-          OptionSummary:
-            allOf:
-            - $ref: '#/components/schemas/OptionSummary'
-          Greeks:
-            allOf:
-            - $ref: '#/components/schemas/Greeks'
-        additionalProperties: false
-    QuickQuote:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          UTCDate:
-            type:
-            - string
-            - 'null'
-          UTCTime:
-            type:
-            - string
-            - 'null'
-          Last:
-            type: number
-            format: double
-          Volume:
-            type: number
-            format: double
-          Change:
-            type: number
-            format: double
-          Currency:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
     OutcomeTypes:
       enum:
       - Success
@@ -1259,26 +1083,6 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    UnderlyingSecurity:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Exchange:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
     OptionSymbol:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1313,21 +1117,31 @@ components:
             type: number
             format: double
         additionalProperties: false
-    OptionGreeksByChain:
+    Options:
+      allOf:
+      - $ref: '#/components/schemas/OptionsBaseOfExpirationOption'
+      - type: object
+        additionalProperties: false
+    UnderlyingSymbolList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          GreeksByExpirations:
+          Exchange:
+            allOf:
+            - $ref: '#/components/schemas/ExchangeDescription'
+          UnderlyingSecurityDescriptions:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/GreeksByExpiration'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
+              $ref: '#/components/schemas/UnderlyingSecurity'
         additionalProperties: false
+    OptionTypes:
+      enum:
+      - Call
+      - Put
+      type: string
     Greeks:
       type: object
       properties:
@@ -1358,29 +1172,108 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    ExtendedOptions:
-      allOf:
-      - $ref: '#/components/schemas/OptionsBaseOfExtendedExpirationExtendedOption'
-      - type: object
-        additionalProperties: false
-    NumericResult:
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      type: string
+    OptionChartBars:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Value:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          SymbologyType:
+            type:
+            - string
+            - 'null'
+          BaseSymbol:
+            type:
+            - string
+            - 'null'
+          Type:
+            allOf:
+            - $ref: '#/components/schemas/OptionTypes'
+          ExpirationDate:
+            type:
+            - string
+            - 'null'
+          StrikePrice:
             type: number
             format: double
+          Currency:
+            type:
+            - string
+            - 'null'
+          ContractSize:
+            type: number
+            format: double
+          CFI:
+            type:
+            - string
+            - 'null'
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Timing:
+            type:
+            - string
+            - 'null'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
         additionalProperties: false
-    OptionsBaseOfExtendedExpirationExtendedOption:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-        additionalProperties: false
+    UnderlyingSecurity:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
     ExtendedOption:
       allOf:
       - $ref: '#/components/schemas/Option'
@@ -1575,79 +1468,6 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    GreeksByExpiration:
-      type: object
-      properties:
-        ExpirationDate:
-          type:
-          - string
-          - 'null'
-        CallOptionGreeks:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/OptionGreeks'
-        PutOptionGreeks:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/OptionGreeks'
-      additionalProperties: false
-    OptionChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          SymbologyType:
-            type:
-            - string
-            - 'null'
-          BaseSymbol:
-            type:
-            - string
-            - 'null'
-          Type:
-            allOf:
-            - $ref: '#/components/schemas/OptionTypes'
-          ExpirationDate:
-            type:
-            - string
-            - 'null'
-          StrikePrice:
-            type: number
-            format: double
-          Currency:
-            type:
-            - string
-            - 'null'
-          ContractSize:
-            type: number
-            format: double
-          CFI:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Timing:
-            type:
-            - string
-            - 'null'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
-        additionalProperties: false
     ExtendedOptionChain:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1676,11 +1496,133 @@ components:
             allOf:
             - $ref: '#/components/schemas/Security'
         additionalProperties: false
-    OptionTypes:
-      enum:
-      - Call
-      - Put
-      type: string
+    ExtendedOptions:
+      allOf:
+      - $ref: '#/components/schemas/OptionsBaseOfExtendedExpirationExtendedOption'
+      - type: object
+        additionalProperties: false
+    ExchangeDescription:
+      type: object
+      properties:
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    OptionsBaseOfExtendedExpirationExtendedOption:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
+    OptionChain:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExpirationDate:
+            type:
+            - string
+            - 'null'
+          Quote:
+            allOf:
+            - $ref: '#/components/schemas/QuickQuote'
+          Calls:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Option'
+          Puts:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Option'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
+    ChartBar:
+      type: object
+      properties:
+        StartDate:
+          type:
+          - string
+          - 'null'
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        Session:
+          type:
+          - string
+          - 'null'
+        AdjustmentRatio:
+          type: number
+          format: double
+      additionalProperties: false
+    OptionGreeksByChain:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          GreeksByExpirations:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/GreeksByExpiration'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
     Option:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1802,14 +1744,72 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    OptionsBaseOfExpirationOption:
+    QuickQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Security:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCDate:
+            type:
+            - string
+            - 'null'
+          UTCTime:
+            type:
+            - string
+            - 'null'
+          Last:
+            type: number
+            format: double
+          Volume:
+            type: number
+            format: double
+          Change:
+            type: number
+            format: double
+          Currency:
+            type:
+            - string
+            - 'null'
+          Exchange:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    OptionGreeks:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Exchange:
+            type:
+            - string
+            - 'null'
+          SymbologyType:
+            type:
+            - string
+            - 'null'
+          OptionSummary:
             allOf:
-            - $ref: '#/components/schemas/Security'
+            - $ref: '#/components/schemas/OptionSummary'
+          Greeks:
+            allOf:
+            - $ref: '#/components/schemas/Greeks'
         additionalProperties: false
   securitySchemes:
     basic:

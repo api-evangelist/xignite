@@ -43,6 +43,24 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
     CloudFile:
       allOf:
       - $ref: '#/components/schemas/FileDownload'
@@ -67,24 +85,6 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
     OutcomeTypes:
       enum:
       - Success

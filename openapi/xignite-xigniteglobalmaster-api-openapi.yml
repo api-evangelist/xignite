@@ -1275,52 +1275,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    AlternateIdentifierTypes:
-      enum:
-      - Unknown
-      - Symbol
-      - CUSIP
-      - CIK
-      - Valoren
-      - SEDOL
-      - DataSourceIdentifier
-      - ISIN
-      - AlternateSymbol
-      type: string
-    PossibleValues:
-      allOf:
-      - $ref: '#/components/schemas/AbstractPublicWebServiceObj'
-      - type: object
-        properties:
-          PossibleValuesOf:
-            type:
-            - string
-            - 'null'
-          Values:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/PossibleValue'
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
     LookupItems:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1337,24 +1291,17 @@ components:
             items:
               $ref: '#/components/schemas/LookUpSecurity'
         additionalProperties: false
-    Statistics:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Count:
-            type: integer
-            format: int64
-          Exchange:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    IssuerRelatedTypes:
+    AlternateIdentifierTypes:
       enum:
-      - None
-      - Instruments
-      - InstrumentsAndSecurities
+      - Unknown
+      - Symbol
+      - CUSIP
+      - CIK
+      - Valoren
+      - SEDOL
+      - DataSourceIdentifier
+      - ISIN
+      - AlternateSymbol
       type: string
     Instrument:
       allOf:
@@ -1427,74 +1374,11 @@ components:
             allOf:
             - $ref: '#/components/schemas/DataProviders'
         additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
-    SymbolChange:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        OldSymbol:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        OldName:
-          type:
-          - string
-          - 'null'
-        Exchange:
-          type:
-          - string
-          - 'null'
-        OldExchange:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        OldCurrency:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    Issuer:
+    Classification:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          CIK:
-            type:
-            - string
-            - 'null'
           Industry:
             type:
             - string
@@ -1503,49 +1387,66 @@ components:
             type:
             - string
             - 'null'
-          ActiveDate:
+          Scheme:
             type:
             - string
             - 'null'
-          InactiveDate:
+          ClassificationCode:
             type:
             - string
             - 'null'
-          CompanyIdentifier:
+        additionalProperties: false
+    DataProviders:
+      enum:
+      - XigniteComposite
+      - Telekurs
+      - LegacyXignite
+      - ExchangeWebsite
+      - FactSet
+      - ManualXignite
+      type: string
+    PossibleValue:
+      type: object
+      properties:
+        ProviderValue:
+          type:
+          - string
+          - 'null'
+        XigniteValue:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    IdentifiersByExchange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierType:
             type:
             - string
             - 'null'
-          Domicile:
+          Exchange:
             type:
             - string
             - 'null'
-          Active:
-            type: boolean
-          CustomAttributes:
+          InstrumentClass:
+            type:
+            - string
+            - 'null'
+          Count:
+            type: integer
+            format: int32
+          ArrayOfIdentifierRecords:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/CustomAttribute'
-          Instruments:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Instrument'
-          DataProvider:
-            allOf:
-            - $ref: '#/components/schemas/DataProviders'
-          Classifications:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Classification'
-          FactSetEntityId:
-            type:
-            - string
-            - 'null'
+              $ref: '#/components/schemas/IdentifierRecord'
         additionalProperties: false
     Security:
       allOf:
@@ -1616,6 +1517,560 @@ components:
             - string
             - 'null'
         additionalProperties: false
+    InstrumentRelatedTypes:
+      enum:
+      - None
+      - Securities
+      type: string
+    AbstractPublicWebServiceObj:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          DataProvider:
+            allOf:
+            - $ref: '#/components/schemas/DataProviders'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    PossibleValues:
+      allOf:
+      - $ref: '#/components/schemas/AbstractPublicWebServiceObj'
+      - type: object
+        properties:
+          PossibleValuesOf:
+            type:
+            - string
+            - 'null'
+          Values:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/PossibleValue'
+        additionalProperties: false
+    Industries:
+      enum:
+      - Unknown
+      - Chemicals_MajorDiversified
+      - Synthetics
+      - AgriculturalChemicals
+      - SpecialtyChemicals
+      - MajorIntegratedOilAndGas
+      - IndependentOilAndGas
+      - OilAndGasRefiningAndMarketing
+      - OilAndGasDrillingAndExploration
+      - OilAndGasEquipmentAndServices
+      - OilAndGasPipelines
+      - SteelAndIron
+      - Copper
+      - Aluminum
+      - IndustrialMetalsAndMinerals
+      - Gold
+      - Silver
+      - NonmetallicMineralMining
+      - Conglomerates
+      - Appliances
+      - HomeFurnishingsAndFixtures
+      - HousewaresAndAccessories
+      - BusinessEquipment
+      - ElectronicEquipment
+      - ToysAndGames
+      - SportingGoods
+      - RecreationalGoods_Other
+      - PhotographicEquipmentAndSupplies
+      - Textile_ApparelClothing
+      - Textile_ApparelFootwearAndAccessories
+      - RubberAndPlastics
+      - PersonalProducts
+      - PaperAndPaperProducts
+      - PackagingAndContainers
+      - CleaningProducts
+      - OfficeSupplies
+      - AutoManufacturers_Major
+      - TrucksAndOtherVehicles
+      - RecreationalVehicles
+      - AutoParts
+      - Food_MajorDiversified
+      - FarmProducts
+      - ProcessedAndPackagedGoods
+      - MeatProducts
+      - DairyProducts
+      - Confectioners
+      - Beverages_Brewers
+      - Beverages_WineriesAndDistillers
+      - Beverages_SoftDrinks
+      - Cigarettes
+      - TobaccoProducts_Other
+      - MoneyCenterBanks
+      - Regional_NortheastBanks
+      - Regional_Mid_AtlanticBanks
+      - Regional_SoutheastBanks
+      - Regional_MidwestBanks
+      - Regional_SouthwestBanks
+      - Regional_PacificBanks
+      - ForeignMoneyCenterBanks
+      - ForeignRegionalBanks
+      - SavingsAndLoans
+      - InvestmentBrokerage_National
+      - InvestmentBrokerage_Regional
+      - AssetManagement
+      - DiversifiedInvestments
+      - CreditServices
+      - Closed_EndFund_Debt
+      - Closed_EndFund_Equity
+      - Closed_EndFund_Foreign
+      - LifeInsurance
+      - AccidentAndHealthInsurance
+      - PropertyAndCasualtyInsurance
+      - SuretyAndTitleInsurance
+      - InsuranceBrokers
+      - REIT_Diversified
+      - REIT_Office
+      - REIT_HealthcareFacilities
+      - REIT_Hotel_Motel
+      - REIT_Industrial
+      - REIT_Residential
+      - REIT_Retail
+      - MortgageInvestment
+      - PropertyManagement
+      - RealEstateDevelopment
+      - DrugManufacturers_Major
+      - DrugManufacturers_Other
+      - Drugs_Generic
+      - DrugDeliveryAndAccessories
+      - DrugRelatedProducts
+      - Biotechnology
+      - DiagnosticSubstances
+      - MedicalInstrumentsAndSupplies
+      - MedicalAppliancesAndEquipment
+      - HealthCarePlans
+      - Long_TermCareFacilities
+      - Hospitals
+      - MedicalLaboratoriesAndResearch
+      - HomeHealthCare
+      - MedicalPractitioners
+      - SpecializedHealthServices
+      - Aerospace_Defense_MajorDiversified
+      - Aerospace_DefenseProductsAndServices
+      - FarmAndConstructionMachinery
+      - IndustrialEquipmentAndComponents
+      - DiversifiedMachinery
+      - PollutionAndTreatmentControls
+      - MachineToolsAndAccessories
+      - SmallToolsAndAccessories
+      - MetalFabrication
+      - IndustrialElectricalEquipment
+      - TextileIndustrial
+      - ResidentialConstruction
+      - ManufacturedHousing
+      - Lumber_WoodProduction
+      - Cement
+      - GeneralBuildingMaterials
+      - HeavyConstruction
+      - GeneralContractors
+      - WasteManagement
+      - Lodging
+      - ResortsAndCasinos
+      - Restaurants
+      - SpecialtyEateries
+      - GamingActivities
+      - SportingActivities
+      - GeneralEntertainment
+      - AdvertisingAgencies
+      - MarketingServices
+      - Entertainment_Diversified
+      - Broadcasting_TV
+      - Broadcasting_Radio
+      - CATVSystems
+      - MovieProduction_Theaters
+      - Publishing_Newspapers
+      - Publishing_Periodicals
+      - Publishing_Books
+      - ApparelStores
+      - DepartmentStores
+      - Discount_VarietyStores
+      - DrugStores
+      - GroceryStores
+      - ElectronicsStores
+      - HomeImprovementStores
+      - HomeFurnishingStores
+      - AutoPartsStores
+      - CatalogAndMailOrderHouses
+      - SportingGoodsStores
+      - ToyAndHobbyStores
+      - JewelryStores
+      - MusicAndVideoStores
+      - AutoDealerships
+      - SpecialtyRetail_Other
+      - AutoPartsWholesale
+      - BuildingMaterialsWholesale
+      - IndustrialEquipmentWholesale
+      - ElectronicsWholesale
+      - MedicalEquipmentWholesale
+      - ComputersWholesale
+      - DrugsWholesale
+      - FoodWholesale
+      - BasicMaterialsWholesale
+      - Wholesale_Other
+      - BusinessServices
+      - RentalAndLeasingServices
+      - PersonalServices
+      - ConsumerServices
+      - StaffingAndOutsourcingServices
+      - SecurityAndProtectionServices
+      - EducationAndTrainingServices
+      - TechnicalServices
+      - ResearchServices
+      - ManagementServices
+      - MajorAirlines
+      - RegionalAirlines
+      - AirServices_Other
+      - AirDeliveryAndFreightServices
+      - Trucking
+      - Shipping
+      - Railroads
+      - DiversifiedComputerSystems
+      - PersonalComputers
+      - ComputerBasedSystems
+      - DataStorageDevices
+      - NetworkingAndCommunicationDevices
+      - ComputerPeripherals
+      - MultimediaAndGraphicsSoftware
+      - ApplicationSoftware
+      - TechnicalAndSystemSoftware
+      - SecuritySoftwareAndServices
+      - InformationTechnologyServices
+      - HealthcareInformationServices
+      - BusinessSoftwareAndServices
+      - InformationAndDeliveryServices
+      - Semiconductor_BroadLine
+      - Semiconductor_MemoryChips
+      - Semiconductor_Specialized
+      - Semiconductor_IntegratedCircuits
+      - SemiconductorEquipmentAndMaterials
+      - PrintedCircuitBoards
+      - DiversifiedElectronics
+      - ScientificAndTechnicalInstruments
+      - WirelessCommunications
+      - CommunicationEquipment
+      - ProcessingSystemsAndProducts
+      - LongDistanceCarriers
+      - TelecomServices_Domestic
+      - TelecomServices_Foreign
+      - DiversifiedCommunicationServices
+      - InternetServiceProviders
+      - InternetInformationProviders
+      - InternetSoftwareAndServices
+      - ForeignUtilities
+      - ElectricUtilities
+      - GasUtilities
+      - DiversifiedUtilitities
+      - WaterUtilities
+      type: string
+    Sectors:
+      enum:
+      - Unknown
+      - BasicMaterials
+      - Conglomerates
+      - ConsumerGoods
+      - Financial
+      - Healthcare
+      - IndustrialGoods
+      - Services
+      - Technology
+      - Utilities
+      type: string
+    SymbolChange:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        OldSymbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        OldName:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+        OldExchange:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OldCurrency:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      type: string
+    Record:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          CUSIP:
+            type:
+            - string
+            - 'null'
+          CIK:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type:
+            - string
+            - 'null'
+          ISIN:
+            type:
+            - string
+            - 'null'
+          SEDOL:
+            type:
+            - string
+            - 'null'
+          CFICode:
+            type:
+            - string
+            - 'null'
+          InstrumentClass:
+            type:
+            - string
+            - 'null'
+          ExchangeName:
+            type:
+            - string
+            - 'null'
+          Sector:
+            type:
+            - string
+            - 'null'
+          Industry:
+            type:
+            - string
+            - 'null'
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Currency:
+            type:
+            - string
+            - 'null'
+          ActiveDate:
+            type:
+            - string
+            - 'null'
+          InactiveDate:
+            type:
+            - string
+            - 'null'
+          LastUpdateDate:
+            type:
+            - string
+            - 'null'
+          HomeTradingPlace:
+            type: boolean
+          CompanyIdentifier:
+            type:
+            - string
+            - 'null'
+          FIGI:
+            type:
+            - string
+            - 'null'
+          CompositeFIGI:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    LookUpSecurity:
+      type: object
+      properties:
+        CIK:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CompositeFIGI:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Sector:
+          type:
+          - string
+          - 'null'
+        Industry:
+          type:
+          - string
+          - 'null'
+        HomeTradingPlace:
+          type: boolean
+        Active:
+          type: boolean
+        MostLiquidExchange:
+          type: boolean
+      additionalProperties: false
+    IdentifierRecord:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Identifier:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    Statistics:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Count:
+            type: integer
+            format: int64
+          Exchange:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    LegacyExchangeMapping:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    SymbolChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          DateTime:
+            type:
+            - string
+            - 'null'
+          SymbolChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SymbolChange'
+        additionalProperties: false
     CustomAttribute:
       type: object
       properties:
@@ -1632,57 +2087,19 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    InstrumentClasses:
-      enum:
-      - Bond
-      - Indices
-      - Stock
-      - Other
-      - StructuredProduct
-      - Fund
-      - MoneyMarket
-      - Derivative
-      - Currency
-      - Technical
-      - Commodity
-      - CurrencyForward
-      - InterestRateSwaps
-      - DepositoryReceipt
-      - ExchangeTradedFund
-      - PreferredShares
-      - CoveredWarrant
-      - Warrant
-      - Units
-      - ExchangeTradedCommodity
-      - All
-      type: string
-    Sectors:
-      enum:
-      - Unknown
-      - BasicMaterials
-      - Conglomerates
-      - ConsumerGoods
-      - Financial
-      - Healthcare
-      - IndustrialGoods
-      - Services
-      - Technology
-      - Utilities
-      type: string
-    DataProviders:
-      enum:
-      - XigniteComposite
-      - Telekurs
-      - LegacyXignite
-      - ExchangeWebsite
-      - FactSet
-      - ManualXignite
-      type: string
-    Classification:
+    Issuer:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          CIK:
+            type:
+            - string
+            - 'null'
           Industry:
             type:
             - string
@@ -1691,36 +2108,75 @@ components:
             type:
             - string
             - 'null'
-          Scheme:
+          ActiveDate:
             type:
             - string
             - 'null'
-          ClassificationCode:
+          InactiveDate:
             type:
             - string
             - 'null'
-        additionalProperties: false
-    AbstractPublicWebServiceObj:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
+          CompanyIdentifier:
+            type:
+            - string
+            - 'null'
+          Domicile:
+            type:
+            - string
+            - 'null'
+          Active:
+            type: boolean
+          CustomAttributes:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/CustomAttribute'
+          Instruments:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Instrument'
           DataProvider:
             allOf:
             - $ref: '#/components/schemas/DataProviders'
+          Classifications:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Classification'
+          FactSetEntityId:
+            type:
+            - string
+            - 'null'
         additionalProperties: false
-    InstrumentRelatedTypes:
+    IssuerRelatedTypes:
       enum:
       - None
-      - Securities
+      - Instruments
+      - InstrumentsAndSecurities
       type: string
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
+    AlternateSecurityIdentifier:
+      type: object
+      properties:
+        AlternateIdentifier:
+          type:
+          - string
+          - 'null'
+        IdentifierType:
+          allOf:
+          - $ref: '#/components/schemas/AlternateIdentifierTypes'
+        StartDate:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     Exchanges:
       enum:
       - XALG
@@ -2746,486 +3202,30 @@ components:
       - _GIF
       - _MSCI
       type: string
-    PossibleValue:
-      type: object
-      properties:
-        ProviderValue:
-          type:
-          - string
-          - 'null'
-        XigniteValue:
-          type:
-          - string
-          - 'null'
-        Description:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    IdentifierRecord:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Identifier:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    LegacyExchangeMapping:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    AlternateSecurityIdentifier:
-      type: object
-      properties:
-        AlternateIdentifier:
-          type:
-          - string
-          - 'null'
-        IdentifierType:
-          allOf:
-          - $ref: '#/components/schemas/AlternateIdentifierTypes'
-        StartDate:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    Record:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
-          CUSIP:
-            type:
-            - string
-            - 'null'
-          CIK:
-            type:
-            - string
-            - 'null'
-          Valoren:
-            type:
-            - string
-            - 'null'
-          ISIN:
-            type:
-            - string
-            - 'null'
-          SEDOL:
-            type:
-            - string
-            - 'null'
-          CFICode:
-            type:
-            - string
-            - 'null'
-          InstrumentClass:
-            type:
-            - string
-            - 'null'
-          ExchangeName:
-            type:
-            - string
-            - 'null'
-          Sector:
-            type:
-            - string
-            - 'null'
-          Industry:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-          ActiveDate:
-            type:
-            - string
-            - 'null'
-          InactiveDate:
-            type:
-            - string
-            - 'null'
-          LastUpdateDate:
-            type:
-            - string
-            - 'null'
-          HomeTradingPlace:
-            type: boolean
-          CompanyIdentifier:
-            type:
-            - string
-            - 'null'
-          FIGI:
-            type:
-            - string
-            - 'null'
-          CompositeFIGI:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    IdentifiersByExchange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          InstrumentClass:
-            type:
-            - string
-            - 'null'
-          Count:
-            type: integer
-            format: int32
-          ArrayOfIdentifierRecords:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/IdentifierRecord'
-        additionalProperties: false
-    LookUpSecurity:
-      type: object
-      properties:
-        CIK:
-          type:
-          - string
-          - 'null'
-        CUSIP:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        SEDOL:
-          type:
-          - string
-          - 'null'
-        FIGI:
-          type:
-          - string
-          - 'null'
-        CompositeFIGI:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Sector:
-          type:
-          - string
-          - 'null'
-        Industry:
-          type:
-          - string
-          - 'null'
-        HomeTradingPlace:
-          type: boolean
-        Active:
-          type: boolean
-        MostLiquidExchange:
-          type: boolean
-      additionalProperties: false
-    Industries:
+    InstrumentClasses:
       enum:
-      - Unknown
-      - Chemicals_MajorDiversified
-      - Synthetics
-      - AgriculturalChemicals
-      - SpecialtyChemicals
-      - MajorIntegratedOilAndGas
-      - IndependentOilAndGas
-      - OilAndGasRefiningAndMarketing
-      - OilAndGasDrillingAndExploration
-      - OilAndGasEquipmentAndServices
-      - OilAndGasPipelines
-      - SteelAndIron
-      - Copper
-      - Aluminum
-      - IndustrialMetalsAndMinerals
-      - Gold
-      - Silver
-      - NonmetallicMineralMining
-      - Conglomerates
-      - Appliances
-      - HomeFurnishingsAndFixtures
-      - HousewaresAndAccessories
-      - BusinessEquipment
-      - ElectronicEquipment
-      - ToysAndGames
-      - SportingGoods
-      - RecreationalGoods_Other
-      - PhotographicEquipmentAndSupplies
-      - Textile_ApparelClothing
-      - Textile_ApparelFootwearAndAccessories
-      - RubberAndPlastics
-      - PersonalProducts
-      - PaperAndPaperProducts
-      - PackagingAndContainers
-      - CleaningProducts
-      - OfficeSupplies
-      - AutoManufacturers_Major
-      - TrucksAndOtherVehicles
-      - RecreationalVehicles
-      - AutoParts
-      - Food_MajorDiversified
-      - FarmProducts
-      - ProcessedAndPackagedGoods
-      - MeatProducts
-      - DairyProducts
-      - Confectioners
-      - Beverages_Brewers
-      - Beverages_WineriesAndDistillers
-      - Beverages_SoftDrinks
-      - Cigarettes
-      - TobaccoProducts_Other
-      - MoneyCenterBanks
-      - Regional_NortheastBanks
-      - Regional_Mid_AtlanticBanks
-      - Regional_SoutheastBanks
-      - Regional_MidwestBanks
-      - Regional_SouthwestBanks
-      - Regional_PacificBanks
-      - ForeignMoneyCenterBanks
-      - ForeignRegionalBanks
-      - SavingsAndLoans
-      - InvestmentBrokerage_National
-      - InvestmentBrokerage_Regional
-      - AssetManagement
-      - DiversifiedInvestments
-      - CreditServices
-      - Closed_EndFund_Debt
-      - Closed_EndFund_Equity
-      - Closed_EndFund_Foreign
-      - LifeInsurance
-      - AccidentAndHealthInsurance
-      - PropertyAndCasualtyInsurance
-      - SuretyAndTitleInsurance
-      - InsuranceBrokers
-      - REIT_Diversified
-      - REIT_Office
-      - REIT_HealthcareFacilities
-      - REIT_Hotel_Motel
-      - REIT_Industrial
-      - REIT_Residential
-      - REIT_Retail
-      - MortgageInvestment
-      - PropertyManagement
-      - RealEstateDevelopment
-      - DrugManufacturers_Major
-      - DrugManufacturers_Other
-      - Drugs_Generic
-      - DrugDeliveryAndAccessories
-      - DrugRelatedProducts
-      - Biotechnology
-      - DiagnosticSubstances
-      - MedicalInstrumentsAndSupplies
-      - MedicalAppliancesAndEquipment
-      - HealthCarePlans
-      - Long_TermCareFacilities
-      - Hospitals
-      - MedicalLaboratoriesAndResearch
-      - HomeHealthCare
-      - MedicalPractitioners
-      - SpecializedHealthServices
-      - Aerospace_Defense_MajorDiversified
-      - Aerospace_DefenseProductsAndServices
-      - FarmAndConstructionMachinery
-      - IndustrialEquipmentAndComponents
-      - DiversifiedMachinery
-      - PollutionAndTreatmentControls
-      - MachineToolsAndAccessories
-      - SmallToolsAndAccessories
-      - MetalFabrication
-      - IndustrialElectricalEquipment
-      - TextileIndustrial
-      - ResidentialConstruction
-      - ManufacturedHousing
-      - Lumber_WoodProduction
-      - Cement
-      - GeneralBuildingMaterials
-      - HeavyConstruction
-      - GeneralContractors
-      - WasteManagement
-      - Lodging
-      - ResortsAndCasinos
-      - Restaurants
-      - SpecialtyEateries
-      - GamingActivities
-      - SportingActivities
-      - GeneralEntertainment
-      - AdvertisingAgencies
-      - MarketingServices
-      - Entertainment_Diversified
-      - Broadcasting_TV
-      - Broadcasting_Radio
-      - CATVSystems
-      - MovieProduction_Theaters
-      - Publishing_Newspapers
-      - Publishing_Periodicals
-      - Publishing_Books
-      - ApparelStores
-      - DepartmentStores
-      - Discount_VarietyStores
-      - DrugStores
-      - GroceryStores
-      - ElectronicsStores
-      - HomeImprovementStores
-      - HomeFurnishingStores
-      - AutoPartsStores
-      - CatalogAndMailOrderHouses
-      - SportingGoodsStores
-      - ToyAndHobbyStores
-      - JewelryStores
-      - MusicAndVideoStores
-      - AutoDealerships
-      - SpecialtyRetail_Other
-      - AutoPartsWholesale
-      - BuildingMaterialsWholesale
-      - IndustrialEquipmentWholesale
-      - ElectronicsWholesale
-      - MedicalEquipmentWholesale
-      - ComputersWholesale
-      - DrugsWholesale
-      - FoodWholesale
-      - BasicMaterialsWholesale
-      - Wholesale_Other
-      - BusinessServices
-      - RentalAndLeasingServices
-      - PersonalServices
-      - ConsumerServices
-      - StaffingAndOutsourcingServices
-      - SecurityAndProtectionServices
-      - EducationAndTrainingServices
-      - TechnicalServices
-      - ResearchServices
-      - ManagementServices
-      - MajorAirlines
-      - RegionalAirlines
-      - AirServices_Other
-      - AirDeliveryAndFreightServices
-      - Trucking
-      - Shipping
-      - Railroads
-      - DiversifiedComputerSystems
-      - PersonalComputers
-      - ComputerBasedSystems
-      - DataStorageDevices
-      - NetworkingAndCommunicationDevices
-      - ComputerPeripherals
-      - MultimediaAndGraphicsSoftware
-      - ApplicationSoftware
-      - TechnicalAndSystemSoftware
-      - SecuritySoftwareAndServices
-      - InformationTechnologyServices
-      - HealthcareInformationServices
-      - BusinessSoftwareAndServices
-      - InformationAndDeliveryServices
-      - Semiconductor_BroadLine
-      - Semiconductor_MemoryChips
-      - Semiconductor_Specialized
-      - Semiconductor_IntegratedCircuits
-      - SemiconductorEquipmentAndMaterials
-      - PrintedCircuitBoards
-      - DiversifiedElectronics
-      - ScientificAndTechnicalInstruments
-      - WirelessCommunications
-      - CommunicationEquipment
-      - ProcessingSystemsAndProducts
-      - LongDistanceCarriers
-      - TelecomServices_Domestic
-      - TelecomServices_Foreign
-      - DiversifiedCommunicationServices
-      - InternetServiceProviders
-      - InternetInformationProviders
-      - InternetSoftwareAndServices
-      - ForeignUtilities
-      - ElectricUtilities
-      - GasUtilities
-      - DiversifiedUtilitities
-      - WaterUtilities
+      - Bond
+      - Indices
+      - Stock
+      - Other
+      - StructuredProduct
+      - Fund
+      - MoneyMarket
+      - Derivative
+      - Currency
+      - Technical
+      - Commodity
+      - CurrencyForward
+      - InterestRateSwaps
+      - DepositoryReceipt
+      - ExchangeTradedFund
+      - PreferredShares
+      - CoveredWarrant
+      - Warrant
+      - Units
+      - ExchangeTradedCommodity
+      - All
       type: string
-    SymbolChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          DateTime:
-            type:
-            - string
-            - 'null'
-          SymbolChanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SymbolChange'
-        additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

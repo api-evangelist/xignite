@@ -476,7 +476,108 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    Announcement:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    BoardMeeting:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ReplayInformation:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    EarningDates:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    EarningCall:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
     ConferenceCallInformation:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    FundamentalTypesItems:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Region:
+            type:
+            - string
+            - 'null'
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
+        additionalProperties: false
+    SymbolList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          SymbolDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SymbolDescription'
+        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    EarningCalendarDay:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    EarningCalendarItem:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -517,18 +618,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    ReplayInformation:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
     ExchangeDescription:
       type: object
       properties:
@@ -541,101 +630,12 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    EarningCall:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    EarningCalendarDay:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    BoardMeeting:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Region:
-            type:
-            - string
-            - 'null'
-          ExchangeDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-        additionalProperties: false
-    FundamentalTypesItems:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
     SecurityItemsSets:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    EarningDates:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    Announcement:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    SymbolList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Market:
-            type:
-            - string
-            - 'null'
-          MarketIdentificationCode:
-            type:
-            - string
-            - 'null'
-          SymbolDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SymbolDescription'
-        additionalProperties: false
     EarningCalendar:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    EarningCalendarItem:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
