@@ -621,135 +621,13 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    GlobalExtendedQuote:
-      allOf:
-      - $ref: '#/components/schemas/GlobalQuote'
-      - type: object
-        properties:
-          VolumeDate:
-            type:
-            - string
-            - 'null'
-          ExtendedHoursDate:
-            type:
-            - string
-            - 'null'
-          ExtendedHoursTime:
-            type:
-            - string
-            - 'null'
-          ExtendedHoursType:
-            type:
-            - string
-            - 'null'
-          ExtendedHoursPrice:
-            type: number
-            format: double
-          ExtendedHoursChange:
-            type: number
-            format: double
-          ExtendedHoursPercentChange:
-            type: number
-            format: double
-          ExtendedHoursTradeConditions:
-            type:
-            - string
-            - 'null'
-          LimitDate:
-            type:
-            - string
-            - 'null'
-          LimitTime:
-            type:
-            - string
-            - 'null'
-          LimitDown:
-            type: number
-            format: double
-          LimitUp:
-            type: number
-            format: double
-        additionalProperties: false
-    EquityChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Timing:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    IntradayVWAP:
-      allOf:
-      - $ref: '#/components/schemas/QuoteWithSecurity'
-      - type: object
-        properties:
-          Date:
-            type:
-            - string
-            - 'null'
-          StartTime:
-            type:
-            - string
-            - 'null'
-          EndTime:
-            type:
-            - string
-            - 'null'
-          UTCOffset:
-            type: number
-            format: double
-          VWAPType:
-            allOf:
-            - $ref: '#/components/schemas/IntradayVWAPTypes'
-          VWAP:
-            type: number
-            format: double
-          High:
-            type: number
-            format: double
-          Low:
-            type: number
-            format: double
-          Average:
-            type: number
-            format: double
-          Amount:
-            type: number
-            format: double
-          Volume:
-            type: number
-            format: double
-          Trades:
-            type: integer
-            format: int32
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
     SymbolList:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -807,6 +685,17 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      type: string
     MarketMovers:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -838,49 +727,12 @@ components:
             items:
               $ref: '#/components/schemas/MarketMover'
         additionalProperties: false
-    OutcomeTypes:
+    TickPrecisions:
       enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
+      - Seconds
+      - Minutes
+      - Hours
       type: string
-    SecurityDescription:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    IntradayVWAPTypes:
-      enum:
-      - RealTime
-      - Delayed
-      - OneMinute
-      - FiveMinute
-      - TenMinute
-      - ThirtyMinute
-      - OneHour
-      - Period
-      type: string
-    QuoteWithSecurity:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-        additionalProperties: false
     SymbolChange:
       type: object
       properties:
@@ -925,358 +777,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    TickPrecisions:
-      enum:
-      - Seconds
-      - Minutes
-      - Hours
-      type: string
-    GlobalAuctionQuote:
-      allOf:
-      - $ref: '#/components/schemas/QuoteWithSecurity'
-      - type: object
-        properties:
-          OpeningAuction:
-            type: number
-            format: double
-          OpeningAuctionSize:
-            type: number
-            format: double
-          OpeningAuctionDate:
-            type:
-            - string
-            - 'null'
-          OpeningAuctionTime:
-            type:
-            - string
-            - 'null'
-          ClosingAuction:
-            type: number
-            format: double
-          ClosingAuctionSize:
-            type: number
-            format: double
-          ClosingAuctionDate:
-            type:
-            - string
-            - 'null'
-          ClosingAuctionTime:
-            type:
-            - string
-            - 'null'
-          LastAuction:
-            type: number
-            format: double
-          LastAuctionSize:
-            type: number
-            format: double
-          PreviousClosingAuction:
-            type: number
-            format: double
-          PreviousClosingAuctionDate:
-            type:
-            - string
-            - 'null'
-          UTCOffset:
-            type: number
-            format: double
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    SymbolChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          DateTime:
-            type:
-            - string
-            - 'null'
-          SymbolChanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SymbolChange'
-        additionalProperties: false
-    Bar:
-      type: object
-      properties:
-        StartDate:
-          type:
-          - string
-          - 'null'
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-      additionalProperties: false
-    ExchangeDescription:
-      type: object
-      properties:
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    MarketMover:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          MarketMoverType:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
-          InstrumentClass:
-            type:
-            - string
-            - 'null'
-          Market:
-            type:
-            - string
-            - 'null'
-          MarketIdentificationCode:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          UTCOffset:
-            type: number
-            format: double
-          Last:
-            type: number
-            format: double
-          ChangeFromPreviousClose:
-            type: number
-            format: double
-          PercentChangeFromPreviousClose:
-            type: number
-            format: double
-          Volume:
-            type: number
-            format: double
-          Currency:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    GlobalBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Bars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Bar'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-        additionalProperties: false
-    GlobalBar:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Bar:
-            allOf:
-            - $ref: '#/components/schemas/Bar'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-        additionalProperties: false
-    ChartBar:
-      type: object
-      properties:
-        StartDate:
-          type:
-          - string
-          - 'null'
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        Session:
-          type:
-          - string
-          - 'null'
-        AdjustmentRatio:
-          type: number
-          format: double
-      additionalProperties: false
-    MarketMoverTypes:
-      enum:
-      - PercentGainers
-      - PercentLosers
-      - MostActive
-      type: string
     GlobalQuote:
       allOf:
       - $ref: '#/components/schemas/QuoteWithSecurity'
@@ -1379,6 +879,506 @@ components:
             type:
             - string
             - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ChartBar:
+      type: object
+      properties:
+        StartDate:
+          type:
+          - string
+          - 'null'
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        Session:
+          type:
+          - string
+          - 'null'
+        AdjustmentRatio:
+          type: number
+          format: double
+      additionalProperties: false
+    IntradayVWAPTypes:
+      enum:
+      - RealTime
+      - Delayed
+      - OneMinute
+      - FiveMinute
+      - TenMinute
+      - ThirtyMinute
+      - OneHour
+      - Period
+      type: string
+    GlobalBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Bars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Bar'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
+    ExchangeDescription:
+      type: object
+      properties:
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    MarketMover:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          MarketMoverType:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          InstrumentClass:
+            type:
+            - string
+            - 'null'
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+          Last:
+            type: number
+            format: double
+          ChangeFromPreviousClose:
+            type: number
+            format: double
+          PercentChangeFromPreviousClose:
+            type: number
+            format: double
+          Volume:
+            type: number
+            format: double
+          Currency:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    SecurityDescription:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    QuoteWithSecurity:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
+    GlobalAuctionQuote:
+      allOf:
+      - $ref: '#/components/schemas/QuoteWithSecurity'
+      - type: object
+        properties:
+          OpeningAuction:
+            type: number
+            format: double
+          OpeningAuctionSize:
+            type: number
+            format: double
+          OpeningAuctionDate:
+            type:
+            - string
+            - 'null'
+          OpeningAuctionTime:
+            type:
+            - string
+            - 'null'
+          ClosingAuction:
+            type: number
+            format: double
+          ClosingAuctionSize:
+            type: number
+            format: double
+          ClosingAuctionDate:
+            type:
+            - string
+            - 'null'
+          ClosingAuctionTime:
+            type:
+            - string
+            - 'null'
+          LastAuction:
+            type: number
+            format: double
+          LastAuctionSize:
+            type: number
+            format: double
+          PreviousClosingAuction:
+            type: number
+            format: double
+          PreviousClosingAuctionDate:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    MarketMoverTypes:
+      enum:
+      - PercentGainers
+      - PercentLosers
+      - MostActive
+      type: string
+    GlobalExtendedQuote:
+      allOf:
+      - $ref: '#/components/schemas/GlobalQuote'
+      - type: object
+        properties:
+          VolumeDate:
+            type:
+            - string
+            - 'null'
+          ExtendedHoursDate:
+            type:
+            - string
+            - 'null'
+          ExtendedHoursTime:
+            type:
+            - string
+            - 'null'
+          ExtendedHoursType:
+            type:
+            - string
+            - 'null'
+          ExtendedHoursPrice:
+            type: number
+            format: double
+          ExtendedHoursChange:
+            type: number
+            format: double
+          ExtendedHoursPercentChange:
+            type: number
+            format: double
+          ExtendedHoursTradeConditions:
+            type:
+            - string
+            - 'null'
+          LimitDate:
+            type:
+            - string
+            - 'null'
+          LimitTime:
+            type:
+            - string
+            - 'null'
+          LimitDown:
+            type: number
+            format: double
+          LimitUp:
+            type: number
+            format: double
+        additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
+        additionalProperties: false
+    GlobalBar:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Bar:
+            allOf:
+            - $ref: '#/components/schemas/Bar'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
+    Bar:
+      type: object
+      properties:
+        StartDate:
+          type:
+          - string
+          - 'null'
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+      additionalProperties: false
+    SymbolChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          DateTime:
+            type:
+            - string
+            - 'null'
+          SymbolChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SymbolChange'
+        additionalProperties: false
+    EquityChartBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Timing:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    IntradayVWAP:
+      allOf:
+      - $ref: '#/components/schemas/QuoteWithSecurity'
+      - type: object
+        properties:
+          Date:
+            type:
+            - string
+            - 'null'
+          StartTime:
+            type:
+            - string
+            - 'null'
+          EndTime:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+          VWAPType:
+            allOf:
+            - $ref: '#/components/schemas/IntradayVWAPTypes'
+          VWAP:
+            type: number
+            format: double
+          High:
+            type: number
+            format: double
+          Low:
+            type: number
+            format: double
+          Average:
+            type: number
+            format: double
+          Amount:
+            type: number
+            format: double
+          Volume:
+            type: number
+            format: double
+          Trades:
+            type: integer
+            format: int32
           Identifier:
             type:
             - string

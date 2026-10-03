@@ -677,202 +677,42 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    TemperatureScore:
-      type: object
-      properties:
-        AsOfDate:
-          type:
-          - string
-          - 'null'
-        NearTerm:
-          type:
-          - string
-          - 'null'
-        LongTerm:
-          type:
-          - string
-          - 'null'
-        Trend:
-          type:
-          - boolean
-          - 'null'
-        Target:
-          type:
-          - boolean
-          - 'null'
-        Scope3Reporting:
-          type:
-          - boolean
-          - 'null'
-        InternationalEnergyAgencySector:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    SymbolList:
+    ScreenByInvolvementsResult:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          DataPackage:
+          Sector:
             type:
             - string
             - 'null'
-          Market:
+          Industry:
             type:
             - string
             - 'null'
-          MarketIdentificationCode:
+          Exchange:
             type:
             - string
             - 'null'
-          SymbolDescriptions:
+          Region:
+            type:
+            - string
+            - 'null'
+          PercentThreshold:
+            type:
+            - string
+            - 'null'
+          Involvement:
+            type:
+            - string
+            - 'null'
+          Companies:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/SymbolDescription'
+              $ref: '#/components/schemas/CompanyDescription'
         additionalProperties: false
-    ESGScores:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          ESGScore:
-            allOf:
-            - $ref: '#/components/schemas/ESGScore'
-        additionalProperties: false
-    Security:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-        Industry:
-          type:
-          - string
-          - 'null'
-        Sector:
-          type:
-          - string
-          - 'null'
-        FIGI:
-          type:
-          - string
-          - 'null'
-        CompositeFIGI:
-          type:
-          - string
-          - 'null'
-        SEDOL:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        CUSIP:
-          type:
-          - string
-          - 'null'
-        CIK:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ESGCategories:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          Categories:
-            allOf:
-            - $ref: '#/components/schemas/Categories'
-        additionalProperties: false
-    CategoryList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CategoryDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/CategoryDescription'
-        additionalProperties: false
-    Involved:
-      type: object
-      properties:
-        Outcome:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        Value:
-          type:
-          - boolean
-          - 'null'
-        PercentThreshold:
-          type:
-          - string
-          - 'null'
-        AsOfDate:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
     OutcomeTypes:
       enum:
       - Success
@@ -880,98 +720,29 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    TemperatureScores:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          TemperatureScore:
-            allOf:
-            - $ref: '#/components/schemas/TemperatureScore'
-        additionalProperties: false
-    CompanyDescription:
-      type: object
-      properties:
-        CompanyName:
-          type:
-          - string
-          - 'null'
-        CompanyIdentifier:
-          type:
-          - string
-          - 'null'
-        CompanyDomicile:
-          type:
-          - string
-          - 'null'
-        CompanyRegion:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    InvolvementDescription:
-      type: object
-      properties:
-        Type:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Description:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    GlobalCompactScore:
+    ESGScore:
       type: object
       properties:
         AsOfDate:
           type:
           - string
           - 'null'
-        GlobalCompact:
+        ESG:
           type:
           - number
           - 'null'
           format: decimal
-        HumanRights:
+        Environmental:
           type:
           - number
           - 'null'
           format: decimal
-        LabourRights:
+        Social:
           type:
           - number
           - 'null'
           format: decimal
-        Environment:
-          type:
-          - number
-          - 'null'
-          format: decimal
-        AntiCorruption:
+        Governance:
           type:
           - number
           - 'null'
@@ -980,91 +751,6 @@ components:
           type:
           - string
           - 'null'
-      additionalProperties: false
-    CategoryDescription:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Description:
-          type:
-          - string
-          - 'null'
-        Subscore:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    HistoricalESGCategoriesRange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          ESGCategories:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Categories'
-        additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Region:
-            type:
-            - string
-            - 'null'
-          ExchangeDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-        additionalProperties: false
-    InvolvementList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          InvolvementDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/InvolvementDescription'
-        additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
     Categories:
       type: object
@@ -1188,6 +874,67 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    GlobalCompactScore:
+      type: object
+      properties:
+        AsOfDate:
+          type:
+          - string
+          - 'null'
+        GlobalCompact:
+          type:
+          - number
+          - 'null'
+          format: decimal
+        HumanRights:
+          type:
+          - number
+          - 'null'
+          format: decimal
+        LabourRights:
+          type:
+          - number
+          - 'null'
+          format: decimal
+        Environment:
+          type:
+          - number
+          - 'null'
+          format: decimal
+        AntiCorruption:
+          type:
+          - number
+          - 'null'
+          format: decimal
+        Version:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    SymbolList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          DataPackage:
+            type:
+            - string
+            - 'null'
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          SymbolDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SymbolDescription'
+        additionalProperties: false
     Emissions:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1208,56 +955,30 @@ components:
             allOf:
             - $ref: '#/components/schemas/CompanyEmissions'
         additionalProperties: false
-    HistoricalGlobalCompactScoresRange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          GlobalCompactScores:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/GlobalCompactScore'
-        additionalProperties: false
-    Involvements:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          Involvement:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Involved'
-        additionalProperties: false
-    ExchangeDescription:
+    CategoryDescription:
       type: object
       properties:
-        Market:
+        Name:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+        Subscore:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Security:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Symbol:
           type:
           - string
           - 'null'
@@ -1265,7 +986,83 @@ components:
           type:
           - string
           - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+        Industry:
+          type:
+          - string
+          - 'null'
+        Sector:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CompositeFIGI:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        CIK:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
+    InvolvementList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          InvolvementDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/InvolvementDescription'
+        additionalProperties: false
+    ESGCategories:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          Categories:
+            allOf:
+            - $ref: '#/components/schemas/Categories'
+        additionalProperties: false
     HistoricalESGScoresRange:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1289,6 +1086,84 @@ components:
             items:
               $ref: '#/components/schemas/ESGScore'
         additionalProperties: false
+    InvolvementDescription:
+      type: object
+      properties:
+        Type:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    TemperatureScore:
+      type: object
+      properties:
+        AsOfDate:
+          type:
+          - string
+          - 'null'
+        NearTerm:
+          type:
+          - string
+          - 'null'
+        LongTerm:
+          type:
+          - string
+          - 'null'
+        Trend:
+          type:
+          - boolean
+          - 'null'
+        Target:
+          type:
+          - boolean
+          - 'null'
+        Scope3Reporting:
+          type:
+          - boolean
+          - 'null'
+        InternationalEnergyAgencySector:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    ExchangeDescription:
+      type: object
+      properties:
+        Market:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     CompanyEmissions:
       type: object
       properties:
@@ -1340,6 +1215,46 @@ components:
             allOf:
             - $ref: '#/components/schemas/GlobalCompactScore'
         additionalProperties: false
+    Involved:
+      type: object
+      properties:
+        Outcome:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        Value:
+          type:
+          - boolean
+          - 'null'
+        PercentThreshold:
+          type:
+          - string
+          - 'null'
+        AsOfDate:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    CategoryList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CategoryDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/CategoryDescription'
+        additionalProperties: false
     SymbolDescription:
       type: object
       properties:
@@ -1368,73 +1283,158 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    ESGScore:
-      type: object
-      properties:
-        AsOfDate:
-          type:
-          - string
-          - 'null'
-        ESG:
-          type:
-          - number
-          - 'null'
-          format: decimal
-        Environmental:
-          type:
-          - number
-          - 'null'
-          format: decimal
-        Social:
-          type:
-          - number
-          - 'null'
-          format: decimal
-        Governance:
-          type:
-          - number
-          - 'null'
-          format: decimal
-        Version:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ScreenByInvolvementsResult:
+    Involvements:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Sector:
+          IdentifierType:
             type:
             - string
             - 'null'
-          Industry:
+          Identifier:
             type:
             - string
             - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Region:
-            type:
-            - string
-            - 'null'
-          PercentThreshold:
-            type:
-            - string
-            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
           Involvement:
-            type:
-            - string
-            - 'null'
-          Companies:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/CompanyDescription'
+              $ref: '#/components/schemas/Involved'
+        additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Region:
+            type:
+            - string
+            - 'null'
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
+        additionalProperties: false
+    CompanyDescription:
+      type: object
+      properties:
+        CompanyName:
+          type:
+          - string
+          - 'null'
+        CompanyIdentifier:
+          type:
+          - string
+          - 'null'
+        CompanyDomicile:
+          type:
+          - string
+          - 'null'
+        CompanyRegion:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    HistoricalESGCategoriesRange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          ESGCategories:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Categories'
+        additionalProperties: false
+    HistoricalGlobalCompactScoresRange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          GlobalCompactScores:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/GlobalCompactScore'
+        additionalProperties: false
+    ESGScores:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          ESGScore:
+            allOf:
+            - $ref: '#/components/schemas/ESGScore'
+        additionalProperties: false
+    TemperatureScores:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          TemperatureScore:
+            allOf:
+            - $ref: '#/components/schemas/TemperatureScore'
         additionalProperties: false
   securitySchemes:
     basic:

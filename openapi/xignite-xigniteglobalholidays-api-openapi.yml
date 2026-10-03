@@ -667,6 +667,165 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    ExchangeStatus:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: boolean
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    IntegerResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ExchangeHours:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          IsOpen:
+            type: boolean
+          OpenTime:
+            type:
+            - string
+            - 'null'
+          CloseTime:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
+    Currency:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CurrencyCode:
+            type:
+            - string
+            - 'null'
+          CountryCode:
+            type:
+            - string
+            - 'null'
+          RelatedFinancialCentre:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Phase:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        Start:
+          type:
+          - string
+          - 'null'
+        End:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Holiday:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Location:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          FullHoliday:
+            type: boolean
+          EarlyClose:
+            type: boolean
+        additionalProperties: false
+    StringResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    FinancialCenter:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FinancialCenterCode:
+            type:
+            - string
+            - 'null'
+          CurrencyCode:
+            type:
+            - string
+            - 'null'
+          CountryCode:
+            type:
+            - string
+            - 'null'
+          FinancialCenterName:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ExchangeDateTime:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
     ExchangeSchedule:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -691,7 +850,7 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    ExchangeStatus:
+    Exchange:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -700,16 +859,11 @@ components:
             type:
             - string
             - 'null'
-          Open:
-            type: boolean
+          Name:
+            type:
+            - string
+            - 'null'
         additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
     ExchangePhases:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -742,42 +896,6 @@ components:
             - 'null'
             items:
               $ref: '#/components/schemas/Phase'
-        additionalProperties: false
-    FinancialCenter:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FinancialCenterCode:
-            type:
-            - string
-            - 'null'
-          CurrencyCode:
-            type:
-            - string
-            - 'null'
-          CountryCode:
-            type:
-            - string
-            - 'null'
-          FinancialCenterName:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    Exchange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
         additionalProperties: false
     SettlementSchedule:
       allOf:
@@ -815,124 +933,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
-    StringResult:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    Phase:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        Start:
-          type:
-          - string
-          - 'null'
-        End:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    IntegerResult:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    Holiday:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Location:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
-          FullHoliday:
-            type: boolean
-          EarlyClose:
-            type: boolean
-        additionalProperties: false
-    ExchangeDateTime:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          UTCOffset:
-            type: number
-            format: double
-        additionalProperties: false
-    Currency:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CurrencyCode:
-            type:
-            - string
-            - 'null'
-          CountryCode:
-            type:
-            - string
-            - 'null'
-          RelatedFinancialCentre:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    ExchangeHours:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          IsOpen:
-            type: boolean
-          OpenTime:
-            type:
-            - string
-            - 'null'
-          CloseTime:
-            type:
-            - string
-            - 'null'
-          UTCOffset:
-            type: number
-            format: double
-        additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

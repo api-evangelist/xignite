@@ -1107,207 +1107,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    ForwardRateDescription:
-      type: object
-      properties:
-        BaseCurrency:
-          type:
-          - string
-          - 'null'
-        QuoteCurrency:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Expirations:
-          type:
-          - array
-          - 'null'
-          items:
-            type: string
-      additionalProperties: false
-    OfficialRates:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CountryList:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/OfficialCountry'
-        additionalProperties: false
-    OfficialCountry:
-      type: object
-      properties:
-        Country:
-          type:
-          - string
-          - 'null'
-        OfficialCurrencies:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/OfficialCurrency'
-      additionalProperties: false
-    RateTableLine:
-      type: object
-      properties:
-        BaseCurrency:
-          type:
-          - string
-          - 'null'
-        Columns:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/QuoteCurrencyItem'
-      additionalProperties: false
-    ForwardContract:
-      type: object
-      properties:
-        Bid:
-          type: number
-          format: double
-        Mid:
-          type: number
-          format: double
-        Ask:
-          type: number
-          format: double
-        SpotRate:
-          type: number
-          format: double
-        Points:
-          type: number
-          format: double
-      additionalProperties: false
-    HistoricalRateBidAsk:
-      allOf:
-      - $ref: '#/components/schemas/HistoricalRate'
-      - type: object
-        properties:
-          Bid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    QuoteCurrencyItem:
-      type: object
-      properties:
-        QuoteCurrency:
-          type:
-          - string
-          - 'null'
-        Rate:
-          type: number
-          format: double
-      additionalProperties: false
-    RateConversion:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FromCurrencySymbol:
-            type:
-            - string
-            - 'null'
-          FromCurrencyName:
-            type:
-            - string
-            - 'null'
-          ToCurrencySymbol:
-            type:
-            - string
-            - 'null'
-          ToCurrencyName:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          Amount:
-            type: number
-            format: double
-          Result:
-            type: number
-            format: double
-          Rate:
-            type: number
-            format: double
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    Rate:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          BaseCurrency:
-            type:
-            - string
-            - 'null'
-          QuoteCurrency:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          QuoteType:
-            type:
-            - string
-            - 'null'
-          Bid:
-            type: number
-            format: double
-          Mid:
-            type: number
-            format: double
-          Ask:
-            type: number
-            format: double
-          Spread:
-            type: number
-            format: double
-          Text:
-            type:
-            - string
-            - 'null'
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
     OutcomeTypes:
       enum:
       - Success
@@ -1338,66 +1137,47 @@ components:
             items:
               $ref: '#/components/schemas/ChartBar'
         additionalProperties: false
-    ForwardRate:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          BaseCurrency:
-            type:
-            - string
-            - 'null'
-          QuoteCurrency:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          QuoteType:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          ForwardRates:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ForwardContract'
-        additionalProperties: false
-    RateTable:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Lines:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/RateTableLine'
-        additionalProperties: false
-    ForwardRateList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ForwardRateDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ForwardRateDescription'
-        additionalProperties: false
+    Currency:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Plural:
+          type:
+          - string
+          - 'null'
+        Active:
+          type: boolean
+        Digital:
+          type: boolean
+        Message:
+          type:
+          - string
+          - 'null'
+        Countries:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/Country'
+      additionalProperties: false
+    QuoteCurrencyItem:
+      type: object
+      properties:
+        QuoteCurrency:
+          type:
+          - string
+          - 'null'
+        Rate:
+          type: number
+          format: double
+      additionalProperties: false
     OfficialCurrency:
       type: object
       properties:
@@ -1412,68 +1192,20 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    Common:
+    RateTableLine:
       type: object
       properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
+        BaseCurrency:
           type:
           - string
           - 'null'
-        Message:
+        Columns:
           type:
-          - string
+          - array
           - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
+          items:
+            $ref: '#/components/schemas/QuoteCurrencyItem'
       additionalProperties: false
-    Bar:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          StartDate:
-            type:
-            - string
-            - 'null'
-          StartTime:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          EndTime:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: number
-            format: double
-          High:
-            type: number
-            format: double
-          Low:
-            type: number
-            format: double
-          Close:
-            type: number
-            format: double
-          Average:
-            type: number
-            format: double
-          Volume:
-            type: number
-            format: double
-        additionalProperties: false
     CurrencyDescription:
       type: object
       properties:
@@ -1490,54 +1222,17 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    HistoricalRate:
+    OfficialRates:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          BaseCurrency:
+          CountryList:
             type:
-            - string
+            - array
             - 'null'
-          QuoteCurrency:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          StartDate:
-            type:
-            - string
-            - 'null'
-          StartTime:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          EndTime:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: number
-            format: double
-          High:
-            type: number
-            format: double
-          Low:
-            type: number
-            format: double
-          Close:
-            type: number
-            format: double
-          Average:
-            type: number
-            format: double
+            items:
+              $ref: '#/components/schemas/OfficialCountry'
         additionalProperties: false
     ChartBar:
       type: object
@@ -1597,6 +1292,208 @@ components:
           type: number
           format: double
       additionalProperties: false
+    RateTable:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Lines:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/RateTableLine'
+        additionalProperties: false
+    ForwardRate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BaseCurrency:
+            type:
+            - string
+            - 'null'
+          QuoteCurrency:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          QuoteType:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          ForwardRates:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ForwardContract'
+        additionalProperties: false
+    RateConversion:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FromCurrencySymbol:
+            type:
+            - string
+            - 'null'
+          FromCurrencyName:
+            type:
+            - string
+            - 'null'
+          ToCurrencySymbol:
+            type:
+            - string
+            - 'null'
+          ToCurrencyName:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Amount:
+            type: number
+            format: double
+          Result:
+            type: number
+            format: double
+          Rate:
+            type: number
+            format: double
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ForwardContract:
+      type: object
+      properties:
+        Bid:
+          type: number
+          format: double
+        Mid:
+          type: number
+          format: double
+        Ask:
+          type: number
+          format: double
+        SpotRate:
+          type: number
+          format: double
+        Points:
+          type: number
+          format: double
+      additionalProperties: false
+    OfficialCountry:
+      type: object
+      properties:
+        Country:
+          type:
+          - string
+          - 'null'
+        OfficialCurrencies:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/OfficialCurrency'
+      additionalProperties: false
+    ForwardRateList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ForwardRateDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ForwardRateDescription'
+        additionalProperties: false
+    ForwardRateDescription:
+      type: object
+      properties:
+        BaseCurrency:
+          type:
+          - string
+          - 'null'
+        QuoteCurrency:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Expirations:
+          type:
+          - array
+          - 'null'
+          items:
+            type: string
+      additionalProperties: false
+    Bar:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          StartTime:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          EndTime:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: number
+            format: double
+          High:
+            type: number
+            format: double
+          Low:
+            type: number
+            format: double
+          Close:
+            type: number
+            format: double
+          Average:
+            type: number
+            format: double
+          Volume:
+            type: number
+            format: double
+        additionalProperties: false
     Currencies:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1621,35 +1518,138 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    Currency:
+    Rate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BaseCurrency:
+            type:
+            - string
+            - 'null'
+          QuoteCurrency:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          QuoteType:
+            type:
+            - string
+            - 'null'
+          Bid:
+            type: number
+            format: double
+          Mid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          Spread:
+            type: number
+            format: double
+          Text:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    HistoricalRate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          BaseCurrency:
+            type:
+            - string
+            - 'null'
+          QuoteCurrency:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          StartTime:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          EndTime:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: number
+            format: double
+          High:
+            type: number
+            format: double
+          Low:
+            type: number
+            format: double
+          Close:
+            type: number
+            format: double
+          Average:
+            type: number
+            format: double
+        additionalProperties: false
+    HistoricalRateBidAsk:
+      allOf:
+      - $ref: '#/components/schemas/HistoricalRate'
+      - type: object
+        properties:
+          Bid:
+            type: number
+            format: double
+          Ask:
+            type: number
+            format: double
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Common:
       type: object
       properties:
-        Symbol:
+        Delay:
+          type: number
+          format: double
+        Identity:
           type:
           - string
           - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Plural:
-          type:
-          - string
-          - 'null'
-        Active:
-          type: boolean
-        Digital:
-          type: boolean
         Message:
           type:
           - string
           - 'null'
-        Countries:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/Country'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
   securitySchemes:
     basic:

@@ -43,6 +43,37 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    FileDownload:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          Url:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    CloudFile:
+      allOf:
+      - $ref: '#/components/schemas/FileDownload'
+      - type: object
+        properties:
+          FileName:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     Common:
       type: object
       properties:
@@ -61,37 +92,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
-    CloudFile:
-      allOf:
-      - $ref: '#/components/schemas/FileDownload'
-      - type: object
-        properties:
-          FileName:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    FileDownload:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          Url:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
   securitySchemes:
     basic:
       type: apiKey
