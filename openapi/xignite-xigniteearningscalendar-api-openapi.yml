@@ -476,39 +476,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    BoardMeeting:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    EarningCalendarDay:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Region:
-            type:
-            - string
-            - 'null'
-          ExchangeDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeDescription'
-        additionalProperties: false
     ExchangeDescription:
       type: object
       properties:
@@ -521,12 +488,12 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    ConferenceCallInformation:
+    EarningCalendarDay:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    EarningCalendar:
+    ConferenceCallInformation:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -536,12 +503,50 @@ components:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
     SecurityItemsSets:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
     EarningCalendarItem:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    EarningDates:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ReplayInformation:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    EarningCalendar:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    BoardMeeting:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -566,16 +571,29 @@ components:
             items:
               $ref: '#/components/schemas/SymbolDescription'
         additionalProperties: false
-    Announcement:
+    ExchangeList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
+        properties:
+          Region:
+            type:
+            - string
+            - 'null'
+          ExchangeDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeDescription'
         additionalProperties: false
-    ReplayInformation:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
     SymbolDescription:
       type: object
       properties:
@@ -612,30 +630,12 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    EarningDates:
+    FundamentalTypesItems:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    FundamentalTypesItems:
+    Announcement:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object

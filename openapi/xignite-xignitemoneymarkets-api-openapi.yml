@@ -806,24 +806,7 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    SwapRateExtended:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
     ForwardRateAgreement:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    SwapRateDescription:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -833,12 +816,12 @@ components:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    RateDescription:
+    SwapRateDescription:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         additionalProperties: false
-    SwapRate:
+    SwapRateExtended:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -861,7 +844,24 @@ components:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
+    SwapRate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
     InterestRate:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    RateDescription:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object

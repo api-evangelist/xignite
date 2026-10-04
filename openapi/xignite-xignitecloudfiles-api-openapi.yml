@@ -43,13 +43,16 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
+    CloudFile:
+      allOf:
+      - $ref: '#/components/schemas/FileDownload'
+      - type: object
+        properties:
+          FileName:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     FileDownload:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -64,16 +67,13 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    CloudFile:
-      allOf:
-      - $ref: '#/components/schemas/FileDownload'
-      - type: object
-        properties:
-          FileName:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
     Common:
       type: object
       properties:

@@ -1275,21 +1275,18 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    AbstractPublicWebServiceObj:
+    Statistics:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          DataProvider:
-            allOf:
-            - $ref: '#/components/schemas/DataProviders'
+          Count:
+            type: integer
+            format: int64
+          Exchange:
+            type:
+            - string
+            - 'null'
         additionalProperties: false
     Industries:
       enum:
@@ -1510,18 +1507,131 @@ components:
       - DiversifiedUtilitities
       - WaterUtilities
       type: string
-    AlternateIdentifierTypes:
+    InstrumentRelatedTypes:
       enum:
-      - Unknown
-      - Symbol
-      - CUSIP
-      - CIK
-      - Valoren
-      - SEDOL
-      - DataSourceIdentifier
-      - ISIN
-      - AlternateSymbol
+      - None
+      - Securities
       type: string
+    InstrumentClasses:
+      enum:
+      - Bond
+      - Indices
+      - Stock
+      - Other
+      - StructuredProduct
+      - Fund
+      - MoneyMarket
+      - Derivative
+      - Currency
+      - Technical
+      - Commodity
+      - CurrencyForward
+      - InterestRateSwaps
+      - DepositoryReceipt
+      - ExchangeTradedFund
+      - PreferredShares
+      - CoveredWarrant
+      - Warrant
+      - Units
+      - ExchangeTradedCommodity
+      - All
+      type: string
+    Record:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          CUSIP:
+            type:
+            - string
+            - 'null'
+          CIK:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type:
+            - string
+            - 'null'
+          ISIN:
+            type:
+            - string
+            - 'null'
+          SEDOL:
+            type:
+            - string
+            - 'null'
+          CFICode:
+            type:
+            - string
+            - 'null'
+          InstrumentClass:
+            type:
+            - string
+            - 'null'
+          ExchangeName:
+            type:
+            - string
+            - 'null'
+          Sector:
+            type:
+            - string
+            - 'null'
+          Industry:
+            type:
+            - string
+            - 'null'
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Currency:
+            type:
+            - string
+            - 'null'
+          ActiveDate:
+            type:
+            - string
+            - 'null'
+          InactiveDate:
+            type:
+            - string
+            - 'null'
+          LastUpdateDate:
+            type:
+            - string
+            - 'null'
+          HomeTradingPlace:
+            type: boolean
+          CompanyIdentifier:
+            type:
+            - string
+            - 'null'
+          FIGI:
+            type:
+            - string
+            - 'null'
+          CompositeFIGI:
+            type:
+            - string
+            - 'null'
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     IdentifiersByExchange:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1549,6 +1659,120 @@ components:
             items:
               $ref: '#/components/schemas/IdentifierRecord'
         additionalProperties: false
+    PossibleValue:
+      type: object
+      properties:
+        ProviderValue:
+          type:
+          - string
+          - 'null'
+        XigniteValue:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    LookupItems:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          Securities:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/LookUpSecurity'
+        additionalProperties: false
+    Sectors:
+      enum:
+      - Unknown
+      - BasicMaterials
+      - Conglomerates
+      - ConsumerGoods
+      - Financial
+      - Healthcare
+      - IndustrialGoods
+      - Services
+      - Technology
+      - Utilities
+      type: string
+    SymbolChangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          DateTime:
+            type:
+            - string
+            - 'null'
+          SymbolChanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/SymbolChange'
+        additionalProperties: false
+    DataProviders:
+      enum:
+      - XigniteComposite
+      - Telekurs
+      - LegacyXignite
+      - ExchangeWebsite
+      - FactSet
+      - ManualXignite
+      type: string
+    SymbolChange:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        OldSymbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        OldName:
+          type:
+          - string
+          - 'null'
+        Exchange:
+          type:
+          - string
+          - 'null'
+        OldExchange:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        OldCurrency:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        InstrumentClass:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     Security:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1618,19 +1842,27 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    DataProviders:
-      enum:
-      - XigniteComposite
-      - Telekurs
-      - LegacyXignite
-      - ExchangeWebsite
-      - FactSet
-      - ManualXignite
-      type: string
-    LegacyExchangeMapping:
+    Classification:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
+        properties:
+          Industry:
+            type:
+            - string
+            - 'null'
+          Sector:
+            type:
+            - string
+            - 'null'
+          Scheme:
+            type:
+            - string
+            - 'null'
+          ClassificationCode:
+            type:
+            - string
+            - 'null'
         additionalProperties: false
     IdentifierTypes:
       enum:
@@ -1643,46 +1875,57 @@ components:
       - FIGI
       - CompositeFIGI
       type: string
-    PossibleValue:
+    PossibleValues:
+      allOf:
+      - $ref: '#/components/schemas/AbstractPublicWebServiceObj'
+      - type: object
+        properties:
+          PossibleValuesOf:
+            type:
+            - string
+            - 'null'
+          Values:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/PossibleValue'
+        additionalProperties: false
+    IssuerRelatedTypes:
+      enum:
+      - None
+      - Instruments
+      - InstrumentsAndSecurities
+      type: string
+    LegacyExchangeMapping:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    AbstractPublicWebServiceObj:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          DataProvider:
+            allOf:
+            - $ref: '#/components/schemas/DataProviders'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    LookUpSecurity:
       type: object
       properties:
-        ProviderValue:
+        CIK:
           type:
           - string
           - 'null'
-        XigniteValue:
-          type:
-          - string
-          - 'null'
-        Description:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    SymbolChange:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        OldSymbol:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        OldName:
-          type:
-          - string
-          - 'null'
-        Exchange:
-          type:
-          - string
-          - 'null'
-        OldExchange:
+        CUSIP:
           type:
           - string
           - 'null'
@@ -1690,11 +1933,31 @@ components:
           type:
           - string
           - 'null'
-        OldCurrency:
+        Symbol:
           type:
           - string
           - 'null'
-        Type:
+        ISIN:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        FIGI:
+          type:
+          - string
+          - 'null'
+        CompositeFIGI:
+          type:
+          - string
+          - 'null'
+        Name:
           type:
           - string
           - 'null'
@@ -1702,75 +1965,28 @@ components:
           type:
           - string
           - 'null'
-      additionalProperties: false
-    Sectors:
-      enum:
-      - Unknown
-      - BasicMaterials
-      - Conglomerates
-      - ConsumerGoods
-      - Financial
-      - Healthcare
-      - IndustrialGoods
-      - Services
-      - Technology
-      - Utilities
-      type: string
-    InstrumentClasses:
-      enum:
-      - Bond
-      - Indices
-      - Stock
-      - Other
-      - StructuredProduct
-      - Fund
-      - MoneyMarket
-      - Derivative
-      - Currency
-      - Technical
-      - Commodity
-      - CurrencyForward
-      - InterestRateSwaps
-      - DepositoryReceipt
-      - ExchangeTradedFund
-      - PreferredShares
-      - CoveredWarrant
-      - Warrant
-      - Units
-      - ExchangeTradedCommodity
-      - All
-      type: string
-    LookupItems:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          Securities:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/LookUpSecurity'
-        additionalProperties: false
-    CustomAttribute:
-      type: object
-      properties:
-        Name:
+        Market:
           type:
           - string
           - 'null'
-        DataType:
+        MarketIdentificationCode:
           type:
           - string
           - 'null'
-        Value:
+        Sector:
           type:
           - string
           - 'null'
+        Industry:
+          type:
+          - string
+          - 'null'
+        HomeTradingPlace:
+          type: boolean
+        Active:
+          type: boolean
+        MostLiquidExchange:
+          type: boolean
       additionalProperties: false
     Instrument:
       allOf:
@@ -1842,19 +2058,6 @@ components:
           DataProvider:
             allOf:
             - $ref: '#/components/schemas/DataProviders'
-        additionalProperties: false
-    Statistics:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Count:
-            type: integer
-            format: int64
-          Exchange:
-            type:
-            - string
-            - 'null'
         additionalProperties: false
     Exchanges:
       enum:
@@ -2881,130 +3084,43 @@ components:
       - _GIF
       - _MSCI
       type: string
-    Classification:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Industry:
-            type:
-            - string
-            - 'null'
-          Sector:
-            type:
-            - string
-            - 'null'
-          Scheme:
-            type:
-            - string
-            - 'null'
-          ClassificationCode:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    IssuerRelatedTypes:
-      enum:
-      - None
-      - Instruments
-      - InstrumentsAndSecurities
-      type: string
-    Record:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
-          CUSIP:
-            type:
-            - string
-            - 'null'
-          CIK:
-            type:
-            - string
-            - 'null'
-          Valoren:
-            type:
-            - string
-            - 'null'
-          ISIN:
-            type:
-            - string
-            - 'null'
-          SEDOL:
-            type:
-            - string
-            - 'null'
-          CFICode:
-            type:
-            - string
-            - 'null'
-          InstrumentClass:
-            type:
-            - string
-            - 'null'
-          ExchangeName:
-            type:
-            - string
-            - 'null'
-          Sector:
-            type:
-            - string
-            - 'null'
-          Industry:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-          ActiveDate:
-            type:
-            - string
-            - 'null'
-          InactiveDate:
-            type:
-            - string
-            - 'null'
-          LastUpdateDate:
-            type:
-            - string
-            - 'null'
-          HomeTradingPlace:
-            type: boolean
-          CompanyIdentifier:
-            type:
-            - string
-            - 'null'
-          FIGI:
-            type:
-            - string
-            - 'null'
-          CompositeFIGI:
-            type:
-            - string
-            - 'null'
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    AlternateSecurityIdentifier:
+      type: object
+      properties:
+        AlternateIdentifier:
+          type:
+          - string
+          - 'null'
+        IdentifierType:
+          allOf:
+          - $ref: '#/components/schemas/AlternateIdentifierTypes'
+        StartDate:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     Issuer:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -3070,112 +3186,17 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    PossibleValues:
-      allOf:
-      - $ref: '#/components/schemas/AbstractPublicWebServiceObj'
-      - type: object
-        properties:
-          PossibleValuesOf:
-            type:
-            - string
-            - 'null'
-          Values:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/PossibleValue'
-        additionalProperties: false
-    SymbolChangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          DateTime:
-            type:
-            - string
-            - 'null'
-          SymbolChanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/SymbolChange'
-        additionalProperties: false
-    LookUpSecurity:
-      type: object
-      properties:
-        CIK:
-          type:
-          - string
-          - 'null'
-        CUSIP:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        SEDOL:
-          type:
-          - string
-          - 'null'
-        FIGI:
-          type:
-          - string
-          - 'null'
-        CompositeFIGI:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        InstrumentClass:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        Sector:
-          type:
-          - string
-          - 'null'
-        Industry:
-          type:
-          - string
-          - 'null'
-        HomeTradingPlace:
-          type: boolean
-        Active:
-          type: boolean
-        MostLiquidExchange:
-          type: boolean
-      additionalProperties: false
-    InstrumentRelatedTypes:
+    AlternateIdentifierTypes:
       enum:
-      - None
-      - Securities
+      - Unknown
+      - Symbol
+      - CUSIP
+      - CIK
+      - Valoren
+      - SEDOL
+      - DataSourceIdentifier
+      - ISIN
+      - AlternateSymbol
       type: string
     IdentifierRecord:
       type: object
@@ -3189,42 +3210,21 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    AlternateSecurityIdentifier:
+    CustomAttribute:
       type: object
       properties:
-        AlternateIdentifier:
+        Name:
           type:
           - string
           - 'null'
-        IdentifierType:
-          allOf:
-          - $ref: '#/components/schemas/AlternateIdentifierTypes'
-        StartDate:
+        DataType:
           type:
           - string
           - 'null'
-        EndDate:
+        Value:
           type:
           - string
           - 'null'
-      additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
   securitySchemes:
     basic:

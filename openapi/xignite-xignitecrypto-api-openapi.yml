@@ -643,33 +643,60 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    TopCryptoHeadlines:
+    HistoricalQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          NewsHeadlines:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          StartDateTime:
+            type:
+            - string
+            - 'null'
+          EndDateTime:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: number
+            format: decimal
+          High:
+            type: number
+            format: decimal
+          Low:
+            type: number
+            format: decimal
+          Close:
+            type: number
+            format: decimal
+          Volume:
+            type: number
+            format: decimal
+          Change:
+            type: number
+            format: decimal
+          PercentChange:
+            type: number
+            format: decimal
+          Currency:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ReferenceDataList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ReferenceDescriptions:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/NewsHeadline'
-        additionalProperties: false
-    CryptoExchangeQuote:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeQuote:
-            allOf:
-            - $ref: '#/components/schemas/ExchangeQuote'
+              $ref: '#/components/schemas/ReferenceDescription'
         additionalProperties: false
     NewsSourceList:
       allOf:
@@ -692,6 +719,9 @@ components:
             allOf:
             - $ref: '#/components/schemas/ExchangeHistoricalQuote'
         additionalProperties: false
+    NewsCategory:
+      type: object
+      additionalProperties: false
     CryptoQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -701,186 +731,18 @@ components:
             allOf:
             - $ref: '#/components/schemas/Quote'
         additionalProperties: false
-    NewsSource:
-      type: object
-      properties:
-        Code:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Language:
-          type:
-          - string
-          - 'null'
-        Image:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ReferenceData:
+    CryptoList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          AsOfDate:
-            type:
-            - string
-            - 'null'
-          Type:
-            type:
-            - string
-            - 'null'
-          Value:
-            type:
-            - string
-            - 'null'
-          LastUpdated:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    Exchange:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Code:
-          type:
-          - string
-          - 'null'
-        Description:
-          type:
-          - string
-          - 'null'
-        Country:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ReferenceDescription:
-      type: object
-      properties:
-        Description:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ReferenceDataList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ReferenceDescriptions:
+          Cryptos:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/ReferenceDescription'
+              $ref: '#/components/schemas/Crypto'
         additionalProperties: false
-    CryptoHistoricalQuoteRange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CryptoHistoricalQuotes:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/HistoricalQuote'
-        additionalProperties: false
-    ChartBar:
-      type: object
-      properties:
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        Open:
-          type: number
-          format: decimal
-        High:
-          type: number
-          format: decimal
-        Low:
-          type: number
-          format: decimal
-        Close:
-          type: number
-          format: decimal
-        Trades:
-          type: integer
-          format: int32
-        Volume:
-          type: number
-          format: decimal
-        TWAP:
-          type: number
-          format: decimal
-        VWAP:
-          type: number
-          format: decimal
-      additionalProperties: false
-    NewsHeadline:
-      type: object
-      properties:
-        DateTime:
-          type:
-          - string
-          - 'null'
-        Title:
-          type:
-          - string
-          - 'null'
-        Url:
-          type:
-          - string
-          - 'null'
-        NewsSource:
-          allOf:
-          - $ref: '#/components/schemas/NewsSource'
-        Summary:
-          type:
-          - string
-          - 'null'
-        ImageUrl:
-          type:
-          - string
-          - 'null'
-        Tags:
-          type:
-          - array
-          - 'null'
-          items:
-            type: string
-        Categories:
-          type:
-          - array
-          - 'null'
-          items:
-            type: string
-      additionalProperties: false
-    NewsCategory:
-      type: object
-      additionalProperties: false
     ExchangeHistoricalQuote:
       type: object
       properties:
@@ -940,48 +802,29 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    HistoricalQuote:
+    NewsCategoryList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Symbol:
+          NewsCategories:
             type:
-            - string
+            - array
             - 'null'
-          StartDateTime:
+            items:
+              $ref: '#/components/schemas/NewsCategory'
+        additionalProperties: false
+    CryptoHistoricalQuoteRange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CryptoHistoricalQuotes:
             type:
-            - string
+            - array
             - 'null'
-          EndDateTime:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: number
-            format: decimal
-          High:
-            type: number
-            format: decimal
-          Low:
-            type: number
-            format: decimal
-          Close:
-            type: number
-            format: decimal
-          Volume:
-            type: number
-            format: decimal
-          Change:
-            type: number
-            format: decimal
-          PercentChange:
-            type: number
-            format: decimal
-          Currency:
-            type:
-            - string
-            - 'null'
+            items:
+              $ref: '#/components/schemas/HistoricalQuote'
         additionalProperties: false
     ExchangeQuote:
       type: object
@@ -1062,99 +905,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    CryptoChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-          Exchange:
-            type:
-            - string
-            - 'null'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
-        additionalProperties: false
-    TopMarketHeadlines:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          NewsHeadlines:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/NewsHeadline'
-        additionalProperties: false
-    NewsCategoryList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          NewsCategories:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/NewsCategory'
-        additionalProperties: false
-    Crypto:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    ExchangeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchanges:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Exchange'
-        additionalProperties: false
-    CryptoHistoricalQuote:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          HistoricalQuote:
-            allOf:
-            - $ref: '#/components/schemas/HistoricalQuote'
-        additionalProperties: false
-    CryptoList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Cryptos:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Crypto'
-        additionalProperties: false
     Quote:
       type: object
       properties:
@@ -1208,7 +958,51 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    CryptoReferenceData:
+    Crypto:
+      type: object
+      properties:
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Exchange:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Code:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+        Country:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    TopCoinList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          TopCoins:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/TopCoin'
+        additionalProperties: false
+    CryptoChartBars:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -1217,13 +1011,58 @@ components:
             type:
             - string
             - 'null'
-          ReferenceDataSet:
+          Currency:
+            type:
+            - string
+            - 'null'
+          Exchange:
+            type:
+            - string
+            - 'null'
+          ChartBars:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/ReferenceData'
+              $ref: '#/components/schemas/ChartBar'
         additionalProperties: false
+    ExchangeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchanges:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Exchange'
+        additionalProperties: false
+    CryptoHistoricalQuote:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          HistoricalQuote:
+            allOf:
+            - $ref: '#/components/schemas/HistoricalQuote'
+        additionalProperties: false
+    ReferenceDescription:
+      type: object
+      properties:
+        Description:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
     TopCoin:
       type: object
       properties:
@@ -1246,17 +1085,110 @@ components:
           type: number
           format: decimal
       additionalProperties: false
-    TopCoinList:
+    ReferenceData:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          TopCoins:
+          AsOfDate:
+            type:
+            - string
+            - 'null'
+          Type:
+            type:
+            - string
+            - 'null'
+          Value:
+            type:
+            - string
+            - 'null'
+          LastUpdated:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    NewsHeadline:
+      type: object
+      properties:
+        DateTime:
+          type:
+          - string
+          - 'null'
+        Title:
+          type:
+          - string
+          - 'null'
+        Url:
+          type:
+          - string
+          - 'null'
+        NewsSource:
+          allOf:
+          - $ref: '#/components/schemas/NewsSource'
+        Summary:
+          type:
+          - string
+          - 'null'
+        ImageUrl:
+          type:
+          - string
+          - 'null'
+        Tags:
+          type:
+          - array
+          - 'null'
+          items:
+            type: string
+        Categories:
+          type:
+          - array
+          - 'null'
+          items:
+            type: string
+      additionalProperties: false
+    TopMarketHeadlines:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          NewsHeadlines:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/TopCoin'
+              $ref: '#/components/schemas/NewsHeadline'
+        additionalProperties: false
+    CryptoExchangeQuote:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeQuote:
+            allOf:
+            - $ref: '#/components/schemas/ExchangeQuote'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    CryptoReferenceData:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          ReferenceDataSet:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ReferenceData'
         additionalProperties: false
     Common:
       type: object
@@ -1275,6 +1207,74 @@ components:
         Outcome:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    NewsSource:
+      type: object
+      properties:
+        Code:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Language:
+          type:
+          - string
+          - 'null'
+        Image:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    TopCryptoHeadlines:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          NewsHeadlines:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/NewsHeadline'
+        additionalProperties: false
+    ChartBar:
+      type: object
+      properties:
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        Open:
+          type: number
+          format: decimal
+        High:
+          type: number
+          format: decimal
+        Low:
+          type: number
+          format: decimal
+        Close:
+          type: number
+          format: decimal
+        Trades:
+          type: integer
+          format: int32
+        Volume:
+          type: number
+          format: decimal
+        TWAP:
+          type: number
+          format: decimal
+        VWAP:
+          type: number
+          format: decimal
       additionalProperties: false
   securitySchemes:
     basic:
