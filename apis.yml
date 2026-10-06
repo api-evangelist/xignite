@@ -64,7 +64,7 @@ tags_raw:
 - ESG
 - News
 created: '2026-07-21'
-modified: '2026-07-22'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: xignite:xignite-global-quotes-api
@@ -518,6 +518,10 @@ apis:
   description: Bulk file delivery service behind Xignite's file products (historical equity prices, bonds,
     options, currencies, and corporate actions files), served from the cloudfiles.xignite.com service.
 common:
+- url: https://www.quodd.com/insights
+  type: Blog
+- url: https://www.quodd.com/insights/rss.xml
+  type: BlogRSS
 - type: DomainSecurity
   url: security/xignite-domain-security.yml
 - type: AgenticAccess
