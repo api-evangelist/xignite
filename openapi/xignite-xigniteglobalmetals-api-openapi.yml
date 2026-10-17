@@ -833,119 +833,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    Bar:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          StartDate:
-            type:
-            - string
-            - 'null'
-          StartTime:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          EndTime:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: number
-            format: double
-          High:
-            type: number
-            format: double
-          Low:
-            type: number
-            format: double
-          Close:
-            type: number
-            format: double
-          Average:
-            type: number
-            format: double
-          Volume:
-            type: number
-            format: double
-        additionalProperties: false
-    LondonFixing:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          QuoteType:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          Fixing:
-            type:
-            - string
-            - 'null'
-          Price:
-            type: number
-            format: double
-          Unit:
-            type:
-            - string
-            - 'null'
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    MetalDescription:
-      type: object
-      properties:
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Unit:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
     MetalQuote:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -996,24 +883,56 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    Common:
+    MetalDescription:
       type: object
       properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
+        Symbol:
           type:
           - string
           - 'null'
-        Message:
+        Currency:
           type:
           - string
           - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
+        Name:
+          type:
+          - string
+          - 'null'
+        Unit:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
+    MarketNews:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Headline:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+          Summary:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Url:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     Metal:
       type: object
       properties:
@@ -1036,142 +955,49 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    Metals:
+    Bar:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          MetalList:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Metal'
-        additionalProperties: false
-    BaseMetalPrice:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Name:
-            type:
-            - string
-            - 'null'
           Symbol:
             type:
             - string
             - 'null'
-          Currency:
+          StartDate:
             type:
             - string
             - 'null'
-          Date:
+          StartTime:
             type:
             - string
             - 'null'
-          Time:
+          EndDate:
             type:
             - string
             - 'null'
-          Price:
+          EndTime:
+            type:
+            - string
+            - 'null'
+          Open:
             type: number
             format: double
-          Unit:
-            type:
-            - string
-            - 'null'
-          Source:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    ChartBar:
-      type: object
-      properties:
-        StartDate:
-          type:
-          - string
-          - 'null'
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        Session:
-          type:
-          - string
-          - 'null'
-        AdjustmentRatio:
-          type: number
-          format: double
-      additionalProperties: false
-    MetalChartBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Timing:
-            type:
-            - string
-            - 'null'
-          PriceType:
-            type:
-            - string
-            - 'null'
-          MetalDescription:
-            allOf:
-            - $ref: '#/components/schemas/MetalDescription'
-          ChartBars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ChartBar'
+          High:
+            type: number
+            format: double
+          Low:
+            type: number
+            format: double
+          Close:
+            type: number
+            format: double
+          Average:
+            type: number
+            format: double
+          Volume:
+            type: number
+            format: double
         additionalProperties: false
     HistoricalMetalQuote:
       allOf:
@@ -1225,6 +1051,29 @@ components:
           Average:
             type: number
             format: double
+        additionalProperties: false
+    MetalChartBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Timing:
+            type:
+            - string
+            - 'null'
+          PriceType:
+            type:
+            - string
+            - 'null'
+          MetalDescription:
+            allOf:
+            - $ref: '#/components/schemas/MetalDescription'
+          ChartBars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ChartBar'
         additionalProperties: false
     ExtendedMetalQuote:
       allOf:
@@ -1301,20 +1150,24 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    MarketNews:
+    BaseMetalPrice:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Headline:
+          Name:
             type:
             - string
             - 'null'
-          Source:
+          Symbol:
             type:
             - string
             - 'null'
-          Summary:
+          Currency:
+            type:
+            - string
+            - 'null'
+          Date:
             type:
             - string
             - 'null'
@@ -1322,11 +1175,158 @@ components:
             type:
             - string
             - 'null'
-          Url:
+          Price:
+            type: number
+            format: double
+          Unit:
+            type:
+            - string
+            - 'null'
+          Source:
             type:
             - string
             - 'null'
         additionalProperties: false
+    Metals:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          MetalList:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Metal'
+        additionalProperties: false
+    LondonFixing:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Name:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          QuoteType:
+            type:
+            - string
+            - 'null'
+          Currency:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Fixing:
+            type:
+            - string
+            - 'null'
+          Price:
+            type: number
+            format: double
+          Unit:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    ChartBar:
+      type: object
+      properties:
+        StartDate:
+          type:
+          - string
+          - 'null'
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        Session:
+          type:
+          - string
+          - 'null'
+        AdjustmentRatio:
+          type: number
+          format: double
+      additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey

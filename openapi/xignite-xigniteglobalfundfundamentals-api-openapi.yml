@@ -1186,6 +1186,301 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    FundFeeSchedules:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          FeeSchedulesSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FeeSchedulesSet'
+        additionalProperties: false
+    HoldingsBreakdown:
+      allOf:
+      - $ref: '#/components/schemas/RecordBreakDownBase'
+      - type: object
+        properties:
+          HoldingSecurityName:
+            type:
+            - string
+            - 'null'
+          HoldingDetailTypeId:
+            type:
+            - string
+            - 'null'
+          HoldingSymbol:
+            type:
+            - string
+            - 'null'
+          HoldingISIN:
+            type:
+            - string
+            - 'null'
+          HoldingCUSIP:
+            type:
+            - string
+            - 'null'
+          HoldingSEDOL:
+            type:
+            - string
+            - 'null'
+          HoldingCountryCode:
+            type:
+            - string
+            - 'null'
+          HoldingCurrencyCode:
+            type:
+            - string
+            - 'null'
+          HoldingVendorIndustry:
+            type:
+            - string
+            - 'null'
+          HoldingWeighting:
+            type:
+            - string
+            - 'null'
+          HoldingNumberOfShare:
+            type:
+            - string
+            - 'null'
+          HoldingSharePercentage:
+            type:
+            - string
+            - 'null'
+          HoldingMarketValue:
+            type:
+            - string
+            - 'null'
+          HoldingCostBasis:
+            type:
+            - string
+            - 'null'
+          HoldingMaturityDate:
+            type:
+            - string
+            - 'null'
+          HoldingCoupon:
+            type:
+            - string
+            - 'null'
+          HoldingCreditQuality:
+            type:
+            - string
+            - 'null'
+          HoldingDuration:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    QuarterEndTrailingReturns:
+      type: object
+      properties:
+        QuarterEndTrailingReturnYTD:
+          type: number
+          format: double
+        QuarterEndTrailingReturnYTDSpecified:
+          type: boolean
+        QuarterEndTrailingReturnM1:
+          type: number
+          format: double
+        QuarterEndTrailingReturnM1Specified:
+          type: boolean
+        QuarterEndTrailingReturnM2:
+          type: number
+          format: double
+        QuarterEndTrailingReturnM2Specified:
+          type: boolean
+        QuarterEndTrailingReturnM3:
+          type: number
+          format: double
+        QuarterEndTrailingReturnM3Specified:
+          type: boolean
+        QuarterEndTrailingReturnM6:
+          type: number
+          format: double
+        QuarterEndTrailingReturnM6Specified:
+          type: boolean
+        QuarterEndTrailingReturnM9:
+          type: number
+          format: double
+        QuarterEndTrailingReturnM9Specified:
+          type: boolean
+        QuarterEndTrailingReturnY1:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY1Specified:
+          type: boolean
+        QuarterEndTrailingReturnY2:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY2Specified:
+          type: boolean
+        QuarterEndTrailingReturnY3:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY3Specified:
+          type: boolean
+        QuarterEndTrailingReturnY4:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY4Specified:
+          type: boolean
+        QuarterEndTrailingReturnY5:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY5Specified:
+          type: boolean
+        QuarterEndTrailingReturnY10:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY10Specified:
+          type: boolean
+        QuarterEndTrailingReturnY15:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY15Specified:
+          type: boolean
+        QuarterEndTrailingReturnY20:
+          type: number
+          format: double
+        QuarterEndTrailingReturnY20Specified:
+          type: boolean
+        QuarterEndTrailingReturnSinceInception:
+          type: number
+          format: double
+        QuarterEndTrailingReturnSinceInceptionSpecified:
+          type: boolean
+      additionalProperties: false
+    FundTypeList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FundTypes:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FundType'
+        additionalProperties: false
+    FundProfiles:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          ProfilesSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ProfilesSet'
+        additionalProperties: false
+    FundBreakdowns:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          Breakdowns:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Breakdown'
+        additionalProperties: false
+    BreakdownRecord:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Value:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    LoadAdjustedTrailingReturns:
+      type: object
+      properties:
+        LoadAdjustedTrailingReturnYTD:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnYTDSpecified:
+          type: boolean
+        LoadAdjustedTrailingReturnM1:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnM1Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnM3:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnM3Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnM6:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnM6Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY1:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY1Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY2:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY2Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY3:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY3Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY4:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY4Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY5:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY5Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY10:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY10Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY15:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY15Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnY20:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnY20Specified:
+          type: boolean
+        LoadAdjustedTrailingReturnSinceInception:
+          type: number
+          format: double
+        LoadAdjustedTrailingReturnSinceInceptionSpecified:
+          type: boolean
+      additionalProperties: false
     ExchangeDescription:
       type: object
       properties:
@@ -1202,33 +1497,130 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    FundFundamentalDescription:
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    FundDescription:
       type: object
       properties:
-        Type:
-          type:
-          - string
-          - 'null'
         Name:
           type:
           - string
           - 'null'
-        Unit:
+        Valoren:
           type:
           - string
           - 'null'
-        Description:
+        CUSIP:
           type:
           - string
           - 'null'
-        DataPackage:
+        SEDOL:
           type:
           - string
           - 'null'
-        Source:
+        ISIN:
           type:
           - string
           - 'null'
+        CIK:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        CountryOfSales:
+          type:
+          - string
+          - 'null'
+        CountryOfSalesCode:
+          type:
+          - string
+          - 'null'
+        CountryOfDomicile:
+          type:
+          - string
+          - 'null'
+        CountryOfDomicileCode:
+          type:
+          - string
+          - 'null'
+        ExchangeDescriptions:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/ExchangeDescription'
+      additionalProperties: false
+    FundNAV:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          Date:
+            type:
+            - string
+            - 'null'
+          NAV:
+            type: number
+            format: double
+          PreviousNAV:
+            type: number
+            format: double
+          Change:
+            type: number
+            format: double
+          PercentChange:
+            type: number
+            format: double
+          SevenDayYield:
+            type: number
+            format: double
+          PreviousSevenDayYield:
+            type: number
+            format: double
+          PremiumDiscount:
+            type: number
+            format: double
+          Currency:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    FeeSchedules:
+      type: object
+      properties:
+        MaxFee:
+          type:
+          - string
+          - 'null'
+        FeeSchedule:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/FeeSchedule'
       additionalProperties: false
     FundNAVHistory:
       allOf:
@@ -1265,28 +1657,568 @@ components:
             items:
               $ref: '#/components/schemas/NAVs'
         additionalProperties: false
-    FeeSchedulesSet:
+    QuarterEndTrailingReturnsSet:
       type: object
       properties:
-        Outcome:
+        QuarterEndPerformanceAsOfDate:
           type:
           - string
           - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        AsOfDate:
-          type:
-          - string
-          - 'null'
-        FeeScheduleType:
-          type:
-          - string
-          - 'null'
-        FeeSchedules:
+        QuarterEndTrailingReturns:
           allOf:
-          - $ref: '#/components/schemas/FeeSchedules'
+          - $ref: '#/components/schemas/QuarterEndTrailingReturns'
+        QuarterEndLoadAdjustedTrailingReturns:
+          allOf:
+          - $ref: '#/components/schemas/QuarterEndLoadAdjustedTrailingReturns'
+      additionalProperties: false
+    FundFundamentals:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          FundamentalsSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FundamentalsSet'
+        additionalProperties: false
+    FundFundamentalDescriptionList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FundFundamentalDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FundFundamentalDescription'
+        additionalProperties: false
+    MonthEndTrailingReturnsSet:
+      type: object
+      properties:
+        MonthEndPerformanceAsOfDate:
+          type:
+          - string
+          - 'null'
+        TrailingReturns:
+          allOf:
+          - $ref: '#/components/schemas/TrailingReturns'
+        LoadAdjustedTrailingReturns:
+          allOf:
+          - $ref: '#/components/schemas/LoadAdjustedTrailingReturns'
+      additionalProperties: false
+    ManagersSet:
+      type: object
+      properties:
+        PortfolioDate:
+          type:
+          - string
+          - 'null'
+        ManagerBreakdowns:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/ManagerBreakdown'
+      additionalProperties: false
+    Fund:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        SEDOL:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        CIK:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        CountryOfSales:
+          type:
+          - string
+          - 'null'
+        CountryOfSalesCode:
+          type:
+          - string
+          - 'null'
+        CountryOfDomicile:
+          type:
+          - string
+          - 'null'
+        CountryOfDomicileCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    FundManagers:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          ManagersSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ManagersSet'
+        additionalProperties: false
+    FundQuarterEndTrailingReturns:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          QuarterEndTrailingReturnsSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/QuarterEndTrailingReturnsSet'
+        additionalProperties: false
+    FundType:
+      type: object
+      properties:
+        Name:
+          type:
+          - string
+          - 'null'
+        Type:
+          type:
+          - string
+          - 'null'
+        LegalType:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    CountryList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CountryDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/CountryDescription'
+        additionalProperties: false
+    FundHoldings:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          HoldingsSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/HoldingsSet'
+        additionalProperties: false
+    TrailingReturns:
+      type: object
+      properties:
+        TrailingReturnYTD:
+          type: number
+          format: double
+        TrailingReturnYTDSpecified:
+          type: boolean
+        TrailingReturnM1:
+          type: number
+          format: double
+        TrailingReturnM1Specified:
+          type: boolean
+        TrailingReturnM2:
+          type: number
+          format: double
+        TrailingReturnM2Specified:
+          type: boolean
+        TrailingReturnM3:
+          type: number
+          format: double
+        TrailingReturnM3Specified:
+          type: boolean
+        TrailingReturnM6:
+          type: number
+          format: double
+        TrailingReturnM6Specified:
+          type: boolean
+        TrailingReturnM9:
+          type: number
+          format: double
+        TrailingReturnM9Specified:
+          type: boolean
+        TrailingReturnY1:
+          type: number
+          format: double
+        TrailingReturnY1Specified:
+          type: boolean
+        TrailingReturnY2:
+          type: number
+          format: double
+        TrailingReturnY2Specified:
+          type: boolean
+        TrailingReturnY3:
+          type: number
+          format: double
+        TrailingReturnY3Specified:
+          type: boolean
+        TrailingReturnY4:
+          type: number
+          format: double
+        TrailingReturnY4Specified:
+          type: boolean
+        TrailingReturnY5:
+          type: number
+          format: double
+        TrailingReturnY5Specified:
+          type: boolean
+        TrailingReturnY10:
+          type: number
+          format: double
+        TrailingReturnY10Specified:
+          type: boolean
+        TrailingReturnY15:
+          type: number
+          format: double
+        TrailingReturnY15Specified:
+          type: boolean
+        TrailingReturnY20:
+          type: number
+          format: double
+        TrailingReturnY20Specified:
+          type: boolean
+        TrailingReturnSinceInception:
+          type: number
+          format: double
+        TrailingReturnSinceInceptionSpecified:
+          type: boolean
+      additionalProperties: false
+    FundList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FundDescriptions:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FundDescription'
+        additionalProperties: false
+    QuarterEndLoadAdjustedTrailingReturns:
+      type: object
+      properties:
+        QuarterEndLoadAdjustedTrailingReturnYTD:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnYTDSpecified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnM1:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnM1Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnM3:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnM3Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnM6:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnM6Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY1:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY1Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY2:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY2Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY3:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY3Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY4:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY4Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY5:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY5Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY10:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY10Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY15:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY15Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnY20:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnY20Specified:
+          type: boolean
+        QuarterEndLoadAdjustedTrailingReturnSinceInception:
+          type: number
+          format: double
+        QuarterEndLoadAdjustedTrailingReturnSinceInceptionSpecified:
+          type: boolean
+      additionalProperties: false
+    FundFundamentalDescription:
+      type: object
+      properties:
+        Type:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Unit:
+          type:
+          - string
+          - 'null'
+        Description:
+          type:
+          - string
+          - 'null'
+        DataPackage:
+          type:
+          - string
+          - 'null'
+        Source:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    FundDividendHistory:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Identifier:
+            type:
+            - string
+            - 'null'
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          Dividends:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Dividend'
+        additionalProperties: false
+    Dividend:
+      type: object
+      properties:
+        Type:
+          type:
+          - string
+          - 'null'
+        PaymentFrequency:
+          type:
+          - string
+          - 'null'
+        ExDate:
+          type:
+          - string
+          - 'null'
+        PayDate:
+          type:
+          - string
+          - 'null'
+        RecordDate:
+          type:
+          - string
+          - 'null'
+        DeclaredDate:
+          type:
+          - string
+          - 'null'
+        DividendAmount:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    CountryDescription:
+      type: object
+      properties:
+        CountryName:
+          type:
+          - string
+          - 'null'
+        CountryCode:
+          type:
+          - string
+          - 'null'
+        Region:
+          type:
+          - string
+          - 'null'
+        MarketSize:
+          type:
+          - string
+          - 'null'
+        FundTypes:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/FundType'
+      additionalProperties: false
+    BreakdownSet:
+      type: object
+      properties:
+        BreakdownSetName:
+          type:
+          - string
+          - 'null'
+        BreakdownRecords:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/BreakdownRecord'
+      additionalProperties: false
+    Breakdown:
+      type: object
+      properties:
+        BreakdownType:
+          type:
+          - string
+          - 'null'
+        BreakdownSets:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/BreakdownSet'
+        PortfolioDate:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    HoldingsSet:
+      type: object
+      properties:
+        PortfolioDate:
+          type:
+          - string
+          - 'null'
+        Holdings:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/HoldingsBreakdown'
+      additionalProperties: false
+    NAVs:
+      type: object
+      properties:
+        CumulativeAdjustmentFactor:
+          type: number
+          format: double
+        UTCOffset:
+          type: number
+          format: double
+        Date:
+          type:
+          - string
+          - 'null'
+        NAV:
+          type: number
+          format: double
+        PreviousNAV:
+          type: number
+          format: double
+        Change:
+          type: number
+          format: double
+        PercentChange:
+          type: number
+          format: double
+        SevenDayYield:
+          type: number
+          format: double
+        PreviousSevenDayYield:
+          type: number
+          format: double
+        PremiumDiscount:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
       additionalProperties: false
     ProfileBreakdown:
       type: object
@@ -1392,144 +2324,23 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    NAVs:
+    Common:
       type: object
       properties:
-        CumulativeAdjustmentFactor:
+        Delay:
           type: number
           format: double
-        UTCOffset:
-          type: number
-          format: double
-        Date:
+        Identity:
           type:
           - string
           - 'null'
-        NAV:
-          type: number
-          format: double
-        PreviousNAV:
-          type: number
-          format: double
-        Change:
-          type: number
-          format: double
-        PercentChange:
-          type: number
-          format: double
-        SevenDayYield:
-          type: number
-          format: double
-        PreviousSevenDayYield:
-          type: number
-          format: double
-        PremiumDiscount:
-          type: number
-          format: double
-        Currency:
+        Message:
           type:
           - string
           - 'null'
-      additionalProperties: false
-    QuarterEndLoadAdjustedTrailingReturns:
-      type: object
-      properties:
-        QuarterEndLoadAdjustedTrailingReturnYTD:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnYTDSpecified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnM1:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnM1Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnM3:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnM3Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnM6:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnM6Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY1:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY1Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY2:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY2Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY3:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY3Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY4:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY4Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY5:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY5Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY10:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY10Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY15:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY15Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnY20:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnY20Specified:
-          type: boolean
-        QuarterEndLoadAdjustedTrailingReturnSinceInception:
-          type: number
-          format: double
-        QuarterEndLoadAdjustedTrailingReturnSinceInceptionSpecified:
-          type: boolean
-      additionalProperties: false
-    FundBreakdowns:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          Breakdowns:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Breakdown'
-        additionalProperties: false
-    FundType:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        LegalType:
-          type:
-          - string
-          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
     FeeSchedule:
       allOf:
@@ -1557,373 +2368,6 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    FundFundamentals:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          FundamentalsSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/FundamentalsSet'
-        additionalProperties: false
-    FundFeeSchedules:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          FeeSchedulesSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/FeeSchedulesSet'
-        additionalProperties: false
-    FundProfiles:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          ProfilesSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ProfilesSet'
-        additionalProperties: false
-    Fund:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        CUSIP:
-          type:
-          - string
-          - 'null'
-        SEDOL:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        CIK:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        CountryOfSales:
-          type:
-          - string
-          - 'null'
-        CountryOfSalesCode:
-          type:
-          - string
-          - 'null'
-        CountryOfDomicile:
-          type:
-          - string
-          - 'null'
-        CountryOfDomicileCode:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    FundManagers:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          ManagersSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ManagersSet'
-        additionalProperties: false
-    FundMonthEndTrailingReturns:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          MonthEndTrailingReturnsSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/MonthEndTrailingReturnsSet'
-        additionalProperties: false
-    FundHoldings:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          HoldingsSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/HoldingsSet'
-        additionalProperties: false
-    FundTypeList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FundTypes:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/FundType'
-        additionalProperties: false
-    HoldingsBreakdown:
-      allOf:
-      - $ref: '#/components/schemas/RecordBreakDownBase'
-      - type: object
-        properties:
-          HoldingSecurityName:
-            type:
-            - string
-            - 'null'
-          HoldingDetailTypeId:
-            type:
-            - string
-            - 'null'
-          HoldingSymbol:
-            type:
-            - string
-            - 'null'
-          HoldingISIN:
-            type:
-            - string
-            - 'null'
-          HoldingCUSIP:
-            type:
-            - string
-            - 'null'
-          HoldingSEDOL:
-            type:
-            - string
-            - 'null'
-          HoldingCountryCode:
-            type:
-            - string
-            - 'null'
-          HoldingCurrencyCode:
-            type:
-            - string
-            - 'null'
-          HoldingVendorIndustry:
-            type:
-            - string
-            - 'null'
-          HoldingWeighting:
-            type:
-            - string
-            - 'null'
-          HoldingNumberOfShare:
-            type:
-            - string
-            - 'null'
-          HoldingSharePercentage:
-            type:
-            - string
-            - 'null'
-          HoldingMarketValue:
-            type:
-            - string
-            - 'null'
-          HoldingCostBasis:
-            type:
-            - string
-            - 'null'
-          HoldingMaturityDate:
-            type:
-            - string
-            - 'null'
-          HoldingCoupon:
-            type:
-            - string
-            - 'null'
-          HoldingCreditQuality:
-            type:
-            - string
-            - 'null'
-          HoldingDuration:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    FeeSchedules:
-      type: object
-      properties:
-        MaxFee:
-          type:
-          - string
-          - 'null'
-        FeeSchedule:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/FeeSchedule'
-      additionalProperties: false
-    Dividend:
-      type: object
-      properties:
-        Type:
-          type:
-          - string
-          - 'null'
-        PaymentFrequency:
-          type:
-          - string
-          - 'null'
-        ExDate:
-          type:
-          - string
-          - 'null'
-        PayDate:
-          type:
-          - string
-          - 'null'
-        RecordDate:
-          type:
-          - string
-          - 'null'
-        DeclaredDate:
-          type:
-          - string
-          - 'null'
-        DividendAmount:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    CountryList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CountryDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/CountryDescription'
-        additionalProperties: false
-    QuarterEndTrailingReturnsSet:
-      type: object
-      properties:
-        QuarterEndPerformanceAsOfDate:
-          type:
-          - string
-          - 'null'
-        QuarterEndTrailingReturns:
-          allOf:
-          - $ref: '#/components/schemas/QuarterEndTrailingReturns'
-        QuarterEndLoadAdjustedTrailingReturns:
-          allOf:
-          - $ref: '#/components/schemas/QuarterEndLoadAdjustedTrailingReturns'
-      additionalProperties: false
-    BreakdownSet:
-      type: object
-      properties:
-        BreakdownSetName:
-          type:
-          - string
-          - 'null'
-        BreakdownRecords:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/BreakdownRecord'
-      additionalProperties: false
-    CountryDescription:
-      type: object
-      properties:
-        CountryName:
-          type:
-          - string
-          - 'null'
-        CountryCode:
-          type:
-          - string
-          - 'null'
-        Region:
-          type:
-          - string
-          - 'null'
-        MarketSize:
-          type:
-          - string
-          - 'null'
-        FundTypes:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/FundType'
-      additionalProperties: false
-    RecordBreakDownBase:
-      type: object
-      properties:
-        RecordNumber:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
     FundamentalsSet:
       type: object
       properties:
@@ -1941,318 +2385,6 @@ components:
           - 'null'
           items:
             $ref: '#/components/schemas/Fundamental'
-      additionalProperties: false
-    FundNAV:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          Date:
-            type:
-            - string
-            - 'null'
-          NAV:
-            type: number
-            format: double
-          PreviousNAV:
-            type: number
-            format: double
-          Change:
-            type: number
-            format: double
-          PercentChange:
-            type: number
-            format: double
-          SevenDayYield:
-            type: number
-            format: double
-          PreviousSevenDayYield:
-            type: number
-            format: double
-          PremiumDiscount:
-            type: number
-            format: double
-          Currency:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    Breakdown:
-      type: object
-      properties:
-        BreakdownType:
-          type:
-          - string
-          - 'null'
-        BreakdownSets:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/BreakdownSet'
-        PortfolioDate:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    MonthEndTrailingReturnsSet:
-      type: object
-      properties:
-        MonthEndPerformanceAsOfDate:
-          type:
-          - string
-          - 'null'
-        TrailingReturns:
-          allOf:
-          - $ref: '#/components/schemas/TrailingReturns'
-        LoadAdjustedTrailingReturns:
-          allOf:
-          - $ref: '#/components/schemas/LoadAdjustedTrailingReturns'
-      additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    FundDividendHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          Dividends:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Dividend'
-        additionalProperties: false
-    FundList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FundDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/FundDescription'
-        additionalProperties: false
-    BreakdownRecord:
-      type: object
-      properties:
-        Name:
-          type:
-          - string
-          - 'null'
-        Value:
-          type:
-          - string
-          - 'null'
-      additionalProperties: false
-    TrailingReturns:
-      type: object
-      properties:
-        TrailingReturnYTD:
-          type: number
-          format: double
-        TrailingReturnYTDSpecified:
-          type: boolean
-        TrailingReturnM1:
-          type: number
-          format: double
-        TrailingReturnM1Specified:
-          type: boolean
-        TrailingReturnM2:
-          type: number
-          format: double
-        TrailingReturnM2Specified:
-          type: boolean
-        TrailingReturnM3:
-          type: number
-          format: double
-        TrailingReturnM3Specified:
-          type: boolean
-        TrailingReturnM6:
-          type: number
-          format: double
-        TrailingReturnM6Specified:
-          type: boolean
-        TrailingReturnM9:
-          type: number
-          format: double
-        TrailingReturnM9Specified:
-          type: boolean
-        TrailingReturnY1:
-          type: number
-          format: double
-        TrailingReturnY1Specified:
-          type: boolean
-        TrailingReturnY2:
-          type: number
-          format: double
-        TrailingReturnY2Specified:
-          type: boolean
-        TrailingReturnY3:
-          type: number
-          format: double
-        TrailingReturnY3Specified:
-          type: boolean
-        TrailingReturnY4:
-          type: number
-          format: double
-        TrailingReturnY4Specified:
-          type: boolean
-        TrailingReturnY5:
-          type: number
-          format: double
-        TrailingReturnY5Specified:
-          type: boolean
-        TrailingReturnY10:
-          type: number
-          format: double
-        TrailingReturnY10Specified:
-          type: boolean
-        TrailingReturnY15:
-          type: number
-          format: double
-        TrailingReturnY15Specified:
-          type: boolean
-        TrailingReturnY20:
-          type: number
-          format: double
-        TrailingReturnY20Specified:
-          type: boolean
-        TrailingReturnSinceInception:
-          type: number
-          format: double
-        TrailingReturnSinceInceptionSpecified:
-          type: boolean
-      additionalProperties: false
-    LoadAdjustedTrailingReturns:
-      type: object
-      properties:
-        LoadAdjustedTrailingReturnYTD:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnYTDSpecified:
-          type: boolean
-        LoadAdjustedTrailingReturnM1:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnM1Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnM3:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnM3Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnM6:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnM6Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY1:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY1Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY2:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY2Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY3:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY3Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY4:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY4Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY5:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY5Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY10:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY10Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY15:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY15Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnY20:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnY20Specified:
-          type: boolean
-        LoadAdjustedTrailingReturnSinceInception:
-          type: number
-          format: double
-        LoadAdjustedTrailingReturnSinceInceptionSpecified:
-          type: boolean
-      additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    HoldingsSet:
-      type: object
-      properties:
-        PortfolioDate:
-          type:
-          - string
-          - 'null'
-        Holdings:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/HoldingsBreakdown'
       additionalProperties: false
     ManagerBreakdown:
       allOf:
@@ -2284,183 +2416,28 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    ManagersSet:
+    FeeSchedulesSet:
       type: object
       properties:
-        PortfolioDate:
+        Outcome:
           type:
           - string
           - 'null'
-        ManagerBreakdowns:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/ManagerBreakdown'
-      additionalProperties: false
-    FundQuarterEndTrailingReturns:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Fund:
-            allOf:
-            - $ref: '#/components/schemas/Fund'
-          QuarterEndTrailingReturnsSets:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/QuarterEndTrailingReturnsSet'
-        additionalProperties: false
-    FundFundamentalDescriptionList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FundFundamentalDescriptions:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/FundFundamentalDescription'
-        additionalProperties: false
-    QuarterEndTrailingReturns:
-      type: object
-      properties:
-        QuarterEndTrailingReturnYTD:
-          type: number
-          format: double
-        QuarterEndTrailingReturnYTDSpecified:
-          type: boolean
-        QuarterEndTrailingReturnM1:
-          type: number
-          format: double
-        QuarterEndTrailingReturnM1Specified:
-          type: boolean
-        QuarterEndTrailingReturnM2:
-          type: number
-          format: double
-        QuarterEndTrailingReturnM2Specified:
-          type: boolean
-        QuarterEndTrailingReturnM3:
-          type: number
-          format: double
-        QuarterEndTrailingReturnM3Specified:
-          type: boolean
-        QuarterEndTrailingReturnM6:
-          type: number
-          format: double
-        QuarterEndTrailingReturnM6Specified:
-          type: boolean
-        QuarterEndTrailingReturnM9:
-          type: number
-          format: double
-        QuarterEndTrailingReturnM9Specified:
-          type: boolean
-        QuarterEndTrailingReturnY1:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY1Specified:
-          type: boolean
-        QuarterEndTrailingReturnY2:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY2Specified:
-          type: boolean
-        QuarterEndTrailingReturnY3:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY3Specified:
-          type: boolean
-        QuarterEndTrailingReturnY4:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY4Specified:
-          type: boolean
-        QuarterEndTrailingReturnY5:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY5Specified:
-          type: boolean
-        QuarterEndTrailingReturnY10:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY10Specified:
-          type: boolean
-        QuarterEndTrailingReturnY15:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY15Specified:
-          type: boolean
-        QuarterEndTrailingReturnY20:
-          type: number
-          format: double
-        QuarterEndTrailingReturnY20Specified:
-          type: boolean
-        QuarterEndTrailingReturnSinceInception:
-          type: number
-          format: double
-        QuarterEndTrailingReturnSinceInceptionSpecified:
-          type: boolean
-      additionalProperties: false
-    FundDescription:
-      type: object
-      properties:
-        Name:
+        Message:
           type:
           - string
           - 'null'
-        Valoren:
+        AsOfDate:
           type:
           - string
           - 'null'
-        CUSIP:
+        FeeScheduleType:
           type:
           - string
           - 'null'
-        SEDOL:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        CIK:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
-        Type:
-          type:
-          - string
-          - 'null'
-        CountryOfSales:
-          type:
-          - string
-          - 'null'
-        CountryOfSalesCode:
-          type:
-          - string
-          - 'null'
-        CountryOfDomicile:
-          type:
-          - string
-          - 'null'
-        CountryOfDomicileCode:
-          type:
-          - string
-          - 'null'
-        ExchangeDescriptions:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/ExchangeDescription'
+        FeeSchedules:
+          allOf:
+          - $ref: '#/components/schemas/FeeSchedules'
       additionalProperties: false
     Fundamental:
       type: object
@@ -2494,6 +2471,29 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    RecordBreakDownBase:
+      type: object
+      properties:
+        RecordNumber:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    FundMonthEndTrailingReturns:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          MonthEndTrailingReturnsSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/MonthEndTrailingReturnsSet'
+        additionalProperties: false
     ProfilesSet:
       type: object
       properties:

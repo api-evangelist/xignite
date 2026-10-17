@@ -687,24 +687,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
     Holiday:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -727,89 +709,13 @@ components:
           EarlyClose:
             type: boolean
         additionalProperties: false
-    Currency:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CurrencyCode:
-            type:
-            - string
-            - 'null'
-          CountryCode:
-            type:
-            - string
-            - 'null'
-          RelatedFinancialCentre:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    ExchangeSchedule:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: boolean
-          OpenTime:
-            type:
-            - string
-            - 'null'
-          CloseTime:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    FinancialCenter:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          FinancialCenterCode:
-            type:
-            - string
-            - 'null'
-          CurrencyCode:
-            type:
-            - string
-            - 'null'
-          CountryCode:
-            type:
-            - string
-            - 'null'
-          FinancialCenterName:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    Exchange:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    IntegerResult:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
     SettlementSchedule:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -828,13 +734,11 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
+    StringResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
     ExchangeHours:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -855,44 +759,6 @@ components:
             - string
             - 'null'
           CloseTime:
-            type:
-            - string
-            - 'null'
-          UTCOffset:
-            type: number
-            format: double
-        additionalProperties: false
-    ExchangeStatus:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
-          Open:
-            type: boolean
-        additionalProperties: false
-    StringResult:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        additionalProperties: false
-    ExchangeDateTime:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Exchange:
-            type:
-            - string
-            - 'null'
-          Date:
-            type:
-            - string
-            - 'null'
-          Time:
             type:
             - string
             - 'null'
@@ -932,6 +798,140 @@ components:
             - 'null'
             items:
               $ref: '#/components/schemas/Phase'
+        additionalProperties: false
+    ExchangeDateTime:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Exchange:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          UTCOffset:
+            type: number
+            format: double
+        additionalProperties: false
+    IntegerResult:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        additionalProperties: false
+    ExchangeStatus:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: boolean
+        additionalProperties: false
+    FinancialCenter:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          FinancialCenterCode:
+            type:
+            - string
+            - 'null'
+          CurrencyCode:
+            type:
+            - string
+            - 'null'
+          CountryCode:
+            type:
+            - string
+            - 'null'
+          FinancialCenterName:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    ExchangeSchedule:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Date:
+            type:
+            - string
+            - 'null'
+          Open:
+            type: boolean
+          OpenTime:
+            type:
+            - string
+            - 'null'
+          CloseTime:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Exchange:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Common:
+      type: object
+      properties:
+        Delay:
+          type: number
+          format: double
+        Identity:
+          type:
+          - string
+          - 'null'
+        Message:
+          type:
+          - string
+          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
+      additionalProperties: false
+    Currency:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CurrencyCode:
+            type:
+            - string
+            - 'null'
+          CountryCode:
+            type:
+            - string
+            - 'null'
+          RelatedFinancialCentre:
+            type:
+            - string
+            - 'null'
         additionalProperties: false
   securitySchemes:
     basic:

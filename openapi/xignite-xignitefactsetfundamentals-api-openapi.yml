@@ -740,23 +740,25 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    ExchangeDescription:
+    Sector:
       type: object
       properties:
-        MarketIdentificationCode:
+        Code:
           type:
           - string
           - 'null'
-        Market:
+        Name:
           type:
           - string
           - 'null'
-        Region:
+        Industries:
           type:
-          - string
+          - array
           - 'null'
+          items:
+            $ref: '#/components/schemas/Industry'
       additionalProperties: false
-    CompanyBalanceSheet:
+    CompanyCashFlowStatement:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
@@ -764,33 +766,9 @@ components:
           Company:
             allOf:
             - $ref: '#/components/schemas/Company'
-          BalanceSheet:
+          CashFlowStatement:
             allOf:
             - $ref: '#/components/schemas/FinancialStatement'
-        additionalProperties: false
-    SectorList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Sectors:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Sector'
-        additionalProperties: false
-    CompanyList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Companies:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Company'
         additionalProperties: false
     CompanyFinancialStatements:
       allOf:
@@ -807,20 +785,53 @@ components:
             items:
               $ref: '#/components/schemas/FinancialStatement'
         additionalProperties: false
-    CompanyFundamentals:
+    StatementTemplate:
+      enum:
+      - Industrial
+      - Bank
+      - Insurance
+      - OtherFinancial
+      type: string
+    StatementTypes:
+      enum:
+      - BalanceSheet
+      - CashFlowStatement
+      - IncomeStatement
+      type: string
+    ExchangeDescription:
+      type: object
+      properties:
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        Region:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    SectorList:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Company:
-            allOf:
-            - $ref: '#/components/schemas/Company'
-          FundamentalsSets:
+          Sectors:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/FundamentalsSet'
+              $ref: '#/components/schemas/Sector'
         additionalProperties: false
     FundamentalDescriptionList:
       allOf:
@@ -834,13 +845,6 @@ components:
             items:
               $ref: '#/components/schemas/FundamentalDescription'
         additionalProperties: false
-    StatementTemplate:
-      enum:
-      - Industrial
-      - Bank
-      - Insurance
-      - OtherFinancial
-      type: string
     ExchangeList:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -852,30 +856,6 @@ components:
             - 'null'
             items:
               $ref: '#/components/schemas/ExchangeDescription'
-        additionalProperties: false
-    CompanyCashFlowStatement:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Company:
-            allOf:
-            - $ref: '#/components/schemas/Company'
-          CashFlowStatement:
-            allOf:
-            - $ref: '#/components/schemas/FinancialStatement'
-        additionalProperties: false
-    CompanyIncomeStatement:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Company:
-            allOf:
-            - $ref: '#/components/schemas/Company'
-          IncomeStatement:
-            allOf:
-            - $ref: '#/components/schemas/FinancialStatement'
         additionalProperties: false
     FinancialStatement:
       type: object
@@ -911,60 +891,59 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    FundamentalsSet:
+    CompanyBalanceSheet:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Company:
+            allOf:
+            - $ref: '#/components/schemas/Company'
+          BalanceSheet:
+            allOf:
+            - $ref: '#/components/schemas/FinancialStatement'
+        additionalProperties: false
+    CompanyList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Companies:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Company'
+        additionalProperties: false
+    CompanyIncomeStatement:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Company:
+            allOf:
+            - $ref: '#/components/schemas/Company'
+          IncomeStatement:
+            allOf:
+            - $ref: '#/components/schemas/FinancialStatement'
+        additionalProperties: false
+    Common:
       type: object
       properties:
-        AsOfDate:
+        Delay:
+          type: number
+          format: double
+        Identity:
           type:
           - string
           - 'null'
-        Currency:
+        Message:
           type:
           - string
           - 'null'
-        Fundamentals:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/Fundamental'
-      additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    Sector:
-      type: object
-      properties:
-        Code:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Industries:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/Industry'
-      additionalProperties: false
-    Industry:
-      type: object
-      properties:
-        Code:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
     Company:
       type: object
@@ -1034,6 +1013,36 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    Industry:
+      type: object
+      properties:
+        Code:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    FundamentalsSet:
+      type: object
+      properties:
+        AsOfDate:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+        Fundamentals:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/Fundamental'
+      additionalProperties: false
     FundamentalDescription:
       type: object
       properties:
@@ -1066,6 +1075,21 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    CompanyFundamentals:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Company:
+            allOf:
+            - $ref: '#/components/schemas/Company'
+          FundamentalsSets:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/FundamentalsSet'
+        additionalProperties: false
     Item:
       type: object
       properties:
@@ -1089,24 +1113,6 @@ components:
           type:
           - string
           - 'null'
-      additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
     Fundamental:
       type: object
@@ -1146,12 +1152,6 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    StatementTypes:
-      enum:
-      - BalanceSheet
-      - CashFlowStatement
-      - IncomeStatement
-      type: string
   securitySchemes:
     basic:
       type: apiKey

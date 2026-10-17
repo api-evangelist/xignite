@@ -43,16 +43,6 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    CloudFile:
-      allOf:
-      - $ref: '#/components/schemas/FileDownload'
-      - type: object
-        properties:
-          FileName:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
     FileDownload:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -63,6 +53,16 @@ components:
             - string
             - 'null'
           Url:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    CloudFile:
+      allOf:
+      - $ref: '#/components/schemas/FileDownload'
+      - type: object
+        properties:
+          FileName:
             type:
             - string
             - 'null'

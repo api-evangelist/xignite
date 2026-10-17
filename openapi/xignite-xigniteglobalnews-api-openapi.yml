@@ -904,35 +904,19 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    ExchangeDescription:
+    TagGroup:
       type: object
       properties:
-        MarketIdentificationCode:
+        TagType:
           type:
           - string
           - 'null'
-        Market:
+        TagValues:
           type:
-          - string
+          - array
           - 'null'
-      additionalProperties: false
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
+          items:
+            type: string
       additionalProperties: false
     SecurityDescription:
       type: object
@@ -954,6 +938,67 @@ components:
           - string
           - 'null'
       additionalProperties: false
+    MarketHeadlineSummaries:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          HeadlineSummaries:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/MarketHeadlineSummary'
+        additionalProperties: false
+    SymbolList:
+      type: object
+      properties:
+        Exchange:
+          allOf:
+          - $ref: '#/components/schemas/ExchangeDescription'
+        SecurityDescriptions:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/SecurityDescription'
+      additionalProperties: false
+    MarketNewsItem:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Headline:
+            type:
+            - string
+            - 'null'
+          Time:
+            type:
+            - string
+            - 'null'
+          Source:
+            type:
+            - string
+            - 'null'
+          Url:
+            type:
+            - string
+            - 'null'
+          Summary:
+            type:
+            - string
+            - 'null'
+          Tags:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/TagGroup'
+          PaywallType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     SecurityHeadlineSummaries:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -969,6 +1014,72 @@ components:
             items:
               $ref: '#/components/schemas/SecurityHeadlineSummary'
         additionalProperties: false
+    MarketHeadlineSummary:
+      allOf:
+      - $ref: '#/components/schemas/MarketHeadline'
+      - type: object
+        properties:
+          Summary:
+            type:
+            - string
+            - 'null'
+          PaywallType:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    Security:
+      type: object
+      properties:
+        CIK:
+          type:
+          - string
+          - 'null'
+        CUSIP:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        ISIN:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        Name:
+          type:
+          - string
+          - 'null'
+        Market:
+          type:
+          - string
+          - 'null'
+        MarketIdentificationCode:
+          type:
+          - string
+          - 'null'
+        MostLiquidExchange:
+          type: boolean
+        CategoryOrIndustry:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    ExchangeList:
+      type: object
+      properties:
+        ExchangeDescriptions:
+          type:
+          - array
+          - 'null'
+          items:
+            $ref: '#/components/schemas/ExchangeDescription'
+      additionalProperties: false
     MarketHeadlines:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -981,9 +1092,9 @@ components:
             items:
               $ref: '#/components/schemas/MarketHeadline'
         additionalProperties: false
-    MarketHeadlineSummary:
+    SecurityHeadlineSummary:
       allOf:
-      - $ref: '#/components/schemas/MarketHeadline'
+      - $ref: '#/components/schemas/SecurityHeadline'
       - type: object
         properties:
           Summary:
@@ -1057,32 +1168,17 @@ components:
           - string
           - 'null'
       additionalProperties: false
-    TagGroup:
+    ExchangeDescription:
       type: object
       properties:
-        TagType:
+        MarketIdentificationCode:
           type:
           - string
           - 'null'
-        TagValues:
+        Market:
           type:
-          - array
+          - string
           - 'null'
-          items:
-            type: string
-      additionalProperties: false
-    SymbolList:
-      type: object
-      properties:
-        Exchange:
-          allOf:
-          - $ref: '#/components/schemas/ExchangeDescription'
-        SecurityDescriptions:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/SecurityDescription'
       additionalProperties: false
     OutcomeTypes:
       enum:
@@ -1091,57 +1187,23 @@ components:
       - RequestError
       - RegistrationError
       type: string
-    ExchangeList:
+    Common:
       type: object
       properties:
-        ExchangeDescriptions:
-          type:
-          - array
-          - 'null'
-          items:
-            $ref: '#/components/schemas/ExchangeDescription'
-      additionalProperties: false
-    Security:
-      type: object
-      properties:
-        CIK:
+        Delay:
+          type: number
+          format: double
+        Identity:
           type:
           - string
           - 'null'
-        CUSIP:
+        Message:
           type:
           - string
           - 'null'
-        Symbol:
-          type:
-          - string
-          - 'null'
-        ISIN:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        Name:
-          type:
-          - string
-          - 'null'
-        Market:
-          type:
-          - string
-          - 'null'
-        MarketIdentificationCode:
-          type:
-          - string
-          - 'null'
-        MostLiquidExchange:
-          type: boolean
-        CategoryOrIndustry:
-          type:
-          - string
-          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
     SectorList:
       allOf:
@@ -1154,68 +1216,6 @@ components:
             - 'null'
             items:
               type: string
-        additionalProperties: false
-    MarketNewsItem:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Headline:
-            type:
-            - string
-            - 'null'
-          Time:
-            type:
-            - string
-            - 'null'
-          Source:
-            type:
-            - string
-            - 'null'
-          Url:
-            type:
-            - string
-            - 'null'
-          Summary:
-            type:
-            - string
-            - 'null'
-          Tags:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/TagGroup'
-          PaywallType:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    MarketHeadlineSummaries:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          HeadlineSummaries:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/MarketHeadlineSummary'
-        additionalProperties: false
-    SecurityHeadlineSummary:
-      allOf:
-      - $ref: '#/components/schemas/SecurityHeadline'
-      - type: object
-        properties:
-          Summary:
-            type:
-            - string
-            - 'null'
-          PaywallType:
-            type:
-            - string
-            - 'null'
         additionalProperties: false
   securitySchemes:
     basic:

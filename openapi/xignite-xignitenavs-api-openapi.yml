@@ -737,164 +737,37 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    SymbolType:
+    IdentifierTypes:
       enum:
-      - NetAssetValue
-      - IntradayIndicativeValue
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
       type: string
-    FundNAVs:
-      allOf:
-      - $ref: '#/components/schemas/QuoteWithSecurity'
-      - type: object
-        properties:
-          StartDate:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          NAVs:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/FundNAV'
-        additionalProperties: false
-    ExchangeSplit:
-      type: object
-      properties:
-        Security:
-          allOf:
-          - $ref: '#/components/schemas/Security'
-        Split:
-          allOf:
-          - $ref: '#/components/schemas/Split'
-      additionalProperties: false
-    DividendHistory:
+    CompleteDividendHistory:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Symbol:
-            type:
-            - string
-            - 'null'
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
           Dividends:
             type:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/Dividend'
+              $ref: '#/components/schemas/CompleteDividend'
         additionalProperties: false
-    AdjustmentFactor:
-      type: object
-      additionalProperties: false
-    ExchangeSplitsList:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExchangeSplits:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/ExchangeSplit'
-        additionalProperties: false
-    SplitHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          StartDate:
-            type:
-            - string
-            - 'null'
-          EndDate:
-            type:
-            - string
-            - 'null'
-          CumulativeSplitRatio:
-            type: number
-            format: double
-          Splits:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Split'
-        additionalProperties: false
-    Fund:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          CIK:
-            type:
-            - string
-            - 'null'
-          CUSIP:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          SymbolType:
-            allOf:
-            - $ref: '#/components/schemas/SymbolType'
-          ListingSymbol:
-            type:
-            - string
-            - 'null'
-          ISIN:
-            type:
-            - string
-            - 'null'
-          Valoren:
-            type:
-            - string
-            - 'null'
-          Name:
-            type:
-            - string
-            - 'null'
-          Market:
-            type:
-            - string
-            - 'null'
-          MarketIdentificationCode:
-            type:
-            - string
-            - 'null'
-          CategoryOrIndustry:
-            type:
-            - string
-            - 'null'
-          InstrumentClass:
-            type:
-            - string
-            - 'null'
-          Domicile:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    QuoteWithSecurity:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-        additionalProperties: false
+    SymbolType:
+      enum:
+      - NetAssetValue
+      - IntradayIndicativeValue
+      type: string
     GlobalNAV:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -987,6 +860,192 @@ components:
             - string
             - 'null'
         additionalProperties: false
+    GlobalNAVs:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Fund:
+            allOf:
+            - $ref: '#/components/schemas/Fund'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          NAVs:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/GlobalNAV'
+        additionalProperties: false
+    Split:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExDate:
+            type:
+            - string
+            - 'null'
+          Numerator:
+            type: number
+            format: double
+          Denominator:
+            type: number
+            format: double
+          SplitRatio:
+            type: number
+            format: double
+        additionalProperties: false
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    FundNAV:
+      allOf:
+      - $ref: '#/components/schemas/QuoteWithSecurity'
+      - type: object
+        properties:
+          Date:
+            type:
+            - string
+            - 'null'
+          Last:
+            type: number
+            format: double
+          Open:
+            type: number
+            format: double
+          LastClose:
+            type: number
+            format: double
+          ChangeFromOpen:
+            type: number
+            format: double
+          PercentChangeFromOpen:
+            type: number
+            format: double
+          ChangeFromLastClose:
+            type: number
+            format: double
+          PercentChangeFromLastClose:
+            type: number
+            format: double
+        additionalProperties: false
+    DividendHistory:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Symbol:
+            type:
+            - string
+            - 'null'
+          Dividends:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Dividend'
+        additionalProperties: false
+    Fund:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          CIK:
+            type:
+            - string
+            - 'null'
+          CUSIP:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          SymbolType:
+            allOf:
+            - $ref: '#/components/schemas/SymbolType'
+          ListingSymbol:
+            type:
+            - string
+            - 'null'
+          ISIN:
+            type:
+            - string
+            - 'null'
+          Valoren:
+            type:
+            - string
+            - 'null'
+          Name:
+            type:
+            - string
+            - 'null'
+          Market:
+            type:
+            - string
+            - 'null'
+          MarketIdentificationCode:
+            type:
+            - string
+            - 'null'
+          CategoryOrIndustry:
+            type:
+            - string
+            - 'null'
+          InstrumentClass:
+            type:
+            - string
+            - 'null'
+          Domicile:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    AdjustmentMethods:
+      enum:
+      - None
+      - DefaultValue
+      - SplitOnly
+      - CashDividendOnly
+      - SplitAndProportionalCashDividend
+      - All
+      type: string
+    AdjustmentFactors:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+          ArrayOfAdjustmentFactor:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/AdjustmentFactor'
+        additionalProperties: false
+    QuoteWithSecurity:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Security:
+            allOf:
+            - $ref: '#/components/schemas/Security'
+        additionalProperties: false
     Dividend:
       type: object
       properties:
@@ -998,17 +1057,6 @@ components:
           type: number
           format: double
       additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
     CompleteDividend:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1057,78 +1105,6 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    FundNAV:
-      allOf:
-      - $ref: '#/components/schemas/QuoteWithSecurity'
-      - type: object
-        properties:
-          Date:
-            type:
-            - string
-            - 'null'
-          Last:
-            type: number
-            format: double
-          Open:
-            type: number
-            format: double
-          LastClose:
-            type: number
-            format: double
-          ChangeFromOpen:
-            type: number
-            format: double
-          PercentChangeFromOpen:
-            type: number
-            format: double
-          ChangeFromLastClose:
-            type: number
-            format: double
-          PercentChangeFromLastClose:
-            type: number
-            format: double
-        additionalProperties: false
-    Split:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          ExDate:
-            type:
-            - string
-            - 'null'
-          Numerator:
-            type: number
-            format: double
-          Denominator:
-            type: number
-            format: double
-          SplitRatio:
-            type: number
-            format: double
-        additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    CompleteDividendHistory:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          Dividends:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/CompleteDividend'
-        additionalProperties: false
     PeriodTypes:
       enum:
       - Day
@@ -1137,21 +1113,6 @@ components:
       - Quarter
       - Year
       type: string
-    AdjustmentFactors:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Security:
-            allOf:
-            - $ref: '#/components/schemas/Security'
-          ArrayOfAdjustmentFactor:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/AdjustmentFactor'
-        additionalProperties: false
     NewFund:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -1166,6 +1127,19 @@ components:
             - string
             - 'null'
         additionalProperties: false
+    ExchangeSplit:
+      type: object
+      properties:
+        Security:
+          allOf:
+          - $ref: '#/components/schemas/Security'
+        Split:
+          allOf:
+          - $ref: '#/components/schemas/Split'
+      additionalProperties: false
+    AdjustmentFactor:
+      type: object
+      additionalProperties: false
     Common:
       type: object
       properties:
@@ -1184,23 +1158,49 @@ components:
           allOf:
           - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
-    AdjustmentMethods:
-      enum:
-      - None
-      - DefaultValue
-      - SplitOnly
-      - CashDividendOnly
-      - SplitAndProportionalCashDividend
-      - All
-      type: string
-    GlobalNAVs:
+    SplitHistory:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          Fund:
+          Security:
             allOf:
-            - $ref: '#/components/schemas/Fund'
+            - $ref: '#/components/schemas/Security'
+          StartDate:
+            type:
+            - string
+            - 'null'
+          EndDate:
+            type:
+            - string
+            - 'null'
+          CumulativeSplitRatio:
+            type: number
+            format: double
+          Splits:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Split'
+        additionalProperties: false
+    ExchangeSplitsList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          ExchangeSplits:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/ExchangeSplit'
+        additionalProperties: false
+    FundNAVs:
+      allOf:
+      - $ref: '#/components/schemas/QuoteWithSecurity'
+      - type: object
+        properties:
           StartDate:
             type:
             - string
@@ -1214,7 +1214,7 @@ components:
             - array
             - 'null'
             items:
-              $ref: '#/components/schemas/GlobalNAV'
+              $ref: '#/components/schemas/FundNAV'
         additionalProperties: false
   securitySchemes:
     basic:

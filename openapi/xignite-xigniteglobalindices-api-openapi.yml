@@ -499,6 +499,164 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
+    IndexDescriptionDto:
+      type: object
+      properties:
+        IndexName:
+          type:
+          - string
+          - 'null'
+        Symbol:
+          type:
+          - string
+          - 'null'
+        IndexGroup:
+          type:
+          - string
+          - 'null'
+        Valoren:
+          type:
+          - string
+          - 'null'
+        Currency:
+          type:
+          - string
+          - 'null'
+      additionalProperties: false
+    Weeks.IndexQuote:
+      allOf:
+      - $ref: '#/components/schemas/IndexQuote'
+      - type: object
+        properties:
+          High52Weeks:
+            type: number
+            format: double
+          Low52Weeks:
+            type: number
+            format: double
+        additionalProperties: false
+    IndexSummary:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IndexName:
+            type:
+            - string
+            - 'null'
+          Symbol:
+            type:
+            - string
+            - 'null'
+          IndexGroup:
+            type:
+            - string
+            - 'null'
+          Currency:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
+    IndexBars:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Index:
+            allOf:
+            - $ref: '#/components/schemas/IndexDescriptionDto'
+          Bars:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/Bar'
+        additionalProperties: false
+    IdentifierTypes:
+      enum:
+      - Symbol
+      - CIK
+      - CUSIP
+      - ISIN
+      - Valoren
+      - SEDOL
+      - FIGI
+      - CompositeFIGI
+      type: string
+    ChartBar:
+      type: object
+      properties:
+        StartDate:
+          type:
+          - string
+          - 'null'
+        StartTime:
+          type:
+          - string
+          - 'null'
+        EndDate:
+          type:
+          - string
+          - 'null'
+        EndTime:
+          type:
+          - string
+          - 'null'
+        UTCOffset:
+          type: number
+          format: double
+        Open:
+          type: number
+          format: double
+        High:
+          type: number
+          format: double
+        Low:
+          type: number
+          format: double
+        Close:
+          type: number
+          format: double
+        Volume:
+          type: number
+          format: double
+        Trades:
+          type: integer
+          format: int32
+        TWAP:
+          type: number
+          format: double
+        VWAP:
+          type: number
+          format: double
+        Currency:
+          type:
+          - string
+          - 'null'
+        Session:
+          type:
+          - string
+          - 'null'
+        AdjustmentRatio:
+          type: number
+          format: double
+      additionalProperties: false
+    IndexSummaryList:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          IndexSummaries:
+            type:
+            - array
+            - 'null'
+            items:
+              $ref: '#/components/schemas/IndexSummary'
+          NextPage:
+            type:
+            - string
+            - 'null'
+        additionalProperties: false
     Bar:
       type: object
       properties:
@@ -537,60 +695,6 @@ components:
           type: number
           format: double
       additionalProperties: false
-    IdentifierTypes:
-      enum:
-      - Symbol
-      - CIK
-      - CUSIP
-      - ISIN
-      - Valoren
-      - SEDOL
-      - FIGI
-      - CompositeFIGI
-      type: string
-    Common:
-      type: object
-      properties:
-        Delay:
-          type: number
-          format: double
-        Identity:
-          type:
-          - string
-          - 'null'
-        Message:
-          type:
-          - string
-          - 'null'
-        Outcome:
-          allOf:
-          - $ref: '#/components/schemas/OutcomeTypes'
-      additionalProperties: false
-    Weeks.IndexValue:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Identifier:
-            type:
-            - string
-            - 'null'
-          IdentifierType:
-            type:
-            - string
-            - 'null'
-          Index:
-            allOf:
-            - $ref: '#/components/schemas/IndexDescriptionDto'
-          Value:
-            allOf:
-            - $ref: '#/components/schemas/Weeks.IndexQuote'
-        additionalProperties: false
-    BarPrecision:
-      enum:
-      - Minutes
-      - Hours
-      type: string
     IndexDescription:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -616,33 +720,25 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    IndexSummaryList:
+    Weeks.IndexValue:
       allOf:
       - $ref: '#/components/schemas/Common'
       - type: object
         properties:
-          IndexSummaries:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/IndexSummary'
-          NextPage:
+          Identifier:
             type:
             - string
             - 'null'
-        additionalProperties: false
-    Weeks.IndexQuote:
-      allOf:
-      - $ref: '#/components/schemas/IndexQuote'
-      - type: object
-        properties:
-          High52Weeks:
-            type: number
-            format: double
-          Low52Weeks:
-            type: number
-            format: double
+          IdentifierType:
+            type:
+            - string
+            - 'null'
+          Index:
+            allOf:
+            - $ref: '#/components/schemas/IndexDescriptionDto'
+          Value:
+            allOf:
+            - $ref: '#/components/schemas/Weeks.IndexQuote'
         additionalProperties: false
     IndexChartBars:
       allOf:
@@ -728,62 +824,6 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    OutcomeTypes:
-      enum:
-      - Success
-      - SystemError
-      - RequestError
-      - RegistrationError
-      type: string
-    IndexSummary:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          IndexName:
-            type:
-            - string
-            - 'null'
-          Symbol:
-            type:
-            - string
-            - 'null'
-          IndexGroup:
-            type:
-            - string
-            - 'null'
-          Currency:
-            type:
-            - string
-            - 'null'
-        additionalProperties: false
-    IndexBar:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Index:
-            allOf:
-            - $ref: '#/components/schemas/IndexDescriptionDto'
-          Bar:
-            allOf:
-            - $ref: '#/components/schemas/Bar'
-        additionalProperties: false
-    IndexBars:
-      allOf:
-      - $ref: '#/components/schemas/Common'
-      - type: object
-        properties:
-          Index:
-            allOf:
-            - $ref: '#/components/schemas/IndexDescriptionDto'
-          Bars:
-            type:
-            - array
-            - 'null'
-            items:
-              $ref: '#/components/schemas/Bar'
-        additionalProperties: false
     IndexGroup:
       allOf:
       - $ref: '#/components/schemas/Common'
@@ -798,88 +838,48 @@ components:
             - string
             - 'null'
         additionalProperties: false
-    IndexDescriptionDto:
+    BarPrecision:
+      enum:
+      - Minutes
+      - Hours
+      type: string
+    OutcomeTypes:
+      enum:
+      - Success
+      - SystemError
+      - RequestError
+      - RegistrationError
+      type: string
+    Common:
       type: object
       properties:
-        IndexName:
+        Delay:
+          type: number
+          format: double
+        Identity:
           type:
           - string
           - 'null'
-        Symbol:
+        Message:
           type:
           - string
           - 'null'
-        IndexGroup:
-          type:
-          - string
-          - 'null'
-        Valoren:
-          type:
-          - string
-          - 'null'
-        Currency:
-          type:
-          - string
-          - 'null'
+        Outcome:
+          allOf:
+          - $ref: '#/components/schemas/OutcomeTypes'
       additionalProperties: false
-    ChartBar:
-      type: object
-      properties:
-        StartDate:
-          type:
-          - string
-          - 'null'
-        StartTime:
-          type:
-          - string
-          - 'null'
-        EndDate:
-          type:
-          - string
-          - 'null'
-        EndTime:
-          type:
-          - string
-          - 'null'
-        UTCOffset:
-          type: number
-          format: double
-        Open:
-          type: number
-          format: double
-        High:
-          type: number
-          format: double
-        Low:
-          type: number
-          format: double
-        Close:
-          type: number
-          format: double
-        Volume:
-          type: number
-          format: double
-        Trades:
-          type: integer
-          format: int32
-        TWAP:
-          type: number
-          format: double
-        VWAP:
-          type: number
-          format: double
-        Currency:
-          type:
-          - string
-          - 'null'
-        Session:
-          type:
-          - string
-          - 'null'
-        AdjustmentRatio:
-          type: number
-          format: double
-      additionalProperties: false
+    IndexBar:
+      allOf:
+      - $ref: '#/components/schemas/Common'
+      - type: object
+        properties:
+          Index:
+            allOf:
+            - $ref: '#/components/schemas/IndexDescriptionDto'
+          Bar:
+            allOf:
+            - $ref: '#/components/schemas/Bar'
+        additionalProperties: false
   securitySchemes:
     basic:
       type: apiKey
