@@ -38,7 +38,7 @@ tags:
 - Market Data
 - Stocks
 - Real-Time
-- Forex
+- Foreign Exchange
 - Cryptocurrency
 - Options
 - Futures
@@ -124,7 +124,7 @@ apis:
 - aid: xignite:xignite-global-currencies-api
   name: Xignite Global Currencies API
   tags:
-  - Forex
+  - Foreign Exchange
   - Currency
   - Exchange Rates
   tags_raw:
@@ -164,6 +164,9 @@ apis:
 - aid: xignite:xignite-crypto-api
   name: Xignite Crypto API
   tags:
+  - Cryptocurrency
+  - Digital Assets
+  tags_raw:
   - Crypto
   - Cryptocurrency
   - Digital Assets
